@@ -176,62 +176,7 @@
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col container-1280">
-                <h2 class="">What's Actually Happening in the Market</h2>
-                <p style="color: #666; font-style: italic; margin-bottom: 15px; padding: 0 10px;">
-                    📊 <strong>No Need to Obsess:</strong> Here's what the major indices are doing today. Glance at it,
-                    note the trends, then get back to your life. The market will be here tomorrow.
-                </p>
-                <div class="chart">
-                    <script defer>
-                        if (typeof (stockdio_events) == "undefined") {
-                            stockdio_events = true;
-                            var stockdio_eventMethod = window.addEventListener ? "addEventListener" : "attachEvent";
-                            var stockdio_eventer = window[stockdio_eventMethod];
-                            var stockdio_messageEvent = stockdio_eventMethod == "attachEvent" ? "onmessage" : "message";
-                            stockdio_eventer(stockdio_messageEvent, function (e) {
-                                if (typeof (e.data) != "undefined" && typeof (e.data.method) != "undefined") {
-                                    eval(e.data.method);
-                                }
-                            }, false);
-                        }
-                    </script>
-                    <iframe id='st_04495ee4f1154f129eaf8e8746dfcf95' frameBorder='0' scrolling='no' width='100%'
-                        height='100%' loading="lazy"
-                        src='https://api.stockdio.com/visualization/financial/charts/v1/MarketOverviewChart?app-key=56D3070574784B10A0F80C4ABA40E68C&includeEquities=false&equities=AAPL;AMZN;BRK.A;FB;GOOGL;JNJ;JPM;MSFT;NVDA;TSLA&indices=WLX;SPXF;SPX;DJIF;DJI;RUT;RMZ;FTSE100;DAX;N225;&includeCommodities=false&includeCurrencies=false&listSeparation=1&palette=Financial-Light&title=Market%20Overview&width=100%25&chartHeight=200&showLogo=No&grayscaleLogo=true&onload=st_04495ee4f1154f129eaf8e8746dfcf95'>
-                    </iframe>
-                </div>
-            </div>
-        </div>
-        <div class="row bg-light">
-            <div class="col container-1280">
-                <h2 class="">The Big Names Everyone Talks About</h2>
-                <p style="color: #666; font-style: italic; margin-bottom: 15px; padding: 0 10px;">
-                    📈 <strong>Household Names:</strong> Yes, these are the stocks your coworker keeps bragging about.
-                    But here's the thing - you probably don't need to pick individual stocks at all. We'll explain why.
-                </p>
-                <div class="chart">
-                    <script defer>
-                        if (typeof (stockdio_events) == "undefined") {
-                            stockdio_events = true;
-                            var stockdio_eventMethod = window.addEventListener ? "addEventListener" : "attachEvent";
-                            var stockdio_eventer = window[stockdio_eventMethod];
-                            var stockdio_messageEvent = stockdio_eventMethod == "attachEvent" ? "onmessage" : "message";
-                            stockdio_eventer(stockdio_messageEvent, function (e) {
-                                if (typeof (e.data) != "undefined" && typeof (e.data.method) != "undefined") {
-                                    eval(e.data.method);
-                                }
-                            }, false);
-                        }
-                    </script>
-                    <iframe id='st_d014d140f635440ab760ece28b1eddd3' frameBorder='0' scrolling='no' width='100%'
-                        height='100%' loading="lazy"
-                        src='https://api.stockdio.com/visualization/financial/charts/v1/MarketOverviewChart?app-key=56D3070574784B10A0F80C4ABA40E68C&equities=AAPL;AMZN;BRK.A;META;GOOGL;JNJ;JPM;MSFT;NVDA;TSLA&includeIndices=false&indices=SPXF;SPX;DJCI;DJIF;GDOW;RMZ;RUT;WLX&includeCommodities=false&includeCurrencies=false&listSeparation=1&palette=Financial-Light&title=Key%20Stocks&width=100%25&chartHeight=200&showLogo=No&grayscaleLogo=true&onload=st_d014d140f635440ab760ece28b1eddd3'>
-                    </iframe>
-                </div>
-            </div>
-        </div>
+        
         <div class="row">
             <div class="col container-1280">
                 <h2 class="">Market News (But Don't Panic)</h2>
