@@ -50,6 +50,50 @@
         <link rel="stylesheet" href="/styles/styles.css" />
 
         <style>
+            /* ── OVERRIDE styles.css section/body interference ── */
+            .hero,
+            .pillars,
+            .market-section,
+            .guides-section,
+            .news-section,
+            .subscribe-section {
+                border-top: none !important;
+                border-bottom: none !important;
+                margin-left: 0 !important;
+                margin-right: 0 !important;
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+                padding-top: 0 !important;
+                padding-bottom: 0 !important;
+                background-color: transparent !important;
+            }
+            /* styles.css sets h2 margin-top:20px, h3 padding, etc — reset for our layout */
+            .hero h1,
+            .hero h2,
+            .pillars h2,
+            .pillars h3,
+            .guides-section h2,
+            .guides-section h3,
+            .market-section h2,
+            .news-section h2,
+            .subscribe-section h2 {
+                margin-top: 0 !important;
+                margin-bottom: 0 !important;
+                padding-top: 0 !important;
+                padding-bottom: 0 !important;
+                padding-left: 0 !important;
+            }
+            .hero p,
+            .pillars p,
+            .guides-section p,
+            .market-section p,
+            .news-section p,
+            .subscribe-section p {
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+                padding-top: 0 !important;
+            }
+
             /* ── TOKENS ────────────────────────────────── */
             :root {
                 --dark: #393b44;
@@ -907,7 +951,7 @@
         </div>
 
         <!-- ══ HERO ══════════════════════════════════════════════════════ -->
-        <section class="hero">
+        <div class="hero">
             <div class="container-1280">
                 <div class="hero-inner">
                     <div class="hero-copy">
@@ -966,10 +1010,10 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
 
         <!-- ══ THREE PILLARS ══════════════════════════════════════════════ -->
-        <section class="pillars" id="why-it-works">
+        <div class="pillars" id="why-it-works">
             <div class="container-1280">
                 <div class="section-label">Why It Works</div>
                 <h2 class="section-title">
@@ -1015,10 +1059,10 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
 
         <!-- ══ MARKET OVERVIEW ════════════════════════════════════════════ -->
-        <section class="market-section">
+        <div class="market-section">
             <div class="container-1280">
                 <div class="section-label">Market Pulse</div>
                 <h2 class="section-title">What the market's doing today</h2>
@@ -1066,10 +1110,10 @@
                     </iframe>
                 </div>
             </div>
-        </section>
+        </div>
 
         <!-- ══ GUIDES ══════════════════════════════════════════════════════ -->
-        <section class="guides-section">
+        <div class="guides-section">
             <div class="container-1280">
                 <div class="guides-header">
                     <div>
@@ -1280,10 +1324,10 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
 
         <!-- ══ NEWS ════════════════════════════════════════════════════════ -->
-        <section class="news-section">
+        <div class="news-section">
             <div class="container-1280">
                 <div class="section-label">Market News</div>
                 <h2 class="section-title">Stay informed. Don't panic.</h2>
@@ -1312,10 +1356,10 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
 
         <!-- ══ SUBSCRIBE ══════════════════════════════════════════════════ -->
-        <section class="subscribe-section">
+        <div class="subscribe-section">
             <div class="container-1280">
                 <div class="subscribe-inner">
                     <div class="section-label" style="color: var(--slate)">
@@ -1332,7 +1376,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
 
         <!-- ══ FOOTER (shared + static fallback) ═════════════════════════ -->
         <div class="row dark-div" style="margin: 0">
