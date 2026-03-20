@@ -114,6 +114,17 @@ img { display: block; }
   background: var(--dark); color: white; text-decoration: none; z-index: 1000;
 }
 
+/* Match footer rows to hero dark tone for current shared-footer markup */
+.row.dark-div,
+.site-footer {
+  background: var(--dark) !important;
+  color: rgba(255,255,255,.8);
+}
+.row.dark-div a,
+.site-footer a { color: rgba(255,255,255,.8); }
+.row.dark-div a:hover,
+.site-footer a:hover { color: #fff; }
+
 @media (max-width: 992px) {
   .hero-inner { grid-template-columns: 1fr; }
   .hero-copy { padding: 60px 0 40px; }
