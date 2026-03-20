@@ -8,6 +8,10 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    env:
+      INDEXNOW_KEY: 0acd80c39fd64fff9872623bd90a7dde
+      SITE_HOST: richiest.com
+      SITE_BASE: https://richiest.com
     steps:
       - uses: actions/checkout@v4
       - name: FTP Deploy
@@ -19,3 +23,10 @@ jobs:
           server-dir: ${{ secrets.FTP_PATH }}
           protocol: ftp
           port: 21
+
+      - name: Notify IndexNow
+        run: |
+          set -e
+          curl -sS -X POST "https://api.indexnow.org/indexnow" \
+            -H 'Content-Type: application/json; charset=utf-8' \
+            -d "{\"host\":\"${SITE_HOST}\",\"key\":\"${INDEXNOW_KEY}\",\"keyLocation\":\"${SITE_BASE}/${INDEXNOW_KEY}.txt\",\"urlList\":[\"${SITE_BASE}/\",\"${SITE_BASE}/sitemap.xml\"]}"
