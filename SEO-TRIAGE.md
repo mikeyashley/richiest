@@ -1,0 +1,58 @@
+# Richiest Content Triage (Initial 80 article URLs)
+
+## Priority Actions
+- Remove/noindex thin or duplicate-like pages first
+- Merge overlapping broad pages into stronger hub pages
+- Rewrite top intent pages with clear titles/meta and internal links
+
+## First Pass List
+- KEEP/REFINE: https://richiest.com/articles/401k-vs-stocks.html
+- KEEP/REFINE: https://richiest.com/articles/aggressive-stocks.html
+- KEEP/REFINE: https://richiest.com/articles/angel-investing-vs-venture-capital.html
+- KEEP/REFINE: https://richiest.com/articles/are-annuity-good-investment.html
+- KEEP/REFINE: https://richiest.com/articles/average-federal-pension.html
+- KEEP/REFINE: https://richiest.com/articles/average-rate-of-return-on-etfs.html
+- KEEP/REFINE: https://richiest.com/articles/average-retirement-income.html
+- KEEP/REFINE: https://richiest.com/articles/behavioral-finance.html
+- KEEP/REFINE: https://richiest.com/articles/best-bond-etf-for-rising-interest.html
+- KEEP/REFINE: https://richiest.com/articles/best-books-about-investment-banking.html
+- KEEP/REFINE: https://richiest.com/articles/best-books-for-beginners.html
+- KEEP/REFINE: https://richiest.com/articles/best-books-on-commercial-real-estate-investing.html (long slug)
+- KEEP/REFINE: https://richiest.com/articles/best-books-on-investing-for-retirement.html
+- KEEP/REFINE: https://richiest.com/articles/best-etfs-for-young-investors.html
+- KEEP/REFINE: https://richiest.com/articles/best-fidelity-etf-portfolio.html
+- KEEP/REFINE: https://richiest.com/articles/best-financial-literacy-books.html
+- KEEP/REFINE: https://richiest.com/articles/best-free-dividend-stock-screeners.html
+- KEEP/REFINE: https://richiest.com/articles/best-growth-stocks-europe.html
+- KEEP/REFINE: https://richiest.com/articles/best-growth-stocks-for-retirement.html
+- KEEP/REFINE: https://richiest.com/articles/best-investments-for-retirement-income.html
+- KEEP/REFINE: https://richiest.com/articles/best-offshore-brokers-for-day-trading.html
+- KEEP/REFINE: https://richiest.com/articles/best-retirement-income-funds.html
+- KEEP/REFINE: https://richiest.com/articles/best-spdr-etfs.html
+- KEEP/REFINE: https://richiest.com/articles/bond-etfs.html
+- KEEP/REFINE: https://richiest.com/articles/books-for-young-adults.html
+- KEEP/REFINE: https://richiest.com/articles/cambria-etfs.html
+- KEEP/REFINE: https://richiest.com/articles/can-a-financial-advisor-help-with-debt.html
+- MERGE/REFINE: https://richiest.com/articles/can-a-financial-advisor-help-with-student-loans.html (long slug)
+- MERGE/REFINE: https://richiest.com/articles/can-you-lose-more-money-than-you-invest-in-stocks.html (long slug)
+- KEEP/REFINE: https://richiest.com/articles/capital-accumulation-plan.html
+- KEEP/REFINE: https://richiest.com/articles/certified-fund-specialist.html
+- KEEP/REFINE: https://richiest.com/articles/collective-investment-trust.html
+- KEEP/REFINE: https://richiest.com/articles/comprehensive-personal-liability.html
+- KEEP/REFINE: https://richiest.com/articles/credit-investing-vs-private-equity.html
+- KEEP/REFINE: https://richiest.com/articles/currency-hedged-etfs.html
+- KEEP/REFINE: https://richiest.com/articles/day-trading-etfs.html
+- KEEP/REFINE: https://richiest.com/articles/day-trading-vs-investing.html
+- KEEP/REFINE: https://richiest.com/articles/demand-draft-application.html
+- KEEP/REFINE: https://richiest.com/articles/different-kinds-of-investment.html
+- KEEP/REFINE: https://richiest.com/articles/dividend-etfs.html
+- KEEP/REFINE: https://richiest.com/articles/dividend-stocks.html
+- KEEP/REFINE: https://richiest.com/articles/doubleline-etfs.html
+- KEEP/REFINE: https://richiest.com/articles/dubai-financial-market.html
+- KEEP/REFINE: https://richiest.com/articles/etfs-closed-end-funds.html
+- KEEP/REFINE: https://richiest.com/articles/family-finance.html
+- KEEP/REFINE: https://richiest.com/articles/fidelity-investment-accounts.html
+- KEEP/REFINE: https://richiest.com/articles/finance-books.html
+- KEEP/REFINE: https://richiest.com/articles/financial-advisor-vs-financial-planner.html
+- KEEP/REFINE: https://richiest.com/articles/financial-samurai.html
+- KEEP/REFINE: https://richiest.com/articles/first-trust-etfs.html
