@@ -1,0 +1,315 @@
+/* Custom Colors */
+/* #F1F3F8, #D6E0F0, #8D93AB, #393B44 */
+
+
+/* base CSS */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+img {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+ul {
+    margin-left: 0;
+}
+
+ul li {
+    padding-top: 10px;
+}
+
+ol {
+    margin-left: 0;
+}
+
+ol li {
+    padding-top: 10px;
+}
+
+.btn {
+    margin-top: 15px;
+    background-color: #8D93AB;
+    color: white;
+}
+
+.container-1280 {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.container-1000 {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.dark-div {
+    background: #393B44;
+}
+
+section {
+    border-bottom: 1px solid #8D93AB;
+    margin-left: -15px;
+    margin-right: -15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+section:nth-child(odd) {
+    background-color: #f5f5f5;
+}
+
+.author-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+
+/* mobile CSS */
+@media (max-width: 768px) {
+    th {
+        height: 80px;
+    }
+
+    td {
+        height: 80px;
+    }
+
+    .table-container {
+        overflow-x: auto;
+        scrollbar-width: auto;
+    }
+}
+
+.mobile-indicator {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .mobile-indicator {
+        display: block;
+    }
+}
+
+/* nav CSS */
+.navbar {}
+
+.navbar-nav {}
+
+.navbar-brand {
+    margin-right: 50px;
+}
+
+.nav-item .dropdown-item {
+    white-space: normal;
+    overflow: hidden;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+/* tables CSS */
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-collapse: separate;
+    border-spacing: 4px;
+    background-color: #fff;
+    table-layout: auto;
+}
+
+table th {
+    background-color: #949C9F;
+    border-radius: 10px;
+    color: white;
+    height: 40px;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: normal;
+}
+
+table td {
+    border-radius: 10px;
+    background-color: #ffffff;
+    border: 1px solid #D5DADC;
+    padding: 10px;
+    vertical-align: middle;
+}
+
+.w-12 {
+    width: 12.5%;
+}
+
+.w-20 {
+    width: 20%;
+}
+
+.w-40 {
+    width: 40%;
+}
+
+.w-60 {
+    width: 60%;
+}
+
+tbody td:first-child {
+    background-color: #D5DADC;
+}
+
+table tbody tr td:hover {
+    background-color: #E8E8E8;
+}
+
+:target {
+    padding-top: 70px;
+    margin-top: -70px;
+}
+
+/* text CSS */
+p {
+    line-height: 1.4;
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0px;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 1.6em;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 1.5em;
+    padding-top: 20px;
+    margin: 0;
+}
+
+h3 {
+    font-size: 1.4em;
+    padding-left: 10px;
+    padding-top: 20px;
+    margin: 0;
+}
+
+.author-name {
+    font-size: 1.0em;
+    font-weight: 500;
+}
+
+.author-text {
+    color: #949C9F;
+    font-size: 0.8em;
+}
+
+.footer-link {
+    color: #ffffff;
+    font-size: 0.7em;
+}
+
+.security-link {
+    color: white;
+    text-decoration: none;
+}
+
+.security-link:target {
+    font-size: larger;
+    text-decoration: underline;
+}
+
+.blog-link {
+    font-size: 0.9em;
+    margin-bottom: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.blog-link:visited,
+.blog-link:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.list-group {
+    margin: 1px;
+    padding: 4px;
+}
+
+.list-group-item {
+    margin: 2px;
+    padding: 3px;
+}
+
+.button-fixed-bottom {
+    position: fixed;
+    bottom: 20px;
+    background: #393B44;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 10px;
+    z-index: 1000;
+    border: 2px solid white;
+}
+
+.button-fixed-bottom:visited,
+.button-fixed-bottom:hover {
+    color: white;
+}
+
+.toc-button {
+    left: 10px;
+}
+
+.up-arrow {
+    right: 10px;
+}
+
+.fixed-toc {
+    position: fixed;
+    bottom: 70px;
+    left: 10px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    padding: 3px;
+    z-index: 1000;
+    width: 275px;
+    display: block;
+    border: 1px solid #393B44;
+}
+
+@media (max-width: 768px) {
+    .fixed-toc {
+        position: fixed;
+        bottom: 70px;
+        left: 10px;
+        background-color: #f5f5f5;
+        border-radius: 5px;
+        padding: 3px;
+        z-index: 1000;
+        width: 0px;
+        display: none;
+        border: 1px solid #393B44;
+    }
+}

@@ -1,0 +1,19 @@
+/* nav CSS */
+.navbar {
+    padding-left: 0px;
+}
+
+.navbar-nav {
+    padding-left: 0px;
+}
+
+.navbar-brand {
+    margin-right: 50px;
+}
+
+.nav-item .dropdown-item {
+    white-space: normal;
+    overflow: hidden;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}

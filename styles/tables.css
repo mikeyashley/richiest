@@ -1,0 +1,41 @@
+/* tables CSS */
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    width: auto;
+    border-collapse: separate;
+    border-spacing: 8px;
+    background-color: #fff;
+    max-width: 100%;
+    table-layout: auto;
+}
+
+table th {
+    background-color: #949C9F;
+    border-radius: 10px;
+    color: white;
+    height: 40px;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: normal;
+}
+
+table td {
+    border-radius: 10px;
+    background-color: #ffffff;
+    border: 1px solid #D5DADC;
+    padding: 10px;
+    vertical-align: middle;
+}
+
+tbody td:first-child {
+    background-color: #D5DADC;
+}
+
+table tbody tr td:hover {
+    background-color: #E8E8E8;
+    /* Slightly different shade for noticeable effect */
+}

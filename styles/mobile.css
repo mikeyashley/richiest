@@ -1,0 +1,17 @@
+/* mobile CSS */
+@media (max-width: 768px) {
+    .table-container {
+        overflow-x: auto;
+        scrollbar-width: auto;
+    }
+}
+
+.mobile-indicator {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .mobile-indicator {
+        display: block;
+    }
+}

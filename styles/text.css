@@ -1,0 +1,83 @@
+/* text CSS */
+
+h1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.author-name {
+    font-size: 1.0em;
+    font-weight: 500;
+}
+
+.author-text {
+    color: #949C9F;
+    font-size: 0.8em;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.footer-link {
+    color: #ffffff;
+    font-size: 0.7em;
+    margin-bottom: 5px;
+}
+
+.security-link {
+    color: white;
+    text-decoration: none;
+}
+
+.security-link:target {
+    font-size: larger;
+    text-decoration: underline;
+}
+
+.blog-link {
+    font-size: 0.9em;
+    margin-bottom: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.blog-link:visited,
+.blog-link:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.list-group-item {
+    margin-bottom: 0px;
+}
+
+.text-success {
+    color: #8D93AB;
+}
+
+.author-info {
+    display: flex;
+    align-items: start;
+    margin-bottom: 20px;
+}
+
+
+.fixed-toc {
+    position: fixed;
+    top: 15%;
+    left: 15px;
+    width: 350px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    padding: 2px;
+    z-index: 1000;
+}

@@ -1,0 +1,136 @@
+/* Custom Colors */
+/* #F1F3F8, #D6E0F0, #8D93AB, #393B44 */
+
+
+/* General CSS */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+img {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+p {
+    text-align: justify;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+li {
+    margin-bottom: 10px;
+    /* Add vertical margin between list items */
+}
+
+h1 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+h2 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+h2 {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.dark-div {
+    background: #393B44;
+}
+
+.btn {
+    background-color: #8D93AB;
+    color: white;
+}
+
+.footer-link {
+    color: #ffffff;
+    font-size: 0.7em;
+    margin-bottom: 5px;
+}
+
+/* Style for the targeted section */
+.security-link:target {
+    font-size: larger;
+    text-decoration: underline;
+}
+
+
+.bg-dark {
+    background-color: #393B44;
+}
+
+.author-text {
+    color: #949C9F;
+    font-size: 0.8em;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.author-image-large {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+
+}
+
+.blog-link {
+    font-size: 0.9em;
+    margin-bottom: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.blog-link:visited,
+.blog-link:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.author-name {
+    font-size: 1.0em;
+    font-weight: 500;
+}
+
+#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #393B44;
+    width: 50px;
+    height: 50px;
+    display: none;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    /* White text color */
+    cursor: pointer;
+    border-radius: 10px;
+    z-index: 1000;
+}
+
+.section {
+    border-top: 1px solid #8D93AB;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.section:nth-child(even) {
+    background-color: #f5f5f5;
+}
+
+.section:nth-child(odd) {}
+
+.nav-item .dropdown-item {
+    color: white;
+    white-space: normal;
+    overflow: hidden;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}

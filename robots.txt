@@ -1,0 +1,19 @@
+User-agent: *
+Disallow: /private/
+Disallow: /temp/
+Disallow: /cgi-bin/
+Disallow: /images/
+Disallow: /scripts/
+Disallow: /shared/
+Disallow: /admin/
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+Disallow: /wp-content/plugins/
+Disallow: /wp-content/themes/
+Disallow: /wp-login.php
+Disallow: /checkout/
+Disallow: /cart/
+Disallow: /search/
+Allow: /images/public/
+Allow: /scripts/public/
+Sitemap:https://richiest.com/sitemap.xml

@@ -1,0 +1,53 @@
+<div class="row py-5 px-md-5 px-sm-1 align-items-center">
+    <div class="col-md-6 col-sm-12 text-white">
+        <h1><strong>Ready to Build Wealth?</strong></h1>
+        <p>Get dividend stock picks, research and news in your inbox each week.</p>
+    </div>
+    <div class="col-md-6 col-sm-12 text-white">
+        <form class="w-50 mx-auto" id="subscribeForm">
+            <div class="form-group">
+                <input type="text" id="name" class="form-control border border-white dark-div bg-dark text-white"
+                    placeholder="Name">
+            </div>
+            <div class="form-group">
+                <input type="email" id="email" class="form-control border border-white dark-div bg-dark text-white"
+                    placeholder="Email">
+            </div>
+            <button type="submit" class="btn w-100 bg-dark bg-dark border border-white text-white">Subscribe</button>
+            <div id="message" class="w-100 p-1 my-1 dark-div bg-dark text-white"></div>
+        </form>
+
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script>
+    const form = document.getElementById('subscribeForm');
+    const nameInput = document.getElementById('name');
+    const emailInput = document.getElementById('email');
+    const messageElement = document.getElementById('message');
+
+    form.addEventListener('submit', async (event) => {
+        event.preventDefault();
+
+        try {
+            const credentials = {
+                name: nameInput.value,
+                email: emailInput.value
+            };
+
+            const response = await axios.post('https://api.richiest.com/api/subscriber/subscribe', credentials);
+
+            // Clear the input fields
+            nameInput.value = '';
+            emailInput.value = '';
+
+            // Display success message
+            messageElement.textContent = 'Subscriber added successfully. Check your email for confirmation.';
+        } catch (error) {
+            // Display error message if needed
+            messageElement.textContent = 'An error occurred. Please try again later.';
+            console.error(error);
+        }
+    });
+</script>

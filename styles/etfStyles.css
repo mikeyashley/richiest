@@ -1,0 +1,816 @@
+/* Custom Colors */
+/* #F1F3F8, #D6E0F0, #8D93AB, #393B44 */
+
+/* base CSS */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #F1F3F8;
+    /* Lightest background */
+    color: #393B44;
+    /* Darkest text */
+    line-height: 1.6;
+    /* Improved global line height for readability */
+}
+
+a {
+    color: #8D93AB;
+    /* Medium grey for links */
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: #393B44;
+    /* Darker on hover */
+    text-decoration: underline;
+}
+
+img {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    max-width: 100%;
+    /* Ensure images are responsive */
+    height: auto;
+}
+
+ul {
+    margin-left: 20px;
+    /* Indent lists properly */
+    list-style-type: disc;
+}
+
+ul li {
+    padding-top: 8px;
+    /* Slightly less padding for tighter lists */
+    padding-bottom: 2px;
+}
+
+ol {
+    margin-left: 20px;
+}
+
+ol li {
+    padding-top: 8px;
+    padding-bottom: 2px;
+}
+
+section {
+    border-bottom: 1px solid #D6E0F0;
+    /* Lighter border for sections */
+    border-left: 5px solid #D6E0F0;
+    /* Subtle left border for visual depth */
+    margin-left: -15px;
+    /* Extend to edge of container for full width effect */
+    margin-right: -15px;
+    padding-left: 25px;
+    /* Increased padding to account for left border */
+    padding-right: 10px;
+    padding-top: 25px;
+    /* Increased padding for better separation */
+    padding-bottom: 25px;
+    /* Increased padding for better separation */
+    transition: background-color 0.3s ease;
+    /* Smooth transition for section background */
+}
+
+/* Specific section background colors for alternating effect */
+.section-white {
+    background-color: #FFFFFF;
+}
+
+.section-grey {
+    background-color: #F1F3F8;
+}
+
+.btn {
+    margin-top: 15px;
+    background-color: #8D93AB;
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    border-radius: 8px;
+    /* Slightly rounded buttons */
+}
+
+.btn:hover {
+    background-color: #6D7287;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Add shadow on hover */
+    color: white;
+}
+
+.chart {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.chart-container {
+    background-color: #FFFFFF;
+    border: 1px solid #D6E0F0;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.chart-container h4 {
+    margin-top: 0;
+    /* Remove top margin from h4 inside chart-container */
+    margin-bottom: 15px;
+    text-align: center;
+    color: #393B44;
+}
+
+.container-1280 {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+@media (max-width: 767.98px) {
+    .navbar-nav-scroll {
+        max-height: 350px;
+        overflow-y: auto;
+    }
+}
+
+.container-1000 {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.dark-div {
+    background: #393B44;
+    color: white;
+}
+
+.author-box {
+    display: flex;
+    /* Use flexbox for author info */
+    align-items: center;
+    /* Vertically center items */
+    padding-left: 10px;
+    /* Adjust padding for author box */
+    padding-right: 10px;
+}
+
+.author-image {
+    width: 70px;
+    /* Slightly smaller image */
+    height: 70px;
+    object-fit: cover;
+    border-radius: 50%;
+    /* Make it round */
+    margin-right: 15px;
+    /* Space between image and name */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for image */
+    border: 2px solid #D6E0F0;
+    /* Light border around image */
+}
+
+/* mobile CSS */
+@media (max-width: 768px) {
+    th {
+        height: 80px;
+    }
+
+    td {
+        height: 80px;
+    }
+
+    .table-container {
+        overflow-x: auto;
+        scrollbar-width: auto;
+    }
+
+    /* Adjust section padding for smaller screens */
+    section {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+.mobile-indicator {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .mobile-indicator {
+        display: block;
+        color: #8D93AB;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+}
+
+/* nav CSS */
+.navbar {}
+
+.navbar-nav {}
+
+.navbar-brand {
+    margin-right: 50px;
+}
+
+.nav-item .dropdown-item {
+    white-space: normal;
+    overflow: hidden;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+/* tables CSS */
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-collapse: separate;
+    border-spacing: 4px;
+    /* Space between cells */
+    min-width: 600px;
+    background-color: #fff;
+    table-layout: auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* Stronger shadow for tables */
+    border-radius: 10px;
+    overflow: hidden;
+    /* Ensures rounded corners are visible with shadows */
+}
+
+table th {
+    background-color: #8D93AB;
+    /* Your medium grey for headers */
+    border-radius: 8px;
+    color: white;
+    height: 40px;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: normal;
+    font-weight: 700;
+    /* Bold headers */
+    text-transform: uppercase;
+    /* Uppercase headers */
+    letter-spacing: 0.5px;
+}
+
+table td {
+    border-radius: 8px;
+    background-color: #ffffff;
+    border: 1px solid #D6E0F0;
+    /* Lighter border for cells */
+    padding: 12px;
+    /* Slightly more padding */
+    vertical-align: middle;
+    color: #393B44;
+}
+
+/* Removed specific width classes for table cells */
+/* .w-12, .w-17, .w-20, .w-25, .w-40, .w-50, .w-60, .w-75 are removed */
+
+tbody td:first-child {
+    background-color: #D6E0F0;
+    /* Your lighter grey for first column */
+    font-weight: 500;
+    /* Medium bold for first column */
+    color: #393B44;
+}
+
+table tbody tr td:hover {
+    background-color: #E0E7F5;
+    /* A slightly lighter shade of #D6E0F0 or a distinct hover color */
+    box-shadow: inset 0 0 0 2px #8D93AB;
+    /* Inner border shadow on hover */
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+:target {
+    padding-top: 70px;
+    margin-top: -70px;
+}
+
+/* text CSS */
+p {
+    line-height: 1.6;
+    padding-top: 5px;
+    /* Reduced paragraph top padding for tighter feel */
+    padding-bottom: 5px;
+    /* Reduced paragraph bottom padding */
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0px;
+    color: #393B44;
+}
+
+h1 {
+    font-weight: 700;
+    /* Stronger bold */
+    font-size: 2.8em;
+    /* Larger for prominence */
+    padding-top: 35px;
+    padding-bottom: 25px;
+    margin: 0;
+    color: #393B44;
+    line-height: 1.2;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 2.1em;
+    /* Larger */
+    padding-top: 30px;
+    padding-bottom: 15px;
+    margin: 0;
+    color: #393B44;
+    line-height: 1.3;
+}
+
+h3 {
+    padding-top: 20px;
+    font-size: 1.5em;
+    /* Larger */
+    margin: 0;
+    color: #393B44;
+    font-weight: 500;
+    /* Medium bold */
+}
+
+h4 {
+    font-size: 1.2em;
+    padding-top: 15px;
+    margin: 0;
+    color: #8D93AB;
+    font-weight: 500;
+}
+
+.author-name {
+    font-size: 1.1em;
+    font-weight: 500;
+    color: #8D93AB;
+}
+
+.author-text {
+    color: #8D93AB;
+    font-size: 0.8em;
+}
+
+.footer-link {
+    color: #ffffff;
+    font-size: 0.7em;
+}
+
+.security-link {
+    color: white;
+    text-decoration: none;
+}
+
+.security-link:target {
+    font-size: larger;
+    text-decoration: underline;
+}
+
+.blog-link {
+    font-size: 0.9em;
+    margin-bottom: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.blog-link:visited,
+.blog-link:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.list-group {}
+
+.list-group-item {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: #f8f9fa;
+    color: white;
+    border: 2px solid #393B44;
+}
+
+.author-info {
+    display: flex;
+    align-items: start;
+    margin-bottom: 20px;
+}
+
+.button-fixed-bottom {
+    position: fixed;
+    bottom: 20px;
+    background: #393B44;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 10px;
+    z-index: 1000;
+    border: 2px solid white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    /* Indicate it's clickable */
+}
+
+.button-fixed-bottom:visited,
+.button-fixed-bottom:hover {
+    color: white;
+    background-color: #4A4D57;
+    /* Slightly lighter dark on hover */
+}
+
+.toc-button {
+    left: 10px;
+}
+
+.up-arrow {
+    right: 10px;
+}
+
+.fixed-toc {
+    position: fixed;
+    bottom: 70px;
+    left: 10px;
+    background-color: #393B44;
+    /* Dark background for TOC */
+    color: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    /* Stronger shadow */
+    display: none;
+    width: 200px;
+    max-height: 70vh;
+    /* Limit height for long TOCs */
+    overflow-y: auto;
+    z-index: 999;
+    transition: width 0.3s ease, opacity 0.3s ease;
+    /* Smooth transition for width and opacity */
+    opacity: 0;
+    /* Start hidden for transition */
+}
+
+.fixed-toc.show {
+    /* Class to add when TOC is visible */
+    width: 200px;
+    opacity: 1;
+}
+
+/* TOC Menu Specifics */
+.toc-menu {
+    list-style: none;
+    /* Remove default bullet points */
+    padding: 0;
+    margin: 0;
+}
+
+.toc-menu li {
+    padding: 5px 0;
+}
+
+.toc-menu a {
+    color: #D6E0F0;
+    /* Lighter grey for TOC links */
+    text-decoration: none;
+    font-size: 0.95em;
+    display: block;
+    /* Make entire list item clickable */
+    padding: 5px;
+    border-radius: 5px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.toc-menu a:hover {
+    background-color: #8D93AB;
+    /* Highlight on hover */
+    color: white;
+    text-decoration: none;
+}
+
+
+/* New Styles for Article Template */
+
+/* Bottom Line Up Front Box */
+.summary-box {
+    background-color: #D6E0F0;
+    border: 1px solid #8D93AB;
+    border-left: 8px solid #393B44;
+    /* Thicker, darker bar on the left */
+    padding: 25px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    /* Slightly more rounded */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    /* More prominent shadow */
+    color: #393B44;
+}
+
+.summary-box h2 {
+    font-size: 1.6em;
+    color: #393B44;
+    padding-top: 0;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #8D93AB;
+    /* Underline for summary heading */
+    padding-bottom: 10px;
+}
+
+.summary-box p {
+    font-size: 1.15em;
+    /* Slightly larger text */
+    line-height: 1.7;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+/* Pros/Cons Table */
+.pros-cons-table th {
+    background-color: #8D93AB;
+    color: white;
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+.pros-cons-table td {
+    background-color: #FFFFFF;
+    border: 1px solid #D6E0F0;
+    padding: 15px;
+    /* Increased padding */
+    color: #393B44;
+    font-size: 1.05em;
+    /* Slightly larger text */
+}
+
+.pros-cons-table td:hover {
+    background-color: #E0E7F5;
+    box-shadow: inset 0 0 0 2px #393B44;
+    /* Darker, more pronounced inner border on hover */
+}
+
+.green-check {
+    color: #28a745;
+    margin-left: 8px;
+    /* More space */
+    font-size: 1.1em;
+    /* Larger icon */
+}
+
+.red-x {
+    color: #dc3545;
+    margin-left: 8px;
+    font-size: 1.1em;
+}
+
+/* Who Should Buy Personas */
+.persona-box {
+    background-color: #FFFFFF;
+    /* White background for persona boxes */
+    border: 1px solid #D6E0F0;
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+    /* More noticeable shadow */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.persona-box:hover {
+    transform: translateY(-5px);
+    /* Lift effect on hover */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+    /* Stronger shadow on hover */
+}
+
+.persona-box h3 {
+    color: #393B44;
+    font-size: 1.6em;
+    /* Larger heading */
+    margin-bottom: 15px;
+    padding-top: 0;
+    display: flex;
+    /* Align icon and text */
+    align-items: center;
+}
+
+.persona-box i.fas {
+    margin-right: 15px;
+    /* More space for icon */
+    color: #8D93AB;
+    font-size: 1.3em;
+    /* Larger icon */
+}
+
+/* ETF Comparison Table */
+.etf-comparison-table th {
+    background-color: #D6E0F0;
+    color: #393B44;
+    font-weight: 700;
+    font-size: 1.1em;
+    padding: 15px 10px;
+    /* Adjusted padding for better fit */
+}
+
+.etf-comparison-table td {
+    background-color: #FFFFFF;
+    border: 1px solid #F1F3F8;
+    padding: 15px 10px;
+    /* Adjusted padding for better fit */
+    color: #393B44;
+}
+
+.etf-comparison-table td:hover {
+    background-color: #E0E7F5;
+    box-shadow: inset 0 0 0 2px #8D93AB;
+}
+
+.small-text {
+    font-size: 0.9em;
+    color: #8D93AB;
+    padding: 0 10px;
+}
+
+.small-text-section p {
+    font-size: 0.95em;
+    color: #8D93AB;
+    padding: 10px;
+}
+
+/* Final Verdict Callout */
+.final-verdict-box {
+    background: linear-gradient(135deg, #D6E0F0, #F1F3F8);
+    border: 3px solid #8D93AB;
+    /* Thicker border */
+    padding: 40px;
+    /* More padding */
+    margin-top: 40px;
+    margin-bottom: 50px;
+    border-radius: 15px;
+    /* More rounded */
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    /* Stronger, softer shadow */
+    position: relative;
+    overflow: hidden;
+    /* Ensure gradient/shadows are contained */
+}
+
+.final-verdict-box::before {
+    /* Subtle background pattern/overlay */
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at top left, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+    opacity: 0.5;
+    z-index: 0;
+}
+
+.final-verdict-box h2 {
+    color: #393B44;
+    font-size: 2.2em;
+    /* Larger heading */
+    margin-bottom: 20px;
+    padding-top: 0;
+    position: relative;
+    /* Ensure text is above ::before */
+    z-index: 1;
+}
+
+.final-verdict-box p {
+    font-size: 1.25em;
+    /* Larger text */
+    line-height: 1.8;
+    padding: 0;
+    position: relative;
+    z-index: 1;
+}
+
+/* Collapsible Technical Details */
+.collapsible-container {
+    background-color: #FFFFFF;
+    /* White background for container */
+    border: 1px solid #D6E0F0;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.collapsible-header {
+    background-color: #8D93AB;
+    /* Medium grey for header */
+    background: linear-gradient(to right, #8D93AB, #D6E0F0);
+    /* Subtle gradient for header */
+    color: white;
+    padding: 18px 25px;
+    /* More padding */
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5em;
+    /* Larger font */
+    font-weight: 700;
+    border-bottom: 1px solid #6D7287;
+    transition: background-color 0.3s ease, background 0.3s ease;
+    /* Transition for gradient */
+    border-radius: 10px 10px 0 0;
+    /* Rounded top corners */
+}
+
+.collapsible-header:hover {
+    background: linear-gradient(to right, #6D7287, #8D93AB);
+    /* Darker gradient on hover */
+}
+
+.collapsible-header i.fas {
+    transition: transform 0.3s ease;
+    font-size: 0.8em;
+    /* Smaller icon to fit better */
+    color: #393B44;
+    /* Darker icon color */
+}
+
+.collapsible-content {
+    display: none;
+    padding: 20px 25px;
+    /* More padding */
+    background-color: #F1F3F8;
+    /* Lightest background for content */
+    color: #393B44;
+}
+
+.collapsible-content h3 {
+    padding-top: 10px;
+    margin-bottom: 15px;
+    font-size: 1.4em;
+    color: #393B44;
+}
+
+.collapsible-content h4 {
+    font-size: 1.1em;
+    color: #8D93AB;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.collapsible-content table th {
+    background-color: #D6E0F0;
+    color: #393B44;
+}
+
+.collapsible-content table td {
+    background-color: #FFFFFF;
+}
+
+/* External Link Icon Styling */
+.external-link {
+    display: inline-flex;
+    /* Align icon with text */
+    align-items: center;
+    color: #8D93AB;
+    /* Ensure these links are the correct color */
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.external-link:hover {
+    color: #393B44;
+    text-decoration: underline;
+}
+
+.external-link i.fas {
+    margin-left: 8px;
+    /* Space between text and icon */
+    font-size: 0.9em;
+    color: inherit;
+    /* Inherit color from parent link */
+    transition: color 0.2s ease;
+}
+
+/* Ensure footer links are white */
+.shared-footer a {
+    color: white;
+}
+
+.shared-footer a:hover {
+    color: #D6E0F0;
+}
