@@ -34,12 +34,64 @@
         section:nth-child(even) {
             background-color: #f5f5f5;
         }
+
+        .toc-button,
+        .up-arrow {
+            position: fixed;
+            right: 16px;
+            z-index: 1050;
+            border-radius: 999px;
+            border: 0;
+            color: #fff;
+            background: #343a40;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .toc-button {
+            bottom: 72px;
+            padding: 8px 14px;
+        }
+
+        .up-arrow {
+            bottom: 20px;
+            width: 42px;
+            height: 42px;
+        }
+
+        .fixed-toc {
+            display: none;
+            position: fixed;
+            right: 16px;
+            bottom: 120px;
+            max-width: 320px;
+            max-height: 60vh;
+            overflow: auto;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 12px;
+            z-index: 1049;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+        }
+
+        .toc-menu {
+            margin: 0;
+            padding-left: 18px;
+        }
+
+        .toc-menu li {
+            margin-bottom: 6px;
+        }
     </style>
 </head>
 
 <body>
     <div class="container-fluid">
-        <a href="#" id="return-to-top"><i class="fas fa-chevron-up"></i></a>
+        <button id="toggle-toc" class="btn toc-button">TOC</button>
+        <button id="return-to-top" class="btn up-arrow"><i class="fas fa-chevron-up"></i></button>
+        <div class="container fixed-toc" id="toc-list">
+            <div class="etf-nav"></div>
+        </div>
         <div class="row sticky-top">
             <div class="col">
                 <div class="row bg-white">
@@ -47,46 +99,6 @@
                         <div class="shared-nav">
                             <!-- This is where the shared nav will be loaded -->
                         </div>
-                    </div>
-                </div>
-                <div class="row bg-dark">
-                    <div class="col container-1280">
-                        <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
-                            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
-                                data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
-                                aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                                <ul class="navbar-nav ml-auto d-flex">
-                                    <li class="nav-item w-100 pl-0"><a class="nav-link pl-0"
-                                            href="#introduction">Introduction to 401k vs Stocks</a>
-                                    </li>
-                                    <li class="nav-item w-100"><a class="nav-link" href="#what">What is a 401(k)
-                                            Plan?</a></li>
-
-                                    <li class="nav-item w-100"><a class="nav-link" href="#stocks">What are Individual
-                                            Stocks?</a></li>
-                                    <li class="nav-item w-100"><a class="nav-link" href="#key">401(k) vs Stocks: Key
-                                            Differences</a> </li>
-                                    <li class="nav-item w-100"><a class="nav-link" href="#benefits">What are the
-                                            Benefits of Investing in Individual Stocks?</a> </li>
-                                    <li class="nav-item w-100"><a class="nav-link" href="#how">How Does a Brokerage
-                                            Account Differ from a 401(k) for Investing?</a> </li>
-                                    <li class="nav-item w-100"><a class="nav-link" href="#factors">What Factors Should I
-                                            Consider When Investing in Stocks for Retirement Planning?</a> </li>
-                                    <li class="nav-item w-100"><a class="nav-link" href="#funds">What are the
-                                            Differences Between Investing in Mutual Funds and Individual Stocks?</a>
-                                    </li>
-                                    <li class="nav-item w-100"><a class="nav-link" href="#advisor">How Can a Financial
-                                            Advisor Help with Retirement Savings and Investment Strategies?</a>
-                                    </li>
-
-                                    <li class="nav-item w-100"><a class="nav-link" href="#conclusion">Conclusion</a>
-                                    </li>
-                                    <li class="nav-item w-100"><a class="nav-link" href="#faqs">FAQs</a></li>
-                                </ul>
-                        </nav>
                     </div>
                 </div>
             </div>
@@ -449,20 +461,45 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
+        function generateTOC() {
+            const tocList = $('#toc-list .etf-nav');
+            tocList.empty();
+            const ul = $('<ul></ul>').addClass('toc-menu');
+
+            $('.container-1280 section').each(function () {
+                const sectionId = $(this).attr('id');
+                const h2 = $(this).find('h2:first');
+                if (sectionId && h2.length > 0) {
+                    const li = $('<li></li>');
+                    const a = $('<a></a>').attr('href', '#' + sectionId).text(h2.text().trim());
+                    li.append(a);
+                    ul.append(li);
+                }
+            });
+
+            tocList.append(ul);
+        }
+
         $(function () {
-            $(".shared-nav").load("/shared/nav.html");
+            $(".shared-nav").load("/shared/nav.html", generateTOC);
             $(".shared-subscribe").load("/shared/subscribe.html");
             $(".shared-articles").load("/shared/articleGroup1.html");
             $(".shared-footer").load("/shared/footer.html");
-        }); $(document).ready(function () {
-            // Scroll to top functionality
-            var mybutton = $('#return-to-top'); $(window).scroll(function () {
-                if ($(this).scrollTop() > 20) {
+            generateTOC();
+
+            $('#toggle-toc').click(function () {
+                $('.fixed-toc').toggle();
+            });
+
+            const mybutton = $('#return-to-top');
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 100) {
                     mybutton.fadeIn();
                 } else {
                     mybutton.fadeOut();
                 }
-            }); mybutton.click(function () {
+            });
+            mybutton.click(function () {
                 $('html, body').animate({ scrollTop: 0 }, 'slow');
                 return false;
             });
