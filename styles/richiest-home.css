@@ -21,6 +21,22 @@ h1, h2, h3, h4 { font-family: 'Playfair Display', serif; line-height: 1.15; marg
 p { margin: 0; }
 img { display: block; }
 
+/* Backward-compatible hero target for current index markup */
+.dark-div.py-5 {
+  background: var(--dark) !important;
+  position: relative;
+  overflow: hidden;
+}
+.dark-div.py-5::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle, rgba(141,147,171,0.18) 1px, transparent 1px);
+  background-size: 28px 28px;
+  pointer-events: none;
+}
+.dark-div.py-5 > * { position: relative; z-index: 1; }
+
 .container-1280 { max-width: 1280px; width: 100%; margin: 0 auto; padding: 0 24px; }
 
 .site-nav { position: sticky; top: 0; z-index: 100; background: var(--white); border-bottom: 1px solid #e2e5ec; }
