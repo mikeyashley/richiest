@@ -19,3 +19,4 @@ jobs:
           server-dir: ${{ secrets.FTP_PATH }}
           protocol: ftps
           port: 21
+          security: loose
