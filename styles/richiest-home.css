@@ -37,6 +37,21 @@ h4 {
   margin: 0;
 }
 
+/* Reset Bootstrap heading sizes for sections that define their own */
+.guides-section h2,
+.guides-section h3,
+.pillars h2,
+.pillars h3,
+.market-section h2,
+.news-section h2,
+.subscribe-section h2 {
+  font-size: inherit;
+}
+
+/* Card heading sizes - explicit, not inherited from Bootstrap */
+.card-featured-body h3 { font-size: 1.7rem; }
+.card-small-body h3 { font-size: 1.05rem; }
+
 p {
   margin: 0;
 }
