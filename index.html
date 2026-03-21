@@ -26,7 +26,7 @@
             href="/favicon-32x32.png"
         />
 
-        <!-- Fonts: Playfair Display for headings, DM Sans for body -->
+        <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -46,9 +46,8 @@
             crossorigin="anonymous"
         />
 
-        <!-- Shared Richiest style layer (home family) -->
-        <link rel="stylesheet" href="/styles/richiest-home.css?v=2" />
-        <!-- styles moved to /styles/richiest-home.css -->
+        <!-- Shared Richiest style layer -->
+        <link rel="stylesheet" href="/styles/richiest-home.css?v=3" />
 
         <!-- Structured Data -->
         <script type="application/ld+json">
@@ -77,14 +76,14 @@
     </head>
 
     <body>
-        <!-- ══ NAV (shared) ══════════════════════════════════════════════ -->
+        <!-- ══ NAV ══════════════════════════════════════════════════════════ -->
         <div class="site-nav">
             <div class="container-1280">
                 <div class="shared-nav"></div>
             </div>
         </div>
 
-        <!-- ══ HERO ══════════════════════════════════════════════════════ -->
+        <!-- ══ HERO ══════════════════════════════════════════════════════════ -->
         <div class="hero">
             <div class="container-1280">
                 <div class="hero-inner">
@@ -146,7 +145,7 @@
             </div>
         </div>
 
-        <!-- ══ THREE PILLARS ══════════════════════════════════════════════ -->
+        <!-- ══ THREE PILLARS ══════════════════════════════════════════════════ -->
         <div class="pillars" id="why-it-works">
             <div class="container-1280">
                 <div class="section-label">Why It Works</div>
@@ -195,58 +194,7 @@
             </div>
         </div>
 
-        <!-- ══ MARKET OVERVIEW ════════════════════════════════════════════ -->
-        <div class="market-section">
-            <div class="container-1280">
-                <div class="section-label">Market Pulse</div>
-                <h2 class="section-title">What the market's doing today</h2>
-                <p class="market-note">
-                    <i class="far fa-clock"></i> Glance at it, note the trend,
-                    get back to your life. Daily noise rarely affects your
-                    long-term strategy.
-                </p>
-
-                <div class="chart-frame">
-                    <script defer>
-                        if (typeof stockdio_events == "undefined") {
-                            stockdio_events = true;
-                            var stockdio_eventMethod = window.addEventListener
-                                ? "addEventListener"
-                                : "attachEvent";
-                            var stockdio_eventer = window[stockdio_eventMethod];
-                            var stockdio_messageEvent =
-                                stockdio_eventMethod == "attachEvent"
-                                    ? "onmessage"
-                                    : "message";
-                            stockdio_eventer(
-                                stockdio_messageEvent,
-                                function (e) {
-                                    if (
-                                        typeof e.data != "undefined" &&
-                                        typeof e.data.method != "undefined"
-                                    ) {
-                                        eval(e.data.method);
-                                    }
-                                },
-                                false,
-                            );
-                        }
-                    </script>
-                    <iframe
-                        id="st_04495ee4f1154f129eaf8e8746dfcf95"
-                        frameborder="0"
-                        scrolling="no"
-                        width="100%"
-                        height="220"
-                        loading="lazy"
-                        src="https://api.stockdio.com/visualization/financial/charts/v1/MarketOverviewChart?app-key=56D3070574784B10A0F80C4ABA40E68C&includeEquities=false&equities=AAPL;AMZN;BRK.A;FB;GOOGL;JNJ;JPM;MSFT;NVDA;TSLA&indices=WLX;SPXF;SPX;DJIF;DJI;RUT;RMZ;FTSE100;DAX;N225;&includeCommodities=false&includeCurrencies=false&listSeparation=1&palette=Financial-Light&title=Market%20Overview&width=100%25&chartHeight=200&showLogo=No&grayscaleLogo=true&onload=st_04495ee4f1154f129eaf8e8746dfcf95"
-                    >
-                    </iframe>
-                </div>
-            </div>
-        </div>
-
-        <!-- ══ GUIDES ══════════════════════════════════════════════════════ -->
+        <!-- ══ GUIDES ══════════════════════════════════════════════════════════ -->
         <div class="guides-section">
             <div class="container-1280">
                 <div class="guides-header">
@@ -460,7 +408,7 @@
             </div>
         </div>
 
-        <!-- ══ NEWS ════════════════════════════════════════════════════════ -->
+        <!-- ══ NEWS ════════════════════════════════════════════════════════════ -->
         <div class="news-section">
             <div class="container-1280">
                 <div class="section-label">Market News</div>
@@ -492,7 +440,7 @@
             </div>
         </div>
 
-        <!-- ══ SUBSCRIBE ══════════════════════════════════════════════════ -->
+        <!-- ══ SUBSCRIBE ══════════════════════════════════════════════════════ -->
         <div class="subscribe-section">
             <div class="container-1280">
                 <div class="subscribe-inner">
@@ -512,7 +460,7 @@
             </div>
         </div>
 
-        <!-- ══ FOOTER (shared + static fallback) ═════════════════════════ -->
+        <!-- ══ FOOTER ══════════════════════════════════════════════════════════ -->
         <div class="row dark-div" style="margin: 0">
             <div class="col container-1280">
                 <div class="shared-footer"></div>
@@ -605,7 +553,6 @@
         <script>
             $(function () {
                 $(".shared-nav").load("/shared/nav.html");
-                $(".shared-subscribe").load("/shared/subscribe.html");
                 $(".shared-footer").load("/shared/footer.html");
             });
 
