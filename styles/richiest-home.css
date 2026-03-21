@@ -380,6 +380,21 @@ img {
     font-weight: 300;
 }
 
+/* ── MARKET SECTION ──────────────────────────────────── */
+.market-section {
+    padding: 80px 0;
+    background: var(--white) !important;
+    border-top: 1px solid #e2e5ec;
+}
+
+.chart-frame {
+    margin-top: 28px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #e2e5ec;
+    background: white;
+}
+
 /* ── FEATURED GUIDES ─────────────────────────────────── */
 .guides-section {
     padding: 80px 0;
@@ -736,6 +751,7 @@ img {
 /* ── SECTION RESETS (Bootstrap interference) ─────────── */
 .hero,
 .pillars,
+.market-section,
 .guides-section,
 .news-section,
 .subscribe-section {
