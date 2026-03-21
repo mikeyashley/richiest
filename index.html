@@ -66,8 +66,11 @@
                 padding-right: 0 !important;
                 padding-top: 0 !important;
                 padding-bottom: 0 !important;
-                /*background-color: transparent !important;*/
             }
+            /* Explicit section backgrounds to prevent accidental transparent overrides */
+            .hero { background: var(--dark) !important; }
+            .subscribe-section { background: var(--dark) !important; }
+            .pillars, .market-section, .guides-section, .news-section { background: var(--white) !important; }
             /* styles.css sets h2 margin-top:20px, h3 padding, etc — reset for our layout */
             .hero h1,
             .hero h2,
