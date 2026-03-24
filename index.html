@@ -47,7 +47,7 @@
         />
 
         <!-- Shared Richiest style layer -->
-        <link rel="stylesheet" href="/styles/richiest-home.css?v=4" />
+        <link rel="stylesheet" href="/styles/richiest-home.css?v=5" />
 
         <!-- Structured Data -->
         <script type="application/ld+json">
@@ -198,10 +198,9 @@
         <div class="market-section">
             <div class="container-1280">
                 <div class="section-label">Market Pulse</div>
-                <h2 class="section-title">What the market's doing today</h2>
+                <h2 class="section-title">Market Snapshot</h2>
                 <p class="section-sub" style="margin-top: 8px">
-                    Glance at it, note the trend, get back to your life. Daily
-                    noise rarely affects your long-term strategy.
+                    Check the trend, note it, move on. Long-term investors don't trade on daily noise.
                 </p>
                 <div class="chart-frame">
                     <script
@@ -473,20 +472,20 @@
                         Get our best guides and market takeaways — in plain
                         English, once a week. No spam. Unsubscribe any time.
                     </p>
-                    <div class="subscribe-form">
-                        <input type="email" placeholder="your@email.com" />
-                        <button type="button">Subscribe Free</button>
+                    <div class="subscribe-form" id="subscribe-form">
+                        <input type="email" id="subscribe-email" placeholder="your@email.com" />
+                        <button type="button" id="subscribe-btn">Subscribe Free</button>
                     </div>
                 </div>
             </div>
         </div>
 
         <!-- ══ FOOTER ══════════════════════════════════════════════════════════ -->
-        <div class="row dark-div" style="margin: 0">
-            <div class="col container-1280">
+        <footer class="site-footer">
+            <div class="container-1280">
                 <div class="shared-footer"></div>
             </div>
-        </div>
+        </footer>
 
         <noscript>
             <footer class="site-footer">
@@ -587,6 +586,33 @@
                 $btn.click(function () {
                     $("html, body").animate({ scrollTop: 0 }, 500);
                     return false;
+                });
+            });
+        </script>
+
+        <script>
+            document.getElementById('subscribe-btn').addEventListener('click', function() {
+                var email = document.getElementById('subscribe-email').value;
+                if (!email || !email.includes('@')) {
+                    alert('Please enter a valid email address.');
+                    return;
+                }
+                var btn = this;
+                btn.textContent = 'Subscribing...';
+                btn.disabled = true;
+                fetch('https://api.richiest.com/api/subscriber/subscribe', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ email: email, name: '' })
+                })
+                .then(function(r) { return r.json(); })
+                .then(function(data) {
+                    document.getElementById('subscribe-form').innerHTML = '<p style="color:#4c9a6a; font-weight:600; font-size:1rem;">✅ You're in! Check your inbox to confirm.</p>';
+                })
+                .catch(function() {
+                    btn.textContent = 'Subscribe Free';
+                    btn.disabled = false;
+                    alert('Something went wrong. Please try again.');
                 });
             });
         </script>
