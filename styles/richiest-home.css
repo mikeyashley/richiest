@@ -142,8 +142,19 @@ img {
     position: sticky;
     top: 0;
     z-index: 100;
-    background: var(--white);
-    border-bottom: 1px solid #e2e5ec;
+    background: var(--dark);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Nav link colors on dark background */
+.site-nav .navbar-brand,
+.site-nav .nav-link,
+.site-nav .navbar-toggler-icon {
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+.site-nav .nav-link:hover,
+.site-nav .nav-link:focus {
+    color: var(--white) !important;
 }
 
 /* ── HERO ────────────────────────────────────────────── */
