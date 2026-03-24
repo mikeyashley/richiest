@@ -298,7 +298,6 @@ section {
 .summary-box {
   background-color: var(--mist);
   border: 1px solid var(--slate);
-  border-left: 8px solid var(--dark);
   padding: 25px;
   margin-top: 30px;
   margin-bottom: 40px;
