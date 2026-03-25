@@ -15,27 +15,84 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="/styles/richiest-etf.css?v=2">
+    <style>
+        .summary-box {
+            border-left: none;
+        }
+
+        .trust-box {
+            display: flex;
+            gap: 16px;
+            align-items: flex-start;
+            padding: 18px;
+            background: #ffffff;
+            border: 1px solid #e4e7ec;
+            border-radius: 12px;
+            margin-bottom: 18px;
+        }
+
+        .trust-box .author-image {
+            margin-top: 0;
+            margin-bottom: 0;
+            width: 72px;
+            min-width: 72px;
+            height: 72px;
+        }
+
+        .trust-meta,
+        .author-cred,
+        .page-note,
+        .methodology-note,
+        .page-disclosure {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: #667085;
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        .trust-links {
+            padding: 4px 0 0;
+        }
+
+        .trust-links a {
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 500;
+        }
+
+        .methodology-box {
+            background: #ffffff;
+            border: 1px solid #e4e7ec;
+            border-radius: 12px;
+            padding: 18px;
+            margin: 18px 0 24px;
+        }
+
+        .page-disclosure {
+            margin-top: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    </style>
 </head>
 
 <body>
     <div class="container-fluid">
         <button id="toggle-toc" class="btn button-fixed-bottom toc-button">TOC</button>
         <button id="return-to-top" class="btn button-fixed-bottom up-arrow"><i class="fas fa-chevron-up"></i></button>
-        <div class="container fixed-toc">
-            <div id="toc-list">
-                <div class="etf-nav"></div>
-            </div>
+        <div class="container fixed-toc" id="toc-list">
+            <div class="etf-nav"></div>
         </div>
         <div class="row sticky-top">
             <div class="col">
                 <div class="row bg-white border-bottom border-dark">
                     <div class="col container-1280">
                         <div class="shared-nav"></div>
-</div>
-
-                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
         <div class="etf-title-header">
             <div class="container container-1000">
                 <p class="etf-hero-eyebrow">Dividend ETFs</p>
@@ -46,15 +103,14 @@
         </div>
         <div class="row">
             <div class="col container-1000">
-                <section>
-                    <div class="row">
-                        <div class="col">
-                            <div class="col-md-6 col-sm-10 py-3 bg-white rounded">
-                                <img src="https://firebasestorage.googleapis.com/v0/b/makemoney-2eb29.appspot.com/o/AI%2Fauthor_MichaelAshley.jpg?alt=media&token=b98d7e8f-db82-4993-b39e-a5dc80cc7857"
-                                    alt="Author Image" class="author-image rounded">
-                                <span class="author-name">By Michael D Ashley</span>
-                            </div>
-
+                <section class="section-white" style="padding-top: 16px; padding-bottom: 16px;">
+                    <div class="trust-box">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/makemoney-2eb29.appspot.com/o/AI%2Fauthor_MichaelAshley.jpg?alt=media&token=b98d7e8f-db82-4993-b39e-a5dc80cc7857"
+                            alt="Michael Ashley" class="author-image rounded">
+                        <div>
+                            <span class="author-name">By <a href="/about.html">Michael Ashley</a></span>
+                            <p class="author-cred">Banking and asset-management professional with 20+ years of experience across retail banking, commercial banking, investment banking, and performance reporting.</p>
+                            <p class="trust-meta"><strong>Last updated:</strong> March 25, 2026</p>
                         </div>
                     </div>
                 </section>
@@ -65,6 +121,7 @@
                         <p><strong>Quick take:</strong> SPY is the world's most traded ETF — a battle-tested S&P 500 tracker preferred by traders and institutions alike.</p>
                         <p><strong>SPY (SPDR S&P 500 ETF Trust)</strong> was the first U.S. ETF, launched in 1993, and remains the most liquid equity ETF in the world. It tracks the same 500 large-cap U.S. companies as VOO and IVV, but its massive trading volume makes it the go-to choice for anyone who needs to move in and out of the market quickly.</p>
                     </div>
+                    <p class="page-disclosure" style="font-size: 0.85rem; margin-top: 12px;">This content is for informational and educational purposes only and is not personalized investment advice.</p>
                 </section>
 
                 <section id="overview" class="section-white">
@@ -248,19 +305,15 @@
                         the broader U.S. equity market.</p>
 
                 </section>
-                <section id="price">
+                <section id="price" class="section-grey">
                     <h2>SPY - Price / Yield</h2>
-                    <div class="chart">
-                        <script type="text/javascript"
-                            src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-info.js" async>
-                                {
-                                    "symbol": "AMEX:SPY",
-                                        "width": "100%",
-                                            "locale": "en",
-                                                "colorTheme": "light",
-                                                    "isTransparent": false
-                                }
-                            </script>
+                    <div class="chart-container">
+                        <h4>Current market snapshot</h4>
+                        <div class="chart">
+                            <script type="text/javascript"
+                                src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-info.js"
+                                async> { "symbol": "AMEX:SPY", "width": "100%", "locale": "en", "colorTheme": "light", "isTransparent": false } </script>
+                        </div>
                     </div>
                 </section>
                 <section id="holdings">
@@ -475,24 +528,29 @@
                     </div>
                 </section>
 
-                <section id="chart">
+                <section id="chart" class="section-grey">
                     <h2>SPY - Chart</h2>
-                    <div class="chart">
-                        <div class="tradingview-widget-container">
-                            <div class="tradingview-widget-container__widget"></div>
-                            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
-                            {
-                                "symbol": "AMEX:SPY",
-                                "interval": "W",
-                                "width": "100%",
-                                "height": 500,
-                                "colorTheme": "light",
-                                "isTransparent": false,
-                                "locale": "en"
-                            }
+                    <div class="chart-container">
+                        <h4>Price action over time</h4>
+                        <div class="chart">
+                            <script type="text/javascript"
+                                src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+                                {
+                                    "autosize": true,
+                                    "symbol": "AMEX:SPY",
+                                    "interval": "W",
+                                    "timezone": "America/New_York",
+                                    "theme": "light",
+                                    "style": "2",
+                                    "locale": "en",
+                                    "allow_symbol_change": false,
+                                    "calendar": false,
+                                    "support_host": "https://www.tradingview.com"
+                                }
                             </script>
                         </div>
-                    </section>
+                    </div>
+                </section>
                 <section id="comparative">
                     <h2>SPY - Comparative Analysis</h2>
                     <p class=""> Let's compare SPY with prominent competitors, focusing on key aspects like
@@ -682,42 +740,52 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
+        // Custom TOC Generation Function
+        function generateTOC() {
+            const tocList = $('#toc-list .etf-nav');
+            tocList.empty();
+            let ul = $('<ul></ul>').addClass('toc-menu');
+            $('section[id]').each(function () {
+                const sectionId = $(this).attr('id');
+                const h2 = $(this).find('h2:first');
+                if (h2.length > 0 && sectionId !== 'disclaimer') {
+                    const li = $('<li></li>');
+                    const a = $('<a></a>').attr('href', '#' + sectionId).text(h2.text());
+                    li.append(a);
+                    ul.append(li);
+                }
+            });
+            tocList.append(ul);
+        }
+
         $(function () {
             $(".shared-nav").load("/shared/nav.html");
-            $(".etf-nav").load("/shared/etfnav2.html");
             $(".shared-subscribe").load("/shared/subscribe.html");
             $(".shared-banner").load("/shared/banner.html");
             $(".shared-articles").load("/shared/technologyStocks.html");
             $(".shared-footer").load("/shared/footer.html");
-        });
-        $(document).ready(function () {
+
+            generateTOC();
+
             $("#toggle-toc").click(function () {
-                var tocList = $("#toc-list");
                 var fixedToc = $(".fixed-toc");
-                if (tocList.is(":visible")) {
-                    tocList.hide();
-                    fixedToc.css({ "width": "0px", "display": "none" });
+                if (fixedToc.is(":visible")) {
+                    fixedToc.removeClass("show");
+                    fixedToc.hide();
                 } else {
-                    fixedToc.css({ "width": "200px", "display": "block" });
-                    tocList.show();
+                    fixedToc.show();
+                    fixedToc.addClass("show");
                 }
             });
-        });
 
-        $(document).ready(function () {
-            $('.carousel').carousel();
-
-            // Scroll to top functionality
             var mybutton = $('#return-to-top');
-
             $(window).scroll(function () {
-                if ($(this).scrollTop() > 20) {
+                if ($(this).scrollTop() > 100) {
                     mybutton.fadeIn();
                 } else {
                     mybutton.fadeOut();
                 }
             });
-
             mybutton.click(function () {
                 $('html, body').animate({ scrollTop: 0 }, 'slow');
                 return false;
