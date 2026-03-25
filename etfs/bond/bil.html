@@ -17,6 +17,52 @@
         .summary-box {
             border-left: none;
         }
+
+        .trust-box {
+            display: flex;
+            gap: 16px;
+            align-items: flex-start;
+            padding: 18px;
+            background: #ffffff;
+            border: 1px solid #e4e7ec;
+            border-radius: 12px;
+            margin-bottom: 18px;
+        }
+
+        .trust-box .author-image {
+            margin-top: 0;
+            width: 72px;
+            min-width: 72px;
+        }
+
+        .trust-meta,
+        .author-cred,
+        .page-note,
+        .methodology-note {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: #667085;
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        .trust-links {
+            padding: 4px 0 0;
+        }
+
+        .trust-links a {
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 500;
+        }
+
+        .methodology-box {
+            background: #ffffff;
+            border: 1px solid #e4e7ec;
+            border-radius: 12px;
+            padding: 18px;
+            margin: 18px 0 24px;
+        }
     </style>
 </head>
 
@@ -46,13 +92,15 @@
         <div class="row">
             <div class="col container-1000">
                 <section class="section-white">
-                    <div class="row">
-                        <div class="col">
-                            <div class="col-md-6 col-sm-10 py-3 bg-white rounded author-box">
-                                <img src="https://firebasestorage.googleapis.com/v0/b/makemoney-2eb29.appspot.com/o/AI%2Fauthor_MichaelAshley.jpg?alt=media&token=b98d7e8f-db82-4993-b39e-a5dc80cc7857"
-                                    alt="Author Image" class="author-image rounded">
-                                <span class="author-name">By Michael D Ashley</span>
-                            </div>
+                    <div class="trust-box">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/makemoney-2eb29.appspot.com/o/AI%2Fauthor_MichaelAshley.jpg?alt=media&token=b98d7e8f-db82-4993-b39e-a5dc80cc7857"
+                            alt="Michael Ashley" class="author-image rounded">
+                        <div>
+                            <span class="author-name">By Michael Ashley</span>
+                            <p class="author-cred">Banking and asset-management professional with 20+ years of experience across retail banking, commercial banking, investment banking, and performance reporting.</p>
+                            <p class="trust-meta"><strong>Last updated:</strong> March 25, 2026</p>
+                            <p class="page-note">This content is for informational and educational purposes only and is not personalized investment advice.</p>
+                            <p class="trust-links"><a href="/about.html">About Michael Ashley</a></p>
                         </div>
                     </div>
                 </section>
@@ -84,6 +132,10 @@
                     </ul>
                     <p>BIL is managed by <strong>State Street Global Advisors (SSGA)</strong>, one of the largest ETF
                         sponsors in the market.</p>
+
+                    <div class="methodology-box">
+                        <p class="methodology-note"><strong>Methodology note:</strong> This review combines sponsor materials, public fund documents, market data, and editorial analysis. Holdings, yields, expense ratios, and distributions can change over time, so verify current details with the fund sponsor before making decisions.</p>
+                    </div>
 
                     <div class="table-container text-center mb-4">
                         <table class="etf-table">
