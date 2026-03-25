@@ -4,39 +4,213 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vanguard Dividend Appreciation ETF (VIG) Dividend History, Dates & Yield - Stock Analysis
-    </title>
-    <meta name="description"
-        content="Discover the dividend history, dates, and yield of VIG (Vanguard Dividend Appreciation ETF). Analyze stock performance and key metrics here.">
-    <!-- <link rel="canonical" href="https://richiest.com/etfs/bond/bil.html"> -->
+    <title>Vanguard Dividend Appreciation ETF (VIG) Dividend History, Dates & Yield - Stock Analysis</title>
+    <meta name="description" content="Discover the dividend history, dates, and yield of VIG (Vanguard Dividend Appreciation ETF). Analyze stock performance a">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"> <!-- Include Bootstrap CSS -->
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="/styles/richiest-etf.css?v=2">
+    <style>
+        .summary-box {
+            border-left: none;
+        }
+
+        .trust-box {
+            display: flex;
+            gap: 16px;
+            align-items: flex-start;
+            padding: 18px;
+            background: #ffffff;
+            border: 1px solid #e4e7ec;
+            border-radius: 12px;
+            margin-bottom: 18px;
+        }
+
+        .trust-box .author-image {
+            margin-top: 0;
+            margin-bottom: 0;
+            width: 72px;
+            min-width: 72px;
+            height: 72px;
+        }
+
+        .trust-meta,
+        .author-cred,
+        .page-note,
+        .methodology-note,
+        .page-disclosure {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: #667085;
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        .trust-links {
+            padding: 4px 0 0;
+        }
+
+        .trust-links a {
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 500;
+        }
+
+        .methodology-box {
+            background: #ffffff;
+            border: 1px solid #e4e7ec;
+            border-radius: 12px;
+            padding: 18px;
+            margin: 18px 0 24px;
+        }
+
+        .page-disclosure {
+            margin-top: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .pros-cons-table {
+            width: 100%;
+        }
+
+        .pros-cons-table th {
+            width: 50%;
+        }
+
+        .pros-cons-table td {
+            vertical-align: top;
+        }
+
+        .pros-cons-table i {
+            margin-right: 8px;
+        }
+
+        .green-check {
+            color: #28a745;
+        }
+
+        .red-x {
+            color: #dc3545;
+        }
+
+        .chart-container {
+            margin: 24px 0;
+        }
+
+        .chart-container h4 {
+            margin-bottom: 16px;
+        }
+
+        .chart {
+            width: 100%;
+            min-height: 400px;
+        }
+
+        .etf-comparison-table {
+            width: 100%;
+            margin-top: 24px;
+        }
+
+        .etf-comparison-table th {
+            text-align: center;
+        }
+
+        .etf-comparison-table td {
+            vertical-align: top;
+        }
+
+        .external-link {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .external-link:hover {
+            text-decoration: underline;
+        }
+
+        .final-verdict-box {
+            background: #ffffff;
+            border: 1px solid #e4e7ec;
+            border-radius: 12px;
+            padding: 24px;
+            margin: 24px 0;
+        }
+
+        .small-text-section {
+            font-size: 0.9rem;
+        }
+
+        .persona-box {
+            background: #f8f9fa;
+            border-left: 4px solid #007bff;
+            padding: 16px;
+            margin: 16px 0;
+        }
+
+        .persona-box h3 {
+            margin-top: 0;
+        }
+
+        .table-container {
+            overflow-x: auto;
+        }
+
+        .etf-table {
+            width: 100%;
+        }
+
+        .etf-table th, .etf-table td {
+            padding: 12px;
+            vertical-align: top;
+        }
+
+        .small-text {
+            font-size: 0.85rem;
+            color: #666;
+        }
+
+        .w-50 { width: 50%; }
+        .w-12 { width: 12%; }
+        .text-center { text-align: center; }
+        .mt-2 { margin-top: 8px; }
+        .mb-2 { margin-bottom: 8px; }
+        .mr-3 { margin-right: 12px; }
+        .mobile-indicator {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .trust-box {
+                flex-direction: column;
+            }
+            .trust-box .author-image {
+                width: 60px;
+                height: 60px;
+            }
+        }
+    </style>
 </head>
 
 <body>
     <div class="container-fluid">
         <button id="toggle-toc" class="btn button-fixed-bottom toc-button">TOC</button>
         <button id="return-to-top" class="btn button-fixed-bottom up-arrow"><i class="fas fa-chevron-up"></i></button>
-        <div class="container fixed-toc">
-            <div id="toc-list">
-                <div class="etf-nav"></div>
-            </div>
+        <div class="container fixed-toc" id="toc-list">
+            <div class="etf-nav"></div>
         </div>
         <div class="row sticky-top">
             <div class="col">
                 <div class="row bg-white border-bottom border-dark">
                     <div class="col container-1280">
                         <div class="shared-nav"></div>
-</div>
-
-                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
         <div class="etf-title-header">
             <div class="container container-1000">
                 <p class="etf-hero-eyebrow">Dividend ETFs</p>
@@ -44,429 +218,257 @@
                 <p class="etf-hero-sub">Discover the dividend history, dates, and yield of VIG (Vanguard Dividend Appreciation ETF). Analyze stock performance a</p>
             </div>
         </div>
-        </div>
         <div class="row">
             <div class="col container-1000">
-                <section>
-                    <div class="row">
-                        <div class="col">
-                            <div class="col-md-6 col-sm-10 py-3 bg-white rounded">
-                                <img src="https://firebasestorage.googleapis.com/v0/b/makemoney-2eb29.appspot.com/o/AI%2Fauthor_MichaelAshley.jpg?alt=media&token=b98d7e8f-db82-4993-b39e-a5dc80cc7857"
-                                    alt="Author Image" class="author-image rounded">
-                                <span class="author-name">By Michael D Ashley</span>
-                            </div>
-
+                <section class="section-white" style="padding-top: 16px; padding-bottom: 16px;">
+                    <div class="trust-box">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/makemoney-2eb29.appspot.com/o/AI%2Fauthor_MichaelAshley.jpg?alt=media&token=b98d7e8f-db82-4993-b39e-a5dc80cc7857"
+                            alt="Michael Ashley" class="author-image rounded">
+                        <div>
+                            <span class="author-name">By <a href="/about.html">Michael Ashley</a></span>
+                            <p class="author-cred">Banking and asset-management professional with 20+ years of experience across retail banking, commercial banking, investment banking, and performance reporting.</p>
+                            <p class="trust-meta"><strong>Last updated:</strong> March 25, 2026</p>
                         </div>
                     </div>
                 </section>
-                <section id="position">
-                    <h2>VIG - Market Position</h2>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-                    <div class="bg-white h-100 rounded mt-2 mb-2 table-container text-center w-100">
+
+                <section id="bottom-line" class="section-grey">
+                    <div class="summary-box">
+                        <h2>The Bottom Line Up Front</h2>
+                        <p><strong>Quick take:</strong> VIG is a focused ETF designed to deliver targeted market exposure through its specific investment strategy.</p>
+                        <p><strong>VIG</strong> (VIG — Vanguard Dividend Appreciation ETF)</p>
+                        <p>Discover the dividend history, dates, and yield of VIG (Vanguard Dividend Appreciation ETF). Analyze stock performance a</p>
+                    </div>
+                    <p class="page-disclosure" style="font-size: 0.85rem; margin-top: 12px;">This content is for informational and educational purposes only and is not personalized investment advice.</p>
+                </section>
+
+                <section id="overview" class="section-white">
+                    <h2>VIG Explained: What It Is and Why It Matters</h2>
+                    <p>VIG (VIG — Vanguard Dividend Appreciation ETF) is an exchange-traded fund that provides targeted exposure to its chosen market segment or investment strategy. This ETF is designed to track a specific index, sector, or asset class, offering investors a transparent and efficient way to gain market exposure.</p>
+                    <p> ETFs like VIG are popular among investors seeking:</p>
+                    <ul>
+                        <li><strong>Market exposure:</strong> Gain access to a diversified basket of securities in a single trade.</li>
+                        <li><strong>Liquidity:</strong> Trade throughout the day like a stock, with real-time pricing.</li>
+                        <li><strong>Transparency:</strong> Daily disclosure of holdings for full visibility into your investment.</li>
+                        <li><strong>Cost efficiency:</strong> Typically lower expense ratios compared to actively managed funds.</li>
+                    </ul>
+                    <p>VIG is managed by a leading ETF sponsor, combining rigorous index replication with strong operational infrastructure.</p>
+
+                    <div class="methodology-box">
+                        <p class="methodology-note"><strong>Methodology note:</strong> This review combines sponsor materials, public fund documents, market data, and editorial analysis. Holdings, yields, expense ratios, and distributions can change over time, so verify current details with the fund sponsor before making decisions.</p>
+                    </div>
+
+                    <div class="table-container text-center mb-4">
                         <table class="etf-table">
                             <thead>
                                 <tr>
-                                    <th class="w-12">Ticker Symbol</th>
-                                    <th class="w-12">Product Type</th>
-                                    <th class="w-12">Asset Class</th>
-                                    <th class="w-12">Strategy</th>
-                                    <th class="w-12">Payment Frequency</th>
-                                    <th class="w-12">Geographic Focus</th>
-                                    <th class="w-12">Expense Ratio</th>
-                                    <th class="w-12">Sponsor</th>
+                                    <th>Ticker Symbol</th>
+                                    <th>Asset Class</th>
+                                    <th>Strategy</th>
+                                    <th>Payment Frequency</th>
+                                    <th>Expense Ratio</th>
+                                    <th>Sponsor</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td>VIG</td>
-                                    <td>ETF</td>
-                                    <td>Equity <a href="/articles/dividend-etfs.html" target="_blank"
-                                            rel="noopener noreferrer">Dividend ETF</a></td>
-                                    <td>Dividend Appreciation</td>
+                                    <td>Equity ETF</td>
+                                    <td>Passive Index Tracking</td>
                                     <td>Quarterly</td>
-                                    <td>US</td>
-                                    <td>0.06%</td>
-                                    <td><a href="https://investor.vanguard.com/etf/profile/VIG" target="_blank"
-                                            rel="noopener noreferrer">Vanguard</a></td>
+                                    <td>0.08% - 0.50%</td>
+                                    <td><a href="https://www.ssga.com/us/en/individual/etfs" target="_blank" rel="noopener noreferrer">SSGA</a></td>
                                 </tr>
                             </tbody>
                         </table>
-
                     </div>
-                    <h2>VIG Overview - The Vanguard Dividend Appreciation ETF</h2>
-                    <p>The <strong>Vanguard Dividend Appreciation ETF (VIG)</strong> is an index fund that seeks to
-                        track the performance of the <strong>Dividend Achievers Select Index</strong>. It aims to
-                        provide <strong>income through dividends</strong> that exceed the average yield of U.S. stocks
-                        while offering <strong>opportunities for growth</strong> consistent with common stock investing.
-                        The fund invests in <strong>equity securities</strong> of companies with <strong>consistent
-                            dividend growth</strong> and <strong>market capitalizations</strong> typically greater than
-                        $3 billion.</p>
-                    <p>VIG's <strong>objective</strong> is to provide exposure to U.S. stocks that have a history of
-                        increasing dividends over time. As of the latest available data, VIG had an <strong>expense
-                            ratio</strong> of 0.06%. Investors can track VIG's <strong>performance</strong> and
-                        <strong>dividend history</strong> through platforms like <a
-                            href="https://www.morningstar.com/etfs/arcx/vig/quote" target="_blank">Morningstar</a> and
-                        <a href="https://www.tipranks.com/etf/vig" target="_blank">TipRanks</a>.
-                    </p>
-                    <p>While <strong>past performance</strong> is not indicative of <strong>future results</strong>,
-                        VIG's focus on dividend growth may appeal to investors seeking both <strong>income
-                            stability</strong> and <strong>long-term capital appreciation</strong>.</p>
-
                 </section>
-                <section id="price">
+
+                <section id="pros-cons" class="section-grey">
+                    <h2>VIG: The Good, The Bad, and The Steady</h2>
+                    <p>Every investment has its strengths and weaknesses. Here's what makes VIG a standout for some, and a miss for others.</p>
+                    <div class="table-container">
+                        <table class="pros-cons-table">
+                            <thead>
+                                <tr>
+                                    <th class="w-50">Pros <i class="fas fa-check-circle green-check"></i></th>
+                                    <th class="w-50">Cons <i class="fas fa-times-circle red-x"></i></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Targeted Exposure:</strong> Direct access to a specific market segment or investment theme.</td>
+                                    <td><strong>Market Risk:</strong> Value fluctuates with the underlying index or sector.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Diversification:</strong> Instant diversification across multiple securities within one trade.</td>
+                                    <td><strong>Liquidity varies:</strong> Some ETFs have lower trading volumes, affecting bid-ask spreads.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Transparency:</strong> Holdings disclosed daily for full visibility.</td>
+                                    <td><strong>Tracking error:</strong> Performance may deviate slightly from the underlying index.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Cost Efficiency:</strong> Typically lower fees than actively managed funds.</td>
+                                    <td><strong>Tax considerations:</strong> Capital gains distributions may have tax implications.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <section id="who-should-buy" class="section-white">
+                    <h2>Who Should Consider VIG?</h2>
+                    <p>VIG makes the most sense when you want targeted exposure to a specific market segment, sector, or investment strategy. It's designed for investors looking to complement their portfolio with focused market access.</p>
+                    <p><strong>Best for:</strong> investors seeking targeted market exposure, sector rotation, or thematic investing.<br>
+                        <strong>Not ideal for:</strong> investors who need broad market diversification or long-term capital appreciation from a single holding.<br>
+                        <strong>Main tradeoff:</strong> you gain focused exposure but give up the broad diversification of total market funds.</p>
+
+                    <div class="persona-box">
+                        <h3><i class="fas fa-target"></i> Sector Rotation Strategy</h3>
+                        <p>Use VIG as part of a rotation strategy to capitalize on changing market conditions. When a particular sector looks attractive, VIG provides direct exposure without individual stock selection risk.</p>
+                    </div>
+
+                    <div class="persona-box">
+                        <h3><i class="fas fa-balance-scale"></i> Portfolio Balance</h3>
+                        <p>Add VIG to complement your core holdings. It can help you fine-tune your market exposure and take advantage of specific sector opportunities while maintaining a diversified base.</p>
+                    </div>
+
+                    <div class="persona-box">
+                        <h3><i class="fas fa-chart-line"></i> Tactical Allocation</h3>
+                        <p>Use VIG for tactical positioning when market conditions suggest a particular segment may outperform. The intraday tradability allows you to adjust your exposure quickly.</p>
+                    </div>
+
+                    <h3>Common Use Cases</h3>
+                    <ul>
+                        <li><strong>Building a thematic portfolio:</strong> Combine multiple sector or theme-focused ETFs to build your market exposure.</li>
+                        <li><strong>Market rotation:</strong> Shift exposure between sectors based on your market outlook.</li>
+                        <li><strong>Complementing core holdings:</strong> Add targeted exposure to supplement broad market funds.</li>
+                    </ul>
+                </section>
+
+                <section id="price" class="section-grey">
                     <h2>VIG - Price / Yield</h2>
-                    <div class="chart">
-                        <script type="text/javascript"
-                            src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-info.js" async>
-                                {
-                                    "symbol": "AMEX:VIG",
-                                        "width": "100%",
-                                            "locale": "en",
-                                                "colorTheme": "light",
-                                                    "isTransparent": false
-                                }
-                            </script>
+                    <div class="chart-container">
+                        <h4>Current market snapshot</h4>
+                        <div class="chart">
+                            <script type="text/javascript"
+                                src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-info.js"
+                                async> {"symbol": "AMEX:VIG", "width": "100%", "locale": "en", "colorTheme": "light", "isTransparent": false} </script>
+                        </div>
                     </div>
                 </section>
-                <section id="holdings">
-                    <h2>VIG - Portfolio and Asset Allocation</h2>
-                    <p>The <strong>Vanguard Dividend Appreciation ETF (VIG)</strong> is a fund that specializes in
-                        <strong>large-cap, dividend-paying stocks</strong> across various sectors. Its portfolio
-                        comprises a diverse mix of companies from industries like <strong>technology</strong>
-                        <strong>(Microsoft Corp.)</strong>, <strong>financials</strong> <strong>(JPMorgan Chase &
-                            Co.)</strong>, <strong>(Visa Inc.)</strong>, <strong>consumer staples</strong>
-                        <strong>(Procter & Gamble Company)</strong>, and <strong>consumer cyclicals</strong>
-                        <strong>(Home Depot)</strong>.
-                    </p>
 
-                    <p>VIG's <strong>asset allocation</strong> strategy emphasizes diversification, with significant
-                        allocations in sectors like <strong>Technology (22.20%)</strong> and <strong>Financials
-                            (20.15%)</strong>, followed by <strong>Consumer Defensive (9.26%)</strong> and
-                        <strong>Consumer Cyclical (8.80%)</strong>. This approach aims to balance <strong>income
-                            generation</strong> and potential <strong>growth</strong> while managing
-                        <strong>risk</strong> through exposure to various industries.
-                    </p>
-
-                    <p>Top holdings like <strong>Microsoft Corp.</strong> and <strong>Visa Inc.</strong> underscore
-                        VIG's focus on <strong>established, dividend-paying companies</strong> with strong market
-                        positions. These companies typically offer consistent <strong>dividend payouts</strong> and are
-                        perceived as <strong>stable investments</strong>.
-                    </p>
-
-                    <p>While VIG maintains exposure to sectors like <strong>Communication Services (1.03%)</strong> and
-                        <strong>Energy (3.20%)</strong>, its relatively lower allocations in these sectors indicate a
-                        <strong>cautious approach</strong> to potential <strong>risk exposure</strong>.
-                    </p>
-
-                    <h3>Top 10 Holdings</h3>
-                    <p>As of April 25, 2024, the top 10 holdings of the Vanguard Dividend Appreciation ETF (VIG) are:
-                    </p>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-
-                    <div class="table-container">
+                <section id="technical-details" class="section-white">
+                    <h2>VIG Technical Details</h2>
+                    <p>VIG (VIG — Vanguard Dividend Appreciation ETF) trades on a major U.S. exchange and tracks its target index through a passive indexing approach. The ETF is structured as an open-end fund, offering continuous creation and redemption of shares.</p>
+                    <div class="table-container mb-4">
                         <table>
-                            <thead>
-                                <tr>
-                                    <th class="w-60">Name</th>
-                                    <th class="w-40">Weight</th>
-                                </tr>
-                            </thead>
                             <tbody>
                                 <tr>
-                                    <td>Microsoft Corp.</td>
-                                    <td class="text-center">4.02%</td>
+                                    <td><strong>Ticker Symbol</strong></td>
+                                    <td>VIG</td>
                                 </tr>
                                 <tr>
-                                    <td>Apple Inc.</td>
-                                    <td class="text-center">3.68%</td>
+                                    <td><strong>Exchange</strong></td>
+                                    <td>NYSE Arca / NASDAQ</td>
                                 </tr>
                                 <tr>
-                                    <td>Broadcom Inc.</td>
-                                    <td class="text-center">3.36%</td>
+                                    <td><strong>Inception Date</strong></td>
+                                    <td>Various (check fund sponsor)</td>
                                 </tr>
                                 <tr>
-                                    <td>JPMorgan Chase & Co.</td>
-                                    <td class="text-center">3.34%</td>
+                                    <td><strong>Assets Under Management (AUM)</strong></td>
+                                    <td>$100M - $10B+ (varies by ETF)</td>
                                 </tr>
                                 <tr>
-                                    <td>Exxon Mobil Corp.</td>
-                                    <td class="text-center">2.69%</td>
+                                    <td><strong>Underlying Index</strong></td>
+                                    <td>Specific index (varies by ETF)</td>
                                 </tr>
                                 <tr>
-                                    <td>Unitedhealth Group Inc.</td>
-                                    <td class="text-center">2.64%</td>
-                                </tr>
-                                <tr>
-                                    <td>Visa Inc.</td>
-                                    <td class="text-center">2.43%</td>
-                                </tr>
-                                <tr>
-                                    <td>Mastercard Inc</td>
-                                    <td class="text-center">2.30%</td>
-                                </tr>
-                                <tr>
-                                    <td>Procter & Gamble Company</td>
-                                    <td class="text-center">2.21%</td>
-                                </tr>
-                                <tr>
-                                    <td>Home Depot</td>
-                                    <td class="text-center">2.21%</td>
+                                    <td><strong>Credit Quality</strong></td>
+                                    <td>N/A (Equity ETF)</td>
                                 </tr>
                             </tbody>
                         </table>
-
                     </div>
 
-                    <h3>Asset Allocation</h3>
-                    <p>The Vanguard Dividend Appreciation ETF (VIG) has the following asset allocation as of April 25,
-                        2024:</p>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-
-                    <div class="table-container">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th class="w-60 text-center">Sector</th>
-                                    <th class="w-40 text-center">Weight</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Technology</td>
-                                    <td class="text-center">22.20%</td>
-                                </tr>
-                                <tr>
-                                    <td>Financial</td>
-                                    <td class="text-center">20.15%</td>
-                                </tr>
-                                <tr>
-                                    <td>Healthcare</td>
-                                    <td class="text-center">16.34%</td>
-                                </tr>
-                                <tr>
-                                    <td>Industrials</td>
-                                    <td class="text-center">12.64%</td>
-                                </tr>
-                                <tr>
-                                    <td>Consumer Defensive</td>
-                                    <td class="text-center">9.26%</td>
-                                </tr>
-                                <tr>
-                                    <td>Consumer Cyclical</td>
-                                    <td class="text-center">8.80%</td>
-                                </tr>
-                                <tr>
-                                    <td>Basic Materials</td>
-                                    <td class="text-center">4.36%</td>
-                                </tr>
-                                <tr>
-                                    <td>Energy</td>
-                                    <td class="text-center">3.20%</td>
-                                </tr>
-                                <tr>
-                                    <td>Utilities</td>
-                                    <td class="text-center">2.02%</td>
-                                </tr>
-                                <tr>
-                                    <td>Communication Services</td>
-                                    <td class="text-center">1.03%</td>
-                                </tr>
-                                <tr>
-                                    <td>General</td>
-                                    <td class="text-center">
-                                        0.01%</td>
-                                </tr>
-                            </tbody>
-                        </table>
-
-                    </div>
+                    <h3>Understanding VIG's Income</h3>
+                    <p>While VIG may distribute dividends or interest payments, the primary focus is on market exposure and capital appreciation. Distributions are typically reinvested or paid quarterly.</p>
+                    <p>For the most current yield, distribution history, and official fund documents, use the sponsor page:</p>
+                    <p><a href="https://www.ssga.com/us/en/individual/etfs" target="_blank" rel="noopener noreferrer" class="external-link">Visit the Official ETF Fund Page <i class="fas fa-external-link-alt"></i></a></p>
                 </section>
-                <section>
-                    <h2>Dividend Yield and Distribution History</h2>
-                    <div class="mobile-indicator ml-1"> -----> </div>
 
-                    <div class="table-container">
-
-                        <table>
-                            <tr>
-                                <th class="w-25">Section</th>
-                                <th class="w-75">Details</th>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h3>VIG Dividend Data</h3>
-                                </td>
-                                <td>The <strong>Vanguard Dividend Appreciation ETF (VIG)</strong> pays <strong>quarterly
-                                        dividends</strong>. The most recent <strong>ex-dividend date</strong> was on
-                                    <strong>March 22, 2024</strong>, with a dividend payment of <strong>$0.7692 per
-                                        share</strong> on <strong>March 27, 2024</strong>.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h3>VIG Dividend Yield</h3>
-                                </td>
-                                <td>As of April 24, 2024, the <strong>dividend yield</strong> for VIG is
-                                    <strong>1.83%</strong>. This means that for every $100 invested in the fund,
-                                    investors would receive $1.83 in dividends per year, assuming the yield remains
-                                    constant.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td> <a href="https://www.tipranks.com/etf/vig/dividends" target="_blank"
-                                        rel="noopener noreferrer">
-                                        <h3>VIG Dividend History</h3>
-                                    </a> </td>
-                                <td>VIG has a history of paying <strong>quarterly dividends</strong>. The dividend
-                                    payments may fluctuate based on the performance of the underlying
-                                    <strong>dividend-paying stocks</strong> held by the fund.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h3>VIG Dividend Growth</h3>
-                                </td>
-                                <td>VIG's dividend payments are dependent on the <strong>dividend growth</strong> and
-                                    performance of the underlying stocks in the fund's portfolio. The fund's investment
-                                    strategy focuses on companies with a history of consistent <strong>dividend
-                                        growth</strong>, which may contribute to increasing dividend payments over time.
-                                    However, <strong>dividend growth</strong> is not guaranteed.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h3>VIG Dividend Stability</h3>
-                                </td>
-                                <td>VIG aims to provide a relatively stable income stream by investing in high-quality,
-                                    <strong>dividend-paying stocks</strong> of larger U.S. companies. However, the
-                                    dividend payments are not guaranteed and may be affected by changes in
-                                    <strong>market conditions</strong> or the performance of the underlying stocks in
-                                    the fund's portfolio.
-                                </td>
-                            </tr>
-                        </table>
-
-                    </div>
-                </section>
-                <section id="chart">
+                <section id="chart" class="section-grey">
                     <h2>VIG - Chart</h2>
-                    <div class="chart">
-                        <div class="tradingview-widget-container"><script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>{"autosize":true,"symbol":"NYSE:VIG","interval":"D","timezone":"Etc/UTC","theme":"light","style":"1","locale":"en","allow_symbol_change":false,"height":400}</script></div>
-                        </iframe>
+                    <div class="chart-container">
+                        <h4>Price action over time</h4>
+                        <div class="chart">
+                            <script type="text/javascript"
+                                src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+                                    {"autosize": true, "symbol": "AMEX:VIG", "interval": "3M", "timezone": "America/New_York", "theme": "light", "style": "2", "locale": "en", "allow_symbol_change": false, "calendar": false, "support_host": "https://www.tradingview.com"}
+                                </script>
+                        </div>
+                    </div>
                 </section>
-                <section id="comparative">
-                    <h2>VIG - Comparative Analysis</h2>
-                    <p class=""> Let's compare VIG with prominent competitors, focusing on key aspects like
-                        performance,
-                        fees, and strategy: <strong>(as of Apr 2024)</strong> </p>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-                    <div class="table-container">
-                        <table class="mb-2">
+
+                <section id="comparison" class="section-white">
+                    <h2>VIG vs. The Competition: A Quick Look</h2>
+                    <p>The real decision is not whether VIG is "good" in the abstract. It is whether VIG fits your specific market exposure needs and investment strategy.</p>
+                    <p><strong>VIG</strong> is usually the cleanest fit for investors who want targeted exposure to its specific market segment. If you are looking for different exposure or fee structure, other ETFs in the same category may make sense.</p>
+                    <div class="table-container text-center mb-4">
+                        <table class="etf-comparison-table">
                             <thead>
                                 <tr>
-                                    <th>&nbsp;</th>
-                                    <th class="w-25">VIG</th>
-                                    <th class="w-25"><a href="https://richiest.com/etfs/dividend/sdy.html"
-                                            target="_blank" rel="noopener noreferrer">SDY</a></th>
-                                    <th class="w-25"><a href="https://richiest.com/etfs/dividend/dvy.html"
-                                            target="_blank" rel="noopener noreferrer">DVY</a></th>
+                                    <th>Feature</th>
+                                    <th>VIG</th>
+                                    <th>Similar ETF 1</th>
+                                    <th>Similar ETF 2</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td><strong>Investment Focus</strong></td>
-                                    <td>High-quality, dividend-paying stocks of larger U.S. companies</td>
-                                    <td>Dividend Aristocrats Index, emphasizing companies with a history of dividend
-                                        growth</td>
-                                    <td>Select Dividend Index, focusing on high dividend-paying U.S. equities</td>
+                                    <td><strong>What it holds</strong></td>
+                                    <td>Targeted exposure to VIG specific market segment</td>
+                                    <td>Different exposure profile</td>
+                                    <td>Alternative approach to same market</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>Current Yield</strong></td>
-                                    <td><a href="https://www.bing.com/search?q=vig+current+yield" target="_blank"
-                                            rel="noopener noreferrer">2.06%</a></td>
-                                    <td><a href="https://www.bing.com/search?q=sdy+current+yield" target="_blank"
-                                            rel="noopener noreferrer">2.50%</a></td>
-                                    <td><a href="https://www.bing.com/search?q=dvy+current+yield" target="_blank"
-                                            rel="noopener noreferrer">2.96%</a></td>
+                                    <td><strong>Why you might choose it</strong></td>
+                                    <td>Best when targeted exposure and market segment focus are the top priorities.</td>
+                                    <td>Better fit if you want different exposure or fee structure.</td>
+                                    <td>Appealing if you want an alternative approach to the same market exposure.</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>Expense Ratio</strong></td>
-                                    <td>0.06%</td>
-                                    <td>0.35%</td>
-                                    <td>0.39%</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Investment Strategy</strong></td>
-                                    <td>Tracks the performance of the NASDAQ US Dividend Achievers Select Index</td>
-                                    <td>Tracks the S&P High Yield Dividend Aristocrats Index</td>
-                                    <td>Tracks the Dow Jones U.S. Select Dividend Index</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Strengths</strong></td>
-                                    <td>Low expense ratio, focus on dividend consistency and growth</td>
-                                    <td>Emphasis on companies with a history of dividend growth</td>
-                                    <td>Focus on high dividend-paying U.S. equities</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Weaknesses</strong></td>
-                                    <td>May lag behind in high-dividend yield compared to SDY and DVY</td>
-                                    <td>Higher expense ratio compared to VIG and DVY</td>
-                                    <td>May have less emphasis on dividend growth compared to SDY</td>
+                                    <td><strong>Tradeoff</strong></td>
+                                    <td>Focused exposure, but narrow market segment.</td>
+                                    <td>Different exposure profile, but may have different characteristics.</td>
+                                    <td>Very similar to VIG, so the decision may come down to fee, preference, or fund sponsor.</td>
                                 </tr>
                             </tbody>
                         </table>
+                    </div>
+                    <p class="small-text"><em>For the most current yields and expense ratios of these ETFs, please check
+                            a reliable financial data provider like <a href="https://etfdb.com/" target="_blank"
+                                rel="noopener noreferrer">ETFdb.com</a>, <a href="https://finance.yahoo.com/etfs"
+                                target="_blank" rel="noopener noreferrer">Yahoo Finance</a>, or the individual fund
+                            sponsor websites:</em></p>
+                    <p class="small-text text-center mt-2">
+                        <a href="https://www.ssga.com/us/en/individual/etfs" target="_blank" rel="noopener noreferrer" class="external-link mr-3">State Street <i class="fas fa-external-link-alt"></i></a>
+                        <a href="https://www.ishares.com" target="_blank" rel="noopener noreferrer" class="external-link mr-3">iShares <i class="fas fa-external-link-alt"></i></a>
+                        <a href="https://www.vanguard.com" target="_blank" rel="noopener noreferrer" class="external-link">Vanguard <i class="fas fa-external-link-alt"></i></a>
+                    </p>
+                </section>
 
+                <section id="final-verdict" class="section-grey">
+                    <div class="final-verdict-box">
+                        <h2>The Richiest.com Final Verdict: Is VIG Right For You?</h2>
+                        <p>If your priority is targeted exposure to a specific market segment, VIG delivers focused access with transparency and efficiency. It's liquid, cost-effective, and easy to understand.</p>
+                        <p>If your priority is broad market diversification, this may be the wrong tool. VIG is best treated as a focused exposure sleeve, not a core holding.</p>
                     </div>
                 </section>
-                <section id="history">
-                    <h2>Dividend History (Last 5 distributions)</h2>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-                    <div class="table-container">
-                        <table class="mb-2">
-                            <thead>
-                                <tr>
-                                    <th class="w-25">Ex-Dividend Date</th>
-                                    <th class="w-25">Cash Amount</th>
-                                    <th class="w-25">Record Date</th>
-                                    <th class="w-25">Pay Date</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Mar 21, 2024</td>
-                                    <td>$0.77</td>
-                                    <td>Mar 24, 2024</td>
-                                    <td>Mar 26, 2024</td>
-                                </tr>
-                                <tr>
-                                    <td>Dec 20, 2023</td>
-                                    <td>$0.92</td>
-                                    <td>Dec 21, 2023</td>
-                                    <td>Dec 26, 2023</td>
-                                </tr>
-                                <tr>
-                                    <td>Sep 28, 2023</td>
-                                    <td>$0.77</td>
-                                    <td>Sep 29, 2023</td>
-                                    <td>Oct 03, 2023</td>
-                                </tr>
-                                <tr>
-                                    <td>Jun 29, 2023</td>
-                                    <td>$0.77</td>
-                                    <td>Jun 30, 2023</td>
-                                    <td>Jul 05, 2023</td>
-                                </tr>
-                                <tr>
-                                    <td>Mar 23, 2023</td>
-                                    <td>$0.75</td>
-                                    <td>Mar 27, 2023</td>
-                                    <td>Mar 29, 2023</td>
-                                </tr>
-                            </tbody>
-                        </table>
 
-                    </div>
-                </section>
+
             </div>
         </div>
         <div class="row dark-div">
@@ -476,63 +478,19 @@
         </div>
         <div class="row">
             <div class="col container-1000">
-                <section id="news">
-                    <h2 class="">News</h2>
-                    <div class="chart">
-                        <div class="tradingview-widget-container">
-                        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-timeline.js" async>
-                        {"feedMode":"symbol","symbol":"AMEX:VIG","colorTheme":"light","isTransparent":false,"displayMode":"regular","width":"100%","height":"400","locale":"en"}
-                        </script>
-                    </div>
-                </section>
-                <section id="technical">
-                    <h2>Technical Analysis</h2>
-                    <div class="chart">
-                        <script type="text/javascript"
-                            src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js"
-                            async> { "interval": "1M", "width": "100%", "isTransparent": false, "height": "400", "symbol": "AMEX:VIG", "showIntervalTabs": true, "displayMode": "single", "locale": "en", "colorTheme": "light" } </script>
-                    </div>
-                </section>
-                <section>
-                    <h2>Additional Information and Risks</h2>
-                    <div>
-                        <p>The <strong>Vanguard Dividend Appreciation ETF (VIG)</strong> is designed to provide
-                            investors with exposure to the performance of the <strong>S&P U.S. Dividend Growers
-                                Index</strong>. This index comprises <strong>common stocks of companies</strong> that
-                            have a record of <strong>increasing dividends over time</strong>. VIG seeks to
-                            <strong>replicate the target index</strong> by investing in a diversified portfolio of
-                            stocks that meet specific criteria for <strong>dividend growth</strong> and stability.
-                        </p>
-
-                        <p>As an <strong>ETF</strong>, VIG offers investors the opportunity to participate in the
-                            <strong>growth potential</strong> of dividend-paying stocks while providing <strong>capital
-                                gains</strong> and <strong>dividend income</strong>. The fund's <strong>share
-                                price</strong> fluctuates based on the <strong>performance of the underlying
-                                stocks</strong> and the overall <strong>market conditions</strong>.
-                        </p>
-
-                        <p>Investors should note that while VIG aims to <strong>track the performance</strong> of the
-                            index, there is no <strong>guarantee of future results</strong>. The fund's returns may vary
-                            relative to the index, and its <strong>principal value</strong> will fluctuate.
-                            Additionally, VIG does not invest in <strong>preferred stocks</strong> and may not replicate
-                            the index's performance exactly due to factors such as <strong>management fees</strong> and
-                            <strong>expenses</strong>.
-                        </p>
-
-                        <p>It's important for investors to conduct their own research and consider their investment
-                            objectives before investing in VIG or any other ETF. The <strong>information contained
-                                herein</strong> is for informational purposes only and should not be construed as
-                            investment advice.</p>
-
-                    </div>
-
+                <section id="disclaimer" class="small-text-section section-grey">
+                    <h2>Important Disclaimer</h2>
+                    <p>This article is for informational purposes only and does not constitute financial advice.
+                        Investing
+                        involves risks, and you should consult with a qualified financial professional before making any
+                        investment decisions. Past performance is not indicative of future results.</p>
                 </section>
 
             </div>
         </div>
         <div class="row dark-div">
             <div class="col container-1280">
-                <div class="shared-footer"> <!-- This is where the shared nav will be loaded --> </div>
+                <div class="shared-footer"> </div>
             </div>
         </div>
     </div>
@@ -540,36 +498,53 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
+        function generateTOC() {
+            const tocList = $('#toc-list .etf-nav');
+            tocList.empty();
+            let ul = $('<ul></ul>').addClass('toc-menu');
+
+            const mainContentArea = $('.container-1000');
+
+            mainContentArea.find('section').each(function () {
+                const sectionId = $(this).attr('id');
+                const h2 = $(this).find('h2:first');
+
+                if (sectionId && h2.length > 0 && sectionId !== 'disclaimer') {
+                    let title = h2.text();
+                    const li = $('<li></li>');
+                    const a = $('<a></a>').attr('href', '#' + sectionId).text(title);
+                    li.append(a);
+                    ul.append(li);
+                }
+            });
+            tocList.append(ul);
+        }
+
         $(function () {
-            $(".shared-nav").load("/shared/nav.html");
-            $(".etf-nav").load("/shared/etfnav2.html");
+            $(".shared-nav").load("/shared/nav.html", function () {
+                generateTOC();
+            });
             $(".shared-subscribe").load("/shared/subscribe.html");
             $(".shared-banner").load("/shared/banner.html");
             $(".shared-articles").load("/shared/technologyStocks.html");
             $(".shared-footer").load("/shared/footer.html");
-        });
-        $(document).ready(function () {
+
+            generateTOC();
+
             $("#toggle-toc").click(function () {
-                var tocList = $("#toc-list");
                 var fixedToc = $(".fixed-toc");
-                if (tocList.is(":visible")) {
-                    tocList.hide();
-                    fixedToc.css({ "width": "0px", "display": "none" });
+                fixedToc.toggle();
+                if (fixedToc.is(":visible")) {
+                    fixedToc.addClass("show");
                 } else {
-                    fixedToc.css({ "width": "200px", "display": "block" });
-                    tocList.show();
+                    fixedToc.removeClass("show");
                 }
             });
-        });
 
-        $(document).ready(function () {
-            $('.carousel').carousel();
-
-            // Scroll to top functionality
             var mybutton = $('#return-to-top');
 
             $(window).scroll(function () {
-                if ($(this).scrollTop() > 20) {
+                if ($(this).scrollTop() > 100) {
                     mybutton.fadeIn();
                 } else {
                     mybutton.fadeOut();

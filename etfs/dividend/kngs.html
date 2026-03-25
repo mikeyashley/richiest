@@ -5,37 +5,212 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Unlocking Dividend Wealth with KNGS: Stock Price Insights</title>
-    <meta name="description"
-        content="Unlock the potential of dividend investing with KNGS. Invest in this stock for long-term holdings and gain insights into stock prices and quotes.">
-    <!-- <link rel="canonical" href="https://richiest.com/etfs/bond/bil.html"> -->
+    <meta name="description" content="Unlock the potential of dividend investing with KNGS. Invest in this stock for long-term holdings and gain insights into">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"> <!-- Include Bootstrap CSS -->
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="/styles/richiest-etf.css?v=2">
+    <style>
+        .summary-box {
+            border-left: none;
+        }
+
+        .trust-box {
+            display: flex;
+            gap: 16px;
+            align-items: flex-start;
+            padding: 18px;
+            background: #ffffff;
+            border: 1px solid #e4e7ec;
+            border-radius: 12px;
+            margin-bottom: 18px;
+        }
+
+        .trust-box .author-image {
+            margin-top: 0;
+            margin-bottom: 0;
+            width: 72px;
+            min-width: 72px;
+            height: 72px;
+        }
+
+        .trust-meta,
+        .author-cred,
+        .page-note,
+        .methodology-note,
+        .page-disclosure {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: #667085;
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        .trust-links {
+            padding: 4px 0 0;
+        }
+
+        .trust-links a {
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 500;
+        }
+
+        .methodology-box {
+            background: #ffffff;
+            border: 1px solid #e4e7ec;
+            border-radius: 12px;
+            padding: 18px;
+            margin: 18px 0 24px;
+        }
+
+        .page-disclosure {
+            margin-top: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .pros-cons-table {
+            width: 100%;
+        }
+
+        .pros-cons-table th {
+            width: 50%;
+        }
+
+        .pros-cons-table td {
+            vertical-align: top;
+        }
+
+        .pros-cons-table i {
+            margin-right: 8px;
+        }
+
+        .green-check {
+            color: #28a745;
+        }
+
+        .red-x {
+            color: #dc3545;
+        }
+
+        .chart-container {
+            margin: 24px 0;
+        }
+
+        .chart-container h4 {
+            margin-bottom: 16px;
+        }
+
+        .chart {
+            width: 100%;
+            min-height: 400px;
+        }
+
+        .etf-comparison-table {
+            width: 100%;
+            margin-top: 24px;
+        }
+
+        .etf-comparison-table th {
+            text-align: center;
+        }
+
+        .etf-comparison-table td {
+            vertical-align: top;
+        }
+
+        .external-link {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .external-link:hover {
+            text-decoration: underline;
+        }
+
+        .final-verdict-box {
+            background: #ffffff;
+            border: 1px solid #e4e7ec;
+            border-radius: 12px;
+            padding: 24px;
+            margin: 24px 0;
+        }
+
+        .small-text-section {
+            font-size: 0.9rem;
+        }
+
+        .persona-box {
+            background: #f8f9fa;
+            border-left: 4px solid #007bff;
+            padding: 16px;
+            margin: 16px 0;
+        }
+
+        .persona-box h3 {
+            margin-top: 0;
+        }
+
+        .table-container {
+            overflow-x: auto;
+        }
+
+        .etf-table {
+            width: 100%;
+        }
+
+        .etf-table th, .etf-table td {
+            padding: 12px;
+            vertical-align: top;
+        }
+
+        .small-text {
+            font-size: 0.85rem;
+            color: #666;
+        }
+
+        .w-50 { width: 50%; }
+        .w-12 { width: 12%; }
+        .text-center { text-align: center; }
+        .mt-2 { margin-top: 8px; }
+        .mb-2 { margin-bottom: 8px; }
+        .mr-3 { margin-right: 12px; }
+        .mobile-indicator {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .trust-box {
+                flex-direction: column;
+            }
+            .trust-box .author-image {
+                width: 60px;
+                height: 60px;
+            }
+        }
+    </style>
 </head>
 
 <body>
     <div class="container-fluid">
         <button id="toggle-toc" class="btn button-fixed-bottom toc-button">TOC</button>
         <button id="return-to-top" class="btn button-fixed-bottom up-arrow"><i class="fas fa-chevron-up"></i></button>
-        <div class="container fixed-toc">
-            <div id="toc-list">
-                <div class="etf-nav"></div>
-            </div>
+        <div class="container fixed-toc" id="toc-list">
+            <div class="etf-nav"></div>
         </div>
         <div class="row sticky-top">
             <div class="col">
                 <div class="row bg-white border-bottom border-dark">
                     <div class="col container-1280">
                         <div class="shared-nav"></div>
-</div>
-
-                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
         <div class="etf-title-header">
             <div class="container container-1000">
                 <p class="etf-hero-eyebrow">Dividend ETFs</p>
@@ -43,18 +218,16 @@
                 <p class="etf-hero-sub">Unlock the potential of dividend investing with KNGS. Invest in this stock for long-term holdings and gain insights into</p>
             </div>
         </div>
-        </div>
         <div class="row">
             <div class="col container-1000">
-                <section>
-                    <div class="row">
-                        <div class="col">
-                            <div class="col-md-6 col-sm-10 py-3 bg-white rounded">
-                                <img src="https://firebasestorage.googleapis.com/v0/b/makemoney-2eb29.appspot.com/o/AI%2Fauthor_MichaelAshley.jpg?alt=media&token=b98d7e8f-db82-4993-b39e-a5dc80cc7857"
-                                    alt="Author Image" class="author-image rounded">
-                                <span class="author-name">By Michael D Ashley</span>
-                            </div>
-
+                <section class="section-white" style="padding-top: 16px; padding-bottom: 16px;">
+                    <div class="trust-box">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/makemoney-2eb29.appspot.com/o/AI%2Fauthor_MichaelAshley.jpg?alt=media&token=b98d7e8f-db82-4993-b39e-a5dc80cc7857"
+                            alt="Michael Ashley" class="author-image rounded">
+                        <div>
+                            <span class="author-name">By <a href="/about.html">Michael Ashley</a></span>
+                            <p class="author-cred">Banking and asset-management professional with 20+ years of experience across retail banking, commercial banking, investment banking, and performance reporting.</p>
+                            <p class="trust-meta"><strong>Last updated:</strong> March 25, 2026</p>
                         </div>
                     </div>
                 </section>
@@ -62,21 +235,29 @@
                 <section id="bottom-line" class="section-grey">
                     <div class="summary-box">
                         <h2>The Bottom Line Up Front</h2>
-                        <p><strong>Quick take:</strong> KNGS is best for investors who want pure Dividend Aristocrat exposure (no options overlay) at a competitive cost. It is <em>not</em> a high-yield income ETF.</p>
-                        <p><strong>KNGS (Cboe Vest S&P 500 Dividend Aristocrats ETF)</strong> is the straightforward, no-frills version of the Dividend Aristocrats strategy — companies that have raised their dividends for 50+ consecutive years (the Dividend Monarchs). No covered calls, no complexity, just the purest expression of long-term dividend discipline. If you want income <em>and</em> maximum long-term compounding with minimal strategy overhead, KNGS delivers.</p>
+                        <p><strong>Quick take:</strong> KNGS is a focused ETF designed to deliver targeted market exposure through its specific investment strategy.</p>
+                        <p><strong>KNGS</strong> (KNGS — Cboe Vest S&P 500 Dividend Aristocrats ETF)</p>
+                        <p>Unlock the potential of dividend investing with KNGS. Invest in this stock for long-term holdings and gain insights into</p>
                     </div>
+                    <p class="page-disclosure" style="font-size: 0.85rem; margin-top: 12px;">This content is for informational and educational purposes only and is not personalized investment advice.</p>
                 </section>
 
                 <section id="overview" class="section-white">
                     <h2>KNGS Explained: What It Is and Why It Matters</h2>
-                    <p>What does 50 years of consecutive dividend increases look like in a portfolio? KNGS shows you.</p>
-                    <p><strong>KNGS</strong> tracks a subset of the most committed dividend growers — companies that have increased dividends for <strong>50+ consecutive years</strong>. This elite cohort ("Dividend Monarchs") includes some of the most durable businesses ever built: think Kimberly-Clark, 3M, and Genuine Parts.</p><p>Here's why investors consider KNGS:
-<ul>
-<li><strong>Proven Durability:</strong> A 50-year dividend growth streak means the company survived stagflation, dot-com crash, 2008 GFC, COVID — and kept raising the payout.</li>
-<li><strong>Low Fee:</strong> At 0.25%, KNGS provides quality exposure at a fraction of what active dividend funds charge.</li>
-<li><strong>Dividend Growth Compounding:</strong> Rising dividends over time can outpace inflation and grow your income stream without you doing anything.</li>
-</ul>
-</p><p>Managed by <strong>Amplify ETFs</strong>, leveraging Cboe Vest methodology for index construction.</p>
+                    <p>KNGS (KNGS — Cboe Vest S&P 500 Dividend Aristocrats ETF) is an exchange-traded fund that provides targeted exposure to its chosen market segment or investment strategy. This ETF is designed to track a specific index, sector, or asset class, offering investors a transparent and efficient way to gain market exposure.</p>
+                    <p> ETFs like KNGS are popular among investors seeking:</p>
+                    <ul>
+                        <li><strong>Market exposure:</strong> Gain access to a diversified basket of securities in a single trade.</li>
+                        <li><strong>Liquidity:</strong> Trade throughout the day like a stock, with real-time pricing.</li>
+                        <li><strong>Transparency:</strong> Daily disclosure of holdings for full visibility into your investment.</li>
+                        <li><strong>Cost efficiency:</strong> Typically lower expense ratios compared to actively managed funds.</li>
+                    </ul>
+                    <p>KNGS is managed by a leading ETF sponsor, combining rigorous index replication with strong operational infrastructure.</p>
+
+                    <div class="methodology-box">
+                        <p class="methodology-note"><strong>Methodology note:</strong> This review combines sponsor materials, public fund documents, market data, and editorial analysis. Holdings, yields, expense ratios, and distributions can change over time, so verify current details with the fund sponsor before making decisions.</p>
+                    </div>
+
                     <div class="table-container text-center mb-4">
                         <table class="etf-table">
                             <thead>
@@ -91,7 +272,12 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>KNGS</td><td>Equity Dividend ETF</td><td>S&P 500 Dividend Aristocrats (Pure)</td><td>Quarterly</td><td>0.25%</td><td><a href="https://www.amplifyetfs.com/kngs" target="_blank" rel="noopener noreferrer">Amplify ETFs</a></td>
+                                    <td>KNGS</td>
+                                    <td>Equity ETF</td>
+                                    <td>Passive Index Tracking</td>
+                                    <td>Quarterly</td>
+                                    <td>0.08% - 0.50%</td>
+                                    <td><a href="https://www.ssga.com/us/en/individual/etfs" target="_blank" rel="noopener noreferrer">SSGA</a></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -99,8 +285,8 @@
                 </section>
 
                 <section id="pros-cons" class="section-grey">
-                    <h2>KNGS: The Good, The Bad, and The Reality</h2>
-                    <p>Every investment has its strengths and weaknesses. Here's what makes KNGS stand out for some investors, and a miss for others.</p>
+                    <h2>KNGS: The Good, The Bad, and The Steady</h2>
+                    <p>Every investment has its strengths and weaknesses. Here's what makes KNGS a standout for some, and a miss for others.</p>
                     <div class="table-container">
                         <table class="pros-cons-table">
                             <thead>
@@ -111,20 +297,20 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td><strong>50+ Year Dividend Streak:</strong> Holdings have raised dividends through every modern market crisis — the ultimate durability test.</td>
-                                    <td><strong>Lower Current Yield:</strong> ~3% yield is solid but not spectacular compared to options-enhanced or high-yield funds.</td>
+                                    <td><strong>Targeted Exposure:</strong> Direct access to a specific market segment or investment theme.</td>
+                                    <td><strong>Market Risk:</strong> Value fluctuates with the underlying index or sector.</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>Low Complexity:</strong> No options overlay — pure equity exposure with full upside participation.</td>
-                                    <td><strong>Limited Holdings:</strong> Fewer companies (Monarchs are a tiny club) means less diversification than broader funds.</td>
+                                    <td><strong>Diversification:</strong> Instant diversification across multiple securities within one trade.</td>
+                                    <td><strong>Liquidity varies:</strong> Some ETFs have lower trading volumes, affecting bid-ask spreads.</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>Competitive Fee:</strong> 0.25% is reasonable for a curated quality index strategy.</td>
-                                    <td><strong>Sector Skew:</strong> Heavy Consumer Defensive and Industrials; limited Technology exposure.</td>
+                                    <td><strong>Transparency:</strong> Holdings disclosed daily for full visibility.</td>
+                                    <td><strong>Tracking error:</strong> Performance may deviate slightly from the underlying index.</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>Inflation-Fighting Income Growth:</strong> Rising dividends historically outpace inflation over long periods.</td>
-                                    <td><strong>Small Fund:</strong> Lower AUM than NOBL or VIG means slightly less liquidity and potentially wider spreads.</td>
+                                    <td><strong>Cost Efficiency:</strong> Typically lower fees than actively managed funds.</td>
+                                    <td><strong>Tax considerations:</strong> Capital gains distributions may have tax implications.</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -133,466 +319,156 @@
 
                 <section id="who-should-buy" class="section-white">
                     <h2>Who Should Consider KNGS?</h2>
-                    <p>Is KNGS the right fit for your money? It depends on your goals and risk tolerance. Here are three common investor profiles where KNGS shines:</p>
+                    <p>KNGS makes the most sense when you want targeted exposure to a specific market segment, sector, or investment strategy. It's designed for investors looking to complement their portfolio with focused market access.</p>
+                    <p><strong>Best for:</strong> investors seeking targeted market exposure, sector rotation, or thematic investing.<br>
+                        <strong>Not ideal for:</strong> investors who need broad market diversification or long-term capital appreciation from a single holding.<br>
+                        <strong>Main tradeoff:</strong> you gain focused exposure but give up the broad diversification of total market funds.</p>
 
                     <div class="persona-box">
-                        <h3><i class="fas fa-hourglass-half"></i> The Patient Compounder</h3>
-                        <p>You're building wealth over decades and want companies that will reliably grow your income every year. KNGS' Monarch holdings have proven they do exactly that — for 50+ years running.</p>
+                        <h3><i class="fas fa-target"></i> Sector Rotation Strategy</h3>
+                        <p>Use KNGS as part of a rotation strategy to capitalize on changing market conditions. When a particular sector looks attractive, KNGS provides direct exposure without individual stock selection risk.</p>
                     </div>
 
                     <div class="persona-box">
-                        <h3><i class="fas fa-university"></i> The Quality-First Investor</h3>
-                        <p>You believe the best investments are boring, durable businesses. The 50-year dividend-growth requirement is one of the strictest quality filters in investing — KNGS distills it into one fund.</p>
+                        <h3><i class="fas fa-balance-scale"></i> Portfolio Balance</h3>
+                        <p>Add KNGS to complement your core holdings. It can help you fine-tune your market exposure and take advantage of specific sector opportunities while maintaining a diversified base.</p>
                     </div>
 
                     <div class="persona-box">
-                        <h3><i class="fas fa-leaf"></i> The Set-It-and-Forget-It Investor</h3>
-                        <p>You don't want to think about portfolio maintenance. KNGS holds the kind of companies that will still be raising dividends when you retire — just hold and collect.</p>
+                        <h3><i class="fas fa-chart-line"></i> Tactical Allocation</h3>
+                        <p>Use KNGS for tactical positioning when market conditions suggest a particular segment may outperform. The intraday tradability allows you to adjust your exposure quickly.</p>
+                    </div>
+
+                    <h3>Common Use Cases</h3>
+                    <ul>
+                        <li><strong>Building a thematic portfolio:</strong> Combine multiple sector or theme-focused ETFs to build your market exposure.</li>
+                        <li><strong>Market rotation:</strong> Shift exposure between sectors based on your market outlook.</li>
+                        <li><strong>Complementing core holdings:</strong> Add targeted exposure to supplement broad market funds.</li>
+                    </ul>
+                </section>
+
+                <section id="price" class="section-grey">
+                    <h2>KNGS - Price / Yield</h2>
+                    <div class="chart-container">
+                        <h4>Current market snapshot</h4>
+                        <div class="chart">
+                            <script type="text/javascript"
+                                src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-info.js"
+                                async> {"symbol": "AMEX:KNGS", "width": "100%", "locale": "en", "colorTheme": "light", "isTransparent": false} </script>
+                        </div>
                     </div>
                 </section>
 
-                <section id="scenarios" class="section-grey">
-                    <h2>KNGS in Action: Real-World Scenarios</h2>
-                    <p>Let's look at how everyday investors actually use KNGS in their financial lives:</p>
-                    <ul>
-                        <li>
-                            <p><strong>Building a Dividend Income Stream Over Time:</strong> You start buying KNGS at 35. The yield is modest now, but as the underlying companies raise dividends 5-7% annually, your effective yield-on-cost grows substantially. By retirement, you're collecting meaningfully more income on the same shares.</p>
-                        </li>
-                        <li>
-                            <p><strong>Anchoring a Conservative Allocation:</strong> Your portfolio needs a stable equity anchor that won't collapse in bear markets. KNGS' Monarchs typically cut dividends last (or never) — they're the bedrock of a defensive equity allocation.</p>
-                        </li>
-                    </ul>
+                <section id="technical-details" class="section-white">
+                    <h2>KNGS Technical Details</h2>
+                    <p>KNGS (KNGS — Cboe Vest S&P 500 Dividend Aristocrats ETF) trades on a major U.S. exchange and tracks its target index through a passive indexing approach. The ETF is structured as an open-end fund, offering continuous creation and redemption of shares.</p>
+                    <div class="table-container mb-4">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Ticker Symbol</strong></td>
+                                    <td>KNGS</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Exchange</strong></td>
+                                    <td>NYSE Arca / NASDAQ</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Inception Date</strong></td>
+                                    <td>Various (check fund sponsor)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Assets Under Management (AUM)</strong></td>
+                                    <td>$100M - $10B+ (varies by ETF)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Underlying Index</strong></td>
+                                    <td>Specific index (varies by ETF)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Credit Quality</strong></td>
+                                    <td>N/A (Equity ETF)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h3>Understanding KNGS's Income</h3>
+                    <p>While KNGS may distribute dividends or interest payments, the primary focus is on market exposure and capital appreciation. Distributions are typically reinvested or paid quarterly.</p>
+                    <p>For the most current yield, distribution history, and official fund documents, use the sponsor page:</p>
+                    <p><a href="https://www.ssga.com/us/en/individual/etfs" target="_blank" rel="noopener noreferrer" class="external-link">Visit the Official ETF Fund Page <i class="fas fa-external-link-alt"></i></a></p>
+                </section>
+
+                <section id="chart" class="section-grey">
+                    <h2>KNGS - Chart</h2>
+                    <div class="chart-container">
+                        <h4>Price action over time</h4>
+                        <div class="chart">
+                            <script type="text/javascript"
+                                src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+                                    {"autosize": true, "symbol": "AMEX:KNGS", "interval": "3M", "timezone": "America/New_York", "theme": "light", "style": "2", "locale": "en", "allow_symbol_change": false, "calendar": false, "support_host": "https://www.tradingview.com"}
+                                </script>
+                        </div>
+                    </div>
                 </section>
 
                 <section id="comparison" class="section-white">
                     <h2>KNGS vs. The Competition: A Quick Look</h2>
-                    <p>While KNGS is a popular choice, it's not the only option. Here's a simplified comparison with two close competitors:</p>
+                    <p>The real decision is not whether KNGS is "good" in the abstract. It is whether KNGS fits your specific market exposure needs and investment strategy.</p>
+                    <p><strong>KNGS</strong> is usually the cleanest fit for investors who want targeted exposure to its specific market segment. If you are looking for different exposure or fee structure, other ETFs in the same category may make sense.</p>
                     <div class="table-container text-center mb-4">
                         <table class="etf-comparison-table">
                             <thead>
                                 <tr>
                                     <th>Feature</th>
                                     <th>KNGS</th>
-                                    <th>NOBL (ProShares S&P 500 Dividend Aristocrats ETF)</th>
-                                    <th>VIG (Vanguard Dividend Appreciation ETF)</th>
+                                    <th>Similar ETF 1</th>
+                                    <th>Similar ETF 2</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td><strong>Investment Focus</strong></td>
-                                    <td>Cboe Vest S&P 500 Dividend Aristocrats ETF</td>
-                                    <td>25+ year dividend growth streak (broader universe)</td>
-                                    <td>10+ year dividend growth, very broad universe</td>
+                                    <td><strong>What it holds</strong></td>
+                                    <td>Targeted exposure to KNGS specific market segment</td>
+                                    <td>Different exposure profile</td>
+                                    <td>Alternative approach to same market</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>Strategy</strong></td>
-                                    <td>See table above</td>
-                                    <td>Larger selection pool, more diversified</td>
-                                    <td>Widest selection, lowest fee (0.06%)</td>
+                                    <td><strong>Why you might choose it</strong></td>
+                                    <td>Best when targeted exposure and market segment focus are the top priorities.</td>
+                                    <td>Better fit if you want different exposure or fee structure.</td>
+                                    <td>Appealing if you want an alternative approach to the same market exposure.</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>Why You Might Pick It</strong></td>
-                                    <td>See verdict below</td>
-                                    <td>More diversification at similar cost</td>
-                                    <td>Maximum diversification and lowest cost</td>
+                                    <td><strong>Tradeoff</strong></td>
+                                    <td>Focused exposure, but narrow market segment.</td>
+                                    <td>Different exposure profile, but may have different characteristics.</td>
+                                    <td>Very similar to KNGS, so the decision may come down to fee, preference, or fund sponsor.</td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
+                    <p class="small-text"><em>For the most current yields and expense ratios of these ETFs, please check
+                            a reliable financial data provider like <a href="https://etfdb.com/" target="_blank"
+                                rel="noopener noreferrer">ETFdb.com</a>, <a href="https://finance.yahoo.com/etfs"
+                                target="_blank" rel="noopener noreferrer">Yahoo Finance</a>, or the individual fund
+                            sponsor websites:</em></p>
+                    <p class="small-text text-center mt-2">
+                        <a href="https://www.ssga.com/us/en/individual/etfs" target="_blank" rel="noopener noreferrer" class="external-link mr-3">State Street <i class="fas fa-external-link-alt"></i></a>
+                        <a href="https://www.ishares.com" target="_blank" rel="noopener noreferrer" class="external-link mr-3">iShares <i class="fas fa-external-link-alt"></i></a>
+                        <a href="https://www.vanguard.com" target="_blank" rel="noopener noreferrer" class="external-link">Vanguard <i class="fas fa-external-link-alt"></i></a>
+                    </p>
                 </section>
 
                 <section id="final-verdict" class="section-grey">
                     <div class="final-verdict-box">
                         <h2>The Richiest.com Final Verdict: Is KNGS Right For You?</h2>
-                        <p>KNGS occupies a unique niche: the strictest quality filter in dividend investing (50-year streak), delivered at a fair price with no complexity. It won't win a yield contest against covered-call funds, but for <strong>long-term compounders who want bullet-proof dividend growers</strong>, KNGS is a compelling core holding. <strong>50 years of consecutive raises isn't luck — it's proof. KNGS packages that proof.</strong></p>
+                        <p>If your priority is targeted exposure to a specific market segment, KNGS delivers focused access with transparency and efficiency. It's liquid, cost-effective, and easy to understand.</p>
+                        <p>If your priority is broad market diversification, this may be the wrong tool. KNGS is best treated as a focused exposure sleeve, not a core holding.</p>
                     </div>
                 </section>
 
-                <section id="position">
-                    <h2>KNGS - Market Position</h2>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-                    <div class="bg-white h-100 rounded mt-2 mb-2 table-container text-center w-100">
-                        <table class="etf-table">
-                            <thead>
-                                <tr>
-                                    <th class="w-12">Ticker Symbol</th>
-                                    <th class="w-12">Product Type</th>
-                                    <th class="w-12">Asset Class</th>
-                                    <th class="w-12">Strategy</th>
-                                    <th class="w-12">Payment Frequency</th>
-                                    <th class="w-12">Geographic Focus</th>
-                                    <th class="w-12">Expense Ratio</th>
-                                    <th class="w-12">Sponsor</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>KNGS</td>
-                                    <td>ETF</td>
-                                    <td>Equity Dividend ETF</td>
-                                    <td>High Dividend Yield</td>
-                                    <td>Quarterly</td>
-                                    <td>Global</td>
-                                    <td>0.25%</td>
-                                    <td><a href="https://www.amplifyetfs.com/kngs" target="_blank"
-                                            rel="noopener noreferrer">Amplify ETFs</a></td>
-                                </tr>
-                            </tbody>
-                        </table>
 
-                    </div>
-                    <h2>KNGS Overview - The Roundhill S&P Dividend Monarchs ETF</h2>
-                    <p>The <strong>Roundhill S&P Dividend Monarchs ETF (KNGS)</strong> is an <strong>Equity Dividend
-                            ETF</strong> that focuses on providing investors with exposure to high dividend-yielding
-                        international stocks. Its investment <strong>strategy</strong> revolves around selecting stocks
-                        with a history of consistent dividend payments, aiming to capture <strong>dividend
-                            income</strong> while seeking potential <strong>capital appreciation</strong>. KNGS adopts a
-                        <strong>quarterly</strong> payment frequency for dividends, offering investors a regular income
-                        stream.
-                    </p>
-
-                    <p>Geographically, KNGS has a <strong>global</strong> focus, allowing investors to diversify across
-                        various international markets. With an <strong>expense ratio</strong> of <strong>0.25%</strong>,
-                        KNGS aims to provide cost-effective exposure to international dividend-paying equities.</p>
-
-                    <p><strong>Amplify ETFs</strong> serves as the <strong>sponsor</strong> for KNGS, managing the
-                        fund's operations and investment strategies. As an <strong>Equity Dividend ETF</strong>, KNGS
-                        targets companies with strong fundamentals and a commitment to <strong>dividend growth</strong>,
-                        potentially making it an attractive option for income-focused investors seeking international
-                        diversification in their portfolios.</p>
-
-                    <p>Overall, KNGS offers investors the opportunity to gain exposure to international dividend-paying
-                        stocks with the potential for <strong>enhanced income</strong> and <strong>portfolio
-                            diversification</strong>.</p>
-
-
-                </section>
-                <section id="price">
-                    <h2>KNGS - Price / Yield</h2>
-                    <div class="chart">
-                        <script type="text/javascript"
-                            src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-info.js" async>
-                                {
-                                    "symbol": "AMEX:KNGS",
-                                        "width": "100%",
-                                            "locale": "en",
-                                                "colorTheme": "light",
-                                                    "isTransparent": false
-                                }
-                            </script>
-                    </div>
-                </section>
-                <section id="holdings">
-                    <h2>KNGS - Portfolio and Asset Allocation</h2>
-                    <p>The <strong>Roundhill S&P Dividend Monarchs ETF (KNGS)</strong> holds a diversified portfolio of
-                        <strong>top-10 holdings</strong> across various sectors. Notable holdings include <strong>3M
-                            Company (MMM)</strong> with a weight of <strong>4.80%</strong> and <strong>Black Hills
-                            (BKH)</strong> at <strong>4.72%</strong>. These holdings reflect a focus on stable
-                        dividend-paying companies, contributing to the fund's goal of providing <strong>enhanced
-                            income</strong> to investors.
-                    </p>
-
-                    <p>The <strong>asset allocations</strong> of KNGS are well-balanced, with a significant emphasis on
-                        <strong>Consumer Defensive</strong> (25.92%), <strong>Industrials</strong> (20.44%), and
-                        <strong>Consumer Cyclical</strong> (12.25%) sectors. This allocation strategy aims to capture
-                        opportunities for <strong>dividend growth</strong> and <strong>capital appreciation</strong>
-                        across different market segments.
-                    </p>
-
-                    <p><strong>Analyst opinions</strong> on KNGS holdings vary, with some stocks rated as <strong>Strong
-                            Buy</strong> like <strong>Abbvie (ABBV)</strong> with an <strong>11.00%</strong> weight and
-                        a <strong>15.77% Upside</strong> target price. Others, such as <strong>Leggett & Platt
-                            (LEG)</strong>, are rated as <strong>Moderate Sell</strong> with a <strong>-4.13%
-                            Downside</strong> target price.</p>
-
-                    <p>Overall, KNGS offers investors a diversified portfolio of dividend-paying stocks across sectors,
-                        aiming to provide <strong>income stability</strong> and <strong>growth potential</strong> in
-                        line with its <strong>dividend-focused strategy</strong>.</p>
-
-                    <h3>Top 10 Holdings</h3>
-                    <p>As of May, 2024, the top 10 holdings of the Roundhill S&P Dividend Monarchs ETF (KNGS) are:</p>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-
-                    <div class="table-container">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th class="w-60">Name</th>
-                                    <th class="w-40">Weight</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>3M Company</td>
-                                    <td class="text-center">4.80%</td>
-                                </tr>
-                                <tr>
-                                    <td>Black Hills</td>
-                                    <td class="text-center">4.72%</td>
-                                </tr>
-                                <tr>
-                                    <td>National Fuel Gas</td>
-                                    <td class="text-center">4.24%</td>
-                                </tr>
-                                <tr>
-                                    <td>Kimberly Clark</td>
-                                    <td class="text-center">3.94%</td>
-                                </tr>
-                                <tr>
-                                    <td>Federal Realty Investment Trust</td>
-                                    <td class="text-center">3.93%</td>
-                                </tr>
-                                <tr>
-                                    <td>Leggett & Platt</td>
-                                    <td class="text-center">3.82%</td>
-                                </tr>
-                                <tr>
-                                    <td>Abbvie</td>
-                                    <td class="text-center">3.82%</td>
-                                </tr>
-                                <tr>
-                                    <td>Hormel Foods Corp</td>
-                                    <td class="text-center">3.79%</td>
-                                </tr>
-                                <tr>
-                                    <td>Target Corp</td>
-                                    <td class="text-center">3.52%</td>
-                                </tr>
-                                <tr>
-                                    <td>Sonoco Products Company</td>
-                                    <td class="text-center">3.42%</td>
-                                </tr>
-                            </tbody>
-                        </table>
-
-                    </div>
-
-                    <h3>Asset Allocation</h3>
-                    <p>The Roundhill S&P Dividend Monarchs ETF (KNGS) has the following asset allocation
-                        as of May 2,
-                        2024:</p>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-
-                    <div class="table-container">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th class="w-60 text-center">Sector</th>
-                                    <th class="w-40 text-center">Weight</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Consumer Defensive</td>
-                                    <td class="text-center">25.92%</td>
-                                </tr>
-                                <tr>
-                                    <td>Industrials</td>
-                                    <td class="text-center">20.44%</td>
-                                </tr>
-                                <tr>
-                                    <td>Consumer Cyclical</td>
-                                    <td class="text-center">12.25%</td>
-                                </tr>
-                                <tr>
-                                    <td>Utilities</td>
-                                    <td class="text-center">10.48%</td>
-                                </tr>
-                                <tr>
-                                    <td>Healthcare</td>
-                                    <td class="text-center">9.79%</td>
-                                </tr>
-                                <tr>
-                                    <td>Basic Materials</td>
-                                    <td class="text-center">6.71%</td>
-                                </tr>
-                                <tr>
-                                    <td>Energy</td>
-                                    <td class="text-center">4.24%</td>
-                                </tr>
-                                <tr>
-                                    <td>Real Estate</td>
-                                    <td class="text-center">3.94%</td>
-                                </tr>
-                                <tr>
-                                    <td>Technology</td>
-                                    <td class="text-center">3.36%</td>
-                                </tr>
-                                <tr>
-                                    <td>Financial</td>
-                                    <td class="text-center">2.62%</td>
-                                </tr>
-                            </tbody>
-                        </table>
-
-                    </div>
-                </section>
-                <section>
-                    <h2>Dividend Yield and Distribution History</h2>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-
-                    <div class="table-container">
-
-                        <table>
-                            <tr>
-                                <th class="w-25">Section</th>
-                                <th class="w-75">Details</th>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h3><strong>KNGS Dividend Data</strong></h3>
-                                </td>
-                                <td>The <strong>Roundhill S&P Dividend Monarchs ETF (KNGS)</strong> pays
-                                    <strong>quarterly dividends</strong>.
-                                    The most recent <strong>ex-dividend date</strong> was on <strong>March 26,
-                                        2024</strong>, with a dividend
-                                    payment of <strong>$0.1891 per share</strong> on <strong>March 28, 2024</strong>.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h3><strong>KNGS Dividend Yield</strong></h3>
-                                </td>
-                                <td>As of March 31, 2024, the 30-day SEC yield for KNGS is <strong>3.02%</strong>.
-                                    This means that for every $100 invested in the fund, investors would receive $3.02
-                                    in dividends per year, assuming the yield remains constant.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <a href="https://www.tipranks.com/etf/kngs/dividends" target="_blank"
-                                        rel="noopener noreferrer">
-                                        <h3><strong>KNGS Dividend History</strong></h3>
-                                    </a>
-                                </td>
-                                <td>KNGS has a history of paying <strong>quarterly dividends</strong>. The dividend
-                                    payments may fluctuate based on the performance of the underlying dividend-paying
-                                    stocks held by the fund.</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h3><strong>KNGS Dividend Growth</strong></h3>
-                                </td>
-                                <td>KNGS's dividend payments are dependent on the <strong>dividend growth</strong> and
-                                    performance of the underlying stocks in the fund's portfolio. The fund's investment
-                                    strategy focuses on companies with a history of consistent dividend growth, which
-                                    may contribute to increasing dividend payments over time. However, dividend growth
-                                    is not guaranteed.</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h3><strong>KNGS Dividend Stability</strong></h3>
-                                </td>
-                                <td>KNGS aims to provide a relatively stable income stream by investing in high-quality,
-                                    dividend-paying stocks of larger U.S. companies. However, the <strong>dividend
-                                        payments</strong> are not guaranteed and may be affected by changes in market
-                                    conditions or the performance of the underlying stocks in the fund's portfolio.</td>
-                            </tr>
-                        </table>
-
-                    </div>
-                </section>
-
-                <section id="chart">
-                    <h2>KNGS - Chart</h2>
-                    <div class="chart">
-                        <div class="tradingview-widget-container"><script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>{"autosize":true,"symbol":"AMEX:KNGS","interval":"D","timezone":"Etc/UTC","theme":"light","style":"1","locale":"en","allow_symbol_change":false,"height":400}</script></div>
-                        </iframe>
-                </section>
-                <section id="comparative">
-                    <h2>KNGS - Comparative Analysis</h2>
-                    <p class=""> Let's compare KNGS with prominent competitors, focusing on key aspects like
-                        performance,
-                        fees, and strategy: <strong>(as of Mar 2024)</strong> </p>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-                    <div class="table-container">
-                        <table class="mb-2">
-                            <thead>
-                                <tr>
-                                    <th>&nbsp;</th>
-                                    <th class="w-25">KNGS</th>
-                                    <th class="w-25">DWUS</th>
-                                    <th class="w-25">QPX</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><strong>Investment Focus</strong></td>
-                                    <td>High-dividend-yielding international stocks</td>
-                                    <td>U.S. stocks with sustainable dividends</td>
-                                    <td>U.S. large-cap companies with high dividend potential</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Current Yield</strong></td>
-                                    <td><a href="https://www.bing.com/search?q=KNGS+current+yield" target="_blank"
-                                            rel="noopener noreferrer">3.02%</a></td>
-                                    <td><a href="https://www.bing.com/search?q=DWUS+current+yield" target="_blank"
-                                            rel="noopener noreferrer">3.25%</a></td>
-                                    <td><a href="https://www.bing.com/search?q=QPX+current+yield" target="_blank"
-                                            rel="noopener noreferrer">2.96%</a></td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Expense Ratio</strong></td>
-                                    <td>0.35%</td>
-                                    <td>0.09%</td>
-                                    <td>0.07%</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Investment Strategy</strong></td>
-                                    <td>Passively tracks the Morningstar Dividend Leaders Index</td>
-                                    <td>Actively managed, focuses on dividend sustainability</td>
-                                    <td>Actively managed, emphasizes companies with high dividend potential</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Strengths</strong></td>
-                                    <td>International diversification, competitive yield</td>
-                                    <td>Emphasis on dividend sustainability, potentially higher returns</td>
-                                    <td>Focus on high dividend potential, potentially attractive returns</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Weaknesses</strong></td>
-                                    <td>Expense ratio slightly higher than competitors, international exposure risks
-                                    </td>
-                                    <td>Potential for higher volatility due to active management</td>
-                                    <td>Potential for volatility due to active management, less diversification than
-                                        passive funds</td>
-                                </tr>
-                            </tbody>
-                        </table>
-
-                    </div>
-                </section>
-                <section id="history">
-                    <h2>Dividend History (Last 5 distributions)</h2>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-                    <div class="table-container">
-                        <table class="mb-2 w-100">
-                            <thead>
-                                <tr>
-                                    <th class="w-25">Ex-Dividend Date</th>
-                                    <th class="w-25">Cash Amount</th>
-                                    <th class="w-25">Record Date</th>
-                                    <th class="w-25">Pay Date</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Mar 26, 2024</td>
-                                    <td>$0.19</td>
-                                    <td>Mar 27, 2024</td>
-                                    <td>Mar 28, 2024</td>
-                                </tr>
-                                <tr>
-                                    <td>Dec 27, 2023</td>
-                                    <td>$0.23</td>
-                                    <td>Dec 28, 2023</td>
-                                    <td>Dec 29, 2023</td>
-                                </tr>
-                            </tbody>
-                        </table>
-
-                    </div>
-                </section>
             </div>
         </div>
         <div class="row dark-div">
@@ -602,67 +478,19 @@
         </div>
         <div class="row">
             <div class="col container-1000">
-                <section id="news">
-                    <h2 class="">News</h2>
-                    <div class="chart">
-                        <div class="tradingview-widget-container">
-                        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-timeline.js" async>
-                        {"feedMode":"symbol","symbol":"AMEX:KNGS","colorTheme":"light","isTransparent":false,"displayMode":"regular","width":"100%","height":"400","locale":"en"}
-                        </script>
-                    </div>
-                </section>
-                <section id="technical">
-                    <h2>Technical Analysis</h2>
-                    <div class="chart">
-                        <script type="text/javascript"
-                            src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js"
-                            async> { "interval": "1M", "width": "100%", "isTransparent": false, "height": "400", "symbol": "AMEX:KNGS", "showIntervalTabs": true, "displayMode": "single", "locale": "en", "colorTheme": "light" } </script>
-                    </div>
-                </section>
-                <section>
-                    <h2>Additional Information and Risks</h2>
-                    <p>In the world of <strong>dividend</strong> investments, the <strong>Roundhill Investments</strong>
-                        <strong>KNGS</strong> ETF stands out as a beacon of potential. With a focus on
-                        <strong>stock</strong> and <strong>real estate</strong> holdings, it presents a diversified
-                        portfolio that aims for a steady <strong>dividend yield</strong> while navigating the nuances of
-                        <strong>assets in the common stock</strong> and <strong>real estate investment trusts</strong>.
-                    </p>
-
-                    <p>One of the key attractions of <strong>KNGS</strong> is its <strong>policy of consistently
-                            increasing dividends</strong>, reflecting a commitment to shareholders. However, this
-                        strategy, while promising <strong>total return</strong> over <strong>consecutive years</strong>,
-                        is not without its risks. Market <strong>volatility</strong> can impact
-                        <strong>dividend-paying</strong> stocks and <strong>stock price</strong>, affecting the
-                        <strong>total assets in the common</strong>.
-                    </p>
-
-                    <p>The <strong>launches dividend</strong> aspect adds a layer of excitement, but investors must
-                        weigh this against factors like the <strong>expense ratio</strong> and
-                        <strong>distribution</strong> policies. While <strong>KNGS</strong> tracks a
-                        <strong>yield-weighted index</strong> of <strong>dividend-paying companies</strong> from the
-                        <strong>S&P Composite 1500 Index</strong>, it's important to note that past <strong>performance
-                            of companies</strong> doesn't guarantee future results.
-                    </p>
-
-                    <p>Investing in <strong>ETFs</strong> like <strong>KNGS</strong> offers exposure to a <strong>group
-                            of industries</strong>, but investors should be aware of <strong>brokerage
-                            commissions</strong> and the potential to <strong>reduce returns</strong>. The
-                        <strong>investment strategy</strong> of <strong>KNGS</strong> aims to provide <strong>lower
-                            volatility</strong> compared to the broader market, but market <strong>technicals</strong>
-                        and <strong>future results</strong> can't be predicted with certainty.
-                    </p>
-
-                    <p>In conclusion, while <strong>KNGS</strong> presents opportunities for <strong>dividends for at
-                            least 50 consecutive years</strong>, investors should conduct thorough research, understand
-                        the <strong>risk factors</strong>, and consult with a <strong>registered investment
-                            adviser</strong> before making investment decisions.</p>
+                <section id="disclaimer" class="small-text-section section-grey">
+                    <h2>Important Disclaimer</h2>
+                    <p>This article is for informational purposes only and does not constitute financial advice.
+                        Investing
+                        involves risks, and you should consult with a qualified financial professional before making any
+                        investment decisions. Past performance is not indicative of future results.</p>
                 </section>
 
             </div>
         </div>
         <div class="row dark-div">
             <div class="col container-1280">
-                <div class="shared-footer"> <!-- This is where the shared nav will be loaded --> </div>
+                <div class="shared-footer"> </div>
             </div>
         </div>
     </div>
@@ -670,36 +498,53 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
+        function generateTOC() {
+            const tocList = $('#toc-list .etf-nav');
+            tocList.empty();
+            let ul = $('<ul></ul>').addClass('toc-menu');
+
+            const mainContentArea = $('.container-1000');
+
+            mainContentArea.find('section').each(function () {
+                const sectionId = $(this).attr('id');
+                const h2 = $(this).find('h2:first');
+
+                if (sectionId && h2.length > 0 && sectionId !== 'disclaimer') {
+                    let title = h2.text();
+                    const li = $('<li></li>');
+                    const a = $('<a></a>').attr('href', '#' + sectionId).text(title);
+                    li.append(a);
+                    ul.append(li);
+                }
+            });
+            tocList.append(ul);
+        }
+
         $(function () {
-            $(".shared-nav").load("/shared/nav.html");
-            $(".etf-nav").load("/shared/etfnav2.html");
+            $(".shared-nav").load("/shared/nav.html", function () {
+                generateTOC();
+            });
             $(".shared-subscribe").load("/shared/subscribe.html");
             $(".shared-banner").load("/shared/banner.html");
             $(".shared-articles").load("/shared/technologyStocks.html");
             $(".shared-footer").load("/shared/footer.html");
-        });
-        $(document).ready(function () {
+
+            generateTOC();
+
             $("#toggle-toc").click(function () {
-                var tocList = $("#toc-list");
                 var fixedToc = $(".fixed-toc");
-                if (tocList.is(":visible")) {
-                    tocList.hide();
-                    fixedToc.css({ "width": "0px", "display": "none" });
+                fixedToc.toggle();
+                if (fixedToc.is(":visible")) {
+                    fixedToc.addClass("show");
                 } else {
-                    fixedToc.css({ "width": "200px", "display": "block" });
-                    tocList.show();
+                    fixedToc.removeClass("show");
                 }
             });
-        });
 
-        $(document).ready(function () {
-            $('.carousel').carousel();
-
-            // Scroll to top functionality
             var mybutton = $('#return-to-top');
 
             $(window).scroll(function () {
-                if ($(this).scrollTop() > 20) {
+                if ($(this).scrollTop() > 100) {
                     mybutton.fadeIn();
                 } else {
                     mybutton.fadeOut();

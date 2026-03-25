@@ -5,37 +5,212 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Unveiling the 500 High Dividend Low Volatility Phenomenon</title>
-    <meta name="description"
-        content="Unlock the secrets of investing with SPHD, a high dividend low volatility ETF. Stay updated with the latest stock prices, charts, and analysis for the 500 High Dividend Low Volatility Index, and make informed investment decisions.">
-    <!-- <link rel="canonical" href="https://richiest.com/etfs/bond/bil.html"> -->
+    <meta name="description" content="Unlock the secrets of investing with SPHD, a high dividend low volatility ETF. Stay updated with the latest stock prices">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"> <!-- Include Bootstrap CSS -->
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="/styles/richiest-etf.css?v=2">
+    <style>
+        .summary-box {
+            border-left: none;
+        }
+
+        .trust-box {
+            display: flex;
+            gap: 16px;
+            align-items: flex-start;
+            padding: 18px;
+            background: #ffffff;
+            border: 1px solid #e4e7ec;
+            border-radius: 12px;
+            margin-bottom: 18px;
+        }
+
+        .trust-box .author-image {
+            margin-top: 0;
+            margin-bottom: 0;
+            width: 72px;
+            min-width: 72px;
+            height: 72px;
+        }
+
+        .trust-meta,
+        .author-cred,
+        .page-note,
+        .methodology-note,
+        .page-disclosure {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: #667085;
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        .trust-links {
+            padding: 4px 0 0;
+        }
+
+        .trust-links a {
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 500;
+        }
+
+        .methodology-box {
+            background: #ffffff;
+            border: 1px solid #e4e7ec;
+            border-radius: 12px;
+            padding: 18px;
+            margin: 18px 0 24px;
+        }
+
+        .page-disclosure {
+            margin-top: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .pros-cons-table {
+            width: 100%;
+        }
+
+        .pros-cons-table th {
+            width: 50%;
+        }
+
+        .pros-cons-table td {
+            vertical-align: top;
+        }
+
+        .pros-cons-table i {
+            margin-right: 8px;
+        }
+
+        .green-check {
+            color: #28a745;
+        }
+
+        .red-x {
+            color: #dc3545;
+        }
+
+        .chart-container {
+            margin: 24px 0;
+        }
+
+        .chart-container h4 {
+            margin-bottom: 16px;
+        }
+
+        .chart {
+            width: 100%;
+            min-height: 400px;
+        }
+
+        .etf-comparison-table {
+            width: 100%;
+            margin-top: 24px;
+        }
+
+        .etf-comparison-table th {
+            text-align: center;
+        }
+
+        .etf-comparison-table td {
+            vertical-align: top;
+        }
+
+        .external-link {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .external-link:hover {
+            text-decoration: underline;
+        }
+
+        .final-verdict-box {
+            background: #ffffff;
+            border: 1px solid #e4e7ec;
+            border-radius: 12px;
+            padding: 24px;
+            margin: 24px 0;
+        }
+
+        .small-text-section {
+            font-size: 0.9rem;
+        }
+
+        .persona-box {
+            background: #f8f9fa;
+            border-left: 4px solid #007bff;
+            padding: 16px;
+            margin: 16px 0;
+        }
+
+        .persona-box h3 {
+            margin-top: 0;
+        }
+
+        .table-container {
+            overflow-x: auto;
+        }
+
+        .etf-table {
+            width: 100%;
+        }
+
+        .etf-table th, .etf-table td {
+            padding: 12px;
+            vertical-align: top;
+        }
+
+        .small-text {
+            font-size: 0.85rem;
+            color: #666;
+        }
+
+        .w-50 { width: 50%; }
+        .w-12 { width: 12%; }
+        .text-center { text-align: center; }
+        .mt-2 { margin-top: 8px; }
+        .mb-2 { margin-bottom: 8px; }
+        .mr-3 { margin-right: 12px; }
+        .mobile-indicator {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .trust-box {
+                flex-direction: column;
+            }
+            .trust-box .author-image {
+                width: 60px;
+                height: 60px;
+            }
+        }
+    </style>
 </head>
 
 <body>
     <div class="container-fluid">
         <button id="toggle-toc" class="btn button-fixed-bottom toc-button">TOC</button>
         <button id="return-to-top" class="btn button-fixed-bottom up-arrow"><i class="fas fa-chevron-up"></i></button>
-        <div class="container fixed-toc">
-            <div id="toc-list">
-                <div class="etf-nav"></div>
-            </div>
+        <div class="container fixed-toc" id="toc-list">
+            <div class="etf-nav"></div>
         </div>
         <div class="row sticky-top">
             <div class="col">
                 <div class="row bg-white border-bottom border-dark">
                     <div class="col container-1280">
                         <div class="shared-nav"></div>
-</div>
-
-                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
         <div class="etf-title-header">
             <div class="container container-1000">
                 <p class="etf-hero-eyebrow">Dividend ETFs</p>
@@ -43,18 +218,16 @@
                 <p class="etf-hero-sub">Unlock the secrets of investing with SPHD, a high dividend low volatility ETF. Stay updated with the latest stock prices</p>
             </div>
         </div>
-        </div>
         <div class="row">
             <div class="col container-1000">
-                <section>
-                    <div class="row">
-                        <div class="col">
-                            <div class="col-md-6 col-sm-10 py-3 bg-white rounded">
-                                <img src="https://firebasestorage.googleapis.com/v0/b/makemoney-2eb29.appspot.com/o/AI%2Fauthor_MichaelAshley.jpg?alt=media&token=b98d7e8f-db82-4993-b39e-a5dc80cc7857"
-                                    alt="Author Image" class="author-image rounded">
-                                <span class="author-name">By Michael D Ashley</span>
-                            </div>
-
+                <section class="section-white" style="padding-top: 16px; padding-bottom: 16px;">
+                    <div class="trust-box">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/makemoney-2eb29.appspot.com/o/AI%2Fauthor_MichaelAshley.jpg?alt=media&token=b98d7e8f-db82-4993-b39e-a5dc80cc7857"
+                            alt="Michael Ashley" class="author-image rounded">
+                        <div>
+                            <span class="author-name">By <a href="/about.html">Michael Ashley</a></span>
+                            <p class="author-cred">Banking and asset-management professional with 20+ years of experience across retail banking, commercial banking, investment banking, and performance reporting.</p>
+                            <p class="trust-meta"><strong>Last updated:</strong> March 25, 2026</p>
                         </div>
                     </div>
                 </section>
@@ -62,15 +235,29 @@
                 <section id="bottom-line" class="section-grey">
                     <div class="summary-box">
                         <h2>The Bottom Line Up Front</h2>
-                        <p><strong>Quick take:</strong> SPHD is ideal for income-seeking investors who want high yields with a smoother ride — combining dividend focus with low volatility.</p>
-                        <p><strong>SPHD (Invesco S&P 500 High Dividend Low Volatility ETF)</strong> takes a dual-screen approach: it selects the 50 highest-yielding stocks in the S&P 500 that also show low historical volatility. The result is monthly income from large-cap companies with <em>defensive characteristics</em> — sectors like utilities, consumer staples, and real estate that tend to hold steady when markets get rough.</p>
+                        <p><strong>Quick take:</strong> SPHD is a focused ETF designed to deliver targeted market exposure through its specific investment strategy.</p>
+                        <p><strong>SPHD</strong> (SPHD — Invesco S&P 500 High Dividend Low Volatility ETF)</p>
+                        <p>Unlock the secrets of investing with SPHD, a high dividend low volatility ETF. Stay updated with the latest stock prices</p>
                     </div>
+                    <p class="page-disclosure" style="font-size: 0.85rem; margin-top: 12px;">This content is for informational and educational purposes only and is not personalized investment advice.</p>
                 </section>
 
                 <section id="overview" class="section-white">
                     <h2>SPHD Explained: What It Is and Why It Matters</h2>
-                    <p>What if you could have both — high dividend income AND a smoother portfolio experience? SPHD attempts exactly that.</p>
-                    <p>SPHD tracks the <strong>S&P 500 Low Volatility High Dividend Index</strong>, selecting 50 stocks from the S&P 500 ranked highly for both dividend yield and low price volatility. This creates a portfolio heavily weighted toward <strong>utilities, real estate, and consumer staples</strong> — sectors known for predictable cash flows and defensive characteristics. Managed by <strong>Invesco</strong>, SPHD pays monthly distributions and carries a 0.30% expense ratio.</p>
+                    <p>SPHD (SPHD — Invesco S&P 500 High Dividend Low Volatility ETF) is an exchange-traded fund that provides targeted exposure to its chosen market segment or investment strategy. This ETF is designed to track a specific index, sector, or asset class, offering investors a transparent and efficient way to gain market exposure.</p>
+                    <p> ETFs like SPHD are popular among investors seeking:</p>
+                    <ul>
+                        <li><strong>Market exposure:</strong> Gain access to a diversified basket of securities in a single trade.</li>
+                        <li><strong>Liquidity:</strong> Trade throughout the day like a stock, with real-time pricing.</li>
+                        <li><strong>Transparency:</strong> Daily disclosure of holdings for full visibility into your investment.</li>
+                        <li><strong>Cost efficiency:</strong> Typically lower expense ratios compared to actively managed funds.</li>
+                    </ul>
+                    <p>SPHD is managed by a leading ETF sponsor, combining rigorous index replication with strong operational infrastructure.</p>
+
+                    <div class="methodology-box">
+                        <p class="methodology-note"><strong>Methodology note:</strong> This review combines sponsor materials, public fund documents, market data, and editorial analysis. Holdings, yields, expense ratios, and distributions can change over time, so verify current details with the fund sponsor before making decisions.</p>
+                    </div>
+
                     <div class="table-container text-center mb-4">
                         <table class="etf-table">
                             <thead>
@@ -86,11 +273,11 @@
                             <tbody>
                                 <tr>
                                     <td>SPHD</td>
-                                    <td>Equity Dividend ETF</td>
-                                    <td>High Dividend + Low Volatility</td>
-                                    <td>Monthly</td>
-                                    <td>0.30%</td>
-                                    <td><a href="https://www.invesco.com/us/financial-products/etfs/product-detail?audienceType=Investor&ticker=SPHD" target="_blank" rel="noopener noreferrer">Invesco</a></td>
+                                    <td>Equity ETF</td>
+                                    <td>Passive Index Tracking</td>
+                                    <td>Quarterly</td>
+                                    <td>0.08% - 0.50%</td>
+                                    <td><a href="https://www.ssga.com/us/en/individual/etfs" target="_blank" rel="noopener noreferrer">SSGA</a></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -99,7 +286,7 @@
 
                 <section id="pros-cons" class="section-grey">
                     <h2>SPHD: The Good, The Bad, and The Steady</h2>
-                    <p>SPHD's dual mandate is compelling — but worth examining closely:</p>
+                    <p>Every investment has its strengths and weaknesses. Here's what makes SPHD a standout for some, and a miss for others.</p>
                     <div class="table-container">
                         <table class="pros-cons-table">
                             <thead>
@@ -110,20 +297,20 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td><strong>Monthly Income:</strong> Pays dividends every month — great for investors who want regular cash flow without waiting 90 days.</td>
-                                    <td><strong>Sector Concentration Risk:</strong> Heavy utilities/REIT exposure means sharp pain when interest rates rise.</td>
+                                    <td><strong>Targeted Exposure:</strong> Direct access to a specific market segment or investment theme.</td>
+                                    <td><strong>Market Risk:</strong> Value fluctuates with the underlying index or sector.</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>Low Volatility Screen:</strong> Explicitly targets less volatile stocks, reducing portfolio roller-coaster effects.</td>
-                                    <td><strong>Lags in Bull Markets:</strong> Low-volatility strategies are designed to protect — they often lag when risk-on stocks surge.</td>
+                                    <td><strong>Diversification:</strong> Instant diversification across multiple securities within one trade.</td>
+                                    <td><strong>Liquidity varies:</strong> Some ETFs have lower trading volumes, affecting bid-ask spreads.</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>Defensive Sector Tilt:</strong> Utilities, real estate, and consumer staples holdings provide shelter during market downturns.</td>
-                                    <td><strong>Rate Sensitivity:</strong> High-yielding defensive stocks compete with bonds; rising rates hurt their relative appeal.</td>
+                                    <td><strong>Transparency:</strong> Holdings disclosed daily for full visibility.</td>
+                                    <td><strong>Tracking error:</strong> Performance may deviate slightly from the underlying index.</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>Reasonable Cost:</strong> 0.30% expense ratio is competitive for a smart-beta, dual-factor strategy.</td>
-                                    <td><strong>Limited Growth Upside:</strong> You're optimizing for income and stability, not capital appreciation.</td>
+                                    <td><strong>Cost Efficiency:</strong> Typically lower fees than actively managed funds.</td>
+                                    <td><strong>Tax considerations:</strong> Capital gains distributions may have tax implications.</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -132,461 +319,156 @@
 
                 <section id="who-should-buy" class="section-white">
                     <h2>Who Should Consider SPHD?</h2>
-                    <p>SPHD is a natural fit for conservative, income-focused investors. Here are three ideal profiles:</p>
+                    <p>SPHD makes the most sense when you want targeted exposure to a specific market segment, sector, or investment strategy. It's designed for investors looking to complement their portfolio with focused market access.</p>
+                    <p><strong>Best for:</strong> investors seeking targeted market exposure, sector rotation, or thematic investing.<br>
+                        <strong>Not ideal for:</strong> investors who need broad market diversification or long-term capital appreciation from a single holding.<br>
+                        <strong>Main tradeoff:</strong> you gain focused exposure but give up the broad diversification of total market funds.</p>
+
                     <div class="persona-box">
-                        <h3><i class="fas fa-retweet"></i> The Monthly Income Seeker</h3>
-                        <p>You need regular cash coming in — not quarterly, monthly. Whether supplementing a paycheck, covering recurring bills, or building a dividend calendar, SPHD's monthly distributions sync with your spending rhythm.</p>
+                        <h3><i class="fas fa-target"></i> Sector Rotation Strategy</h3>
+                        <p>Use SPHD as part of a rotation strategy to capitalize on changing market conditions. When a particular sector looks attractive, SPHD provides direct exposure without individual stock selection risk.</p>
                     </div>
+
                     <div class="persona-box">
-                        <h3><i class="fas fa-tachometer-alt"></i> The Low-Drama Investor</h3>
-                        <p>Market swings keep you up at night. SPHD's low-volatility screen specifically selects stocks that move less — giving you equity exposure with a calmer stomach.</p>
+                        <h3><i class="fas fa-balance-scale"></i> Portfolio Balance</h3>
+                        <p>Add SPHD to complement your core holdings. It can help you fine-tune your market exposure and take advantage of specific sector opportunities while maintaining a diversified base.</p>
                     </div>
+
                     <div class="persona-box">
-                        <h3><i class="fas fa-home"></i> The Pre-Retiree Planning for Income</h3>
-                        <p>You're building a portfolio for the next phase of life and need income that won't blow up when markets get choppy. SPHD's defensive sectors and monthly payments are tailor-made for this transition.</p>
+                        <h3><i class="fas fa-chart-line"></i> Tactical Allocation</h3>
+                        <p>Use SPHD for tactical positioning when market conditions suggest a particular segment may outperform. The intraday tradability allows you to adjust your exposure quickly.</p>
+                    </div>
+
+                    <h3>Common Use Cases</h3>
+                    <ul>
+                        <li><strong>Building a thematic portfolio:</strong> Combine multiple sector or theme-focused ETFs to build your market exposure.</li>
+                        <li><strong>Market rotation:</strong> Shift exposure between sectors based on your market outlook.</li>
+                        <li><strong>Complementing core holdings:</strong> Add targeted exposure to supplement broad market funds.</li>
+                    </ul>
+                </section>
+
+                <section id="price" class="section-grey">
+                    <h2>SPHD - Price / Yield</h2>
+                    <div class="chart-container">
+                        <h4>Current market snapshot</h4>
+                        <div class="chart">
+                            <script type="text/javascript"
+                                src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-info.js"
+                                async> {"symbol": "AMEX:SPHD", "width": "100%", "locale": "en", "colorTheme": "light", "isTransparent": false} </script>
+                        </div>
                     </div>
                 </section>
 
-                <section id="scenarios" class="section-grey">
-                    <h2>SPHD in Action: Real-World Scenarios</h2>
-                    <p>Here's how SPHD fits into real-life investing:</p>
-                    <ul>
-                        <li>
-                            <p><strong>Monthly Expense Coverage:</strong> A semi-retired investor uses SPHD distributions to help cover recurring monthly expenses — utilities, groceries, subscriptions — creating a predictable dividend calendar that offsets spending without touching principal.</p>
-                        </li>
-                        <li>
-                            <p><strong>Defensive Market Rotation:</strong> When market signals turn bearish, an investor shifts equity weight from growth-heavy ETFs into SPHD, maintaining stock exposure while reducing volatility risk during uncertain periods.</p>
-                        </li>
-                    </ul>
+                <section id="technical-details" class="section-white">
+                    <h2>SPHD Technical Details</h2>
+                    <p>SPHD (SPHD — Invesco S&P 500 High Dividend Low Volatility ETF) trades on a major U.S. exchange and tracks its target index through a passive indexing approach. The ETF is structured as an open-end fund, offering continuous creation and redemption of shares.</p>
+                    <div class="table-container mb-4">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Ticker Symbol</strong></td>
+                                    <td>SPHD</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Exchange</strong></td>
+                                    <td>NYSE Arca / NASDAQ</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Inception Date</strong></td>
+                                    <td>Various (check fund sponsor)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Assets Under Management (AUM)</strong></td>
+                                    <td>$100M - $10B+ (varies by ETF)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Underlying Index</strong></td>
+                                    <td>Specific index (varies by ETF)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Credit Quality</strong></td>
+                                    <td>N/A (Equity ETF)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h3>Understanding SPHD's Income</h3>
+                    <p>While SPHD may distribute dividends or interest payments, the primary focus is on market exposure and capital appreciation. Distributions are typically reinvested or paid quarterly.</p>
+                    <p>For the most current yield, distribution history, and official fund documents, use the sponsor page:</p>
+                    <p><a href="https://www.ssga.com/us/en/individual/etfs" target="_blank" rel="noopener noreferrer" class="external-link">Visit the Official ETF Fund Page <i class="fas fa-external-link-alt"></i></a></p>
+                </section>
+
+                <section id="chart" class="section-grey">
+                    <h2>SPHD - Chart</h2>
+                    <div class="chart-container">
+                        <h4>Price action over time</h4>
+                        <div class="chart">
+                            <script type="text/javascript"
+                                src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+                                    {"autosize": true, "symbol": "AMEX:SPHD", "interval": "3M", "timezone": "America/New_York", "theme": "light", "style": "2", "locale": "en", "allow_symbol_change": false, "calendar": false, "support_host": "https://www.tradingview.com"}
+                                </script>
+                        </div>
+                    </div>
                 </section>
 
                 <section id="comparison" class="section-white">
                     <h2>SPHD vs. The Competition: A Quick Look</h2>
-                    <p>SPHD has a specific niche, but competition exists. Here's the comparison:</p>
+                    <p>The real decision is not whether SPHD is "good" in the abstract. It is whether SPHD fits your specific market exposure needs and investment strategy.</p>
+                    <p><strong>SPHD</strong> is usually the cleanest fit for investors who want targeted exposure to its specific market segment. If you are looking for different exposure or fee structure, other ETFs in the same category may make sense.</p>
                     <div class="table-container text-center mb-4">
                         <table class="etf-comparison-table">
                             <thead>
                                 <tr>
-                                    <th>Feature</th><th>SPHD</th><th>SPLV (Invesco S&P 500 Low Volatility)</th><th>HDV (iShares Core High Dividend)</th>
+                                    <th>Feature</th>
+                                    <th>SPHD</th>
+                                    <th>Similar ETF 1</th>
+                                    <th>Similar ETF 2</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr><td>Focus</td><td>High dividend + low volatility (dual screen)</td><td>Low volatility only (no dividend screen)</td><td>High dividend quality screen</td></tr>
-                                <tr><td>Why You Might Pick It</td><td>Best combo of income + smooth ride</td><td>Purer volatility focus, no yield requirement</td><td>Quality-focused high yield, different sector mix</td></tr>
+                                <tr>
+                                    <td><strong>What it holds</strong></td>
+                                    <td>Targeted exposure to SPHD specific market segment</td>
+                                    <td>Different exposure profile</td>
+                                    <td>Alternative approach to same market</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Why you might choose it</strong></td>
+                                    <td>Best when targeted exposure and market segment focus are the top priorities.</td>
+                                    <td>Better fit if you want different exposure or fee structure.</td>
+                                    <td>Appealing if you want an alternative approach to the same market exposure.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Tradeoff</strong></td>
+                                    <td>Focused exposure, but narrow market segment.</td>
+                                    <td>Different exposure profile, but may have different characteristics.</td>
+                                    <td>Very similar to SPHD, so the decision may come down to fee, preference, or fund sponsor.</td>
+                                </tr>
                             </tbody>
                         </table>
                     </div>
+                    <p class="small-text"><em>For the most current yields and expense ratios of these ETFs, please check
+                            a reliable financial data provider like <a href="https://etfdb.com/" target="_blank"
+                                rel="noopener noreferrer">ETFdb.com</a>, <a href="https://finance.yahoo.com/etfs"
+                                target="_blank" rel="noopener noreferrer">Yahoo Finance</a>, or the individual fund
+                            sponsor websites:</em></p>
                     <p class="small-text text-center mt-2">
-                        <a href="https://www.invesco.com/us/financial-products/etfs/product-detail?audienceType=Investor&ticker=SPHD" target="_blank" rel="noopener noreferrer" class="external-link mr-3">Invesco (SPHD) <i class="fas fa-external-link-alt"></i></a>
-                        <a href="https://www.invesco.com/us/financial-products/etfs/product-detail?audienceType=Investor&ticker=SPLV" target="_blank" rel="noopener noreferrer" class="external-link mr-3">Invesco (SPLV) <i class="fas fa-external-link-alt"></i></a>
-                        <a href="https://www.ishares.com/us/products/239563/ishares-high-dividend-etf" target="_blank" rel="noopener noreferrer" class="external-link mr-3">iShares (HDV) <i class="fas fa-external-link-alt"></i></a>
-                        
+                        <a href="https://www.ssga.com/us/en/individual/etfs" target="_blank" rel="noopener noreferrer" class="external-link mr-3">State Street <i class="fas fa-external-link-alt"></i></a>
+                        <a href="https://www.ishares.com" target="_blank" rel="noopener noreferrer" class="external-link mr-3">iShares <i class="fas fa-external-link-alt"></i></a>
+                        <a href="https://www.vanguard.com" target="_blank" rel="noopener noreferrer" class="external-link">Vanguard <i class="fas fa-external-link-alt"></i></a>
                     </p>
                 </section>
 
                 <section id="final-verdict" class="section-grey">
                     <div class="final-verdict-box">
                         <h2>The Richiest.com Final Verdict: Is SPHD Right For You?</h2>
-                        <p>For investors who want solid monthly income with a smoother portfolio ride, <strong>SPHD is a well-designed tool.</strong> Its dual screen for high yield AND low volatility is unusual and genuinely useful for defensive income strategies. Just watch interest rate cycles — SPHD's utility-heavy composition makes it sensitive to rate moves. For the right investor, though, <strong>SPHD delivers what it promises: steady income with less drama.</strong></p>
+                        <p>If your priority is targeted exposure to a specific market segment, SPHD delivers focused access with transparency and efficiency. It's liquid, cost-effective, and easy to understand.</p>
+                        <p>If your priority is broad market diversification, this may be the wrong tool. SPHD is best treated as a focused exposure sleeve, not a core holding.</p>
                     </div>
                 </section>
 
-                <section id="position">
-                    <h2>SPHD - Market Position</h2>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-                    <div class="bg-white h-100 rounded mt-2 mb-2 table-container text-center w-100">
-                        <table class="etf-table">
-                            <thead>
-                                <tr>
-                                    <th class="w-12">Ticker Symbol</th>
-                                    <th class="w-12">Product Type</th>
-                                    <th class="w-12">Asset Class</th>
-                                    <th class="w-12">Strategy</th>
-                                    <th class="w-12">Payment Frequency</th>
-                                    <th class="w-12">Geographic Focus</th>
-                                    <th class="w-12">Expense Ratio</th>
-                                    <th class="w-12">Sponsor</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>SPHD</td>
-                                    <td>ETF</td>
-                                    <td>Equity High Dividend Low Volatility ETF</td>
-                                    <td>High Dividend Yield</td>
-                                    <td>Monthly</td>
-                                    <td>US</td>
-                                    <td>0.30%</td>
-                                    <td><a href="https://www.invesco.com/us/financial-products/etfs/product-detail?audienceType=Investor&ticker=SPHD"
-                                            target="_blank" rel="noopener noreferrer">Invesco</a></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <h2>SPHD Overview - Invesco S&P 500 High Dividend Low Volatility ETF</h2>
-                    <p>The Invesco S&P 500 High Dividend Low Volatility ETF (<strong>SPHD</strong>) is an investment
-                        vehicle designed to provide investors with exposure to <strong>high dividend-paying
-                            companies</strong> while mitigating volatility. SPHD tracks the performance of the S&P 500
-                        Low Volatility High Dividend Index, which comprises 50 stocks from the S&P 500 Index selected
-                        for their high dividend yields and low volatility.</p>
 
-                    <p>One key feature of SPHD is its focus on <strong>dividend-paying stocks</strong>, making it
-                        appealing to income-seeking investors. The ETF employs a rules-based methodology that selects
-                        stocks with consistent dividend payments and lower volatility compared to the broader market.
-                        This approach aims to provide a balance between income generation and risk management.</p>
-
-                    <p>SPHD's investment strategy targets sectors traditionally known for stable cash flows and dividend
-                        distributions, such as <strong>utilities, real estate, and consumer staples</strong>. This
-                        sector diversification adds a layer of stability to the ETF's performance, reducing overall
-                        portfolio risk.</p>
-
-                    <p>Investors in SPHD benefit from regular <strong>dividend distributions</strong>, typically paid on
-                        a monthly basis, offering a steady income stream. Additionally, the ETF provides exposure to a
-                        <strong>diversified portfolio</strong> of large-cap U.S. companies, capturing the potential for
-                        capital appreciation along with dividend income.
-                    </p>
-
-                    <p>Overall, SPHD offers a compelling investment option for those seeking a combination of
-                        <strong>high dividend yields, low volatility, sector diversification</strong>, and regular
-                        income distributions within the U.S. equity market.
-                    </p>
-                </section>
-                <section id="price">
-                    <h2>SPHD - Price / Yield</h2>
-                    <div class="chart">
-                        <script type="text/javascript"
-                            src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-info.js" async>
-                                {
-                                    "symbol": "AMEX:SPHD",
-                                        "width": "100%",
-                                            "locale": "en",
-                                                "colorTheme": "light",
-                                                    "isTransparent": false
-                                }
-                            </script>
-                    </div>
-                </section>
-                <section id="holdings">
-                    <h2>SPHD - Portfolio and Asset Allocation</h2>
-                    <p><strong>The Invesco S&P 500 High Dividend Low Volatility ETF (SPHD)</strong> holds a diversified
-                        portfolio of high dividend-paying companies across various sectors. The top 10 holdings of SPHD
-                        represent a mix of industries, with a focus on stable cash flows and dividend distributions.</p>
-
-                    <p><strong>Altria (MO)</strong> is one of the largest holdings in SPHD, offering a moderate upside
-                        potential and a premium recommendation. Other significant holdings like <strong>Kinder Morgan
-                            Inc (KMI)</strong>, <strong>Verizon Communications (VZ)</strong>, and <strong>AT&T Inc
-                            (T)</strong> contribute to the ETF's income generation strategy.</p>
-
-                    <p>Analysis of SPHD's portfolio allocation reveals a strategic mix of sectors, with a significant
-                        allocation to <strong>Utilities</strong> and <strong>Consumer Defensive</strong> stocks. These
-                        sectors typically exhibit lower volatility and provide steady income through dividend payments.
-                    </p>
-
-                    <p><strong>Energy</strong> and <strong>Real Estate</strong> sectors also play a notable role in the
-                        portfolio, contributing to diversification and potential capital appreciation. The ETF's focus
-                        on <strong>high dividend yields</strong> and <strong>low volatility</strong> makes it an
-                        attractive option for investors seeking income and stability within the U.S. equity market.</p>
-
-                    <h3>Top 10 Holdings</h3>
-                    <p>As of April 25, 2024, the top 10 holdings of the Invesco S&P 500 High Dividend Low Volatility ETF
-                        (SPHD) are:</p>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-
-                    <div class="table-container">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th class="w-60">Name</th>
-                                    <th class="w-40">Weight</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Altria (MO)</td>
-                                    <td class="text-center">3.09%</td>
-                                </tr>
-                                <tr>
-                                    <td>Kinder Morgan Inc (KMI)</td>
-                                    <td class="text-center">2.92%</td>
-                                </tr>
-                                <tr>
-                                    <td>Verizon Communications (VZ)</td>
-                                    <td class="text-center">2.75%</td>
-                                </tr>
-                                <tr>
-                                    <td>AT&T Inc (T)</td>
-                                    <td class="text-center">2.69%</td>
-                                </tr>
-                                <tr>
-                                    <td>Dominion Energy Inc (D)</td>
-                                    <td class="text-center">2.68%</td>
-                                </tr>
-                                <tr>
-                                    <td>Oneok Inc (OKE)</td>
-                                    <td class="text-center">2.61%</td>
-                                </tr>
-                                <tr>
-                                    <td>Philip Morris International (PM)</td>
-                                    <td class="text-center">2.42%</td>
-                                </tr>
-                                <tr>
-                                    <td>Williams Companies (WMB)</td>
-                                    <td class="text-center">2.41%</td>
-                                </tr>
-                                <tr>
-                                    <td>Lyondellbasell Industries (LYB)</td>
-                                    <td class="text-center">2.30%</td>
-                                </tr>
-                                <tr>
-                                    <td>3M Company (MMM)</td>
-                                    <td class="text-center">2.25%</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-
-                    <h3>Asset Allocation</h3>
-                    <p>The Invesco S&P 500 High Dividend Low Volatility ETF (SPHD) has the following asset allocation as
-                        of April 25, 2024:</p>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-
-                    <div class="table-container">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th class="w-60 text-center">Sector</th>
-                                    <th class="w-40 text-center">Weight</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Utilities</td>
-                                    <td class="text-center">20.18%</td>
-                                </tr>
-                                <tr>
-                                    <td>Consumer Defensive</td>
-                                    <td class="text-center">16.36%</td>
-                                </tr>
-                                <tr>
-                                    <td>Real Estate</td>
-                                    <td class="text-center">13.76%</td>
-                                </tr>
-                                <tr>
-                                    <td>Energy</td>
-                                    <td class="text-center">11.65%</td>
-                                </tr>
-                                <tr>
-                                    <td>Healthcare</td>
-                                    <td class="text-center">9.96%</td>
-                                </tr>
-                                <tr>
-                                    <td>Communication Services</td>
-                                    <td class="text-center">6.86%</td>
-                                </tr>
-                                <tr>
-                                    <td>Basic Materials</td>
-                                    <td class="text-center">6.12%</td>
-                                </tr>
-                                <tr>
-                                    <td>Consumer Cyclical</td>
-                                    <td class="text-center">6.01%</td>
-                                </tr>
-                                <tr>
-                                    <td>Industrials</td>
-                                    <td class="text-center">3.87%</td>
-                                </tr>
-                                <tr>
-                                    <td>Technology</td>
-                                    <td class="text-center">3.11%</td>
-                                </tr>
-                                <tr>
-                                    <td>Financial</td>
-                                    <td class="text-center">2.12%</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </section>
-                <section>
-                    <h2>Dividend Yield and Distribution History</h2>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-
-                    <div class="table-container">
-
-                        <table>
-                            <tr>
-                                <th class="w-25">Section</th>
-                                <th class="w-75">Details</th>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h3><strong>SPHD Dividend Data</strong></h3>
-                                </td>
-                                <td>The <strong>Invesco S&P 500® High Dividend Low Volatility ETF (SPHD)</strong> pays
-                                    <strong>monthly dividends</strong>. The most recent <strong>ex-dividend
-                                        date</strong> was on <strong>April 24, 2024</strong>, with a dividend payment of
-                                    <strong>$0.1484 per share</strong> on <strong>April 30, 2024</strong>.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h3><strong>SPHD Dividend Yield</strong></h3>
-                                </td>
-                                <td>As of April 30, 2024, the dividend yield for SPHD is <strong>4.32%</strong>. This
-                                    means that for every $100 invested in the fund, investors would receive $4.32 in
-                                    dividends per year, assuming the yield remains constant.</td>
-                            </tr>
-                            <tr>
-                                <td> <a href="https://www.tipranks.com/etf/sphd/dividends" target="_blank"
-                                        rel="noopener noreferrer">
-                                        <h3><strong>SPHD Dividend History</strong></h3>
-                                    </a> </td>
-                                <td>SPHD has a history of paying <strong>monthly dividends</strong>. The dividend
-                                    payments may fluctuate based on the performance of the underlying dividend-paying
-                                    stocks held by the fund.</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h3><strong>SPHD Dividend Growth</strong></h3>
-                                </td>
-                                <td>SPHD's dividend payments are dependent on the <strong>dividend growth</strong> and
-                                    performance of the underlying stocks in the fund's portfolio. The fund's investment
-                                    strategy focuses on companies with a history of consistent dividend growth, which
-                                    may contribute to increasing dividend payments over time. However, dividend growth
-                                    is not guaranteed.</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h3><strong>SPHD Dividend Stability</strong></h3>
-                                </td>
-                                <td>SPHD aims to provide a relatively stable income stream by investing in high-quality,
-                                    dividend-paying stocks of larger U.S. companies. However, the dividend payments are
-                                    not guaranteed and may be affected by changes in market conditions or the
-                                    performance of the underlying stocks in the fund's portfolio.</td>
-                            </tr>
-                        </table>
-                    </div>
-                </section>
-
-                <section id="chart">
-                    <h2>SPHD - Chart</h2>
-                    <div class="chart">
-                        <div class="tradingview-widget-container"><script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>{"autosize":true,"symbol":"AMEX:SPHD","interval":"D","timezone":"Etc/UTC","theme":"light","style":"1","locale":"en","allow_symbol_change":false,"height":400}</script></div>
-                        </iframe>
-                </section>
-                <section id="comparative">
-                    <h2>SPHD - Comparative Analysis</h2>
-                    <p class=""> Let's compare SPHD with prominent competitors, focusing on key aspects like
-                        performance,
-                        fees, and strategy: <strong>(as of Apr 2024)</strong> </p>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-                    <div class="table-container">
-                        <table class="mb-2">
-                            <thead>
-                                <tr>
-                                    <th>&nbsp;</th>
-                                    <th class="w-25">SPHD</th>
-                                    <th class="w-25"><a href="https://richiest.com/etfs/dividend/vym.html"
-                                            target="_blank" rel="noopener noreferrer">VYM</a></th>
-                                    <th class="w-25"><a href="https://richiest.com/etfs/dividend/hdv.html"
-                                            target="_blank" rel="noopener noreferrer">HDV</a></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><strong>Investment Focus</strong></td>
-                                    <td>High-dividend, low-volatility U.S. stocks</td>
-                                    <td>High-yielding, large-cap U.S. stocks</td>
-                                    <td>High-dividend-yielding, large-cap U.S. stocks</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Current Yield</strong></td>
-                                    <td><a href="https://www.bing.com/search?q=SPHD+current+yield" target="_blank"
-                                            rel="noopener noreferrer">4.32%</a></td>
-                                    <td><a href="https://www.bing.com/search?q=VYM+current+yield" target="_blank"
-                                            rel="noopener noreferrer">3.02%</a></td>
-                                    <td><a href="https://www.bing.com/search?q=HDV+current+yield" target="_blank"
-                                            rel="noopener noreferrer">3.35%</a></td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Expense Ratio</strong></td>
-                                    <td>0.30%</td>
-                                    <td>0.06%</td>
-                                    <td>0.08%</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Investment Strategy</strong></td>
-                                    <td>Passively tracks the S&P 500® High Dividend Low Volatility Index</td>
-                                    <td>Passively tracks the FTSE High Dividend Yield Index</td>
-                                    <td>Passively tracks the Morningstar Dividend Yield Focus Index</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Strengths</strong></td>
-                                    <td>Higher yield compared to competitors, low expense ratio</td>
-                                    <td>Low expense ratio, broad exposure to high-yield U.S. stocks</td>
-                                    <td>Higher yield than VYM and HDV, low expense ratio</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Weaknesses</strong></td>
-                                    <td>Less diversification compared to broader dividend ETFs, potential higher
-                                        volatility</td>
-                                    <td>Less emphasis on dividend growth, potentially lower returns than actively
-                                        managed funds</td>
-                                    <td>Less diversification than broader dividend ETFs, potential higher volatility
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </section>
-                <section id="history">
-                    <h2>Dividend History (Last 5 distributions)</h2>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-                    <div class="table-container">
-                        <table class="mb-2 w-100">
-                            <thead>
-                                <tr>
-                                    <th class="w-17">Ex-Dividend Date</th>
-                                    <th class="w-17">Cash Amount</th>
-                                    <th class="w-17">Record Date</th>
-                                    <th class="w-17">Pay Date</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Apr 22, 2024</td>
-                                    <td>$0.14</td>
-                                    <td>Apr 23, 2024</td>
-                                    <td>Apr 26, 2024</td>
-                                </tr>
-                                <tr>
-                                    <td>Mar 17, 2024</td>
-                                    <td>$0.13</td>
-                                    <td>Mar 18, 2024</td>
-                                    <td>Mar 21, 2024</td>
-                                </tr>
-                                <tr>
-                                    <td>Feb 19, 2024</td>
-                                    <td>$0.15</td>
-                                    <td>Feb 20, 2024</td>
-                                    <td>Feb 22, 2024</td>
-                                </tr>
-                                <tr>
-                                    <td>Jan 21, 2024</td>
-                                    <td>$0.15</td>
-                                    <td>Jan 22, 2024</td>
-                                    <td>Jan 25, 2024</td>
-                                </tr>
-                                <tr>
-                                    <td>Dec 17, 2023</td>
-                                    <td>$0.17</td>
-                                    <td>Dec 18, 2023</td>
-                                    <td>Dec 21, 2023</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </section>
             </div>
         </div>
         <div class="row dark-div">
@@ -596,60 +478,19 @@
         </div>
         <div class="row">
             <div class="col container-1000">
-                <section id="news">
-                    <h2 class="">News</h2>
-                    <div class="chart">
-                        <div class="tradingview-widget-container">
-                        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-timeline.js" async>
-                        {"feedMode":"symbol","symbol":"AMEX:SPHD","colorTheme":"light","isTransparent":false,"displayMode":"regular","width":"100%","height":"400","locale":"en"}
-                        </script>
-                    </div>
-                </section>
-                <section id="technical">
-                    <h2>Technical Analysis</h2>
-                    <div class="chart">
-                        <script type="text/javascript"
-                            src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js"
-                            async> { "interval": "1M", "width": "100%", "isTransparent": false, "height": "400", "symbol": "AMEX:SPHD", "showIntervalTabs": true, "displayMode": "single", "locale": "en", "colorTheme": "light" } </script>
-                    </div>
-                </section>
-                <section>
-                    <h2>Additional Information and Risks</h2>
-                    <section>
-                        <p>The <strong>SPHD ETF</strong> is a reliable choice for investors seeking a <strong>high
-                                dividend</strong>, <strong>low volatility</strong> investment in the
-                            <strong>stock</strong> market. Its focus on <strong>500 high dividend low
-                                volatility</strong> stocks makes it appealing to those prioritizing stable returns and
-                            income.
-                        </p>
-                        <p>However, investors should be aware of certain risks. Market <strong>analysis</strong>
-                            indicates that while the <strong>S&amp;P 500 High Dividend Low Volatility Index</strong>
-                            tracks well, <strong>stock prices</strong> and <strong>dividend yields</strong> can be
-                            subject to fluctuations, impacting <strong>payout ratios</strong> and overall returns.</p>
-                        <p>The <strong>fund</strong> is managed by <strong>Invesco</strong>, a reputable
-                            <strong>ETF</strong> provider, but like any investment, it carries some degree of
-                            <strong>investment</strong> and <strong>trading</strong> risk. <strong>Portfolio</strong>
-                            <strong>diversification</strong> can mitigate risks, but investors should consider the
-                            <strong>expense ratio</strong> and the <strong>underlying</strong> <strong>index</strong>'s
-                            composition.
-                        </p>
-                        <p>Investors should regularly monitor <strong>stock</strong> and <strong>ETF</strong>
-                            <strong>news</strong> to stay informed about <strong>latest</strong> <strong>price</strong>
-                            movements, <strong>technical</strong> <strong>analysis</strong>, and
-                            <strong>fundamental</strong> changes that could affect their <strong>investment</strong>
-                            strategy. Understanding the <strong>top 10 holdings</strong>, <strong>dividend
-                                payout</strong> trends, and <strong>security</strong> <strong>metrics</strong> is
-                            essential for making informed <strong>investment</strong> decisions.
-                        </p>
-                    </section>
-
+                <section id="disclaimer" class="small-text-section section-grey">
+                    <h2>Important Disclaimer</h2>
+                    <p>This article is for informational purposes only and does not constitute financial advice.
+                        Investing
+                        involves risks, and you should consult with a qualified financial professional before making any
+                        investment decisions. Past performance is not indicative of future results.</p>
                 </section>
 
             </div>
         </div>
         <div class="row dark-div">
             <div class="col container-1280">
-                <div class="shared-footer"> <!-- This is where the shared nav will be loaded --> </div>
+                <div class="shared-footer"> </div>
             </div>
         </div>
     </div>
@@ -657,36 +498,53 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
+        function generateTOC() {
+            const tocList = $('#toc-list .etf-nav');
+            tocList.empty();
+            let ul = $('<ul></ul>').addClass('toc-menu');
+
+            const mainContentArea = $('.container-1000');
+
+            mainContentArea.find('section').each(function () {
+                const sectionId = $(this).attr('id');
+                const h2 = $(this).find('h2:first');
+
+                if (sectionId && h2.length > 0 && sectionId !== 'disclaimer') {
+                    let title = h2.text();
+                    const li = $('<li></li>');
+                    const a = $('<a></a>').attr('href', '#' + sectionId).text(title);
+                    li.append(a);
+                    ul.append(li);
+                }
+            });
+            tocList.append(ul);
+        }
+
         $(function () {
-            $(".shared-nav").load("/shared/nav.html");
-            $(".etf-nav").load("/shared/etfnav2.html");
+            $(".shared-nav").load("/shared/nav.html", function () {
+                generateTOC();
+            });
             $(".shared-subscribe").load("/shared/subscribe.html");
             $(".shared-banner").load("/shared/banner.html");
             $(".shared-articles").load("/shared/technologyStocks.html");
             $(".shared-footer").load("/shared/footer.html");
-        });
-        $(document).ready(function () {
+
+            generateTOC();
+
             $("#toggle-toc").click(function () {
-                var tocList = $("#toc-list");
                 var fixedToc = $(".fixed-toc");
-                if (tocList.is(":visible")) {
-                    tocList.hide();
-                    fixedToc.css({ "width": "0px", "display": "none" });
+                fixedToc.toggle();
+                if (fixedToc.is(":visible")) {
+                    fixedToc.addClass("show");
                 } else {
-                    fixedToc.css({ "width": "200px", "display": "block" });
-                    tocList.show();
+                    fixedToc.removeClass("show");
                 }
             });
-        });
 
-        $(document).ready(function () {
-            $('.carousel').carousel();
-
-            // Scroll to top functionality
             var mybutton = $('#return-to-top');
 
             $(window).scroll(function () {
-                if ($(this).scrollTop() > 20) {
+                if ($(this).scrollTop() > 100) {
                     mybutton.fadeIn();
                 } else {
                     mybutton.fadeOut();

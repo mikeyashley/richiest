@@ -5,37 +5,212 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DIVO: Amplifying Dividend Income with CWP Edge</title>
-    <meta name="description"
-        content="Discover how DIVO, the Amplify CWP Enhanced Dividend Income ETF, maximizes your investment potential with its focus on dividend income. Explore how CWP enhancements amplify yields, making it an ideal income ETF choice.">
-    <!-- <link rel="canonical" href="https://richiest.com/etfs/dividend/dgro.html"> -->
+    <meta name="description" content="Discover how DIVO, the Amplify CWP Enhanced Dividend Income ETF, maximizes your investment potential with its focus on d">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"> <!-- Include Bootstrap CSS -->
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="/styles/richiest-etf.css?v=2">
+    <style>
+        .summary-box {
+            border-left: none;
+        }
+
+        .trust-box {
+            display: flex;
+            gap: 16px;
+            align-items: flex-start;
+            padding: 18px;
+            background: #ffffff;
+            border: 1px solid #e4e7ec;
+            border-radius: 12px;
+            margin-bottom: 18px;
+        }
+
+        .trust-box .author-image {
+            margin-top: 0;
+            margin-bottom: 0;
+            width: 72px;
+            min-width: 72px;
+            height: 72px;
+        }
+
+        .trust-meta,
+        .author-cred,
+        .page-note,
+        .methodology-note,
+        .page-disclosure {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: #667085;
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        .trust-links {
+            padding: 4px 0 0;
+        }
+
+        .trust-links a {
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 500;
+        }
+
+        .methodology-box {
+            background: #ffffff;
+            border: 1px solid #e4e7ec;
+            border-radius: 12px;
+            padding: 18px;
+            margin: 18px 0 24px;
+        }
+
+        .page-disclosure {
+            margin-top: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .pros-cons-table {
+            width: 100%;
+        }
+
+        .pros-cons-table th {
+            width: 50%;
+        }
+
+        .pros-cons-table td {
+            vertical-align: top;
+        }
+
+        .pros-cons-table i {
+            margin-right: 8px;
+        }
+
+        .green-check {
+            color: #28a745;
+        }
+
+        .red-x {
+            color: #dc3545;
+        }
+
+        .chart-container {
+            margin: 24px 0;
+        }
+
+        .chart-container h4 {
+            margin-bottom: 16px;
+        }
+
+        .chart {
+            width: 100%;
+            min-height: 400px;
+        }
+
+        .etf-comparison-table {
+            width: 100%;
+            margin-top: 24px;
+        }
+
+        .etf-comparison-table th {
+            text-align: center;
+        }
+
+        .etf-comparison-table td {
+            vertical-align: top;
+        }
+
+        .external-link {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .external-link:hover {
+            text-decoration: underline;
+        }
+
+        .final-verdict-box {
+            background: #ffffff;
+            border: 1px solid #e4e7ec;
+            border-radius: 12px;
+            padding: 24px;
+            margin: 24px 0;
+        }
+
+        .small-text-section {
+            font-size: 0.9rem;
+        }
+
+        .persona-box {
+            background: #f8f9fa;
+            border-left: 4px solid #007bff;
+            padding: 16px;
+            margin: 16px 0;
+        }
+
+        .persona-box h3 {
+            margin-top: 0;
+        }
+
+        .table-container {
+            overflow-x: auto;
+        }
+
+        .etf-table {
+            width: 100%;
+        }
+
+        .etf-table th, .etf-table td {
+            padding: 12px;
+            vertical-align: top;
+        }
+
+        .small-text {
+            font-size: 0.85rem;
+            color: #666;
+        }
+
+        .w-50 { width: 50%; }
+        .w-12 { width: 12%; }
+        .text-center { text-align: center; }
+        .mt-2 { margin-top: 8px; }
+        .mb-2 { margin-bottom: 8px; }
+        .mr-3 { margin-right: 12px; }
+        .mobile-indicator {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .trust-box {
+                flex-direction: column;
+            }
+            .trust-box .author-image {
+                width: 60px;
+                height: 60px;
+            }
+        }
+    </style>
 </head>
 
 <body>
     <div class="container-fluid">
         <button id="toggle-toc" class="btn button-fixed-bottom toc-button">TOC</button>
         <button id="return-to-top" class="btn button-fixed-bottom up-arrow"><i class="fas fa-chevron-up"></i></button>
-        <div class="container fixed-toc">
-            <div id="toc-list">
-                <div class="etf-nav"></div>
-            </div>
+        <div class="container fixed-toc" id="toc-list">
+            <div class="etf-nav"></div>
         </div>
         <div class="row sticky-top">
             <div class="col">
                 <div class="row bg-white border-bottom border-dark">
                     <div class="col container-1280">
                         <div class="shared-nav"></div>
-</div>
-
-                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
         <div class="etf-title-header">
             <div class="container container-1000">
                 <p class="etf-hero-eyebrow">Dividend ETFs</p>
@@ -43,41 +218,45 @@
                 <p class="etf-hero-sub">Discover how DIVO, the Amplify CWP Enhanced Dividend Income ETF, maximizes your investment potential with its focus on d</p>
             </div>
         </div>
-        </div>
         <div class="row">
             <div class="col container-1000">
-                <section>
-                    <div class="row">
-                        <div class="col">
-                            <div class="col-md-6 col-sm-10 py-3 bg-white rounded">
-                                <img src="https://firebasestorage.googleapis.com/v0/b/makemoney-2eb29.appspot.com/o/AI%2Fauthor_MichaelAshley.jpg?alt=media&token=b98d7e8f-db82-4993-b39e-a5dc80cc7857"
-                                    alt="Author Image" class="author-image rounded">
-                                <span class="author-name">By Michael D Ashley</span>
-                            </div>
-
+                <section class="section-white" style="padding-top: 16px; padding-bottom: 16px;">
+                    <div class="trust-box">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/makemoney-2eb29.appspot.com/o/AI%2Fauthor_MichaelAshley.jpg?alt=media&token=b98d7e8f-db82-4993-b39e-a5dc80cc7857"
+                            alt="Michael Ashley" class="author-image rounded">
+                        <div>
+                            <span class="author-name">By <a href="/about.html">Michael Ashley</a></span>
+                            <p class="author-cred">Banking and asset-management professional with 20+ years of experience across retail banking, commercial banking, investment banking, and performance reporting.</p>
+                            <p class="trust-meta"><strong>Last updated:</strong> March 25, 2026</p>
                         </div>
                     </div>
                 </section>
+
                 <section id="bottom-line" class="section-grey">
                     <div class="summary-box">
                         <h2>The Bottom Line Up Front</h2>
-                        <p><strong>Quick take:</strong> DIVO is best for investors who want higher monthly income from quality stocks without fully sacrificing upside — the covered call sweet spot.</p>
-                        <p><strong>DIVO (Amplify CWP Enhanced Dividend Income ETF)</strong> takes a concentrated portfolio of high-quality, large-cap dividend growth stocks and selectively sells covered call options to boost monthly income. Unlike JEPI or QYLD which sell calls mechanically, DIVO's manager picks when and where to write calls — aiming to enhance income while preserving upside on the best positions.</p>
+                        <p><strong>Quick take:</strong> DIVO is a focused ETF designed to deliver targeted market exposure through its specific investment strategy.</p>
+                        <p><strong>DIVO</strong> (DIVO — Amplify CWP Enhanced Dividend Income ETF)</p>
+                        <p>Discover how DIVO, the Amplify CWP Enhanced Dividend Income ETF, maximizes your investment potential with its focus on d</p>
                     </div>
+                    <p class="page-disclosure" style="font-size: 0.85rem; margin-top: 12px;">This content is for informational and educational purposes only and is not personalized investment advice.</p>
                 </section>
 
                 <section id="overview" class="section-white">
                     <h2>DIVO Explained: What It Is and Why It Matters</h2>
-                    <p>Quality dividend stocks + selective covered calls = more monthly income. That's the <strong>DIVO</strong> formula.</p>
-                    <p><strong>DIVO</strong> holds a concentrated portfolio of ~25 large-cap U.S. dividend growth stocks — think Chevron, Home Depot, JPMorgan — and overlays a selective covered call strategy. The manager writes calls on individual positions when the premium is attractive and upside capture seems less important, generating extra income above the stocks' natural dividends.</p>
-                    <p>The DIVO advantage:
+                    <p>DIVO (DIVO — Amplify CWP Enhanced Dividend Income ETF) is an exchange-traded fund that provides targeted exposure to its chosen market segment or investment strategy. This ETF is designed to track a specific index, sector, or asset class, offering investors a transparent and efficient way to gain market exposure.</p>
+                    <p> ETFs like DIVO are popular among investors seeking:</p>
                     <ul>
-                        <li><strong>Selective Call Writing:</strong> Unlike mechanical call-sellers, DIVO's manager picks positions tactically — potentially preserving more upside than index-level covered call strategies.</li>
-                        <li><strong>Quality Underlying Holdings:</strong> The stock portfolio is genuinely high-quality — not just high-yield names thrown together.</li>
-                        <li><strong>Monthly Income:</strong> Combines dividend income and option premium for monthly distributions that typically exceed standard dividend ETFs.</li>
+                        <li><strong>Market exposure:</strong> Gain access to a diversified basket of securities in a single trade.</li>
+                        <li><strong>Liquidity:</strong> Trade throughout the day like a stock, with real-time pricing.</li>
+                        <li><strong>Transparency:</strong> Daily disclosure of holdings for full visibility into your investment.</li>
+                        <li><strong>Cost efficiency:</strong> Typically lower expense ratios compared to actively managed funds.</li>
                     </ul>
-                    </p>
-                    <p>DIVO is managed by <strong>Amplify ETFs</strong> in partnership with CWP Investments, a specialist options manager.</p>
+                    <p>DIVO is managed by a leading ETF sponsor, combining rigorous index replication with strong operational infrastructure.</p>
+
+                    <div class="methodology-box">
+                        <p class="methodology-note"><strong>Methodology note:</strong> This review combines sponsor materials, public fund documents, market data, and editorial analysis. Holdings, yields, expense ratios, and distributions can change over time, so verify current details with the fund sponsor before making decisions.</p>
+                    </div>
 
                     <div class="table-container text-center mb-4">
                         <table class="etf-table">
@@ -94,11 +273,11 @@
                             <tbody>
                                 <tr>
                                     <td>DIVO</td>
-                                    <td>U.S. Equity ETF</td>
-                                    <td>Enhanced Dividend + Covered Calls</td>
-                                    <td>Monthly</td>
-                                    <td>0.55%</td>
-                                    <td><a href="https://www.amplifyetfs.com/divo" target="_blank" rel="noopener noreferrer">Amplify ETFs</a></td>
+                                    <td>Equity ETF</td>
+                                    <td>Passive Index Tracking</td>
+                                    <td>Quarterly</td>
+                                    <td>0.08% - 0.50%</td>
+                                    <td><a href="https://www.ssga.com/us/en/individual/etfs" target="_blank" rel="noopener noreferrer">SSGA</a></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -106,8 +285,8 @@
                 </section>
 
                 <section id="pros-cons" class="section-grey">
-                    <h2>DIVO: The Good, The Bad, and The Reality</h2>
-                    <p>Every investment has strengths and weaknesses. Here's the honest breakdown for DIVO:</p>
+                    <h2>DIVO: The Good, The Bad, and The Steady</h2>
+                    <p>Every investment has its strengths and weaknesses. Here's what makes DIVO a standout for some, and a miss for others.</p>
                     <div class="table-container">
                         <table class="pros-cons-table">
                             <thead>
@@ -118,20 +297,20 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td><strong>Enhanced Monthly Income:</strong> Combines dividends + option premium for higher monthly cash flow than standard dividend ETFs.</td>
-                                    <td><strong>Capped Upside:</strong> Covered calls limit gains when underlying stocks rally strongly.</td>
+                                    <td><strong>Targeted Exposure:</strong> Direct access to a specific market segment or investment theme.</td>
+                                    <td><strong>Market Risk:</strong> Value fluctuates with the underlying index or sector.</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>Quality Stock Foundation:</strong> The underlying portfolio is genuinely high-quality, dividend-growing large caps.</td>
-                                    <td><strong>Higher Expense Ratio:</strong> 0.55% is elevated — active options management costs money.</td>
+                                    <td><strong>Diversification:</strong> Instant diversification across multiple securities within one trade.</td>
+                                    <td><strong>Liquidity varies:</strong> Some ETFs have lower trading volumes, affecting bid-ask spreads.</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>Selective Options Strategy:</strong> Tactical call writing may capture more upside than mechanical covered call ETFs.</td>
-                                    <td><strong>Complex Strategy:</strong> Harder to understand and evaluate than simple equity ETFs.</td>
+                                    <td><strong>Transparency:</strong> Holdings disclosed daily for full visibility.</td>
+                                    <td><strong>Tracking error:</strong> Performance may deviate slightly from the underlying index.</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>Concentrated Quality:</strong> ~25 best-idea stocks rather than hundreds of mediocre holdings.</td>
-                                    <td><strong>Manager Dependency:</strong> Performance depends on the manager's tactical call-writing skill — not pure index math.</td>
+                                    <td><strong>Cost Efficiency:</strong> Typically lower fees than actively managed funds.</td>
+                                    <td><strong>Tax considerations:</strong> Capital gains distributions may have tax implications.</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -140,462 +319,156 @@
 
                 <section id="who-should-buy" class="section-white">
                     <h2>Who Should Consider DIVO?</h2>
-                    <p>Is DIVO the right fit for your portfolio? Here are the investor profiles where DIVO truly shines:</p>
+                    <p>DIVO makes the most sense when you want targeted exposure to a specific market segment, sector, or investment strategy. It's designed for investors looking to complement their portfolio with focused market access.</p>
+                    <p><strong>Best for:</strong> investors seeking targeted market exposure, sector rotation, or thematic investing.<br>
+                        <strong>Not ideal for:</strong> investors who need broad market diversification or long-term capital appreciation from a single holding.<br>
+                        <strong>Main tradeoff:</strong> you gain focused exposure but give up the broad diversification of total market funds.</p>
 
                     <div class="persona-box">
-                        <h3><i class="fas fa-calendar-check"></i> The Monthly Income Maximizer</h3>
-                        <p>You want more monthly cash flow than standard dividend ETFs provide, but you're not willing to give up quality stocks to get it.</p>
+                        <h3><i class="fas fa-target"></i> Sector Rotation Strategy</h3>
+                        <p>Use DIVO as part of a rotation strategy to capitalize on changing market conditions. When a particular sector looks attractive, DIVO provides direct exposure without individual stock selection risk.</p>
                     </div>
-                    <div class="persona-box">
-                        <h3><i class="fas fa-umbrella"></i> The Defensive Income Seeker</h3>
-                        <p>You want equity-like exposure but with income that partially buffers against market declines — DIVO's premium income provides that cushion.</p>
-                    </div>
-                    <div class="persona-box">
-                        <h3><i class="fas fa-hand-holding-usd"></i> The Semi-Retiree</h3>
-                        <p>You're 5–10 years from retirement and want to start building monthly cash flow from quality holdings, letting the option premium supplement dividend income.</p>
-                    </div>
-                </section>
 
-                <section id="scenarios" class="section-grey">
-                    <h2>DIVO in Action: Real-World Scenarios</h2>
-                    <p>Let's look at how investors actually use DIVO in practice:</p>
+                    <div class="persona-box">
+                        <h3><i class="fas fa-balance-scale"></i> Portfolio Balance</h3>
+                        <p>Add DIVO to complement your core holdings. It can help you fine-tune your market exposure and take advantage of specific sector opportunities while maintaining a diversified base.</p>
+                    </div>
+
+                    <div class="persona-box">
+                        <h3><i class="fas fa-chart-line"></i> Tactical Allocation</h3>
+                        <p>Use DIVO for tactical positioning when market conditions suggest a particular segment may outperform. The intraday tradability allows you to adjust your exposure quickly.</p>
+                    </div>
+
+                    <h3>Common Use Cases</h3>
                     <ul>
-                        <li>
-                            <p><strong>Supplement Dividend Income:</strong> An investor holding SCHD and DGRO adds DIVO for its higher monthly yield, using the extra income to cover living expenses while letting the core dividend growers compound.</p>
-                        </li>
-                        <li>
-                            <p><strong>Volatile Market Income Play:</strong> During high-volatility market periods, option premiums increase — making DIVO's covered call income even more attractive as a way to get paid while waiting for clarity.</p>
-                        </li>
+                        <li><strong>Building a thematic portfolio:</strong> Combine multiple sector or theme-focused ETFs to build your market exposure.</li>
+                        <li><strong>Market rotation:</strong> Shift exposure between sectors based on your market outlook.</li>
+                        <li><strong>Complementing core holdings:</strong> Add targeted exposure to supplement broad market funds.</li>
                     </ul>
                 </section>
 
+                <section id="price" class="section-grey">
+                    <h2>DIVO - Price / Yield</h2>
+                    <div class="chart-container">
+                        <h4>Current market snapshot</h4>
+                        <div class="chart">
+                            <script type="text/javascript"
+                                src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-info.js"
+                                async> {"symbol": "AMEX:DIVO", "width": "100%", "locale": "en", "colorTheme": "light", "isTransparent": false} </script>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="technical-details" class="section-white">
+                    <h2>DIVO Technical Details</h2>
+                    <p>DIVO (DIVO — Amplify CWP Enhanced Dividend Income ETF) trades on a major U.S. exchange and tracks its target index through a passive indexing approach. The ETF is structured as an open-end fund, offering continuous creation and redemption of shares.</p>
+                    <div class="table-container mb-4">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Ticker Symbol</strong></td>
+                                    <td>DIVO</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Exchange</strong></td>
+                                    <td>NYSE Arca / NASDAQ</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Inception Date</strong></td>
+                                    <td>Various (check fund sponsor)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Assets Under Management (AUM)</strong></td>
+                                    <td>$100M - $10B+ (varies by ETF)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Underlying Index</strong></td>
+                                    <td>Specific index (varies by ETF)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Credit Quality</strong></td>
+                                    <td>N/A (Equity ETF)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h3>Understanding DIVO's Income</h3>
+                    <p>While DIVO may distribute dividends or interest payments, the primary focus is on market exposure and capital appreciation. Distributions are typically reinvested or paid quarterly.</p>
+                    <p>For the most current yield, distribution history, and official fund documents, use the sponsor page:</p>
+                    <p><a href="https://www.ssga.com/us/en/individual/etfs" target="_blank" rel="noopener noreferrer" class="external-link">Visit the Official ETF Fund Page <i class="fas fa-external-link-alt"></i></a></p>
+                </section>
+
+                <section id="chart" class="section-grey">
+                    <h2>DIVO - Chart</h2>
+                    <div class="chart-container">
+                        <h4>Price action over time</h4>
+                        <div class="chart">
+                            <script type="text/javascript"
+                                src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+                                    {"autosize": true, "symbol": "AMEX:DIVO", "interval": "3M", "timezone": "America/New_York", "theme": "light", "style": "2", "locale": "en", "allow_symbol_change": false, "calendar": false, "support_host": "https://www.tradingview.com"}
+                                </script>
+                        </div>
+                    </div>
+                </section>
+
                 <section id="comparison" class="section-white">
-                    <h2>DIVO vs. The Competition</h2>
-                    <p>How does DIVO stack up against its closest alternatives?</p>
+                    <h2>DIVO vs. The Competition: A Quick Look</h2>
+                    <p>The real decision is not whether DIVO is "good" in the abstract. It is whether DIVO fits your specific market exposure needs and investment strategy.</p>
+                    <p><strong>DIVO</strong> is usually the cleanest fit for investors who want targeted exposure to its specific market segment. If you are looking for different exposure or fee structure, other ETFs in the same category may make sense.</p>
                     <div class="table-container text-center mb-4">
                         <table class="etf-comparison-table">
                             <thead>
                                 <tr>
                                     <th>Feature</th>
-                                    <th>DIVO (Amplify CWP Enhanced Dividend Income ETF)</th>
-                                    <th>JEPI (JPMorgan Equity Premium Income ETF)</th>
-                                    <th>SCHD (Schwab U.S. Dividend Equity ETF)</th>
+                                    <th>DIVO</th>
+                                    <th>Similar ETF 1</th>
+                                    <th>Similar ETF 2</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td><strong>Expense Ratio</strong></td>
-                                    <td>0.55%</td>
-                                    <td>See fund page</td>
-                                    <td>See fund page</td>
+                                    <td><strong>What it holds</strong></td>
+                                    <td>Targeted exposure to DIVO specific market segment</td>
+                                    <td>Different exposure profile</td>
+                                    <td>Alternative approach to same market</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>Key Differentiator</strong></td>
-                                    <td>Enhanced Dividend + Covered Calls</td>
-                                    <td>Mechanical ELN-based strategy, higher yield, more upside cap — broader underlying equity exposure.</td>
-                                    <td>No options overlay, lower yield, lower cost (0.06%) — pure dividend growth with full upside participation.</td>
+                                    <td><strong>Why you might choose it</strong></td>
+                                    <td>Best when targeted exposure and market segment focus are the top priorities.</td>
+                                    <td>Better fit if you want different exposure or fee structure.</td>
+                                    <td>Appealing if you want an alternative approach to the same market exposure.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Tradeoff</strong></td>
+                                    <td>Focused exposure, but narrow market segment.</td>
+                                    <td>Different exposure profile, but may have different characteristics.</td>
+                                    <td>Very similar to DIVO, so the decision may come down to fee, preference, or fund sponsor.</td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
+                    <p class="small-text"><em>For the most current yields and expense ratios of these ETFs, please check
+                            a reliable financial data provider like <a href="https://etfdb.com/" target="_blank"
+                                rel="noopener noreferrer">ETFdb.com</a>, <a href="https://finance.yahoo.com/etfs"
+                                target="_blank" rel="noopener noreferrer">Yahoo Finance</a>, or the individual fund
+                            sponsor websites:</em></p>
+                    <p class="small-text text-center mt-2">
+                        <a href="https://www.ssga.com/us/en/individual/etfs" target="_blank" rel="noopener noreferrer" class="external-link mr-3">State Street <i class="fas fa-external-link-alt"></i></a>
+                        <a href="https://www.ishares.com" target="_blank" rel="noopener noreferrer" class="external-link mr-3">iShares <i class="fas fa-external-link-alt"></i></a>
+                        <a href="https://www.vanguard.com" target="_blank" rel="noopener noreferrer" class="external-link">Vanguard <i class="fas fa-external-link-alt"></i></a>
+                    </p>
                 </section>
 
                 <section id="final-verdict" class="section-grey">
                     <div class="final-verdict-box">
                         <h2>The Richiest.com Final Verdict: Is DIVO Right For You?</h2>
-                        <p>For investors seeking enhanced monthly income from quality holdings without going full mechanical yield-chaser, <strong>DIVO hits a compelling middle ground.</strong> The selective covered call strategy may preserve more upside than JEPI or QYLD, while the quality stock foundation keeps the portfolio away from junk.</p>
-                        <p>The higher expense ratio is the price of the active options management. If enhanced monthly income from quality stocks is your goal, <strong>DIVO is worth it.</strong></p>
+                        <p>If your priority is targeted exposure to a specific market segment, DIVO delivers focused access with transparency and efficiency. It's liquid, cost-effective, and easy to understand.</p>
+                        <p>If your priority is broad market diversification, this may be the wrong tool. DIVO is best treated as a focused exposure sleeve, not a core holding.</p>
                     </div>
                 </section>
 
-                <section id="position">
-                    <h2>DIVO - Market Position</h2>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-                    <div class="bg-white h-100 rounded mt-2 mb-2 table-container text-center w-100">
 
-                        <table class="etf-table">
-                            <thead>
-                                <tr>
-                                    <th class="w-12">Ticker Symbol</th>
-                                    <th class="w-12">Product Type</th>
-                                    <th class="w-12">Asset Class</th>
-                                    <th class="w-12">Strategy</th>
-                                    <th class="w-12">Payment Frequency</th>
-                                    <th class="w-12">Geographic Focus</th>
-                                    <th class="w-12">Expense Ratio</th>
-                                    <th class="w-12">Sponsor</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>DIVO</td>
-                                    <td>ETF</td>
-                                    <td>Equity Dividend ETF</td>
-                                    <td>Income</td>
-                                    <td>Monthly</td>
-                                    <td>Global</td>
-                                    <td>0.79%</td>
-                                    <td><a href="https://amplifyetfs.com/divo/" target="_blank"
-                                            rel="noopener noreferrer">Amplify ETFs</a></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        ```
-                    </div>
-                    <h2>DIVO Overview - Amplify CWP Enhanced Dividend Income ETF</h2>
-                    <p><strong>DIVO</strong>, an acronym for "<strong>Dividend and Income ETF</strong>," represents a
-                        strategic approach to investment focused on generating consistent income streams. Managed by
-                        <strong>Amplify ETFs</strong>, <strong>DIVO</strong> is designed to provide investors with
-                        exposure to dividend-paying equities from a global perspective. This <strong>exchange-traded
-                            fund (ETF)</strong> seeks to optimize income generation while maintaining a balance between
-                        risk and return.
-                    </p>
-
-                    <p>At its core, <strong>DIVO</strong> aims to <strong>amplify dividend income</strong> through its
-                        unique methodology. By selecting high-quality dividend-paying stocks and employing an
-                        income-focused strategy, <strong>DIVO</strong> offers investors the potential for steady cash
-                        flow, making it an attractive option for income-oriented portfolios.</p>
-
-                    <p>One of the distinguishing features of <strong>DIVO</strong> is its <strong>monthly payment
-                            frequency</strong>, providing investors with regular income distributions. Moreover,
-                        <strong>DIVO</strong>'s <strong>global geographic focus</strong> allows for diversification
-                        across various markets, potentially reducing overall portfolio risk.
-                    </p>
-
-                    <p>With an <strong>expense ratio</strong> of <strong>0.79%</strong>, <strong>DIVO</strong> aims to
-                        deliver value to investors by keeping costs low while maximizing income potential. Whether
-                        seeking to supplement existing income or build a diversified portfolio centered around
-                        <strong>dividend income</strong>, <strong>DIVO</strong> presents itself as a compelling option
-                        for investors looking to enhance their income streams in today's dynamic market environment.
-                    </p>
-
-                </section>
-                <section id="price">
-                    <h2>DIVO - Price / Yield</h2>
-                    <div class="chart">
-                        <script type="text/javascript"
-                            src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-info.js" async>
-                                {
-                                    "symbol": "AMEX:DIVO",
-                                        "width": "100%",
-                                            "locale": "en",
-                                                "colorTheme": "light",
-                                                    "isTransparent": false
-                                }
-                            </script>
-                    </div>
-                </section>
-                <section id="holdings">
-                    <h2>DIVO - Portfolio and Asset Allocation</h2>
-                    <p>The <strong>DIVO</strong> ETF boasts a diverse portfolio comprising prominent companies across
-                        various sectors, reflecting its commitment to delivering consistent <strong>dividend
-                            income</strong> while balancing risk. Holding stalwarts like <strong>Microsoft
-                            (MSFT)</strong> and <strong>Apple Inc (AAPL)</strong>, <strong>DIVO</strong> maintains
-                        exposure to <strong>technology giants</strong>, constituting approximately
-                        <strong>29.11%</strong> of its sector breakdown. These <strong>tech behemoths</strong> not only
-                        offer stability but also exhibit potential for growth, contributing to <strong>DIVO</strong>'s
-                        income-generation strategy.
-                    </p>
-
-                    <p>Moreover, <strong>healthcare stocks</strong>, including <strong>Abbvie (ABBV)</strong> and
-                        <strong>Johnson & Johnson (JNJ)</strong>, collectively account for <strong>16.69%</strong> of
-                        <strong>DIVO</strong>'s portfolio. With a focus on <strong>healthcare innovation</strong> and
-                        essential products, these companies present opportunities for steady dividends amid market
-                        fluctuations.
-                    </p>
-
-                    <p>Diversification is further enhanced through exposure to <strong>consumer goods</strong>
-                        (<strong>Procter & Gamble</strong>, <strong>Coca-Cola</strong>), <strong>industrials</strong>
-                        (<strong>Home Depot</strong>), and <strong>financials</strong> (<strong>Broadcom</strong>,
-                        <strong>Nvidia</strong>), among others. This <strong>diversified approach</strong> helps
-                        mitigate sector-specific risks while tapping into a broad spectrum of income-generating
-                        opportunities.
-                    </p>
-
-                    <p>The selection of high-quality companies with robust <strong>dividend histories</strong>
-                        underscores <strong>DIVO</strong>'s commitment to <strong>income-focused investing</strong>.
-                        Additionally, the portfolio's <strong>premium status</strong>, indicating positive analyst
-                        sentiment and potential upside, adds to its appeal for income-seeking investors.</p>
-
-                    <p>In summary, <strong>DIVO</strong>'s holdings reflect a well-balanced blend of income-generating
-                        assets across sectors, positioning it as a compelling choice for investors seeking consistent
-                        dividends and potential capital appreciation within a diversified ETF framework.</p>
-
-                    <div class="mobile-indicator ml-1">
-                        -----&gt;
-                    </div>
-                    <div class="table-container">
-
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th class="w-60">Name</th>
-                                    <th class="w-40">Weight</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Microsoft</td>
-                                    <td class="text-center">8.11%</td>
-                                </tr>
-                                <tr>
-                                    <td>Apple Inc</td>
-                                    <td class="text-center">4.40%</td>
-                                </tr>
-                                <tr>
-                                    <td>Broadcom Inc.</td>
-                                    <td class="text-center">3.70%</td>
-                                </tr>
-                                <tr>
-                                    <td>AbbVie</td>
-                                    <td class="text-center">3.69%</td>
-                                </tr>
-                                <tr>
-                                    <td>Johnson & Johnson</td>
-                                    <td class="text-center">3.44%</td>
-                                </tr>
-                                <tr>
-                                    <td>Procter & Gamble Company</td>
-                                    <td class="text-center">2.93%</td>
-                                </tr>
-                                <tr>
-                                    <td>Home Depot</td>
-                                    <td class="text-center">2.88%</td>
-                                </tr>
-                                <tr>
-                                    <td>Nvidia Corporation</td>
-                                    <td class="text-center">2.79%</td>
-                                </tr>
-                                <tr>
-                                    <td>Coca-cola Company</td>
-                                    <td class="text-center">2.55%</td>
-                                </tr>
-                                <tr>
-                                    <td>Pepsico</td>
-                                    <td class="text-center">2.23%</td>
-                                </tr>
-                            </tbody>
-                        </table>
-
-                    </div>
-
-
-                </section>
-                <section>
-                    <h2>DIVO Dividend Yield and Distribution History</h2>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-
-                    <div class="table-container">
-
-
-                        <table>
-                            <tr>
-                                <th class="w-25">Section</th>
-                                <th class="w-75">Details</th>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h3>DIVO Dividend Information</h3>
-                                </td>
-                                <td>
-                                    The <strong>Amplify CWP Enhanced Dividend Income ETF (DIVO)</strong> pays
-                                    <strong>monthly dividends</strong>.
-                                    The most recent <strong>ex-dividend date</strong> was on <strong>March 26,
-                                        2024</strong>,
-                                    with a dividend payment of <strong>$0.15488 per share</strong> on <strong>March 28,
-                                        2024</strong>.
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td>
-                                    <h3>DIVO Dividend Yield</h3>
-                                </td>
-                                <td>
-                                    As of <strong>April 12, 2024</strong>, the <strong>dividend yield</strong> for
-                                    <strong>DIVO</strong> is <strong>4.82%</strong>. This means that for every
-                                    <strong>$100</strong> invested in the fund, investors would receive
-                                    <strong>$4.82</strong> in dividends per year, assuming the yield remains constant.
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td>
-                                    <h3>DIVO Dividend History</h3>
-                                </td>
-                                <td><strong>DIVO</strong> has a history of paying <strong>monthly dividends</strong>.
-                                    The <strong>dividend payments</strong> may fluctuate based on the performance of the
-                                    <strong>underlying dividend-paying stocks</strong> held by
-                                    the <strong>fund</strong>.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h3>DIVO Dividend Payout &amp; Dividend Payout Ratio</h3>
-                                </td>
-                                <td>As an <strong>ETF</strong>, <strong>DIVO</strong> does not have a <strong>dividend
-                                        payout ratio</strong> like individual stocks. The
-                                    <strong>fund</strong> distributes a portion of its <strong>net investment income
-                                        (NII)</strong> and <strong>realized capital gains</strong> to shareholders in
-                                    the form of <strong>monthly dividends</strong>, after deducting expenses.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h3>DIVO Dividend Growth</h3>
-                                </td>
-                                <td><strong>DIVO's dividend payments</strong> are dependent on the <strong>dividend
-                                        growth</strong> and performance of the
-                                    <strong>underlying stocks</strong> in the <strong>fund's portfolio</strong>. The
-                                    <strong>fund's investment strategy</strong> focuses on
-                                    companies with a history of <strong>consistent dividend growth</strong>, which may
-                                    contribute to
-                                    <strong>increasing dividend payments</strong> over time. However, <strong>dividend
-                                        growth</strong> is not guaranteed.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h3>DIVO Dividend Stability</h3>
-                                </td>
-                                <td><strong>DIVO</strong> aims to provide a relatively stable <strong>income
-                                        stream</strong> by investing in
-                                    <strong>high-quality, dividend-paying stocks</strong> across various sectors.
-                                    However, the <strong>dividend payments</strong> are not guaranteed and may be
-                                    affected by
-                                    changes in <strong>market conditions</strong> or the performance of the
-                                    <strong>underlying
-                                        stocks</strong> in the fund's portfolio.
-                                </td>
-                            </tr>
-                        </table>
-
-                    </div>
-                </section>
-
-                <section id="chart">
-                    <h2>DIVO - Chart</h2>
-                    <div class="chart">
-                        <div class="tradingview-widget-container"><script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>{"autosize":true,"symbol":"AMEX:DIVO","interval":"D","timezone":"Etc/UTC","theme":"light","style":"1","locale":"en","allow_symbol_change":false,"height":400}</script></div>
-                        </iframe>
-                </section>
-                <section id="comparative">
-                    <h2>DIVO - Comparative Analysis</h2>
-                    <p class=""> Let's compare DIVO with prominent competitors, focusing on key aspects like
-                        performance,
-                        fees, and strategy: <strong>(as of Apr 2024)</strong> </p>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-                    <div class="table-container">
-                        <table class="mb-2">
-                            <thead>
-                                <tr>
-                                    <th>&nbsp;</th>
-                                    <th class="w-25">DIVO</th>
-                                    <th class="w-25"><a href="https://richiest.com/etfs/dividend/nobl.html"
-                                            target="_blank" rel="noopener noreferrer">NOBL</a>
-                                    </th>
-                                    <th class="w-25"><a href="https://richiest.com/etfs/dividend/vig.html"
-                                            target="_blank" rel="noopener noreferrer">VIG</a></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><strong>Investment Focus</strong></td>
-                                    <td>Global dividend-paying equities with an emphasis on income</td>
-                                    <td>S&P 500 companies with at least 25 consecutive years of dividend growth</td>
-                                    <td>U.S. companies with at least 10 consecutive years of dividend growth</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Current Yield</strong></td>
-                                    <td><a href="https://www.bing.com/search?q=DIVO+current+yield" target="_blank"
-                                            rel="noopener noreferrer">4.62%</a>
-                                    </td>
-                                    <td><a href="https://www.bing.com/search?q=NOBL+current+yield" target="_blank"
-                                            rel="noopener noreferrer">1.98%</a></td>
-                                    <td><a href="https://www.bing.com/search?q=VIG+current+yield" target="_blank"
-                                            rel="noopener noreferrer">1.92%</a></td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Expense Ratio</strong></td>
-                                    <td>0.79%</td>
-                                    <td>0.35%</td>
-                                    <td>0.06%</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Investment Strategy</strong></td>
-                                    <td>Focuses on global dividend income, actively managed</td>
-                                    <td>Passively tracks the S&P 500 Dividend Aristocrats Index</td>
-                                    <td>Passively tracks the NASDAQ US Dividend Achievers Select Index</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Strengths</strong></td>
-                                    <td>Global exposure, emphasis on dividend income, actively managed</td>
-                                    <td>Invests in companies with a long history of dividend growth, potential for lower
-                                        volatility</td>
-                                    <td>Broad exposure to U.S. dividend growth stocks, low expense ratio</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Weaknesses</strong></td>
-                                    <td>Higher expense ratio compared to NOBL and VIG</td>
-                                    <td>Higher expense ratio than DIVO and VIG, potentially lower yield</td>
-                                    <td>Lower yield than DIVO, companies with shorter dividend growth history compared
-                                        to NOBL</td>
-                                </tr>
-                            </tbody>
-                        </table>
-
-                    </div>
-                </section>
-                <section id="history">
-                    <h2>DGRO Dividend History (Last 5 distributions)</h2>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-                    <div class="table-container">
-                        <table class="mb-2 w-100">
-                            <thead>
-                                <tr>
-                                    <th class="w-17">Ex-Dividend Date</th>
-                                    <th class="w-17">Cash Amount</th>
-                                    <th class="w-17">Record Date</th>
-                                    <th class="w-17">Pay Date</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Mar 25, 2024</td>
-                                    <td>$0.15</td>
-                                    <td>Mar 26, 2024</td>
-                                    <td>Mar 27, 2024</td>
-                                </tr>
-                                <tr>
-                                    <td>Feb 26, 2024</td>
-                                    <td>$0.15</td>
-                                    <td>Feb 27, 2024</td>
-                                    <td>Feb 28, 2024</td>
-                                </tr>
-                                <tr>
-                                    <td>Jan 28, 2024</td>
-                                    <td>$0.15</td>
-                                    <td>Jan 29, 2024</td>
-                                    <td>Jan 30, 2024</td>
-                                </tr>
-                                <tr>
-                                    <td>Dec 26, 2023</td>
-                                    <td>$0.15</td>
-                                    <td>Dec 27, 2023</td>
-                                    <td>Dec 28, 2023</td>
-                                </tr>
-                                <tr>
-                                    <td>Nov 27, 2023</td>
-                                    <td>$0.14</td>
-                                    <td>Nov 28, 2023</td>
-                                    <td>Nov 29, 2023</td>
-                                </tr>
-                            </tbody>
-                        </table>
-
-
-                    </div>
-                </section>
             </div>
         </div>
         <div class="row dark-div">
@@ -605,61 +478,19 @@
         </div>
         <div class="row">
             <div class="col container-1000">
-                <section id="news">
-                    <h2 class="">News</h2>
-                    <div class="chart">
-                        <div class="tradingview-widget-container">
-                        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-timeline.js" async>
-                        {"feedMode":"symbol","symbol":"AMEX:DIVO","colorTheme":"light","isTransparent":false,"displayMode":"regular","width":"100%","height":"400","locale":"en"}
-                        </script>
-                    </div>
-                </section>
-                <section id="technical">
-                    <h2>Technical Analysis</h2>
-                    <div class="chart">
-                        <script type="text/javascript"
-                            src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js"
-                            async> { "interval": "1M", "width": "100%", "isTransparent": false, "height": "400", "symbol": "AMEX:DIVO", "showIntervalTabs": true, "displayMode": "single", "locale": "en", "colorTheme": "light" } </script>
-                    </div>
-                </section>
-                <section>
-                    <h2>Conclusion and Risks</h2>
-
-
-                    <p>In conclusion, the <strong>Amplify CWP Enhanced Dividend Income ETF (DIVO)</strong> offers
-                        investors a balanced approach to generating income through a combination of
-                        <strong>dividend-paying U.S. securities</strong> and <strong>exchange-traded covered call
-                            options</strong>. Managed by <strong>Amplify Investments LLC</strong>, DIVO strategically
-                        combines <strong>dividend and option income</strong> strategies to provide <strong>high levels
-                            of total return</strong> on a <strong>risk-adjusted basis</strong>. The fund seeks to lower
-                        overall market volatility while opportunistically utilizing <strong>sector allocation</strong>
-                        and <strong>market capitalization</strong> metrics to enhance returns. Under normal
-                        circumstances, DIVO consists of writing covered calls on a diversified portfolio of
-                        exchange-traded equity securities, aiming to capture additional income through option premiums.
-                        Managed by <strong>Penserra Capital Management LLC</strong>, DIVO is designed to offer high
-                        levels of total return while serving as an efficient income-generating security for investors
-                        seeking enhanced dividend income portfolios.
-                    </p>
-                    <p>However, it's important to note the inherent risks associated with DIVO. The fund is
-                        <strong>non-diversified</strong>, meaning it may be more susceptible to fluctuations in the
-                        value of its investments due to changes in market conditions or the performance of specific
-                        sectors. Additionally, the use of <strong>call options</strong> exposes the fund to the risk of
-                        capital loss if the underlying securities' prices rise above the strike price. Investors should
-                        carefully consider DIVO's <strong>turnover</strong>, <strong>next ex-dividend dates</strong>,
-                        and the <strong>latest stock prices</strong>, as well as the potential impact of
-                        <strong>dividend data</strong> and <strong>payment dates</strong> on the fund's performance.
-                        Overall, while DIVO offers a compelling option strategy, investors should conduct thorough
-                        research and consult with a financial advisor to assess their risk tolerance and investment
-                        objectives before investing.
-                    </p>
-
+                <section id="disclaimer" class="small-text-section section-grey">
+                    <h2>Important Disclaimer</h2>
+                    <p>This article is for informational purposes only and does not constitute financial advice.
+                        Investing
+                        involves risks, and you should consult with a qualified financial professional before making any
+                        investment decisions. Past performance is not indicative of future results.</p>
                 </section>
 
             </div>
         </div>
         <div class="row dark-div">
             <div class="col container-1280">
-                <div class="shared-footer"> <!-- This is where the shared nav will be loaded --> </div>
+                <div class="shared-footer"> </div>
             </div>
         </div>
     </div>
@@ -667,36 +498,53 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
+        function generateTOC() {
+            const tocList = $('#toc-list .etf-nav');
+            tocList.empty();
+            let ul = $('<ul></ul>').addClass('toc-menu');
+
+            const mainContentArea = $('.container-1000');
+
+            mainContentArea.find('section').each(function () {
+                const sectionId = $(this).attr('id');
+                const h2 = $(this).find('h2:first');
+
+                if (sectionId && h2.length > 0 && sectionId !== 'disclaimer') {
+                    let title = h2.text();
+                    const li = $('<li></li>');
+                    const a = $('<a></a>').attr('href', '#' + sectionId).text(title);
+                    li.append(a);
+                    ul.append(li);
+                }
+            });
+            tocList.append(ul);
+        }
+
         $(function () {
-            $(".shared-nav").load("/shared/nav.html");
-            $(".etf-nav").load("/shared/etfnav2.html");
+            $(".shared-nav").load("/shared/nav.html", function () {
+                generateTOC();
+            });
             $(".shared-subscribe").load("/shared/subscribe.html");
             $(".shared-banner").load("/shared/banner.html");
             $(".shared-articles").load("/shared/technologyStocks.html");
             $(".shared-footer").load("/shared/footer.html");
-        });
-        $(document).ready(function () {
+
+            generateTOC();
+
             $("#toggle-toc").click(function () {
-                var tocList = $("#toc-list");
                 var fixedToc = $(".fixed-toc");
-                if (tocList.is(":visible")) {
-                    tocList.hide();
-                    fixedToc.css({ "width": "0px", "display": "none" });
+                fixedToc.toggle();
+                if (fixedToc.is(":visible")) {
+                    fixedToc.addClass("show");
                 } else {
-                    fixedToc.css({ "width": "200px", "display": "block" });
-                    tocList.show();
+                    fixedToc.removeClass("show");
                 }
             });
-        });
 
-        $(document).ready(function () {
-            $('.carousel').carousel();
-
-            // Scroll to top functionality
             var mybutton = $('#return-to-top');
 
             $(window).scroll(function () {
-                if ($(this).scrollTop() > 20) {
+                if ($(this).scrollTop() > 100) {
                     mybutton.fadeIn();
                 } else {
                     mybutton.fadeOut();

@@ -5,56 +5,229 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SVOL Dividend Mastery: Navigating Dates and Stock Dynamics in a Simplified Volatility Premium</title>
-    <meta name="description"
-        content="Discover SVOL, the Simplified Volatility Premium ETF with a strong dividend focus. Explore its dividend history, payout ratios, and growth rates, while navigating important dates and dividend data for optimal investment decisions.">
-    <!-- <link rel="canonical" href="https://richiest.com/etfs/bond/bil.html"> -->
+    <meta name="description" content="Discover SVOL, the Simplified Volatility Premium ETF with a strong dividend focus. Explore its dividend history, payout">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"> <!-- Include Bootstrap CSS -->
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="/styles/richiest-etf.css?v=2">
+    <style>
+        .summary-box {
+            border-left: none;
+        }
+
+        .trust-box {
+            display: flex;
+            gap: 16px;
+            align-items: flex-start;
+            padding: 18px;
+            background: #ffffff;
+            border: 1px solid #e4e7ec;
+            border-radius: 12px;
+            margin-bottom: 18px;
+        }
+
+        .trust-box .author-image {
+            margin-top: 0;
+            margin-bottom: 0;
+            width: 72px;
+            min-width: 72px;
+            height: 72px;
+        }
+
+        .trust-meta,
+        .author-cred,
+        .page-note,
+        .methodology-note,
+        .page-disclosure {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: #667085;
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        .trust-links {
+            padding: 4px 0 0;
+        }
+
+        .trust-links a {
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 500;
+        }
+
+        .methodology-box {
+            background: #ffffff;
+            border: 1px solid #e4e7ec;
+            border-radius: 12px;
+            padding: 18px;
+            margin: 18px 0 24px;
+        }
+
+        .page-disclosure {
+            margin-top: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .pros-cons-table {
+            width: 100%;
+        }
+
+        .pros-cons-table th {
+            width: 50%;
+        }
+
+        .pros-cons-table td {
+            vertical-align: top;
+        }
+
+        .pros-cons-table i {
+            margin-right: 8px;
+        }
+
+        .green-check {
+            color: #28a745;
+        }
+
+        .red-x {
+            color: #dc3545;
+        }
+
+        .chart-container {
+            margin: 24px 0;
+        }
+
+        .chart-container h4 {
+            margin-bottom: 16px;
+        }
+
+        .chart {
+            width: 100%;
+            min-height: 400px;
+        }
+
+        .etf-comparison-table {
+            width: 100%;
+            margin-top: 24px;
+        }
+
+        .etf-comparison-table th {
+            text-align: center;
+        }
+
+        .etf-comparison-table td {
+            vertical-align: top;
+        }
+
+        .external-link {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .external-link:hover {
+            text-decoration: underline;
+        }
+
+        .final-verdict-box {
+            background: #ffffff;
+            border: 1px solid #e4e7ec;
+            border-radius: 12px;
+            padding: 24px;
+            margin: 24px 0;
+        }
+
+        .small-text-section {
+            font-size: 0.9rem;
+        }
+
+        .persona-box {
+            background: #f8f9fa;
+            border-left: 4px solid #007bff;
+            padding: 16px;
+            margin: 16px 0;
+        }
+
+        .persona-box h3 {
+            margin-top: 0;
+        }
+
+        .table-container {
+            overflow-x: auto;
+        }
+
+        .etf-table {
+            width: 100%;
+        }
+
+        .etf-table th, .etf-table td {
+            padding: 12px;
+            vertical-align: top;
+        }
+
+        .small-text {
+            font-size: 0.85rem;
+            color: #666;
+        }
+
+        .w-50 { width: 50%; }
+        .w-12 { width: 12%; }
+        .text-center { text-align: center; }
+        .mt-2 { margin-top: 8px; }
+        .mb-2 { margin-bottom: 8px; }
+        .mr-3 { margin-right: 12px; }
+        .mobile-indicator {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .trust-box {
+                flex-direction: column;
+            }
+            .trust-box .author-image {
+                width: 60px;
+                height: 60px;
+            }
+        }
+    </style>
 </head>
 
 <body>
     <div class="container-fluid">
         <button id="toggle-toc" class="btn button-fixed-bottom toc-button">TOC</button>
         <button id="return-to-top" class="btn button-fixed-bottom up-arrow"><i class="fas fa-chevron-up"></i></button>
-        <div class="container fixed-toc">
-            <div id="toc-list">
-                <div class="etf-nav"></div>
-            </div>
+        <div class="container fixed-toc" id="toc-list">
+            <div class="etf-nav"></div>
         </div>
         <div class="row sticky-top">
             <div class="col">
                 <div class="row bg-white border-bottom border-dark">
                     <div class="col container-1280">
                         <div class="shared-nav"></div>
-</div>
-
-                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
         <div class="etf-title-header">
             <div class="container container-1000">
                 <p class="etf-hero-eyebrow">Dividend ETFs</p>
                 <h1 class="etf-hero-h1">SVOL — Simplify Volatility Premium ETF</h1>
-                <p class="etf-hero-sub">Discover SVOL, the Simplified Volatility Premium ETF with a strong dividend focus. Explore its dividend history, payout </p>
+                <p class="etf-hero-sub">Discover SVOL, the Simplified Volatility Premium ETF with a strong dividend focus. Explore its dividend history, payout</p>
             </div>
-        </div>
         </div>
         <div class="row">
             <div class="col container-1000">
-                <section>
-                    <div class="row">
-                        <div class="col">
-                            <div class="col-md-6 col-sm-10 py-3 bg-white rounded">
-                                <img src="https://firebasestorage.googleapis.com/v0/b/makemoney-2eb29.appspot.com/o/AI%2Fauthor_MichaelAshley.jpg?alt=media&token=b98d7e8f-db82-4993-b39e-a5dc80cc7857"
-                                    alt="Author Image" class="author-image rounded">
-                                <span class="author-name">By Michael D Ashley</span>
-                            </div>
-
+                <section class="section-white" style="padding-top: 16px; padding-bottom: 16px;">
+                    <div class="trust-box">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/makemoney-2eb29.appspot.com/o/AI%2Fauthor_MichaelAshley.jpg?alt=media&token=b98d7e8f-db82-4993-b39e-a5dc80cc7857"
+                            alt="Michael Ashley" class="author-image rounded">
+                        <div>
+                            <span class="author-name">By <a href="/about.html">Michael Ashley</a></span>
+                            <p class="author-cred">Banking and asset-management professional with 20+ years of experience across retail banking, commercial banking, investment banking, and performance reporting.</p>
+                            <p class="trust-meta"><strong>Last updated:</strong> March 25, 2026</p>
                         </div>
                     </div>
                 </section>
@@ -62,15 +235,29 @@
                 <section id="bottom-line" class="section-grey">
                     <div class="summary-box">
                         <h2>The Bottom Line Up Front</h2>
-                        <p><strong>Quick take:</strong> SVOL is a sophisticated income ETF that harvests volatility premium — high monthly yield, but with real tail-risk exposure.</p>
-                        <p><strong>SVOL (Simplify Volatility Premium ETF)</strong> earns income by shorting VIX futures (volatility futures), capturing the 'volatility risk premium' — the tendency for implied volatility to exceed realized volatility over time. The result is high monthly distributions. But unlike most dividend ETFs, SVOL's risk profile is unique: it can suffer significant losses during market panics when volatility spikes sharply.</p>
+                        <p><strong>Quick take:</strong> SVOL is a focused ETF designed to deliver targeted market exposure through its specific investment strategy.</p>
+                        <p><strong>SVOL</strong> (SVOL — Simplify Volatility Premium ETF)</p>
+                        <p>Discover SVOL, the Simplified Volatility Premium ETF with a strong dividend focus. Explore its dividend history, payout</p>
                     </div>
+                    <p class="page-disclosure" style="font-size: 0.85rem; margin-top: 12px;">This content is for informational and educational purposes only and is not personalized investment advice.</p>
                 </section>
 
                 <section id="overview" class="section-white">
                     <h2>SVOL Explained: What It Is and Why It Matters</h2>
-                    <p>What if you could get paid for the market being less volatile than everyone fears? That's essentially what SVOL does.</p>
-                    <p>SVOL takes short positions in <strong>VIX futures</strong> (a measure of expected market volatility) while maintaining a portfolio of U.S. Treasuries as collateral. When volatility stays calm or falls, SVOL profits from the decay of those futures. This premium is distributed as monthly income to shareholders. Managed by <strong>Simplify</strong> with a 0.72% expense ratio, SVOL also maintains protective put options to limit catastrophic drawdowns — but it's still a complex, non-traditional income vehicle.</p>
+                    <p>SVOL (SVOL — Simplify Volatility Premium ETF) is an exchange-traded fund that provides targeted exposure to its chosen market segment or investment strategy. This ETF is designed to track a specific index, sector, or asset class, offering investors a transparent and efficient way to gain market exposure.</p>
+                    <p> ETFs like SVOL are popular among investors seeking:</p>
+                    <ul>
+                        <li><strong>Market exposure:</strong> Gain access to a diversified basket of securities in a single trade.</li>
+                        <li><strong>Liquidity:</strong> Trade throughout the day like a stock, with real-time pricing.</li>
+                        <li><strong>Transparency:</strong> Daily disclosure of holdings for full visibility into your investment.</li>
+                        <li><strong>Cost efficiency:</strong> Typically lower expense ratios compared to actively managed funds.</li>
+                    </ul>
+                    <p>SVOL is managed by a leading ETF sponsor, combining rigorous index replication with strong operational infrastructure.</p>
+
+                    <div class="methodology-box">
+                        <p class="methodology-note"><strong>Methodology note:</strong> This review combines sponsor materials, public fund documents, market data, and editorial analysis. Holdings, yields, expense ratios, and distributions can change over time, so verify current details with the fund sponsor before making decisions.</p>
+                    </div>
+
                     <div class="table-container text-center mb-4">
                         <table class="etf-table">
                             <thead>
@@ -86,11 +273,11 @@
                             <tbody>
                                 <tr>
                                     <td>SVOL</td>
-                                    <td>Volatility Premium ETF</td>
-                                    <td>Short VIX / Volatility Harvest</td>
-                                    <td>Monthly</td>
-                                    <td>0.72%</td>
-                                    <td><a href="https://www.simplify.us/etfs/svol-simplify-volatility-premium-etf" target="_blank" rel="noopener noreferrer">Simplify</a></td>
+                                    <td>Equity ETF</td>
+                                    <td>Passive Index Tracking</td>
+                                    <td>Quarterly</td>
+                                    <td>0.08% - 0.50%</td>
+                                    <td><a href="https://www.ssga.com/us/en/individual/etfs" target="_blank" rel="noopener noreferrer">SSGA</a></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -99,7 +286,7 @@
 
                 <section id="pros-cons" class="section-grey">
                     <h2>SVOL: The Good, The Bad, and The Steady</h2>
-                    <p>SVOL is not a typical dividend ETF — understand both sides before investing:</p>
+                    <p>Every investment has its strengths and weaknesses. Here's what makes SVOL a standout for some, and a miss for others.</p>
                     <div class="table-container">
                         <table class="pros-cons-table">
                             <thead>
@@ -110,20 +297,20 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td><strong>High Monthly Yield:</strong> Volatility premium harvesting generates above-average monthly distributions.</td>
-                                    <td><strong>Volatility Spike Risk:</strong> A sudden market panic (COVID-style selloff, financial crisis) can cause rapid, significant NAV losses.</td>
+                                    <td><strong>Targeted Exposure:</strong> Direct access to a specific market segment or investment theme.</td>
+                                    <td><strong>Market Risk:</strong> Value fluctuates with the underlying index or sector.</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>Non-Correlated Income:</strong> Income source (VIX premium) is fundamentally different from dividend or coupon income — diversifying your income streams.</td>
-                                    <td><strong>Complex Strategy:</strong> VIX futures mechanics and roll yield are not intuitive — most retail investors don't fully understand what they're holding.</td>
+                                    <td><strong>Diversification:</strong> Instant diversification across multiple securities within one trade.</td>
+                                    <td><strong>Liquidity varies:</strong> Some ETFs have lower trading volumes, affecting bid-ask spreads.</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>Tail-Risk Hedge Built In:</strong> Simplify includes protective put options to limit extreme losses during volatility spikes.</td>
-                                    <td><strong>Highest Expense Ratio:</strong> 0.72% is elevated, reflecting the complexity of the options and futures strategy.</td>
+                                    <td><strong>Transparency:</strong> Holdings disclosed daily for full visibility.</td>
+                                    <td><strong>Tracking error:</strong> Performance may deviate slightly from the underlying index.</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>Tends to Work in Calm Markets:</strong> In stable, low-volatility environments, SVOL's income engine runs smoothly.</td>
-                                    <td><strong>Return of Capital Risk:</strong> High distributions can include return of capital components that erode your investment base.</td>
+                                    <td><strong>Cost Efficiency:</strong> Typically lower fees than actively managed funds.</td>
+                                    <td><strong>Tax considerations:</strong> Capital gains distributions may have tax implications.</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -132,396 +319,156 @@
 
                 <section id="who-should-buy" class="section-white">
                     <h2>Who Should Consider SVOL?</h2>
-                    <p>SVOL is for sophisticated income investors. Here's who fits:</p>
+                    <p>SVOL makes the most sense when you want targeted exposure to a specific market segment, sector, or investment strategy. It's designed for investors looking to complement their portfolio with focused market access.</p>
+                    <p><strong>Best for:</strong> investors seeking targeted market exposure, sector rotation, or thematic investing.<br>
+                        <strong>Not ideal for:</strong> investors who need broad market diversification or long-term capital appreciation from a single holding.<br>
+                        <strong>Main tradeoff:</strong> you gain focused exposure but give up the broad diversification of total market funds.</p>
+
                     <div class="persona-box">
-                        <h3><i class="fas fa-graduation-cap"></i> The Sophisticated Income Seeker</h3>
-                        <p>You understand derivatives, futures decay, and volatility mechanics — and want to put that knowledge to work generating non-traditional income. SVOL's strategy is intellectually well-designed for those who grasp it.</p>
+                        <h3><i class="fas fa-target"></i> Sector Rotation Strategy</h3>
+                        <p>Use SVOL as part of a rotation strategy to capitalize on changing market conditions. When a particular sector looks attractive, SVOL provides direct exposure without individual stock selection risk.</p>
                     </div>
+
                     <div class="persona-box">
-                        <h3><i class="fas fa-puzzle-piece"></i> The Portfolio Diversifier (Income Layer)</h3>
-                        <p>You have conventional dividend ETFs and want to add an uncorrelated income source. SVOL's income comes from a completely different mechanism than dividends or coupons.</p>
+                        <h3><i class="fas fa-balance-scale"></i> Portfolio Balance</h3>
+                        <p>Add SVOL to complement your core holdings. It can help you fine-tune your market exposure and take advantage of specific sector opportunities while maintaining a diversified base.</p>
                     </div>
+
                     <div class="persona-box">
-                        <h3><i class="<i>fas fa-exclamation-circle"></i> The Risk-Aware Yield Hunter</h3>
-                        <p>You want high yield but recognize the risks clearly. You've sized SVOL as a small satellite — not a core holding — accepting the tail-risk in exchange for above-average monthly income.</p>
+                        <h3><i class="fas fa-chart-line"></i> Tactical Allocation</h3>
+                        <p>Use SVOL for tactical positioning when market conditions suggest a particular segment may outperform. The intraday tradability allows you to adjust your exposure quickly.</p>
+                    </div>
+
+                    <h3>Common Use Cases</h3>
+                    <ul>
+                        <li><strong>Building a thematic portfolio:</strong> Combine multiple sector or theme-focused ETFs to build your market exposure.</li>
+                        <li><strong>Market rotation:</strong> Shift exposure between sectors based on your market outlook.</li>
+                        <li><strong>Complementing core holdings:</strong> Add targeted exposure to supplement broad market funds.</li>
+                    </ul>
+                </section>
+
+                <section id="price" class="section-grey">
+                    <h2>SVOL - Price / Yield</h2>
+                    <div class="chart-container">
+                        <h4>Current market snapshot</h4>
+                        <div class="chart">
+                            <script type="text/javascript"
+                                src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-info.js"
+                                async> {"symbol": "AMEX:SVOL", "width": "100%", "locale": "en", "colorTheme": "light", "isTransparent": false} </script>
+                        </div>
                     </div>
                 </section>
 
-                <section id="scenarios" class="section-grey">
-                    <h2>SVOL in Action: Real-World Scenarios</h2>
-                    <p>Here's SVOL deployed in real investing contexts:</p>
-                    <ul>
-                        <li>
-                            <p><strong>Income Diversification:</strong> An investor holds SPHD and SPYD for traditional dividend income, then adds a small SVOL position to bring in volatility-premium income that behaves differently during different market environments.</p>
-                        </li>
-                        <li>
-                            <p><strong>Calm Market Income Harvest:</strong> During extended low-volatility periods (e.g., steady bull markets with low VIX), SVOL's income engine fires consistently. An investor overweights SVOL during these periods, then trims before anticipated volatility events.</p>
-                        </li>
-                    </ul>
+                <section id="technical-details" class="section-white">
+                    <h2>SVOL Technical Details</h2>
+                    <p>SVOL (SVOL — Simplify Volatility Premium ETF) trades on a major U.S. exchange and tracks its target index through a passive indexing approach. The ETF is structured as an open-end fund, offering continuous creation and redemption of shares.</p>
+                    <div class="table-container mb-4">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Ticker Symbol</strong></td>
+                                    <td>SVOL</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Exchange</strong></td>
+                                    <td>NYSE Arca / NASDAQ</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Inception Date</strong></td>
+                                    <td>Various (check fund sponsor)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Assets Under Management (AUM)</strong></td>
+                                    <td>$100M - $10B+ (varies by ETF)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Underlying Index</strong></td>
+                                    <td>Specific index (varies by ETF)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Credit Quality</strong></td>
+                                    <td>N/A (Equity ETF)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h3>Understanding SVOL's Income</h3>
+                    <p>While SVOL may distribute dividends or interest payments, the primary focus is on market exposure and capital appreciation. Distributions are typically reinvested or paid quarterly.</p>
+                    <p>For the most current yield, distribution history, and official fund documents, use the sponsor page:</p>
+                    <p><a href="https://www.ssga.com/us/en/individual/etfs" target="_blank" rel="noopener noreferrer" class="external-link">Visit the Official ETF Fund Page <i class="fas fa-external-link-alt"></i></a></p>
+                </section>
+
+                <section id="chart" class="section-grey">
+                    <h2>SVOL - Chart</h2>
+                    <div class="chart-container">
+                        <h4>Price action over time</h4>
+                        <div class="chart">
+                            <script type="text/javascript"
+                                src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+                                    {"autosize": true, "symbol": "AMEX:SVOL", "interval": "3M", "timezone": "America/New_York", "theme": "light", "style": "2", "locale": "en", "allow_symbol_change": false, "calendar": false, "support_host": "https://www.tradingview.com"}
+                                </script>
+                        </div>
+                    </div>
                 </section>
 
                 <section id="comparison" class="section-white">
                     <h2>SVOL vs. The Competition: A Quick Look</h2>
-                    <p>SVOL is in a niche category. Here's how it compares to alternatives:</p>
+                    <p>The real decision is not whether SVOL is "good" in the abstract. It is whether SVOL fits your specific market exposure needs and investment strategy.</p>
+                    <p><strong>SVOL</strong> is usually the cleanest fit for investors who want targeted exposure to its specific market segment. If you are looking for different exposure or fee structure, other ETFs in the same category may make sense.</p>
                     <div class="table-container text-center mb-4">
                         <table class="etf-comparison-table">
                             <thead>
                                 <tr>
-                                    <th>Feature</th><th>SVOL</th><th>JEPI (JPMorgan Equity Premium Income)</th><th>QYLD (Global X Nasdaq 100 Covered Call)</th>
+                                    <th>Feature</th>
+                                    <th>SVOL</th>
+                                    <th>Similar ETF 1</th>
+                                    <th>Similar ETF 2</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr><td>Income Source</td><td>Short VIX futures (volatility premium)</td><td>S&P 500 covered calls via ELNs</td><td>Nasdaq 100 covered calls</td></tr>
-                                <tr><td>Why You Might Pick It</td><td>Highest yield, truly uncorrelated income source</td><td>Lower tail risk, active management, tax efficiency</td><td>High yield with Nasdaq-100 exposure</td></tr>
+                                <tr>
+                                    <td><strong>What it holds</strong></td>
+                                    <td>Targeted exposure to SVOL specific market segment</td>
+                                    <td>Different exposure profile</td>
+                                    <td>Alternative approach to same market</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Why you might choose it</strong></td>
+                                    <td>Best when targeted exposure and market segment focus are the top priorities.</td>
+                                    <td>Better fit if you want different exposure or fee structure.</td>
+                                    <td>Appealing if you want an alternative approach to the same market exposure.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Tradeoff</strong></td>
+                                    <td>Focused exposure, but narrow market segment.</td>
+                                    <td>Different exposure profile, but may have different characteristics.</td>
+                                    <td>Very similar to SVOL, so the decision may come down to fee, preference, or fund sponsor.</td>
+                                </tr>
                             </tbody>
                         </table>
                     </div>
+                    <p class="small-text"><em>For the most current yields and expense ratios of these ETFs, please check
+                            a reliable financial data provider like <a href="https://etfdb.com/" target="_blank"
+                                rel="noopener noreferrer">ETFdb.com</a>, <a href="https://finance.yahoo.com/etfs"
+                                target="_blank" rel="noopener noreferrer">Yahoo Finance</a>, or the individual fund
+                            sponsor websites:</em></p>
                     <p class="small-text text-center mt-2">
-                        <a href="https://www.simplify.us/etfs/svol-simplify-volatility-premium-etf" target="_blank" rel="noopener noreferrer" class="external-link mr-3">Simplify (SVOL) <i class="fas fa-external-link-alt"></i></a>
-                        <a href="https://am.jpmorgan.com/us/en/asset-management/adv/products/jpmorgan-equity-premium-income-etf-46641q332" target="_blank" rel="noopener noreferrer" class="external-link mr-3">JPMorgan (JEPI) <i class="fas fa-external-link-alt"></i></a>
-                        <a href="https://www.globalxetfs.com/funds/qyld/" target="_blank" rel="noopener noreferrer" class="external-link mr-3">Global X (QYLD) <i class="fas fa-external-link-alt"></i></a>
-                        
+                        <a href="https://www.ssga.com/us/en/individual/etfs" target="_blank" rel="noopener noreferrer" class="external-link mr-3">State Street <i class="fas fa-external-link-alt"></i></a>
+                        <a href="https://www.ishares.com" target="_blank" rel="noopener noreferrer" class="external-link mr-3">iShares <i class="fas fa-external-link-alt"></i></a>
+                        <a href="https://www.vanguard.com" target="_blank" rel="noopener noreferrer" class="external-link">Vanguard <i class="fas fa-external-link-alt"></i></a>
                     </p>
                 </section>
 
                 <section id="final-verdict" class="section-grey">
                     <div class="final-verdict-box">
                         <h2>The Richiest.com Final Verdict: Is SVOL Right For You?</h2>
-                        <p>SVOL is a genuinely innovative income tool — but it's not for everyone. <strong>For sophisticated investors who understand the strategy and keep it as a small satellite position, SVOL can meaningfully boost portfolio income.</strong> The tail-risk from volatility spikes is real and must be respected. Don't make it a core holding. But as part of a diversified income stack? <strong>SVOL earns its place for those who know what they're doing.</strong></p>
+                        <p>If your priority is targeted exposure to a specific market segment, SVOL delivers focused access with transparency and efficiency. It's liquid, cost-effective, and easy to understand.</p>
+                        <p>If your priority is broad market diversification, this may be the wrong tool. SVOL is best treated as a focused exposure sleeve, not a core holding.</p>
                     </div>
                 </section>
 
-                <section id="position">
-                    <h2>SVOL - Market Position</h2>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-                    <div class="bg-white h-100 rounded mt-2 mb-2 table-container text-center w-100">
-                        <table class="etf-table">
-                            <thead>
-                                <tr>
-                                    <th class="w-12">Ticker Symbol</th>
-                                    <th class="w-12">Product Type</th>
-                                    <th class="w-12">Asset Class</th>
-                                    <th class="w-12">Strategy</th>
-                                    <th class="w-12">Payment Frequency</th>
-                                    <th class="w-12">Geographic Focus</th>
-                                    <th class="w-12">Expense Ratio</th>
-                                    <th class="w-12">Sponsor</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>SVOL</td>
-                                    <td>ETF</td>
-                                    <td>Equity <a href="/articles/dividend-etfs.html" target="_blank"
-                                            rel="noopener noreferrer">Dividend ETF</a></td>
-                                    <td>Simplified Volatility Premium</td>
-                                    <td>Quarterly</td>
-                                    <td>Global</td>
-                                    <td>0.25%</td>
-                                    <td><a href="https://www.simplify.us/etfs/svol-simplify-volatility-premium-etf"
-                                            target="_blank" rel="noopener noreferrer">Simplify</a></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <h2>SVOL Overview - The Simplify Volatility Premium ETF</h2>
-                    <p>The <strong>Simplify Volatility Premium ETF (SVOL)</strong> is an innovative <strong>ETF</strong>
-                        designed to provide investors with exposure to a diversified portfolio of
-                        <strong>equity</strong> securities while targeting a <strong>volatility premium</strong>. SVOL
-                        employs a strategy that aims to capture this premium by dynamically allocating between
-                        <strong>equity</strong> and <strong>volatility</strong> assets, offering a unique approach to
-                        managing market fluctuations.
-                    </p>
 
-                    <p>One of SVOL's key features is its focus on <strong>dividends</strong>, which can enhance total
-                        returns for investors. The fund's <strong>payment frequency</strong> is set at
-                        <strong>quarterly</strong>, providing a regular income stream. With a <strong>geographic
-                            focus</strong> that spans the <strong>global</strong> market, SVOL offers investors
-                        opportunities across various regions and sectors.
-                    </p>
-
-                    <p>SVOL is managed with a <strong>low expense ratio</strong> of <strong>0.25%</strong>, ensuring
-                        cost-effective exposure to its strategy. The <strong>sponsor</strong>,
-                        <strong>Simplify</strong>, is known for its innovative <strong>ETF</strong> offerings and
-                        commitment to delivering value to investors.
-                    </p>
-
-                    <p>In summary, SVOL is a <strong>dividend-oriented</strong>, <strong>volatility-focused</strong>
-                        <strong>ETF</strong> that combines <strong>global</strong> exposure, <strong>income
-                            generation</strong>, and <strong>cost efficiency</strong> for investors seeking a balanced
-                        approach to <strong>equity</strong> investing in dynamic market conditions.
-                    </p>
-
-                </section>
-                <section id="price">
-                    <h2>SVOL - Price / Yield</h2>
-                    <div class="chart">
-                        <script type="text/javascript"
-                            src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-info.js" async>
-                                {
-                                    "symbol": "AMEX:SVOL",
-                                        "width": "100%",
-                                            "locale": "en",
-                                                "colorTheme": "light",
-                                                    "isTransparent": false
-                                }
-                            </script>
-                    </div>
-                </section>
-                <section id="holdings">
-                    <h2>SVOL - Portfolio</h2>
-                    <p>The <strong>SVOL</strong> ETF's portfolio comprises a diverse range of assets, reflecting its
-                        strategy to generate income through a combination of <strong>MUTUAL FUND (OTHER)</strong>
-                        investments, <strong>United States Treasury Bills</strong>, and various <strong>ETFs</strong>
-                        such as <strong>AGGH</strong>, <strong>BUCK</strong>, <strong>CDX</strong>, and
-                        <strong>MTBA</strong>.
-                    </p>
-                    <p>The significant weightage given to <strong>MUTUAL FUND (OTHER)</strong> at
-                        <strong>39.18%</strong> indicates a substantial investment in diversified funds, possibly aiming
-                        for stability and long-term growth. The allocation to <strong>United States Treasury
-                            Bills</strong> at <strong>14.54%</strong> and <strong>12.54%</strong> shows a conservative
-                        approach, emphasizing security and liquidity.
-                    </p>
-                    <p><strong>AGGH</strong> and <strong>BUCK</strong> contribute significantly to the portfolio,
-                        highlighting a focus on <strong>aggregate bond</strong> and <strong>stable income</strong>
-                        strategies, respectively. The presence of <strong>CDX</strong> and <strong>MTBA</strong>
-                        suggests exposure to <strong>high yield</strong> and <strong>MBS</strong> markets.</p>
-                    <p>Despite the diverse holdings, the inclusion of <strong>Short Positions</strong> at
-                        <strong>-0.58%</strong> indicates a potential hedge against market risks. Overall, SVOL's
-                        portfolio reflects a balanced mix of income-generating assets with varying risk profiles.
-                    </p>
-                    <h3>Top 9 Holdings</h3>
-                    <p>As of May 4, 2024, the top 9 holdings of the Simplify Volatility Premium ETF (SVOL) are:</p>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-
-                    <div class="table-container">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th class="w-60">Name</th>
-                                    <th class="w-40">Weight</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>MUTUAL FUND (OTHER)</td>
-                                    <td class="text-center">39.18%</td>
-                                </tr>
-                                <tr>
-                                    <td>United States Treasury Bills 0.0% 21-MAY-2024</td>
-                                    <td class="text-center">14.54%</td>
-                                </tr>
-                                <tr>
-                                    <td>United States Treasury Bills 0.0% 05-JUL-2024</td>
-                                    <td class="text-center">12.54%</td>
-                                </tr>
-                                <tr>
-                                    <td>AGGH - Simplify Aggregate Bond PLUS Credit Hedge ETF</td>
-                                    <td class="text-center">11.46%</td>
-                                </tr>
-                                <tr>
-                                    <td>BUCK - Simplify Stable Income ETF</td>
-                                    <td class="text-center">8.92%</td>
-                                </tr>
-                                <tr>
-                                    <td>CDX - Simplify High Yield PLUS Credit Hedge ETF</td>
-                                    <td class="text-center">5.05%</td>
-                                </tr>
-                                <tr>
-                                    <td>MTBA - Simplify MBS ETF</td>
-                                    <td class="text-center">5.00%</td>
-                                </tr>
-                                <tr>
-                                    <td>CASH - U.S. Dollar</td>
-                                    <td class="text-center">3.90%</td>
-                                </tr>
-                                <tr>
-                                    <td>Short Positions</td>
-                                    <td class="text-center">-0.58%</td>
-                                </tr>
-                            </tbody>
-                        </table>
-
-                    </div>
-                </section>
-                <section>
-                    <h2>Dividend Yield and Distribution History</h2>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-
-                    <div class="table-container">
-
-                        <table>
-                            <tr>
-                                <th class="w-25">Section</th>
-                                <th class="w-75">Details</th>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h3><strong>SVOL Dividend Data</strong></h3>
-                                </td>
-                                <td>The <strong>Simplify Volatility Premium ETF (SVOL)</strong> pays <strong>monthly
-                                        dividends</strong>. The most recent <strong>ex-dividend date</strong> was on
-                                    <strong>April 25, 2024</strong>, with a dividend payment of <strong>$0.30 per
-                                        share</strong> on <strong>April 30, 2024</strong>.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h3><strong>SVOL Dividend Yield</strong></h3>
-                                </td>
-                                <td>As of April 30, 2024, the dividend yield for SVOL is <strong>16.13%</strong>. This
-                                    means that for every $100 invested in the fund, investors would receive $16.13 in
-                                    dividends per year, assuming the yield remains constant.</td>
-                            </tr>
-                            <tr>
-                                <td> <a href="https://www.tipranks.com/etf/svol/dividends" target="_blank"
-                                        rel="noopener noreferrer">
-                                        <h3><strong>SVOL Dividend History</strong></h3>
-                                </td>
-                                <td>SVOL has a history of paying <strong>monthly dividends</strong>. The dividend
-                                    payments may vary based on the performance of the underlying assets held by the
-                                    fund.</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h3><strong>SVOL Dividend Growth</strong></h3>
-                                </td>
-                                <td>SVOL's dividend payments are influenced by the <strong>dividend growth</strong> and
-                                    performance of the underlying assets in the fund's portfolio. The fund's investment
-                                    strategy focuses on generating income through covered call options, which may
-                                    contribute to potential dividend growth over time. However, <strong>dividend
-                                        growth</strong> is not guaranteed.</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h3><strong>SVOL Dividend Stability</strong></h3>
-                                </td>
-                                <td>SVOL aims to provide a relatively <strong>stable income</strong> stream by utilizing
-                                    covered call options on a portfolio of stocks. However, the dividend payments are
-                                    not guaranteed and may be impacted by market conditions or the performance of the
-                                    underlying assets.</td>
-                            </tr>
-                        </table>
-
-                    </div>
-                </section>
-
-                <section id="chart">
-                    <h2>SVOL - Chart</h2>
-                    <div class="chart">
-                        <div class="tradingview-widget-container"><script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>{"autosize":true,"symbol":"NASDAQ:SVOL","interval":"D","timezone":"Etc/UTC","theme":"light","style":"1","locale":"en","allow_symbol_change":false,"height":400}</script></div>
-                        </iframe>
-                </section>
-                <section id="comparative">
-                    <h2>SVOL - Comparative Analysis</h2>
-                    <p class=""> Let's compare SVOL with prominent competitors, focusing on key aspects like
-                        performance,
-                        fees, and strategy: <strong>(as of May 2024)</strong> </p>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-                    <div class="table-container">
-                        <table class="mb-2">
-                            <thead>
-                                <tr>
-                                    <th>&nbsp;</th>
-                                    <th class="w-25">SVOL</th>
-                                    <th class="w-25">SVXY</th>
-                                    <th class="w-25">VIXM</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><strong>Investment Focus</strong></td>
-                                    <td>Volatility premium using options on large-cap U.S. stocks</td>
-                                    <td>Volatility through short-term VIX futures contracts</td>
-                                    <td>Exposure to the S&P 500 VIX Short-Term Futures Index</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Current Yield</strong></td>
-                                    <td><a href="https://www.bing.com/search?q=SVOL+current+yield" target="_blank"
-                                            rel="noopener noreferrer">16.13%</a></td>
-                                    <td><a href="https://www.bing.com/search?q=SVXY+current+yield" target="_blank"
-                                            rel="noopener noreferrer">9.56%</a></td>
-                                    <td><a href="https://www.bing.com/search?q=VIXM+current+yield" target="_blank"
-                                            rel="noopener noreferrer">1.58%</a></td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Expense Ratio</strong></td>
-                                    <td>0.50%</td>
-                                    <td>0.85%</td>
-                                    <td>0.32%</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Investment Strategy</strong></td>
-                                    <td>Utilizes options on large-cap U.S. stocks for volatility premium</td>
-                                    <td>Tracks the S&P 500 VIX Short-Term Futures Index</td>
-                                    <td>Invests in VIX futures contracts</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Strengths</strong></td>
-                                    <td>Potential for higher returns through volatility premium strategies</td>
-                                    <td>Direct exposure to VIX futures contracts</td>
-                                    <td>Offers diversification in a portfolio for volatility hedging</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Weaknesses</strong></td>
-                                    <td>Higher expense ratio compared to some competitors</td>
-                                    <td>Potential for increased volatility due to VIX futures</td>
-                                    <td>May not perform well in stable market conditions</td>
-                                </tr>
-                            </tbody>
-                        </table>
-
-                    </div>
-                </section>
-                <section id="history">
-                    <h2>Dividend History (Last 5 distributions)</h2>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-                    <div class="table-container">
-                        <table class="mb-2 w-100">
-                            <thead>
-                                <tr>
-                                    <th class="w-17">Ex-Dividend Date</th>
-                                    <th class="w-17">Cash Amount</th>
-                                    <th class="w-17">Record Date</th>
-                                    <th class="w-17">Pay Date</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Apr 25, 2024</td>
-                                    <td>$0.30</td>
-                                    <td>Apr 26, 2024</td>
-                                    <td>Apr 30, 2024</td>
-                                </tr>
-                                <tr>
-                                    <td>Mar 25, 2024</td>
-                                    <td>$0.30</td>
-                                    <td>Mar 26, 2024</td>
-                                    <td>Mar 28, 2024</td>
-                                </tr>
-                                <tr>
-                                    <td>Feb 26, 2024</td>
-                                    <td>$0.30</td>
-                                    <td>Feb 27, 2024</td>
-                                    <td>Feb 29, 2024</td>
-                                </tr>
-                                <tr>
-                                    <td>Jan 26, 2024</td>
-                                    <td>$0.30</td>
-                                    <td>Jan 29, 2024</td>
-                                    <td>Jan 31, 2024</td>
-                                </tr>
-                                <tr>
-                                    <td>Dec 26, 2023</td>
-                                    <td>$0.31</td>
-                                    <td>Dec 27, 2023</td>
-                                    <td>Dec 29, 2023</td>
-                                </tr>
-                            </tbody>
-                        </table>
-
-                    </div>
-                </section>
             </div>
         </div>
         <div class="row dark-div">
@@ -531,60 +478,19 @@
         </div>
         <div class="row">
             <div class="col container-1000">
-                <section id="news">
-                    <h2 class="">News</h2>
-                    <div class="chart">
-                        <div class="tradingview-widget-container">
-                        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-timeline.js" async>
-                        {"feedMode":"symbol","symbol":"AMEX:SVOL","colorTheme":"light","isTransparent":false,"displayMode":"regular","width":"100%","height":"400","locale":"en"}
-                        </script>
-                    </div>
-                </section>
-                <section id="technical">
-                    <h2>Technical Analysis</h2>
-                    <div class="chart">
-                        <script type="text/javascript"
-                            src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js"
-                            async> { "interval": "1M", "width": "100%", "isTransparent": false, "height": "400", "symbol": "AMEX:SVOL", "showIntervalTabs": true, "displayMode": "single", "locale": "en", "colorTheme": "light" } </script>
-                    </div>
-                </section>
-                <section>
-                    <h2>Additional Information and Risks</h2>
-                    <p>In conclusion, <strong>SVOL</strong> stands out as an attractive <strong>investment</strong>
-                        option due to its consistent <strong>dividend</strong> payments and robust <strong>dividend
-                            yield</strong>. Investors benefit from the <strong>monthly</strong> dividend payments and
-                        the <strong>annual</strong> dividend yield, providing a steady income stream. The
-                        <strong>dividend history</strong> of <strong>SVOL</strong> reflects its commitment to
-                        shareholder value, with dividends paid regularly and a strong <strong>payout ratio</strong>.
-                    </p>
-                    <p>However, it's essential to consider potential <strong>risks</strong> associated with
-                        <strong>SVOL</strong>. Market conditions can impact <strong>dividend</strong> payments, and
-                        fluctuations in <strong>stock</strong> prices can affect the <strong>dividend yield</strong>.
-                        <strong>SVOL</strong>'s <strong>dividend</strong> may also be subject to changes in the
-                        <strong>ex-dividend date</strong> and <strong>payment</strong> frequency, influencing
-                        <strong>investor</strong> returns.
-                    </p>
-                    <p>In assessing <strong>SVOL</strong>'s performance, it's crucial to monitor <strong>dividend
-                            data</strong> and <strong>growth rates</strong> to make informed <strong>investment</strong>
-                        decisions. While <strong>SVOL</strong> offers an attractive opportunity for
-                        <strong>dividend</strong> investing, investors should be aware of the
-                        <strong>volatility</strong> in <strong>market conditions</strong> and the <strong>potential
-                            risks</strong> associated with <strong>dividend</strong>-focused <strong>ETFs</strong>.
-                    </p>
-                    <p>In summary, <strong>SVOL</strong> provides a <strong>high-quality</strong>
-                        <strong>investment</strong> option for <strong>dividend</strong> seekers, offering
-                        <strong>monthly</strong> dividends and a solid <strong>dividend yield</strong>. However,
-                        <strong>investors</strong> should carefully consider <strong>risks</strong> such as
-                        <strong>market volatility</strong> and <strong>dividend</strong> fluctuations before making
-                        <strong>investment</strong> decisions in <strong>SVOL</strong>.
-                    </p>
+                <section id="disclaimer" class="small-text-section section-grey">
+                    <h2>Important Disclaimer</h2>
+                    <p>This article is for informational purposes only and does not constitute financial advice.
+                        Investing
+                        involves risks, and you should consult with a qualified financial professional before making any
+                        investment decisions. Past performance is not indicative of future results.</p>
                 </section>
 
             </div>
         </div>
         <div class="row dark-div">
             <div class="col container-1280">
-                <div class="shared-footer"> <!-- This is where the shared nav will be loaded --> </div>
+                <div class="shared-footer"> </div>
             </div>
         </div>
     </div>
@@ -592,36 +498,53 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
+        function generateTOC() {
+            const tocList = $('#toc-list .etf-nav');
+            tocList.empty();
+            let ul = $('<ul></ul>').addClass('toc-menu');
+
+            const mainContentArea = $('.container-1000');
+
+            mainContentArea.find('section').each(function () {
+                const sectionId = $(this).attr('id');
+                const h2 = $(this).find('h2:first');
+
+                if (sectionId && h2.length > 0 && sectionId !== 'disclaimer') {
+                    let title = h2.text();
+                    const li = $('<li></li>');
+                    const a = $('<a></a>').attr('href', '#' + sectionId).text(title);
+                    li.append(a);
+                    ul.append(li);
+                }
+            });
+            tocList.append(ul);
+        }
+
         $(function () {
-            $(".shared-nav").load("/shared/nav.html");
-            $(".etf-nav").load("/shared/etfnav2.html");
+            $(".shared-nav").load("/shared/nav.html", function () {
+                generateTOC();
+            });
             $(".shared-subscribe").load("/shared/subscribe.html");
             $(".shared-banner").load("/shared/banner.html");
             $(".shared-articles").load("/shared/technologyStocks.html");
             $(".shared-footer").load("/shared/footer.html");
-        });
-        $(document).ready(function () {
+
+            generateTOC();
+
             $("#toggle-toc").click(function () {
-                var tocList = $("#toc-list");
                 var fixedToc = $(".fixed-toc");
-                if (tocList.is(":visible")) {
-                    tocList.hide();
-                    fixedToc.css({ "width": "0px", "display": "none" });
+                fixedToc.toggle();
+                if (fixedToc.is(":visible")) {
+                    fixedToc.addClass("show");
                 } else {
-                    fixedToc.css({ "width": "200px", "display": "block" });
-                    tocList.show();
+                    fixedToc.removeClass("show");
                 }
             });
-        });
 
-        $(document).ready(function () {
-            $('.carousel').carousel();
-
-            // Scroll to top functionality
             var mybutton = $('#return-to-top');
 
             $(window).scroll(function () {
-                if ($(this).scrollTop() > 20) {
+                if ($(this).scrollTop() > 100) {
                     mybutton.fadeIn();
                 } else {
                     mybutton.fadeOut();

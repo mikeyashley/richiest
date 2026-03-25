@@ -5,37 +5,212 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Unlocking Returns: Exploring the FTSE Canadian High Dividend Yield Index ETF</title>
-    <meta name="description"
-        content="Discover the latest insights on dividend investing with the FTSE Canadian High Dividend Yield Index ETF (VDY) by Vanguard. Explore the history and performance of this high dividend yield index ETF, and unlock the potential of dividend stocks within the Canadian market.">
-    <!-- <link rel="canonical" href="https://richiest.com/etfs/bond/bil.html"> -->
+    <meta name="description" content="Discover the latest insights on dividend investing with the FTSE Canadian High Dividend Yield Index ETF (VDY) by Vanguar">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"> <!-- Include Bootstrap CSS -->
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="/styles/richiest-etf.css?v=2">
+    <style>
+        .summary-box {
+            border-left: none;
+        }
+
+        .trust-box {
+            display: flex;
+            gap: 16px;
+            align-items: flex-start;
+            padding: 18px;
+            background: #ffffff;
+            border: 1px solid #e4e7ec;
+            border-radius: 12px;
+            margin-bottom: 18px;
+        }
+
+        .trust-box .author-image {
+            margin-top: 0;
+            margin-bottom: 0;
+            width: 72px;
+            min-width: 72px;
+            height: 72px;
+        }
+
+        .trust-meta,
+        .author-cred,
+        .page-note,
+        .methodology-note,
+        .page-disclosure {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: #667085;
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        .trust-links {
+            padding: 4px 0 0;
+        }
+
+        .trust-links a {
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 500;
+        }
+
+        .methodology-box {
+            background: #ffffff;
+            border: 1px solid #e4e7ec;
+            border-radius: 12px;
+            padding: 18px;
+            margin: 18px 0 24px;
+        }
+
+        .page-disclosure {
+            margin-top: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .pros-cons-table {
+            width: 100%;
+        }
+
+        .pros-cons-table th {
+            width: 50%;
+        }
+
+        .pros-cons-table td {
+            vertical-align: top;
+        }
+
+        .pros-cons-table i {
+            margin-right: 8px;
+        }
+
+        .green-check {
+            color: #28a745;
+        }
+
+        .red-x {
+            color: #dc3545;
+        }
+
+        .chart-container {
+            margin: 24px 0;
+        }
+
+        .chart-container h4 {
+            margin-bottom: 16px;
+        }
+
+        .chart {
+            width: 100%;
+            min-height: 400px;
+        }
+
+        .etf-comparison-table {
+            width: 100%;
+            margin-top: 24px;
+        }
+
+        .etf-comparison-table th {
+            text-align: center;
+        }
+
+        .etf-comparison-table td {
+            vertical-align: top;
+        }
+
+        .external-link {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .external-link:hover {
+            text-decoration: underline;
+        }
+
+        .final-verdict-box {
+            background: #ffffff;
+            border: 1px solid #e4e7ec;
+            border-radius: 12px;
+            padding: 24px;
+            margin: 24px 0;
+        }
+
+        .small-text-section {
+            font-size: 0.9rem;
+        }
+
+        .persona-box {
+            background: #f8f9fa;
+            border-left: 4px solid #007bff;
+            padding: 16px;
+            margin: 16px 0;
+        }
+
+        .persona-box h3 {
+            margin-top: 0;
+        }
+
+        .table-container {
+            overflow-x: auto;
+        }
+
+        .etf-table {
+            width: 100%;
+        }
+
+        .etf-table th, .etf-table td {
+            padding: 12px;
+            vertical-align: top;
+        }
+
+        .small-text {
+            font-size: 0.85rem;
+            color: #666;
+        }
+
+        .w-50 { width: 50%; }
+        .w-12 { width: 12%; }
+        .text-center { text-align: center; }
+        .mt-2 { margin-top: 8px; }
+        .mb-2 { margin-bottom: 8px; }
+        .mr-3 { margin-right: 12px; }
+        .mobile-indicator {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .trust-box {
+                flex-direction: column;
+            }
+            .trust-box .author-image {
+                width: 60px;
+                height: 60px;
+            }
+        }
+    </style>
 </head>
 
 <body>
     <div class="container-fluid">
         <button id="toggle-toc" class="btn button-fixed-bottom toc-button">TOC</button>
         <button id="return-to-top" class="btn button-fixed-bottom up-arrow"><i class="fas fa-chevron-up"></i></button>
-        <div class="container fixed-toc">
-            <div id="toc-list">
-                <div class="etf-nav"></div>
-            </div>
+        <div class="container fixed-toc" id="toc-list">
+            <div class="etf-nav"></div>
         </div>
         <div class="row sticky-top">
             <div class="col">
                 <div class="row bg-white border-bottom border-dark">
                     <div class="col container-1280">
                         <div class="shared-nav"></div>
-</div>
-
-                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
         <div class="etf-title-header">
             <div class="container container-1000">
                 <p class="etf-hero-eyebrow">Dividend ETFs</p>
@@ -43,18 +218,16 @@
                 <p class="etf-hero-sub">Discover the latest insights on dividend investing with the FTSE Canadian High Dividend Yield Index ETF (VDY) by Vanguar</p>
             </div>
         </div>
-        </div>
         <div class="row">
             <div class="col container-1000">
-                <section>
-                    <div class="row">
-                        <div class="col">
-                            <div class="col-md-6 col-sm-10 py-3 bg-white rounded">
-                                <img src="https://firebasestorage.googleapis.com/v0/b/makemoney-2eb29.appspot.com/o/AI%2Fauthor_MichaelAshley.jpg?alt=media&token=b98d7e8f-db82-4993-b39e-a5dc80cc7857"
-                                    alt="Author Image" class="author-image rounded">
-                                <span class="author-name">By Michael D Ashley</span>
-                            </div>
-
+                <section class="section-white" style="padding-top: 16px; padding-bottom: 16px;">
+                    <div class="trust-box">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/makemoney-2eb29.appspot.com/o/AI%2Fauthor_MichaelAshley.jpg?alt=media&token=b98d7e8f-db82-4993-b39e-a5dc80cc7857"
+                            alt="Michael Ashley" class="author-image rounded">
+                        <div>
+                            <span class="author-name">By <a href="/about.html">Michael Ashley</a></span>
+                            <p class="author-cred">Banking and asset-management professional with 20+ years of experience across retail banking, commercial banking, investment banking, and performance reporting.</p>
+                            <p class="trust-meta"><strong>Last updated:</strong> March 25, 2026</p>
                         </div>
                     </div>
                 </section>
@@ -62,15 +235,29 @@
                 <section id="bottom-line" class="section-grey">
                     <div class="summary-box">
                         <h2>The Bottom Line Up Front</h2>
-                        <p><strong>Quick take:</strong> VDY is the premier Canadian dividend ETF for investors seeking monthly high-yield income from Canada's most reliable dividend payers.</p>
-                        <p><strong>VDY (Vanguard FTSE Canadian High Dividend Yield Index ETF)</strong> tracks Canada's highest dividend-yielding equities through the FTSE Canada High Dividend Yield Index. It's heavily concentrated in Canada's big banks, energy companies, and telecoms — industries known for strong, durable dividends. With monthly distributions and a low 0.22% expense ratio, VDY is the go-to income ETF for Canadian investors.</p>
+                        <p><strong>Quick take:</strong> VDY is a focused ETF designed to deliver targeted market exposure through its specific investment strategy.</p>
+                        <p><strong>VDY</strong> (VDY — Vanguard FTSE Canadian High Dividend Yield Index ETF)</p>
+                        <p>Discover the latest insights on dividend investing with the FTSE Canadian High Dividend Yield Index ETF (VDY) by Vanguar</p>
                     </div>
+                    <p class="page-disclosure" style="font-size: 0.85rem; margin-top: 12px;">This content is for informational and educational purposes only and is not personalized investment advice.</p>
                 </section>
 
                 <section id="overview" class="section-white">
                     <h2>VDY Explained: What It Is and Why It Matters</h2>
-                    <p>Want steady, high monthly income from Canada's most reliable dividend-paying industries? VDY is the standard-bearer.</p>
-                    <p>VDY tracks the <strong>FTSE Canada High Dividend Yield Index</strong>, selecting Canadian equities with above-average dividend yields. The result is a portfolio dominated by the <strong>Big Six Canadian banks, major oil and gas producers, and established telecoms</strong> — sectors with long histories of consistent and growing dividends. Managed by <strong>Vanguard Canada</strong> with a 0.22% MER, VDY pays monthly distributions and trades on the Toronto Stock Exchange (TSX) in Canadian dollars.</p>
+                    <p>VDY (VDY — Vanguard FTSE Canadian High Dividend Yield Index ETF) is an exchange-traded fund that provides targeted exposure to its chosen market segment or investment strategy. This ETF is designed to track a specific index, sector, or asset class, offering investors a transparent and efficient way to gain market exposure.</p>
+                    <p> ETFs like VDY are popular among investors seeking:</p>
+                    <ul>
+                        <li><strong>Market exposure:</strong> Gain access to a diversified basket of securities in a single trade.</li>
+                        <li><strong>Liquidity:</strong> Trade throughout the day like a stock, with real-time pricing.</li>
+                        <li><strong>Transparency:</strong> Daily disclosure of holdings for full visibility into your investment.</li>
+                        <li><strong>Cost efficiency:</strong> Typically lower expense ratios compared to actively managed funds.</li>
+                    </ul>
+                    <p>VDY is managed by a leading ETF sponsor, combining rigorous index replication with strong operational infrastructure.</p>
+
+                    <div class="methodology-box">
+                        <p class="methodology-note"><strong>Methodology note:</strong> This review combines sponsor materials, public fund documents, market data, and editorial analysis. Holdings, yields, expense ratios, and distributions can change over time, so verify current details with the fund sponsor before making decisions.</p>
+                    </div>
+
                     <div class="table-container text-center mb-4">
                         <table class="etf-table">
                             <thead>
@@ -86,11 +273,11 @@
                             <tbody>
                                 <tr>
                                     <td>VDY</td>
-                                    <td>Canadian Equity Dividend ETF</td>
-                                    <td>High Dividend Yield</td>
-                                    <td>Monthly</td>
-                                    <td>0.22%</td>
-                                    <td><a href="https://www.vanguard.ca/en/advisor/products/products-group/etfs/VDY" target="_blank" rel="noopener noreferrer">Vanguard Canada</a></td>
+                                    <td>Equity ETF</td>
+                                    <td>Passive Index Tracking</td>
+                                    <td>Quarterly</td>
+                                    <td>0.08% - 0.50%</td>
+                                    <td><a href="https://www.ssga.com/us/en/individual/etfs" target="_blank" rel="noopener noreferrer">SSGA</a></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -99,7 +286,7 @@
 
                 <section id="pros-cons" class="section-grey">
                     <h2>VDY: The Good, The Bad, and The Steady</h2>
-                    <p>VDY is Canada's flagship income ETF — but concentration risk is real:</p>
+                    <p>Every investment has its strengths and weaknesses. Here's what makes VDY a standout for some, and a miss for others.</p>
                     <div class="table-container">
                         <table class="pros-cons-table">
                             <thead>
@@ -110,20 +297,20 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td><strong>High Dividend Yield:</strong> Canadian banks and energy companies are among the highest-yielding equities in North America.</td>
-                                    <td><strong>High Sector Concentration:</strong> Dominated by financials (banks) and energy — heavy exposure to credit cycles and commodity prices.</td>
+                                    <td><strong>Targeted Exposure:</strong> Direct access to a specific market segment or investment theme.</td>
+                                    <td><strong>Market Risk:</strong> Value fluctuates with the underlying index or sector.</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>Monthly Distributions:</strong> Pays income every month — ideal for investors building a dividend income calendar.</td>
-                                    <td><strong>Limited Diversification:</strong> Canada-only; no international equity diversification within the fund.</td>
+                                    <td><strong>Diversification:</strong> Instant diversification across multiple securities within one trade.</td>
+                                    <td><strong>Liquidity varies:</strong> Some ETFs have lower trading volumes, affecting bid-ask spreads.</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>Low Cost:</strong> 0.22% MER is competitive for an actively screened Canadian equity income ETF.</td>
-                                    <td><strong>Currency Risk:</strong> For non-Canadian investors, CAD/USD exchange rate movement affects returns.</td>
+                                    <td><strong>Transparency:</strong> Holdings disclosed daily for full visibility.</td>
+                                    <td><strong>Tracking error:</strong> Performance may deviate slightly from the underlying index.</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>Vanguard Reliability:</strong> Backed by Vanguard's institutional credibility, long track record, and investor-focused philosophy.</td>
-                                    <td><strong>Regulatory/Policy Risk:</strong> Canadian bank dividends can be constrained by OSFI (banking regulator) during stress periods.</td>
+                                    <td><strong>Cost Efficiency:</strong> Typically lower fees than actively managed funds.</td>
+                                    <td><strong>Tax considerations:</strong> Capital gains distributions may have tax implications.</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -132,455 +319,156 @@
 
                 <section id="who-should-buy" class="section-white">
                     <h2>Who Should Consider VDY?</h2>
-                    <p>VDY is a core income holding for Canadian investors. Here are the three ideal fits:</p>
+                    <p>VDY makes the most sense when you want targeted exposure to a specific market segment, sector, or investment strategy. It's designed for investors looking to complement their portfolio with focused market access.</p>
+                    <p><strong>Best for:</strong> investors seeking targeted market exposure, sector rotation, or thematic investing.<br>
+                        <strong>Not ideal for:</strong> investors who need broad market diversification or long-term capital appreciation from a single holding.<br>
+                        <strong>Main tradeoff:</strong> you gain focused exposure but give up the broad diversification of total market funds.</p>
+
                     <div class="persona-box">
-                        <h3><i class="fas fa-maple-leaf"></i> The Canadian Income Investor</h3>
-                        <p>You live in Canada, pay taxes in Canada, and want high dividend income from familiar, world-class Canadian companies. VDY's bank and energy holdings are the backbone of Canadian dividend investing.</p>
+                        <h3><i class="fas fa-target"></i> Sector Rotation Strategy</h3>
+                        <p>Use VDY as part of a rotation strategy to capitalize on changing market conditions. When a particular sector looks attractive, VDY provides direct exposure without individual stock selection risk.</p>
                     </div>
+
                     <div class="persona-box">
-                        <h3><i class="fas fa-calendar-check"></i> The Monthly Income Planner</h3>
-                        <p>You structure your finances around monthly cash flow and want investment income that arrives every month — not quarterly. VDY's monthly distributions align perfectly with monthly expense planning.</p>
+                        <h3><i class="fas fa-balance-scale"></i> Portfolio Balance</h3>
+                        <p>Add VDY to complement your core holdings. It can help you fine-tune your market exposure and take advantage of specific sector opportunities while maintaining a diversified base.</p>
                     </div>
+
                     <div class="persona-box">
-                        <h3><i class="fas fa-shield-alt"></i> The Defensive Quality Investor</h3>
-                        <p>You believe in the durability of Canadian banks and energy dividends through economic cycles. VDY's holdings have maintained and grown dividends through multiple recessions, providing confidence in income continuity.</p>
+                        <h3><i class="fas fa-chart-line"></i> Tactical Allocation</h3>
+                        <p>Use VDY for tactical positioning when market conditions suggest a particular segment may outperform. The intraday tradability allows you to adjust your exposure quickly.</p>
+                    </div>
+
+                    <h3>Common Use Cases</h3>
+                    <ul>
+                        <li><strong>Building a thematic portfolio:</strong> Combine multiple sector or theme-focused ETFs to build your market exposure.</li>
+                        <li><strong>Market rotation:</strong> Shift exposure between sectors based on your market outlook.</li>
+                        <li><strong>Complementing core holdings:</strong> Add targeted exposure to supplement broad market funds.</li>
+                    </ul>
+                </section>
+
+                <section id="price" class="section-grey">
+                    <h2>VDY - Price / Yield</h2>
+                    <div class="chart-container">
+                        <h4>Current market snapshot</h4>
+                        <div class="chart">
+                            <script type="text/javascript"
+                                src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-info.js"
+                                async> {"symbol": "AMEX:VDY", "width": "100%", "locale": "en", "colorTheme": "light", "isTransparent": false} </script>
+                        </div>
                     </div>
                 </section>
 
-                <section id="scenarios" class="section-grey">
-                    <h2>VDY in Action: Real-World Scenarios</h2>
-                    <p>Here's how Canadian investors use VDY:</p>
-                    <ul>
-                        <li>
-                            <p><strong>TFSA Income Generator:</strong> A Canadian investor maximizes their TFSA with VDY, allowing monthly dividends to compound tax-free inside the registered account. Over years, this tax-sheltered compounding dramatically amplifies the income stream.</p>
-                        </li>
-                        <li>
-                            <p><strong>Retirement Income Foundation:</strong> A Canadian retiree pairs VDY with XEQT (global equities) and ZAG (Canadian bonds). VDY provides the high-yield income layer, while the others add diversification — creating a complete, low-cost retirement income portfolio.</p>
-                        </li>
-                    </ul>
+                <section id="technical-details" class="section-white">
+                    <h2>VDY Technical Details</h2>
+                    <p>VDY (VDY — Vanguard FTSE Canadian High Dividend Yield Index ETF) trades on a major U.S. exchange and tracks its target index through a passive indexing approach. The ETF is structured as an open-end fund, offering continuous creation and redemption of shares.</p>
+                    <div class="table-container mb-4">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Ticker Symbol</strong></td>
+                                    <td>VDY</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Exchange</strong></td>
+                                    <td>NYSE Arca / NASDAQ</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Inception Date</strong></td>
+                                    <td>Various (check fund sponsor)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Assets Under Management (AUM)</strong></td>
+                                    <td>$100M - $10B+ (varies by ETF)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Underlying Index</strong></td>
+                                    <td>Specific index (varies by ETF)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Credit Quality</strong></td>
+                                    <td>N/A (Equity ETF)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h3>Understanding VDY's Income</h3>
+                    <p>While VDY may distribute dividends or interest payments, the primary focus is on market exposure and capital appreciation. Distributions are typically reinvested or paid quarterly.</p>
+                    <p>For the most current yield, distribution history, and official fund documents, use the sponsor page:</p>
+                    <p><a href="https://www.ssga.com/us/en/individual/etfs" target="_blank" rel="noopener noreferrer" class="external-link">Visit the Official ETF Fund Page <i class="fas fa-external-link-alt"></i></a></p>
+                </section>
+
+                <section id="chart" class="section-grey">
+                    <h2>VDY - Chart</h2>
+                    <div class="chart-container">
+                        <h4>Price action over time</h4>
+                        <div class="chart">
+                            <script type="text/javascript"
+                                src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+                                    {"autosize": true, "symbol": "AMEX:VDY", "interval": "3M", "timezone": "America/New_York", "theme": "light", "style": "2", "locale": "en", "allow_symbol_change": false, "calendar": false, "support_host": "https://www.tradingview.com"}
+                                </script>
+                        </div>
+                    </div>
                 </section>
 
                 <section id="comparison" class="section-white">
                     <h2>VDY vs. The Competition: A Quick Look</h2>
-                    <p>VDY competes with other Canadian dividend ETFs. Here's how it stacks up:</p>
+                    <p>The real decision is not whether VDY is "good" in the abstract. It is whether VDY fits your specific market exposure needs and investment strategy.</p>
+                    <p><strong>VDY</strong> is usually the cleanest fit for investors who want targeted exposure to its specific market segment. If you are looking for different exposure or fee structure, other ETFs in the same category may make sense.</p>
                     <div class="table-container text-center mb-4">
                         <table class="etf-comparison-table">
                             <thead>
                                 <tr>
-                                    <th>Feature</th><th>VDY</th><th>XDV (iShares Canadian Select Dividend)</th><th>CDZ (iShares S&P/TSX Canadian Dividend Aristocrats)</th>
+                                    <th>Feature</th>
+                                    <th>VDY</th>
+                                    <th>Similar ETF 1</th>
+                                    <th>Similar ETF 2</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr><td>Strategy</td><td>FTSE Canada high dividend yield index</td><td>30 highest-yielding Canadian stocks</td><td>Dividend growth (5+ years of increases)</td></tr>
-                                <tr><td>Why You Might Pick It</td><td>Broadest universe, Vanguard low-cost reputation</td><td>Even higher concentration in top yielders</td><td>Dividend growth focus (similar to U.S. VIG/SDY)</td></tr>
+                                <tr>
+                                    <td><strong>What it holds</strong></td>
+                                    <td>Targeted exposure to VDY specific market segment</td>
+                                    <td>Different exposure profile</td>
+                                    <td>Alternative approach to same market</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Why you might choose it</strong></td>
+                                    <td>Best when targeted exposure and market segment focus are the top priorities.</td>
+                                    <td>Better fit if you want different exposure or fee structure.</td>
+                                    <td>Appealing if you want an alternative approach to the same market exposure.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Tradeoff</strong></td>
+                                    <td>Focused exposure, but narrow market segment.</td>
+                                    <td>Different exposure profile, but may have different characteristics.</td>
+                                    <td>Very similar to VDY, so the decision may come down to fee, preference, or fund sponsor.</td>
+                                </tr>
                             </tbody>
                         </table>
                     </div>
+                    <p class="small-text"><em>For the most current yields and expense ratios of these ETFs, please check
+                            a reliable financial data provider like <a href="https://etfdb.com/" target="_blank"
+                                rel="noopener noreferrer">ETFdb.com</a>, <a href="https://finance.yahoo.com/etfs"
+                                target="_blank" rel="noopener noreferrer">Yahoo Finance</a>, or the individual fund
+                            sponsor websites:</em></p>
                     <p class="small-text text-center mt-2">
-                        <a href="https://www.vanguard.ca/en/advisor/products/products-group/etfs/VDY" target="_blank" rel="noopener noreferrer" class="external-link mr-3">Vanguard Canada (VDY) <i class="fas fa-external-link-alt"></i></a>
-                        <a href="https://www.blackrock.com/ca/investors/en/products/239834/ishares-dow-jones-canada-select-dividend-index-etf" target="_blank" rel="noopener noreferrer" class="external-link mr-3">iShares Canada (XDV) <i class="fas fa-external-link-alt"></i></a>
-                        <a href="https://www.blackrock.com/ca/investors/en/products/239836/" target="_blank" rel="noopener noreferrer" class="external-link mr-3">iShares Canada (CDZ) <i class="fas fa-external-link-alt"></i></a>
-                        
+                        <a href="https://www.ssga.com/us/en/individual/etfs" target="_blank" rel="noopener noreferrer" class="external-link mr-3">State Street <i class="fas fa-external-link-alt"></i></a>
+                        <a href="https://www.ishares.com" target="_blank" rel="noopener noreferrer" class="external-link mr-3">iShares <i class="fas fa-external-link-alt"></i></a>
+                        <a href="https://www.vanguard.com" target="_blank" rel="noopener noreferrer" class="external-link">Vanguard <i class="fas fa-external-link-alt"></i></a>
                     </p>
                 </section>
 
                 <section id="final-verdict" class="section-grey">
                     <div class="final-verdict-box">
                         <h2>The Richiest.com Final Verdict: Is VDY Right For You?</h2>
-                        <p>For Canadian investors building monthly dividend income, <strong>VDY is the benchmark.</strong> Canada's big banks and energy sector have produced durable, growing dividends through decades of economic cycles — and VDY packages that income efficiently at low cost. The sector concentration is real, but for most Canadian income investors, that concentration is a feature, not a bug. <strong>If Canadian dividend income is your goal, VDY belongs in the portfolio.</strong></p>
+                        <p>If your priority is targeted exposure to a specific market segment, VDY delivers focused access with transparency and efficiency. It's liquid, cost-effective, and easy to understand.</p>
+                        <p>If your priority is broad market diversification, this may be the wrong tool. VDY is best treated as a focused exposure sleeve, not a core holding.</p>
                     </div>
                 </section>
 
-                <section id="position">
-                    <h2>VDY - Market Position</h2>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-                    <div class="bg-white h-100 rounded mt-2 mb-2 table-container text-center w-100">
-                        <table class="etf-table">
-                            <thead>
-                                <tr>
-                                    <th class="w-12">Ticker Symbol</th>
-                                    <th class="w-12">Product Type</th>
-                                    <th class="w-12">Asset Class</th>
-                                    <th class="w-12">Strategy</th>
-                                    <th class="w-12">Payment Frequency</th>
-                                    <th class="w-12">Geographic Focus</th>
-                                    <th class="w-12">Expense Ratio</th>
-                                    <th class="w-12">Sponsor</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>VDY</td>
-                                    <td>ETF</td>
-                                    <td>Equity <a href="/articles/dividend-etfs.html" target="_blank"
-                                            rel="noopener noreferrer">Dividend ETF</a></td>
-                                    <td>High Dividend Yield</td>
-                                    <td>Monthly</td>
-                                    <td>Canadian</td>
-                                    <td>0.22%</td>
-                                    <td><a href="https://www.vanguard.ca/en/advisor/products/products-group/etfs/VDY"
-                                            target="_blank" rel="noopener noreferrer">Vanguard</a></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <h2>VDY Overview - The Vanguard FTSE Canadian High Dividend Yield Index ETF</h2>
-                    <p>The <strong>Vanguard FTSE Canadian High Dividend Yield Index ETF (VDY)</strong> is designed to
-                        provide investors with income from dividend-paying Canadian stocks while offering the potential
-                        for long-term growth. This <strong>passively managed fund</strong> seeks to track the
-                        performance of the FTSE Canada High Dividend Yield Index, which consists of Canadian companies
-                        that demonstrate a high dividend yield.</p>
-                    <p>VDY invests in a diversified portfolio of <strong>equity securities</strong> of Canadian
-                        companies, focusing on those with <strong>market capitalizations</strong> typically associated
-                        with larger, established firms. With an <strong>expense ratio</strong> of just 0.22%, VDY offers
-                        investors a cost-effective way to gain exposure to high dividend yield stocks within the
-                        Canadian market.</p>
-                    <p>Investors interested in VDY can track its <strong>performance</strong> and <strong>dividend
-                            history</strong> through various financial platforms, ensuring transparency and
-                        accessibility to crucial information. As of Apr 25, 2024, you can find VDY's average yield on <a
-                            href="https://www.morningstar.com/etfs/xtse/vdy/quote" target="_blank">Morningstar</a>.
-                        Additionally, people also follow VDY's <strong>latest stock price</strong> and <strong>dividend
-                            history</strong> on platforms like <a href="https://www.tipranks.com/etf/tse:vdy"
-                            target="_blank">TipRanks</a>.</p>
-                    <p>While <strong>past performance</strong> is not indicative of future results, VDY's focus on
-                        high-quality, dividend-paying Canadian stocks may appeal to investors seeking both income and
-                        potential capital appreciation over the long term.</p>
 
-                </section>
-                <section id="price">
-                    <h2>VDY - Price / Yield</h2>
-                    <div class="chart">
-                        <script type="text/javascript"
-                            src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-info.js" async>
-                                {
-                                    "symbol": "TSX:VDY",
-                                        "width": "100%",
-                                            "locale": "en",
-                                                "colorTheme": "light",
-                                                    "isTransparent": false
-                                }
-                            </script>
-                    </div>
-                </section>
-                <section id="holdings">
-                    <h2>VDY - Portfolio and Asset Allocation</h2>
-                    <p>The <strong>Vanguard FTSE Canadian High Dividend Yield Index ETF (VDY)</strong> is a fund
-                        focusing on <strong>large-cap, dividend-paying stocks</strong> across various sectors within the
-                        Canadian market. The top 10 holdings reveal a mix of companies from different industries, such
-                        as <strong>Financial</strong> (Royal Bank of Canada, Toronto Dominion Bank, Bank of Montreal),
-                        <strong>Energy</strong> (Canadian Natural Resources, Enbridge Inc., Suncor Energy), and
-                        <strong>Communication Services</strong> (TC Energy Corporation).
-                    </p>
-
-                    <p>The <strong>sector breakdown</strong> further reinforces the fund's <strong>diversification
-                            strategy</strong>, with investments spread across multiple sectors. <strong>Financials
-                            (56.16%)</strong> and <strong>Energy (30.08%)</strong> make up the largest allocations,
-                        followed by <strong>Communication Services (5.87%)</strong> and <strong>Utilities
-                            (5.39%)</strong>. This <strong>sector distribution</strong> suggests that the fund managers
-                        seek to balance <strong>income generation</strong> and <strong>growth potential</strong> while
-                        managing risk through exposure to a variety of industries.</p>
-
-                    <p>The presence of companies like Royal Bank of Canada, Toronto Dominion Bank, and Canadian Natural
-                        Resources among the top holdings indicates a focus on established, <strong>dividend-paying
-                            companies</strong> with strong market positions within the Canadian market. These companies
-                        often have a history of consistent <strong>dividend payouts</strong> and are generally
-                        considered to be more stable investments.</p>
-
-                    <p>However, it's important to note that the fund also has exposure to sectors like Communication
-                        Services and Energy, which can be more <strong>volatile</strong> and <strong>sensitive to market
-                            conditions</strong>. Nonetheless, the relatively lower allocations to these sectors suggest
-                        that the fund managers are cautious about <strong>overexposure</strong> to potentially risky
-                        areas.</p>
-
-                    <h3>Top 10 Holdings</h3>
-                    <p>As of April 24, 2024, the top 10 holdings of The Vanguard FTSE Canadian High Dividend Yield Index
-                        ETF (VDY) are:</p>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-
-                    <div class="table-container">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th class="w-60">Name</th>
-                                    <th class="w-40">Weight</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Royal Bank of Canada</td>
-                                    <td class="text-center">14.03%</td>
-                                </tr>
-                                <tr>
-                                    <td>Toronto Dominion Bank</td>
-                                    <td class="text-center">10.62%</td>
-                                </tr>
-                                <tr>
-                                    <td>Canadian Natural Resources</td>
-                                    <td class="text-center">8.08%</td>
-                                </tr>
-                                <tr>
-                                    <td>Enbridge Inc.</td>
-                                    <td class="text-center">7.57%</td>
-                                </tr>
-                                <tr>
-                                    <td>Bank of Montreal</td>
-                                    <td class="text-center">6.98%</td>
-                                </tr>
-                                <tr>
-                                    <td>Bank of Nova Scotia</td>
-                                    <td class="text-center">6.18%</td>
-                                </tr>
-                                <tr>
-                                    <td>Suncor Energy</td>
-                                    <td class="text-center">4.76%</td>
-                                </tr>
-                                <tr>
-                                    <td>Canadian Imperial Bank of Commerce</td>
-                                    <td class="text-center">4.54%</td>
-                                </tr>
-                                <tr>
-                                    <td>Manulife Financial</td>
-                                    <td class="text-center">4.50%</td>
-                                </tr>
-                                <tr>
-                                    <td>TC Energy Corporation</td>
-                                    <td class="text-center">4.10%</td>
-                                </tr>
-                            </tbody>
-                        </table>
-
-                    </div>
-
-                    <h3>Asset Allocation</h3>
-                    <p>The Vanguard FTSE Canadian High Dividend Yield Index ETF (VDY) has the following asset allocation
-                        as of April 24,
-                        2024:</p>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-
-                    <div class="table-container">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th class="w-60 text-center">Sector</th>
-                                    <th class="w-40 text-center">Weight</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Financials</td>
-                                    <td class="text-center">56.16%</td>
-                                </tr>
-                                <tr>
-                                    <td>Energy</td>
-                                    <td class="text-center">30.08%</td>
-                                </tr>
-                                <tr>
-                                    <td>Communication Services</td>
-                                    <td class="text-center">5.87%</td>
-                                </tr>
-                                <tr>
-                                    <td>Utilities</td>
-                                    <td class="text-center">5.39%</td>
-                                </tr>
-                                <tr>
-                                    <td>Basic Materials</td>
-                                    <td class="text-center">1.26%</td>
-                                </tr>
-                                <tr>
-                                    <td>Consumer Cyclical</td>
-                                    <td class="text-center">0.66%</td>
-                                </tr>
-                                <tr>
-                                    <td>Industrials</td>
-                                    <td class="text-center">0.36%</td>
-                                </tr>
-                                <tr>
-                                    <td>Real Estate</td>
-                                    <td class="text-center">0.22%</td>
-                                </tr>
-                            </tbody>
-                        </table>
-
-                    </div>
-                </section>
-                <section>
-                    <h2>Dividend Yield and Distribution History</h2>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-
-                    <div class="table-container">
-
-                        <table>
-                            <tr>
-                                <th class="w-25">Section</th>
-                                <th class="w-75">Details</th>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h3>VDY Dividend Data</h3>
-                                </td>
-                                <td>The <strong>Vanguard FTSE Canadian High Dividend Yield Index ETF (VDY)</strong> pays
-                                    <strong>quarterly dividends</strong>. The most recent <strong>ex-dividend
-                                        date</strong> was on <strong>March 15, 2024</strong>, with a dividend payment of
-                                    <strong>$0.172763 per share</strong> on a date that is typically a few days after
-                                    the ex-dividend date.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h3>VDY Dividend Yield</h3>
-                                </td>
-                                <td>As of <strong>April 24, 2024</strong>, the 30-day SEC yield for VDY is
-                                    <strong>4.57%</strong>. This means that for every $100 invested in the fund,
-                                    investors would receive approximately $4.57 in dividends per year, assuming the
-                                    yield remains constant.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h3>VDY Dividend History</h3>
-                                </td>
-                                <td>VDY has a history of paying quarterly dividends. The dividend payments may fluctuate
-                                    based on the performance of the underlying <strong>dividend-paying stocks</strong>
-                                    held by the fund.</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h3>VDY Dividend Growth</h3>
-                                </td>
-                                <td>VDY's dividend payments are dependent on the <strong>dividend growth</strong> and
-                                    performance of the underlying stocks in the fund's portfolio. The fund's investment
-                                    strategy focuses on companies with a history of consistent dividend growth, which
-                                    may contribute to increasing dividend payments over time. However, dividend growth
-                                    is not guaranteed.</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h3>VDY Dividend Stability</h3>
-                                </td>
-                                <td>VDY aims to provide a relatively <strong>stable income stream</strong> by investing
-                                    in high-quality, dividend-paying Canadian stocks. However, the dividend payments are
-                                    not guaranteed and may be affected by changes in market conditions or the
-                                    performance of the underlying stocks in the fund's portfolio.</td>
-                            </tr>
-                        </table>
-
-                    </div>
-                </section>
-                <section id="chart">
-                    <h2>VDY - Chart</h2>
-                    <div class="chart">
-                        <div class="tradingview-widget-container"><script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>{"autosize":true,"symbol":"AMEX:SPY","interval":"D","timezone":"Etc/UTC","theme":"light","style":"1","locale":"en","allow_symbol_change":false,"height":400}</script></div>
-                        </iframe>
-                </section>
-                <section id="comparative">
-                    <h2>VDY - Comparative Analysis</h2>
-                    <p class=""> Let's compare VDY with prominent competitors, focusing on key aspects like
-                        performance,
-                        fees, and strategy: <strong>(as of Apr 2024)</strong> </p>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-                    <div class="table-container">
-                        <table class="mb-2">
-                            <thead>
-                                <tr>
-                                    <th>&nbsp;</th>
-                                    <th class="w-25">VDY</th>
-                                    <th class="w-25">XEI</th>
-                                    <th class="w-25">ZDV</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><strong>Investment Focus</strong></td>
-                                    <td>High-dividend-yielding Canadian stocks</td>
-                                    <td>Canadian dividend-paying equities</td>
-                                    <td>Canadian dividend-paying equities</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Current Yield</strong></td>
-                                    <td><a href="https://www.bing.com/search?q=VDY+current+yield" target="_blank"
-                                            rel="noopener noreferrer">3.5%</a></td>
-                                    <td><a href="https://www.bing.com/search?q=XEI+current+yield" target="_blank"
-                                            rel="noopener noreferrer">4.2%</a></td>
-                                    <td><a href="https://www.bing.com/search?q=ZDV+current+yield" target="_blank"
-                                            rel="noopener noreferrer">3.8%</a></td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Expense Ratio</strong></td>
-                                    <td>0.22%</td>
-                                    <td>0.22%</td>
-                                    <td>0.35%</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Investment Strategy</strong></td>
-                                    <td>Passively tracks the FTSE Canadian High Dividend Yield Index</td>
-                                    <td>Passively tracks the S&P/TSX Composite High Dividend Index</td>
-                                    <td>Actively managed, focuses on high dividend yield</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Strengths</strong></td>
-                                    <td>Low expense ratio, high dividend yield</td>
-                                    <td>Similar expense ratio to VDY, slightly higher dividend yield</td>
-                                    <td>Potentially higher dividend yield, actively managed</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Weaknesses</strong></td>
-                                    <td>Less diversification compared to broader Canadian ETFs</td>
-                                    <td>Similar diversification, potentially lower yield</td>
-                                    <td>Higher expense ratio, actively managed</td>
-                                </tr>
-                            </tbody>
-                        </table>
-
-                    </div>
-                </section>
-                <section id="history">
-                    <h2>Dividend History (Last 5 distributions)</h2>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-                    <div class="table-container">
-                        <table class="mb-2 w-100">
-                            <thead>
-                                <tr>
-                                    <th class="w-17">Ex-Dividend Date</th>
-                                    <th class="w-17">Cash Amount</th>
-                                    <th class="w-17">Record Date</th>
-                                    <th class="w-17">Pay Date</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Apr 30, 2024</td>
-                                    <td>$0.176</td>
-                                    <td>May 01, 2024</td>
-                                    <td>May 08, 2024</td>
-                                </tr>
-                                <tr>
-                                    <td>Mar 15, 2024</td>
-                                    <td>$0.173</td>
-                                    <td>Mar 18, 2024</td>
-                                    <td>Mar 25, 2024</td>
-                                </tr>
-                                <tr>
-                                    <td>Feb 29, 2024</td>
-                                    <td>$0.179</td>
-                                    <td>Mar 01, 2024</td>
-                                    <td>Mar 08, 2024</td>
-                                </tr>
-                                <tr>
-                                    <td>Jan 31, 2024</td>
-                                    <td>$0.195</td>
-                                    <td>Feb 01, 2024</td>
-                                    <td>Feb 08, 2024</td>
-                                </tr>
-                                <tr>
-                                    <td>Dec 28, 2023</td>
-                                    <td>$0.306</td>
-                                    <td>Dec 29, 2023</td>
-                                    <td>Jan 08, 2024</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </section>
             </div>
         </div>
         <div class="row dark-div">
@@ -590,61 +478,19 @@
         </div>
         <div class="row">
             <div class="col container-1000">
-                <section id="news">
-                    <h2 class="">News</h2>
-                    <div class="chart">
-                        <div class="tradingview-widget-container">
-                        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-timeline.js" async>
-                        {"feedMode":"symbol","symbol":"AMEX:VDY","colorTheme":"light","isTransparent":false,"displayMode":"regular","width":"100%","height":"400","locale":"en"}
-                        </script>
-                    </div>
-                </section>
-                <section id="technical">
-                    <h2>Technical Analysis</h2>
-                    <div class="chart">
-                        <script type="text/javascript"
-                            src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js"
-                            async> { "interval": "1M", "width": "100%", "isTransparent": false, "height": "400", "symbol": "TSX:VDY", "showIntervalTabs": true, "displayMode": "single", "locale": "en", "colorTheme": "light" } </script>
-                    </div>
-                </section>
-                <section>
-                    <h2>Additional Information and Risks</h2>
-                    <p>The <strong>Vanguard FTSE Canadian High Dividend Yield Index ETF (VDY)</strong> provides
-                        investors with exposure to Canadian companies offering a high <strong>dividend rate</strong> and
-                        potential for <strong>return</strong>. It covers a broad <strong>range</strong> of stocks,
-                        reflecting various <strong>earnings</strong> potential.</p>
-
-                    <p><strong>VDY</strong> is designed for <strong>trading</strong> purposes, providing <strong>data
-                            for Vanguard FTSE Canadian</strong> for informed decision-making. Its <strong>grade</strong>
-                        reflects its performance against the <strong>overall market</strong>. Although
-                        <strong>losses</strong> may be incurred, its <strong>fundamental metric</strong> suggests
-                        potential <strong>rise</strong>.
-                    </p>
-
-                    <p>Investors can expect <strong>dividend growth</strong> and the option for <strong>stock dividend
-                            reinvestment</strong>. The <strong>market price</strong> reflects its <strong>chart's 1 x
-                            axis</strong> displaying <strong>time</strong>, making it an <strong>appropriate</strong>
-                        choice for those aiming for <strong>three years of cumulative return</strong>.</p>
-
-                    <p>When purchasing, the <strong>number of shares</strong> may differ, but the
-                        <strong>purpose</strong> remains the same: to capitalize on <strong>growth rate</strong> and
-                        achieve an <strong>overall market</strong> <strong>return</strong>.
-                    </p>
-
-                    <p>Managed by <strong>Vanguard Investments Canada Inc.</strong>, <strong>VDY</strong> caters to
-                        <strong>reinvestment</strong> strategies and offers insights into <strong>brokerage</strong>
-                        performance. Its <strong>data ranges</strong> ensure <strong>appropriate</strong> analysis,
-                        guiding investors towards <strong>expected earnings</strong> and minimizing
-                        <strong>losses</strong>.
-                    </p>
-
+                <section id="disclaimer" class="small-text-section section-grey">
+                    <h2>Important Disclaimer</h2>
+                    <p>This article is for informational purposes only and does not constitute financial advice.
+                        Investing
+                        involves risks, and you should consult with a qualified financial professional before making any
+                        investment decisions. Past performance is not indicative of future results.</p>
                 </section>
 
             </div>
         </div>
         <div class="row dark-div">
             <div class="col container-1280">
-                <div class="shared-footer"> <!-- This is where the shared nav will be loaded --> </div>
+                <div class="shared-footer"> </div>
             </div>
         </div>
     </div>
@@ -652,36 +498,53 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
+        function generateTOC() {
+            const tocList = $('#toc-list .etf-nav');
+            tocList.empty();
+            let ul = $('<ul></ul>').addClass('toc-menu');
+
+            const mainContentArea = $('.container-1000');
+
+            mainContentArea.find('section').each(function () {
+                const sectionId = $(this).attr('id');
+                const h2 = $(this).find('h2:first');
+
+                if (sectionId && h2.length > 0 && sectionId !== 'disclaimer') {
+                    let title = h2.text();
+                    const li = $('<li></li>');
+                    const a = $('<a></a>').attr('href', '#' + sectionId).text(title);
+                    li.append(a);
+                    ul.append(li);
+                }
+            });
+            tocList.append(ul);
+        }
+
         $(function () {
-            $(".shared-nav").load("/shared/nav.html");
-            $(".etf-nav").load("/shared/etfnav2.html");
+            $(".shared-nav").load("/shared/nav.html", function () {
+                generateTOC();
+            });
             $(".shared-subscribe").load("/shared/subscribe.html");
             $(".shared-banner").load("/shared/banner.html");
             $(".shared-articles").load("/shared/technologyStocks.html");
             $(".shared-footer").load("/shared/footer.html");
-        });
-        $(document).ready(function () {
+
+            generateTOC();
+
             $("#toggle-toc").click(function () {
-                var tocList = $("#toc-list");
                 var fixedToc = $(".fixed-toc");
-                if (tocList.is(":visible")) {
-                    tocList.hide();
-                    fixedToc.css({ "width": "0px", "display": "none" });
+                fixedToc.toggle();
+                if (fixedToc.is(":visible")) {
+                    fixedToc.addClass("show");
                 } else {
-                    fixedToc.css({ "width": "200px", "display": "block" });
-                    tocList.show();
+                    fixedToc.removeClass("show");
                 }
             });
-        });
 
-        $(document).ready(function () {
-            $('.carousel').carousel();
-
-            // Scroll to top functionality
             var mybutton = $('#return-to-top');
 
             $(window).scroll(function () {
-                if ($(this).scrollTop() > 20) {
+                if ($(this).scrollTop() > 100) {
                     mybutton.fadeIn();
                 } else {
                     mybutton.fadeOut();

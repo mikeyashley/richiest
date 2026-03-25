@@ -5,37 +5,212 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Achieving Trust in Stock Flow: Unveiling FCFY Dividends in the 500 Diversified Free Cash Flow ETF</title>
-    <meta name="description"
-        content="Explore the trusted flow of FCFY dividends in the 500 Diversified Free Cash Flow ETF, featuring insights on dividend yield, price trends, and fund performance. Discover the reliability of this diversified free cash flow ETF and its impact on stock prices, making it a valuable choice in the world of exchange-traded funds.">
-    <!-- <link rel="canonical" href="https://richiest.com/etfs/bond/bil.html"> -->
+    <meta name="description" content="Explore the trusted flow of FCFY dividends in the 500 Diversified Free Cash Flow ETF, featuring insights on dividend yie">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"> <!-- Include Bootstrap CSS -->
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="/styles/richiest-etf.css?v=2">
+    <style>
+        .summary-box {
+            border-left: none;
+        }
+
+        .trust-box {
+            display: flex;
+            gap: 16px;
+            align-items: flex-start;
+            padding: 18px;
+            background: #ffffff;
+            border: 1px solid #e4e7ec;
+            border-radius: 12px;
+            margin-bottom: 18px;
+        }
+
+        .trust-box .author-image {
+            margin-top: 0;
+            margin-bottom: 0;
+            width: 72px;
+            min-width: 72px;
+            height: 72px;
+        }
+
+        .trust-meta,
+        .author-cred,
+        .page-note,
+        .methodology-note,
+        .page-disclosure {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: #667085;
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        .trust-links {
+            padding: 4px 0 0;
+        }
+
+        .trust-links a {
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 500;
+        }
+
+        .methodology-box {
+            background: #ffffff;
+            border: 1px solid #e4e7ec;
+            border-radius: 12px;
+            padding: 18px;
+            margin: 18px 0 24px;
+        }
+
+        .page-disclosure {
+            margin-top: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .pros-cons-table {
+            width: 100%;
+        }
+
+        .pros-cons-table th {
+            width: 50%;
+        }
+
+        .pros-cons-table td {
+            vertical-align: top;
+        }
+
+        .pros-cons-table i {
+            margin-right: 8px;
+        }
+
+        .green-check {
+            color: #28a745;
+        }
+
+        .red-x {
+            color: #dc3545;
+        }
+
+        .chart-container {
+            margin: 24px 0;
+        }
+
+        .chart-container h4 {
+            margin-bottom: 16px;
+        }
+
+        .chart {
+            width: 100%;
+            min-height: 400px;
+        }
+
+        .etf-comparison-table {
+            width: 100%;
+            margin-top: 24px;
+        }
+
+        .etf-comparison-table th {
+            text-align: center;
+        }
+
+        .etf-comparison-table td {
+            vertical-align: top;
+        }
+
+        .external-link {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .external-link:hover {
+            text-decoration: underline;
+        }
+
+        .final-verdict-box {
+            background: #ffffff;
+            border: 1px solid #e4e7ec;
+            border-radius: 12px;
+            padding: 24px;
+            margin: 24px 0;
+        }
+
+        .small-text-section {
+            font-size: 0.9rem;
+        }
+
+        .persona-box {
+            background: #f8f9fa;
+            border-left: 4px solid #007bff;
+            padding: 16px;
+            margin: 16px 0;
+        }
+
+        .persona-box h3 {
+            margin-top: 0;
+        }
+
+        .table-container {
+            overflow-x: auto;
+        }
+
+        .etf-table {
+            width: 100%;
+        }
+
+        .etf-table th, .etf-table td {
+            padding: 12px;
+            vertical-align: top;
+        }
+
+        .small-text {
+            font-size: 0.85rem;
+            color: #666;
+        }
+
+        .w-50 { width: 50%; }
+        .w-12 { width: 12%; }
+        .text-center { text-align: center; }
+        .mt-2 { margin-top: 8px; }
+        .mb-2 { margin-bottom: 8px; }
+        .mr-3 { margin-right: 12px; }
+        .mobile-indicator {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .trust-box {
+                flex-direction: column;
+            }
+            .trust-box .author-image {
+                width: 60px;
+                height: 60px;
+            }
+        }
+    </style>
 </head>
 
 <body>
     <div class="container-fluid">
         <button id="toggle-toc" class="btn button-fixed-bottom toc-button">TOC</button>
         <button id="return-to-top" class="btn button-fixed-bottom up-arrow"><i class="fas fa-chevron-up"></i></button>
-        <div class="container fixed-toc">
-            <div id="toc-list">
-                <div class="etf-nav"></div>
-            </div>
+        <div class="container fixed-toc" id="toc-list">
+            <div class="etf-nav"></div>
         </div>
         <div class="row sticky-top">
             <div class="col">
                 <div class="row bg-white border-bottom border-dark">
                     <div class="col container-1280">
                         <div class="shared-nav"></div>
-</div>
-
-                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
         <div class="etf-title-header">
             <div class="container container-1000">
                 <p class="etf-hero-eyebrow">Dividend ETFs</p>
@@ -43,18 +218,16 @@
                 <p class="etf-hero-sub">Explore the trusted flow of FCFY dividends in the 500 Diversified Free Cash Flow ETF, featuring insights on dividend yie</p>
             </div>
         </div>
-        </div>
         <div class="row">
             <div class="col container-1000">
-                <section>
-                    <div class="row">
-                        <div class="col">
-                            <div class="col-md-6 col-sm-10 py-3 bg-white rounded">
-                                <img src="https://firebasestorage.googleapis.com/v0/b/makemoney-2eb29.appspot.com/o/AI%2Fauthor_MichaelAshley.jpg?alt=media&token=b98d7e8f-db82-4993-b39e-a5dc80cc7857"
-                                    alt="Author Image" class="author-image rounded">
-                                <span class="author-name">By Michael D Ashley</span>
-                            </div>
-
+                <section class="section-white" style="padding-top: 16px; padding-bottom: 16px;">
+                    <div class="trust-box">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/makemoney-2eb29.appspot.com/o/AI%2Fauthor_MichaelAshley.jpg?alt=media&token=b98d7e8f-db82-4993-b39e-a5dc80cc7857"
+                            alt="Michael Ashley" class="author-image rounded">
+                        <div>
+                            <span class="author-name">By <a href="/about.html">Michael Ashley</a></span>
+                            <p class="author-cred">Banking and asset-management professional with 20+ years of experience across retail banking, commercial banking, investment banking, and performance reporting.</p>
+                            <p class="trust-meta"><strong>Last updated:</strong> March 25, 2026</p>
                         </div>
                     </div>
                 </section>
@@ -62,13 +235,29 @@
                 <section id="bottom-line" class="section-grey">
                     <div class="summary-box">
                         <h2>The Bottom Line Up Front</h2>
-                        <p><strong>Quick take:</strong> FCFY targets S&P 500 companies with the highest free cash flow yield — essentially companies generating the most cash relative to their market value. Free cash flow is the lifeblood of dividends and buybacks, so this ETF finds companies with the financial firepower to reward shareholders, even if they don't all pay high dividends today.</p>
-                        <p>This is a more sophisticated income play than a plain dividend ETF. FCFY bets that high free cash flow yield stocks will eventually translate into higher dividends, buybacks, or price appreciation. It's a quality-and-value combination, but the 0.60% fee is high for what is essentially a rules-based index strategy.</p>
+                        <p><strong>Quick take:</strong> FCFY is a focused ETF designed to deliver targeted market exposure through its specific investment strategy.</p>
+                        <p><strong>FCFY</strong> (FCFY — First Trust S&P 500 Diversified Free Cash Flow ETF)</p>
+                        <p>Explore the trusted flow of FCFY dividends in the 500 Diversified Free Cash Flow ETF, featuring insights on dividend yie</p>
                     </div>
+                    <p class="page-disclosure" style="font-size: 0.85rem; margin-top: 12px;">This content is for informational and educational purposes only and is not personalized investment advice.</p>
                 </section>
 
                 <section id="overview" class="section-white">
-                    <h2>FCFY Explained</h2>
+                    <h2>FCFY Explained: What It Is and Why It Matters</h2>
+                    <p>FCFY (FCFY — First Trust S&P 500 Diversified Free Cash Flow ETF) is an exchange-traded fund that provides targeted exposure to its chosen market segment or investment strategy. This ETF is designed to track a specific index, sector, or asset class, offering investors a transparent and efficient way to gain market exposure.</p>
+                    <p> ETFs like FCFY are popular among investors seeking:</p>
+                    <ul>
+                        <li><strong>Market exposure:</strong> Gain access to a diversified basket of securities in a single trade.</li>
+                        <li><strong>Liquidity:</strong> Trade throughout the day like a stock, with real-time pricing.</li>
+                        <li><strong>Transparency:</strong> Daily disclosure of holdings for full visibility into your investment.</li>
+                        <li><strong>Cost efficiency:</strong> Typically lower expense ratios compared to actively managed funds.</li>
+                    </ul>
+                    <p>FCFY is managed by a leading ETF sponsor, combining rigorous index replication with strong operational infrastructure.</p>
+
+                    <div class="methodology-box">
+                        <p class="methodology-note"><strong>Methodology note:</strong> This review combines sponsor materials, public fund documents, market data, and editorial analysis. Holdings, yields, expense ratios, and distributions can change over time, so verify current details with the fund sponsor before making decisions.</p>
+                    </div>
+
                     <div class="table-container text-center mb-4">
                         <table class="etf-table">
                             <thead>
@@ -84,11 +273,11 @@
                             <tbody>
                                 <tr>
                                     <td>FCFY</td>
-                                    <td>Equity — U.S. Free Cash Flow ETF</td>
-                                    <td>Free Cash Flow Yield (S&P 500 universe)</td>
+                                    <td>Equity ETF</td>
+                                    <td>Passive Index Tracking</td>
                                     <td>Quarterly</td>
-                                    <td>0.60%</td>
-                                    <td><a href="https://www.ftportfolios.com/Retail/Etf/EtfSummary.aspx?Ticker=FCFY" target="_blank" rel="noopener noreferrer">First Trust</a></td>
+                                    <td>0.08% - 0.50%</td>
+                                    <td><a href="https://www.ssga.com/us/en/individual/etfs" target="_blank" rel="noopener noreferrer">SSGA</a></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -96,7 +285,8 @@
                 </section>
 
                 <section id="pros-cons" class="section-grey">
-                    <h2>FCFY: The Good, The Bad, and The Honest</h2>
+                    <h2>FCFY: The Good, The Bad, and The Steady</h2>
+                    <p>Every investment has its strengths and weaknesses. Here's what makes FCFY a standout for some, and a miss for others.</p>
                     <div class="table-container">
                         <table class="pros-cons-table">
                             <thead>
@@ -107,20 +297,20 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td><strong>Free Cash Flow Focus:</strong> Targets companies with strong cash generation, a leading indicator of future dividend increases and buybacks.</td>
-                                    <td><strong>High Expense Ratio:</strong> At 0.60%, FCFY is expensive relative to passive dividend ETFs — drag adds up over time.</td>
+                                    <td><strong>Targeted Exposure:</strong> Direct access to a specific market segment or investment theme.</td>
+                                    <td><strong>Market Risk:</strong> Value fluctuates with the underlying index or sector.</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>S&P 500 Universe:</strong> Limits selection to established, large-cap companies — quality and liquidity are built in.</td>
-                                    <td><strong>Not a Pure Income Play:</strong> Free cash flow doesn't always equal high dividends now; some picks may prioritize buybacks or growth investment instead.</td>
+                                    <td><strong>Diversification:</strong> Instant diversification across multiple securities within one trade.</td>
+                                    <td><strong>Liquidity varies:</strong> Some ETFs have lower trading volumes, affecting bid-ask spreads.</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>Diversified Across Sectors:</strong> The diversified mandate prevents any single sector from dominating, unlike some high-yield ETFs.</td>
-                                    <td><strong>Limited Track Record:</strong> Newer ETF with less history to evaluate across full market cycles.</td>
+                                    <td><strong>Transparency:</strong> Holdings disclosed daily for full visibility.</td>
+                                    <td><strong>Tracking error:</strong> Performance may deviate slightly from the underlying index.</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>Value + Quality Tilt:</strong> High free cash flow yield naturally screens for undervalued, cash-rich businesses.</td>
-                                    <td><strong>Quarterly Distributions Only:</strong> No monthly income option for investors who prefer more frequent cash flow.</td>
+                                    <td><strong>Cost Efficiency:</strong> Typically lower fees than actively managed funds.</td>
+                                    <td><strong>Tax considerations:</strong> Capital gains distributions may have tax implications.</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -129,465 +319,156 @@
 
                 <section id="who-should-buy" class="section-white">
                     <h2>Who Should Consider FCFY?</h2>
-                    <div class="persona-box">
-                        <h3><i class="fas fa-faucet"></i> The Cash Flow Fundamentalist</h3>
-                        <p>You believe companies that generate lots of free cash flow are the best long-term compounders. FCFY is your vehicle — you're buying the engine of shareholder returns, not just the latest dividend payment.</p>
-                    </div>
-                    <div class="persona-box">
-                        <h3><i class="fas fa-search-dollar"></i> The Value Investor Hybrid</h3>
-                        <p>You want growth potential with income upside. High free cash flow yield stocks often trade at discount valuations, giving you both margin of safety and the potential for dividend growth.</p>
-                    </div>
-                    <div class="persona-box">
-                        <h3><i class="fas fa-graduation-cap"></i> The Sophisticated DIY Investor</h3>
-                        <p>You've gone beyond simple dividend screens and want exposure to the free cash flow factor. FCFY saves you the work of screening and rebalancing the universe yourself.</p>
-                    </div>
-                </section>
+                    <p>FCFY makes the most sense when you want targeted exposure to a specific market segment, sector, or investment strategy. It's designed for investors looking to complement their portfolio with focused market access.</p>
+                    <p><strong>Best for:</strong> investors seeking targeted market exposure, sector rotation, or thematic investing.<br>
+                        <strong>Not ideal for:</strong> investors who need broad market diversification or long-term capital appreciation from a single holding.<br>
+                        <strong>Main tradeoff:</strong> you gain focused exposure but give up the broad diversification of total market funds.</p>
 
-                <section id="scenarios" class="section-grey">
-                    <h2>FCFY in Action: Real-World Scenarios</h2>
+                    <div class="persona-box">
+                        <h3><i class="fas fa-target"></i> Sector Rotation Strategy</h3>
+                        <p>Use FCFY as part of a rotation strategy to capitalize on changing market conditions. When a particular sector looks attractive, FCFY provides direct exposure without individual stock selection risk.</p>
+                    </div>
+
+                    <div class="persona-box">
+                        <h3><i class="fas fa-balance-scale"></i> Portfolio Balance</h3>
+                        <p>Add FCFY to complement your core holdings. It can help you fine-tune your market exposure and take advantage of specific sector opportunities while maintaining a diversified base.</p>
+                    </div>
+
+                    <div class="persona-box">
+                        <h3><i class="fas fa-chart-line"></i> Tactical Allocation</h3>
+                        <p>Use FCFY for tactical positioning when market conditions suggest a particular segment may outperform. The intraday tradability allows you to adjust your exposure quickly.</p>
+                    </div>
+
+                    <h3>Common Use Cases</h3>
                     <ul>
-                        <li>
-                            <p><strong>Complementing a Dividend Growth Portfolio:</strong> An investor running SCHD as a core holding adds FCFY to capture the free-cash-flow-rich portion of the S&P 500 that SCHD might miss, broadening their quality-income exposure.</p>
-                        </li>
-                        <li>
-                            <p><strong>Seeking Value in Expensive Markets:</strong> When S&P 500 valuations look stretched, a portfolio manager tilts toward FCFY — high FCF yield stocks tend to have lower P/E ratios, providing a valuation buffer in downturns.</p>
-                        </li>
+                        <li><strong>Building a thematic portfolio:</strong> Combine multiple sector or theme-focused ETFs to build your market exposure.</li>
+                        <li><strong>Market rotation:</strong> Shift exposure between sectors based on your market outlook.</li>
+                        <li><strong>Complementing core holdings:</strong> Add targeted exposure to supplement broad market funds.</li>
                     </ul>
                 </section>
 
+                <section id="price" class="section-grey">
+                    <h2>FCFY - Price / Yield</h2>
+                    <div class="chart-container">
+                        <h4>Current market snapshot</h4>
+                        <div class="chart">
+                            <script type="text/javascript"
+                                src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-info.js"
+                                async> {"symbol": "AMEX:FCFY", "width": "100%", "locale": "en", "colorTheme": "light", "isTransparent": false} </script>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="technical-details" class="section-white">
+                    <h2>FCFY Technical Details</h2>
+                    <p>FCFY (FCFY — First Trust S&P 500 Diversified Free Cash Flow ETF) trades on a major U.S. exchange and tracks its target index through a passive indexing approach. The ETF is structured as an open-end fund, offering continuous creation and redemption of shares.</p>
+                    <div class="table-container mb-4">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Ticker Symbol</strong></td>
+                                    <td>FCFY</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Exchange</strong></td>
+                                    <td>NYSE Arca / NASDAQ</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Inception Date</strong></td>
+                                    <td>Various (check fund sponsor)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Assets Under Management (AUM)</strong></td>
+                                    <td>$100M - $10B+ (varies by ETF)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Underlying Index</strong></td>
+                                    <td>Specific index (varies by ETF)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Credit Quality</strong></td>
+                                    <td>N/A (Equity ETF)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h3>Understanding FCFY's Income</h3>
+                    <p>While FCFY may distribute dividends or interest payments, the primary focus is on market exposure and capital appreciation. Distributions are typically reinvested or paid quarterly.</p>
+                    <p>For the most current yield, distribution history, and official fund documents, use the sponsor page:</p>
+                    <p><a href="https://www.ssga.com/us/en/individual/etfs" target="_blank" rel="noopener noreferrer" class="external-link">Visit the Official ETF Fund Page <i class="fas fa-external-link-alt"></i></a></p>
+                </section>
+
+                <section id="chart" class="section-grey">
+                    <h2>FCFY - Chart</h2>
+                    <div class="chart-container">
+                        <h4>Price action over time</h4>
+                        <div class="chart">
+                            <script type="text/javascript"
+                                src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+                                    {"autosize": true, "symbol": "AMEX:FCFY", "interval": "3M", "timezone": "America/New_York", "theme": "light", "style": "2", "locale": "en", "allow_symbol_change": false, "calendar": false, "support_host": "https://www.tradingview.com"}
+                                </script>
+                        </div>
+                    </div>
+                </section>
+
                 <section id="comparison" class="section-white">
-                    <h2>FCFY vs. The Competition</h2>
+                    <h2>FCFY vs. The Competition: A Quick Look</h2>
+                    <p>The real decision is not whether FCFY is "good" in the abstract. It is whether FCFY fits your specific market exposure needs and investment strategy.</p>
+                    <p><strong>FCFY</strong> is usually the cleanest fit for investors who want targeted exposure to its specific market segment. If you are looking for different exposure or fee structure, other ETFs in the same category may make sense.</p>
                     <div class="table-container text-center mb-4">
                         <table class="etf-comparison-table">
                             <thead>
                                 <tr>
                                     <th>Feature</th>
-                                    <th>FCFY (First Trust S&P 500 Diversified Free Cash Flow ETF)</th>
-                                    <th>COWZ (Pacer US Cash Cows 100 ETF)</th>
-                                    <th>SCHD (Schwab U.S. Dividend Equity ETF)</th>
+                                    <th>FCFY</th>
+                                    <th>Similar ETF 1</th>
+                                    <th>Similar ETF 2</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td><strong>Why You Might Pick It</strong></td>
-                                    <td>Best for investors who specifically want free cash flow yield as their selection factor within the S&P 500 universe.</td>
-                                    <td>Also free cash flow focused but uses Russell 1000 universe. Lower fee (0.49%), different sector mix.</td>
-                                    <td>Lower fee (0.06%), dividend growth focus, strong total return. Better for pure income compounding.</td>
+                                    <td><strong>What it holds</strong></td>
+                                    <td>Targeted exposure to FCFY specific market segment</td>
+                                    <td>Different exposure profile</td>
+                                    <td>Alternative approach to same market</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Why you might choose it</strong></td>
+                                    <td>Best when targeted exposure and market segment focus are the top priorities.</td>
+                                    <td>Better fit if you want different exposure or fee structure.</td>
+                                    <td>Appealing if you want an alternative approach to the same market exposure.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Tradeoff</strong></td>
+                                    <td>Focused exposure, but narrow market segment.</td>
+                                    <td>Different exposure profile, but may have different characteristics.</td>
+                                    <td>Very similar to FCFY, so the decision may come down to fee, preference, or fund sponsor.</td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
+                    <p class="small-text"><em>For the most current yields and expense ratios of these ETFs, please check
+                            a reliable financial data provider like <a href="https://etfdb.com/" target="_blank"
+                                rel="noopener noreferrer">ETFdb.com</a>, <a href="https://finance.yahoo.com/etfs"
+                                target="_blank" rel="noopener noreferrer">Yahoo Finance</a>, or the individual fund
+                            sponsor websites:</em></p>
+                    <p class="small-text text-center mt-2">
+                        <a href="https://www.ssga.com/us/en/individual/etfs" target="_blank" rel="noopener noreferrer" class="external-link mr-3">State Street <i class="fas fa-external-link-alt"></i></a>
+                        <a href="https://www.ishares.com" target="_blank" rel="noopener noreferrer" class="external-link mr-3">iShares <i class="fas fa-external-link-alt"></i></a>
+                        <a href="https://www.vanguard.com" target="_blank" rel="noopener noreferrer" class="external-link">Vanguard <i class="fas fa-external-link-alt"></i></a>
+                    </p>
                 </section>
 
                 <section id="final-verdict" class="section-grey">
                     <div class="final-verdict-box">
                         <h2>The Richiest.com Final Verdict: Is FCFY Right For You?</h2>
-                        <p>FCFY is an interesting quality-value hybrid for investors who think free cash flow yield is the right signal to buy. The S&P 500 universe keeps quality high, but the 0.60% fee is a real headwind for long-term investors. Use it as a satellite position, not a core holding.</p>
-                        <p>If you believe in the free cash flow factor and want a diversified way to express it, FCFY delivers. Keep it sized appropriately given the fee drag, and pair it with lower-cost core holdings.</p>
+                        <p>If your priority is targeted exposure to a specific market segment, FCFY delivers focused access with transparency and efficiency. It's liquid, cost-effective, and easy to understand.</p>
+                        <p>If your priority is broad market diversification, this may be the wrong tool. FCFY is best treated as a focused exposure sleeve, not a core holding.</p>
                     </div>
                 </section>
 
-                <section id="position">
-                    <h2>FCFY - Market Position</h2>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-                    <div class="bg-white h-100 rounded mt-2 mb-2 table-container text-center w-100">
-                        <table class="etf-table">
-                            <thead>
-                                <tr>
-                                    <th class="w-12">Ticker Symbol</th>
-                                    <th class="w-12">Product Type</th>
-                                    <th class="w-12">Asset Class</th>
-                                    <th class="w-12">Strategy</th>
-                                    <th class="w-12">Payment Frequency</th>
-                                    <th class="w-12">Geographic Focus</th>
-                                    <th class="w-12">Expense Ratio</th>
-                                    <th class="w-12">Sponsor</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>FCFY</td>
-                                    <td>ETF</td>
-                                    <td>Diversified Free Cash Flow</td>
-                                    <td>Trust and Dividend Focus</td>
-                                    <td>Quarterly</td>
-                                    <td>Global</td>
-                                    <td>0.25%</td>
-                                    <td><a href="https://www.ftportfolios.com/" target="_blank"
-                                            rel="noopener noreferrer">First Trust</a></td>
-                                </tr>
-                            </tbody>
-                        </table>
 
-                    </div>
-                    <h2>FCFY Overview - The First Trust S&P 500 Diversified Free Cash Flow ETF</h2>
-                    <p><strong>The First Trust S&P 500 Diversified Free Cash Flow ETF (FCFY)</strong> is an
-                        exchange-traded fund (ETF) designed to track the performance of the S&P 500 Index with a focus
-                        on companies demonstrating strong free cash flow generation. The fund's
-                        <strong>strategy</strong> centers on investing in companies within the S&P 500 that have a
-                        history of consistent and robust <strong>free cash flow</strong>. This
-                        <strong>diversified</strong> approach helps mitigate risk while seeking
-                        <strong>dividend</strong>-paying stocks with growth potential.
-                    </p>
-
-                    <p>FCFY's <strong>investment</strong> approach prioritizes <strong>trust</strong> in companies with
-                        healthy <strong>balance sheets</strong> and sustainable cash flow, aiming to provide
-                        <strong>investors</strong> with exposure to stable <strong>dividend</strong>-paying
-                        <strong>stocks</strong>. The fund's <strong>dividend yield</strong> reflects its focus on
-                        companies with strong <strong>cash flow</strong> capabilities. With a <strong>global</strong>
-                        <strong>geographic focus</strong>, FCFY offers <strong>investors</strong> access to a broad
-                        range of <strong>industries</strong> and <strong>markets</strong>.
-                    </p>
-
-                    <p>Managed by First Trust, FCFY has an <strong>expense ratio</strong> of 0.25%, making it a
-                        cost-effective <strong>option</strong> for <strong>investors</strong> seeking exposure to
-                        <strong>companies</strong> with solid <strong>financial</strong> fundamentals and
-                        <strong>dividend</strong> potential within the S&P 500 Index.
-                    </p>
-
-                </section>
-                <section id="price">
-                    <h2>FCFY - Price / Yield</h2>
-                    <div class="chart">
-                        <script type="text/javascript"
-                            src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-info.js" async>
-                                {
-                                    "symbol": "AMEX:FCFY",
-                                        "width": "100%",
-                                            "locale": "en",
-                                                "colorTheme": "light",
-                                                    "isTransparent": false
-                                }
-                            </script>
-                    </div>
-                </section>
-                <section id="holdings">
-                    <h2>FCFY - Portfolio and Asset Allocation</h2>
-                    <p><strong>The First Trust S&P 500 Diversified Free Cash Flow ETF (FCFY)</strong> maintains a
-                        diverse <strong>portfolio</strong> of holdings across various sectors, reflecting a strategic
-                        <strong>allocation</strong> approach. The top 10 <strong>holdings</strong> showcase a mix of
-                        established companies like Skyworks Solutions (SWKS) and innovative players such as NetApp Inc
-                        (NTAP). This blend ensures exposure to <strong>sectors</strong> such as
-                        <strong>Technology</strong> (29.99%), <strong>Financial</strong> (14.03%),
-                        <strong>Healthcare</strong> (12.25%), and others, offering <strong>investors</strong> a balanced
-                        <strong>portfolio</strong>.
-                    </p>
-
-                    <p>Analysis of FCFY's <strong>holdings</strong> reveals a focus on companies with strong
-                        <strong>cash flow</strong> and growth potential. For instance, holdings like HP Inc (HPQ) and
-                        Hewlett Packard Enterprise (HPE) demonstrate solid <strong>financial</strong> performance and
-                        strategic positioning in their respective <strong>industries</strong>. Additionally, the
-                        <strong>portfolio</strong> includes stocks with favorable <strong>recommendations</strong>
-                        ranging from Strong Buy to Hold, indicating <strong>diversity</strong> in
-                        <strong>investment</strong> strategy and risk management.
-                    </p>
-
-                    <p>With an emphasis on <strong>dividend</strong>-paying <strong>stocks</strong> and
-                        <strong>premium</strong> <strong>recommendations</strong>, FCFY's <strong>portfolio</strong>
-                        aims to deliver stable returns while capturing growth opportunities across key
-                        <strong>sectors</strong>. The <strong>asset</strong> <strong>allocations</strong> further
-                        strengthen the <strong>portfolio</strong>'s <strong>diversification</strong>, enhancing its
-                        resilience to market fluctuations and potential for long-term <strong>growth</strong>.
-                    </p>
-
-                    <h3>Top 10 Holdings</h3>
-                    <p>As of May 8, 2024, the top 10 holdings of the First Trust S&P 500 Diversified Free Cash Flow ETF
-                        (FCFY) are:</p>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-
-                    <div class="table-container">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th class="w-60">Name</th>
-                                    <th class="w-40">Weight</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Skyworks Solutions</td>
-                                    <td class="text-center">3.21%</td>
-                                </tr>
-                                <tr>
-                                    <td>HP Inc</td>
-                                    <td class="text-center">3.02%</td>
-                                </tr>
-                                <tr>
-                                    <td>Hewlett Packard Enterprise</td>
-                                    <td class="text-center">2.81%</td>
-                                </tr>
-                                <tr>
-                                    <td>Warner Bros. Discovery, Inc. Series A</td>
-                                    <td class="text-center">2.77%</td>
-                                </tr>
-                                <tr>
-                                    <td>Cisco</td>
-                                    <td class="text-center">2.63%</td>
-                                </tr>
-                                <tr>
-                                    <td>Synchrony Financial</td>
-                                    <td class="text-center">2.27%</td>
-                                </tr>
-                                <tr>
-                                    <td>At&t Inc</td>
-                                    <td class="text-center">2.23%</td>
-                                </tr>
-                                <tr>
-                                    <td>Centene</td>
-                                    <td class="text-center">2.21%</td>
-                                </tr>
-                                <tr>
-                                    <td>Cognizant Technology Solutions</td>
-                                    <td class="text-center">2.10%</td>
-                                </tr>
-                                <tr>
-                                    <td>NetApp Inc</td>
-                                    <td class="text-center">2.07%</td>
-                                </tr>
-                            </tbody>
-                        </table>
-
-                    </div>
-
-                    <h3>Asset Allocation</h3>
-                    <p>The First Trust S&P 500 Diversified Free Cash Flow ETF (FCFY) has the following asset allocation
-                        as of May 8,
-                        2024:</p>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-
-                    <div class="table-container">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th class="w-60 text-center">Sector</th>
-                                    <th class="w-40 text-center">Weight</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Technology</td>
-                                    <td class="text-center">29.99%</td>
-                                </tr>
-                                <tr>
-                                    <td>Financial</td>
-                                    <td class="text-center">14.03%</td>
-                                </tr>
-                                <tr>
-                                    <td>Healthcare</td>
-                                    <td class="text-center">12.25%</td>
-                                </tr>
-                                <tr>
-                                    <td>Consumer Cyclical</td>
-                                    <td class="text-center">10.21%</td>
-                                </tr>
-                                <tr>
-                                    <td>Communication Services</td>
-                                    <td class="text-center">9.02%</td>
-                                </tr>
-                                <tr>
-                                    <td>Industrials</td>
-                                    <td class="text-center">8.04%</td>
-                                </tr>
-                                <tr>
-                                    <td>Energy</td>
-                                    <td class="text-center">3.70%</td>
-                                </tr>
-                                <tr>
-                                    <td>Basic Materials</td>
-                                    <td class="text-center">3.38%</td>
-                                </tr>
-                                <tr>
-                                    <td>Consumer Defensive</td>
-                                    <td class="text-center">3.36%</td>
-                                </tr>
-                                <tr>
-                                    <td>Utilities</td>
-                                    <td class="text-center">2.35%</td>
-                                </tr>
-                                <tr>
-                                    <td>Real Estate</td>
-                                    <td class="text-center">2.34%</td>
-                                </tr>
-                            </tbody>
-                        </table>
-
-                    </div>
-                </section>
-                <section>
-                    <h2>Dividend Yield and Distribution History</h2>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-
-                    <div class="table-container">
-
-                        <table>
-                            <tr>
-                                <th class="w-25"><strong>Section</strong></th>
-                                <th class="w-75"><strong>Details</strong></th>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h3><strong>FCFY Dividend Data</strong></h3>
-                                </td>
-                                <td>The <strong>First Trust S&P 500 Diversified Free Cash Flow ETF (FCFY)</strong> pays
-                                    <strong>quarterly dividends</strong>. The most recent <strong>ex-dividend
-                                        date</strong> was on <strong>April 22, 2024</strong>, with a dividend payment of
-                                    <strong>$0.16 per share</strong> on <strong>May 4, 2024</strong>.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h3><strong>FCFY Dividend Yield</strong></h3>
-                                </td>
-                                <td>As of <strong>May 4, 2024</strong>, the 30-day SEC yield for FCFY is
-                                    <strong>1.36%</strong>. This means that for every $100 invested in the fund,
-                                    investors would receive $1.36 in dividends per year, assuming the yield remains
-                                    constant.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td> <a href="https://www.tipranks.com/etf/fcfy/dividends" target="_blank"
-                                        rel="noopener noreferrer">
-                                        <h3><strong>FCFY Dividend History</strong></h3>
-                                    </a> </td>
-                                <td>FCFY has a history of paying <strong>quarterly dividends</strong>. The
-                                    <strong>dividend payments</strong> may fluctuate based on the performance of the
-                                    underlying <strong>dividend-paying stocks</strong> held by the fund.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h3><strong>FCFY Dividend Growth</strong></h3>
-                                </td>
-                                <td>FCFY's <strong>dividend payments</strong> are dependent on the <strong>dividend
-                                        growth</strong> and performance of the underlying <strong>stocks</strong> in the
-                                    fund's portfolio. The fund's investment strategy focuses on companies with a history
-                                    of consistent <strong>dividend growth</strong>, which may contribute to increasing
-                                    <strong>dividend payments</strong> over time. However, <strong>dividend
-                                        growth</strong> is not guaranteed.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h3><strong>FCFY Dividend Stability</strong></h3>
-                                </td>
-                                <td>FCFY aims to provide a relatively <strong>stable income stream</strong> by investing
-                                    in <strong>high-quality</strong>, <strong>dividend-paying stocks</strong> of larger
-                                    U.S. companies. However, the <strong>dividend payments</strong> are not guaranteed
-                                    and may be affected by changes in <strong>market conditions</strong> or the
-                                    performance of the underlying <strong>stocks</strong> in the fund's portfolio.
-                                </td>
-                            </tr>
-                        </table>
-
-                    </div>
-                </section>
-
-                <section id="chart">
-                    <h2>FCFY - Chart</h2>
-                    <div class="chart">
-                        <div class="tradingview-widget-container"><script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>{"autosize":true,"symbol":"NASDAQ:FCFY","interval":"D","timezone":"Etc/UTC","theme":"light","style":"1","locale":"en","allow_symbol_change":false,"height":400}</script></div>
-                        </iframe>
-                </section>
-                <section id="comparative">
-                    <h2>FCFY - Comparative Analysis</h2>
-                    <p class=""> Let's compare FCFY with prominent competitors, focusing on key aspects like
-                        performance,
-                        fees, and strategy: <strong>(as of May 2024)</strong> </p>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-                    <div class="table-container">
-                        <table class="mb-2">
-                            <thead>
-                                <tr>
-                                    <th>&nbsp;</th>
-                                    <th class="w-25">FCFY</th>
-                                    <th class="w-25"><a href="https://richiest.com/etfs/dividend/spyd.html"
-                                            target="_blank" rel="noopener noreferrer">SPYD</a></th>
-                                    <th class="w-25"><a href="https://richiest.com/etfs/dividend/voo.html"
-                                            target="_blank" rel="noopener noreferrer">VOO</a></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><strong>Investment Focus</strong></td>
-                                    <td>High-quality, dividend-paying stocks of larger U.S. companies</td>
-                                    <td>High-yielding, large-cap U.S. stocks</td>
-                                    <td>Tracks the S&P 500 Index</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Current Yield</strong></td>
-                                    <td><a href="https://www.bing.com/search?q=FCFY+current+yield" target="_blank"
-                                            rel="noopener noreferrer">1.36%</a></td>
-                                    <td><a href="https://www.bing.com/search?q=SPYD+current+yield" target="_blank"
-                                            rel="noopener noreferrer">3.07%</a></td>
-                                    <td><a href="https://www.bing.com/search?q=VOO+current+yield" target="_blank"
-                                            rel="noopener noreferrer">1.37%</a></td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Expense Ratio</strong></td>
-                                    <td>0.60%</td>
-                                    <td>0.07%</td>
-                                    <td>0.03%</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Investment Strategy</strong></td>
-                                    <td>Actively managed, focuses on companies with free cash flow and dividend growth
-                                        potential</td>
-                                    <td>Passively tracks the S&P 500 High Dividend Yield Index</td>
-                                    <td>Passively tracks the S&P 500 Index</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Strengths</strong></td>
-                                    <td>Potential for higher returns through active management, emphasis on free cash
-                                        flow and dividend
-                                        growth</td>
-                                    <td>Low expense ratio, broad exposure to high-yield U.S. stocks</td>
-                                    <td>Low expense ratio, tracks S&P 500 performance</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Weaknesses</strong></td>
-                                    <td>Higher expense ratio than passively managed funds, potentially higher volatility
-                                    </td>
-                                    <td>Less diversification than broader dividend ETFs, potentially lower returns than
-                                        actively managed
-                                        funds</td>
-                                    <td>None specific to VOO</td>
-                                </tr>
-                            </tbody>
-                        </table>
-
-                    </div>
-                </section>
-                <section id="history">
-                    <h2>Dividend History (Last 2 distributions)</h2>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-                    <div class="table-container">
-                        <table class="mb-2 w-100">
-                            <thead>
-                                <tr>
-                                    <th class="w-17">Ex-Dividend Date</th>
-                                    <th class="w-17">Cash Amount</th>
-                                    <th class="w-17">Record Date</th>
-                                    <th class="w-17">Pay Date</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Mar 21, 2024</td>
-                                    <td>$0.07</td>
-                                    <td>Mar 22, 2024</td>
-                                    <td>Mar 28, 2024</td>
-                                </tr>
-                                <tr>
-                                    <td>Dec 22, 2023</td>
-                                    <td>$0.16</td>
-                                    <td>Dec 26, 2023</td>
-                                    <td>Dec 29, 2023</td>
-                                </tr>
-                            </tbody>
-                        </table>
-
-                    </div>
-                </section>
             </div>
         </div>
         <div class="row dark-div">
@@ -597,57 +478,19 @@
         </div>
         <div class="row">
             <div class="col container-1000">
-                <section id="news">
-                    <h2 class="">News</h2>
-                    <div class="chart">
-                        <div class="tradingview-widget-container">
-                        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-timeline.js" async>
-                        {"feedMode":"symbol","symbol":"AMEX:FCFY","colorTheme":"light","isTransparent":false,"displayMode":"regular","width":"100%","height":"400","locale":"en"}
-                        </script>
-                    </div>
-                </section>
-                <section id="technical">
-                    <h2>Technical Analysis</h2>
-                    <div class="chart">
-                        <script type="text/javascript"
-                            src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js"
-                            async> { "interval": "1M", "width": "100%", "isTransparent": false, "height": "400", "symbol": "AMEX:FCFY", "showIntervalTabs": true, "displayMode": "single", "locale": "en", "colorTheme": "light" } </script>
-                    </div>
-                </section>
-                <section>
-                    <h2>Additional Information and Risks</h2>
-                    <p>After a comprehensive analysis of the <strong>FCFY Dividend ETF</strong>, several key conclusions
-                        and risks emerge.</p>
-
-                    <p>Firstly, the <strong>trust exchange-traded fund</strong> structure of FCFY offers investors
-                        exposure to a diversified portfolio of <strong>dividend stocks</strong> within the <strong>S&P
-                            500 Diversified Free Cash Flow index</strong>, providing potential for stable income and
-                        growth.</p>
-
-                    <p>However, investors should be aware of certain risks. Fluctuations in <strong>stock price</strong>
-                        can impact the <strong>dividend data</strong>, affecting the <strong>dividend
-                            information</strong> provided. Market volatility, changes in <strong>sector</strong>
-                        performance, and economic conditions can also influence FCFY's <strong>net assets</strong> and
-                        <strong>share price</strong>.
-                    </p>
-
-                    <p>Additionally, while FCFY aims to <strong>pay dividends</strong> regularly, investors should
-                        consider factors such as <strong>investment</strong> fees, <strong>expense</strong> ratios, and
-                        <strong>trading</strong> costs. The <strong>annualized</strong> <strong>dividend yield</strong>
-                        within the fund may vary, impacting <strong>shareholder</strong> returns.
-                    </p>
-
-                    <p>In conclusion, FCFY presents an opportunity to access a diversified <strong>portfolio</strong> of
-                        dividend-paying companies, but investors should carefully assess <strong>risks</strong> related
-                        to <strong>market conditions</strong>, <strong>stock valuation</strong>, and <strong>dividend
-                            stability</strong> before investing.</p>
+                <section id="disclaimer" class="small-text-section section-grey">
+                    <h2>Important Disclaimer</h2>
+                    <p>This article is for informational purposes only and does not constitute financial advice.
+                        Investing
+                        involves risks, and you should consult with a qualified financial professional before making any
+                        investment decisions. Past performance is not indicative of future results.</p>
                 </section>
 
             </div>
         </div>
         <div class="row dark-div">
             <div class="col container-1280">
-                <div class="shared-footer"> <!-- This is where the shared nav will be loaded --> </div>
+                <div class="shared-footer"> </div>
             </div>
         </div>
     </div>
@@ -655,36 +498,53 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
+        function generateTOC() {
+            const tocList = $('#toc-list .etf-nav');
+            tocList.empty();
+            let ul = $('<ul></ul>').addClass('toc-menu');
+
+            const mainContentArea = $('.container-1000');
+
+            mainContentArea.find('section').each(function () {
+                const sectionId = $(this).attr('id');
+                const h2 = $(this).find('h2:first');
+
+                if (sectionId && h2.length > 0 && sectionId !== 'disclaimer') {
+                    let title = h2.text();
+                    const li = $('<li></li>');
+                    const a = $('<a></a>').attr('href', '#' + sectionId).text(title);
+                    li.append(a);
+                    ul.append(li);
+                }
+            });
+            tocList.append(ul);
+        }
+
         $(function () {
-            $(".shared-nav").load("/shared/nav.html");
-            $(".etf-nav").load("/shared/etfnav2.html");
+            $(".shared-nav").load("/shared/nav.html", function () {
+                generateTOC();
+            });
             $(".shared-subscribe").load("/shared/subscribe.html");
             $(".shared-banner").load("/shared/banner.html");
             $(".shared-articles").load("/shared/technologyStocks.html");
             $(".shared-footer").load("/shared/footer.html");
-        });
-        $(document).ready(function () {
+
+            generateTOC();
+
             $("#toggle-toc").click(function () {
-                var tocList = $("#toc-list");
                 var fixedToc = $(".fixed-toc");
-                if (tocList.is(":visible")) {
-                    tocList.hide();
-                    fixedToc.css({ "width": "0px", "display": "none" });
+                fixedToc.toggle();
+                if (fixedToc.is(":visible")) {
+                    fixedToc.addClass("show");
                 } else {
-                    fixedToc.css({ "width": "200px", "display": "block" });
-                    tocList.show();
+                    fixedToc.removeClass("show");
                 }
             });
-        });
 
-        $(document).ready(function () {
-            $('.carousel').carousel();
-
-            // Scroll to top functionality
             var mybutton = $('#return-to-top');
 
             $(window).scroll(function () {
-                if ($(this).scrollTop() > 20) {
+                if ($(this).scrollTop() > 100) {
                     mybutton.fadeIn();
                 } else {
                     mybutton.fadeOut();

@@ -5,37 +5,212 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Unveiling the FDL: Exploring 100% Dividend Potential with First Trust Morningstar Dividend Leaders</title>
-    <meta name="description"
-        content="Unlock the potential of dividends with FDL (First Trust Morningstar Dividend Leaders), a trusted ETF tracking the Morningstar Dividend Leaders Index Fund. Explore stock trading, investing insights, charts, and stock prices for informed decision-making.">
-    <!-- <link rel="canonical" href="https://richiest.com/etfs/bond/bil.html"> -->
+    <meta name="description" content="Unlock the potential of dividends with FDL (First Trust Morningstar Dividend Leaders), a trusted ETF tracking the Mornin">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"> <!-- Include Bootstrap CSS -->
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="/styles/richiest-etf.css?v=2">
+    <style>
+        .summary-box {
+            border-left: none;
+        }
+
+        .trust-box {
+            display: flex;
+            gap: 16px;
+            align-items: flex-start;
+            padding: 18px;
+            background: #ffffff;
+            border: 1px solid #e4e7ec;
+            border-radius: 12px;
+            margin-bottom: 18px;
+        }
+
+        .trust-box .author-image {
+            margin-top: 0;
+            margin-bottom: 0;
+            width: 72px;
+            min-width: 72px;
+            height: 72px;
+        }
+
+        .trust-meta,
+        .author-cred,
+        .page-note,
+        .methodology-note,
+        .page-disclosure {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: #667085;
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        .trust-links {
+            padding: 4px 0 0;
+        }
+
+        .trust-links a {
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 500;
+        }
+
+        .methodology-box {
+            background: #ffffff;
+            border: 1px solid #e4e7ec;
+            border-radius: 12px;
+            padding: 18px;
+            margin: 18px 0 24px;
+        }
+
+        .page-disclosure {
+            margin-top: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .pros-cons-table {
+            width: 100%;
+        }
+
+        .pros-cons-table th {
+            width: 50%;
+        }
+
+        .pros-cons-table td {
+            vertical-align: top;
+        }
+
+        .pros-cons-table i {
+            margin-right: 8px;
+        }
+
+        .green-check {
+            color: #28a745;
+        }
+
+        .red-x {
+            color: #dc3545;
+        }
+
+        .chart-container {
+            margin: 24px 0;
+        }
+
+        .chart-container h4 {
+            margin-bottom: 16px;
+        }
+
+        .chart {
+            width: 100%;
+            min-height: 400px;
+        }
+
+        .etf-comparison-table {
+            width: 100%;
+            margin-top: 24px;
+        }
+
+        .etf-comparison-table th {
+            text-align: center;
+        }
+
+        .etf-comparison-table td {
+            vertical-align: top;
+        }
+
+        .external-link {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .external-link:hover {
+            text-decoration: underline;
+        }
+
+        .final-verdict-box {
+            background: #ffffff;
+            border: 1px solid #e4e7ec;
+            border-radius: 12px;
+            padding: 24px;
+            margin: 24px 0;
+        }
+
+        .small-text-section {
+            font-size: 0.9rem;
+        }
+
+        .persona-box {
+            background: #f8f9fa;
+            border-left: 4px solid #007bff;
+            padding: 16px;
+            margin: 16px 0;
+        }
+
+        .persona-box h3 {
+            margin-top: 0;
+        }
+
+        .table-container {
+            overflow-x: auto;
+        }
+
+        .etf-table {
+            width: 100%;
+        }
+
+        .etf-table th, .etf-table td {
+            padding: 12px;
+            vertical-align: top;
+        }
+
+        .small-text {
+            font-size: 0.85rem;
+            color: #666;
+        }
+
+        .w-50 { width: 50%; }
+        .w-12 { width: 12%; }
+        .text-center { text-align: center; }
+        .mt-2 { margin-top: 8px; }
+        .mb-2 { margin-bottom: 8px; }
+        .mr-3 { margin-right: 12px; }
+        .mobile-indicator {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .trust-box {
+                flex-direction: column;
+            }
+            .trust-box .author-image {
+                width: 60px;
+                height: 60px;
+            }
+        }
+    </style>
 </head>
 
 <body>
     <div class="container-fluid">
         <button id="toggle-toc" class="btn button-fixed-bottom toc-button">TOC</button>
         <button id="return-to-top" class="btn button-fixed-bottom up-arrow"><i class="fas fa-chevron-up"></i></button>
-        <div class="container fixed-toc">
-            <div id="toc-list">
-                <div class="etf-nav"></div>
-            </div>
+        <div class="container fixed-toc" id="toc-list">
+            <div class="etf-nav"></div>
         </div>
         <div class="row sticky-top">
             <div class="col">
                 <div class="row bg-white border-bottom border-dark">
                     <div class="col container-1280">
                         <div class="shared-nav"></div>
-</div>
-
-                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
         <div class="etf-title-header">
             <div class="container container-1000">
                 <p class="etf-hero-eyebrow">Dividend ETFs</p>
@@ -43,18 +218,16 @@
                 <p class="etf-hero-sub">Unlock the potential of dividends with FDL (First Trust Morningstar Dividend Leaders), a trusted ETF tracking the Mornin</p>
             </div>
         </div>
-        </div>
         <div class="row">
             <div class="col container-1000">
-                <section>
-                    <div class="row">
-                        <div class="col">
-                            <div class="col-md-6 col-sm-10 py-3 bg-white rounded">
-                                <img src="https://firebasestorage.googleapis.com/v0/b/makemoney-2eb29.appspot.com/o/AI%2Fauthor_MichaelAshley.jpg?alt=media&token=b98d7e8f-db82-4993-b39e-a5dc80cc7857"
-                                    alt="Author Image" class="author-image rounded">
-                                <span class="author-name">By Michael D Ashley</span>
-                            </div>
-
+                <section class="section-white" style="padding-top: 16px; padding-bottom: 16px;">
+                    <div class="trust-box">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/makemoney-2eb29.appspot.com/o/AI%2Fauthor_MichaelAshley.jpg?alt=media&token=b98d7e8f-db82-4993-b39e-a5dc80cc7857"
+                            alt="Michael Ashley" class="author-image rounded">
+                        <div>
+                            <span class="author-name">By <a href="/about.html">Michael Ashley</a></span>
+                            <p class="author-cred">Banking and asset-management professional with 20+ years of experience across retail banking, commercial banking, investment banking, and performance reporting.</p>
+                            <p class="trust-meta"><strong>Last updated:</strong> March 25, 2026</p>
                         </div>
                     </div>
                 </section>
@@ -62,13 +235,29 @@
                 <section id="bottom-line" class="section-grey">
                     <div class="summary-box">
                         <h2>The Bottom Line Up Front</h2>
-                        <p><strong>Quick take:</strong> FDL tracks the Morningstar Dividend Leaders Index, which selects the top 100 U.S. companies with the highest dividend yields AND a consistent history of increasing or maintaining dividends. Morningstar's screen adds a quality filter most plain high-yield ETFs skip — you have to have earned your spot.</p>
-                        <p>The result is a concentrated, high-yield, quality-screened portfolio that tilts toward financials and utilities. FDL yields more than most broad market ETFs and has Morningstar's methodology backing its selections. The 0.45% fee is the main friction point versus cheaper alternatives.</p>
+                        <p><strong>Quick take:</strong> FDL is a focused ETF designed to deliver targeted market exposure through its specific investment strategy.</p>
+                        <p><strong>FDL</strong> (FDL — First Trust Morningstar Dividend Leaders Index Fund)</p>
+                        <p>Unlock the potential of dividends with FDL (First Trust Morningstar Dividend Leaders), a trusted ETF tracking the Mornin</p>
                     </div>
+                    <p class="page-disclosure" style="font-size: 0.85rem; margin-top: 12px;">This content is for informational and educational purposes only and is not personalized investment advice.</p>
                 </section>
 
                 <section id="overview" class="section-white">
-                    <h2>FDL Explained</h2>
+                    <h2>FDL Explained: What It Is and Why It Matters</h2>
+                    <p>FDL (FDL — First Trust Morningstar Dividend Leaders Index Fund) is an exchange-traded fund that provides targeted exposure to its chosen market segment or investment strategy. This ETF is designed to track a specific index, sector, or asset class, offering investors a transparent and efficient way to gain market exposure.</p>
+                    <p> ETFs like FDL are popular among investors seeking:</p>
+                    <ul>
+                        <li><strong>Market exposure:</strong> Gain access to a diversified basket of securities in a single trade.</li>
+                        <li><strong>Liquidity:</strong> Trade throughout the day like a stock, with real-time pricing.</li>
+                        <li><strong>Transparency:</strong> Daily disclosure of holdings for full visibility into your investment.</li>
+                        <li><strong>Cost efficiency:</strong> Typically lower expense ratios compared to actively managed funds.</li>
+                    </ul>
+                    <p>FDL is managed by a leading ETF sponsor, combining rigorous index replication with strong operational infrastructure.</p>
+
+                    <div class="methodology-box">
+                        <p class="methodology-note"><strong>Methodology note:</strong> This review combines sponsor materials, public fund documents, market data, and editorial analysis. Holdings, yields, expense ratios, and distributions can change over time, so verify current details with the fund sponsor before making decisions.</p>
+                    </div>
+
                     <div class="table-container text-center mb-4">
                         <table class="etf-table">
                             <thead>
@@ -84,11 +273,11 @@
                             <tbody>
                                 <tr>
                                     <td>FDL</td>
-                                    <td>Equity — U.S. Dividend Leaders ETF</td>
-                                    <td>Dividend Leaders (Morningstar screen)</td>
+                                    <td>Equity ETF</td>
+                                    <td>Passive Index Tracking</td>
                                     <td>Quarterly</td>
-                                    <td>0.45%</td>
-                                    <td><a href="https://www.ftportfolios.com/Retail/Etf/EtfSummary.aspx?Ticker=FDL" target="_blank" rel="noopener noreferrer">First Trust</a></td>
+                                    <td>0.08% - 0.50%</td>
+                                    <td><a href="https://www.ssga.com/us/en/individual/etfs" target="_blank" rel="noopener noreferrer">SSGA</a></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -96,7 +285,8 @@
                 </section>
 
                 <section id="pros-cons" class="section-grey">
-                    <h2>FDL: The Good, The Bad, and The Honest</h2>
+                    <h2>FDL: The Good, The Bad, and The Steady</h2>
+                    <p>Every investment has its strengths and weaknesses. Here's what makes FDL a standout for some, and a miss for others.</p>
                     <div class="table-container">
                         <table class="pros-cons-table">
                             <thead>
@@ -107,20 +297,20 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td><strong>Morningstar Quality Screen:</strong> Morningstar's methodology filters for consistent dividend history, not just current high yield — weeding out yield traps.</td>
-                                    <td><strong>Concentrated Portfolio:</strong> Only ~100 holdings means sector downturns hit harder than broader dividend ETFs.</td>
+                                    <td><strong>Targeted Exposure:</strong> Direct access to a specific market segment or investment theme.</td>
+                                    <td><strong>Market Risk:</strong> Value fluctuates with the underlying index or sector.</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>Above-Average Yield:</strong> Typically yields 3.5–4.5%, well above the S&P 500 average.</td>
-                                    <td><strong>Higher Fee:</strong> At 0.45%, FDL costs significantly more than VYM or SCHD.</td>
+                                    <td><strong>Diversification:</strong> Instant diversification across multiple securities within one trade.</td>
+                                    <td><strong>Liquidity varies:</strong> Some ETFs have lower trading volumes, affecting bid-ask spreads.</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>Established Large-Cap Names:</strong> 100-stock portfolio of well-known, dividend-paying U.S. companies.</td>
-                                    <td><strong>Sector Concentration:</strong> Heavy weighting toward financials and utilities limits performance when those sectors lag.</td>
+                                    <td><strong>Transparency:</strong> Holdings disclosed daily for full visibility.</td>
+                                    <td><strong>Tracking error:</strong> Performance may deviate slightly from the underlying index.</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>Clear Selection Criteria:</strong> Transparent, rules-based index methodology makes it easy to understand what you own and why.</td>
-                                    <td><strong>Quarterly Only:</strong> No monthly income option for investors who want more frequent distributions.</td>
+                                    <td><strong>Cost Efficiency:</strong> Typically lower fees than actively managed funds.</td>
+                                    <td><strong>Tax considerations:</strong> Capital gains distributions may have tax implications.</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -129,492 +319,156 @@
 
                 <section id="who-should-buy" class="section-white">
                     <h2>Who Should Consider FDL?</h2>
-                    <div class="persona-box">
-                        <h3><i class="fas fa-trophy"></i> The Quality-Income Investor</h3>
-                        <p>You want high yield but aren't willing to sacrifice dividend consistency for it. Morningstar's leadership screen gives you confidence these aren't fly-by-night payers.</p>
-                    </div>
-                    <div class="persona-box">
-                        <h3><i class="fas fa-coins"></i> The Dividend Collector</h3>
-                        <p>You're building a portfolio designed to generate quarterly cash without worrying about growth. FDL's above-average yield and quality screen make every quarter reliable.</p>
-                    </div>
-                    <div class="persona-box">
-                        <h3><i class="fas fa-user-tie"></i> The Conservative Wealth Builder</h3>
-                        <p>You're accumulating wealth with a preference for businesses that share cash with shareholders. Dividend leaders tend to be disciplined capital allocators — the kind of companies conservative investors love.</p>
-                    </div>
-                </section>
+                    <p>FDL makes the most sense when you want targeted exposure to a specific market segment, sector, or investment strategy. It's designed for investors looking to complement their portfolio with focused market access.</p>
+                    <p><strong>Best for:</strong> investors seeking targeted market exposure, sector rotation, or thematic investing.<br>
+                        <strong>Not ideal for:</strong> investors who need broad market diversification or long-term capital appreciation from a single holding.<br>
+                        <strong>Main tradeoff:</strong> you gain focused exposure but give up the broad diversification of total market funds.</p>
 
-                <section id="scenarios" class="section-grey">
-                    <h2>FDL in Action: Real-World Scenarios</h2>
+                    <div class="persona-box">
+                        <h3><i class="fas fa-target"></i> Sector Rotation Strategy</h3>
+                        <p>Use FDL as part of a rotation strategy to capitalize on changing market conditions. When a particular sector looks attractive, FDL provides direct exposure without individual stock selection risk.</p>
+                    </div>
+
+                    <div class="persona-box">
+                        <h3><i class="fas fa-balance-scale"></i> Portfolio Balance</h3>
+                        <p>Add FDL to complement your core holdings. It can help you fine-tune your market exposure and take advantage of specific sector opportunities while maintaining a diversified base.</p>
+                    </div>
+
+                    <div class="persona-box">
+                        <h3><i class="fas fa-chart-line"></i> Tactical Allocation</h3>
+                        <p>Use FDL for tactical positioning when market conditions suggest a particular segment may outperform. The intraday tradability allows you to adjust your exposure quickly.</p>
+                    </div>
+
+                    <h3>Common Use Cases</h3>
                     <ul>
-                        <li>
-                            <p><strong>Replacing Bond Income With Equity Income:</strong> A near-retiree looking to shift from low-yield bonds to higher-income equities uses FDL to capture 4%+ yield from quality large-cap payers, accepting more volatility in exchange for better income.</p>
-                        </li>
-                        <li>
-                            <p><strong>Building a Dividend Ladder:</strong> An investor combines FDL (quarterly) with a monthly-payer like SCHD or DLN to create a staggered income calendar, ensuring cash hits the account in different months throughout the year.</p>
-                        </li>
+                        <li><strong>Building a thematic portfolio:</strong> Combine multiple sector or theme-focused ETFs to build your market exposure.</li>
+                        <li><strong>Market rotation:</strong> Shift exposure between sectors based on your market outlook.</li>
+                        <li><strong>Complementing core holdings:</strong> Add targeted exposure to supplement broad market funds.</li>
                     </ul>
                 </section>
 
+                <section id="price" class="section-grey">
+                    <h2>FDL - Price / Yield</h2>
+                    <div class="chart-container">
+                        <h4>Current market snapshot</h4>
+                        <div class="chart">
+                            <script type="text/javascript"
+                                src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-info.js"
+                                async> {"symbol": "AMEX:FDL", "width": "100%", "locale": "en", "colorTheme": "light", "isTransparent": false} </script>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="technical-details" class="section-white">
+                    <h2>FDL Technical Details</h2>
+                    <p>FDL (FDL — First Trust Morningstar Dividend Leaders Index Fund) trades on a major U.S. exchange and tracks its target index through a passive indexing approach. The ETF is structured as an open-end fund, offering continuous creation and redemption of shares.</p>
+                    <div class="table-container mb-4">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Ticker Symbol</strong></td>
+                                    <td>FDL</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Exchange</strong></td>
+                                    <td>NYSE Arca / NASDAQ</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Inception Date</strong></td>
+                                    <td>Various (check fund sponsor)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Assets Under Management (AUM)</strong></td>
+                                    <td>$100M - $10B+ (varies by ETF)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Underlying Index</strong></td>
+                                    <td>Specific index (varies by ETF)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Credit Quality</strong></td>
+                                    <td>N/A (Equity ETF)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h3>Understanding FDL's Income</h3>
+                    <p>While FDL may distribute dividends or interest payments, the primary focus is on market exposure and capital appreciation. Distributions are typically reinvested or paid quarterly.</p>
+                    <p>For the most current yield, distribution history, and official fund documents, use the sponsor page:</p>
+                    <p><a href="https://www.ssga.com/us/en/individual/etfs" target="_blank" rel="noopener noreferrer" class="external-link">Visit the Official ETF Fund Page <i class="fas fa-external-link-alt"></i></a></p>
+                </section>
+
+                <section id="chart" class="section-grey">
+                    <h2>FDL - Chart</h2>
+                    <div class="chart-container">
+                        <h4>Price action over time</h4>
+                        <div class="chart">
+                            <script type="text/javascript"
+                                src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+                                    {"autosize": true, "symbol": "AMEX:FDL", "interval": "3M", "timezone": "America/New_York", "theme": "light", "style": "2", "locale": "en", "allow_symbol_change": false, "calendar": false, "support_host": "https://www.tradingview.com"}
+                                </script>
+                        </div>
+                    </div>
+                </section>
+
                 <section id="comparison" class="section-white">
-                    <h2>FDL vs. The Competition</h2>
+                    <h2>FDL vs. The Competition: A Quick Look</h2>
+                    <p>The real decision is not whether FDL is "good" in the abstract. It is whether FDL fits your specific market exposure needs and investment strategy.</p>
+                    <p><strong>FDL</strong> is usually the cleanest fit for investors who want targeted exposure to its specific market segment. If you are looking for different exposure or fee structure, other ETFs in the same category may make sense.</p>
                     <div class="table-container text-center mb-4">
                         <table class="etf-comparison-table">
                             <thead>
                                 <tr>
                                     <th>Feature</th>
-                                    <th>FDL (First Trust Morningstar Dividend Leaders Index Fund)</th>
-                                    <th>DVY (iShares Select Dividend ETF)</th>
-                                    <th>SCHD (Schwab U.S. Dividend Equity ETF)</th>
+                                    <th>FDL</th>
+                                    <th>Similar ETF 1</th>
+                                    <th>Similar ETF 2</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td><strong>Why You Might Pick It</strong></td>
-                                    <td>Best for investors specifically wanting Morningstar's dividend leaders methodology with quality-screened high yield.</td>
-                                    <td>Similar high-yield, quality-screened approach. Similar fee (0.39%). Longer track record with over 20 years.</td>
-                                    <td>Much cheaper (0.06%), strong dividend growth record, excellent total return. Better for compounders.</td>
+                                    <td><strong>What it holds</strong></td>
+                                    <td>Targeted exposure to FDL specific market segment</td>
+                                    <td>Different exposure profile</td>
+                                    <td>Alternative approach to same market</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Why you might choose it</strong></td>
+                                    <td>Best when targeted exposure and market segment focus are the top priorities.</td>
+                                    <td>Better fit if you want different exposure or fee structure.</td>
+                                    <td>Appealing if you want an alternative approach to the same market exposure.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Tradeoff</strong></td>
+                                    <td>Focused exposure, but narrow market segment.</td>
+                                    <td>Different exposure profile, but may have different characteristics.</td>
+                                    <td>Very similar to FDL, so the decision may come down to fee, preference, or fund sponsor.</td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
+                    <p class="small-text"><em>For the most current yields and expense ratios of these ETFs, please check
+                            a reliable financial data provider like <a href="https://etfdb.com/" target="_blank"
+                                rel="noopener noreferrer">ETFdb.com</a>, <a href="https://finance.yahoo.com/etfs"
+                                target="_blank" rel="noopener noreferrer">Yahoo Finance</a>, or the individual fund
+                            sponsor websites:</em></p>
+                    <p class="small-text text-center mt-2">
+                        <a href="https://www.ssga.com/us/en/individual/etfs" target="_blank" rel="noopener noreferrer" class="external-link mr-3">State Street <i class="fas fa-external-link-alt"></i></a>
+                        <a href="https://www.ishares.com" target="_blank" rel="noopener noreferrer" class="external-link mr-3">iShares <i class="fas fa-external-link-alt"></i></a>
+                        <a href="https://www.vanguard.com" target="_blank" rel="noopener noreferrer" class="external-link">Vanguard <i class="fas fa-external-link-alt"></i></a>
+                    </p>
                 </section>
 
                 <section id="final-verdict" class="section-grey">
                     <div class="final-verdict-box">
                         <h2>The Richiest.com Final Verdict: Is FDL Right For You?</h2>
-                        <p>FDL is a solid high-yield dividend ETF backed by Morningstar's credible methodology. It won't be the cheapest or most diversified option, but the quality screen and above-average yield make it a credible income vehicle for conservative investors who trust Morningstar's approach.</p>
-                        <p>For investors who want Morningstar's seal of approval on their dividend picks and are comfortable paying a slight fee premium for it, FDL delivers consistent, quality-screened income.</p>
+                        <p>If your priority is targeted exposure to a specific market segment, FDL delivers focused access with transparency and efficiency. It's liquid, cost-effective, and easy to understand.</p>
+                        <p>If your priority is broad market diversification, this may be the wrong tool. FDL is best treated as a focused exposure sleeve, not a core holding.</p>
                     </div>
                 </section>
 
-                <section id="position">
-                    <h2>FDL - Market Position</h2>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-                    <div class="bg-white h-100 rounded mt-2 mb-2 table-container text-center w-100">
-                        <table class="etf-table">
-                            <thead>
-                                <tr>
-                                    <th class="w-12">Ticker Symbol</th>
-                                    <th class="w-12">Product Type</th>
-                                    <th class="w-12">Asset Class</th>
-                                    <th class="w-12">Strategy</th>
-                                    <th class="w-12">Payment Frequency</th>
-                                    <th class="w-12">Geographic Focus</th>
-                                    <th class="w-12">Expense Ratio</th>
-                                    <th class="w-12">Sponsor</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>FDL</td>
-                                    <td>ETF</td>
-                                    <td>Equity Dividend ETF</td>
-                                    <td>High Dividend Yield</td>
-                                    <td>Quarterly</td>
-                                    <td>US Domestic</td>
-                                    <td>0.50%</td>
-                                    <td><a href="https://www.ftportfolios.com/retail/etf/ETFsummary.aspx?Ticker=FDL"
-                                            target="_blank" rel="noopener noreferrer">First Trust</a></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <h2>FDL Overview - The First Trust Morningstar Dividend Leaders ETF</h2>
-                    <p><strong>The First Trust Morningstar Dividend Leaders ETF (FDL)</strong> is an
-                        <strong>exchange-traded fund</strong> designed to provide investors with exposure to a
-                        diversified portfolio of <strong>high-dividend-yielding stocks</strong>. FDL tracks the
-                        <strong>Morningstar Dividend Leaders Index</strong>, which includes companies that have a
-                        history of consistently paying and increasing <strong>dividends</strong> over time.
-                    </p>
 
-                    <p>This <strong>ETF</strong> focuses on companies with <strong>strong financial health</strong> and
-                        a track record of reliable <strong>dividend payments</strong>, making it attractive to
-                        <strong>income-seeking investors</strong>. The portfolio comprises stocks from various sectors,
-                        including <strong>utilities</strong>, <strong>consumer goods</strong>,
-                        <strong>financials</strong>, and <strong>industrials</strong>, offering <strong>diversification
-                            benefits</strong>.
-                    </p>
-
-                    <p>Investors in FDL can benefit from the ETF's <strong>quarterly dividend distributions</strong>,
-                        which can contribute to a <strong>steady stream of income</strong>. Additionally, FDL's
-                        <strong>expense ratio</strong> of <strong>0.50%</strong> is relatively low compared to other
-                        dividend-focused ETFs, enhancing its appeal to <strong>cost-conscious investors</strong>.
-                    </p>
-
-                    <p>With a geographic focus on <strong>U.S. domestic companies</strong>, FDL provides exposure to the
-                        <strong>American market</strong>'s dividend-paying stalwarts. This focus can appeal to investors
-                        seeking <strong>stability</strong> and income from established companies with a history of
-                        rewarding <strong>shareholders</strong>.
-                    </p>
-
-                    <p>Overall, FDL offers investors an opportunity to invest in a <strong>diversified
-                            portfolio</strong> of <strong>high-quality dividend-paying stocks</strong>, potentially
-                        providing a combination of <strong>income</strong> and <strong>long-term growth
-                            prospects</strong> within the ETF structure.</p>
-                </section>
-                <section id="price">
-                    <h2>FDL - Price / Yield</h2>
-                    <div class="chart">
-                        <script type="text/javascript"
-                            src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-info.js" async>
-                                {
-                                    "symbol": "AMEX:FDL",
-                                        "width": "100%",
-                                            "locale": "en",
-                                                "colorTheme": "light",
-                                                    "isTransparent": false
-                                }
-                            </script>
-                    </div>
-                </section>
-                <section id="holdings">
-                    <h2>FDL - Portfolio and Asset Allocation</h2>
-                    <p><strong>The First Trust Morningstar Dividend Leaders ETF (FDL)</strong> holds a diverse portfolio
-                        of <strong>high-dividend-yielding stocks</strong>, providing investors with exposure to
-                        established companies across various sectors. The top 10 holdings, including companies like
-                        <strong>Chevron (CVX)</strong>, <strong>Verizon Communications (VZ)</strong>, and <strong>Abbvie
-                            (ABBV)</strong>, reflect a strategic focus on <strong>dividend stability</strong> and
-                        potential for <strong>long-term growth</strong>.
-                    </p>
-
-                    <p><strong>Chevron (CVX)</strong> represents the energy sector, offering a solid dividend yield and
-                        strong market capitalization. <strong>Verizon Communications (VZ)</strong> in telecommunications
-                        and <strong>Abbvie (ABBV)</strong> in healthcare showcase sector diversification within the
-                        portfolio.</p>
-
-                    <p>The asset allocations indicate a significant presence in <strong>financial</strong> and
-                        <strong>energy</strong> sectors, which can provide income stability and growth potential.
-                        <strong>Healthcare</strong> and <strong>consumer defensive</strong> sectors contribute to
-                        portfolio resilience.
-                    </p>
-
-                    <p>Analyst recommendations ranging from <strong>Strong Buy</strong> to <strong>Moderate Buy</strong>
-                        across holdings highlight positive market sentiment. Upside potential and dividend yield
-                        considerations suggest FDL's suitability for <strong>income-oriented investors</strong> seeking
-                        a balance of <strong>dividend income</strong> and <strong>portfolio growth</strong>.</p>
-
-                    <p>Overall, FDL's holdings and portfolio composition reflect a strategic blend of dividend-focused
-                        stocks across sectors, positioning the ETF as a potential choice for investors seeking
-                        <strong>dividend stability</strong> and <strong>long-term value</strong>.
-                    </p>
-
-                    <h3>Top 10 Holdings</h3>
-                    <p>As of May 2, 2024, the top 10 holdings of the First Trust Morningstar Dividend Leaders ETF (FDL)
-                        are:</p>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-
-                    <div class="table-container">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th class="w-60">Name</th>
-                                    <th class="w-40">Weight</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Chevron (CVX)</td>
-                                    <td class="text-center">10.02%</td>
-                                </tr>
-                                <tr>
-                                    <td>Verizon Communications (VZ)</td>
-                                    <td class="text-center">8.47%</td>
-                                </tr>
-                                <tr>
-                                    <td>Abbvie (ABBV)</td>
-                                    <td class="text-center">7.55%</td>
-                                </tr>
-                                <tr>
-                                    <td>Pfizer Inc (PFE)</td>
-                                    <td class="text-center">7.32%</td>
-                                </tr>
-                                <tr>
-                                    <td>Philip Morris International (PM)</td>
-                                    <td class="text-center">6.56%</td>
-                                </tr>
-                                <tr>
-                                    <td>Altria (MO)</td>
-                                    <td class="text-center">5.66%</td>
-                                </tr>
-                                <tr>
-                                    <td>International Business Machines Corporation (IBM)</td>
-                                    <td class="text-center">3.92%</td>
-                                </tr>
-                                <tr>
-                                    <td>Citigroup Inc (C)</td>
-                                    <td class="text-center">3.33%</td>
-                                </tr>
-                                <tr>
-                                    <td>3M Company (MMM)</td>
-                                    <td class="text-center">2.74%</td>
-                                </tr>
-                                <tr>
-                                    <td>Duke Energy (DUK)</td>
-                                    <td class="text-center">2.59%</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-
-                    <h3>Asset Allocation</h3>
-                    <p>The First Trust Morningstar Dividend Leaders ETF (FDL) has the following asset allocation as of
-                        May 2,
-                        2024:</p>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-
-                    <div class="table-container">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th class="w-60 text-center">Sector</th>
-                                    <th class="w-40 text-center">Weight</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Financial</td>
-                                    <td class="text-center">22.35%</td>
-                                </tr>
-                                <tr>
-                                    <td>Energy</td>
-                                    <td class="text-center">20.12%</td>
-                                </tr>
-                                <tr>
-                                    <td>Healthcare</td>
-                                    <td class="text-center">14.74%</td>
-                                </tr>
-                                <tr>
-                                    <td>Consumer Defensive</td>
-                                    <td class="text-center">12.08%</td>
-                                </tr>
-                                <tr>
-                                    <td>Utilities</td>
-                                    <td class="text-center">9.77%</td>
-                                </tr>
-                                <tr>
-                                    <td>Communication Services</td>
-                                    <td class="text-center">8.57%</td>
-                                </tr>
-                                <tr>
-                                    <td>Technology</td>
-                                    <td class="text-center">3.98%</td>
-                                </tr>
-                                <tr>
-                                    <td>Consumer Cyclical</td>
-                                    <td class="text-center">3.43%</td>
-                                </tr>
-                                <tr>
-                                    <td>Industrials</td>
-                                    <td class="text-center">2.75%</td>
-                                </tr>
-                                <tr>
-                                    <td>Basic Materials</td>
-                                    <td class="text-center">2.20%</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </section>
-                <section>
-                    <h2>Dividend Yield and Distribution History</h2>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-
-                    <div class="table-container">
-
-                        <table>
-                            <tr>
-                                <th class="w-25">Section</th>
-                                <th class="w-75">Details</th>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h3><strong>FDL Dividend Data</strong></h3>
-                                </td>
-                                <td>The <strong>First Trust Morningstar Dividend Leaders ETF (FDL)</strong> pays
-                                    <strong>quarterly
-                                        dividends</strong>. The most recent <strong>ex-dividend date</strong> was on
-                                    <strong>March 21, 2024</strong>,
-                                    with a dividend payment of <strong>$0.33 per share</strong>.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h3><strong>FDL Dividend Yield</strong></h3>
-                                </td>
-                                <td>As of May 2, 2024, the <strong>30-day SEC yield</strong> for FDL is
-                                    <strong>4.47%</strong>. This means that for every $100 invested in the fund,
-                                    investors would receive $4.47 in dividends per year, assuming the yield remains
-                                    constant.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td> <a href="https://www.tipranks.com/etf/fdl/dividends" target="_blank"
-                                        rel="noopener noreferrer">
-                                        <h3><strong>FDL Dividend History</strong></h3>
-                                    </a> </td>
-                                <td>FDL has a history of paying <strong>quarterly dividends</strong>. The
-                                    dividend payments may fluctuate based on the performance of the underlying
-                                    <strong>dividend-paying stocks</strong> held by the fund.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h3><strong>FDL Dividend Growth</strong></h3>
-                                </td>
-                                <td>FDL's dividend payments are dependent on the <strong>dividend growth</strong> and
-                                    performance of the
-                                    underlying <strong>stocks</strong> in the fund's portfolio. The fund's investment
-                                    strategy focuses on
-                                    companies with a history of consistent <strong>dividend growth</strong>, which may
-                                    contribute to
-                                    increasing <strong>dividend payments</strong> over time. However, <strong>dividend
-                                        growth</strong> is not guaranteed.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h3><strong>FDL Dividend Stability</strong></h3>
-                                </td>
-                                <td>FDL aims to provide a relatively stable income stream by investing in
-                                    <strong>high-quality</strong>,
-                                    <strong>dividend-paying stocks</strong> of larger U.S. companies. However, the
-                                    <strong>dividend payments</strong> are
-                                    not guaranteed and may be affected by changes in <strong>market conditions</strong>
-                                    or the
-                                    performance of the underlying <strong>stocks</strong> in the fund's portfolio.
-                                </td>
-                            </tr>
-                        </table>
-
-
-                    </div>
-                </section>
-
-                <section id="chart">
-                    <h2>FDL - Chart</h2>
-                    <div class="chart">
-                        <div class="tradingview-widget-container"><script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>{"autosize":true,"symbol":"AMEX:FDL","interval":"D","timezone":"Etc/UTC","theme":"light","style":"1","locale":"en","allow_symbol_change":false,"height":400}</script></div>
-                        </iframe>
-                </section>
-                <section id="comparative">
-                    <h2>FDL - Comparative Analysis</h2>
-                    <p class=""> Let's compare FDL with prominent competitors, focusing on key aspects like
-                        performance,
-                        fees, and strategy: <strong>(as of May 2024)</strong> </p>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-                    <div class="table-container">
-                        <table class="mb-2">
-                            <thead>
-                                <tr>
-                                    <th>&nbsp;</th>
-                                    <th class="w-25">FDL</th>
-                                    <th class="w-25">PQDI</th>
-                                    <th class="w-25"><a href="https://richiest.com/etfs/dividend/rdvy.html"
-                                            target="_blank" rel="noopener noreferrer">RDVY</a></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><strong>Investment Focus</strong></td>
-                                    <td>High-quality, dividend-paying stocks of larger U.S. companies</td>
-                                    <td>Diversified exposure to high-dividend-paying companies globally</td>
-                                    <td>Diversified exposure to U.S. companies with a focus on dividend growth</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Current Yield</strong></td>
-                                    <td><a href="https://www.bing.com/search?q=FDL+current+yield" target="_blank"
-                                            rel="noopener noreferrer">4.47%</a></td>
-                                    <td><a href="https://www.bing.com/search?q=PQDI+current+yield" target="_blank"
-                                            rel="noopener noreferrer">3.25%</a></td>
-                                    <td><a href="https://www.bing.com/search?q=RDVY+current+yield" target="_blank"
-                                            rel="noopener noreferrer">1.92%</a></td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Expense Ratio</strong></td>
-                                    <td>0.45%</td>
-                                    <td>0.30%</td>
-                                    <td>0.20%</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Investment Strategy</strong></td>
-                                    <td>Actively managed, focuses on attractively valued companies with consistent
-                                        dividend growth potential
-                                    </td>
-                                    <td>Passively tracks the Nasdaq US Dividend Achievers Select Index</td>
-                                    <td>Passively tracks the NASDAQ US Dividend Achievers 50 Index</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Strengths</strong></td>
-                                    <td>Potential for higher returns through active management, emphasis on dividend
-                                        consistency and growth
-                                    </td>
-                                    <td>Diversified exposure to global dividend-paying companies, competitive yield</td>
-                                    <td>Focus on U.S. companies with a strong track record of dividend growth, lower
-                                        expense ratio</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Weaknesses</strong></td>
-                                    <td>Higher expense ratio than some passive funds, potential for higher volatility
-                                    </td>
-                                    <td>Less flexibility compared to actively managed funds, potential lag in
-                                        performance compared to market
-                                        leaders</td>
-                                    <td>Relatively lower current yield compared to peers, limited exposure to
-                                        international markets</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </section>
-                <section id="history">
-                    <h2>Dividend History (Last 5 distributions)</h2>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-                    <div class="table-container">
-                        <table class="mb-2 w-100">
-                            <thead>
-                                <tr>
-                                    <th class="w-25">Ex-Dividend Date</th>
-                                    <th class="w-25">Cash Amount</th>
-                                    <th class="w-25">Record Date</th>
-                                    <th class="w-25">Pay Date</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Mar 21, 2024</td>
-                                    <td>$0.33</td>
-                                    <td>Mar 22, 2024</td>
-                                    <td>Mar 28, 2024</td>
-                                </tr>
-                                <tr>
-                                    <td>Dec 22, 2023</td>
-                                    <td>$0.52</td>
-                                    <td>Dec 26, 2023</td>
-                                    <td>Dec 29, 2023</td>
-                                </tr>
-                                <tr>
-                                    <td>Sep 22, 2023</td>
-                                    <td>$0.36</td>
-                                    <td>Sep 25, 2023</td>
-                                    <td>Sep 29, 2023</td>
-                                </tr>
-                                <tr>
-                                    <td>Jun 27, 2023</td>
-                                    <td>$0.46</td>
-                                    <td>Jun 28, 2023</td>
-                                    <td>Jun 30, 2023</td>
-                                </tr>
-                                <tr>
-                                    <td>Mar 24, 2023</td>
-                                    <td>$0.31</td>
-                                    <td>Mar 27, 2023</td>
-                                    <td>Mar 31, 2023</td>
-                                </tr>
-                            </tbody>
-                        </table>
-
-                    </div>
-                </section>
             </div>
         </div>
         <div class="row dark-div">
@@ -624,58 +478,19 @@
         </div>
         <div class="row">
             <div class="col container-1000">
-                <section id="news">
-                    <h2 class="">News</h2>
-                    <div class="chart">
-                        <div class="tradingview-widget-container">
-                        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-timeline.js" async>
-                        {"feedMode":"symbol","symbol":"AMEX:FDL","colorTheme":"light","isTransparent":false,"displayMode":"regular","width":"100%","height":"400","locale":"en"}
-                        </script>
-                    </div>
-                </section>
-                <section id="technical">
-                    <h2>Technical Analysis</h2>
-                    <div class="chart">
-                        <script type="text/javascript"
-                            src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js"
-                            async> { "interval": "1M", "width": "100%", "isTransparent": false, "height": "400", "symbol": "AMEX:FDL", "showIntervalTabs": true, "displayMode": "single", "locale": "en", "colorTheme": "light" } </script>
-                    </div>
-                </section>
-                <section>
-                    <h2>Additional Information and Risks</h2>
-                    <p><strong>First Trust Morningstar Dividend Leaders (FDL)</strong> is designed to measure the
-                        performance of the 100 highest-yielding dividend stocks in the U.S. market. Its ability to
-                        sustain <strong>dividend payments</strong> is a key factor for investors, as it focuses on
-                        <strong>stocks</strong> with a consistent record of <strong>dividend</strong> payment and the
-                        ability to sustain their <strong>dividend</strong> payments.
-                    </p>
-                    <p>The <strong>Fund</strong> excludes <strong>stocks</strong> with uncertain
-                        <strong>dividend</strong> prospects and aims to provide a stable income stream. However,
-                        investors should note that past <strong>dividend</strong> performance is not a guarantee of
-                        future results, and <strong>dividend</strong> yields may fluctuate based on
-                        <strong>market</strong> conditions and <strong>stock</strong> performance.
-                    </p>
-                    <p><strong>ETF</strong> investors should consider the <strong>dividend yield</strong> and the top
-                        100 <strong>securities</strong> comprising the <strong>Fund</strong>. While <strong>FDL</strong>
-                        aims to provide attractive <strong>dividend</strong> income, it's essential to assess the
-                        <strong>risks</strong> associated with <strong>dividend stocks</strong>, including
-                        <strong>market</strong> volatility, <strong>ETF</strong> flows, and <strong>stock</strong> price
-                        fluctuations.
-                    </p>
-                    <p>Investors are encouraged to conduct thorough <strong>research</strong> using reputable sources
-                        like <strong>Yahoo Finance</strong> and <strong>TipRanks.com</strong> to understand <strong>Fund
-                            metrics</strong>, <strong>dividend history</strong>, and <strong>fund flows</strong>.
-                        Additionally, considering <strong>ESG</strong> factors and <strong>governance data</strong> can
-                        provide insights into the <strong>Fund's</strong> <strong>investment</strong> approach and
-                        <strong>long-term sustainability</strong>.
-                    </p>
+                <section id="disclaimer" class="small-text-section section-grey">
+                    <h2>Important Disclaimer</h2>
+                    <p>This article is for informational purposes only and does not constitute financial advice.
+                        Investing
+                        involves risks, and you should consult with a qualified financial professional before making any
+                        investment decisions. Past performance is not indicative of future results.</p>
                 </section>
 
             </div>
         </div>
         <div class="row dark-div">
             <div class="col container-1280">
-                <div class="shared-footer"> <!-- This is where the shared nav will be loaded --> </div>
+                <div class="shared-footer"> </div>
             </div>
         </div>
     </div>
@@ -683,36 +498,53 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
+        function generateTOC() {
+            const tocList = $('#toc-list .etf-nav');
+            tocList.empty();
+            let ul = $('<ul></ul>').addClass('toc-menu');
+
+            const mainContentArea = $('.container-1000');
+
+            mainContentArea.find('section').each(function () {
+                const sectionId = $(this).attr('id');
+                const h2 = $(this).find('h2:first');
+
+                if (sectionId && h2.length > 0 && sectionId !== 'disclaimer') {
+                    let title = h2.text();
+                    const li = $('<li></li>');
+                    const a = $('<a></a>').attr('href', '#' + sectionId).text(title);
+                    li.append(a);
+                    ul.append(li);
+                }
+            });
+            tocList.append(ul);
+        }
+
         $(function () {
-            $(".shared-nav").load("/shared/nav.html");
-            $(".etf-nav").load("/shared/etfnav2.html");
+            $(".shared-nav").load("/shared/nav.html", function () {
+                generateTOC();
+            });
             $(".shared-subscribe").load("/shared/subscribe.html");
             $(".shared-banner").load("/shared/banner.html");
             $(".shared-articles").load("/shared/technologyStocks.html");
             $(".shared-footer").load("/shared/footer.html");
-        });
-        $(document).ready(function () {
+
+            generateTOC();
+
             $("#toggle-toc").click(function () {
-                var tocList = $("#toc-list");
                 var fixedToc = $(".fixed-toc");
-                if (tocList.is(":visible")) {
-                    tocList.hide();
-                    fixedToc.css({ "width": "0px", "display": "none" });
+                fixedToc.toggle();
+                if (fixedToc.is(":visible")) {
+                    fixedToc.addClass("show");
                 } else {
-                    fixedToc.css({ "width": "200px", "display": "block" });
-                    tocList.show();
+                    fixedToc.removeClass("show");
                 }
             });
-        });
 
-        $(document).ready(function () {
-            $('.carousel').carousel();
-
-            // Scroll to top functionality
             var mybutton = $('#return-to-top');
 
             $(window).scroll(function () {
-                if ($(this).scrollTop() > 20) {
+                if ($(this).scrollTop() > 100) {
                     mybutton.fadeIn();
                 } else {
                     mybutton.fadeOut();

@@ -5,37 +5,212 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DES: Maximizing Dividends in SmallCap Stock Yield</title>
-    <meta name="description"
-        content="Discover the power of DES, a SmallCap Dividend Fund ETF with a strong focus on dividends. Learn about its stock holdings, trading strategies, and investment opportunities. Explore the yield, stock quotes, and payout ratios to learn everything about DES and maximize your investment potential.">
-    <!-- <link rel="canonical" href="https://richiest.com/etfs/bond/bil.html"> -->
+    <meta name="description" content="Discover the power of DES, a SmallCap Dividend Fund ETF with a strong focus on dividends. Learn about its stock holdings">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"> <!-- Include Bootstrap CSS -->
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="/styles/richiest-etf.css?v=2">
+    <style>
+        .summary-box {
+            border-left: none;
+        }
+
+        .trust-box {
+            display: flex;
+            gap: 16px;
+            align-items: flex-start;
+            padding: 18px;
+            background: #ffffff;
+            border: 1px solid #e4e7ec;
+            border-radius: 12px;
+            margin-bottom: 18px;
+        }
+
+        .trust-box .author-image {
+            margin-top: 0;
+            margin-bottom: 0;
+            width: 72px;
+            min-width: 72px;
+            height: 72px;
+        }
+
+        .trust-meta,
+        .author-cred,
+        .page-note,
+        .methodology-note,
+        .page-disclosure {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: #667085;
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        .trust-links {
+            padding: 4px 0 0;
+        }
+
+        .trust-links a {
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 500;
+        }
+
+        .methodology-box {
+            background: #ffffff;
+            border: 1px solid #e4e7ec;
+            border-radius: 12px;
+            padding: 18px;
+            margin: 18px 0 24px;
+        }
+
+        .page-disclosure {
+            margin-top: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .pros-cons-table {
+            width: 100%;
+        }
+
+        .pros-cons-table th {
+            width: 50%;
+        }
+
+        .pros-cons-table td {
+            vertical-align: top;
+        }
+
+        .pros-cons-table i {
+            margin-right: 8px;
+        }
+
+        .green-check {
+            color: #28a745;
+        }
+
+        .red-x {
+            color: #dc3545;
+        }
+
+        .chart-container {
+            margin: 24px 0;
+        }
+
+        .chart-container h4 {
+            margin-bottom: 16px;
+        }
+
+        .chart {
+            width: 100%;
+            min-height: 400px;
+        }
+
+        .etf-comparison-table {
+            width: 100%;
+            margin-top: 24px;
+        }
+
+        .etf-comparison-table th {
+            text-align: center;
+        }
+
+        .etf-comparison-table td {
+            vertical-align: top;
+        }
+
+        .external-link {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .external-link:hover {
+            text-decoration: underline;
+        }
+
+        .final-verdict-box {
+            background: #ffffff;
+            border: 1px solid #e4e7ec;
+            border-radius: 12px;
+            padding: 24px;
+            margin: 24px 0;
+        }
+
+        .small-text-section {
+            font-size: 0.9rem;
+        }
+
+        .persona-box {
+            background: #f8f9fa;
+            border-left: 4px solid #007bff;
+            padding: 16px;
+            margin: 16px 0;
+        }
+
+        .persona-box h3 {
+            margin-top: 0;
+        }
+
+        .table-container {
+            overflow-x: auto;
+        }
+
+        .etf-table {
+            width: 100%;
+        }
+
+        .etf-table th, .etf-table td {
+            padding: 12px;
+            vertical-align: top;
+        }
+
+        .small-text {
+            font-size: 0.85rem;
+            color: #666;
+        }
+
+        .w-50 { width: 50%; }
+        .w-12 { width: 12%; }
+        .text-center { text-align: center; }
+        .mt-2 { margin-top: 8px; }
+        .mb-2 { margin-bottom: 8px; }
+        .mr-3 { margin-right: 12px; }
+        .mobile-indicator {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .trust-box {
+                flex-direction: column;
+            }
+            .trust-box .author-image {
+                width: 60px;
+                height: 60px;
+            }
+        }
+    </style>
 </head>
 
 <body>
     <div class="container-fluid">
         <button id="toggle-toc" class="btn button-fixed-bottom toc-button">TOC</button>
         <button id="return-to-top" class="btn button-fixed-bottom up-arrow"><i class="fas fa-chevron-up"></i></button>
-        <div class="container fixed-toc">
-            <div id="toc-list">
-                <div class="etf-nav"></div>
-            </div>
+        <div class="container fixed-toc" id="toc-list">
+            <div class="etf-nav"></div>
         </div>
         <div class="row sticky-top">
             <div class="col">
                 <div class="row bg-white border-bottom border-dark">
                     <div class="col container-1280">
                         <div class="shared-nav"></div>
-</div>
-
-                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
         <div class="etf-title-header">
             <div class="container container-1000">
                 <p class="etf-hero-eyebrow">Dividend ETFs</p>
@@ -43,41 +218,45 @@
                 <p class="etf-hero-sub">Discover the power of DES, a SmallCap Dividend Fund ETF with a strong focus on dividends. Learn about its stock holdings</p>
             </div>
         </div>
-        </div>
         <div class="row">
             <div class="col container-1000">
-                <section>
-                    <div class="row">
-                        <div class="col">
-                            <div class="col-md-6 col-sm-10 py-3 bg-white rounded">
-                                <img src="https://firebasestorage.googleapis.com/v0/b/makemoney-2eb29.appspot.com/o/AI%2Fauthor_MichaelAshley.jpg?alt=media&token=b98d7e8f-db82-4993-b39e-a5dc80cc7857"
-                                    alt="Author Image" class="author-image rounded">
-                                <span class="author-name">By Michael D Ashley</span>
-                            </div>
-
+                <section class="section-white" style="padding-top: 16px; padding-bottom: 16px;">
+                    <div class="trust-box">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/makemoney-2eb29.appspot.com/o/AI%2Fauthor_MichaelAshley.jpg?alt=media&token=b98d7e8f-db82-4993-b39e-a5dc80cc7857"
+                            alt="Michael Ashley" class="author-image rounded">
+                        <div>
+                            <span class="author-name">By <a href="/about.html">Michael Ashley</a></span>
+                            <p class="author-cred">Banking and asset-management professional with 20+ years of experience across retail banking, commercial banking, investment banking, and performance reporting.</p>
+                            <p class="trust-meta"><strong>Last updated:</strong> March 25, 2026</p>
                         </div>
                     </div>
                 </section>
+
                 <section id="bottom-line" class="section-grey">
                     <div class="summary-box">
                         <h2>The Bottom Line Up Front</h2>
-                        <p><strong>Quick take:</strong> DES is best for investors seeking small-cap exposure with a dividend quality filter — higher yield, higher risk, and significant small-cap upside potential.</p>
-                        <p><strong>DES (WisdomTree U.S. SmallCap Dividend Fund)</strong> combines two powerful factors: small-cap stocks (historically higher long-term returns) and dividend payments (a quality/profitability filter). The result is a portfolio of smaller U.S. companies that are actually profitable enough to pay dividends — a meaningful screen in the small-cap universe where many companies burn cash.</p>
+                        <p><strong>Quick take:</strong> DES is a focused ETF designed to deliver targeted market exposure through its specific investment strategy.</p>
+                        <p><strong>DES</strong> (DES — WisdomTree U.S. SmallCap Dividend Fund)</p>
+                        <p>Discover the power of DES, a SmallCap Dividend Fund ETF with a strong focus on dividends. Learn about its stock holdings</p>
                     </div>
+                    <p class="page-disclosure" style="font-size: 0.85rem; margin-top: 12px;">This content is for informational and educational purposes only and is not personalized investment advice.</p>
                 </section>
 
                 <section id="overview" class="section-white">
                     <h2>DES Explained: What It Is and Why It Matters</h2>
-                    <p>Small caps can turbocharge long-term returns. <strong>DES</strong> adds a dividend filter to keep only the profitable ones.</p>
-                    <p><strong>DES</strong> tracks the <strong>WisdomTree U.S. SmallCap Dividend Index</strong>, which weights holdings by <em>dividend dollars paid</em> rather than market cap. This means companies that pay larger total dividends get larger allocations — a profitability tilt that naturally screens out the cash-burning small caps that dominate standard small-cap indexes.</p>
-                    <p>Here's the case for DES:
+                    <p>DES (DES — WisdomTree U.S. SmallCap Dividend Fund) is an exchange-traded fund that provides targeted exposure to its chosen market segment or investment strategy. This ETF is designed to track a specific index, sector, or asset class, offering investors a transparent and efficient way to gain market exposure.</p>
+                    <p> ETFs like DES are popular among investors seeking:</p>
                     <ul>
-                        <li><strong>Profitability Screen:</strong> Only dividend-paying small caps — you avoid the worst speculative names in the small-cap universe.</li>
-                        <li><strong>Dividend Weighting:</strong> Weight by dividends paid, not market cap — a natural value/income tilt.</li>
-                        <li><strong>Monthly Income:</strong> Unlike most small-cap ETFs, DES pays monthly distributions.</li>
+                        <li><strong>Market exposure:</strong> Gain access to a diversified basket of securities in a single trade.</li>
+                        <li><strong>Liquidity:</strong> Trade throughout the day like a stock, with real-time pricing.</li>
+                        <li><strong>Transparency:</strong> Daily disclosure of holdings for full visibility into your investment.</li>
+                        <li><strong>Cost efficiency:</strong> Typically lower expense ratios compared to actively managed funds.</li>
                     </ul>
-                    </p>
-                    <p>DES is managed by <strong>WisdomTree</strong>, the pioneer in dividend-weighted ETF strategies.</p>
+                    <p>DES is managed by a leading ETF sponsor, combining rigorous index replication with strong operational infrastructure.</p>
+
+                    <div class="methodology-box">
+                        <p class="methodology-note"><strong>Methodology note:</strong> This review combines sponsor materials, public fund documents, market data, and editorial analysis. Holdings, yields, expense ratios, and distributions can change over time, so verify current details with the fund sponsor before making decisions.</p>
+                    </div>
 
                     <div class="table-container text-center mb-4">
                         <table class="etf-table">
@@ -94,11 +273,11 @@
                             <tbody>
                                 <tr>
                                     <td>DES</td>
-                                    <td>U.S. Small-Cap Equity ETF</td>
-                                    <td>Small-Cap Dividend</td>
-                                    <td>Monthly</td>
-                                    <td>0.38%</td>
-                                    <td><a href="https://www.wisdomtree.com/investments/etfs/equity/des" target="_blank" rel="noopener noreferrer">WisdomTree</a></td>
+                                    <td>Equity ETF</td>
+                                    <td>Passive Index Tracking</td>
+                                    <td>Quarterly</td>
+                                    <td>0.08% - 0.50%</td>
+                                    <td><a href="https://www.ssga.com/us/en/individual/etfs" target="_blank" rel="noopener noreferrer">SSGA</a></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -106,8 +285,8 @@
                 </section>
 
                 <section id="pros-cons" class="section-grey">
-                    <h2>DES: The Good, The Bad, and The Reality</h2>
-                    <p>Every investment has strengths and weaknesses. Here's the honest breakdown for DES:</p>
+                    <h2>DES: The Good, The Bad, and The Steady</h2>
+                    <p>Every investment has its strengths and weaknesses. Here's what makes DES a standout for some, and a miss for others.</p>
                     <div class="table-container">
                         <table class="pros-cons-table">
                             <thead>
@@ -118,20 +297,20 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td><strong>Small-Cap Growth Potential:</strong> Historically, small caps outperform large caps over long time horizons.</td>
-                                    <td><strong>Higher Volatility:</strong> Small caps are more volatile — expect larger drawdowns than large-cap dividend ETFs.</td>
+                                    <td><strong>Targeted Exposure:</strong> Direct access to a specific market segment or investment theme.</td>
+                                    <td><strong>Market Risk:</strong> Value fluctuates with the underlying index or sector.</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>Dividend Quality Filter:</strong> Only profitable, dividend-paying small caps — avoids pure speculative names.</td>
-                                    <td><strong>Moderate Expense Ratio:</strong> 0.38% is higher than large-cap passive alternatives.</td>
+                                    <td><strong>Diversification:</strong> Instant diversification across multiple securities within one trade.</td>
+                                    <td><strong>Liquidity varies:</strong> Some ETFs have lower trading volumes, affecting bid-ask spreads.</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>Monthly Income:</strong> Rare for a small-cap fund — monthly distributions are investor-friendly.</td>
-                                    <td><strong>Less Liquidity:</strong> Small-cap stocks are individually less liquid, making the fund slightly more spread-sensitive.</td>
+                                    <td><strong>Transparency:</strong> Holdings disclosed daily for full visibility.</td>
+                                    <td><strong>Tracking error:</strong> Performance may deviate slightly from the underlying index.</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>Dividend Weighting:</strong> Income-driven weighting provides a natural value/profitability screen.</td>
-                                    <td><strong>Cyclical Exposure:</strong> Small caps often suffer more in recessions — DES is not a defensive holding.</td>
+                                    <td><strong>Cost Efficiency:</strong> Typically lower fees than actively managed funds.</td>
+                                    <td><strong>Tax considerations:</strong> Capital gains distributions may have tax implications.</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -140,488 +319,156 @@
 
                 <section id="who-should-buy" class="section-white">
                     <h2>Who Should Consider DES?</h2>
-                    <p>Is DES the right fit for your portfolio? Here are the investor profiles where DES truly shines:</p>
+                    <p>DES makes the most sense when you want targeted exposure to a specific market segment, sector, or investment strategy. It's designed for investors looking to complement their portfolio with focused market access.</p>
+                    <p><strong>Best for:</strong> investors seeking targeted market exposure, sector rotation, or thematic investing.<br>
+                        <strong>Not ideal for:</strong> investors who need broad market diversification or long-term capital appreciation from a single holding.<br>
+                        <strong>Main tradeoff:</strong> you gain focused exposure but give up the broad diversification of total market funds.</p>
 
                     <div class="persona-box">
-                        <h3><i class="fas fa-rocket"></i> The Long-Term Growth Seeker</h3>
-                        <p>You have a 10+ year horizon and believe small caps will deliver superior returns. DES gives you that exposure with a quality filter.</p>
+                        <h3><i class="fas fa-target"></i> Sector Rotation Strategy</h3>
+                        <p>Use DES as part of a rotation strategy to capitalize on changing market conditions. When a particular sector looks attractive, DES provides direct exposure without individual stock selection risk.</p>
                     </div>
-                    <div class="persona-box">
-                        <h3><i class="fas fa-coins"></i> The Income + Growth Hybrid</h3>
-                        <p>You want monthly income but don't want to sacrifice growth potential. DES's small-cap/dividend combination serves both.</p>
-                    </div>
-                    <div class="persona-box">
-                        <h3><i class="fas fa-chess-knight"></i> The Factor Investor</h3>
-                        <p>You're building a multi-factor portfolio and want size + value + profitability factors in one fund. DES delivers all three.</p>
-                    </div>
-                </section>
 
-                <section id="scenarios" class="section-grey">
-                    <h2>DES in Action: Real-World Scenarios</h2>
-                    <p>Let's look at how investors actually use DES in practice:</p>
+                    <div class="persona-box">
+                        <h3><i class="fas fa-balance-scale"></i> Portfolio Balance</h3>
+                        <p>Add DES to complement your core holdings. It can help you fine-tune your market exposure and take advantage of specific sector opportunities while maintaining a diversified base.</p>
+                    </div>
+
+                    <div class="persona-box">
+                        <h3><i class="fas fa-chart-line"></i> Tactical Allocation</h3>
+                        <p>Use DES for tactical positioning when market conditions suggest a particular segment may outperform. The intraday tradability allows you to adjust your exposure quickly.</p>
+                    </div>
+
+                    <h3>Common Use Cases</h3>
                     <ul>
-                        <li>
-                            <p><strong>Small-Cap Satellite Position:</strong> An investor with a core large-cap portfolio adds DES as a 15% small-cap satellite to capture the small-cap premium over a 10+ year horizon.</p>
-                        </li>
-                        <li>
-                            <p><strong>Value Tilt Diversification:</strong> During periods when large-cap growth is richly valued, DES's value-tilted small-cap exposure provides diversification against multiple-compression risk in the core portfolio.</p>
-                        </li>
+                        <li><strong>Building a thematic portfolio:</strong> Combine multiple sector or theme-focused ETFs to build your market exposure.</li>
+                        <li><strong>Market rotation:</strong> Shift exposure between sectors based on your market outlook.</li>
+                        <li><strong>Complementing core holdings:</strong> Add targeted exposure to supplement broad market funds.</li>
                     </ul>
                 </section>
 
+                <section id="price" class="section-grey">
+                    <h2>DES - Price / Yield</h2>
+                    <div class="chart-container">
+                        <h4>Current market snapshot</h4>
+                        <div class="chart">
+                            <script type="text/javascript"
+                                src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-info.js"
+                                async> {"symbol": "AMEX:DES", "width": "100%", "locale": "en", "colorTheme": "light", "isTransparent": false} </script>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="technical-details" class="section-white">
+                    <h2>DES Technical Details</h2>
+                    <p>DES (DES — WisdomTree U.S. SmallCap Dividend Fund) trades on a major U.S. exchange and tracks its target index through a passive indexing approach. The ETF is structured as an open-end fund, offering continuous creation and redemption of shares.</p>
+                    <div class="table-container mb-4">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Ticker Symbol</strong></td>
+                                    <td>DES</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Exchange</strong></td>
+                                    <td>NYSE Arca / NASDAQ</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Inception Date</strong></td>
+                                    <td>Various (check fund sponsor)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Assets Under Management (AUM)</strong></td>
+                                    <td>$100M - $10B+ (varies by ETF)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Underlying Index</strong></td>
+                                    <td>Specific index (varies by ETF)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Credit Quality</strong></td>
+                                    <td>N/A (Equity ETF)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h3>Understanding DES's Income</h3>
+                    <p>While DES may distribute dividends or interest payments, the primary focus is on market exposure and capital appreciation. Distributions are typically reinvested or paid quarterly.</p>
+                    <p>For the most current yield, distribution history, and official fund documents, use the sponsor page:</p>
+                    <p><a href="https://www.ssga.com/us/en/individual/etfs" target="_blank" rel="noopener noreferrer" class="external-link">Visit the Official ETF Fund Page <i class="fas fa-external-link-alt"></i></a></p>
+                </section>
+
+                <section id="chart" class="section-grey">
+                    <h2>DES - Chart</h2>
+                    <div class="chart-container">
+                        <h4>Price action over time</h4>
+                        <div class="chart">
+                            <script type="text/javascript"
+                                src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+                                    {"autosize": true, "symbol": "AMEX:DES", "interval": "3M", "timezone": "America/New_York", "theme": "light", "style": "2", "locale": "en", "allow_symbol_change": false, "calendar": false, "support_host": "https://www.tradingview.com"}
+                                </script>
+                        </div>
+                    </div>
+                </section>
+
                 <section id="comparison" class="section-white">
-                    <h2>DES vs. The Competition</h2>
-                    <p>How does DES stack up against its closest alternatives?</p>
+                    <h2>DES vs. The Competition: A Quick Look</h2>
+                    <p>The real decision is not whether DES is "good" in the abstract. It is whether DES fits your specific market exposure needs and investment strategy.</p>
+                    <p><strong>DES</strong> is usually the cleanest fit for investors who want targeted exposure to its specific market segment. If you are looking for different exposure or fee structure, other ETFs in the same category may make sense.</p>
                     <div class="table-container text-center mb-4">
                         <table class="etf-comparison-table">
                             <thead>
                                 <tr>
                                     <th>Feature</th>
-                                    <th>DES (WisdomTree U.S. SmallCap Dividend Fund)</th>
-                                    <th>IWM (iShares Russell 2000 ETF)</th>
-                                    <th>SLYV (SPDR S&P 600 Small Cap Value ETF)</th>
+                                    <th>DES</th>
+                                    <th>Similar ETF 1</th>
+                                    <th>Similar ETF 2</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td><strong>Expense Ratio</strong></td>
-                                    <td>0.38%</td>
-                                    <td>See fund page</td>
-                                    <td>See fund page</td>
+                                    <td><strong>What it holds</strong></td>
+                                    <td>Targeted exposure to DES specific market segment</td>
+                                    <td>Different exposure profile</td>
+                                    <td>Alternative approach to same market</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>Key Differentiator</strong></td>
-                                    <td>Small-Cap Dividend</td>
-                                    <td>Broader small-cap index (including non-dividend payers), lower cost (0.19%), but no profitability/dividend filter.</td>
-                                    <td>Small-cap value tilt via S&P 600 Value index, 0.15% expense ratio — less income focus but similar value orientation.</td>
+                                    <td><strong>Why you might choose it</strong></td>
+                                    <td>Best when targeted exposure and market segment focus are the top priorities.</td>
+                                    <td>Better fit if you want different exposure or fee structure.</td>
+                                    <td>Appealing if you want an alternative approach to the same market exposure.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Tradeoff</strong></td>
+                                    <td>Focused exposure, but narrow market segment.</td>
+                                    <td>Different exposure profile, but may have different characteristics.</td>
+                                    <td>Very similar to DES, so the decision may come down to fee, preference, or fund sponsor.</td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
+                    <p class="small-text"><em>For the most current yields and expense ratios of these ETFs, please check
+                            a reliable financial data provider like <a href="https://etfdb.com/" target="_blank"
+                                rel="noopener noreferrer">ETFdb.com</a>, <a href="https://finance.yahoo.com/etfs"
+                                target="_blank" rel="noopener noreferrer">Yahoo Finance</a>, or the individual fund
+                            sponsor websites:</em></p>
+                    <p class="small-text text-center mt-2">
+                        <a href="https://www.ssga.com/us/en/individual/etfs" target="_blank" rel="noopener noreferrer" class="external-link mr-3">State Street <i class="fas fa-external-link-alt"></i></a>
+                        <a href="https://www.ishares.com" target="_blank" rel="noopener noreferrer" class="external-link mr-3">iShares <i class="fas fa-external-link-alt"></i></a>
+                        <a href="https://www.vanguard.com" target="_blank" rel="noopener noreferrer" class="external-link">Vanguard <i class="fas fa-external-link-alt"></i></a>
+                    </p>
                 </section>
 
                 <section id="final-verdict" class="section-grey">
                     <div class="final-verdict-box">
                         <h2>The Richiest.com Final Verdict: Is DES Right For You?</h2>
-                        <p>For investors willing to accept small-cap volatility in exchange for higher long-term return potential, <strong>DES is a thoughtfully constructed fund.</strong> The dividend filter meaningfully improves quality versus broad small-cap indexes, and the monthly income distribution is unusual and welcome in this space.</p>
-                        <p>If you can stomach the ups and downs and have a long time horizon, <strong>DES earns its place as a small-cap core holding.</strong></p>
+                        <p>If your priority is targeted exposure to a specific market segment, DES delivers focused access with transparency and efficiency. It's liquid, cost-effective, and easy to understand.</p>
+                        <p>If your priority is broad market diversification, this may be the wrong tool. DES is best treated as a focused exposure sleeve, not a core holding.</p>
                     </div>
                 </section>
 
-                <section id="position">
-                    <h2>DES - Market Position</h2>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-                    <div class="bg-white h-100 rounded mt-2 mb-2 table-container text-center w-100">
-                        <table class="etf-table">
-                            <thead>
-                                <tr>
-                                    <th class="w-12">Ticker Symbol</th>
-                                    <th class="w-12">Product Type</th>
-                                    <th class="w-12">Asset Class</th>
-                                    <th class="w-12">Strategy</th>
-                                    <th class="w-12">Payment Frequency</th>
-                                    <th class="w-12">Geographic Focus</th>
-                                    <th class="w-12">Expense Ratio</th>
-                                    <th class="w-12">Sponsor</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>DES</td>
-                                    <td>ETF</td>
-                                    <td>Equity Dividend ETF</td>
-                                    <td>SmallCap Dividend Fund</td>
-                                    <td>Quarterly</td>
-                                    <td>US Domestic</td>
-                                    <td>0.38%</td>
-                                    <td><a href="https://www.wisdomtree.com/" target="_blank"
-                                            rel="noopener noreferrer">WisdomTree</a></td>
-                                </tr>
-                            </tbody>
-                        </table>
 
-                    </div>
-                    <h2>DES Overview - The WisdomTree U.S. SmallCap Dividend Fund</h2>
-                    <p>The <strong>WisdomTree U.S. SmallCap Dividend Fund (DES)</strong> is an <strong>Exchange-Traded
-                            Fund (ETF)</strong> designed to track the performance of <strong>dividend-paying small-cap
-                            stocks</strong> in the <strong>United States</strong>. It offers investors exposure to a
-                        diversified portfolio of <strong>small-cap companies</strong> that have a history of paying
-                        <strong>dividends</strong>, aiming to capture the potential for both <strong>dividend
-                            income</strong> and <strong>capital appreciation</strong>. DES follows a strategy focused on
-                        <strong>high-dividend-yielding stocks</strong> within the <strong>small-cap segment</strong>,
-                        targeting companies with sustainable dividend policies and consistent dividend growth over time.
-                    </p>
-
-                    <p>One of DES's key features is its <strong>quarterly payment frequency</strong>, providing
-                        investors with regular income distributions. The fund primarily focuses on <strong>domestic
-                            companies</strong> in the <strong>US market</strong>, aligning with its geographic focus on
-                        <strong>US domestic equities</strong>. With an <strong>expense ratio</strong> of
-                        <strong>0.38%</strong>, DES aims to provide cost-effective exposure to small-cap dividend-paying
-                        stocks compared to actively managed funds.
-                    </p>
-
-                    <p>Investors interested in <strong>small-cap stocks</strong> with a <strong>dividend income
-                            component</strong> may find DES attractive due to its targeted strategy and potential for
-                        long-term returns. However, like all investments, DES carries risks, including <strong>market
-                            fluctuations</strong>, <strong>sector-specific risks</strong>, and changes in dividend
-                        policies of the underlying companies. It's essential for investors to conduct thorough research
-                        and consider their <strong>investment goals</strong> and <strong>risk tolerance</strong> before
-                        investing in DES or any ETF.</p>
-
-                </section>
-                <section id="price">
-                    <h2>DES - Price / Yield</h2>
-                    <div class="chart">
-                        <script type="text/javascript"
-                            src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-info.js" async>
-                                {
-                                    "symbol": "AMEX:DES",
-                                        "width": "100%",
-                                            "locale": "en",
-                                                "colorTheme": "light",
-                                                    "isTransparent": false
-                                }
-                            </script>
-                    </div>
-                </section>
-                <section id="holdings">
-                    <h2>DES - Portfolio and Asset Allocation</h2>
-                    <p>The <strong>WisdomTree U.S. SmallCap Dividend Fund (DES)</strong> maintains a diversified
-                        portfolio with a strong focus on <strong>dividend-paying stocks</strong> in the
-                        <strong>small-cap segment</strong>. As of the latest data, DES's top holdings include companies
-                        like <strong>Organon & Co. (OGN)</strong>, <strong>Tfs Financial (TFSL)</strong>, and
-                        <strong>CVR Energy Inc (CVI)</strong>. These holdings reflect a strategic allocation strategy
-                        with an emphasis on sectors such as <strong>Financial</strong>, <strong>Industrials</strong>,
-                        and <strong>Consumer Cyclical</strong>, constituting significant portions of the fund's asset
-                        allocation.
-                    </p>
-
-                    <p>The portfolio's <strong>asset allocations</strong> are structured to capture opportunities across
-                        various sectors while managing risks associated with market fluctuations. Noteworthy holdings
-                        like <strong>Kohl's Corporation (KSS)</strong> and <strong>Allete Inc (ALE)</strong> provide
-                        stability and growth potential, contributing to DES's overall performance.</p>
-
-                    <p>Investors benefit from DES's <strong>dividend income component</strong> as the fund targets
-                        companies with sustainable <strong>dividend policies</strong> and consistent <strong>dividend
-                            growth</strong>. The portfolio's <strong>payment frequency</strong> adds to the appeal for
-                        income-focused investors, offering regular income distributions from high-dividend-yielding
-                        small-cap stocks.</p>
-
-                    <p>While DES's portfolio showcases strengths in dividend-focused small-cap stocks, investors should
-                        consider factors such as market conditions, sector performance, and the fund's <strong>expense
-                            ratio</strong> to make informed investment decisions aligned with their financial goals and
-                        risk tolerance.</p>
-
-                    <h3>Top 10 Holdings</h3>
-                    <p>As of May 4, 2024, the top 10 holdings of the WisdomTree U.S. SmallCap Dividend Fund (DES) are:
-                    </p>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-
-                    <div class="table-container">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th class="w-60">Name</th>
-                                    <th class="w-40">Weight</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>OGN - Organon & Co.</td>
-                                    <td class="text-center">1.48%</td>
-                                </tr>
-                                <tr>
-                                    <td>TFSL - Tfs Financial</td>
-                                    <td class="text-center">0.87%</td>
-                                </tr>
-                                <tr>
-                                    <td>CVI - CVR Energy Inc</td>
-                                    <td class="text-center">0.86%</td>
-                                </tr>
-                                <tr>
-                                    <td>KSS - Kohl's Corporation</td>
-                                    <td class="text-center">0.79%</td>
-                                </tr>
-                                <tr>
-                                    <td>ALE - Allete Inc</td>
-                                    <td class="text-center">0.78%</td>
-                                </tr>
-                                <tr>
-                                    <td>EPR - Epr Properties</td>
-                                    <td class="text-center">0.77%</td>
-                                </tr>
-                                <tr>
-                                    <td>AROC - Archrock, Inc.</td>
-                                    <td class="text-center">0.69%</td>
-                                </tr>
-                                <tr>
-                                    <td>BNL - Broadstone Net Lease, Inc.</td>
-                                    <td class="text-center">0.63%</td>
-                                </tr>
-                                <tr>
-                                    <td>FIBK - First Interstate Bancsystem</td>
-                                    <td class="text-center">0.62%</td>
-                                </tr>
-                                <tr>
-                                    <td>CCOI - Cogent Communications</td>
-                                    <td class="text-center">0.61%</td>
-                                </tr>
-                            </tbody>
-                        </table>
-
-                    </div>
-
-                    <h3>Asset Allocation</h3>
-                    <p>The WisdomTree U.S. SmallCap Dividend Fund (DES) has the following asset allocation as of May 4,
-                        2024:</p>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-
-                    <div class="table-container">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th class="w-60 text-center">Sector</th>
-                                    <th class="w-40 text-center">Weight</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Financial</td>
-                                    <td class="text-center">25.36%</td>
-                                </tr>
-                                <tr>
-                                    <td>Industrials</td>
-                                    <td class="text-center">14.72%</td>
-                                </tr>
-                                <tr>
-                                    <td>Consumer Cyclical</td>
-                                    <td class="text-center">14.59%</td>
-                                </tr>
-                                <tr>
-                                    <td>Real Estate</td>
-                                    <td class="text-center">10.13%</td>
-                                </tr>
-                                <tr>
-                                    <td>Energy</td>
-                                    <td class="text-center">8.77%</td>
-                                </tr>
-                                <tr>
-                                    <td>Utilities</td>
-                                    <td class="text-center">7.28%</td>
-                                </tr>
-                                <tr>
-                                    <td>Basic Materials</td>
-                                    <td class="text-center">5.42%</td>
-                                </tr>
-                                <tr>
-                                    <td>Healthcare</td>
-                                    <td class="text-center">3.83%</td>
-                                </tr>
-                                <tr>
-                                    <td>Technology</td>
-                                    <td class="text-center">3.82%</td>
-                                </tr>
-                                <tr>
-                                    <td>Consumer Defensive</td>
-                                    <td class="text-center">3.21%</td>
-                                </tr>
-                                <tr>
-                                    <td>Communication Services</td>
-                                    <td class="text-center">2.84%</td>
-                                </tr>
-                                <tr>
-                                    <td>General</td>
-                                    <td class="text-center">0.02%</td>
-                                </tr>
-                            </tbody>
-                        </table>
-
-                    </div>
-                </section>
-                <section>
-                    <h2>Dividend Yield and Distribution History</h2>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-
-                    <div class="table-container">
-
-                        <table>
-                            <tr>
-                                <th class="w-25">Section</th>
-                                <th class="w-75">Details</th>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h3><strong>DES Dividend Data</strong></h3>
-                                </td>
-                                <td>The <strong>WisdomTree U.S. SmallCap Dividend Fund (DES)</strong> pays
-                                    <strong>quarterly dividends</strong>. The most recent <strong>ex-dividend
-                                        date</strong> was on <strong>April 24, 2024</strong>, with a dividend payment of
-                                    <strong>$0.065 per share</strong> on <strong>April 29, 2024</strong>.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h3><strong>DES Dividend Yield</strong></h3>
-                                </td>
-                                <td>As of April 26, 2024, the 30-day SEC yield for DES is <strong>2.81%</strong>. This
-                                    means that for every $100 invested in the fund, investors would receive
-                                    approximately <strong>$2.81</strong> in dividends per year, assuming the yield
-                                    remains constant.</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <a href="https://www.tipranks.com/etf/des/dividends" target="_blank"
-                                        rel="noopener noreferrer">
-                                        <h3><strong>DES Dividend History</strong></h3>
-                                    </a>
-                                </td>
-                                <td>DES has a history of paying quarterly dividends. The dividend payments may fluctuate
-                                    based on the performance of the underlying dividend-paying stocks held by the fund.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h3><strong>DES Dividend Growth</strong></h3>
-                                </td>
-                                <td>DES's dividend payments are dependent on the dividend growth and performance of the
-                                    underlying stocks in the fund's portfolio. The fund's investment strategy focuses on
-                                    companies with a history of consistent dividend growth, which may contribute to
-                                    increasing dividend payments over time. However, dividend growth is not guaranteed.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h3><strong>DES Dividend Stability</strong></h3>
-                                </td>
-                                <td>DES aims to provide a relatively stable income stream by investing in high-quality,
-                                    dividend-paying stocks of small-cap U.S. companies. However, the dividend payments
-                                    are not guaranteed and may be affected by changes in market conditions or the
-                                    performance of the underlying stocks in the fund's portfolio.</td>
-                            </tr>
-                        </table>
-
-                    </div>
-                </section>
-
-                <section id="chart">
-                    <h2>DES - Chart</h2>
-                    <div class="chart">
-                        <div class="tradingview-widget-container"><script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>{"autosize":true,"symbol":"AMEX:DES","interval":"D","timezone":"Etc/UTC","theme":"light","style":"1","locale":"en","allow_symbol_change":false,"height":400}</script></div>
-                        </iframe>
-                </section>
-                <section id="comparative">
-                    <h2>CGDV - Comparative Analysis</h2>
-                    <p class=""> Let's compare DES with prominent competitors, focusing on key aspects like
-                        performance,
-                        fees, and strategy: <strong>(as of May 2024)</strong> </p>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-                    <div class="table-container">
-                        <table class="mb-2">
-                            <thead>
-                                <tr>
-                                    <th>&nbsp;</th>
-                                    <th class="w-25">DES</th>
-                                    <th class="w-25">VB</th>
-                                    <th class="w-25">SCHA</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><strong>Investment Focus</strong></td>
-                                    <td>High-quality, dividend-paying stocks of small-cap U.S. companies</td>
-                                    <td>Small-cap U.S. stocks</td>
-                                    <td>Small-cap U.S. stocks</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Current Yield</strong></td>
-                                    <td><a href="https://www.bing.com/search?q=DES+current+yield" target="_blank"
-                                            rel="noopener noreferrer"><strong>2.81%</strong></a></td>
-                                    <td><a href="https://www.bing.com/search?q=VB+current+yield" target="_blank"
-                                            rel="noopener noreferrer"><strong>1.67%</strong></a></td>
-                                    <td><a href="https://www.bing.com/search?q=SCHA+current+yield" target="_blank"
-                                            rel="noopener noreferrer"><strong>1.49%</strong></a></td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Expense Ratio</strong></td>
-                                    <td><strong>0.38%</strong></td>
-                                    <td><strong>0.04%</strong></td>
-                                    <td><strong>0.04%</strong></td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Investment Strategy</strong></td>
-                                    <td>Passively tracks the WisdomTree U.S. SmallCap Dividend Index</td>
-                                    <td>Passively tracks the CRSP US Small Cap Index</td>
-                                    <td>Passively tracks the Dow Jones U.S. Small-Cap Total Stock Market Index</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Strengths</strong></td>
-                                    <td>Focuses on dividend-paying small-cap companies, moderate expense ratio</td>
-                                    <td>Low expense ratio, broad exposure to small-cap U.S. stocks</td>
-                                    <td>Low expense ratio, diversified holdings in small-cap segment</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Weaknesses</strong></td>
-                                    <td>Potential for higher volatility due to small-cap focus, moderate expense ratio
-                                    </td>
-                                    <td>Less emphasis on dividend growth, potentially lower returns than actively
-                                        managed funds</td>
-                                    <td>Less emphasis on dividend growth, potentially lower returns than actively
-                                        managed funds</td>
-                                </tr>
-                            </tbody>
-                        </table>
-
-                    </div>
-                </section>
-                <section id="history">
-                    <h2>Dividend History (Last 5 distributions)</h2>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-                    <div class="table-container">
-                        <table class="mb-2 w-100">
-                            <thead>
-                                <tr>
-                                    <th class="w-17">Ex-Dividend Date</th>
-                                    <th class="w-17">Cash Amount</th>
-                                    <th class="w-17">Record Date</th>
-                                    <th class="w-17">Pay Date</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Apr 24, 2024</td>
-                                    <td>$0.08</td>
-                                    <td>Apr 25, 2024</td>
-                                    <td>Apr 29, 2024</td>
-                                </tr>
-                                <tr>
-                                    <td>Mar 22, 2024</td>
-                                    <td>$0.06</td>
-                                    <td>Mar 25, 2024</td>
-                                    <td>Mar 27, 2024</td>
-                                </tr>
-                                <tr>
-                                    <td>Feb 23, 2024</td>
-                                    <td>$0.05</td>
-                                    <td>Feb 26, 2024</td>
-                                    <td>Feb 28, 2024</td>
-                                </tr>
-                                <tr>
-                                    <td>Jan 25, 2024</td>
-                                    <td>$0.01</td>
-                                    <td>Jan 26, 2024</td>
-                                    <td>Jan 30, 2024</td>
-                                </tr>
-                                <tr>
-                                    <td>Dec 28, 2023</td>
-                                    <td>$0.02</td>
-                                    <td>Dec 29, 2023</td>
-                                    <td>Jan 03, 2024</td>
-                                </tr>
-                            </tbody>
-                        </table>
-
-                    </div>
-                </section>
             </div>
         </div>
         <div class="row dark-div">
@@ -631,53 +478,19 @@
         </div>
         <div class="row">
             <div class="col container-1000">
-                <section id="news">
-                    <h2 class="">News</h2>
-                    <div class="chart">
-                        <div class="tradingview-widget-container">
-                        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-timeline.js" async>
-                        {"feedMode":"symbol","symbol":"AMEX:DES","colorTheme":"light","isTransparent":false,"displayMode":"regular","width":"100%","height":"400","locale":"en"}
-                        </script>
-                    </div>
-                </section>
-                <section id="technical">
-                    <h2>Technical Analysis</h2>
-                    <div class="chart">
-                        <script type="text/javascript"
-                            src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js"
-                            async> { "interval": "1M", "width": "100%", "isTransparent": false, "height": "400", "symbol": "AMEX:DES", "showIntervalTabs": true, "displayMode": "single", "locale": "en", "colorTheme": "light" } </script>
-                    </div>
-                </section>
-                <section>
-                    <h2>Additional Information and Risks</h2>
-                    <p>The <strong>WisdomTree U.S. SmallCap Dividend Fund (DES)</strong> offers investors exposure to a
-                        diversified portfolio of small-cap dividend-paying stocks, making it an attractive choice for
-                        those seeking income and potential growth in the small-cap segment. Its focus on
-                        high-dividend-yielding companies in the U.S. market enhances its appeal to income-oriented
-                        investors.</p>
-                    <p>However, investors should consider several <strong>risks</strong> before investing in DES. The
-                        fund's <strong>expense ratio</strong> of 0.08% is relatively low but can impact overall returns,
-                        especially in comparison to similar <strong>ETFs</strong> and <strong>index funds</strong>.
-                        Market <strong>volatility</strong> can also affect the fund's performance, leading to
-                        fluctuations in <strong>dividend yield</strong> and <strong>stock price</strong>.</p>
-                    <p>Additionally, DES's <strong>sector allocation</strong> and <strong>stock holdings</strong> may
-                        expose it to risks associated with specific industries or individual companies. Investors should
-                        assess the fund's <strong>portfolio</strong> composition and <strong>diversification</strong>
-                        strategy to understand its <strong>market risk</strong>.</p>
-                    <p>While DES provides opportunities for <strong>dividend income</strong> and <strong>small-cap
-                            equity</strong> exposure, investors should conduct thorough <strong>research</strong> and
-                        consider their <strong>investment objectives</strong> and <strong>risk tolerance</strong> before
-                        including DES in their <strong>investment portfolio</strong>.</p>
-                    <p>It's important to note that past <strong>performance</strong> or <strong>forecast</strong> cannot
-                        guarantee future results, and investors should consult with a <strong>registered investment
-                            adviser</strong> or financial professional before making investment decisions.</p>
+                <section id="disclaimer" class="small-text-section section-grey">
+                    <h2>Important Disclaimer</h2>
+                    <p>This article is for informational purposes only and does not constitute financial advice.
+                        Investing
+                        involves risks, and you should consult with a qualified financial professional before making any
+                        investment decisions. Past performance is not indicative of future results.</p>
                 </section>
 
             </div>
         </div>
         <div class="row dark-div">
             <div class="col container-1280">
-                <div class="shared-footer"> <!-- This is where the shared nav will be loaded --> </div>
+                <div class="shared-footer"> </div>
             </div>
         </div>
     </div>
@@ -685,36 +498,53 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
+        function generateTOC() {
+            const tocList = $('#toc-list .etf-nav');
+            tocList.empty();
+            let ul = $('<ul></ul>').addClass('toc-menu');
+
+            const mainContentArea = $('.container-1000');
+
+            mainContentArea.find('section').each(function () {
+                const sectionId = $(this).attr('id');
+                const h2 = $(this).find('h2:first');
+
+                if (sectionId && h2.length > 0 && sectionId !== 'disclaimer') {
+                    let title = h2.text();
+                    const li = $('<li></li>');
+                    const a = $('<a></a>').attr('href', '#' + sectionId).text(title);
+                    li.append(a);
+                    ul.append(li);
+                }
+            });
+            tocList.append(ul);
+        }
+
         $(function () {
-            $(".shared-nav").load("/shared/nav.html");
-            $(".etf-nav").load("/shared/etfnav2.html");
+            $(".shared-nav").load("/shared/nav.html", function () {
+                generateTOC();
+            });
             $(".shared-subscribe").load("/shared/subscribe.html");
             $(".shared-banner").load("/shared/banner.html");
             $(".shared-articles").load("/shared/technologyStocks.html");
             $(".shared-footer").load("/shared/footer.html");
-        });
-        $(document).ready(function () {
+
+            generateTOC();
+
             $("#toggle-toc").click(function () {
-                var tocList = $("#toc-list");
                 var fixedToc = $(".fixed-toc");
-                if (tocList.is(":visible")) {
-                    tocList.hide();
-                    fixedToc.css({ "width": "0px", "display": "none" });
+                fixedToc.toggle();
+                if (fixedToc.is(":visible")) {
+                    fixedToc.addClass("show");
                 } else {
-                    fixedToc.css({ "width": "200px", "display": "block" });
-                    tocList.show();
+                    fixedToc.removeClass("show");
                 }
             });
-        });
 
-        $(document).ready(function () {
-            $('.carousel').carousel();
-
-            // Scroll to top functionality
             var mybutton = $('#return-to-top');
 
             $(window).scroll(function () {
-                if ($(this).scrollTop() > 20) {
+                if ($(this).scrollTop() > 100) {
                     mybutton.fadeIn();
                 } else {
                     mybutton.fadeOut();

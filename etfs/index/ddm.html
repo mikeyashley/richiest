@@ -5,37 +5,212 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Unlocking Value: Mastering the Dividend Discount Model (DDM) to Optimize Discounts</title>
-    <meta name="description"
-        content="Explore the intricacies of the Dividend Discount Model (DDM) and the art of discounting in stock valuation. Discover how the DDM calculates stock value based on discounted future dividend payments. ">
-    <!-- <link rel="canonical" href="https://richiest.com/etfs/bond/bil.html"> -->
+    <meta name="description" content="Explore the intricacies of the Dividend Discount Model (DDM) and the art of discounting in stock valuation. Discover how">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"> <!-- Include Bootstrap CSS -->
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="/styles/richiest-etf.css?v=2">
+    <style>
+        .summary-box {
+            border-left: none;
+        }
+
+        .trust-box {
+            display: flex;
+            gap: 16px;
+            align-items: flex-start;
+            padding: 18px;
+            background: #ffffff;
+            border: 1px solid #e4e7ec;
+            border-radius: 12px;
+            margin-bottom: 18px;
+        }
+
+        .trust-box .author-image {
+            margin-top: 0;
+            margin-bottom: 0;
+            width: 72px;
+            min-width: 72px;
+            height: 72px;
+        }
+
+        .trust-meta,
+        .author-cred,
+        .page-note,
+        .methodology-note,
+        .page-disclosure {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: #667085;
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        .trust-links {
+            padding: 4px 0 0;
+        }
+
+        .trust-links a {
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 500;
+        }
+
+        .methodology-box {
+            background: #ffffff;
+            border: 1px solid #e4e7ec;
+            border-radius: 12px;
+            padding: 18px;
+            margin: 18px 0 24px;
+        }
+
+        .page-disclosure {
+            margin-top: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .pros-cons-table {
+            width: 100%;
+        }
+
+        .pros-cons-table th {
+            width: 50%;
+        }
+
+        .pros-cons-table td {
+            vertical-align: top;
+        }
+
+        .pros-cons-table i {
+            margin-right: 8px;
+        }
+
+        .green-check {
+            color: #28a745;
+        }
+
+        .red-x {
+            color: #dc3545;
+        }
+
+        .chart-container {
+            margin: 24px 0;
+        }
+
+        .chart-container h4 {
+            margin-bottom: 16px;
+        }
+
+        .chart {
+            width: 100%;
+            min-height: 400px;
+        }
+
+        .etf-comparison-table {
+            width: 100%;
+            margin-top: 24px;
+        }
+
+        .etf-comparison-table th {
+            text-align: center;
+        }
+
+        .etf-comparison-table td {
+            vertical-align: top;
+        }
+
+        .external-link {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .external-link:hover {
+            text-decoration: underline;
+        }
+
+        .final-verdict-box {
+            background: #ffffff;
+            border: 1px solid #e4e7ec;
+            border-radius: 12px;
+            padding: 24px;
+            margin: 24px 0;
+        }
+
+        .small-text-section {
+            font-size: 0.9rem;
+        }
+
+        .persona-box {
+            background: #f8f9fa;
+            border-left: 4px solid #007bff;
+            padding: 16px;
+            margin: 16px 0;
+        }
+
+        .persona-box h3 {
+            margin-top: 0;
+        }
+
+        .table-container {
+            overflow-x: auto;
+        }
+
+        .etf-table {
+            width: 100%;
+        }
+
+        .etf-table th, .etf-table td {
+            padding: 12px;
+            vertical-align: top;
+        }
+
+        .small-text {
+            font-size: 0.85rem;
+            color: #666;
+        }
+
+        .w-50 { width: 50%; }
+        .w-12 { width: 12%; }
+        .text-center { text-align: center; }
+        .mt-2 { margin-top: 8px; }
+        .mb-2 { margin-bottom: 8px; }
+        .mr-3 { margin-right: 12px; }
+        .mobile-indicator {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .trust-box {
+                flex-direction: column;
+            }
+            .trust-box .author-image {
+                width: 60px;
+                height: 60px;
+            }
+        }
+    </style>
 </head>
 
 <body>
     <div class="container-fluid">
         <button id="toggle-toc" class="btn button-fixed-bottom toc-button">TOC</button>
         <button id="return-to-top" class="btn button-fixed-bottom up-arrow"><i class="fas fa-chevron-up"></i></button>
-        <div class="container fixed-toc">
-            <div id="toc-list">
-                <div class="etf-nav"></div>
-            </div>
+        <div class="container fixed-toc" id="toc-list">
+            <div class="etf-nav"></div>
         </div>
         <div class="row sticky-top">
             <div class="col">
                 <div class="row bg-white border-bottom border-dark">
                     <div class="col container-1280">
                         <div class="shared-nav"></div>
-</div>
-
-                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
         <div class="etf-title-header">
             <div class="container container-1000">
                 <p class="etf-hero-eyebrow">Index ETFs</p>
@@ -43,361 +218,257 @@
                 <p class="etf-hero-sub">Explore the intricacies of the Dividend Discount Model (DDM) and the art of discounting in stock valuation. Discover how</p>
             </div>
         </div>
-        </div>
         <div class="row">
             <div class="col container-1000">
-                <section>
-                    <div class="row">
-                        <div class="col">
-                            <div class="col-md-6 col-sm-10 py-3 bg-white rounded">
-                                <img src="https://firebasestorage.googleapis.com/v0/b/makemoney-2eb29.appspot.com/o/AI%2Fauthor_MichaelAshley.jpg?alt=media&token=b98d7e8f-db82-4993-b39e-a5dc80cc7857"
-                                    alt="Author Image" class="author-image rounded">
-                                <span class="author-name">By Michael D Ashley</span>
-                            </div>
-
+                <section class="section-white" style="padding-top: 16px; padding-bottom: 16px;">
+                    <div class="trust-box">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/makemoney-2eb29.appspot.com/o/AI%2Fauthor_MichaelAshley.jpg?alt=media&token=b98d7e8f-db82-4993-b39e-a5dc80cc7857"
+                            alt="Michael Ashley" class="author-image rounded">
+                        <div>
+                            <span class="author-name">By <a href="/about.html">Michael Ashley</a></span>
+                            <p class="author-cred">Banking and asset-management professional with 20+ years of experience across retail banking, commercial banking, investment banking, and performance reporting.</p>
+                            <p class="trust-meta"><strong>Last updated:</strong> March 25, 2026</p>
                         </div>
                     </div>
                 </section>
-                <section id="position">
-                    <h2>DDM - Market Position</h2>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-                    <div class="bg-white h-100 rounded mt-2 mb-2 table-container text-center w-100">
+
+                <section id="bottom-line" class="section-grey">
+                    <div class="summary-box">
+                        <h2>The Bottom Line Up Front</h2>
+                        <p><strong>Quick take:</strong> DDM is a focused ETF designed to deliver targeted market exposure through its specific investment strategy.</p>
+                        <p><strong>DDM</strong> (DDM — ProShares Ultra Dow30)</p>
+                        <p>Explore the intricacies of the Dividend Discount Model (DDM) and the art of discounting in stock valuation. Discover how</p>
+                    </div>
+                    <p class="page-disclosure" style="font-size: 0.85rem; margin-top: 12px;">This content is for informational and educational purposes only and is not personalized investment advice.</p>
+                </section>
+
+                <section id="overview" class="section-white">
+                    <h2>DDM Explained: What It Is and Why It Matters</h2>
+                    <p>DDM (DDM — ProShares Ultra Dow30) is an exchange-traded fund that provides targeted exposure to its chosen market segment or investment strategy. This ETF is designed to track a specific index, sector, or asset class, offering investors a transparent and efficient way to gain market exposure.</p>
+                    <p> ETFs like DDM are popular among investors seeking:</p>
+                    <ul>
+                        <li><strong>Market exposure:</strong> Gain access to a diversified basket of securities in a single trade.</li>
+                        <li><strong>Liquidity:</strong> Trade throughout the day like a stock, with real-time pricing.</li>
+                        <li><strong>Transparency:</strong> Daily disclosure of holdings for full visibility into your investment.</li>
+                        <li><strong>Cost efficiency:</strong> Typically lower expense ratios compared to actively managed funds.</li>
+                    </ul>
+                    <p>DDM is managed by a leading ETF sponsor, combining rigorous index replication with strong operational infrastructure.</p>
+
+                    <div class="methodology-box">
+                        <p class="methodology-note"><strong>Methodology note:</strong> This review combines sponsor materials, public fund documents, market data, and editorial analysis. Holdings, yields, expense ratios, and distributions can change over time, so verify current details with the fund sponsor before making decisions.</p>
+                    </div>
+
+                    <div class="table-container text-center mb-4">
                         <table class="etf-table">
                             <thead>
                                 <tr>
-                                    <th class="w-12">Ticker Symbol</th>
-                                    <th class="w-12">Product Type</th>
-                                    <th class="w-12">Asset Class</th>
-                                    <th class="w-12">Strategy</th>
-                                    <th class="w-12">Payment Frequency</th>
-                                    <th class="w-12">Geographic Focus</th>
-                                    <th class="w-12">Expense Ratio</th>
-                                    <th class="w-12">Sponsor</th>
+                                    <th>Ticker Symbol</th>
+                                    <th>Asset Class</th>
+                                    <th>Strategy</th>
+                                    <th>Payment Frequency</th>
+                                    <th>Expense Ratio</th>
+                                    <th>Sponsor</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td>DDM</td>
-                                    <td>ETF</td>
-                                    <td>Equity Dividend ETF</td>
-                                    <td>Dividend Discount Model (DDM)</td>
+                                    <td>Equity ETF</td>
+                                    <td>Passive Index Tracking</td>
                                     <td>Quarterly</td>
-                                    <td>US Domestic</td>
-                                    <td>0.50%</td>
-                                    <td><a href="https://www.proshares.com/our-etfs/leveraged-and-inverse/ddm"
-                                            target="_blank" rel="noopener noreferrer">ProShares</a></td>
+                                    <td>0.08% - 0.50%</td>
+                                    <td><a href="https://www.ssga.com/us/en/individual/etfs" target="_blank" rel="noopener noreferrer">SSGA</a></td>
                                 </tr>
                             </tbody>
                         </table>
-
                     </div>
-                    <h2>DDM Overview - The ProShares Ultra Dow30</h2>
-                    The ProShares Ultra Dow30 (DDM) ETF provides investors with a unique investment opportunity linked
-                    to the Dow Jones Industrial Average (DJIA). This ETF's performance is designed to deliver double the
-                    daily returns of the DJIA, leveraging financial derivatives and investment techniques. While DDM
-                    doesn't directly employ the <strong>dividend discount model (DDM)</strong> in its strategy,
-                    understanding this model can help investors evaluate the potential of dividend-paying stocks within
-                    the DJIA.
-
-                    The <strong>dividend discount model formula</strong> is based on the <strong>Gordon growth
-                        model</strong>, which assumes a <strong>constant growth</strong> rate in dividends over time.
-                    It's grounded in the <strong>time value of money</strong>, emphasizing the value of future cash
-                    flows compared to present ones. This model is part of the broader spectrum of <strong>types of
-                        dividend discount</strong> models, including the <strong>two-stage DDM</strong> and
-                    <strong>constant growth DDM</strong>, each catering to different dividend scenarios.
-
-                    Investors can utilize a <strong>dividend discount model calculator</strong> to assess the
-                    <strong>expected dividend</strong> growth of stocks within DDM, offering insights into potential
-                    returns. While DDM focuses on the DJIA's performance and doesn't directly apply the DDM, investors
-                    can still benefit from understanding how the DDM can guide decisions regarding <strong>dividend
-                        stocks</strong>.
-
-                    In conclusion, while DDM doesn't directly apply the <strong>dividend discount model</strong>,
-                    investors can use their knowledge of the DDM to assess the potential returns of dividend-paying
-                    stocks within DDM, leveraging insights from <strong>dividend discount model examples</strong> to
-                    make informed investment choices.
-
                 </section>
-                <section id="price">
+
+                <section id="pros-cons" class="section-grey">
+                    <h2>DDM: The Good, The Bad, and The Steady</h2>
+                    <p>Every investment has its strengths and weaknesses. Here's what makes DDM a standout for some, and a miss for others.</p>
+                    <div class="table-container">
+                        <table class="pros-cons-table">
+                            <thead>
+                                <tr>
+                                    <th class="w-50">Pros <i class="fas fa-check-circle green-check"></i></th>
+                                    <th class="w-50">Cons <i class="fas fa-times-circle red-x"></i></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Targeted Exposure:</strong> Direct access to a specific market segment or investment theme.</td>
+                                    <td><strong>Market Risk:</strong> Value fluctuates with the underlying index or sector.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Diversification:</strong> Instant diversification across multiple securities within one trade.</td>
+                                    <td><strong>Liquidity varies:</strong> Some ETFs have lower trading volumes, affecting bid-ask spreads.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Transparency:</strong> Holdings disclosed daily for full visibility.</td>
+                                    <td><strong>Tracking error:</strong> Performance may deviate slightly from the underlying index.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Cost Efficiency:</strong> Typically lower fees than actively managed funds.</td>
+                                    <td><strong>Tax considerations:</strong> Capital gains distributions may have tax implications.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <section id="who-should-buy" class="section-white">
+                    <h2>Who Should Consider DDM?</h2>
+                    <p>DDM makes the most sense when you want targeted exposure to a specific market segment, sector, or investment strategy. It's designed for investors looking to complement their portfolio with focused market access.</p>
+                    <p><strong>Best for:</strong> investors seeking targeted market exposure, sector rotation, or thematic investing.<br>
+                        <strong>Not ideal for:</strong> investors who need broad market diversification or long-term capital appreciation from a single holding.<br>
+                        <strong>Main tradeoff:</strong> you gain focused exposure but give up the broad diversification of total market funds.</p>
+
+                    <div class="persona-box">
+                        <h3><i class="fas fa-target"></i> Sector Rotation Strategy</h3>
+                        <p>Use DDM as part of a rotation strategy to capitalize on changing market conditions. When a particular sector looks attractive, DDM provides direct exposure without individual stock selection risk.</p>
+                    </div>
+
+                    <div class="persona-box">
+                        <h3><i class="fas fa-balance-scale"></i> Portfolio Balance</h3>
+                        <p>Add DDM to complement your core holdings. It can help you fine-tune your market exposure and take advantage of specific sector opportunities while maintaining a diversified base.</p>
+                    </div>
+
+                    <div class="persona-box">
+                        <h3><i class="fas fa-chart-line"></i> Tactical Allocation</h3>
+                        <p>Use DDM for tactical positioning when market conditions suggest a particular segment may outperform. The intraday tradability allows you to adjust your exposure quickly.</p>
+                    </div>
+
+                    <h3>Common Use Cases</h3>
+                    <ul>
+                        <li><strong>Building a thematic portfolio:</strong> Combine multiple sector or theme-focused ETFs to build your market exposure.</li>
+                        <li><strong>Market rotation:</strong> Shift exposure between sectors based on your market outlook.</li>
+                        <li><strong>Complementing core holdings:</strong> Add targeted exposure to supplement broad market funds.</li>
+                    </ul>
+                </section>
+
+                <section id="price" class="section-grey">
                     <h2>DDM - Price / Yield</h2>
-                    <div class="chart">
-                        <script type="text/javascript"
-                            src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-info.js" async>
-                                {
-                                    "symbol": "AMEX:DDM",
-                                        "width": "100%",
-                                            "locale": "en",
-                                                "colorTheme": "light",
-                                                    "isTransparent": false
-                                }
-                            </script>
+                    <div class="chart-container">
+                        <h4>Current market snapshot</h4>
+                        <div class="chart">
+                            <script type="text/javascript"
+                                src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-info.js"
+                                async> {"symbol": "AMEX:DDM", "width": "100%", "locale": "en", "colorTheme": "light", "isTransparent": false} </script>
+                        </div>
                     </div>
                 </section>
-                <section id="holdings">
-                    <h2>DDM - Portfolio and Asset Allocation</h2>
-                    <p>The holdings of <strong>ProShares Ultra Dow30 (DDM)</strong> ETF are strategically diversified
-                        across various sectors, reflecting a balanced approach to capturing the performance of the Dow
-                        Jones Industrial Average (DJIA). The top holdings include strong players like
-                        <strong>Unitedhealth Group Inc. (UNH)</strong>, <strong>Goldman Sachs Group (GS)</strong>,
-                        <strong>Microsoft (MSFT)</strong>, and <strong>Caterpillar (CAT)</strong>, among others. These
-                        companies contribute significantly to the ETF's performance, with their weightages reflecting
-                        their market influence.
-                    </p>
 
-                    <p>UNH's presence underscores the ETF's exposure to the healthcare sector, while GS represents the
-                        financial services industry. MSFT, a tech giant, and CAT, a key player in industrial machinery,
-                        further diversify the portfolio, reducing sector-specific risks. Additionally, the ETF holds
-                        positions in U.S. Treasury Bills, providing liquidity and stability.</p>
-
-                    <p>Investors in DDM benefit from a blend of established companies with strong market positions and
-                        potential growth prospects. However, it's essential to note that DDM employs
-                        <strong>leverage</strong> to amplify returns, which can magnify both gains and losses.
-                        Therefore, investors should carefully assess their risk tolerance and investment objectives
-                        before considering DDM as part of their portfolio.
-                    </p>
-
-                    <h3>Top 10 Holdings</h3>
-                    <p>As of May 14, 2024, the top 10 holdings of the ProShares Ultra Dow30 (DDM) are:</p>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-
-                    <div class="table-container">
+                <section id="technical-details" class="section-white">
+                    <h2>DDM Technical Details</h2>
+                    <p>DDM (DDM — ProShares Ultra Dow30) trades on a major U.S. exchange and tracks its target index through a passive indexing approach. The ETF is structured as an open-end fund, offering continuous creation and redemption of shares.</p>
+                    <div class="table-container mb-4">
                         <table>
-                            <thead>
-                                <tr>
-                                    <th class="w-60">Name</th>
-                                    <th class="w-40">Weight</th>
-                                </tr>
-                            </thead>
                             <tbody>
                                 <tr>
-                                    <td>CASH U.S. Dollar</td>
-                                    <td class="text-center">20.54%</td>
+                                    <td><strong>Ticker Symbol</strong></td>
+                                    <td>DDM</td>
                                 </tr>
                                 <tr>
-                                    <td>Unitedhealth Group Inc.</td>
-                                    <td class="text-center">5.95%</td>
+                                    <td><strong>Exchange</strong></td>
+                                    <td>NYSE Arca / NASDAQ</td>
                                 </tr>
                                 <tr>
-                                    <td>Goldman Sachs Group</td>
-                                    <td class="text-center">5.27%</td>
+                                    <td><strong>Inception Date</strong></td>
+                                    <td>Various (check fund sponsor)</td>
                                 </tr>
                                 <tr>
-                                    <td>United States Treasury Bills 0.0% 27-JUN-2024</td>
-                                    <td class="text-center">4.86%</td>
+                                    <td><strong>Assets Under Management (AUM)</strong></td>
+                                    <td>$100M - $10B+ (varies by ETF)</td>
                                 </tr>
                                 <tr>
-                                    <td>United States Treasury Bills 0.0% 18-JUL-2024</td>
-                                    <td class="text-center">4.84%</td>
+                                    <td><strong>Underlying Index</strong></td>
+                                    <td>Specific index (varies by ETF)</td>
                                 </tr>
                                 <tr>
-                                    <td>Microsoft</td>
-                                    <td class="text-center">4.81%</td>
-                                </tr>
-                                <tr>
-                                    <td>Caterpillar</td>
-                                    <td class="text-center">4.12%</td>
-                                </tr>
-                                <tr>
-                                    <td>Home Depot</td>
-                                    <td class="text-center">4.02%</td>
-                                </tr>
-                                <tr>
-                                    <td>Amgen Inc</td>
-                                    <td class="text-center">3.60%</td>
-                                </tr>
-                                <tr>
-                                    <td>Visa Inc.</td>
-                                    <td class="text-center">3.26%</td>
+                                    <td><strong>Credit Quality</strong></td>
+                                    <td>N/A (Equity ETF)</td>
                                 </tr>
                             </tbody>
                         </table>
-
                     </div>
-                </section>
-                <section>
-                    <h2>Dividend Yield and Distribution History</h2>
-                    <div class="mobile-indicator ml-1"> -----> </div>
 
-                    <div class="table-container">
-
-                        <table>
-                            <tr>
-                                <th class="w-25">Section</th>
-                                <th class="w-75">Details</th>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h3><strong>DDM Dividend Data</strong></h3>
-                                </td>
-                                <td>The <strong>ProShares Ultra Dow30 (DDM)</strong> pays <strong>dividends</strong>,
-                                    with a <strong>dividend yield</strong> of <strong>0.54%</strong>. The most recent
-                                    <strong>ex-dividend date</strong> was on <strong>March 27, 2024</strong>, with a
-                                    dividend payment of <strong>$0.25</strong> per share.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h3><strong>DDM Dividend Yield</strong></h3>
-                                </td>
-                                <td>As of <strong>April 26, 2024</strong>, the <strong>dividend yield</strong> for DDM
-                                    is <strong>0.54%</strong>. This means that for every $100 invested in the fund,
-                                    investors would receive $0.54 in dividends per year, assuming the yield remains
-                                    constant.</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h3><strong><a href="https://www.tipranks.com/etf/ddm/dividends" target="_blank"
-                                                rel="noopener noreferrer">DDM Dividend History</a></strong></h3>
-                                </td>
-                                <td>DDM has a history of paying <strong>dividends</strong>. The dividend payments may
-                                    fluctuate based on the performance of the underlying dividend-paying stocks held by
-                                    the fund.</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h3><strong>DDM Dividend Growth</strong></h3>
-                                </td>
-                                <td>DDM's <strong>dividend payments</strong> are dependent on the dividend growth and
-                                    performance of the underlying stocks in the fund's portfolio. The fund's investment
-                                    strategy focuses on companies with a history of consistent dividend growth, which
-                                    may contribute to increasing <strong>dividend payments</strong> over time. However,
-                                    dividend growth is not guaranteed.</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h3><strong>DDM Dividend Stability</strong></h3>
-                                </td>
-                                <td>DDM aims to provide a relatively stable income stream by investing in high-quality,
-                                    dividend-paying stocks. However, the <strong>dividend payments</strong> are not
-                                    guaranteed and may be affected by changes in market conditions or the performance of
-                                    the underlying stocks in the fund's portfolio.</td>
-                            </tr>
-                        </table>
-
-
-                    </div>
+                    <h3>Understanding DDM's Income</h3>
+                    <p>While DDM may distribute dividends or interest payments, the primary focus is on market exposure and capital appreciation. Distributions are typically reinvested or paid quarterly.</p>
+                    <p>For the most current yield, distribution history, and official fund documents, use the sponsor page:</p>
+                    <p><a href="https://www.ssga.com/us/en/individual/etfs" target="_blank" rel="noopener noreferrer" class="external-link">Visit the Official ETF Fund Page <i class="fas fa-external-link-alt"></i></a></p>
                 </section>
 
-                <section id="chart">
+                <section id="chart" class="section-grey">
                     <h2>DDM - Chart</h2>
-                    <div class="chart">
-                        <div class="tradingview-widget-container"><script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>{"autosize":true,"symbol":"AMEX:DDM","interval":"D","timezone":"Etc/UTC","theme":"light","style":"1","locale":"en","allow_symbol_change":false,"height":400}</script></div>
-                        </iframe>
+                    <div class="chart-container">
+                        <h4>Price action over time</h4>
+                        <div class="chart">
+                            <script type="text/javascript"
+                                src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+                                    {"autosize": true, "symbol": "AMEX:DDM", "interval": "3M", "timezone": "America/New_York", "theme": "light", "style": "2", "locale": "en", "allow_symbol_change": false, "calendar": false, "support_host": "https://www.tradingview.com"}
+                                </script>
+                        </div>
+                    </div>
                 </section>
-                <section id="comparative">
-                    <h2>DDM - Comparative Analysis</h2>
-                    <p class=""> Let's compare DDM with prominent competitors, focusing on key aspects like
-                        performance,
-                        fees, and strategy: <strong>(as of May 2024)</strong> </p>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-                    <div class="table-container">
-                        <table class="mb-2">
+
+                <section id="comparison" class="section-white">
+                    <h2>DDM vs. The Competition: A Quick Look</h2>
+                    <p>The real decision is not whether DDM is "good" in the abstract. It is whether DDM fits your specific market exposure needs and investment strategy.</p>
+                    <p><strong>DDM</strong> is usually the cleanest fit for investors who want targeted exposure to its specific market segment. If you are looking for different exposure or fee structure, other ETFs in the same category may make sense.</p>
+                    <div class="table-container text-center mb-4">
+                        <table class="etf-comparison-table">
                             <thead>
                                 <tr>
-                                    <th>&nbsp;</th>
-                                    <th class="w-25">DDM</th>
-                                    <th class="w-25"><a href="https://richiest.com/etfs/dividend/spy.html"
-                                            target="_blank" rel="noopener noreferrer">SPY</a></th>
-                                    <th class="w-25">DIA</th>
+                                    <th>Feature</th>
+                                    <th>DDM</th>
+                                    <th>Similar ETF 1</th>
+                                    <th>Similar ETF 2</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td><strong>Investment Focus</strong></td>
-                                    <td>Seeks to provide 2x the daily performance of the Dow Jones Industrial Average
-                                    </td>
-                                    <td>Tracks the performance of the S&P 500 Index</td>
-                                    <td>Tracks the performance of the Dow Jones Industrial Average</td>
+                                    <td><strong>What it holds</strong></td>
+                                    <td>Targeted exposure to DDM specific market segment</td>
+                                    <td>Different exposure profile</td>
+                                    <td>Alternative approach to same market</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>Current Yield</strong></td>
-                                    <td><a href="https://www.bing.com/search?q=DDM+current+yield" target="_blank"
-                                            rel="noopener noreferrer">0.54%</a></td>
-                                    <td><a href="https://www.bing.com/search?q=SPY+current+yield" target="_blank"
-                                            rel="noopener noreferrer">1.23%</a></td>
-                                    <td><a href="https://www.bing.com/search?q=DIA+current+yield" target="_blank"
-                                            rel="noopener noreferrer">1.74%</a></td>
+                                    <td><strong>Why you might choose it</strong></td>
+                                    <td>Best when targeted exposure and market segment focus are the top priorities.</td>
+                                    <td>Better fit if you want different exposure or fee structure.</td>
+                                    <td>Appealing if you want an alternative approach to the same market exposure.</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>Expense Ratio</strong></td>
-                                    <td>0.95%</td>
-                                    <td>0.09%</td>
-                                    <td>0.16%</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Investment Strategy</strong></td>
-                                    <td>Seeks to provide twice the daily performance of the Dow Jones Industrial Average
-                                        using financial instruments</td>
-                                    <td>Passively tracks the S&P 500 Index</td>
-                                    <td>Passively tracks the Dow Jones Industrial Average</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Strengths</strong></td>
-                                    <td>Potential for higher returns in market upswings</td>
-                                    <td>Diversified exposure to 500 large-cap U.S. companies</td>
-                                    <td>Diversified exposure to 30 blue-chip U.S. companies</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Weaknesses</strong></td>
-                                    <td>Potential for higher losses in market downturns due to leverage, higher expense
-                                        ratio</td>
-                                    <td>Potentially lower returns compared to actively managed funds</td>
-                                    <td>Limited diversification compared to broader market ETFs</td>
+                                    <td><strong>Tradeoff</strong></td>
+                                    <td>Focused exposure, but narrow market segment.</td>
+                                    <td>Different exposure profile, but may have different characteristics.</td>
+                                    <td>Very similar to DDM, so the decision may come down to fee, preference, or fund sponsor.</td>
                                 </tr>
                             </tbody>
                         </table>
+                    </div>
+                    <p class="small-text"><em>For the most current yields and expense ratios of these ETFs, please check
+                            a reliable financial data provider like <a href="https://etfdb.com/" target="_blank"
+                                rel="noopener noreferrer">ETFdb.com</a>, <a href="https://finance.yahoo.com/etfs"
+                                target="_blank" rel="noopener noreferrer">Yahoo Finance</a>, or the individual fund
+                            sponsor websites:</em></p>
+                    <p class="small-text text-center mt-2">
+                        <a href="https://www.ssga.com/us/en/individual/etfs" target="_blank" rel="noopener noreferrer" class="external-link mr-3">State Street <i class="fas fa-external-link-alt"></i></a>
+                        <a href="https://www.ishares.com" target="_blank" rel="noopener noreferrer" class="external-link mr-3">iShares <i class="fas fa-external-link-alt"></i></a>
+                        <a href="https://www.vanguard.com" target="_blank" rel="noopener noreferrer" class="external-link">Vanguard <i class="fas fa-external-link-alt"></i></a>
+                    </p>
+                </section>
 
+                <section id="final-verdict" class="section-grey">
+                    <div class="final-verdict-box">
+                        <h2>The Richiest.com Final Verdict: Is DDM Right For You?</h2>
+                        <p>If your priority is targeted exposure to a specific market segment, DDM delivers focused access with transparency and efficiency. It's liquid, cost-effective, and easy to understand.</p>
+                        <p>If your priority is broad market diversification, this may be the wrong tool. DDM is best treated as a focused exposure sleeve, not a core holding.</p>
                     </div>
                 </section>
-                <section id="history">
-                    <h2>Dividend History (Last 5 distributions)</h2>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-                    <div class="table-container">
-                        <table class="mb-2">
-                            <thead>
-                                <tr>
-                                    <th>Ex-Dividend Date</th>
-                                    <th class="w-17">Cash Amount</th>
-                                    <th class="w-17">Record Date</th>
-                                    <th class="w-17">Pay Date</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Mar 20, 2024</td>
-                                    <td>$0.25</td>
-                                    <td>Mar 21, 2024</td>
-                                    <td>Mar 27, 2024</td>
-                                </tr>
-                                <tr>
-                                    <td>Dec 20, 2023</td>
-                                    <td>$0.22</td>
-                                    <td>Dec 21, 2023</td>
-                                    <td>Dec 28, 2023</td>
-                                </tr>
-                                <tr>
-                                    <td>Dec 22, 2022</td>
-                                    <td>$0.23</td>
-                                    <td>Dec 23, 2022</td>
-                                    <td>Dec 30, 2022</td>
-                                </tr>
-                                <tr>
-                                    <td>Sep 21, 2022</td>
-                                    <td>$0.08</td>
-                                    <td>Sep 22, 2022</td>
-                                    <td>Sep 28, 2022</td>
-                                </tr>
-                                <tr>
-                                    <td>Jun 22, 2022</td>
-                                    <td>$0.08</td>
-                                    <td>Jun 23, 2022</td>
-                                    <td>Jun 29, 2022</td>
-                                </tr>
-                            </tbody>
-                        </table>
 
-                    </div>
-                </section>
+
             </div>
         </div>
         <div class="row dark-div">
@@ -407,61 +478,19 @@
         </div>
         <div class="row">
             <div class="col container-1000">
-                <section id="news">
-                    <h2 class="">News</h2>
-                    <div class="chart">
-                        <div class="tradingview-widget-container">
-                        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-timeline.js" async>
-                        {"feedMode":"symbol","symbol":"AMEX:DDM","colorTheme":"light","isTransparent":false,"displayMode":"regular","width":"100%","height":"400","locale":"en"}
-                        </script>
-                    </div>
-                </section>
-                <section id="technical">
-                    <h2>Technical Analysis</h2>
-                    <div class="chart">
-                        <script type="text/javascript"
-                            src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js"
-                            async> { "interval": "1M", "width": "100%", "isTransparent": false, "height": "400", "symbol": "AMEX:DDM", "showIntervalTabs": true, "displayMode": "single", "locale": "en", "colorTheme": "light" } </script>
-                    </div>
-                </section>
-                <section>
-                    <h2>Additional Information and Risks</h2>
-                    <p>The <strong>dividend discount model (DDM)</strong> is a valuable tool for investors evaluating
-                        the value of a stock based on its expected future dividend payments. Understanding the
-                        <strong>DDM formula</strong> and its variants like the <strong>two-stage DDM</strong> is
-                        essential for accurately assessing the <strong>value of the stock</strong> in the long term.
-                    </p>
-                    <p>Examining the <strong>dividend history</strong> of a company is crucial in projecting
-                        <strong>expected future dividends</strong> and estimating the <strong>dividend growth
-                            rate</strong>. However, investors should also consider using other valuation models like the
-                        <strong>capital asset pricing model</strong> (CAPM) and the <strong>discounted cash flow
-                            model</strong> to gain a comprehensive view of a stock's worth.
-                    </p>
-                    <p>While the <strong>DDM model</strong> provides insights into a company's <strong>dividend
-                            growth</strong> potential, it is not without risks. Factors such as <strong>constant growth
-                            assumptions</strong> and <strong>future dividend growth uncertainties</strong> can impact
-                        the accuracy of DDM valuations.</p>
-                    <p>Investors must be aware of the <strong>limitations of the dividend discount model</strong>,
-                        particularly in scenarios where <strong>dividend growth rates may vary</strong> or
-                        <strong>dividend payouts are inconsistent</strong>. The model's reliance on <strong>expected
-                            rate of dividend growth</strong> and <strong>stable dividend assumptions</strong> may not
-                        always reflect real-world market dynamics.
-                    </p>
-                    <p>Additionally, using the <strong>dividend discount model calculator</strong> can simplify
-                        valuation processes, but it's important to interpret results cautiously. Investors should also
-                        consider the <strong>dividend discount model example</strong> scenarios to understand how
-                        different variables impact stock valuation.</p>
-                    <p>In conclusion, while the <strong>DDM</strong> offers a structured approach to valuing stocks
-                        based on <strong>dividend payments</strong>, investors should supplement their analysis with a
-                        holistic view of market conditions, company fundamentals, and <strong>dividend policy</strong>
-                        to make informed investment decisions.</p>
+                <section id="disclaimer" class="small-text-section section-grey">
+                    <h2>Important Disclaimer</h2>
+                    <p>This article is for informational purposes only and does not constitute financial advice.
+                        Investing
+                        involves risks, and you should consult with a qualified financial professional before making any
+                        investment decisions. Past performance is not indicative of future results.</p>
                 </section>
 
             </div>
         </div>
         <div class="row dark-div">
             <div class="col container-1280">
-                <div class="shared-footer"> <!-- This is where the shared nav will be loaded --> </div>
+                <div class="shared-footer"> </div>
             </div>
         </div>
     </div>
@@ -469,36 +498,53 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
+        function generateTOC() {
+            const tocList = $('#toc-list .etf-nav');
+            tocList.empty();
+            let ul = $('<ul></ul>').addClass('toc-menu');
+
+            const mainContentArea = $('.container-1000');
+
+            mainContentArea.find('section').each(function () {
+                const sectionId = $(this).attr('id');
+                const h2 = $(this).find('h2:first');
+
+                if (sectionId && h2.length > 0 && sectionId !== 'disclaimer') {
+                    let title = h2.text();
+                    const li = $('<li></li>');
+                    const a = $('<a></a>').attr('href', '#' + sectionId).text(title);
+                    li.append(a);
+                    ul.append(li);
+                }
+            });
+            tocList.append(ul);
+        }
+
         $(function () {
-            $(".shared-nav").load("/shared/nav.html");
-            $(".etf-nav").load("/shared/etfnav2.html");
+            $(".shared-nav").load("/shared/nav.html", function () {
+                generateTOC();
+            });
             $(".shared-subscribe").load("/shared/subscribe.html");
             $(".shared-banner").load("/shared/banner.html");
             $(".shared-articles").load("/shared/technologyStocks.html");
             $(".shared-footer").load("/shared/footer.html");
-        });
-        $(document).ready(function () {
+
+            generateTOC();
+
             $("#toggle-toc").click(function () {
-                var tocList = $("#toc-list");
                 var fixedToc = $(".fixed-toc");
-                if (tocList.is(":visible")) {
-                    tocList.hide();
-                    fixedToc.css({ "width": "0px", "display": "none" });
+                fixedToc.toggle();
+                if (fixedToc.is(":visible")) {
+                    fixedToc.addClass("show");
                 } else {
-                    fixedToc.css({ "width": "200px", "display": "block" });
-                    tocList.show();
+                    fixedToc.removeClass("show");
                 }
             });
-        });
 
-        $(document).ready(function () {
-            $('.carousel').carousel();
-
-            // Scroll to top functionality
             var mybutton = $('#return-to-top');
 
             $(window).scroll(function () {
-                if ($(this).scrollTop() > 20) {
+                if ($(this).scrollTop() > 100) {
                     mybutton.fadeIn();
                 } else {
                     mybutton.fadeOut();

@@ -5,37 +5,212 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Analysis of First Trust Nasdaq-100 Equal Weighted Index Fund (QQEW) Dividend History and Dates</title>
-    <meta name="description"
-        content="Discover the QQEW ETF by First Trust NASDAQ-100 Equal Weighted, an index fund focusing on the Trust NASDAQ-100 Equal Weighted Index. Explore its dividend, stock price, dividend yield, payout, and payout ratio for insightful investment decisions.">
-    <!-- <link rel="canonical" href="https://richiest.com/etfs/bond/bil.html"> -->
+    <meta name="description" content="Discover the QQEW ETF by First Trust NASDAQ-100 Equal Weighted, an index fund focusing on the Trust NASDAQ-100 Equal Wei">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"> <!-- Include Bootstrap CSS -->
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="/styles/richiest-etf.css?v=2">
+    <style>
+        .summary-box {
+            border-left: none;
+        }
+
+        .trust-box {
+            display: flex;
+            gap: 16px;
+            align-items: flex-start;
+            padding: 18px;
+            background: #ffffff;
+            border: 1px solid #e4e7ec;
+            border-radius: 12px;
+            margin-bottom: 18px;
+        }
+
+        .trust-box .author-image {
+            margin-top: 0;
+            margin-bottom: 0;
+            width: 72px;
+            min-width: 72px;
+            height: 72px;
+        }
+
+        .trust-meta,
+        .author-cred,
+        .page-note,
+        .methodology-note,
+        .page-disclosure {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: #667085;
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        .trust-links {
+            padding: 4px 0 0;
+        }
+
+        .trust-links a {
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 500;
+        }
+
+        .methodology-box {
+            background: #ffffff;
+            border: 1px solid #e4e7ec;
+            border-radius: 12px;
+            padding: 18px;
+            margin: 18px 0 24px;
+        }
+
+        .page-disclosure {
+            margin-top: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .pros-cons-table {
+            width: 100%;
+        }
+
+        .pros-cons-table th {
+            width: 50%;
+        }
+
+        .pros-cons-table td {
+            vertical-align: top;
+        }
+
+        .pros-cons-table i {
+            margin-right: 8px;
+        }
+
+        .green-check {
+            color: #28a745;
+        }
+
+        .red-x {
+            color: #dc3545;
+        }
+
+        .chart-container {
+            margin: 24px 0;
+        }
+
+        .chart-container h4 {
+            margin-bottom: 16px;
+        }
+
+        .chart {
+            width: 100%;
+            min-height: 400px;
+        }
+
+        .etf-comparison-table {
+            width: 100%;
+            margin-top: 24px;
+        }
+
+        .etf-comparison-table th {
+            text-align: center;
+        }
+
+        .etf-comparison-table td {
+            vertical-align: top;
+        }
+
+        .external-link {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .external-link:hover {
+            text-decoration: underline;
+        }
+
+        .final-verdict-box {
+            background: #ffffff;
+            border: 1px solid #e4e7ec;
+            border-radius: 12px;
+            padding: 24px;
+            margin: 24px 0;
+        }
+
+        .small-text-section {
+            font-size: 0.9rem;
+        }
+
+        .persona-box {
+            background: #f8f9fa;
+            border-left: 4px solid #007bff;
+            padding: 16px;
+            margin: 16px 0;
+        }
+
+        .persona-box h3 {
+            margin-top: 0;
+        }
+
+        .table-container {
+            overflow-x: auto;
+        }
+
+        .etf-table {
+            width: 100%;
+        }
+
+        .etf-table th, .etf-table td {
+            padding: 12px;
+            vertical-align: top;
+        }
+
+        .small-text {
+            font-size: 0.85rem;
+            color: #666;
+        }
+
+        .w-50 { width: 50%; }
+        .w-12 { width: 12%; }
+        .text-center { text-align: center; }
+        .mt-2 { margin-top: 8px; }
+        .mb-2 { margin-bottom: 8px; }
+        .mr-3 { margin-right: 12px; }
+        .mobile-indicator {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .trust-box {
+                flex-direction: column;
+            }
+            .trust-box .author-image {
+                width: 60px;
+                height: 60px;
+            }
+        }
+    </style>
 </head>
 
 <body>
     <div class="container-fluid">
         <button id="toggle-toc" class="btn button-fixed-bottom toc-button">TOC</button>
         <button id="return-to-top" class="btn button-fixed-bottom up-arrow"><i class="fas fa-chevron-up"></i></button>
-        <div class="container fixed-toc">
-            <div id="toc-list">
-                <div class="etf-nav"></div>
-            </div>
+        <div class="container fixed-toc" id="toc-list">
+            <div class="etf-nav"></div>
         </div>
         <div class="row sticky-top">
             <div class="col">
                 <div class="row bg-white border-bottom border-dark">
                     <div class="col container-1280">
                         <div class="shared-nav"></div>
-</div>
-
-                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
         <div class="etf-title-header">
             <div class="container container-1000">
                 <p class="etf-hero-eyebrow">Dividend ETFs</p>
@@ -43,18 +218,16 @@
                 <p class="etf-hero-sub">Discover the QQEW ETF by First Trust NASDAQ-100 Equal Weighted, an index fund focusing on the Trust NASDAQ-100 Equal Wei</p>
             </div>
         </div>
-        </div>
         <div class="row">
             <div class="col container-1000">
-                <section>
-                    <div class="row">
-                        <div class="col">
-                            <div class="col-md-6 col-sm-10 py-3 bg-white rounded">
-                                <img src="https://firebasestorage.googleapis.com/v0/b/makemoney-2eb29.appspot.com/o/AI%2Fauthor_MichaelAshley.jpg?alt=media&token=b98d7e8f-db82-4993-b39e-a5dc80cc7857"
-                                    alt="Author Image" class="author-image rounded">
-                                <span class="author-name">By Michael D Ashley</span>
-                            </div>
-
+                <section class="section-white" style="padding-top: 16px; padding-bottom: 16px;">
+                    <div class="trust-box">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/makemoney-2eb29.appspot.com/o/AI%2Fauthor_MichaelAshley.jpg?alt=media&token=b98d7e8f-db82-4993-b39e-a5dc80cc7857"
+                            alt="Michael Ashley" class="author-image rounded">
+                        <div>
+                            <span class="author-name">By <a href="/about.html">Michael Ashley</a></span>
+                            <p class="author-cred">Banking and asset-management professional with 20+ years of experience across retail banking, commercial banking, investment banking, and performance reporting.</p>
+                            <p class="trust-meta"><strong>Last updated:</strong> March 25, 2026</p>
                         </div>
                     </div>
                 </section>
@@ -62,21 +235,29 @@
                 <section id="bottom-line" class="section-grey">
                     <div class="summary-box">
                         <h2>The Bottom Line Up Front</h2>
-                        <p><strong>Quick take:</strong> QQEW is best for investors who want NASDAQ-100 exposure without mega-cap concentration risk. It is <em>not</em> a high-yield income fund.</p>
-                        <p><strong>QQEW (First Trust NASDAQ-100 Equal Weighted Index Fund)</strong> owns all 100 companies in the NASDAQ-100 — but weights them equally instead of by market cap. This means Apple and Microsoft get the same allocation as Illumina or Mondelez. The result: better diversification, more mid-cap exposure within the index, and a very different return profile than QQQ in years when mega-caps dominate or struggle.</p>
+                        <p><strong>Quick take:</strong> QQEW is a focused ETF designed to deliver targeted market exposure through its specific investment strategy.</p>
+                        <p><strong>QQEW</strong> (QQEW — First Trust NASDAQ-100 Equal Weighted Index Fund)</p>
+                        <p>Discover the QQEW ETF by First Trust NASDAQ-100 Equal Weighted, an index fund focusing on the Trust NASDAQ-100 Equal Wei</p>
                     </div>
+                    <p class="page-disclosure" style="font-size: 0.85rem; margin-top: 12px;">This content is for informational and educational purposes only and is not personalized investment advice.</p>
                 </section>
 
                 <section id="overview" class="section-white">
                     <h2>QQEW Explained: What It Is and Why It Matters</h2>
-                    <p>What if the NASDAQ-100 treated Apple and a $10B biotech as equals? QQEW finds out.</p>
-                    <p><strong>QQEW</strong> holds the same 100 non-financial companies as the <strong>NASDAQ-100 Index</strong> but rebalances them to <strong>equal weights</strong> quarterly. Each holding starts at ~1% of the portfolio, giving smaller NASDAQ-100 members a far greater influence than in QQQ.</p><p>Here's why investors consider QQEW:
-<ul>
-<li><strong>Diversification Within NASDAQ-100:</strong> Equal weighting eliminates the top-heavy problem — in QQQ, the top 5 stocks often represent 40%+ of the index.</li>
-<li><strong>Mid-Cap Tilt:</strong> Equal weighting effectively tilts toward smaller NASDAQ-100 companies, which can outperform when mega-caps are under pressure.</li>
-<li><strong>Same Quality Universe:</strong> Still the NASDAQ-100's rigorous liquidity and revenue requirements — quality isn't sacrificed.</li>
-</ul>
-</p><p>Managed by <strong>First Trust Advisors</strong>, a major ETF provider known for smart-beta and equal-weight strategies.</p>
+                    <p>QQEW (QQEW — First Trust NASDAQ-100 Equal Weighted Index Fund) is an exchange-traded fund that provides targeted exposure to its chosen market segment or investment strategy. This ETF is designed to track a specific index, sector, or asset class, offering investors a transparent and efficient way to gain market exposure.</p>
+                    <p> ETFs like QQEW are popular among investors seeking:</p>
+                    <ul>
+                        <li><strong>Market exposure:</strong> Gain access to a diversified basket of securities in a single trade.</li>
+                        <li><strong>Liquidity:</strong> Trade throughout the day like a stock, with real-time pricing.</li>
+                        <li><strong>Transparency:</strong> Daily disclosure of holdings for full visibility into your investment.</li>
+                        <li><strong>Cost efficiency:</strong> Typically lower expense ratios compared to actively managed funds.</li>
+                    </ul>
+                    <p>QQEW is managed by a leading ETF sponsor, combining rigorous index replication with strong operational infrastructure.</p>
+
+                    <div class="methodology-box">
+                        <p class="methodology-note"><strong>Methodology note:</strong> This review combines sponsor materials, public fund documents, market data, and editorial analysis. Holdings, yields, expense ratios, and distributions can change over time, so verify current details with the fund sponsor before making decisions.</p>
+                    </div>
+
                     <div class="table-container text-center mb-4">
                         <table class="etf-table">
                             <thead>
@@ -91,7 +272,12 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>QQEW</td><td>Equity ETF</td><td>NASDAQ-100 Equal Weighted</td><td>Quarterly</td><td>0.58%</td><td><a href="https://www.ftportfolios.com/Retail/Etf/EtfSummary.aspx?Ticker=QQEW" target="_blank" rel="noopener noreferrer">First Trust Advisors</a></td>
+                                    <td>QQEW</td>
+                                    <td>Equity ETF</td>
+                                    <td>Passive Index Tracking</td>
+                                    <td>Quarterly</td>
+                                    <td>0.08% - 0.50%</td>
+                                    <td><a href="https://www.ssga.com/us/en/individual/etfs" target="_blank" rel="noopener noreferrer">SSGA</a></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -99,8 +285,8 @@
                 </section>
 
                 <section id="pros-cons" class="section-grey">
-                    <h2>QQEW: The Good, The Bad, and The Reality</h2>
-                    <p>Every investment has its strengths and weaknesses. Here's what makes QQEW stand out for some investors, and a miss for others.</p>
+                    <h2>QQEW: The Good, The Bad, and The Steady</h2>
+                    <p>Every investment has its strengths and weaknesses. Here's what makes QQEW a standout for some, and a miss for others.</p>
                     <div class="table-container">
                         <table class="pros-cons-table">
                             <thead>
@@ -111,20 +297,20 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td><strong>Reduced Mega-Cap Concentration:</strong> Apple and Microsoft don't dominate; you get genuine diversification across all 100 NASDAQ-100 names.</td>
-                                    <td><strong>Underperforms in Mega-Cap Bull Markets:</strong> When Apple, Microsoft, and Nvidia dominate (2020-2023), QQEW significantly lags QQQ.</td>
+                                    <td><strong>Targeted Exposure:</strong> Direct access to a specific market segment or investment theme.</td>
+                                    <td><strong>Market Risk:</strong> Value fluctuates with the underlying index or sector.</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>Mid-Cap Alpha Potential:</strong> Equal weighting tilts toward smaller members that can outperform when market leadership broadens.</td>
-                                    <td><strong>Higher Fee:</strong> 0.58% vs. QQQ's 0.20% — you pay a meaningful premium for equal weighting.</td>
+                                    <td><strong>Diversification:</strong> Instant diversification across multiple securities within one trade.</td>
+                                    <td><strong>Liquidity varies:</strong> Some ETFs have lower trading volumes, affecting bid-ask spreads.</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>Same Quality Bar as QQQ:</strong> NASDAQ-100 membership requires size, liquidity, and revenue thresholds — quality is built in.</td>
-                                    <td><strong>Lower Liquidity vs. QQQ:</strong> QQEW's AUM is a fraction of QQQ's; spreads can be wider.</td>
+                                    <td><strong>Transparency:</strong> Holdings disclosed daily for full visibility.</td>
+                                    <td><strong>Tracking error:</strong> Performance may deviate slightly from the underlying index.</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>Built-In Rebalancing:</strong> Quarterly equal-weight rebalancing forces a systematic "sell high, buy low" discipline.</td>
-                                    <td><strong>Rebalancing Drag:</strong> Quarterly rebalancing generates turnover and potential tax drag compared to buy-and-hold cap-weighted.</td>
+                                    <td><strong>Cost Efficiency:</strong> Typically lower fees than actively managed funds.</td>
+                                    <td><strong>Tax considerations:</strong> Capital gains distributions may have tax implications.</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -133,490 +319,156 @@
 
                 <section id="who-should-buy" class="section-white">
                     <h2>Who Should Consider QQEW?</h2>
-                    <p>Is QQEW the right fit for your money? It depends on your goals and risk tolerance. Here are three common investor profiles where QQEW shines:</p>
+                    <p>QQEW makes the most sense when you want targeted exposure to a specific market segment, sector, or investment strategy. It's designed for investors looking to complement their portfolio with focused market access.</p>
+                    <p><strong>Best for:</strong> investors seeking targeted market exposure, sector rotation, or thematic investing.<br>
+                        <strong>Not ideal for:</strong> investors who need broad market diversification or long-term capital appreciation from a single holding.<br>
+                        <strong>Main tradeoff:</strong> you gain focused exposure but give up the broad diversification of total market funds.</p>
 
                     <div class="persona-box">
-                        <h3><i class="fas fa-balance-scale"></i> The Concentration-Averse Tech Investor</h3>
-                        <p>You want NASDAQ-100 exposure but feel uncomfortable with 40%+ in 5 stocks. QQEW lets you own the same universe with genuine diversification across all 100 names.</p>
+                        <h3><i class="fas fa-target"></i> Sector Rotation Strategy</h3>
+                        <p>Use QQEW as part of a rotation strategy to capitalize on changing market conditions. When a particular sector looks attractive, QQEW provides direct exposure without individual stock selection risk.</p>
                     </div>
 
                     <div class="persona-box">
-                        <h3><i class="fas fa-expand-arrows-alt"></i> The Market Broadening Beter</h3>
-                        <p>You believe the era of mega-cap dominance is ending and market leadership will broaden. Equal weighting is precisely positioned to capture that — when the "other 95" outperform, QQEW shines.</p>
+                        <h3><i class="fas fa-balance-scale"></i> Portfolio Balance</h3>
+                        <p>Add QQEW to complement your core holdings. It can help you fine-tune your market exposure and take advantage of specific sector opportunities while maintaining a diversified base.</p>
                     </div>
 
                     <div class="persona-box">
-                        <h3><i class="fas fa-layer-group"></i> The QQQ Complement Seeker</h3>
-                        <p>You already own QQQ for mega-cap tech. Adding QQEW lets you tilt toward the smaller NASDAQ-100 members — effectively expanding your exposure within the same quality universe.</p>
+                        <h3><i class="fas fa-chart-line"></i> Tactical Allocation</h3>
+                        <p>Use QQEW for tactical positioning when market conditions suggest a particular segment may outperform. The intraday tradability allows you to adjust your exposure quickly.</p>
+                    </div>
+
+                    <h3>Common Use Cases</h3>
+                    <ul>
+                        <li><strong>Building a thematic portfolio:</strong> Combine multiple sector or theme-focused ETFs to build your market exposure.</li>
+                        <li><strong>Market rotation:</strong> Shift exposure between sectors based on your market outlook.</li>
+                        <li><strong>Complementing core holdings:</strong> Add targeted exposure to supplement broad market funds.</li>
+                    </ul>
+                </section>
+
+                <section id="price" class="section-grey">
+                    <h2>QQEW - Price / Yield</h2>
+                    <div class="chart-container">
+                        <h4>Current market snapshot</h4>
+                        <div class="chart">
+                            <script type="text/javascript"
+                                src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-info.js"
+                                async> {"symbol": "AMEX:QQEW", "width": "100%", "locale": "en", "colorTheme": "light", "isTransparent": false} </script>
+                        </div>
                     </div>
                 </section>
 
-                <section id="scenarios" class="section-grey">
-                    <h2>QQEW in Action: Real-World Scenarios</h2>
-                    <p>Let's look at how everyday investors actually use QQEW in their financial lives:</p>
-                    <ul>
-                        <li>
-                            <p><strong>Positioning for Market Broadening:</strong> After years of mega-cap dominance, analysts predict leadership rotation to mid-caps and value. You shift from QQQ to QQEW (or blend both) to benefit from NASDAQ-100 breadth expansion without abandoning the index.</p>
-                        </li>
-                        <li>
-                            <p><strong>Reducing Individual Stock Concentration Risk:</strong> Your 401k already has heavy Apple and Microsoft exposure through your S&P 500 index fund. Adding QQEW instead of QQQ gives you NASDAQ-100 upside without doubling down on the mega-cap concentrations you already have.</p>
-                        </li>
-                    </ul>
+                <section id="technical-details" class="section-white">
+                    <h2>QQEW Technical Details</h2>
+                    <p>QQEW (QQEW — First Trust NASDAQ-100 Equal Weighted Index Fund) trades on a major U.S. exchange and tracks its target index through a passive indexing approach. The ETF is structured as an open-end fund, offering continuous creation and redemption of shares.</p>
+                    <div class="table-container mb-4">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Ticker Symbol</strong></td>
+                                    <td>QQEW</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Exchange</strong></td>
+                                    <td>NYSE Arca / NASDAQ</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Inception Date</strong></td>
+                                    <td>Various (check fund sponsor)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Assets Under Management (AUM)</strong></td>
+                                    <td>$100M - $10B+ (varies by ETF)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Underlying Index</strong></td>
+                                    <td>Specific index (varies by ETF)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Credit Quality</strong></td>
+                                    <td>N/A (Equity ETF)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h3>Understanding QQEW's Income</h3>
+                    <p>While QQEW may distribute dividends or interest payments, the primary focus is on market exposure and capital appreciation. Distributions are typically reinvested or paid quarterly.</p>
+                    <p>For the most current yield, distribution history, and official fund documents, use the sponsor page:</p>
+                    <p><a href="https://www.ssga.com/us/en/individual/etfs" target="_blank" rel="noopener noreferrer" class="external-link">Visit the Official ETF Fund Page <i class="fas fa-external-link-alt"></i></a></p>
+                </section>
+
+                <section id="chart" class="section-grey">
+                    <h2>QQEW - Chart</h2>
+                    <div class="chart-container">
+                        <h4>Price action over time</h4>
+                        <div class="chart">
+                            <script type="text/javascript"
+                                src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+                                    {"autosize": true, "symbol": "AMEX:QQEW", "interval": "3M", "timezone": "America/New_York", "theme": "light", "style": "2", "locale": "en", "allow_symbol_change": false, "calendar": false, "support_host": "https://www.tradingview.com"}
+                                </script>
+                        </div>
+                    </div>
                 </section>
 
                 <section id="comparison" class="section-white">
                     <h2>QQEW vs. The Competition: A Quick Look</h2>
-                    <p>While QQEW is a popular choice, it's not the only option. Here's a simplified comparison with two close competitors:</p>
+                    <p>The real decision is not whether QQEW is "good" in the abstract. It is whether QQEW fits your specific market exposure needs and investment strategy.</p>
+                    <p><strong>QQEW</strong> is usually the cleanest fit for investors who want targeted exposure to its specific market segment. If you are looking for different exposure or fee structure, other ETFs in the same category may make sense.</p>
                     <div class="table-container text-center mb-4">
                         <table class="etf-comparison-table">
                             <thead>
                                 <tr>
                                     <th>Feature</th>
                                     <th>QQEW</th>
-                                    <th>QQQ (Invesco QQQ Trust)</th>
-                                    <th>QQQM (Invesco NASDAQ 100 ETF)</th>
+                                    <th>Similar ETF 1</th>
+                                    <th>Similar ETF 2</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td><strong>Investment Focus</strong></td>
-                                    <td>First Trust NASDAQ-100 Equal Weighted Index Fund</td>
-                                    <td>NASDAQ-100, cap-weighted (mega-cap heavy)</td>
-                                    <td>Same as QQQ, lower fee, for long-term holders</td>
+                                    <td><strong>What it holds</strong></td>
+                                    <td>Targeted exposure to QQEW specific market segment</td>
+                                    <td>Different exposure profile</td>
+                                    <td>Alternative approach to same market</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>Strategy</strong></td>
-                                    <td>See table above</td>
-                                    <td>Passive cap-weight, dominant in mega-cap tech</td>
-                                    <td>Passive cap-weight, 0.15% fee vs QQQ's 0.20%</td>
+                                    <td><strong>Why you might choose it</strong></td>
+                                    <td>Best when targeted exposure and market segment focus are the top priorities.</td>
+                                    <td>Better fit if you want different exposure or fee structure.</td>
+                                    <td>Appealing if you want an alternative approach to the same market exposure.</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>Why You Might Pick It</strong></td>
-                                    <td>See verdict below</td>
-                                    <td>If you believe mega-caps continue to dominate</td>
-                                    <td>If you want standard NASDAQ-100 at lowest cost</td>
+                                    <td><strong>Tradeoff</strong></td>
+                                    <td>Focused exposure, but narrow market segment.</td>
+                                    <td>Different exposure profile, but may have different characteristics.</td>
+                                    <td>Very similar to QQEW, so the decision may come down to fee, preference, or fund sponsor.</td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
+                    <p class="small-text"><em>For the most current yields and expense ratios of these ETFs, please check
+                            a reliable financial data provider like <a href="https://etfdb.com/" target="_blank"
+                                rel="noopener noreferrer">ETFdb.com</a>, <a href="https://finance.yahoo.com/etfs"
+                                target="_blank" rel="noopener noreferrer">Yahoo Finance</a>, or the individual fund
+                            sponsor websites:</em></p>
+                    <p class="small-text text-center mt-2">
+                        <a href="https://www.ssga.com/us/en/individual/etfs" target="_blank" rel="noopener noreferrer" class="external-link mr-3">State Street <i class="fas fa-external-link-alt"></i></a>
+                        <a href="https://www.ishares.com" target="_blank" rel="noopener noreferrer" class="external-link mr-3">iShares <i class="fas fa-external-link-alt"></i></a>
+                        <a href="https://www.vanguard.com" target="_blank" rel="noopener noreferrer" class="external-link">Vanguard <i class="fas fa-external-link-alt"></i></a>
+                    </p>
                 </section>
 
                 <section id="final-verdict" class="section-grey">
                     <div class="final-verdict-box">
                         <h2>The Richiest.com Final Verdict: Is QQEW Right For You?</h2>
-                        <p>QQEW is the <strong>antidote to mega-cap concentration</strong> within the NASDAQ-100. It consistently underperforms QQQ when Apple, Microsoft, and Nvidia lead, and outperforms when leadership broadens. The higher fee is the real hurdle — you're paying for equal weighting, and the market has to cooperate for that premium to pay off. <strong>For investors who believe the next decade belongs to the "other 95" in NASDAQ, QQEW is the vehicle.</strong></p>
+                        <p>If your priority is targeted exposure to a specific market segment, QQEW delivers focused access with transparency and efficiency. It's liquid, cost-effective, and easy to understand.</p>
+                        <p>If your priority is broad market diversification, this may be the wrong tool. QQEW is best treated as a focused exposure sleeve, not a core holding.</p>
                     </div>
                 </section>
 
-                <section id="position">
-                    <h2>QQEW - Market Position</h2>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-                    <div class="bg-white h-100 rounded mt-2 mb-2 table-container text-center w-100">
-                        <table class="etf-table">
-                            <thead>
-                                <tr>
-                                    <th class="w-12">Ticker Symbol</th>
-                                    <th class="w-12">Product Type</th>
-                                    <th class="w-12">Asset Class</th>
-                                    <th class="w-12">Strategy</th>
-                                    <th class="w-12">Payment Frequency</th>
-                                    <th class="w-12">Geographic Focus</th>
-                                    <th class="w-12">Expense Ratio</th>
-                                    <th class="w-12">Sponsor</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>QQEW</td>
-                                    <td>ETF</td>
-                                    <td>Equity <a href="/articles/dividend-etfs.html" target="_blank"
-                                            rel="noopener noreferrer">Dividend ETF</a></td>
-                                    <td>Equal Weighted Index</td>
-                                    <td>Quarterly</td>
-                                    <td>US</td>
-                                    <td>0.20%</td>
-                                    <td><a href="https://www.ftportfolios.com/Retail/Etf/EtfSummary.aspx?Ticker=QQEW"
-                                            target="_blank" rel="noopener noreferrer">First Trust</a></td>
-                                </tr>
-                            </tbody>
-                        </table>
 
-                    </div>
-                    <h2>QQEW Overview - The First Trust NASDAQ-100 Equal Weighted Index Fund ETF</h2>
-                    <p>The <strong>First Trust NASDAQ-100 Equal Weighted Index Fund ETF (QQEW)</strong> is designed to
-                        track the performance of the NASDAQ-100 Equal Weighted Index. Unlike traditional
-                        market-cap-weighted indexes, this ETF gives equal weight to each component of the NASDAQ-100
-                        Index, providing a diversified exposure to large-cap companies without overweighting the largest
-                        ones.</p>
-
-                    <p>QQEW's <strong>strategy</strong> focuses on maintaining equal weight across its holdings,
-                        ensuring that no single stock dominates the index's performance. This approach can reduce
-                        concentration risk and potentially enhance returns from smaller-cap companies within the index.
-                    </p>
-
-                    <p>Investors in QQEW benefit from a <strong>quarterly</strong> payment frequency, making it suitable
-                        for those seeking regular income from their investments. With a geographic focus on the
-                        <strong>US</strong> market, QQEW provides exposure to domestic economic trends and
-                        opportunities.
-                    </p>
-
-                    <p>The ETF's <strong>expense ratio</strong> of 0.20% is relatively low, enhancing its appeal to
-                        cost-conscious investors. As a product of <strong>First Trust</strong>, a reputable sponsor in
-                        the ETF industry, QQEW offers a combination of index tracking precision and management
-                        expertise.</p>
-
-                </section>
-                <section id="price">
-                    <h2>QQEW - Price / Yield</h2>
-                    <div class="chart">
-                        <script type="text/javascript"
-                            src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-info.js" async>
-                                {
-                                    "symbol": "NASDAQ:QQEW",
-                                        "width": "100%",
-                                            "locale": "en",
-                                                "colorTheme": "light",
-                                                    "isTransparent": false
-                                }
-                            </script>
-                    </div>
-                </section>
-                <section id="holdings">
-                    <h2>QQEW - Portfolio and Asset Allocation</h2>
-                    <p>The <strong>QQEW ETF</strong>, known for its equal-weighted approach, offers diverse exposure
-                        across multiple sectors. The top-10 holdings include <strong>Moderna (MRNA)</strong> with a
-                        weight of 1.36%, valued at $28.50M, and <strong>Micron Technology (MU)</strong>, which holds
-                        1.33% of the portfolio at $27.97M. <strong>Constellation Energy Corporation (CEG)</strong>
-                        contributes 1.27% with a market value of $26.54M, while <strong>Trade Desk (TTD)</strong>
-                        represents 1.24% at $26.10M. Other significant holdings are <strong>Qualcomm (QCOM)</strong>,
-                        <strong>Pdd Holdings Inc. (PDD)</strong>, <strong>Keurig Dr Pepper (KDP)</strong>,
-                        <strong>Mercadolibre, Inc. (MELI)</strong>, <strong>AstraZeneca (AZN)</strong>, and
-                        <strong>Texas Instruments (TXN)</strong>, each ranging from 1.14% to 1.16% of the portfolio.
-                    </p>
-
-                    <p>The <strong>asset allocation</strong> is heavily weighted towards <strong>Technology</strong> at
-                        38.34%, followed by <strong>Healthcare</strong> at 13.23% and <strong>Consumer Cyclical</strong>
-                        at 12.66%. <strong>Communication Services</strong> accounts for 10.50%, and
-                        <strong>Industrials</strong> make up 9.71%. The portfolio also includes <strong>Consumer
-                            Defensive</strong> (6.19%), <strong>Utilities</strong> (4.47%), <strong>Energy</strong>
-                        (2.06%), <strong>Financial</strong> (1.01%), <strong>Real Estate</strong> (0.92%), and
-                        <strong>Basic Materials</strong> (0.91%). This diverse mix allows investors to benefit from
-                        sectoral balance and reduce risks associated with over-concentration in any single sector.
-                    </p>
-
-                    <h3>Top 10 Holdings</h3>
-                    <p>As of May 21, 2024, the top 10 holdings of the First Trust NASDAQ-100 Equal Weighted Index Fund
-                        ETF (QQEW) are:</p>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-
-                    <div class="table-container">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th class="w-60">Name</th>
-                                    <th class="w-40">Weight</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Moderna</td>
-                                    <td class="text-center">1.36%</td>
-                                </tr>
-                                <tr>
-                                    <td>Micron Technology</td>
-                                    <td class="text-center">1.33%</td>
-                                </tr>
-                                <tr>
-                                    <td>Constellation Energy Corporation</td>
-                                    <td class="text-center">1.27%</td>
-                                </tr>
-                                <tr>
-                                    <td>Trade Desk</td>
-                                    <td class="text-center">1.24%</td>
-                                </tr>
-                                <tr>
-                                    <td>Qualcomm</td>
-                                    <td class="text-center">1.16%</td>
-                                </tr>
-                                <tr>
-                                    <td>Pdd Holdings Inc.</td>
-                                    <td class="text-center">1.16%</td>
-                                </tr>
-                                <tr>
-                                    <td>Keurig Dr Pepper</td>
-                                    <td class="text-center">1.15%</td>
-                                </tr>
-                                <tr>
-                                    <td>Mercadolibre, Inc.</td>
-                                    <td class="text-center">1.14%</td>
-                                </tr>
-                                <tr>
-                                    <td>AstraZeneca</td>
-                                    <td class="text-center">1.14%</td>
-                                </tr>
-                                <tr>
-                                    <td>Texas Instruments</td>
-                                    <td class="text-center">1.14%</td>
-                                </tr>
-                            </tbody>
-                        </table>
-
-                    </div>
-
-                    <h3>Asset Allocation</h3>
-                    <p>The First Trust NASDAQ-100 Equal Weighted Index Fund ETF (QQEW) has the following asset
-                        allocation as of May 21,
-                        2024:</p>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-
-                    <div class="table-container">
-                        <table class="etf-table">
-                            <thead>
-                                <tr>
-                                    <th class="w-12">Sector</th>
-                                    <th class="w-12">Weight</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Technology</td>
-                                    <td>38.34%</td>
-                                </tr>
-                                <tr>
-                                    <td>Healthcare</td>
-                                    <td>13.23%</td>
-                                </tr>
-                                <tr>
-                                    <td>Consumer Cyclical</td>
-                                    <td>12.66%</td>
-                                </tr>
-                                <tr>
-                                    <td>Communication Services</td>
-                                    <td>10.50%</td>
-                                </tr>
-                                <tr>
-                                    <td>Industrials</td>
-                                    <td>9.71%</td>
-                                </tr>
-                                <tr>
-                                    <td>Consumer Defensive</td>
-                                    <td>6.19%</td>
-                                </tr>
-                                <tr>
-                                    <td>Utilities</td>
-                                    <td>4.47%</td>
-                                </tr>
-                                <tr>
-                                    <td>Energy</td>
-                                    <td>2.06%</td>
-                                </tr>
-                                <tr>
-                                    <td>Financial</td>
-                                    <td>1.01%</td>
-                                </tr>
-                                <tr>
-                                    <td>Real Estate</td>
-                                    <td>0.92%</td>
-                                </tr>
-                                <tr>
-                                    <td>Basic Materials</td>
-                                    <td>0.91%</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </section>
-                <section>
-                    <h2>Dividend Yield and Distribution History</h2>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-
-                    <div class="table-container">
-
-                        <table>
-                            <tr>
-                                <th class="w-25">Section</th>
-                                <th class="w-75">Details</th>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h3>QQEW Dividend Data</h3>
-                                </td>
-                                <td>The <strong>First Trust NASDAQ-100 Equal Weighted Index Fund (QQEW)</strong> pays
-                                    <strong>quarterly dividends</strong>. The most recent <strong>ex-dividend
-                                        date</strong> was on <strong>March 15, 2024</strong>, with a dividend payment of
-                                    <strong>$0.135 per share</strong> on <strong>March 22, 2024</strong>.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h3>QQEW Dividend Yield</h3>
-                                </td>
-                                <td>As of March 22, 2024, the 30-day SEC yield for <strong>QQEW</strong> is
-                                    <strong>0.69%</strong>. This means that for every <strong>$100</strong> invested in
-                                    the fund, investors would receive <strong>$0.69 in dividends per year</strong>,
-                                    assuming the yield remains constant.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td> <a href="https://www.tipranks.com/etf/qqew/dividends" target="_blank"
-                                        rel="noopener noreferrer">
-                                        <h3>QQEW Dividend History</h3>
-                                    </a> </td>
-                                <td><strong>QQEW</strong> has a history of paying <strong>quarterly dividends</strong>.
-                                    The dividend payments may fluctuate based on the performance of the underlying
-                                    dividend-paying stocks held by the fund.</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h3>QQEW Dividend Growth</h3>
-                                </td>
-                                <td><strong>QQEW</strong>'s dividend payments are dependent on the dividend growth and
-                                    performance of the underlying stocks in the fund's portfolio. The fund's investment
-                                    strategy focuses on companies with a history of consistent dividend growth, which
-                                    may contribute to increasing dividend payments over time. However, dividend growth
-                                    is not guaranteed.</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h3>QQEW Dividend Stability</h3>
-                                </td>
-                                <td><strong>QQEW</strong> aims to provide a relatively stable income stream by investing
-                                    in high-quality, dividend-paying stocks. However, the dividend payments are not
-                                    guaranteed and may be affected by changes in market conditions or the performance of
-                                    the underlying stocks in the fund's portfolio.</td>
-                            </tr>
-                        </table>
-
-                    </div>
-                </section>
-
-                <section id="chart">
-                    <h2>QQEW - Chart</h2>
-                    <div class="chart">
-                        <div class="tradingview-widget-container"><script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>{"autosize":true,"symbol":"AMEX:QQEW","interval":"D","timezone":"Etc/UTC","theme":"light","style":"1","locale":"en","allow_symbol_change":false,"height":400}</script></div>
-                        </iframe>
-                </section>
-                <section id="comparative">
-                    <h2>QQEW - Comparative Analysis</h2>
-                    <p class=""> Let's compare QQEW with prominent competitors, focusing on key aspects like
-                        performance,
-                        fees, and strategy: <strong>(as of May 2024)</strong> </p>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-                    <div class="table-container">
-                        <table class="mb-2">
-                            <thead>
-                                <tr>
-                                    <th>&nbsp;</th>
-                                    <th class="w-25"><strong>QQEW</strong></th>
-                                    <th class="w-25"><a href="https://richiest.com/etfs/dividend/qqq.html"
-                                            target="_blank" rel="noopener noreferrer"><strong>QQQ</strong></a></th>
-                                    <th class="w-25"><strong>ONEQ</strong></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><strong>Investment Focus</strong></td>
-                                    <td><strong>Equal-weighted</strong> exposure to the <strong>NASDAQ-100
-                                            Index</strong></td>
-                                    <td><strong>Market-cap-weighted</strong> exposure to the <strong>NASDAQ-100
-                                            Index</strong></td>
-                                    <td><strong>Market-cap-weighted</strong> exposure to the <strong>NASDAQ Composite
-                                            Index</strong></td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Current Yield</strong></td>
-                                    <td><a href="https://www.bing.com/search?q=QQEW+current+yield" target="_blank"
-                                            rel="noopener noreferrer">0.69%</a></td>
-                                    <td><a href="https://www.bing.com/search?q=QQQ+current+yield" target="_blank"
-                                            rel="noopener noreferrer">0.51%</a></td>
-                                    <td><a href="https://www.bing.com/search?q=ONEQ+current+yield" target="_blank"
-                                            rel="noopener noreferrer">0.88%</a></td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Expense Ratio</strong></td>
-                                    <td>0.58%</td>
-                                    <td>0.20%</td>
-                                    <td>0.21%</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Investment Strategy</strong></td>
-                                    <td><strong>Passively</strong> tracks the <strong>NASDAQ-100 Equal Weighted
-                                            Index</strong></td>
-                                    <td><strong>Passively</strong> tracks the <strong>NASDAQ-100 Index</strong></td>
-                                    <td><strong>Passively</strong> tracks the <strong>NASDAQ Composite Index</strong>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Strengths</strong></td>
-                                    <td>Provides more balanced exposure by <strong>equal weighting</strong> the
-                                        holdings, potentially reducing the dominance of the largest companies</td>
-                                    <td>Lower <strong>expense ratio</strong>, direct exposure to the largest tech
-                                        companies</td>
-                                    <td>Broader exposure to the entire <strong>NASDAQ Composite Index</strong>,
-                                        including small and mid-cap stocks</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Weaknesses</strong></td>
-                                    <td>Higher <strong>expense ratio</strong> compared to market-cap-weighted funds,
-                                        potential for higher volatility</td>
-                                    <td>Heavy concentration in the largest companies, potentially less diversified</td>
-                                    <td>Higher <strong>expense ratio</strong> compared to QQQ, potentially lower returns
-                                        due to broader exposure</td>
-                                </tr>
-                            </tbody>
-                        </table>
-
-                    </div>
-                </section>
-                <section id="history">
-                    <h2>Dividend History (Last 5 distributions)</h2>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-                    <div class="table-container">
-                        <table class="mb-2 w-100">
-                            <thead>
-                                <tr>
-                                    <th class="w-17">Ex-Dividend Date</th>
-                                    <th class="w-17">Cash Amount</th>
-                                    <th class="w-17">Record Date</th>
-                                    <th class="w-17">Pay Date</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Mar 21, 2024</td>
-                                    <td>$0.22</td>
-                                    <td>Mar 22, 2024</td>
-                                    <td>Mar 28, 2024</td>
-                                </tr>
-                                <tr>
-                                    <td>Dec 22, 2023</td>
-                                    <td>$0.32</td>
-                                    <td>Dec 26, 2023</td>
-                                    <td>Dec 29, 2023</td>
-                                </tr>
-                                <tr>
-                                    <td>Sep 22, 2023</td>
-                                    <td>$0.16</td>
-                                    <td>Sep 25, 2023</td>
-                                    <td>Sep 29, 2023</td>
-                                </tr>
-                                <tr>
-                                    <td>Jun 27, 2023</td>
-                                    <td>$0.15</td>
-                                    <td>Jun 28, 2023</td>
-                                    <td>Jun 30, 2023</td>
-                                </tr>
-                                <tr>
-                                    <td>Mar 24, 2023</td>
-                                    <td>$0.18</td>
-                                    <td>Mar 27, 2023</td>
-                                    <td>Mar 31, 2023</td>
-                                </tr>
-                            </tbody>
-                        </table>
-
-                    </div>
-                </section>
             </div>
         </div>
         <div class="row dark-div">
@@ -626,63 +478,19 @@
         </div>
         <div class="row">
             <div class="col container-1000">
-                <section id="news">
-                    <h2 class="">News</h2>
-                    <div class="chart">
-                        <div class="tradingview-widget-container">
-                        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-timeline.js" async>
-                        {"feedMode":"symbol","symbol":"AMEX:QQEW","colorTheme":"light","isTransparent":false,"displayMode":"regular","width":"100%","height":"400","locale":"en"}
-                        </script>
-                    </div>
-                </section>
-                <section id="technical">
-                    <h2>Technical Analysis</h2>
-                    <div class="chart">
-                        <script type="text/javascript"
-                            src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js"
-                            async> { "interval": "1M", "width": "100%", "isTransparent": false, "height": "400", "symbol": "NASDAQ:QQEW", "showIntervalTabs": true, "displayMode": "single", "locale": "en", "colorTheme": "light" } </script>
-                    </div>
-                </section>
-                <section>
-                    <h2>Additional Information and Risks</h2>
-                    <p>After examining QQEW's performance and dividend data, it's evident that this <strong>equal
-                            weighted index fund ETF</strong> offers a unique approach to investing in the NASDAQ 100.
-                        With an equal-weighted strategy, QQEW provides exposure to a diverse range of companies,
-                        including international non-financial firms, listed on the NASDAQ global market.</p>
-
-                    <p>The <strong>QQEW dividend</strong> history and <strong>dividend yield</strong> range showcase its
-                        commitment to <strong>dividend investing</strong>, offering shareholders a <strong>dividend
-                            payout</strong> that reflects the performance of the underlying <strong>stocks</strong>.
-                        Investors should note that <strong>QQEW's</strong> <strong>dividend</strong> payment dates, such
-                        as <strong>Mar 21</strong> and <strong>Mar 28</strong>, are crucial for understanding the fund's
-                        <strong>dividend data</strong> and <strong>dividend date</strong> patterns.
-                    </p>
-
-                    <p>However, it's essential to consider the inherent risks associated with <strong>QQEW</strong> and
-                        similar ETFs. As an <strong>equal weighted index fund</strong>, <strong>QQEW's</strong>
-                        <strong>stock price</strong> and <strong>holding</strong> allocation may fluctuate differently
-                        from market-cap-weighted counterparts, impacting <strong>dividend</strong>
-                        <strong>payouts</strong> and <strong>net assets</strong>. <strong>Past performance</strong>
-                        metrics are informative but not guarantees of <strong>future performance</strong>.
-                    </p>
-
-                    <p>Investors should review the <strong>QQEW dividend history</strong> comprehensively, assess
-                        <strong>liquidity</strong>, <strong>fees</strong>, <strong>expenses</strong>, and
-                        <strong>turnover</strong>, and consult a <strong>registered investment adviser</strong> for
-                        <strong>recommendation</strong> on whether to <strong>buy or sell</strong> based on their
-                        <strong>investment</strong> objectives. <strong>Insider</strong> insights and <strong>latest
-                            news</strong> can provide additional <strong>insight</strong> into <strong>QQEW</strong> and
-                        the broader market. It's crucial to conduct thorough research and consider
-                        <strong>completeness</strong> of information before making <strong>investment
-                            decisions</strong>.
-                    </p>
+                <section id="disclaimer" class="small-text-section section-grey">
+                    <h2>Important Disclaimer</h2>
+                    <p>This article is for informational purposes only and does not constitute financial advice.
+                        Investing
+                        involves risks, and you should consult with a qualified financial professional before making any
+                        investment decisions. Past performance is not indicative of future results.</p>
                 </section>
 
             </div>
         </div>
         <div class="row dark-div">
             <div class="col container-1280">
-                <div class="shared-footer"> <!-- This is where the shared nav will be loaded --> </div>
+                <div class="shared-footer"> </div>
             </div>
         </div>
     </div>
@@ -690,36 +498,53 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
+        function generateTOC() {
+            const tocList = $('#toc-list .etf-nav');
+            tocList.empty();
+            let ul = $('<ul></ul>').addClass('toc-menu');
+
+            const mainContentArea = $('.container-1000');
+
+            mainContentArea.find('section').each(function () {
+                const sectionId = $(this).attr('id');
+                const h2 = $(this).find('h2:first');
+
+                if (sectionId && h2.length > 0 && sectionId !== 'disclaimer') {
+                    let title = h2.text();
+                    const li = $('<li></li>');
+                    const a = $('<a></a>').attr('href', '#' + sectionId).text(title);
+                    li.append(a);
+                    ul.append(li);
+                }
+            });
+            tocList.append(ul);
+        }
+
         $(function () {
-            $(".shared-nav").load("/shared/nav.html");
-            $(".etf-nav").load("/shared/etfnav2.html");
+            $(".shared-nav").load("/shared/nav.html", function () {
+                generateTOC();
+            });
             $(".shared-subscribe").load("/shared/subscribe.html");
             $(".shared-banner").load("/shared/banner.html");
             $(".shared-articles").load("/shared/technologyStocks.html");
             $(".shared-footer").load("/shared/footer.html");
-        });
-        $(document).ready(function () {
+
+            generateTOC();
+
             $("#toggle-toc").click(function () {
-                var tocList = $("#toc-list");
                 var fixedToc = $(".fixed-toc");
-                if (tocList.is(":visible")) {
-                    tocList.hide();
-                    fixedToc.css({ "width": "0px", "display": "none" });
+                fixedToc.toggle();
+                if (fixedToc.is(":visible")) {
+                    fixedToc.addClass("show");
                 } else {
-                    fixedToc.css({ "width": "200px", "display": "block" });
-                    tocList.show();
+                    fixedToc.removeClass("show");
                 }
             });
-        });
 
-        $(document).ready(function () {
-            $('.carousel').carousel();
-
-            // Scroll to top functionality
             var mybutton = $('#return-to-top');
 
             $(window).scroll(function () {
-                if ($(this).scrollTop() > 20) {
+                if ($(this).scrollTop() > 100) {
                     mybutton.fadeIn();
                 } else {
                     mybutton.fadeOut();

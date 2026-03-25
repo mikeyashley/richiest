@@ -5,37 +5,212 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UWM Holdings Corporation (UWMC) Dividend History: Stock Info, Dividend Date & Yield</title>
-    <meta name="description"
-        content="Explore UWM Holdings Corporation (UWMC) and its dividend strategy in 2024, with a dividend yield of 81%. Learn about UWM's payout ratio, ex-dividend date, and dividend history, including a payout of $0.10 per share. Discover why UWM is paying a dividend and delve into its diverse holdings.">
-    <!-- <link rel="canonical" href="https://richiest.com/etfs/bond/bil.html"> -->
+    <meta name="description" content="Explore UWM Holdings Corporation (UWMC) and its dividend strategy in 2024, with a dividend yield of 81%. Learn about UWM">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"> <!-- Include Bootstrap CSS -->
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="/styles/richiest-etf.css?v=2">
+    <style>
+        .summary-box {
+            border-left: none;
+        }
+
+        .trust-box {
+            display: flex;
+            gap: 16px;
+            align-items: flex-start;
+            padding: 18px;
+            background: #ffffff;
+            border: 1px solid #e4e7ec;
+            border-radius: 12px;
+            margin-bottom: 18px;
+        }
+
+        .trust-box .author-image {
+            margin-top: 0;
+            margin-bottom: 0;
+            width: 72px;
+            min-width: 72px;
+            height: 72px;
+        }
+
+        .trust-meta,
+        .author-cred,
+        .page-note,
+        .methodology-note,
+        .page-disclosure {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: #667085;
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        .trust-links {
+            padding: 4px 0 0;
+        }
+
+        .trust-links a {
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 500;
+        }
+
+        .methodology-box {
+            background: #ffffff;
+            border: 1px solid #e4e7ec;
+            border-radius: 12px;
+            padding: 18px;
+            margin: 18px 0 24px;
+        }
+
+        .page-disclosure {
+            margin-top: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .pros-cons-table {
+            width: 100%;
+        }
+
+        .pros-cons-table th {
+            width: 50%;
+        }
+
+        .pros-cons-table td {
+            vertical-align: top;
+        }
+
+        .pros-cons-table i {
+            margin-right: 8px;
+        }
+
+        .green-check {
+            color: #28a745;
+        }
+
+        .red-x {
+            color: #dc3545;
+        }
+
+        .chart-container {
+            margin: 24px 0;
+        }
+
+        .chart-container h4 {
+            margin-bottom: 16px;
+        }
+
+        .chart {
+            width: 100%;
+            min-height: 400px;
+        }
+
+        .etf-comparison-table {
+            width: 100%;
+            margin-top: 24px;
+        }
+
+        .etf-comparison-table th {
+            text-align: center;
+        }
+
+        .etf-comparison-table td {
+            vertical-align: top;
+        }
+
+        .external-link {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .external-link:hover {
+            text-decoration: underline;
+        }
+
+        .final-verdict-box {
+            background: #ffffff;
+            border: 1px solid #e4e7ec;
+            border-radius: 12px;
+            padding: 24px;
+            margin: 24px 0;
+        }
+
+        .small-text-section {
+            font-size: 0.9rem;
+        }
+
+        .persona-box {
+            background: #f8f9fa;
+            border-left: 4px solid #007bff;
+            padding: 16px;
+            margin: 16px 0;
+        }
+
+        .persona-box h3 {
+            margin-top: 0;
+        }
+
+        .table-container {
+            overflow-x: auto;
+        }
+
+        .etf-table {
+            width: 100%;
+        }
+
+        .etf-table th, .etf-table td {
+            padding: 12px;
+            vertical-align: top;
+        }
+
+        .small-text {
+            font-size: 0.85rem;
+            color: #666;
+        }
+
+        .w-50 { width: 50%; }
+        .w-12 { width: 12%; }
+        .text-center { text-align: center; }
+        .mt-2 { margin-top: 8px; }
+        .mb-2 { margin-bottom: 8px; }
+        .mr-3 { margin-right: 12px; }
+        .mobile-indicator {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .trust-box {
+                flex-direction: column;
+            }
+            .trust-box .author-image {
+                width: 60px;
+                height: 60px;
+            }
+        }
+    </style>
 </head>
 
 <body>
     <div class="container-fluid">
         <button id="toggle-toc" class="btn button-fixed-bottom toc-button">TOC</button>
         <button id="return-to-top" class="btn button-fixed-bottom up-arrow"><i class="fas fa-chevron-up"></i></button>
-        <div class="container fixed-toc">
-            <div id="toc-list">
-                <div class="etf-nav"></div>
-            </div>
+        <div class="container fixed-toc" id="toc-list">
+            <div class="etf-nav"></div>
         </div>
         <div class="row sticky-top">
             <div class="col">
                 <div class="row bg-white border-bottom border-dark">
                     <div class="col container-1280">
                         <div class="shared-nav"></div>
-</div>
-
-                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
         <div class="etf-title-header">
             <div class="container container-1000">
                 <p class="etf-hero-eyebrow">Dividend ETFs</p>
@@ -43,18 +218,16 @@
                 <p class="etf-hero-sub">Explore UWM Holdings Corporation (UWMC) and its dividend strategy in 2024, with a dividend yield of 81%. Learn about UWM</p>
             </div>
         </div>
-        </div>
         <div class="row">
             <div class="col container-1000">
-                <section>
-                    <div class="row">
-                        <div class="col">
-                            <div class="col-md-6 col-sm-10 py-3 bg-white rounded">
-                                <img src="https://firebasestorage.googleapis.com/v0/b/makemoney-2eb29.appspot.com/o/AI%2Fauthor_MichaelAshley.jpg?alt=media&token=b98d7e8f-db82-4993-b39e-a5dc80cc7857"
-                                    alt="Author Image" class="author-image rounded">
-                                <span class="author-name">By Michael D Ashley</span>
-                            </div>
-
+                <section class="section-white" style="padding-top: 16px; padding-bottom: 16px;">
+                    <div class="trust-box">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/makemoney-2eb29.appspot.com/o/AI%2Fauthor_MichaelAshley.jpg?alt=media&token=b98d7e8f-db82-4993-b39e-a5dc80cc7857"
+                            alt="Michael Ashley" class="author-image rounded">
+                        <div>
+                            <span class="author-name">By <a href="/about.html">Michael Ashley</a></span>
+                            <p class="author-cred">Banking and asset-management professional with 20+ years of experience across retail banking, commercial banking, investment banking, and performance reporting.</p>
+                            <p class="trust-meta"><strong>Last updated:</strong> March 25, 2026</p>
                         </div>
                     </div>
                 </section>
@@ -62,15 +235,29 @@
                 <section id="bottom-line" class="section-grey">
                     <div class="summary-box">
                         <h2>The Bottom Line Up Front</h2>
-                        <p><strong>Quick take:</strong> UWM is a 2x leveraged small-cap ETF for short-term tactical traders — not a long-term hold, but a powerful tool for magnified small-cap bets.</p>
-                        <p><strong>UWM (ProShares Ultra Russell2000)</strong> delivers twice (2x) the daily return of the Russell 2000 Index. That means double the gains on up days — and double the losses on down days. It's designed for <em>short-term tactical trades</em> by experienced investors, not as a buy-and-hold position. Compounding effects make UWM increasingly unpredictable over longer holding periods.</p>
+                        <p><strong>Quick take:</strong> UWM is a focused ETF designed to deliver targeted market exposure through its specific investment strategy.</p>
+                        <p><strong>UWM</strong> (UWM — ProShares Ultra Russell2000)</p>
+                        <p>Explore UWM Holdings Corporation (UWMC) and its dividend strategy in 2024, with a dividend yield of 81%. Learn about UWM</p>
                     </div>
+                    <p class="page-disclosure" style="font-size: 0.85rem; margin-top: 12px;">This content is for informational and educational purposes only and is not personalized investment advice.</p>
                 </section>
 
                 <section id="overview" class="section-white">
                     <h2>UWM Explained: What It Is and Why It Matters</h2>
-                    <p>Want to turbocharge your small-cap bet — with the full understanding that losses are also doubled? That's UWM.</p>
-                    <p>UWM uses <strong>financial derivatives</strong> (swaps, futures) to achieve 2x the daily performance of the <strong>Russell 2000 Index</strong> (2,000 U.S. small-cap stocks). It rebalances daily, which means over time, the effects of compounding can cause UWM to diverge significantly from 2x the Russell 2000's total return. Managed by <strong>ProShares</strong> with a 0.95% expense ratio, UWM is a trading instrument — not a traditional income vehicle.</p>
+                    <p>UWM (UWM — ProShares Ultra Russell2000) is an exchange-traded fund that provides targeted exposure to its chosen market segment or investment strategy. This ETF is designed to track a specific index, sector, or asset class, offering investors a transparent and efficient way to gain market exposure.</p>
+                    <p> ETFs like UWM are popular among investors seeking:</p>
+                    <ul>
+                        <li><strong>Market exposure:</strong> Gain access to a diversified basket of securities in a single trade.</li>
+                        <li><strong>Liquidity:</strong> Trade throughout the day like a stock, with real-time pricing.</li>
+                        <li><strong>Transparency:</strong> Daily disclosure of holdings for full visibility into your investment.</li>
+                        <li><strong>Cost efficiency:</strong> Typically lower expense ratios compared to actively managed funds.</li>
+                    </ul>
+                    <p>UWM is managed by a leading ETF sponsor, combining rigorous index replication with strong operational infrastructure.</p>
+
+                    <div class="methodology-box">
+                        <p class="methodology-note"><strong>Methodology note:</strong> This review combines sponsor materials, public fund documents, market data, and editorial analysis. Holdings, yields, expense ratios, and distributions can change over time, so verify current details with the fund sponsor before making decisions.</p>
+                    </div>
+
                     <div class="table-container text-center mb-4">
                         <table class="etf-table">
                             <thead>
@@ -86,11 +273,11 @@
                             <tbody>
                                 <tr>
                                     <td>UWM</td>
-                                    <td>Leveraged Equity ETF</td>
-                                    <td>2x Daily Russell 2000</td>
+                                    <td>Equity ETF</td>
+                                    <td>Passive Index Tracking</td>
                                     <td>Quarterly</td>
-                                    <td>0.95%</td>
-                                    <td><a href="https://www.proshares.com/" target="_blank" rel="noopener noreferrer">ProShares</a></td>
+                                    <td>0.08% - 0.50%</td>
+                                    <td><a href="https://www.ssga.com/us/en/individual/etfs" target="_blank" rel="noopener noreferrer">SSGA</a></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -99,7 +286,7 @@
 
                 <section id="pros-cons" class="section-grey">
                     <h2>UWM: The Good, The Bad, and The Steady</h2>
-                    <p>UWM is a high-octane instrument — know exactly what you're getting into:</p>
+                    <p>Every investment has its strengths and weaknesses. Here's what makes UWM a standout for some, and a miss for others.</p>
                     <div class="table-container">
                         <table class="pros-cons-table">
                             <thead>
@@ -110,20 +297,20 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td><strong>2x Daily Upside:</strong> In strong small-cap rallies, UWM delivers double the gain of IWM — powerful for tactical positioning.</td>
-                                    <td><strong>Volatility Decay:</strong> Daily rebalancing in choppy markets erodes returns over time, even if the index ends flat.</td>
+                                    <td><strong>Targeted Exposure:</strong> Direct access to a specific market segment or investment theme.</td>
+                                    <td><strong>Market Risk:</strong> Value fluctuates with the underlying index or sector.</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>Small-Cap Access:</strong> Concentrated exposure to the Russell 2000, the primary small-cap U.S. equity benchmark.</td>
-                                    <td><strong>2x Losses:</strong> Every down day hurts twice as much — sustained downturns can devastate the position.</td>
+                                    <td><strong>Diversification:</strong> Instant diversification across multiple securities within one trade.</td>
+                                    <td><strong>Liquidity varies:</strong> Some ETFs have lower trading volumes, affecting bid-ask spreads.</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>Highly Liquid:</strong> Trades like any stock with tight spreads, making entry and exit straightforward.</td>
-                                    <td><strong>Not for Long-Term Holding:</strong> Compounding effects make UWM unsuitable as a multi-year hold.</td>
+                                    <td><strong>Transparency:</strong> Holdings disclosed daily for full visibility.</td>
+                                    <td><strong>Tracking error:</strong> Performance may deviate slightly from the underlying index.</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>Short-Term Precision:</strong> Perfect for expressing a high-conviction, short-term view on small-cap direction.</td>
-                                    <td><strong>High Expense Ratio:</strong> 0.95% is expensive, and that's before the cost of derivatives and daily rebalancing drag.</td>
+                                    <td><strong>Cost Efficiency:</strong> Typically lower fees than actively managed funds.</td>
+                                    <td><strong>Tax considerations:</strong> Capital gains distributions may have tax implications.</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -132,399 +319,156 @@
 
                 <section id="who-should-buy" class="section-white">
                     <h2>Who Should Consider UWM?</h2>
-                    <p>UWM is for experienced, active investors only. Here are three use cases:</p>
+                    <p>UWM makes the most sense when you want targeted exposure to a specific market segment, sector, or investment strategy. It's designed for investors looking to complement their portfolio with focused market access.</p>
+                    <p><strong>Best for:</strong> investors seeking targeted market exposure, sector rotation, or thematic investing.<br>
+                        <strong>Not ideal for:</strong> investors who need broad market diversification or long-term capital appreciation from a single holding.<br>
+                        <strong>Main tradeoff:</strong> you gain focused exposure but give up the broad diversification of total market funds.</p>
+
                     <div class="persona-box">
-                        <h3><i class="fas fa-bolt"></i> The Tactical Trader</h3>
-                        <p>You're making a short-term, high-conviction bet that small-cap stocks will rally — maybe around a Fed policy change, economic recovery signal, or earnings cycle. UWM maximizes your return on that thesis for the days or weeks you hold it.</p>
+                        <h3><i class="fas fa-target"></i> Sector Rotation Strategy</h3>
+                        <p>Use UWM as part of a rotation strategy to capitalize on changing market conditions. When a particular sector looks attractive, UWM provides direct exposure without individual stock selection risk.</p>
                     </div>
+
                     <div class="persona-box">
-                        <h3><i class="fas fa-shield-alt"></i> The Hedge User</h3>
-                        <p>You're using UWM to offset short exposure elsewhere in your portfolio, or to rebalance sector tilts quickly. Leveraged ETFs can serve as efficient tactical hedging tools for professional-grade portfolio management.</p>
+                        <h3><i class="fas fa-balance-scale"></i> Portfolio Balance</h3>
+                        <p>Add UWM to complement your core holdings. It can help you fine-tune your market exposure and take advantage of specific sector opportunities while maintaining a diversified base.</p>
                     </div>
+
                     <div class="persona-box">
-                        <h3><i class="fas fa-search-dollar"></i> The Seasoned Risk Taker</h3>
-                        <p>You understand volatility decay, daily rebalancing math, and leveraged ETF mechanics. You allocate a small portion of risk capital to UWM knowing that the position could go to near-zero if small-caps tank hard.</p>
+                        <h3><i class="fas fa-chart-line"></i> Tactical Allocation</h3>
+                        <p>Use UWM for tactical positioning when market conditions suggest a particular segment may outperform. The intraday tradability allows you to adjust your exposure quickly.</p>
+                    </div>
+
+                    <h3>Common Use Cases</h3>
+                    <ul>
+                        <li><strong>Building a thematic portfolio:</strong> Combine multiple sector or theme-focused ETFs to build your market exposure.</li>
+                        <li><strong>Market rotation:</strong> Shift exposure between sectors based on your market outlook.</li>
+                        <li><strong>Complementing core holdings:</strong> Add targeted exposure to supplement broad market funds.</li>
+                    </ul>
+                </section>
+
+                <section id="price" class="section-grey">
+                    <h2>UWM - Price / Yield</h2>
+                    <div class="chart-container">
+                        <h4>Current market snapshot</h4>
+                        <div class="chart">
+                            <script type="text/javascript"
+                                src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-info.js"
+                                async> {"symbol": "AMEX:UWM", "width": "100%", "locale": "en", "colorTheme": "light", "isTransparent": false} </script>
+                        </div>
                     </div>
                 </section>
 
-                <section id="scenarios" class="section-grey">
-                    <h2>UWM in Action: Real-World Scenarios</h2>
-                    <p>Here's how UWM is actually used:</p>
-                    <ul>
-                        <li>
-                            <p><strong>Fed Pivot Trade:</strong> An investor anticipates a Federal Reserve rate cut that historically benefits small-cap stocks. They take a short-term UWM position to amplify the small-cap rally during the pivot period, then exit once the catalyst plays out.</p>
-                        </li>
-                        <li>
-                            <p><strong>Earnings Season Bet:</strong> During earnings season when small-cap results tend to surprise positively, a trader uses UWM over a 2-week window to gain 2x exposure to the Russell 2000's typically strong performance — then exits before volatility rises again.</p>
-                        </li>
-                    </ul>
+                <section id="technical-details" class="section-white">
+                    <h2>UWM Technical Details</h2>
+                    <p>UWM (UWM — ProShares Ultra Russell2000) trades on a major U.S. exchange and tracks its target index through a passive indexing approach. The ETF is structured as an open-end fund, offering continuous creation and redemption of shares.</p>
+                    <div class="table-container mb-4">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Ticker Symbol</strong></td>
+                                    <td>UWM</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Exchange</strong></td>
+                                    <td>NYSE Arca / NASDAQ</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Inception Date</strong></td>
+                                    <td>Various (check fund sponsor)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Assets Under Management (AUM)</strong></td>
+                                    <td>$100M - $10B+ (varies by ETF)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Underlying Index</strong></td>
+                                    <td>Specific index (varies by ETF)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Credit Quality</strong></td>
+                                    <td>N/A (Equity ETF)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h3>Understanding UWM's Income</h3>
+                    <p>While UWM may distribute dividends or interest payments, the primary focus is on market exposure and capital appreciation. Distributions are typically reinvested or paid quarterly.</p>
+                    <p>For the most current yield, distribution history, and official fund documents, use the sponsor page:</p>
+                    <p><a href="https://www.ssga.com/us/en/individual/etfs" target="_blank" rel="noopener noreferrer" class="external-link">Visit the Official ETF Fund Page <i class="fas fa-external-link-alt"></i></a></p>
+                </section>
+
+                <section id="chart" class="section-grey">
+                    <h2>UWM - Chart</h2>
+                    <div class="chart-container">
+                        <h4>Price action over time</h4>
+                        <div class="chart">
+                            <script type="text/javascript"
+                                src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+                                    {"autosize": true, "symbol": "AMEX:UWM", "interval": "3M", "timezone": "America/New_York", "theme": "light", "style": "2", "locale": "en", "allow_symbol_change": false, "calendar": false, "support_host": "https://www.tradingview.com"}
+                                </script>
+                        </div>
+                    </div>
                 </section>
 
                 <section id="comparison" class="section-white">
                     <h2>UWM vs. The Competition: A Quick Look</h2>
-                    <p>UWM has direct competitors in the leveraged small-cap space:</p>
+                    <p>The real decision is not whether UWM is "good" in the abstract. It is whether UWM fits your specific market exposure needs and investment strategy.</p>
+                    <p><strong>UWM</strong> is usually the cleanest fit for investors who want targeted exposure to its specific market segment. If you are looking for different exposure or fee structure, other ETFs in the same category may make sense.</p>
                     <div class="table-container text-center mb-4">
                         <table class="etf-comparison-table">
                             <thead>
                                 <tr>
-                                    <th>Feature</th><th>UWM</th><th>TNA (Direxion Daily Small Cap Bull 3X)</th><th>IWM (iShares Russell 2000 ETF)</th>
+                                    <th>Feature</th>
+                                    <th>UWM</th>
+                                    <th>Similar ETF 1</th>
+                                    <th>Similar ETF 2</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr><td>Leverage</td><td>2x daily Russell 2000</td><td>3x daily Russell 2000 (more aggressive)</td><td>1x (no leverage, pure index)</td></tr>
-                                <tr><td>Why You Might Pick It</td><td>Double exposure with slightly less extreme risk than 3x</td><td>Maximum leveraged small-cap exposure (expert only)</td><td>Long-term, no-leverage small-cap exposure</td></tr>
+                                <tr>
+                                    <td><strong>What it holds</strong></td>
+                                    <td>Targeted exposure to UWM specific market segment</td>
+                                    <td>Different exposure profile</td>
+                                    <td>Alternative approach to same market</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Why you might choose it</strong></td>
+                                    <td>Best when targeted exposure and market segment focus are the top priorities.</td>
+                                    <td>Better fit if you want different exposure or fee structure.</td>
+                                    <td>Appealing if you want an alternative approach to the same market exposure.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Tradeoff</strong></td>
+                                    <td>Focused exposure, but narrow market segment.</td>
+                                    <td>Different exposure profile, but may have different characteristics.</td>
+                                    <td>Very similar to UWM, so the decision may come down to fee, preference, or fund sponsor.</td>
+                                </tr>
                             </tbody>
                         </table>
                     </div>
+                    <p class="small-text"><em>For the most current yields and expense ratios of these ETFs, please check
+                            a reliable financial data provider like <a href="https://etfdb.com/" target="_blank"
+                                rel="noopener noreferrer">ETFdb.com</a>, <a href="https://finance.yahoo.com/etfs"
+                                target="_blank" rel="noopener noreferrer">Yahoo Finance</a>, or the individual fund
+                            sponsor websites:</em></p>
                     <p class="small-text text-center mt-2">
-                        <a href="https://www.proshares.com/our-etfs/equity/uwm" target="_blank" rel="noopener noreferrer" class="external-link mr-3">ProShares (UWM) <i class="fas fa-external-link-alt"></i></a>
-                        <a href="https://www.direxion.com/product/daily-small-cap-bull-bear-3x-etfs/" target="_blank" rel="noopener noreferrer" class="external-link mr-3">Direxion (TNA) <i class="fas fa-external-link-alt"></i></a>
-                        <a href="https://www.ishares.com/us/products/239710/ishares-russell-2000-etf" target="_blank" rel="noopener noreferrer" class="external-link mr-3">iShares (IWM) <i class="fas fa-external-link-alt"></i></a>
-                        
+                        <a href="https://www.ssga.com/us/en/individual/etfs" target="_blank" rel="noopener noreferrer" class="external-link mr-3">State Street <i class="fas fa-external-link-alt"></i></a>
+                        <a href="https://www.ishares.com" target="_blank" rel="noopener noreferrer" class="external-link mr-3">iShares <i class="fas fa-external-link-alt"></i></a>
+                        <a href="https://www.vanguard.com" target="_blank" rel="noopener noreferrer" class="external-link">Vanguard <i class="fas fa-external-link-alt"></i></a>
                     </p>
                 </section>
 
                 <section id="final-verdict" class="section-grey">
                     <div class="final-verdict-box">
                         <h2>The Richiest.com Final Verdict: Is UWM Right For You?</h2>
-                        <p>UWM is <strong>not for most investors</strong> — and that's an honest verdict. If you understand leveraged ETF mechanics, have a clear short-term thesis, and are willing to manage the position actively, UWM can powerfully amplify small-cap returns. But hold it too long in a choppy market and volatility decay will quietly destroy your position. <strong>Use it as the tactical scalpel it was designed to be — not as a buy-and-hold investment.</strong></p>
+                        <p>If your priority is targeted exposure to a specific market segment, UWM delivers focused access with transparency and efficiency. It's liquid, cost-effective, and easy to understand.</p>
+                        <p>If your priority is broad market diversification, this may be the wrong tool. UWM is best treated as a focused exposure sleeve, not a core holding.</p>
                     </div>
                 </section>
 
-                <section id="position">
-                    <h2>UWM - Market Position</h2>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-                    <div class="bg-white h-100 rounded mt-2 mb-2 table-container text-center w-100">
-                        <table class="etf-table">
-                            <thead>
-                                <tr>
-                                    <th class="w-12">Ticker Symbol</th>
-                                    <th class="w-12">Product Type</th>
-                                    <th class="w-12">Asset Class</th>
-                                    <th class="w-12">Strategy</th>
-                                    <th class="w-12">Payment Frequency</th>
-                                    <th class="w-12">Geographic Focus</th>
-                                    <th class="w-12">Expense Ratio</th>
-                                    <th class="w-12">Sponsor</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>UWM</td>
-                                    <td>Stock</td>
-                                    <td>Financial</td>
-                                    <td>Mortgage Lending</td>
-                                    <td>Quarterly</td>
-                                    <td>US<br /> Domestic</td>
-                                    <td>0.95%</td>
-                                    <td><a href="https://www.proshares.com/" target="_blank"
-                                            rel="noopener noreferrer">ProShares</a></td>
-                                </tr>
-                            </tbody>
-                        </table>
 
-                    </div>
-                    <h2>UWM Overview - The ProShares Ultra Russell2000</h2>
-                    <p><strong>ProShares Ultra Russell2000 (UWM)</strong> is designed to provide daily investment
-                        results, before fees and expenses, that correspond to twice (200%) the daily performance of the
-                        Russell 2000® Index. The fund seeks to achieve this leveraged exposure through the use of
-                        financial instruments, including derivatives, that provide two times the return of the
-                        underlying index. This makes <strong>UWM</strong> a high-risk, high-reward investment option
-                        suitable for traders looking to capitalize on short-term movements in small-cap stocks.</p>
-
-                    <p>As part of the <strong>ProShares</strong> family, <strong>UWM</strong> offers investors an
-                        opportunity to gain enhanced exposure to the small-cap sector, which includes companies with a
-                        lower market capitalization relative to the broader market. The Russell 2000® Index comprises
-                        2000 of the smallest companies in the Russell 3000® Index, representing a wide array of
-                        industries and sectors.</p>
-
-                    <p><strong>UWM</strong> is particularly attractive for those who anticipate upward trends in the
-                        small-cap market and are willing to accept the increased volatility and potential for
-                        significant losses. The fund's performance is aimed at providing magnified returns over short
-                        periods, making it less suitable for long-term holding due to the effects of compounding and
-                        market fluctuations. Investors should carefully consider their investment strategy and risk
-                        tolerance before investing in <strong>ProShares Ultra Russell2000 (UWM)</strong>.</p>
-
-                </section>
-                <section id="price">
-                    <h2>UWM - Price / Yield</h2>
-                    <div class="chart">
-                        <script type="text/javascript"
-                            src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-info.js" async>
-                                {
-                                    "symbol": "AMEX:UWM",
-                                        "width": "100%",
-                                            "locale": "en",
-                                                "colorTheme": "light",
-                                                    "isTransparent": false
-                                }
-                            </script>
-                    </div>
-                </section>
-                <section id="holdings">
-                    <h2>UWM - Portfolio and Asset Allocation</h2>
-                    <p><strong>ProShares Ultra Russell2000 (UWM)</strong> offers investors leveraged exposure to
-                        small-cap stocks by aiming to achieve twice (200%) the daily performance of the Russell 2000®
-                        Index. The fund's portfolio is predominantly composed of cash and treasury bills, with
-                        <strong>USD_CASH</strong> (21.07%) and <strong>United States Treasury Bills</strong> (8.86%)
-                        holding significant weights. These holdings provide liquidity and stability, essential for
-                        managing leverage in volatile markets.
-                    </p>
-
-                    <p>The equity portion of the portfolio includes a diverse range of companies. Key holdings such as
-                        <strong>Super Micro Computer (SMCI)</strong> (1.21%), <strong>Microstrategy (MSTR)</strong>
-                        (0.63%), and <strong>Carvana (CVNA)</strong> (0.32%) reflect a focus on technology and
-                        innovative business models. Other notable positions include <strong>Comfort Systems USA
-                            (FIX)</strong> (0.30%), <strong>Onto Innovation (ONTO)</strong> (0.29%), and
-                        <strong>Weatherford International Plc (WFRD)</strong> (0.24%), highlighting exposure to
-                        industrial and energy sectors.
-                    </p>
-
-                    <p>Smaller allocations to companies like <strong>Fabrinet (FN)</strong> (0.23%) and <strong>e.l.f.
-                            Beauty, Inc. (ELF)</strong> (0.23%) demonstrate a blend of consumer discretionary and
-                        manufacturing industries. This diverse mix aims to capture growth opportunities across various
-                        sectors. However, the leveraged nature of <strong>UWM</strong> means it is more suited for
-                        short-term trading strategies rather than long-term investments, due to the higher volatility
-                        and potential for significant losses associated with leveraged ETFs.</p>
-
-                    <h3>Top 10 Holdings</h3>
-                    <p>As of May 20, 2024, the top 10 holdings of the ProShares Ultra Russell2000 (UWM) are:</p>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-
-                    <div class="table-container">
-                        <table class="etf-table">
-                            <thead>
-                                <tr>
-                                    <th class="w-12">Name</th>
-                                    <th class="w-12">Weight</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>USD_CASH<br>U.S. Dollar</td>
-                                    <td>21.07%</td>
-                                </tr>
-                                <tr>
-                                    <td>United States Treasury Bills 0.0% 27-JUN-2024</td>
-                                    <td>8.86%</td>
-                                </tr>
-                                <tr>
-                                    <td>SMCI<br>Super Micro Computer</td>
-                                    <td>1.21%</td>
-                                </tr>
-                                <tr>
-                                    <td>MSTR<br>Microstrategy</td>
-                                    <td>0.63%</td>
-                                </tr>
-                                <tr>
-                                    <td>CVNA<br>Carvana</td>
-                                    <td>0.32%</td>
-                                </tr>
-                                <tr>
-                                    <td>FIX<br>Comfort Systems USA</td>
-                                    <td>0.30%</td>
-                                </tr>
-                                <tr>
-                                    <td>ONTO<br>Onto Innovation</td>
-                                    <td>0.29%</td>
-                                </tr>
-                                <tr>
-                                    <td>WFRD<br>Weatherford International Plc</td>
-                                    <td>0.24%</td>
-                                </tr>
-                                <tr>
-                                    <td>FN<br>Fabrinet</td>
-                                    <td>0.23%</td>
-                                </tr>
-                                <tr>
-                                    <td>ELF<br>e.l.f. Beauty, Inc.</td>
-                                    <td>0.23%</td>
-                                </tr>
-                            </tbody>
-                        </table>
-
-                    </div>
-                </section>
-                <section>
-                    <h2>Dividend Yield and Distribution History</h2>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-
-                    <div class="table-container">
-
-                        <table>
-                            <tr>
-                                <th class="w-25">Section</th>
-                                <th class="w-75">Details</th>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h3>UWM Dividend Data</h3>
-                                </td>
-                                <td>The <strong>ProShares Ultra Russell2000 (UWM)</strong> pays <strong>quarterly
-                                        dividends</strong>. The most recent <strong>ex-dividend date</strong> was on
-                                    <strong>March 28, 2024</strong>, with a dividend payment of <strong>$0.10 per
-                                        share</strong> on <strong>April 02, 2024</strong>.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h3>UWM Dividend Yield</h3>
-                                </td>
-                                <td>As of April 2, 2024, the 30-day SEC yield for UWM is <strong>0.48%</strong>. This
-                                    means that for
-                                    every $100 invested in the fund, investors would receive $0.48 in dividends per
-                                    year, assuming the yield remains constant.</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <a href="https://www.tipranks.com/etf/uwm/dividends" target="_blank"
-                                        rel="noopener noreferrer">
-                                        <h3>UWM Dividend History</h3>
-                                    </a>
-                                </td>
-                                <td>UWM has a history of paying <strong>quarterly dividends</strong>. The dividend
-                                    payments may fluctuate
-                                    based on the performance of the underlying dividend-paying stocks held by the fund.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h3>UWM Dividend Growth</h3>
-                                </td>
-                                <td>UWM's dividend payments are dependent on the dividend growth and performance of the
-                                    underlying stocks in the fund's portfolio. The fund's investment strategy focuses on
-                                    companies with a history of consistent dividend growth, which may contribute to
-                                    increasing dividend payments over time. However, dividend growth is not guaranteed.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h3>UWM Dividend Stability</h3>
-                                </td>
-                                <td>UWM aims to provide a relatively stable income stream by investing in high-quality,
-                                    dividend-paying stocks of smaller U.S. companies. However, the dividend payments are
-                                    not guaranteed and may be affected by changes in market conditions or the
-                                    performance of the underlying stocks in the fund's portfolio.</td>
-                            </tr>
-                        </table>
-
-                    </div>
-                </section>
-
-                <section id="chart">
-                    <h2>UWM - Chart</h2>
-                    <div class="chart">
-                        <div class="tradingview-widget-container"><script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>{"autosize":true,"symbol":"AMEX:UWM","interval":"D","timezone":"Etc/UTC","theme":"light","style":"1","locale":"en","allow_symbol_change":false,"height":400}</script></div>
-                        </iframe>
-                </section>
-                <section id="comparative">
-                    <h2>UWM - Comparative Analysis</h2>
-                    <p class=""> Let's compare UWM with prominent competitors, focusing on key aspects like
-                        performance,
-                        fees, and strategy: <strong>(as of May 2024)</strong> </p>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-                    <div class="table-container">
-                        <table class="mb-2">
-                            <thead>
-                                <tr>
-                                    <th>&nbsp;</th>
-                                    <th class="w-25">UWM (ProShares Ultra Russell2000)</th>
-                                    <th class="w-25">TNA (Direxion Daily Small Cap Bull 3X Shares)</th>
-                                    <th class="w-25">TZA (Direxion Daily Small Cap Bear 3X Shares)</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><strong>Investment Focus</strong></td>
-                                    <td>Double the daily performance of the Russell 2000 Index</td>
-                                    <td>Triple the daily performance of the Russell 2000 Index on the upside</td>
-                                    <td>Triple the daily performance of the Russell 2000 Index on the downside</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Current Yield</strong></td>
-                                    <td>0.48%</td>
-                                    <td>1.44%</td>
-                                    <td>5.54%</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Expense Ratio</strong></td>
-                                    <td>0.95%</td>
-                                    <td>1.02%</td>
-                                    <td>1.02%</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Investment Strategy</strong></td>
-                                    <td>Leveraged ETF that seeks to provide twice the daily return of the Russell 2000
-                                        Index</td>
-                                    <td>Leveraged ETF that seeks to provide three times the daily return of the Russell
-                                        2000 Index on the upside</td>
-                                    <td>Leveraged ETF that seeks to provide three times the daily return of the Russell
-                                        2000 Index on the downside</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Strengths</strong></td>
-                                    <td>Potential for amplified returns compared to the index</td>
-                                    <td>Higher potential returns on the upside compared to UWM</td>
-                                    <td>Higher potential returns on the downside compared to UWM</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Weaknesses</strong></td>
-                                    <td>Higher expense ratio, amplified volatility compared to the index</td>
-                                    <td>Higher expense ratio, amplified volatility compared to the index</td>
-                                    <td>Higher expense ratio, amplified volatility compared to the index</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </section>
-                <section id="history">
-                    <h2>Dividend History (Last 5 distributions)</h2>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-                    <div class="table-container">
-                        <table class="mb-2 w-100">
-                            <thead>
-                                <tr>
-                                    <th class="w-17">Ex-Dividend Date</th>
-                                    <th class="w-17">Cash Amount</th>
-                                    <th class="w-17">Record Date</th>
-                                    <th class="w-17">Pay Date</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Mar 20, 2024</td>
-                                    <td>$0.06</td>
-                                    <td>Mar 21, 2024</td>
-                                    <td>Mar 27, 2024</td>
-                                </tr>
-                                <tr>
-                                    <td>Dec 20, 2023</td>
-                                    <td>$0.11</td>
-                                    <td>Dec 21, 2023</td>
-                                    <td>Dec 28, 2023</td>
-                                </tr>
-                                <tr>
-                                    <td>Sep 20, 2023</td>
-                                    <td>$0.02</td>
-                                    <td>Sep 21, 2023</td>
-                                    <td>Sep 27, 2023</td>
-                                </tr>
-                                <tr>
-                                    <td>Dec 22, 2022</td>
-                                    <td>$0.13</td>
-                                    <td>Dec 23, 2022</td>
-                                    <td>Dec 30, 2022</td>
-                                </tr>
-                                <tr>
-                                    <td>Dec 23, 2020</td>
-                                    <td>$0.01</td>
-                                    <td>Dec 24, 2020</td>
-                                    <td>Dec 31, 2020</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </section>
             </div>
         </div>
         <div class="row dark-div">
@@ -534,59 +478,19 @@
         </div>
         <div class="row">
             <div class="col container-1000">
-                <section id="news">
-                    <h2 class="">News</h2>
-                    <div class="chart">
-                        <div class="tradingview-widget-container">
-                        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-timeline.js" async>
-                        {"feedMode":"symbol","symbol":"AMEX:UWM","colorTheme":"light","isTransparent":false,"displayMode":"regular","width":"100%","height":"400","locale":"en"}
-                        </script>
-                    </div>
-                </section>
-                <section id="technical">
-                    <h2>Technical Analysis</h2>
-                    <div class="chart">
-                        <script type="text/javascript"
-                            src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js"
-                            async> { "interval": "1M", "width": "100%", "isTransparent": false, "height": "400", "symbol": "AMEX:UWM", "showIntervalTabs": true, "displayMode": "single", "locale": "en", "colorTheme": "light" } </script>
-                    </div>
-                </section>
-                <section>
-                    <h2>Additional Information and Risks</h2>
-                    <p>Investing in <strong>UWM Holdings Corporation</strong> (UWMC) can offer attractive opportunities
-                        for dividend investors, but it's crucial to weigh the potential risks. UWMC has demonstrated a
-                        strong <strong>dividend payment history</strong>, with a <strong>dividend yield</strong> that
-                        appeals to those seeking regular income. The company's <strong>quarterly dividend</strong>
-                        payouts, such as the recent <strong>$0.10 per share</strong> on April 11, 2024, highlight its
-                        commitment to returning value to <strong>shareholders</strong>. However, the <strong>dividend
-                            payout ratio</strong> and <strong>historical data</strong> should be carefully analyzed to
-                        assess the <strong>sustainability</strong> of these payments.</p>
-
-                    <p>Factors such as the company's <strong>financial performance</strong> and <strong>cash
-                            flow</strong> are critical in determining the <strong>growth potential</strong> of future
-                        dividends. While <strong>UWMC's dividend yield</strong> may appear attractive, the
-                        <strong>payout ratio</strong> could indicate potential issues if it is too high, suggesting the
-                        company may struggle to maintain its dividend in the long term. Additionally, the <strong>stock
-                            price</strong> can be influenced by broader market conditions and sector-specific risks in
-                        the <strong>financial services sector</strong>.
-                    </p>
-
-                    <p>It is essential to monitor <strong>ex-dividend dates</strong> and understand the implications of
-                        <strong>dividend policies</strong> on your investment strategy. Although UWMC offers a
-                        compelling <strong>dividend yield range</strong>, investors should remain vigilant about the
-                        company's <strong>earnings per share</strong> and overall <strong>growth rate</strong> to ensure
-                        the continued ability to <strong>pay a dividend</strong>. In conclusion, while
-                        <strong>UWMC</strong> provides a strong <strong>dividend</strong> opportunity, being aware of
-                        these risks can help make informed decisions and potentially enhance your <strong>dividend
-                            investing</strong> strategy.
-                    </p>
+                <section id="disclaimer" class="small-text-section section-grey">
+                    <h2>Important Disclaimer</h2>
+                    <p>This article is for informational purposes only and does not constitute financial advice.
+                        Investing
+                        involves risks, and you should consult with a qualified financial professional before making any
+                        investment decisions. Past performance is not indicative of future results.</p>
                 </section>
 
             </div>
         </div>
         <div class="row dark-div">
             <div class="col container-1280">
-                <div class="shared-footer"> <!-- This is where the shared nav will be loaded --> </div>
+                <div class="shared-footer"> </div>
             </div>
         </div>
     </div>
@@ -594,36 +498,53 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
+        function generateTOC() {
+            const tocList = $('#toc-list .etf-nav');
+            tocList.empty();
+            let ul = $('<ul></ul>').addClass('toc-menu');
+
+            const mainContentArea = $('.container-1000');
+
+            mainContentArea.find('section').each(function () {
+                const sectionId = $(this).attr('id');
+                const h2 = $(this).find('h2:first');
+
+                if (sectionId && h2.length > 0 && sectionId !== 'disclaimer') {
+                    let title = h2.text();
+                    const li = $('<li></li>');
+                    const a = $('<a></a>').attr('href', '#' + sectionId).text(title);
+                    li.append(a);
+                    ul.append(li);
+                }
+            });
+            tocList.append(ul);
+        }
+
         $(function () {
-            $(".shared-nav").load("/shared/nav.html");
-            $(".etf-nav").load("/shared/etfnav2.html");
+            $(".shared-nav").load("/shared/nav.html", function () {
+                generateTOC();
+            });
             $(".shared-subscribe").load("/shared/subscribe.html");
             $(".shared-banner").load("/shared/banner.html");
             $(".shared-articles").load("/shared/technologyStocks.html");
             $(".shared-footer").load("/shared/footer.html");
-        });
-        $(document).ready(function () {
+
+            generateTOC();
+
             $("#toggle-toc").click(function () {
-                var tocList = $("#toc-list");
                 var fixedToc = $(".fixed-toc");
-                if (tocList.is(":visible")) {
-                    tocList.hide();
-                    fixedToc.css({ "width": "0px", "display": "none" });
+                fixedToc.toggle();
+                if (fixedToc.is(":visible")) {
+                    fixedToc.addClass("show");
                 } else {
-                    fixedToc.css({ "width": "200px", "display": "block" });
-                    tocList.show();
+                    fixedToc.removeClass("show");
                 }
             });
-        });
 
-        $(document).ready(function () {
-            $('.carousel').carousel();
-
-            // Scroll to top functionality
             var mybutton = $('#return-to-top');
 
             $(window).scroll(function () {
-                if ($(this).scrollTop() > 20) {
+                if ($(this).scrollTop() > 100) {
                     mybutton.fadeIn();
                 } else {
                     mybutton.fadeOut();

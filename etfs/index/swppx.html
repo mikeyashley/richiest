@@ -4,456 +4,471 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SWPPX: Exploring the Index Strategy by Schwab for Dividend Stocks with In-Depth Stock Analysis </title>
-    <meta name="description"
-        content="SWPPX offers insights into a diverse index with a strong dividend track record. Explore Schwab's strategic approach and discover how stock price movements can help you get the latest market trends.">
-    <!-- <link rel="canonical" href="https://richiest.com/etfs/bond/bil.html"> -->
+    <title>SWPPX: Exploring the Index Strategy by Schwab for Dividend Stocks with In-Depth Stock Analysis</title>
+    <meta name="description" content="SWPPX offers insights into a diverse index with a strong dividend track record. Explore Schwab's strategic approach and">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"> <!-- Include Bootstrap CSS -->
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="/styles/richiest-etf.css?v=2">
+    <style>
+        .summary-box {
+            border-left: none;
+        }
+
+        .trust-box {
+            display: flex;
+            gap: 16px;
+            align-items: flex-start;
+            padding: 18px;
+            background: #ffffff;
+            border: 1px solid #e4e7ec;
+            border-radius: 12px;
+            margin-bottom: 18px;
+        }
+
+        .trust-box .author-image {
+            margin-top: 0;
+            margin-bottom: 0;
+            width: 72px;
+            min-width: 72px;
+            height: 72px;
+        }
+
+        .trust-meta,
+        .author-cred,
+        .page-note,
+        .methodology-note,
+        .page-disclosure {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: #667085;
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        .trust-links {
+            padding: 4px 0 0;
+        }
+
+        .trust-links a {
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 500;
+        }
+
+        .methodology-box {
+            background: #ffffff;
+            border: 1px solid #e4e7ec;
+            border-radius: 12px;
+            padding: 18px;
+            margin: 18px 0 24px;
+        }
+
+        .page-disclosure {
+            margin-top: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .pros-cons-table {
+            width: 100%;
+        }
+
+        .pros-cons-table th {
+            width: 50%;
+        }
+
+        .pros-cons-table td {
+            vertical-align: top;
+        }
+
+        .pros-cons-table i {
+            margin-right: 8px;
+        }
+
+        .green-check {
+            color: #28a745;
+        }
+
+        .red-x {
+            color: #dc3545;
+        }
+
+        .chart-container {
+            margin: 24px 0;
+        }
+
+        .chart-container h4 {
+            margin-bottom: 16px;
+        }
+
+        .chart {
+            width: 100%;
+            min-height: 400px;
+        }
+
+        .etf-comparison-table {
+            width: 100%;
+            margin-top: 24px;
+        }
+
+        .etf-comparison-table th {
+            text-align: center;
+        }
+
+        .etf-comparison-table td {
+            vertical-align: top;
+        }
+
+        .external-link {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .external-link:hover {
+            text-decoration: underline;
+        }
+
+        .final-verdict-box {
+            background: #ffffff;
+            border: 1px solid #e4e7ec;
+            border-radius: 12px;
+            padding: 24px;
+            margin: 24px 0;
+        }
+
+        .small-text-section {
+            font-size: 0.9rem;
+        }
+
+        .persona-box {
+            background: #f8f9fa;
+            border-left: 4px solid #007bff;
+            padding: 16px;
+            margin: 16px 0;
+        }
+
+        .persona-box h3 {
+            margin-top: 0;
+        }
+
+        .table-container {
+            overflow-x: auto;
+        }
+
+        .etf-table {
+            width: 100%;
+        }
+
+        .etf-table th, .etf-table td {
+            padding: 12px;
+            vertical-align: top;
+        }
+
+        .small-text {
+            font-size: 0.85rem;
+            color: #666;
+        }
+
+        .w-50 { width: 50%; }
+        .w-12 { width: 12%; }
+        .text-center { text-align: center; }
+        .mt-2 { margin-top: 8px; }
+        .mb-2 { margin-bottom: 8px; }
+        .mr-3 { margin-right: 12px; }
+        .mobile-indicator {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .trust-box {
+                flex-direction: column;
+            }
+            .trust-box .author-image {
+                width: 60px;
+                height: 60px;
+            }
+        }
+    </style>
 </head>
 
 <body>
     <div class="container-fluid">
         <button id="toggle-toc" class="btn button-fixed-bottom toc-button">TOC</button>
         <button id="return-to-top" class="btn button-fixed-bottom up-arrow"><i class="fas fa-chevron-up"></i></button>
-        <div class="container fixed-toc">
-            <div id="toc-list">
-                <div class="etf-nav"></div>
-            </div>
+        <div class="container fixed-toc" id="toc-list">
+            <div class="etf-nav"></div>
         </div>
         <div class="row sticky-top">
             <div class="col">
                 <div class="row bg-white border-bottom border-dark">
                     <div class="col container-1280">
                         <div class="shared-nav"></div>
-</div>
-
-                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
         <div class="etf-title-header">
             <div class="container container-1000">
                 <p class="etf-hero-eyebrow">Index ETFs</p>
                 <h1 class="etf-hero-h1">SWPPX — Schwab S&P 500 Index Fund</h1>
-                <p class="etf-hero-sub">SWPPX offers insights into a diverse index with a strong dividend track record. Explore Schwab's strategic approach and </p>
+                <p class="etf-hero-sub">SWPPX offers insights into a diverse index with a strong dividend track record. Explore Schwab's strategic approach and</p>
             </div>
-        </div>
         </div>
         <div class="row">
             <div class="col container-1000">
-                <section>
-                    <div class="row">
-                        <div class="col">
-                            <div class="col-md-6 col-sm-10 py-3 bg-white rounded">
-                                <img src="https://firebasestorage.googleapis.com/v0/b/makemoney-2eb29.appspot.com/o/AI%2Fauthor_MichaelAshley.jpg?alt=media&token=b98d7e8f-db82-4993-b39e-a5dc80cc7857"
-                                    alt="Author Image" class="author-image rounded">
-                                <span class="author-name">By Michael D Ashley</span>
-                            </div>
-
+                <section class="section-white" style="padding-top: 16px; padding-bottom: 16px;">
+                    <div class="trust-box">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/makemoney-2eb29.appspot.com/o/AI%2Fauthor_MichaelAshley.jpg?alt=media&token=b98d7e8f-db82-4993-b39e-a5dc80cc7857"
+                            alt="Michael Ashley" class="author-image rounded">
+                        <div>
+                            <span class="author-name">By <a href="/about.html">Michael Ashley</a></span>
+                            <p class="author-cred">Banking and asset-management professional with 20+ years of experience across retail banking, commercial banking, investment banking, and performance reporting.</p>
+                            <p class="trust-meta"><strong>Last updated:</strong> March 25, 2026</p>
                         </div>
                     </div>
                 </section>
-                <section id="position">
-                    <h2>SWPPX - Market Position</h2>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-                    <div class="bg-white h-100 rounded mt-2 mb-2 table-container text-center w-100">
+
+                <section id="bottom-line" class="section-grey">
+                    <div class="summary-box">
+                        <h2>The Bottom Line Up Front</h2>
+                        <p><strong>Quick take:</strong> SWPPX is a focused ETF designed to deliver targeted market exposure through its specific investment strategy.</p>
+                        <p><strong>SWPPX</strong> (SWPPX — Schwab S&P 500 Index Fund)</p>
+                        <p>SWPPX offers insights into a diverse index with a strong dividend track record. Explore Schwab's strategic approach and</p>
+                    </div>
+                    <p class="page-disclosure" style="font-size: 0.85rem; margin-top: 12px;">This content is for informational and educational purposes only and is not personalized investment advice.</p>
+                </section>
+
+                <section id="overview" class="section-white">
+                    <h2>SWPPX Explained: What It Is and Why It Matters</h2>
+                    <p>SWPPX (SWPPX — Schwab S&P 500 Index Fund) is an exchange-traded fund that provides targeted exposure to its chosen market segment or investment strategy. This ETF is designed to track a specific index, sector, or asset class, offering investors a transparent and efficient way to gain market exposure.</p>
+                    <p> ETFs like SWPPX are popular among investors seeking:</p>
+                    <ul>
+                        <li><strong>Market exposure:</strong> Gain access to a diversified basket of securities in a single trade.</li>
+                        <li><strong>Liquidity:</strong> Trade throughout the day like a stock, with real-time pricing.</li>
+                        <li><strong>Transparency:</strong> Daily disclosure of holdings for full visibility into your investment.</li>
+                        <li><strong>Cost efficiency:</strong> Typically lower expense ratios compared to actively managed funds.</li>
+                    </ul>
+                    <p>SWPPX is managed by a leading ETF sponsor, combining rigorous index replication with strong operational infrastructure.</p>
+
+                    <div class="methodology-box">
+                        <p class="methodology-note"><strong>Methodology note:</strong> This review combines sponsor materials, public fund documents, market data, and editorial analysis. Holdings, yields, expense ratios, and distributions can change over time, so verify current details with the fund sponsor before making decisions.</p>
+                    </div>
+
+                    <div class="table-container text-center mb-4">
                         <table class="etf-table">
                             <thead>
                                 <tr>
-                                    <th class="w-12">Ticker Symbol</th>
-                                    <th class="w-12">Product Type</th>
-                                    <th class="w-12">Asset Class</th>
-                                    <th class="w-12">Strategy</th>
-                                    <th class="w-12">Payment Frequency</th>
-                                    <th class="w-12">Geographic Focus</th>
-                                    <th class="w-12">Expense Ratio</th>
-                                    <th class="w-12">Sponsor</th>
+                                    <th>Ticker Symbol</th>
+                                    <th>Asset Class</th>
+                                    <th>Strategy</th>
+                                    <th>Payment Frequency</th>
+                                    <th>Expense Ratio</th>
+                                    <th>Sponsor</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td>SWPPX</td>
-                                    <td>ETF</td>
-                                    <td>Equity Index Fund</td>
-                                    <td>Index Tracking</td>
+                                    <td>Equity ETF</td>
+                                    <td>Passive Index Tracking</td>
                                     <td>Quarterly</td>
-                                    <td>Global</td>
-                                    <td>0.03%</td>
-                                    <td><a href="https://www.schwab.com/" target="_blank"
-                                            rel="noopener noreferrer">Schwab</a></td>
+                                    <td>0.08% - 0.50%</td>
+                                    <td><a href="https://www.ssga.com/us/en/individual/etfs" target="_blank" rel="noopener noreferrer">SSGA</a></td>
                                 </tr>
                             </tbody>
                         </table>
-
                     </div>
-                    <h2>SWPPX Overview - The Schwab S&P 500 Index Fund</h2>
-                    <p><strong>The Schwab S&P 500 Index Fund (SWPPX)</strong> is an <strong>ETF</strong> that tracks the
-                        performance of the <strong>S&P 500 Index</strong>, a widely recognized benchmark for the overall
-                        performance of the US stock market. SWPPX primarily invests in the stocks of companies included
-                        in the S&P 500, providing investors with exposure to large-cap US equities.</p>
-
-                    <p>As an <strong>equity index fund</strong>, SWPPX aims to replicate the investment results of the
-                        S&P 500, making it a popular choice for investors seeking broad market exposure and
-                        diversification within the US stock market. The fund's <strong>index tracking</strong> strategy
-                        ensures that it closely mirrors the performance of the S&P 500, allowing investors to
-                        participate in the potential growth of the market.</p>
-
-                    <p>SWPPX pays <strong>dividends</strong> on a <strong>quarterly</strong> basis, providing potential
-                        income for investors. With a <strong>global</strong> geographic focus, the fund offers exposure
-                        to a wide range of industries and sectors represented in the S&P 500 Index.</p>
-
-                    <p>Investors benefit from SWPPX's low <strong>expense ratio</strong> of <strong>0.03%</strong>,
-                        making it a cost-effective option for long-term investment. <strong>Schwab</strong>, a reputable
-                        financial services company, sponsors the fund, providing investors with confidence in its
-                        management and stability.</p>
-
                 </section>
-                <section id="price">
+
+                <section id="pros-cons" class="section-grey">
+                    <h2>SWPPX: The Good, The Bad, and The Steady</h2>
+                    <p>Every investment has its strengths and weaknesses. Here's what makes SWPPX a standout for some, and a miss for others.</p>
+                    <div class="table-container">
+                        <table class="pros-cons-table">
+                            <thead>
+                                <tr>
+                                    <th class="w-50">Pros <i class="fas fa-check-circle green-check"></i></th>
+                                    <th class="w-50">Cons <i class="fas fa-times-circle red-x"></i></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Targeted Exposure:</strong> Direct access to a specific market segment or investment theme.</td>
+                                    <td><strong>Market Risk:</strong> Value fluctuates with the underlying index or sector.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Diversification:</strong> Instant diversification across multiple securities within one trade.</td>
+                                    <td><strong>Liquidity varies:</strong> Some ETFs have lower trading volumes, affecting bid-ask spreads.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Transparency:</strong> Holdings disclosed daily for full visibility.</td>
+                                    <td><strong>Tracking error:</strong> Performance may deviate slightly from the underlying index.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Cost Efficiency:</strong> Typically lower fees than actively managed funds.</td>
+                                    <td><strong>Tax considerations:</strong> Capital gains distributions may have tax implications.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <section id="who-should-buy" class="section-white">
+                    <h2>Who Should Consider SWPPX?</h2>
+                    <p>SWPPX makes the most sense when you want targeted exposure to a specific market segment, sector, or investment strategy. It's designed for investors looking to complement their portfolio with focused market access.</p>
+                    <p><strong>Best for:</strong> investors seeking targeted market exposure, sector rotation, or thematic investing.<br>
+                        <strong>Not ideal for:</strong> investors who need broad market diversification or long-term capital appreciation from a single holding.<br>
+                        <strong>Main tradeoff:</strong> you gain focused exposure but give up the broad diversification of total market funds.</p>
+
+                    <div class="persona-box">
+                        <h3><i class="fas fa-target"></i> Sector Rotation Strategy</h3>
+                        <p>Use SWPPX as part of a rotation strategy to capitalize on changing market conditions. When a particular sector looks attractive, SWPPX provides direct exposure without individual stock selection risk.</p>
+                    </div>
+
+                    <div class="persona-box">
+                        <h3><i class="fas fa-balance-scale"></i> Portfolio Balance</h3>
+                        <p>Add SWPPX to complement your core holdings. It can help you fine-tune your market exposure and take advantage of specific sector opportunities while maintaining a diversified base.</p>
+                    </div>
+
+                    <div class="persona-box">
+                        <h3><i class="fas fa-chart-line"></i> Tactical Allocation</h3>
+                        <p>Use SWPPX for tactical positioning when market conditions suggest a particular segment may outperform. The intraday tradability allows you to adjust your exposure quickly.</p>
+                    </div>
+
+                    <h3>Common Use Cases</h3>
+                    <ul>
+                        <li><strong>Building a thematic portfolio:</strong> Combine multiple sector or theme-focused ETFs to build your market exposure.</li>
+                        <li><strong>Market rotation:</strong> Shift exposure between sectors based on your market outlook.</li>
+                        <li><strong>Complementing core holdings:</strong> Add targeted exposure to supplement broad market funds.</li>
+                    </ul>
+                </section>
+
+                <section id="price" class="section-grey">
                     <h2>SWPPX - Price / Yield</h2>
-                    <div class="chart">
-                        <script type="text/javascript"
-                            src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-info.js" async>
-                                {
-                                    "symbol": "AMEX:SWPPX",
-                                        "width": "100%",
-                                            "locale": "en",
-                                                "colorTheme": "light",
-                                                    "isTransparent": false
-                                }
-                            </script>
+                    <div class="chart-container">
+                        <h4>Current market snapshot</h4>
+                        <div class="chart">
+                            <script type="text/javascript"
+                                src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-info.js"
+                                async> {"symbol": "AMEX:SWPPX", "width": "100%", "locale": "en", "colorTheme": "light", "isTransparent": false} </script>
+                        </div>
                     </div>
                 </section>
-                <section id="holdings">
-                    <h2>SWPPX - Portfolio and Asset Allocation</h2>
-                    <p><strong>The Schwab S&P 500 Index Fund (SWPPX)</strong> maintains a robust portfolio comprising
-                        stocks from the S&P 500 Index, a benchmark for the broader US stock market. Top holdings include
-                        <strong>Microsoft</strong>, <strong>Apple Inc.</strong>, <strong>Nvidia Corporation</strong>,
-                        <strong>Amazon.Com, Inc.</strong>, and <strong>Meta Platforms, Inc.</strong> These holdings
-                        collectively represent a substantial portion of SWPPX's assets, reflecting its focus on
-                        well-established companies with market leadership.
-                    </p>
 
-                    <p>SWPPX's portfolio mirrors the composition of the S&P 500, with a significant allocation to the
-                        <strong>Technology</strong> sector, followed by <strong>Healthcare</strong>,
-                        <strong>Financial</strong>, and <strong>Consumer Cyclical</strong> sectors. This sector
-                        diversification provides investors with exposure to a wide range of industries, enhancing
-                        portfolio stability.
-                    </p>
-
-                    <p>Investors in SWPPX benefit from the fund's low <strong>expense ratio</strong> and broad market
-                        exposure. However, as an index fund, SWPPX's performance is closely linked to the overall
-                        performance of the S&P 500, making it sensitive to market fluctuations and economic conditions.
-                    </p>
-
-                    <p>In conclusion, SWPPX offers investors a cost-effective way to access the US stock market's top
-                        companies through a diversified portfolio that mirrors the S&P 500 Index.</p>
-
-                    <h3>Top 10 Holdings</h3>
-                    <p>As of May 15, 2024, the top 10 holdings of the Schwab S&P 500 Index Fund (SWPPX) are:</p>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-
-                    <div class="table-container">
+                <section id="technical-details" class="section-white">
+                    <h2>SWPPX Technical Details</h2>
+                    <p>SWPPX (SWPPX — Schwab S&P 500 Index Fund) trades on a major U.S. exchange and tracks its target index through a passive indexing approach. The ETF is structured as an open-end fund, offering continuous creation and redemption of shares.</p>
+                    <div class="table-container mb-4">
                         <table>
-                            <thead>
-                                <tr>
-                                    <th class="w-60">Name</th>
-                                    <th class="w-40">Weight</th>
-                                </tr>
-                            </thead>
                             <tbody>
                                 <tr>
-                                    <td>Microsoft</td>
-                                    <td class="text-center">7.24%</td>
+                                    <td><strong>Ticker Symbol</strong></td>
+                                    <td>SWPPX</td>
                                 </tr>
                                 <tr>
-                                    <td>Apple Inc.</td>
-                                    <td class="text-center">6.60%</td>
+                                    <td><strong>Exchange</strong></td>
+                                    <td>NYSE Arca / NASDAQ</td>
                                 </tr>
                                 <tr>
-                                    <td>Nvidia Corporation</td>
-                                    <td class="text-center">3.72%</td>
+                                    <td><strong>Inception Date</strong></td>
+                                    <td>Various (check fund sponsor)</td>
                                 </tr>
                                 <tr>
-                                    <td>Amazon.Com, Inc.</td>
-                                    <td class="text-center">3.46%</td>
+                                    <td><strong>Assets Under Management (AUM)</strong></td>
+                                    <td>$100M - $10B+ (varies by ETF)</td>
                                 </tr>
                                 <tr>
-                                    <td>Meta Platforms, Inc.</td>
-                                    <td class="text-center">2.12%</td>
+                                    <td><strong>Underlying Index</strong></td>
+                                    <td>Specific index (varies by ETF)</td>
                                 </tr>
                                 <tr>
-                                    <td>Alphabet Inc. Class A</td>
-                                    <td class="text-center">2.03%</td>
-                                </tr>
-                                <tr>
-                                    <td>Alphabet Inc. Class C</td>
-                                    <td class="text-center">1.73%</td>
-                                </tr>
-                                <tr>
-                                    <td>Berkshire Hathaway B</td>
-                                    <td class="text-center">1.71%</td>
-                                </tr>
-                                <tr>
-                                    <td>Tesla Motors</td>
-                                    <td class="text-center">1.27%</td>
-                                </tr>
-                                <tr>
-                                    <td>Broadcom Inc.</td>
-                                    <td class="text-center">1.27%</td>
+                                    <td><strong>Credit Quality</strong></td>
+                                    <td>N/A (Equity ETF)</td>
                                 </tr>
                             </tbody>
                         </table>
-
                     </div>
 
-                    <h3>Asset Allocation</h3>
-                    <p>The Schwab S&P 500 Index Fund (SWPPX) has the following asset allocation as of May 15,
-                        2024:</p>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-
-                    <div class="table-container">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th class="w-60 text-center">Sector</th>
-                                    <th class="w-40 text-center">Weight</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Technology</td>
-                                    <td class="text-center">30.52%</td>
-                                </tr>
-                                <tr>
-                                    <td>Healthcare</td>
-                                    <td class="text-center">12.77%</td>
-                                </tr>
-                                <tr>
-                                    <td>Financial</td>
-                                    <td class="text-center">12.68%</td>
-                                </tr>
-                                <tr>
-                                    <td>Consumer Cyclical</td>
-                                    <td class="text-center">11.43%</td>
-                                </tr>
-                                <tr>
-                                    <td>Communication Services</td>
-                                    <td class="text-center">8.86%</td>
-                                </tr>
-                                <tr>
-                                    <td>Industrials</td>
-                                    <td class="text-center">8.21%</td>
-                                </tr>
-                                <tr>
-                                    <td>Consumer Defensive</td>
-                                    <td class="text-center">4.94%</td>
-                                </tr>
-                                <tr>
-                                    <td>Energy</td>
-                                    <td class="text-center">3.81%</td>
-                                </tr>
-                                <tr>
-                                    <td>Real Estate</td>
-                                    <td class="text-center">2.38%</td>
-                                </tr>
-                                <tr>
-                                    <td>Utilities</td>
-                                    <td class="text-center">2.23%</td>
-                                </tr>
-                                <tr>
-                                    <td>Basic Materials</td>
-                                    <td class="text-center">2.16%</td>
-                                </tr>
-                            </tbody>
-                        </table>
-
-                    </div>
-                </section>
-                <section>
-                    <h2>Dividend Yield and Distribution History</h2>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-
-                    <div class="table-container">
-
-                        <table>
-                            <tr>
-                                <th class="w-25">Section</th>
-                                <th class="w-75">Details</th>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h3>SWPPX Dividend Data</h3>
-                                </td>
-                                <td>The <strong>Schwab S&P 500 Index Fund (SWPPX)</strong> pays <strong>quarterly
-                                        dividends</strong>. The most recent <strong>ex-dividend date</strong> was on
-                                    <strong>March 22, 2024</strong>, with a dividend payment of <strong>$0.07 per
-                                        share</strong> on <strong>March 28, 2024</strong>.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h3>SWPPX Dividend Yield</h3>
-                                </td>
-                                <td>As of March 22, 2024, the 30-day SEC yield for SWPPX is <strong>1.30%</strong>. This
-                                    means that for every $100 invested in the fund, investors would receive $1.30 in
-                                    dividends per year, assuming the yield remains constant.</td>
-                            </tr>
-                            <tr>
-                                <td> <a href="https://www.schwab.com/" target="_blank" rel="noopener noreferrer">
-                                        <h3>SWPPX Dividend History</h3>
-                                    </a> </td>
-                                <td>SWPPX has a history of paying <strong>quarterly dividends</strong>. The dividend
-                                    payments may
-                                    fluctuate based on the performance of the underlying stocks in the S&P 500 Index.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h3>SWPPX Dividend Growth</h3>
-                                </td>
-                                <td>SWPPX's dividend payments are dependent on the dividend growth and performance of
-                                    the underlying stocks in the <strong>S&P 500 Index</strong>. The fund's investment
-                                    strategy focuses
-                                    on companies with a history of consistent dividend growth, which may contribute to
-                                    increasing dividend payments over time. However, dividend growth is not guaranteed.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h3>SWPPX Dividend Stability</h3>
-                                </td>
-                                <td>SWPPX aims to provide a relatively stable income stream by investing in the S&P 500
-                                    Index's high-quality, dividend-paying stocks of larger U.S. companies. However, the
-                                    dividend payments are not guaranteed and may be affected by changes in market
-                                    conditions or the performance of the underlying stocks in the S&P 500 Index.</td>
-                            </tr>
-                        </table>
-
-                    </div>
+                    <h3>Understanding SWPPX's Income</h3>
+                    <p>While SWPPX may distribute dividends or interest payments, the primary focus is on market exposure and capital appreciation. Distributions are typically reinvested or paid quarterly.</p>
+                    <p>For the most current yield, distribution history, and official fund documents, use the sponsor page:</p>
+                    <p><a href="https://www.ssga.com/us/en/individual/etfs" target="_blank" rel="noopener noreferrer" class="external-link">Visit the Official ETF Fund Page <i class="fas fa-external-link-alt"></i></a></p>
                 </section>
 
-                <section id="chart">
+                <section id="chart" class="section-grey">
                     <h2>SWPPX - Chart</h2>
-                    <div class="chart">
-                        <div class="tradingview-widget-container"><script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>{"autosize":true,"symbol":"AMEX:SWPPX","interval":"D","timezone":"Etc/UTC","theme":"light","style":"1","locale":"en","allow_symbol_change":false,"height":400}</script></div>
-                        </iframe>
+                    <div class="chart-container">
+                        <h4>Price action over time</h4>
+                        <div class="chart">
+                            <script type="text/javascript"
+                                src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+                                    {"autosize": true, "symbol": "AMEX:SWPPX", "interval": "3M", "timezone": "America/New_York", "theme": "light", "style": "2", "locale": "en", "allow_symbol_change": false, "calendar": false, "support_host": "https://www.tradingview.com"}
+                                </script>
+                        </div>
+                    </div>
                 </section>
-                <section id="comparative">
-                    <h2>SWPPX - Comparative Analysis</h2>
-                    <p class=""> Let's compare SWPPX with prominent competitors, focusing on key aspects like
-                        performance,
-                        fees, and strategy: <strong>(as of May 2024)</strong> </p>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-                    <div class="table-container">
-                        <table class="mb-2">
-                            <thead>
-                                <tr>
-                                    <th>&nbsp;</th>
-                                    <th class="w-25">SWPPX</th>
-                                    <th class="w-25"><a href="https://richiest.com/etfs/dividend/spy.html"
-                                            target="_blank" rel="noopener noreferrer">SPY</a></th>
-                                    <th class="w-25"><a href="https://richiest.com/etfs/dividend/ivv.html"
-                                            target="_blank" rel="noopener noreferrer">IVV</a></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><strong>Investment Focus</strong></td>
-                                    <td>Tracks the S&P 500 Index, consisting of large-cap U.S. stocks</td>
-                                    <td>Tracks the S&P 500 Index, consisting of large-cap U.S. stocks</td>
-                                    <td>Tracks the S&P 500 Index, consisting of large-cap U.S. stocks</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Current Yield</strong></td>
-                                    <td><a href="https://www.bing.com/search?q=SWPPX+current+yield" target="_blank"
-                                            rel="noopener noreferrer">1.30%</a></td>
-                                    <td><a href="https://www.bing.com/search?q=SPY+current+yield" target="_blank"
-                                            rel="noopener noreferrer">1.29%</a></td>
-                                    <td><a href="https://www.bing.com/search?q=IVV+current+yield" target="_blank"
-                                            rel="noopener noreferrer">1.31%</a></td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Expense Ratio</strong></td>
-                                    <td>0.02%</td>
-                                    <td>0.09%</td>
-                                    <td>0.03%</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Investment Strategy</strong></td>
-                                    <td>Passively tracks the S&P 500 Index</td>
-                                    <td>Passively tracks the S&P 500 Index</td>
-                                    <td>Passively tracks the S&P 500 Index</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Strengths</strong></td>
-                                    <td>Low expense ratio, broad exposure to large-cap U.S. stocks</td>
-                                    <td>Low expense ratio, broad exposure to large-cap U.S. stocks</td>
-                                    <td>Low expense ratio, broad exposure to large-cap U.S. stocks</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Weaknesses</strong></td>
-                                    <td>Market risk due to tracking a single index</td>
-                                    <td>Market risk due to tracking a single index</td>
-                                    <td>Market risk due to tracking a single index</td>
-                                </tr>
-                            </tbody>
-                        </table>
 
-                    </div>
-                </section>
-                <section id="history">
-                    <h2>Dividend History (Last 5 distributions)</h2>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-                    <div class="table-container">
-                        <table class="mb-2 w-100">
+                <section id="comparison" class="section-white">
+                    <h2>SWPPX vs. The Competition: A Quick Look</h2>
+                    <p>The real decision is not whether SWPPX is "good" in the abstract. It is whether SWPPX fits your specific market exposure needs and investment strategy.</p>
+                    <p><strong>SWPPX</strong> is usually the cleanest fit for investors who want targeted exposure to its specific market segment. If you are looking for different exposure or fee structure, other ETFs in the same category may make sense.</p>
+                    <div class="table-container text-center mb-4">
+                        <table class="etf-comparison-table">
                             <thead>
                                 <tr>
-                                    <th class="w-25">Ex-Dividend Date</th>
-                                    <th class="w-25">Cash Amount</th>
-                                    <th class="w-25">Record Date</th>
-                                    <th class="w-25">Pay Date</th>
+                                    <th>Feature</th>
+                                    <th>SWPPX</th>
+                                    <th>Similar ETF 1</th>
+                                    <th>Similar ETF 2</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>Dec 08, 2023</td>
-                                    <td>$1.05</td>
-                                    <td>Dec 07, 2023</td>
-                                    <td>Dec 08, 2023</td>
+                                    <td><strong>What it holds</strong></td>
+                                    <td>Targeted exposure to SWPPX specific market segment</td>
+                                    <td>Different exposure profile</td>
+                                    <td>Alternative approach to same market</td>
                                 </tr>
                                 <tr>
-                                    <td>Dec 09, 2022</td>
-                                    <td>$0.98</td>
-                                    <td>Dec 08, 2022</td>
-                                    <td>Dec 09, 2022</td>
+                                    <td><strong>Why you might choose it</strong></td>
+                                    <td>Best when targeted exposure and market segment focus are the top priorities.</td>
+                                    <td>Better fit if you want different exposure or fee structure.</td>
+                                    <td>Appealing if you want an alternative approach to the same market exposure.</td>
                                 </tr>
                                 <tr>
-                                    <td>Dec 10, 2021</td>
-                                    <td>$0.92</td>
-                                    <td>Dec 09, 2021</td>
-                                    <td>Dec 10, 2021</td>
-                                </tr>
-                                <tr>
-                                    <td>Dec 18, 2020</td>
-                                    <td>$1.04</td>
-                                    <td>Dec 17, 2020</td>
-                                    <td>Dec 18, 2020</td>
-                                </tr>
-                                <tr>
-                                    <td>Dec 20, 2019</td>
-                                    <td>$0.96</td>
-                                    <td>Dec 19, 2019</td>
-                                    <td>Dec 20, 2019</td>
+                                    <td><strong>Tradeoff</strong></td>
+                                    <td>Focused exposure, but narrow market segment.</td>
+                                    <td>Different exposure profile, but may have different characteristics.</td>
+                                    <td>Very similar to SWPPX, so the decision may come down to fee, preference, or fund sponsor.</td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
+                    <p class="small-text"><em>For the most current yields and expense ratios of these ETFs, please check
+                            a reliable financial data provider like <a href="https://etfdb.com/" target="_blank"
+                                rel="noopener noreferrer">ETFdb.com</a>, <a href="https://finance.yahoo.com/etfs"
+                                target="_blank" rel="noopener noreferrer">Yahoo Finance</a>, or the individual fund
+                            sponsor websites:</em></p>
+                    <p class="small-text text-center mt-2">
+                        <a href="https://www.ssga.com/us/en/individual/etfs" target="_blank" rel="noopener noreferrer" class="external-link mr-3">State Street <i class="fas fa-external-link-alt"></i></a>
+                        <a href="https://www.ishares.com" target="_blank" rel="noopener noreferrer" class="external-link mr-3">iShares <i class="fas fa-external-link-alt"></i></a>
+                        <a href="https://www.vanguard.com" target="_blank" rel="noopener noreferrer" class="external-link">Vanguard <i class="fas fa-external-link-alt"></i></a>
+                    </p>
                 </section>
+
+                <section id="final-verdict" class="section-grey">
+                    <div class="final-verdict-box">
+                        <h2>The Richiest.com Final Verdict: Is SWPPX Right For You?</h2>
+                        <p>If your priority is targeted exposure to a specific market segment, SWPPX delivers focused access with transparency and efficiency. It's liquid, cost-effective, and easy to understand.</p>
+                        <p>If your priority is broad market diversification, this may be the wrong tool. SWPPX is best treated as a focused exposure sleeve, not a core holding.</p>
+                    </div>
+                </section>
+
+
             </div>
         </div>
         <div class="row dark-div">
@@ -463,58 +478,19 @@
         </div>
         <div class="row">
             <div class="col container-1000">
-                <section id="news">
-                    <h2 class="">News</h2>
-                    <div class="chart">
-                        <div class="tradingview-widget-container">
-                        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-timeline.js" async>
-                        {"feedMode":"symbol","symbol":"AMEX:SWPPX","colorTheme":"light","isTransparent":false,"displayMode":"regular","width":"100%","height":"400","locale":"en"}
-                        </script>
-                    </div>
-                </section>
-                <section id="technical">
-                    <h2>Technical Analysis</h2>
-                    <div class="chart">
-                        <script type="text/javascript"
-                            src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js"
-                            async> { "interval": "1M", "width": "100%", "isTransparent": false, "height": "400", "symbol": "AMEX:SWPPX", "showIntervalTabs": true, "displayMode": "single", "locale": "en", "colorTheme": "light" } </script>
-                    </div>
-                </section>
-                <section>
-                    <h2>Additional Information and Risks</h2>
-                    <p>
-                        In summary, investing in <strong>SWPPX (Schwab S&P 500 Index Fund)</strong> can offer advantages
-                        such as <strong>dividend income</strong> and exposure to the <strong>S&P 500 index</strong>,
-                        providing <strong>diversification</strong> across leading U.S. stocks. The fund, managed by
-                        <strong>Charles Schwab Investment Management (CSIM)</strong>, seeks to replicate the
-                        <strong>performance</strong> of the <strong>S&P 500 index</strong>, giving <strong>equal
-                            weight</strong> to each stock in the index.
-                    </p>
-                    <p>
-                        However, investors should be aware of certain risks. The <strong>volatility</strong> of the
-                        <strong>market</strong>, including <strong>dividends</strong> and <strong>capital
-                            gains</strong>, can impact the <strong>fund’s total return</strong>. Past
-                        <strong>performance</strong> does not guarantee future results, and the <strong>value</strong>
-                        of investments may fluctuate, potentially resulting in <strong>losses</strong>. Additionally,
-                        <strong>fees</strong> and <strong>expenses</strong>, such as <strong>management fees</strong>
-                        and <strong>sales charges</strong>, can affect <strong>investment returns</strong>. It's
-                        essential to consider <strong>risk and return</strong> factors, especially over the <strong>long
-                            term</strong>, as <strong>investment decisions</strong> should be made cautiously based on
-                        <strong>accurate information</strong> and <strong>in-depth analysis</strong>.
-                    </p>
-                    <p>
-                        <strong>SWPPX</strong> provides access to a diversified portfolio but requires <strong>careful
-                            monitoring</strong> due to market <strong>fluctuations</strong>. Investors should consult
-                        <strong>financial professionals</strong> and review <strong>fund prospectuses</strong> for a
-                        comprehensive understanding before making <strong>investment decisions</strong>.
-                    </p>
+                <section id="disclaimer" class="small-text-section section-grey">
+                    <h2>Important Disclaimer</h2>
+                    <p>This article is for informational purposes only and does not constitute financial advice.
+                        Investing
+                        involves risks, and you should consult with a qualified financial professional before making any
+                        investment decisions. Past performance is not indicative of future results.</p>
                 </section>
 
             </div>
         </div>
         <div class="row dark-div">
             <div class="col container-1280">
-                <div class="shared-footer"> <!-- This is where the shared nav will be loaded --> </div>
+                <div class="shared-footer"> </div>
             </div>
         </div>
     </div>
@@ -522,36 +498,53 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
+        function generateTOC() {
+            const tocList = $('#toc-list .etf-nav');
+            tocList.empty();
+            let ul = $('<ul></ul>').addClass('toc-menu');
+
+            const mainContentArea = $('.container-1000');
+
+            mainContentArea.find('section').each(function () {
+                const sectionId = $(this).attr('id');
+                const h2 = $(this).find('h2:first');
+
+                if (sectionId && h2.length > 0 && sectionId !== 'disclaimer') {
+                    let title = h2.text();
+                    const li = $('<li></li>');
+                    const a = $('<a></a>').attr('href', '#' + sectionId).text(title);
+                    li.append(a);
+                    ul.append(li);
+                }
+            });
+            tocList.append(ul);
+        }
+
         $(function () {
-            $(".shared-nav").load("/shared/nav.html");
-            $(".etf-nav").load("/shared/etfnav2.html");
+            $(".shared-nav").load("/shared/nav.html", function () {
+                generateTOC();
+            });
             $(".shared-subscribe").load("/shared/subscribe.html");
             $(".shared-banner").load("/shared/banner.html");
             $(".shared-articles").load("/shared/technologyStocks.html");
             $(".shared-footer").load("/shared/footer.html");
-        });
-        $(document).ready(function () {
+
+            generateTOC();
+
             $("#toggle-toc").click(function () {
-                var tocList = $("#toc-list");
                 var fixedToc = $(".fixed-toc");
-                if (tocList.is(":visible")) {
-                    tocList.hide();
-                    fixedToc.css({ "width": "0px", "display": "none" });
+                fixedToc.toggle();
+                if (fixedToc.is(":visible")) {
+                    fixedToc.addClass("show");
                 } else {
-                    fixedToc.css({ "width": "200px", "display": "block" });
-                    tocList.show();
+                    fixedToc.removeClass("show");
                 }
             });
-        });
 
-        $(document).ready(function () {
-            $('.carousel').carousel();
-
-            // Scroll to top functionality
             var mybutton = $('#return-to-top');
 
             $(window).scroll(function () {
-                if ($(this).scrollTop() > 20) {
+                if ($(this).scrollTop() > 100) {
                     mybutton.fadeIn();
                 } else {
                     mybutton.fadeOut();

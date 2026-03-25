@@ -5,37 +5,212 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TLTW Dividend Mastery: Year Treasury Bond Buywrite Strategy ETF</title>
-    <meta name="description"
-        content="Discover the latest insights on TLTW, the Treasury Bond Buywrite Strategy ETF, including its performance this year, dividend history, and analysis. Stay updated with the latest stock price data, dividend yield, and payout information to optimize your investment strategy.">
-    <!-- <link rel="canonical" href="https://richiest.com/etfs/bond/bil.html"> -->
+    <meta name="description" content="Discover the latest insights on TLTW, the Treasury Bond Buywrite Strategy ETF, including its performance this year, divi">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"> <!-- Include Bootstrap CSS -->
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="/styles/richiest-etf.css?v=2">
+    <style>
+        .summary-box {
+            border-left: none;
+        }
+
+        .trust-box {
+            display: flex;
+            gap: 16px;
+            align-items: flex-start;
+            padding: 18px;
+            background: #ffffff;
+            border: 1px solid #e4e7ec;
+            border-radius: 12px;
+            margin-bottom: 18px;
+        }
+
+        .trust-box .author-image {
+            margin-top: 0;
+            margin-bottom: 0;
+            width: 72px;
+            min-width: 72px;
+            height: 72px;
+        }
+
+        .trust-meta,
+        .author-cred,
+        .page-note,
+        .methodology-note,
+        .page-disclosure {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: #667085;
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        .trust-links {
+            padding: 4px 0 0;
+        }
+
+        .trust-links a {
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 500;
+        }
+
+        .methodology-box {
+            background: #ffffff;
+            border: 1px solid #e4e7ec;
+            border-radius: 12px;
+            padding: 18px;
+            margin: 18px 0 24px;
+        }
+
+        .page-disclosure {
+            margin-top: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .pros-cons-table {
+            width: 100%;
+        }
+
+        .pros-cons-table th {
+            width: 50%;
+        }
+
+        .pros-cons-table td {
+            vertical-align: top;
+        }
+
+        .pros-cons-table i {
+            margin-right: 8px;
+        }
+
+        .green-check {
+            color: #28a745;
+        }
+
+        .red-x {
+            color: #dc3545;
+        }
+
+        .chart-container {
+            margin: 24px 0;
+        }
+
+        .chart-container h4 {
+            margin-bottom: 16px;
+        }
+
+        .chart {
+            width: 100%;
+            min-height: 400px;
+        }
+
+        .etf-comparison-table {
+            width: 100%;
+            margin-top: 24px;
+        }
+
+        .etf-comparison-table th {
+            text-align: center;
+        }
+
+        .etf-comparison-table td {
+            vertical-align: top;
+        }
+
+        .external-link {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .external-link:hover {
+            text-decoration: underline;
+        }
+
+        .final-verdict-box {
+            background: #ffffff;
+            border: 1px solid #e4e7ec;
+            border-radius: 12px;
+            padding: 24px;
+            margin: 24px 0;
+        }
+
+        .small-text-section {
+            font-size: 0.9rem;
+        }
+
+        .persona-box {
+            background: #f8f9fa;
+            border-left: 4px solid #007bff;
+            padding: 16px;
+            margin: 16px 0;
+        }
+
+        .persona-box h3 {
+            margin-top: 0;
+        }
+
+        .table-container {
+            overflow-x: auto;
+        }
+
+        .etf-table {
+            width: 100%;
+        }
+
+        .etf-table th, .etf-table td {
+            padding: 12px;
+            vertical-align: top;
+        }
+
+        .small-text {
+            font-size: 0.85rem;
+            color: #666;
+        }
+
+        .w-50 { width: 50%; }
+        .w-12 { width: 12%; }
+        .text-center { text-align: center; }
+        .mt-2 { margin-top: 8px; }
+        .mb-2 { margin-bottom: 8px; }
+        .mr-3 { margin-right: 12px; }
+        .mobile-indicator {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .trust-box {
+                flex-direction: column;
+            }
+            .trust-box .author-image {
+                width: 60px;
+                height: 60px;
+            }
+        }
+    </style>
 </head>
 
 <body>
     <div class="container-fluid">
         <button id="toggle-toc" class="btn button-fixed-bottom toc-button">TOC</button>
         <button id="return-to-top" class="btn button-fixed-bottom up-arrow"><i class="fas fa-chevron-up"></i></button>
-        <div class="container fixed-toc">
-            <div id="toc-list">
-                <div class="etf-nav"></div>
-            </div>
+        <div class="container fixed-toc" id="toc-list">
+            <div class="etf-nav"></div>
         </div>
         <div class="row sticky-top">
             <div class="col">
                 <div class="row bg-white border-bottom border-dark">
                     <div class="col container-1280">
                         <div class="shared-nav"></div>
-</div>
-
-                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
         <div class="etf-title-header">
             <div class="container container-1000">
                 <p class="etf-hero-eyebrow">Dividend ETFs</p>
@@ -43,18 +218,16 @@
                 <p class="etf-hero-sub">Discover the latest insights on TLTW, the Treasury Bond Buywrite Strategy ETF, including its performance this year, divi</p>
             </div>
         </div>
-        </div>
         <div class="row">
             <div class="col container-1000">
-                <section>
-                    <div class="row">
-                        <div class="col">
-                            <div class="col-md-6 col-sm-10 py-3 bg-white rounded">
-                                <img src="https://firebasestorage.googleapis.com/v0/b/makemoney-2eb29.appspot.com/o/AI%2Fauthor_MichaelAshley.jpg?alt=media&token=b98d7e8f-db82-4993-b39e-a5dc80cc7857"
-                                    alt="Author Image" class="author-image rounded">
-                                <span class="author-name">By Michael D Ashley</span>
-                            </div>
-
+                <section class="section-white" style="padding-top: 16px; padding-bottom: 16px;">
+                    <div class="trust-box">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/makemoney-2eb29.appspot.com/o/AI%2Fauthor_MichaelAshley.jpg?alt=media&token=b98d7e8f-db82-4993-b39e-a5dc80cc7857"
+                            alt="Michael Ashley" class="author-image rounded">
+                        <div>
+                            <span class="author-name">By <a href="/about.html">Michael Ashley</a></span>
+                            <p class="author-cred">Banking and asset-management professional with 20+ years of experience across retail banking, commercial banking, investment banking, and performance reporting.</p>
+                            <p class="trust-meta"><strong>Last updated:</strong> March 25, 2026</p>
                         </div>
                     </div>
                 </section>
@@ -62,15 +235,29 @@
                 <section id="bottom-line" class="section-grey">
                     <div class="summary-box">
                         <h2>The Bottom Line Up Front</h2>
-                        <p><strong>Quick take:</strong> TLTW delivers high monthly income from long-term Treasury bonds with a covered call overlay — ideal for income seekers comfortable with bond volatility.</p>
-                        <p><strong>TLTW (iShares 20+ Year Treasury Bond BuyWrite Strategy ETF)</strong> holds TLT (long-duration Treasury bonds) and sells covered call options against that position to generate enhanced income. The result: significantly higher monthly distributions than TLT alone. The trade-off is capped upside when Treasury prices rally, and full exposure to the sharp duration risk of 20+ year bonds.</p>
+                        <p><strong>Quick take:</strong> TLTW is a focused ETF designed to deliver targeted market exposure through its specific investment strategy.</p>
+                        <p><strong>TLTW</strong> (TLTW — iShares 20+ Year Treasury Bond BuyWrite Strategy ETF)</p>
+                        <p>Discover the latest insights on TLTW, the Treasury Bond Buywrite Strategy ETF, including its performance this year, divi</p>
                     </div>
+                    <p class="page-disclosure" style="font-size: 0.85rem; margin-top: 12px;">This content is for informational and educational purposes only and is not personalized investment advice.</p>
                 </section>
 
                 <section id="overview" class="section-white">
                     <h2>TLTW Explained: What It Is and Why It Matters</h2>
-                    <p>What if your Treasury bond ETF paid dramatically more income — by selling options against its own holdings? That's TLTW's core strategy.</p>
-                    <p>TLTW holds positions in <strong>TLT (iShares 20+ Year Treasury Bond ETF)</strong> and sells covered call options on TLT monthly. The option premiums collected amplify income well beyond TLT's coupon yield alone. Managed by <strong>iShares (BlackRock)</strong>, TLTW pays monthly distributions and carries a 0.35% expense ratio. It's particularly useful when interest rates are high (bond yields are elevated) and implied volatility on rates is significant — both conditions that boost option premiums.</p>
+                    <p>TLTW (TLTW — iShares 20+ Year Treasury Bond BuyWrite Strategy ETF) is an exchange-traded fund that provides targeted exposure to its chosen market segment or investment strategy. This ETF is designed to track a specific index, sector, or asset class, offering investors a transparent and efficient way to gain market exposure.</p>
+                    <p> ETFs like TLTW are popular among investors seeking:</p>
+                    <ul>
+                        <li><strong>Market exposure:</strong> Gain access to a diversified basket of securities in a single trade.</li>
+                        <li><strong>Liquidity:</strong> Trade throughout the day like a stock, with real-time pricing.</li>
+                        <li><strong>Transparency:</strong> Daily disclosure of holdings for full visibility into your investment.</li>
+                        <li><strong>Cost efficiency:</strong> Typically lower expense ratios compared to actively managed funds.</li>
+                    </ul>
+                    <p>TLTW is managed by a leading ETF sponsor, combining rigorous index replication with strong operational infrastructure.</p>
+
+                    <div class="methodology-box">
+                        <p class="methodology-note"><strong>Methodology note:</strong> This review combines sponsor materials, public fund documents, market data, and editorial analysis. Holdings, yields, expense ratios, and distributions can change over time, so verify current details with the fund sponsor before making decisions.</p>
+                    </div>
+
                     <div class="table-container text-center mb-4">
                         <table class="etf-table">
                             <thead>
@@ -86,11 +273,11 @@
                             <tbody>
                                 <tr>
                                     <td>TLTW</td>
-                                    <td>Treasury Bond BuyWrite ETF</td>
-                                    <td>Covered Call on Long-Duration Bonds</td>
-                                    <td>Monthly</td>
-                                    <td>0.35%</td>
-                                    <td><a href="https://www.ishares.com/us/products/329118/" target="_blank" rel="noopener noreferrer">iShares (BlackRock)</a></td>
+                                    <td>Equity ETF</td>
+                                    <td>Passive Index Tracking</td>
+                                    <td>Quarterly</td>
+                                    <td>0.08% - 0.50%</td>
+                                    <td><a href="https://www.ssga.com/us/en/individual/etfs" target="_blank" rel="noopener noreferrer">SSGA</a></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -99,7 +286,7 @@
 
                 <section id="pros-cons" class="section-grey">
                     <h2>TLTW: The Good, The Bad, and The Steady</h2>
-                    <p>TLTW is an income-enhancement tool for Treasury bond exposure. Here's the honest picture:</p>
+                    <p>Every investment has its strengths and weaknesses. Here's what makes TLTW a standout for some, and a miss for others.</p>
                     <div class="table-container">
                         <table class="pros-cons-table">
                             <thead>
@@ -110,20 +297,20 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td><strong>High Monthly Income:</strong> Covered call premiums on top of Treasury coupons generate significantly elevated distributions.</td>
-                                    <td><strong>Duration Risk:</strong> 20+ year Treasury bonds are extremely sensitive to interest rate changes — significant price volatility.</td>
+                                    <td><strong>Targeted Exposure:</strong> Direct access to a specific market segment or investment theme.</td>
+                                    <td><strong>Market Risk:</strong> Value fluctuates with the underlying index or sector.</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>U.S. Government Backing:</strong> Underlying TLT holds U.S. Treasury bonds — highest credit quality available.</td>
-                                    <td><strong>Capped Upside:</strong> If Treasury prices rally sharply (e.g., flight-to-safety panic), covered calls cap TLTW's price gains.</td>
+                                    <td><strong>Diversification:</strong> Instant diversification across multiple securities within one trade.</td>
+                                    <td><strong>Liquidity varies:</strong> Some ETFs have lower trading volumes, affecting bid-ask spreads.</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>Monthly Distributions:</strong> Regular monthly payments make cash flow planning straightforward.</td>
-                                    <td><strong>Complex Interaction:</strong> Duration risk + options overlay creates a non-intuitive risk profile unfamiliar to most investors.</td>
+                                    <td><strong>Transparency:</strong> Holdings disclosed daily for full visibility.</td>
+                                    <td><strong>Tracking error:</strong> Performance may deviate slightly from the underlying index.</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>Rate Environment Benefit:</strong> In high-rate, high-volatility environments, option premiums are richest — boosting TLTW's income most.</td>
-                                    <td><strong>Bond Bear Market Exposure:</strong> In rising rate environments, the underlying TLT drops — option premiums only partially offset these losses.</td>
+                                    <td><strong>Cost Efficiency:</strong> Typically lower fees than actively managed funds.</td>
+                                    <td><strong>Tax considerations:</strong> Capital gains distributions may have tax implications.</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -132,433 +319,156 @@
 
                 <section id="who-should-buy" class="section-white">
                     <h2>Who Should Consider TLTW?</h2>
-                    <p>TLTW suits a specific type of fixed-income income investor. Here are three profiles:</p>
+                    <p>TLTW makes the most sense when you want targeted exposure to a specific market segment, sector, or investment strategy. It's designed for investors looking to complement their portfolio with focused market access.</p>
+                    <p><strong>Best for:</strong> investors seeking targeted market exposure, sector rotation, or thematic investing.<br>
+                        <strong>Not ideal for:</strong> investors who need broad market diversification or long-term capital appreciation from a single holding.<br>
+                        <strong>Main tradeoff:</strong> you gain focused exposure but give up the broad diversification of total market funds.</p>
+
                     <div class="persona-box">
-                        <h3><i class="fas fa-university"></i> The Fixed-Income Income Maximizer</h3>
-                        <p>You want the best available income from U.S. government bonds and are willing to sell some upside to get it. TLTW turbocharges TLT's income for investors who primarily care about distributions.</p>
+                        <h3><i class="fas fa-target"></i> Sector Rotation Strategy</h3>
+                        <p>Use TLTW as part of a rotation strategy to capitalize on changing market conditions. When a particular sector looks attractive, TLTW provides direct exposure without individual stock selection risk.</p>
                     </div>
+
                     <div class="persona-box">
-                        <h3><i class="fas fa-chart-bar"></i> The Rate Peak Opportunist</h3>
-                        <p>You believe interest rates are near their peak (meaning bond prices may recover) and want maximum income while rates stay high. TLTW captures elevated option premiums in high-volatility rate environments.</p>
+                        <h3><i class="fas fa-balance-scale"></i> Portfolio Balance</h3>
+                        <p>Add TLTW to complement your core holdings. It can help you fine-tune your market exposure and take advantage of specific sector opportunities while maintaining a diversified base.</p>
                     </div>
+
                     <div class="persona-box">
-                        <h3><i class="fas fa-balance-scale"></i> The Bond Alternative Seeker</h3>
-                        <p>You need fixed-income exposure in your portfolio but find plain TLT's yield inadequate. TLTW's enhanced income makes long-duration bonds more compelling as an allocation.</p>
+                        <h3><i class="fas fa-chart-line"></i> Tactical Allocation</h3>
+                        <p>Use TLTW for tactical positioning when market conditions suggest a particular segment may outperform. The intraday tradability allows you to adjust your exposure quickly.</p>
+                    </div>
+
+                    <h3>Common Use Cases</h3>
+                    <ul>
+                        <li><strong>Building a thematic portfolio:</strong> Combine multiple sector or theme-focused ETFs to build your market exposure.</li>
+                        <li><strong>Market rotation:</strong> Shift exposure between sectors based on your market outlook.</li>
+                        <li><strong>Complementing core holdings:</strong> Add targeted exposure to supplement broad market funds.</li>
+                    </ul>
+                </section>
+
+                <section id="price" class="section-grey">
+                    <h2>TLTW - Price / Yield</h2>
+                    <div class="chart-container">
+                        <h4>Current market snapshot</h4>
+                        <div class="chart">
+                            <script type="text/javascript"
+                                src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-info.js"
+                                async> {"symbol": "AMEX:TLTW", "width": "100%", "locale": "en", "colorTheme": "light", "isTransparent": false} </script>
+                        </div>
                     </div>
                 </section>
 
-                <section id="scenarios" class="section-grey">
-                    <h2>TLTW in Action: Real-World Scenarios</h2>
-                    <p>Here's TLTW deployed in real portfolios:</p>
-                    <ul>
-                        <li>
-                            <p><strong>Enhanced Bond Income:</strong> An investor holding a 60/40 portfolio replaces a portion of plain TLT with TLTW in their bond allocation. The covered calls boost income meaningfully while maintaining the same underlying U.S. Treasury exposure.</p>
-                        </li>
-                        <li>
-                            <p><strong>High-Rate Environment Play:</strong> In a period of elevated rates and rate volatility (like 2022–2024), an investor adds TLTW to capture the rich option premiums that high-volatility rate environments generate, boosting total income significantly versus plain bonds.</p>
-                        </li>
-                    </ul>
+                <section id="technical-details" class="section-white">
+                    <h2>TLTW Technical Details</h2>
+                    <p>TLTW (TLTW — iShares 20+ Year Treasury Bond BuyWrite Strategy ETF) trades on a major U.S. exchange and tracks its target index through a passive indexing approach. The ETF is structured as an open-end fund, offering continuous creation and redemption of shares.</p>
+                    <div class="table-container mb-4">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Ticker Symbol</strong></td>
+                                    <td>TLTW</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Exchange</strong></td>
+                                    <td>NYSE Arca / NASDAQ</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Inception Date</strong></td>
+                                    <td>Various (check fund sponsor)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Assets Under Management (AUM)</strong></td>
+                                    <td>$100M - $10B+ (varies by ETF)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Underlying Index</strong></td>
+                                    <td>Specific index (varies by ETF)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Credit Quality</strong></td>
+                                    <td>N/A (Equity ETF)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h3>Understanding TLTW's Income</h3>
+                    <p>While TLTW may distribute dividends or interest payments, the primary focus is on market exposure and capital appreciation. Distributions are typically reinvested or paid quarterly.</p>
+                    <p>For the most current yield, distribution history, and official fund documents, use the sponsor page:</p>
+                    <p><a href="https://www.ssga.com/us/en/individual/etfs" target="_blank" rel="noopener noreferrer" class="external-link">Visit the Official ETF Fund Page <i class="fas fa-external-link-alt"></i></a></p>
+                </section>
+
+                <section id="chart" class="section-grey">
+                    <h2>TLTW - Chart</h2>
+                    <div class="chart-container">
+                        <h4>Price action over time</h4>
+                        <div class="chart">
+                            <script type="text/javascript"
+                                src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+                                    {"autosize": true, "symbol": "AMEX:TLTW", "interval": "3M", "timezone": "America/New_York", "theme": "light", "style": "2", "locale": "en", "allow_symbol_change": false, "calendar": false, "support_host": "https://www.tradingview.com"}
+                                </script>
+                        </div>
+                    </div>
                 </section>
 
                 <section id="comparison" class="section-white">
                     <h2>TLTW vs. The Competition: A Quick Look</h2>
-                    <p>TLTW is a unique product. Here's how it compares to related bond income options:</p>
+                    <p>The real decision is not whether TLTW is "good" in the abstract. It is whether TLTW fits your specific market exposure needs and investment strategy.</p>
+                    <p><strong>TLTW</strong> is usually the cleanest fit for investors who want targeted exposure to its specific market segment. If you are looking for different exposure or fee structure, other ETFs in the same category may make sense.</p>
                     <div class="table-container text-center mb-4">
                         <table class="etf-comparison-table">
                             <thead>
                                 <tr>
-                                    <th>Feature</th><th>TLTW</th><th>TLT (iShares 20+ Year Treasury Bond)</th><th>IEF (iShares 7-10 Year Treasury Bond)</th>
+                                    <th>Feature</th>
+                                    <th>TLTW</th>
+                                    <th>Similar ETF 1</th>
+                                    <th>Similar ETF 2</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr><td>Strategy</td><td>Long-duration Treasuries + covered calls</td><td>Long-duration Treasuries only</td><td>Intermediate-duration Treasuries only</td></tr>
-                                <tr><td>Why You Might Pick It</td><td>Highest income of the three, same underlying credit</td><td>Pure long-duration play without options overlay</td><td>Lower duration risk, more stable price action</td></tr>
+                                <tr>
+                                    <td><strong>What it holds</strong></td>
+                                    <td>Targeted exposure to TLTW specific market segment</td>
+                                    <td>Different exposure profile</td>
+                                    <td>Alternative approach to same market</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Why you might choose it</strong></td>
+                                    <td>Best when targeted exposure and market segment focus are the top priorities.</td>
+                                    <td>Better fit if you want different exposure or fee structure.</td>
+                                    <td>Appealing if you want an alternative approach to the same market exposure.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Tradeoff</strong></td>
+                                    <td>Focused exposure, but narrow market segment.</td>
+                                    <td>Different exposure profile, but may have different characteristics.</td>
+                                    <td>Very similar to TLTW, so the decision may come down to fee, preference, or fund sponsor.</td>
+                                </tr>
                             </tbody>
                         </table>
                     </div>
+                    <p class="small-text"><em>For the most current yields and expense ratios of these ETFs, please check
+                            a reliable financial data provider like <a href="https://etfdb.com/" target="_blank"
+                                rel="noopener noreferrer">ETFdb.com</a>, <a href="https://finance.yahoo.com/etfs"
+                                target="_blank" rel="noopener noreferrer">Yahoo Finance</a>, or the individual fund
+                            sponsor websites:</em></p>
                     <p class="small-text text-center mt-2">
-                        <a href="https://www.ishares.com/us/products/329118/" target="_blank" rel="noopener noreferrer" class="external-link mr-3">iShares (TLTW) <i class="fas fa-external-link-alt"></i></a>
-                        <a href="https://www.ishares.com/us/products/239454/ishares-20-year-treasury-bond-etf" target="_blank" rel="noopener noreferrer" class="external-link mr-3">iShares (TLT) <i class="fas fa-external-link-alt"></i></a>
-                        <a href="https://www.ishares.com/us/products/239456/ishares-7-10-year-treasury-bond-etf" target="_blank" rel="noopener noreferrer" class="external-link mr-3">iShares (IEF) <i class="fas fa-external-link-alt"></i></a>
-                        
+                        <a href="https://www.ssga.com/us/en/individual/etfs" target="_blank" rel="noopener noreferrer" class="external-link mr-3">State Street <i class="fas fa-external-link-alt"></i></a>
+                        <a href="https://www.ishares.com" target="_blank" rel="noopener noreferrer" class="external-link mr-3">iShares <i class="fas fa-external-link-alt"></i></a>
+                        <a href="https://www.vanguard.com" target="_blank" rel="noopener noreferrer" class="external-link">Vanguard <i class="fas fa-external-link-alt"></i></a>
                     </p>
                 </section>
 
                 <section id="final-verdict" class="section-grey">
                     <div class="final-verdict-box">
                         <h2>The Richiest.com Final Verdict: Is TLTW Right For You?</h2>
-                        <p>For fixed-income investors who want meaningfully more income from their Treasury bond allocation, <strong>TLTW is a compelling enhancement over plain TLT.</strong> The covered call overlay works best when rates are elevated and rate volatility is high — and it always delivers higher distributions than TLT alone. Just understand that duration risk doesn't go away, and capped upside means you'll lag TLT when rates fall sharply. <strong>For income-focused bond investors, TLTW turns a good idea into a great income generator.</strong></p>
+                        <p>If your priority is targeted exposure to a specific market segment, TLTW delivers focused access with transparency and efficiency. It's liquid, cost-effective, and easy to understand.</p>
+                        <p>If your priority is broad market diversification, this may be the wrong tool. TLTW is best treated as a focused exposure sleeve, not a core holding.</p>
                     </div>
                 </section>
 
-                <section id="position">
-                    <h2>TLTW - Market Position</h2>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-                    <div class="bg-white h-100 rounded mt-2 mb-2 table-container text-center w-100">
-                        <table class="etf-table">
-                            <thead>
-                                <tr>
-                                    <th class="w-12">Ticker Symbol</th>
-                                    <th class="w-12">Product Type</th>
-                                    <th class="w-12">Asset Class</th>
-                                    <th class="w-12">Strategy</th>
-                                    <th class="w-12">Payment Frequency</th>
-                                    <th class="w-12">Geographic Focus</th>
-                                    <th class="w-12">Expense Ratio</th>
-                                    <th class="w-12">Sponsor</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>TLTW</td>
-                                    <td>ETF</td>
-                                    <td>Treasury Bond Buywrite Strategy ETF</td>
-                                    <td>Yearly Treasury Bond Buywrite Strategy</td>
-                                    <td>Yearly</td>
-                                    <td>Global</td>
-                                    <td>0.25%</td>
-                                    <td><a href="https://www.ishares.com/us/products/329118/?referrer=tickerSearch"
-                                            target="_blank" rel="noopener noreferrer">iShares Trust (BlackRock)</a></td>
-                                </tr>
-                            </tbody>
-                        </table>
 
-                    </div>
-                    <h2>TLTW Overview - The iShares 20+ Year Treasury Bond BuyWrite Strategy ETF</h2>
-                    <p>The <strong>iShares 20+ Year Treasury Bond BuyWrite Strategy ETF (TLTW)</strong> employs a
-                        strategic approach to
-                        capitalize on the dynamics of treasury bonds, aiming to provide investors with stable returns
-                        over the long term. With a focus on the Treasury Bond Buywrite Strategy, TLTW seeks to enhance
-                        income potential while managing risk.</p>
-
-                    <p>Managed by <strong>iShares Trust (BlackRock)</strong>, TLTW strategically allocates assets to
-                        treasury bonds, leveraging their stability and income-generating potential. This ETF’s
-                        investment strategy aims to generate income exceeding the average yield on treasury bonds,
-                        offering investors an opportunity for steady growth of principal.</p>
-
-                    <p>As of <strong>April 29, 2024</strong>, TLTW’s average yield stands at <strong>4.65%</strong>1.
-                        Platforms such as <strong><a href="https://www.morningstar.com/etfs/bats/tltw/quote"
-                                target="_blank">Morningstar</a></strong> and
-                        <strong> <a href="https://www.tipranks.com/etf/tltw" target="_blank">TipRanks</a></strong> offer
-                        insights into TLTW’s
-                        performance metrics, including its <strong>dividend history</strong> and <strong>yield
-                            analysis</strong>.
-                    </p>
-
-                    <p>TLTW’s strategic focus on treasury bonds may appeal to investors seeking stable income streams
-                        while preserving capital. However, it’s essential to note that <strong>past performance</strong>
-                        does not guarantee <strong>future results</strong>, and investors should carefully assess their
-                        investment objectives before considering TLTW.</p>
-                </section>
-                <section id="price">
-                    <h2>TLTW - Price / Yield</h2>
-                    <div class="chart">
-                        <script type="text/javascript"
-                            src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-info.js" async>
-                                {
-                                    "symbol": "AMEX:TLTW",
-                                        "width": "100%",
-                                            "locale": "en",
-                                                "colorTheme": "light",
-                                                    "isTransparent": false
-                                }
-                            </script>
-                    </div>
-                </section>
-                <section id="holdings">
-                    <h2>TLTW - Portfolio and Asset Allocation</h2>
-                    <p>The <strong>iShares 20+ Year Treasury Bond BuyWrite Strategy ETF (TLTW)</strong> maintains a
-                        meticulously crafted portfolio predominantly centered around <strong>long-term U.S. Treasury
-                            bonds</strong>. As of the latest available data, a staggering <strong>99.83%</strong> of its
-                        assets are allocated to the <strong>ETF/Mutual Fund</strong> sector, exemplifying its unwavering
-                        focus on Treasury bond investments.</p>
-
-                    <p>Within its holdings, the <strong>iShares 20+ Year Treasury Bond ETF (TLT)</strong> reigns
-                        supreme, representing <strong>99.58%</strong> of TLTW's portfolio. TLT, with a total value of
-                        <strong>$837.62 million</strong>, mirrors TLTW's commitment to long-duration Treasury bonds,
-                        reflecting the fund's core investment strategy.
-                    </p>
-
-                    <p>In terms of <strong>cash and derivatives</strong>, a fractional <strong>0.17%</strong> allocation
-                        serves as a supplementary component, potentially providing <strong>liquidity</strong> and
-                        <strong>flexibility</strong> in navigating market conditions. Moreover, TLTW maintains a minute
-                        allocation to <strong>short positions</strong>, accounting for <strong>-0.41%</strong> of its
-                        portfolio value, representing a strategic maneuver to potentially hedge against downside risks
-                        in the bond market.
-                    </p>
-
-                    <p>TLTW's meticulous <strong>asset allocation</strong> underscores its dedication to harnessing the
-                        potential of long-term U.S. Treasury bonds while judiciously incorporating <strong>cash</strong>
-                        and <strong>derivative instruments</strong> for <strong>portfolio optimization</strong>. This
-                        carefully balanced approach reflects the fund's commitment to providing investors with exposure
-                        to <strong>stable income-generating assets</strong> while effectively managing
-                        <strong>risk</strong>.
-                    </p>
-                    <h3>TLTW Holdings</h3>
-                    <p>As of May 3, 2024, the 3 holdings of the iShares 20+ Year Treasury Bond BuyWrite Strategy ETF
-                        (TLTW) are:</p>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-
-                    <div class="table-container">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th class="w-60">Name</th>
-                                    <th class="w-40">Weight</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>iShares 20+ Year Treasury Bond ETF (TLT)</td>
-                                    <td class="text-center">99.58%</td>
-                                </tr>
-                                <tr>
-                                    <td>CASH (U.S. Dollar)</td>
-                                    <td class="text-center">0.83%</td>
-                                </tr>
-                                <tr>
-                                    <td>SHORT POSITIONS</td>
-                                    <td class="text-center">-0.41%</td>
-                                </tr>
-                            </tbody>
-                        </table>
-
-                    </div>
-
-                    <h3>Asset Allocation</h3>
-                    <p>The iShares 20+ Year Treasury Bond BuyWrite Strategy ETF
-                        (TLTW) has the following asset allocation as of April 30,
-                        2024:</p>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-
-                    <div class="table-container">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th class="w-60">Sector</th>
-                                    <th class="w-40">Weight</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Government</td>
-                                    <td class="text-center">99.05%</td>
-                                </tr>
-                                <tr>
-                                    <td>Cash & Equivalents</td>
-                                    <td class="text-center">1.44%</td>
-                                </tr>
-                                <tr>
-                                    <td>Agency Mortgage-Backed</td>
-                                    <td class="text-center">0.00%</td>
-                                </tr>
-                                <tr>
-                                    <td>Corporate Bond</td>
-                                    <td class="text-center">0.00%</td>
-                                </tr>
-                                <tr>
-                                    <td>Asset-Backed</td>
-                                    <td class="text-center">0.00%</td>
-                                </tr>
-                                <tr>
-                                    <td>Commercial Mortgage-Backed</td>
-                                    <td class="text-center">0.00%</td>
-                                </tr>
-                                <tr>
-                                    <td>Other</td>
-                                    <td class="text-center">0.00%</td>
-                                </tr>
-                            </tbody>
-                        </table>
-
-                    </div>
-                </section>
-                <section>
-                    <h2>Dividend Yield and Distribution History</h2>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-
-                    <div class="table-container">
-
-                        <table>
-                            <tr>
-                                <th class="w-25">Section</th>
-                                <th class="w-75">Details</th>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h3>TLTW Dividend Data</h3>
-                                </td>
-                                <td>The <strong>iShares 20+ Year Treasury Bond BuyWrite Strategy ETF (TLTW)</strong>
-                                    typically pays <strong>monthly distributions</strong>. The most recent
-                                    <strong>ex-dividend date</strong> was on <strong>May 2, 2024</strong>, with a
-                                    distribution of <strong>$0.24665 per share</strong> paid on <strong>May 8,
-                                        2024</strong>.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h3>TLTW Dividend Yield</h3>
-                                </td>
-                                <td>As of May 2, 2024, TLTW has a dividend yield of 17.72%. This means that for every
-                                    $100 invested in the fund, investors would receive $17.72 in dividends per year,
-                                    assuming the yield remains constant.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td> <a href="https://www.tipranks.com/etf/tltw/dividends" target="_blank"
-                                        rel="noopener noreferrer">
-                                        <h3>TLTW Dividend History</h3>
-                                    </a> </td>
-                                <td>TLTW has a history of paying monthly distributions. The distribution amounts may
-                                    vary based on the performance of the underlying assets held by the fund.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h3>TLTW Dividend Growth</h3>
-                                </td>
-                                <td>TLTW's dividend payments are dependent on the dividend growth and performance of the
-                                    underlying assets in the fund's portfolio. The fund's investment strategy focuses on
-                                    companies with a history of consistent dividend growth, which may contribute to
-                                    increasing dividend payments over time. However, dividend growth is not guaranteed.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h3>TLTW Dividend Stability</h3>
-                                </td>
-                                <td>TLTW aims to provide a relatively stable income stream by investing in high-quality,
-                                    dividend-paying stocks of larger U.S. companies. However, the dividend payments are
-                                    not guaranteed and may be affected by changes in market conditions or the
-                                    performance of the underlying stocks in the fund's portfolio.
-                                </td>
-                            </tr>
-                        </table>
-
-                    </div>
-                </section>
-
-                <section id="chart">
-                    <h2>TLTW - Chart</h2>
-                    <div class="chart">
-                        <div class="tradingview-widget-container"><script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>{"autosize":true,"symbol":"NASDAQ:TLTW","interval":"D","timezone":"Etc/UTC","theme":"light","style":"1","locale":"en","allow_symbol_change":false,"height":400}</script></div>
-                        </iframe>
-                </section>
-                <section id="comparative">
-                    <h2>TLTW - Comparative Analysis</h2>
-                    <p class=""> Let's compare TLTW with prominent competitors, focusing on key aspects like
-                        performance,
-                        fees, and strategy: <strong>(as of Apr 2024)</strong> </p>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-                    <div class="table-container">
-                        <table class="mb-2">
-                            <thead>
-                                <tr>
-                                    <th> </th>
-                                    <th class="w-25">TLTW</th>
-                                    <th class="w-25">UBT</th>
-                                    <th class="w-25">EDV</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><strong>Investment Focus</strong></td>
-                                    <td>Long-term U.S. Treasury bonds with a buy-write strategy</td>
-                                    <td>Tracks twice the daily performance of the ICE U.S. Treasury 20+ Year Bond Index
-                                    </td>
-                                    <td>Tracks the Bloomberg Barclays U.S. Treasury STRIPS 20–30 Year Equal Par Bond
-                                        Index</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Current Yield</strong></td>
-                                    <td><a href="https://www.bing.com/search?q=TLTW+current+yield" target="_blank"
-                                            rel="noopener noreferrer">17.72%</a></td>
-                                    <td><a href="https://www.bing.com/search?q=UBT+current+yield" target="_blank"
-                                            rel="noopener noreferrer">3.84%</a></td>
-                                    <td><a href="https://www.bing.com/search?q=EDV+current+yield" target="_blank"
-                                            rel="noopener noreferrer">4.27%</a></td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Expense Ratio</strong></td>
-                                    <td>0.70%</td>
-                                    <td>0.95%</td>
-                                    <td>0.07%</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Investment Strategy</strong></td>
-                                    <td>Utilizes options to enhance yield and manage risk</td>
-                                    <td>Leveraged exposure to long-term U.S. Treasury bonds</td>
-                                    <td>Invests in U.S. Treasury STRIPS maturing in 20–30 years</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Strengths</strong></td>
-                                    <td>Combines income from long-term Treasury bonds with potential option premiums
-                                    </td>
-                                    <td>Provides amplified returns compared to traditional bond funds</td>
-                                    <td>Focuses exclusively on long-term Treasury STRIPS for precise duration exposure
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Weaknesses</strong></td>
-                                    <td>Subject to interest rate risk and potential option strategy underperformance
-                                    </td>
-                                    <td>Higher expense ratio and leverage magnifies losses in declining markets</td>
-                                    <td>Limited diversification and sensitivity to changes in interest rates</td>
-                                </tr>
-                            </tbody>
-                        </table>
-
-                    </div>
-                </section>
-                <section id="history">
-                    <h2>Dividend History (Last 5 distributions)</h2>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-                    <div class="table-container">
-                        <table class="mb-2 w-80">
-                            <thead>
-                                <tr>
-                                    <th class="w-25">Ex-Dividend Date</th>
-                                    <th class="w-25">Cash Amount</th>
-                                    <th class="w-25">Record Date</th>
-                                    <th class="w-25">Pay Date</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>May 02, 2024</td>
-                                    <td>$0.25</td>
-                                    <td>May 03, 2024</td>
-                                    <td>May 08, 2024</td>
-                                </tr>
-                                <tr>
-                                    <td>Apr 02, 2024</td>
-                                    <td>$0.24</td>
-                                    <td>Apr 03, 2024</td>
-                                    <td>Apr 08, 2024</td>
-                                </tr>
-                                <tr>
-                                    <td>Mar 04, 2024</td>
-                                    <td>$0.30</td>
-                                    <td>Mar 05, 2024</td>
-                                    <td>Mar 08, 2024</td>
-                                </tr>
-                                <tr>
-                                    <td>Feb 02, 2024</td>
-                                    <td>$0.21</td>
-                                    <td>Feb 05, 2024</td>
-                                    <td>Feb 08, 2024</td>
-                                </tr>
-                                <tr>
-                                    <td>Dec 22, 2023</td>
-                                    <td>$0.75</td>
-                                    <td>Dec 26, 2023</td>
-                                    <td>Dec 29, 2023</td>
-                                </tr>
-                            </tbody>
-                        </table>
-
-                    </div>
-                </section>
             </div>
         </div>
         <div class="row dark-div">
@@ -568,67 +478,19 @@
         </div>
         <div class="row">
             <div class="col container-1000">
-                <section id="news">
-                    <h2 class="">News</h2>
-                    <div class="chart">
-                        <div class="tradingview-widget-container">
-                        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-timeline.js" async>
-                        {"feedMode":"symbol","symbol":"AMEX:TLTW","colorTheme":"light","isTransparent":false,"displayMode":"regular","width":"100%","height":"400","locale":"en"}
-                        </script>
-                    </div>
-                </section>
-                <section id="technical">
-                    <h2>Technical Analysis</h2>
-                    <div class="chart">
-                        <script type="text/javascript"
-                            src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js"
-                            async> { "interval": "1M", "width": "100%", "isTransparent": false, "height": "400", "symbol": "AMEX:TLTW", "showIntervalTabs": true, "displayMode": "single", "locale": "en", "colorTheme": "light" } </script>
-                    </div>
-                </section>
-                <section>
-                    <h2>Additional Information and Risks</h2>
-                    <p>As of <strong>May 2024</strong>, investors in the <strong>iShares 20+ Year Treasury Bond BuyWrite
-                            Strategy ETF (TLTW)</strong> have been receiving consistent <strong>dividend
-                            payouts</strong> from its innovative <strong>Treasury bond buywrite strategy</strong>.
-                        TLTW's <strong>dividend yield</strong> has remained attractive throughout the year, reflecting
-                        the effectiveness of its investment approach. The <strong>dividend payments</strong>, announced
-                        <strong>monthly</strong>, provide shareholders with a reliable income stream, making TLTW a
-                        favorable choice for income-oriented investors.
-                    </p>
-
-                    <p>Keeping an eye on TLTW's <strong>dividend history</strong> and <strong>dividend payment</strong>
-                        schedule is crucial for investors. The ETF's <strong>dividend data</strong>, including
-                        <strong>ex-dividend dates</strong> and <strong>payment dates</strong>, is readily accessible,
-                        allowing investors to plan their investments effectively. Additionally, tools like
-                        <strong>TipRanks</strong> provide access to the latest <strong>stock price</strong> and
-                        <strong>dividend information</strong> for TLTW, enabling investors to make informed decisions.
-                    </p>
-
-                    <p>With TLTW's commitment to providing shareholders with a consistent <strong>dividend
-                            payment</strong>, coupled with its strategic investment approach, investors can have
-                        confidence in the ETF's ability to deliver returns over time. Whether tracking its
-                        <strong>dividend yield</strong>, analyzing its <strong>payout ratio</strong>, or monitoring its
-                        <strong>dividend history</strong>, TLTW remains a reliable option for income-seeking investors
-                        seeking exposure to the Treasury bond market.
-                    </p>
-
-                    <p>Furthermore, TLTW's <strong>investment strategy</strong> focuses on high-quality
-                        <strong>dividend-paying stocks</strong>, enhancing its appeal to investors looking for
-                        income-generating opportunities. Its <strong>annual dividend</strong> distributions, coupled
-                        with the <strong>historical performance</strong> reflected in its <strong>dividend
-                            history</strong>, make it a valuable addition to any investor's portfolio. TLTW's
-                        <strong>dividend stability</strong> and <strong>dividend growth potential</strong> further
-                        solidify its position as a preferred choice for long-term investors.
-                    </p>
-
-
+                <section id="disclaimer" class="small-text-section section-grey">
+                    <h2>Important Disclaimer</h2>
+                    <p>This article is for informational purposes only and does not constitute financial advice.
+                        Investing
+                        involves risks, and you should consult with a qualified financial professional before making any
+                        investment decisions. Past performance is not indicative of future results.</p>
                 </section>
 
             </div>
         </div>
         <div class="row dark-div">
             <div class="col container-1280">
-                <div class="shared-footer"> <!-- This is where the shared nav will be loaded --> </div>
+                <div class="shared-footer"> </div>
             </div>
         </div>
     </div>
@@ -636,36 +498,53 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
+        function generateTOC() {
+            const tocList = $('#toc-list .etf-nav');
+            tocList.empty();
+            let ul = $('<ul></ul>').addClass('toc-menu');
+
+            const mainContentArea = $('.container-1000');
+
+            mainContentArea.find('section').each(function () {
+                const sectionId = $(this).attr('id');
+                const h2 = $(this).find('h2:first');
+
+                if (sectionId && h2.length > 0 && sectionId !== 'disclaimer') {
+                    let title = h2.text();
+                    const li = $('<li></li>');
+                    const a = $('<a></a>').attr('href', '#' + sectionId).text(title);
+                    li.append(a);
+                    ul.append(li);
+                }
+            });
+            tocList.append(ul);
+        }
+
         $(function () {
-            $(".shared-nav").load("/shared/nav.html");
-            $(".etf-nav").load("/shared/etfnav2.html");
+            $(".shared-nav").load("/shared/nav.html", function () {
+                generateTOC();
+            });
             $(".shared-subscribe").load("/shared/subscribe.html");
             $(".shared-banner").load("/shared/banner.html");
             $(".shared-articles").load("/shared/technologyStocks.html");
             $(".shared-footer").load("/shared/footer.html");
-        });
-        $(document).ready(function () {
+
+            generateTOC();
+
             $("#toggle-toc").click(function () {
-                var tocList = $("#toc-list");
                 var fixedToc = $(".fixed-toc");
-                if (tocList.is(":visible")) {
-                    tocList.hide();
-                    fixedToc.css({ "width": "0px", "display": "none" });
+                fixedToc.toggle();
+                if (fixedToc.is(":visible")) {
+                    fixedToc.addClass("show");
                 } else {
-                    fixedToc.css({ "width": "200px", "display": "block" });
-                    tocList.show();
+                    fixedToc.removeClass("show");
                 }
             });
-        });
 
-        $(document).ready(function () {
-            $('.carousel').carousel();
-
-            // Scroll to top functionality
             var mybutton = $('#return-to-top');
 
             $(window).scroll(function () {
-                if ($(this).scrollTop() > 20) {
+                if ($(this).scrollTop() > 100) {
                     mybutton.fadeIn();
                 } else {
                     mybutton.fadeOut();

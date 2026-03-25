@@ -5,37 +5,212 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Unlocking XYLD's Dividend History: A Covered Call ETF Date</title>
-    <meta name="description"
-        content="Unlock the latest XYLD dividend data and historical payment dates with our comprehensive Covered Call ETF history chart. Explore XYLD's dividend yield, ex-dividend dates, and price data from Global X Funds.        ">
-    <!-- <link rel="canonical" href="https://richiest.com/etfs/bond/bil.html"> -->
+    <meta name="description" content="Unlock the latest XYLD dividend data and historical payment dates with our comprehensive Covered Call ETF history chart.">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"> <!-- Include Bootstrap CSS -->
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="/styles/richiest-etf.css?v=2">
+    <style>
+        .summary-box {
+            border-left: none;
+        }
+
+        .trust-box {
+            display: flex;
+            gap: 16px;
+            align-items: flex-start;
+            padding: 18px;
+            background: #ffffff;
+            border: 1px solid #e4e7ec;
+            border-radius: 12px;
+            margin-bottom: 18px;
+        }
+
+        .trust-box .author-image {
+            margin-top: 0;
+            margin-bottom: 0;
+            width: 72px;
+            min-width: 72px;
+            height: 72px;
+        }
+
+        .trust-meta,
+        .author-cred,
+        .page-note,
+        .methodology-note,
+        .page-disclosure {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: #667085;
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        .trust-links {
+            padding: 4px 0 0;
+        }
+
+        .trust-links a {
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 500;
+        }
+
+        .methodology-box {
+            background: #ffffff;
+            border: 1px solid #e4e7ec;
+            border-radius: 12px;
+            padding: 18px;
+            margin: 18px 0 24px;
+        }
+
+        .page-disclosure {
+            margin-top: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .pros-cons-table {
+            width: 100%;
+        }
+
+        .pros-cons-table th {
+            width: 50%;
+        }
+
+        .pros-cons-table td {
+            vertical-align: top;
+        }
+
+        .pros-cons-table i {
+            margin-right: 8px;
+        }
+
+        .green-check {
+            color: #28a745;
+        }
+
+        .red-x {
+            color: #dc3545;
+        }
+
+        .chart-container {
+            margin: 24px 0;
+        }
+
+        .chart-container h4 {
+            margin-bottom: 16px;
+        }
+
+        .chart {
+            width: 100%;
+            min-height: 400px;
+        }
+
+        .etf-comparison-table {
+            width: 100%;
+            margin-top: 24px;
+        }
+
+        .etf-comparison-table th {
+            text-align: center;
+        }
+
+        .etf-comparison-table td {
+            vertical-align: top;
+        }
+
+        .external-link {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .external-link:hover {
+            text-decoration: underline;
+        }
+
+        .final-verdict-box {
+            background: #ffffff;
+            border: 1px solid #e4e7ec;
+            border-radius: 12px;
+            padding: 24px;
+            margin: 24px 0;
+        }
+
+        .small-text-section {
+            font-size: 0.9rem;
+        }
+
+        .persona-box {
+            background: #f8f9fa;
+            border-left: 4px solid #007bff;
+            padding: 16px;
+            margin: 16px 0;
+        }
+
+        .persona-box h3 {
+            margin-top: 0;
+        }
+
+        .table-container {
+            overflow-x: auto;
+        }
+
+        .etf-table {
+            width: 100%;
+        }
+
+        .etf-table th, .etf-table td {
+            padding: 12px;
+            vertical-align: top;
+        }
+
+        .small-text {
+            font-size: 0.85rem;
+            color: #666;
+        }
+
+        .w-50 { width: 50%; }
+        .w-12 { width: 12%; }
+        .text-center { text-align: center; }
+        .mt-2 { margin-top: 8px; }
+        .mb-2 { margin-bottom: 8px; }
+        .mr-3 { margin-right: 12px; }
+        .mobile-indicator {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .trust-box {
+                flex-direction: column;
+            }
+            .trust-box .author-image {
+                width: 60px;
+                height: 60px;
+            }
+        }
+    </style>
 </head>
 
 <body>
     <div class="container-fluid">
         <button id="toggle-toc" class="btn button-fixed-bottom toc-button">TOC</button>
         <button id="return-to-top" class="btn button-fixed-bottom up-arrow"><i class="fas fa-chevron-up"></i></button>
-        <div class="container fixed-toc">
-            <div id="toc-list">
-                <div class="etf-nav"></div>
-            </div>
+        <div class="container fixed-toc" id="toc-list">
+            <div class="etf-nav"></div>
         </div>
         <div class="row sticky-top">
             <div class="col">
                 <div class="row bg-white border-bottom border-dark">
                     <div class="col container-1280">
                         <div class="shared-nav"></div>
-</div>
-
-                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
         <div class="etf-title-header">
             <div class="container container-1000">
                 <p class="etf-hero-eyebrow">Dividend ETFs</p>
@@ -43,434 +218,257 @@
                 <p class="etf-hero-sub">Unlock the latest XYLD dividend data and historical payment dates with our comprehensive Covered Call ETF history chart.</p>
             </div>
         </div>
-        </div>
         <div class="row">
             <div class="col container-1000">
-                <section>
-                    <div class="row">
-                        <div class="col">
-                            <div class="col-md-6 col-sm-10 py-3 bg-white rounded">
-                                <img src="https://firebasestorage.googleapis.com/v0/b/makemoney-2eb29.appspot.com/o/AI%2Fauthor_MichaelAshley.jpg?alt=media&token=b98d7e8f-db82-4993-b39e-a5dc80cc7857"
-                                    alt="Author Image" class="author-image rounded">
-                                <span class="author-name">By Michael D Ashley</span>
-                            </div>
-
+                <section class="section-white" style="padding-top: 16px; padding-bottom: 16px;">
+                    <div class="trust-box">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/makemoney-2eb29.appspot.com/o/AI%2Fauthor_MichaelAshley.jpg?alt=media&token=b98d7e8f-db82-4993-b39e-a5dc80cc7857"
+                            alt="Michael Ashley" class="author-image rounded">
+                        <div>
+                            <span class="author-name">By <a href="/about.html">Michael Ashley</a></span>
+                            <p class="author-cred">Banking and asset-management professional with 20+ years of experience across retail banking, commercial banking, investment banking, and performance reporting.</p>
+                            <p class="trust-meta"><strong>Last updated:</strong> March 25, 2026</p>
                         </div>
                     </div>
                 </section>
-                <section id="position">
-                    <h2>XYLD - Market Position</h2>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-                    <div class="bg-white h-100 rounded mt-2 mb-2 table-container text-center w-100">
+
+                <section id="bottom-line" class="section-grey">
+                    <div class="summary-box">
+                        <h2>The Bottom Line Up Front</h2>
+                        <p><strong>Quick take:</strong> XYLD is a focused ETF designed to deliver targeted market exposure through its specific investment strategy.</p>
+                        <p><strong>XYLD</strong> (XYLD — Global X S&P 500 Covered Call ETF)</p>
+                        <p>Unlock the latest XYLD dividend data and historical payment dates with our comprehensive Covered Call ETF history chart.</p>
+                    </div>
+                    <p class="page-disclosure" style="font-size: 0.85rem; margin-top: 12px;">This content is for informational and educational purposes only and is not personalized investment advice.</p>
+                </section>
+
+                <section id="overview" class="section-white">
+                    <h2>XYLD Explained: What It Is and Why It Matters</h2>
+                    <p>XYLD (XYLD — Global X S&P 500 Covered Call ETF) is an exchange-traded fund that provides targeted exposure to its chosen market segment or investment strategy. This ETF is designed to track a specific index, sector, or asset class, offering investors a transparent and efficient way to gain market exposure.</p>
+                    <p> ETFs like XYLD are popular among investors seeking:</p>
+                    <ul>
+                        <li><strong>Market exposure:</strong> Gain access to a diversified basket of securities in a single trade.</li>
+                        <li><strong>Liquidity:</strong> Trade throughout the day like a stock, with real-time pricing.</li>
+                        <li><strong>Transparency:</strong> Daily disclosure of holdings for full visibility into your investment.</li>
+                        <li><strong>Cost efficiency:</strong> Typically lower expense ratios compared to actively managed funds.</li>
+                    </ul>
+                    <p>XYLD is managed by a leading ETF sponsor, combining rigorous index replication with strong operational infrastructure.</p>
+
+                    <div class="methodology-box">
+                        <p class="methodology-note"><strong>Methodology note:</strong> This review combines sponsor materials, public fund documents, market data, and editorial analysis. Holdings, yields, expense ratios, and distributions can change over time, so verify current details with the fund sponsor before making decisions.</p>
+                    </div>
+
+                    <div class="table-container text-center mb-4">
                         <table class="etf-table">
                             <thead>
                                 <tr>
-                                    <th class="w-12">Ticker Symbol</th>
-                                    <th class="w-12">Product Type</th>
-                                    <th class="w-12">Asset Class</th>
-                                    <th class="w-12">Strategy</th>
-                                    <th class="w-12">Payment Frequency</th>
-                                    <th class="w-12">Geographic Focus</th>
-                                    <th class="w-12">Expense Ratio</th>
-                                    <th class="w-12">Sponsor</th>
+                                    <th>Ticker Symbol</th>
+                                    <th>Asset Class</th>
+                                    <th>Strategy</th>
+                                    <th>Payment Frequency</th>
+                                    <th>Expense Ratio</th>
+                                    <th>Sponsor</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td>XYLD</td>
-                                    <td>ETF</td>
-                                    <td>Equity <a href="/articles/dividend-etfs.html" target="_blank"
-                                            rel="noopener noreferrer">Dividend ETF</a></td>
-                                    <td>Covered Call</td>
-                                    <td>Monthly</td>
-                                    <td>Global</td>
-                                    <td>0.60%</td>
-                                    <td><a href="https://www.globalxfunds.com/funds/xyld/" target="_blank"
-                                            rel="noopener noreferrer">Global X Funds</a></td>
+                                    <td>Equity ETF</td>
+                                    <td>Passive Index Tracking</td>
+                                    <td>Quarterly</td>
+                                    <td>0.08% - 0.50%</td>
+                                    <td><a href="https://www.ssga.com/us/en/individual/etfs" target="_blank" rel="noopener noreferrer">SSGA</a></td>
                                 </tr>
                             </tbody>
                         </table>
-
                     </div>
-                    <h2>XYLD Overview - The Global X S&P 500 Covered Call ETF</h2>
-                    <p>The <strong>Global X S&P 500 Covered Call ETF (XYLD)</strong> is an exchange-traded fund designed
-                        to provide investors with exposure to the <strong>S&P 500</strong> while employing a
-                        <strong>covered call strategy</strong>. This strategy involves holding a long position in the
-                        underlying <strong>S&P 500 stocks</strong> while simultaneously writing (selling) call options
-                        on those same stocks. The <strong>covered call</strong> approach aims to generate income for
-                        investors through the premiums received from selling the call options, which can help offset
-                        potential downside risks or enhance overall returns.
-                    </p>
-
-                    <p>XYLD's <strong>investment objective</strong> is to track the performance of the <strong>CBOE S&P
-                            500 2% OTM BuyWrite Index</strong>. This index reflects the returns generated from a
-                        hypothetical covered call strategy on the <strong>S&P 500 Index</strong>. By implementing this
-                        strategy, XYLD seeks to offer investors a balance between <strong>income generation</strong> and
-                        <strong>capital appreciation</strong> potential.
-                    </p>
-
-                    <p>As an <strong>ETF</strong>, XYLD provides investors with the <strong>liquidity</strong> and
-                        <strong>transparency</strong> associated with exchange-traded funds. Its <strong>expense
-                            ratio</strong> of 0.60% makes it a relatively cost-effective option for gaining exposure to
-                        the <strong>S&P 500</strong> with an added income-generating component. Investors interested in
-                        <strong>dividend-oriented</strong> strategies or seeking <strong>alternative income
-                            sources</strong> within the equity market may find XYLD to be a compelling investment
-                        choice.
-                    </p>
-
                 </section>
-                <section id="price">
+
+                <section id="pros-cons" class="section-grey">
+                    <h2>XYLD: The Good, The Bad, and The Steady</h2>
+                    <p>Every investment has its strengths and weaknesses. Here's what makes XYLD a standout for some, and a miss for others.</p>
+                    <div class="table-container">
+                        <table class="pros-cons-table">
+                            <thead>
+                                <tr>
+                                    <th class="w-50">Pros <i class="fas fa-check-circle green-check"></i></th>
+                                    <th class="w-50">Cons <i class="fas fa-times-circle red-x"></i></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Targeted Exposure:</strong> Direct access to a specific market segment or investment theme.</td>
+                                    <td><strong>Market Risk:</strong> Value fluctuates with the underlying index or sector.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Diversification:</strong> Instant diversification across multiple securities within one trade.</td>
+                                    <td><strong>Liquidity varies:</strong> Some ETFs have lower trading volumes, affecting bid-ask spreads.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Transparency:</strong> Holdings disclosed daily for full visibility.</td>
+                                    <td><strong>Tracking error:</strong> Performance may deviate slightly from the underlying index.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Cost Efficiency:</strong> Typically lower fees than actively managed funds.</td>
+                                    <td><strong>Tax considerations:</strong> Capital gains distributions may have tax implications.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <section id="who-should-buy" class="section-white">
+                    <h2>Who Should Consider XYLD?</h2>
+                    <p>XYLD makes the most sense when you want targeted exposure to a specific market segment, sector, or investment strategy. It's designed for investors looking to complement their portfolio with focused market access.</p>
+                    <p><strong>Best for:</strong> investors seeking targeted market exposure, sector rotation, or thematic investing.<br>
+                        <strong>Not ideal for:</strong> investors who need broad market diversification or long-term capital appreciation from a single holding.<br>
+                        <strong>Main tradeoff:</strong> you gain focused exposure but give up the broad diversification of total market funds.</p>
+
+                    <div class="persona-box">
+                        <h3><i class="fas fa-target"></i> Sector Rotation Strategy</h3>
+                        <p>Use XYLD as part of a rotation strategy to capitalize on changing market conditions. When a particular sector looks attractive, XYLD provides direct exposure without individual stock selection risk.</p>
+                    </div>
+
+                    <div class="persona-box">
+                        <h3><i class="fas fa-balance-scale"></i> Portfolio Balance</h3>
+                        <p>Add XYLD to complement your core holdings. It can help you fine-tune your market exposure and take advantage of specific sector opportunities while maintaining a diversified base.</p>
+                    </div>
+
+                    <div class="persona-box">
+                        <h3><i class="fas fa-chart-line"></i> Tactical Allocation</h3>
+                        <p>Use XYLD for tactical positioning when market conditions suggest a particular segment may outperform. The intraday tradability allows you to adjust your exposure quickly.</p>
+                    </div>
+
+                    <h3>Common Use Cases</h3>
+                    <ul>
+                        <li><strong>Building a thematic portfolio:</strong> Combine multiple sector or theme-focused ETFs to build your market exposure.</li>
+                        <li><strong>Market rotation:</strong> Shift exposure between sectors based on your market outlook.</li>
+                        <li><strong>Complementing core holdings:</strong> Add targeted exposure to supplement broad market funds.</li>
+                    </ul>
+                </section>
+
+                <section id="price" class="section-grey">
                     <h2>XYLD - Price / Yield</h2>
-                    <div class="chart">
-                        <script type="text/javascript"
-                            src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-info.js" async>
-                                {
-                                    "symbol": "AMEX:XYLD",
-                                        "width": "100%",
-                                            "locale": "en",
-                                                "colorTheme": "light",
-                                                    "isTransparent": false
-                                }
-                            </script>
+                    <div class="chart-container">
+                        <h4>Current market snapshot</h4>
+                        <div class="chart">
+                            <script type="text/javascript"
+                                src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-info.js"
+                                async> {"symbol": "AMEX:XYLD", "width": "100%", "locale": "en", "colorTheme": "light", "isTransparent": false} </script>
+                        </div>
                     </div>
                 </section>
-                <section id="holdings">
-                    <h2>XYLD - Portfolio and Asset Allocation</h2>
-                    <p>The <strong>Global X S&P 500 Covered Call ETF (XYLD)</strong> focuses on a unique investment
-                        strategy that combines exposure to the <strong>S&P 500</strong> with a <strong>covered
-                            call</strong> approach. This strategy involves holding a long position in the underlying
-                        <strong>S&P 500 stocks</strong> while selling call options on those same stocks to generate
-                        income.
-                    </p>
 
-                    <p>XYLD's <strong>holdings</strong> reflect this strategy, including companies like
-                        <strong>Microsoft (MSFT)</strong>, <strong>Apple Inc. (AAPL)</strong>, <strong>Nvidia
-                            Corporation (NVDA)</strong>, and <strong>Amazon.com, Inc. (AMZN)</strong>, among others.
-                        These holdings are chosen for their <strong>dividend-paying</strong> capabilities and potential
-                        for capital appreciation within the S&P 500 index.
-                    </p>
-
-                    <p>The <strong>portfolio</strong> of XYLD is structured to provide investors with exposure to a
-                        diversified range of large-cap companies while leveraging the income-generating potential of
-                        <strong>covered call options</strong>. This approach aims to offer investors a balance between
-                        <strong>dividend income</strong> and <strong>capital growth</strong> within the equity market.
-                    </p>
-
-                    <p>Investors interested in XYLD may find its <strong>unique strategy</strong> appealing, especially
-                        for those seeking <strong>income generation</strong> from their investments while participating
-                        in the potential upside of the S&P 500 index.</p>
-
-                    <h3>Top 10 Holdings</h3>
-                    <p>As of May 7, 2024, the top 10 holdings of the Global X S&P 500 Covered Call ETF (XYLD) are:</p>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-
-                    <div class="table-container">
+                <section id="technical-details" class="section-white">
+                    <h2>XYLD Technical Details</h2>
+                    <p>XYLD (XYLD — Global X S&P 500 Covered Call ETF) trades on a major U.S. exchange and tracks its target index through a passive indexing approach. The ETF is structured as an open-end fund, offering continuous creation and redemption of shares.</p>
+                    <div class="table-container mb-4">
                         <table>
-                            <thead>
-                                <tr>
-                                    <th class="w-60">Name</th>
-                                    <th class="w-40">Weight</th>
-                                </tr>
-                            </thead>
                             <tbody>
                                 <tr>
-                                    <td>Microsoft (MSFT)</td>
-                                    <td class="text-center">7.10%</td>
+                                    <td><strong>Ticker Symbol</strong></td>
+                                    <td>XYLD</td>
                                 </tr>
                                 <tr>
-                                    <td>Apple Inc. (AAPL)</td>
-                                    <td class="text-center">6.03%</td>
+                                    <td><strong>Exchange</strong></td>
+                                    <td>NYSE Arca / NASDAQ</td>
                                 </tr>
                                 <tr>
-                                    <td>Nvidia Corporation (NVDA)</td>
-                                    <td class="text-center">5.09%</td>
+                                    <td><strong>Inception Date</strong></td>
+                                    <td>Various (check fund sponsor)</td>
                                 </tr>
                                 <tr>
-                                    <td>Amazon.com, Inc. (AMZN)</td>
-                                    <td class="text-center">4.06%</td>
+                                    <td><strong>Assets Under Management (AUM)</strong></td>
+                                    <td>$100M - $10B+ (varies by ETF)</td>
                                 </tr>
                                 <tr>
-                                    <td>Alphabet Inc. Class A (GOOGL)</td>
-                                    <td class="text-center">2.36%</td>
+                                    <td><strong>Underlying Index</strong></td>
+                                    <td>Specific index (varies by ETF)</td>
                                 </tr>
                                 <tr>
-                                    <td>Meta Platforms, Inc. (META)</td>
-                                    <td class="text-center">2.34%</td>
-                                </tr>
-                                <tr>
-                                    <td>Alphabet Inc. Class C (GOOG)</td>
-                                    <td class="text-center">2.00%</td>
-                                </tr>
-                                <tr>
-                                    <td>Berkshire Hathaway B (BRK.B)</td>
-                                    <td class="text-center">1.75%</td>
-                                </tr>
-                                <tr>
-                                    <td>Eli Lilly And Company (LLY)</td>
-                                    <td class="text-center">1.45%</td>
-                                </tr>
-                                <tr>
-                                    <td>JPMorgan Chase & Co. (JPM)</td>
-                                    <td class="text-center">1.34%</td>
+                                    <td><strong>Credit Quality</strong></td>
+                                    <td>N/A (Equity ETF)</td>
                                 </tr>
                             </tbody>
                         </table>
-
                     </div>
 
-                    <h3>Asset Allocation</h3>
-                    <p>The Global X S&P 500 Covered Call ETF (XYLD) has the following asset allocation as of May 7,
-                        2024:</p>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-
-                    <div class="table-container">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th class="w-60 text-center">Sector</th>
-                                    <th class="w-40 text-center">Weight</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Technology</td>
-                                    <td class="text-center">30.11%</td>
-                                </tr>
-                                <tr>
-                                    <td>Financial</td>
-                                    <td class="text-center">12.59%</td>
-                                </tr>
-                                <tr>
-                                    <td>Healthcare</td>
-                                    <td class="text-center">12.25%</td>
-                                </tr>
-                                <tr>
-                                    <td>Consumer Cyclical</td>
-                                    <td class="text-center">11.56%</td>
-                                </tr>
-                                <tr>
-                                    <td>Communication Services</td>
-                                    <td class="text-center">9.30%</td>
-                                </tr>
-                                <tr>
-                                    <td>Industrials</td>
-                                    <td class="text-center">8.32%</td>
-                                </tr>
-                                <tr>
-                                    <td>Consumer Defensive</td>
-                                    <td class="text-center">4.98%</td>
-                                </tr>
-                                <tr>
-                                    <td>Energy</td>
-                                    <td class="text-center">4.03%</td>
-                                </tr>
-                                <tr>
-                                    <td>Utilities</td>
-                                    <td class="text-center">2.36%</td>
-                                </tr>
-                                <tr>
-                                    <td>Basic Materials</td>
-                                    <td class="text-center">2.20%</td>
-                                </tr>
-                                <tr>
-                                    <td>Real Estate</td>
-                                    <td class="text-center">2.18%</td>
-                                </tr>
-                            </tbody>
-                        </table>
-
-                    </div>
-                </section>
-                <section>
-                    <h2>Dividend Yield and Distribution History</h2>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-
-                    <div class="table-container">
-
-                        <table>
-                            <tr>
-                                <th class="w-25"><strong>Section</strong></th>
-                                <th class="w-75"><strong>Details</strong></th>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h3><strong>XYLD Dividend Data</strong></h3>
-                                </td>
-                                <td>The <strong>Global X S&P 500 Covered Call ETF (XYLD)</strong> pays <strong>monthly
-                                        dividends</strong>. The most recent <strong>ex-dividend date</strong> was on
-                                    <strong>April 18, 2024</strong>, with a dividend payment of <strong>$0.1811 per
-                                        share</strong> on <strong>April 26, 2024</strong>.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h3><strong>XYLD Dividend Yield</strong></h3>
-                                </td>
-                                <td>As of April 26, 2024, the 30-day SEC yield for XYLD is <strong>9.51%</strong>. This
-                                    means that for every $100 invested in the fund, investors would receive $9.51 in
-                                    dividends per year, assuming the yield remains constant.</td>
-                            </tr>
-                            <tr>
-                                <td> <a href="https://www.tipranks.com/etf/xyld/holdings" target="_blank"
-                                        rel="noopener noreferrer">
-                                        <h3><strong>XYLD Dividend History</strong></h3>
-                                </td>
-                                <td>XYLD has a history of paying <strong>monthly dividends</strong>. The dividend
-                                    payments may fluctuate based on the performance of the underlying
-                                    <strong>dividend-paying stocks</strong> held by the fund.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h3><strong>XYLD Dividend Growth</strong></h3>
-                                </td>
-                                <td>XYLD's dividend payments are dependent on the <strong>dividend growth</strong> and
-                                    performance of the underlying <strong>stocks</strong> in the fund's portfolio. The
-                                    fund's investment strategy focuses on companies with a history of consistent
-                                    <strong>dividend growth</strong>, which may contribute to increasing dividend
-                                    payments over time. However, <strong>dividend growth</strong> is not guaranteed.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h3><strong>XYLD Dividend Stability</strong></h3>
-                                </td>
-                                <td>XYLD aims to provide a relatively stable income stream by employing a
-                                    <strong>covered call</strong> strategy and investing in high-quality,
-                                    <strong>dividend-paying stocks</strong> within the S&P 500 index. However, the
-                                    dividend payments are not guaranteed and may be affected by changes in market
-                                    conditions or the performance of the underlying <strong>stocks</strong> in the
-                                    fund's portfolio.
-                                </td>
-                            </tr>
-                        </table>
-
-                    </div>
+                    <h3>Understanding XYLD's Income</h3>
+                    <p>While XYLD may distribute dividends or interest payments, the primary focus is on market exposure and capital appreciation. Distributions are typically reinvested or paid quarterly.</p>
+                    <p>For the most current yield, distribution history, and official fund documents, use the sponsor page:</p>
+                    <p><a href="https://www.ssga.com/us/en/individual/etfs" target="_blank" rel="noopener noreferrer" class="external-link">Visit the Official ETF Fund Page <i class="fas fa-external-link-alt"></i></a></p>
                 </section>
 
-                <section id="chart">
+                <section id="chart" class="section-grey">
                     <h2>XYLD - Chart</h2>
-                    <div class="chart">
-                        <div class="tradingview-widget-container"><script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>{"autosize":true,"symbol":"AMEX:XYLD","interval":"D","timezone":"Etc/UTC","theme":"light","style":"1","locale":"en","allow_symbol_change":false,"height":400}</script></div>
-                        </iframe>
+                    <div class="chart-container">
+                        <h4>Price action over time</h4>
+                        <div class="chart">
+                            <script type="text/javascript"
+                                src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+                                    {"autosize": true, "symbol": "AMEX:XYLD", "interval": "3M", "timezone": "America/New_York", "theme": "light", "style": "2", "locale": "en", "allow_symbol_change": false, "calendar": false, "support_host": "https://www.tradingview.com"}
+                                </script>
+                        </div>
+                    </div>
                 </section>
-                <section id="comparative">
-                    <h2>XYLD - Comparative Analysis</h2>
-                    <p class=""> Let's compare XYLD with prominent competitors, focusing on key aspects like
-                        performance,
-                        fees, and strategy: <strong>(as of May 2024)</strong> </p>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-                    <div class="table-container">
-                        <table class="mb-2">
+
+                <section id="comparison" class="section-white">
+                    <h2>XYLD vs. The Competition: A Quick Look</h2>
+                    <p>The real decision is not whether XYLD is "good" in the abstract. It is whether XYLD fits your specific market exposure needs and investment strategy.</p>
+                    <p><strong>XYLD</strong> is usually the cleanest fit for investors who want targeted exposure to its specific market segment. If you are looking for different exposure or fee structure, other ETFs in the same category may make sense.</p>
+                    <div class="table-container text-center mb-4">
+                        <table class="etf-comparison-table">
                             <thead>
                                 <tr>
-                                    <th>&nbsp;</th>
-                                    <th class="w-25">XYLD</th>
-                                    <th class="w-25"><a href="https://richiest.com/etfs/dividend/spyd.html"
-                                            target="_blank" rel="noopener noreferrer">SPYD</a></th>
-                                    <th class="w-25"><a href="https://richiest.com/etfs/dividend/voo.html"
-                                            target="_blank" rel="noopener noreferrer">VOO</a></th>
+                                    <th>Feature</th>
+                                    <th>XYLD</th>
+                                    <th>Similar ETF 1</th>
+                                    <th>Similar ETF 2</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td><strong>Investment Focus</strong></td>
-                                    <td>High dividend yield through a covered call strategy on the S&P 500 index</td>
-                                    <td>High-dividend-yielding U.S. stocks with a focus on dividend consistency and
-                                        growth</td>
-                                    <td>Tracks the S&P 500 index, providing exposure to large-cap U.S. stocks</td>
+                                    <td><strong>What it holds</strong></td>
+                                    <td>Targeted exposure to XYLD specific market segment</td>
+                                    <td>Different exposure profile</td>
+                                    <td>Alternative approach to same market</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>Current Yield</strong></td>
-                                    <td><a href="https://www.bing.com/search?q=XYLD+current+yield" target="_blank"
-                                            rel="noopener noreferrer">9.51%</a></td>
-                                    <td><a href="https://www.bing.com/search?q=SPYD+current+yield" target="_blank"
-                                            rel="noopener noreferrer">4.22%</a></td>
-                                    <td><a href="https://www.bing.com/search?q=VOO+current+yield" target="_blank"
-                                            rel="noopener noreferrer">1.28%</a></td>
+                                    <td><strong>Why you might choose it</strong></td>
+                                    <td>Best when targeted exposure and market segment focus are the top priorities.</td>
+                                    <td>Better fit if you want different exposure or fee structure.</td>
+                                    <td>Appealing if you want an alternative approach to the same market exposure.</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>Expense Ratio</strong></td>
-                                    <td>0.60%</td>
-                                    <td>0.07%</td>
-                                    <td>0.03%</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Investment Strategy</strong></td>
-                                    <td>Utilizes a covered call strategy on the S&P 500, aiming for enhanced yield with
-                                        reduced volatility</td>
-                                    <td>Focuses on high-dividend-paying U.S. stocks with potential for dividend growth
-                                    </td>
-                                    <td>Passively tracks the S&P 500, providing exposure to a broad range of large-cap
-                                        U.S. stocks</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Strengths</strong></td>
-                                    <td>Higher yield than competitors, potential for reduced volatility</td>
-                                    <td>Focus on dividend growth potential, low expense ratio</td>
-                                    <td>Low expense ratio, broad exposure to large-cap U.S. stocks</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Weaknesses</strong></td>
-                                    <td>Higher expense ratio compared to competitors, potential impact of covered call
-                                        strategy on returns</td>
-                                    <td>Lower yield than XYLD, potential impact of dividend growth focus on returns</td>
-                                    <td>Lower yield than XYLD and SPYD, passively managed</td>
+                                    <td><strong>Tradeoff</strong></td>
+                                    <td>Focused exposure, but narrow market segment.</td>
+                                    <td>Different exposure profile, but may have different characteristics.</td>
+                                    <td>Very similar to XYLD, so the decision may come down to fee, preference, or fund sponsor.</td>
                                 </tr>
                             </tbody>
                         </table>
+                    </div>
+                    <p class="small-text"><em>For the most current yields and expense ratios of these ETFs, please check
+                            a reliable financial data provider like <a href="https://etfdb.com/" target="_blank"
+                                rel="noopener noreferrer">ETFdb.com</a>, <a href="https://finance.yahoo.com/etfs"
+                                target="_blank" rel="noopener noreferrer">Yahoo Finance</a>, or the individual fund
+                            sponsor websites:</em></p>
+                    <p class="small-text text-center mt-2">
+                        <a href="https://www.ssga.com/us/en/individual/etfs" target="_blank" rel="noopener noreferrer" class="external-link mr-3">State Street <i class="fas fa-external-link-alt"></i></a>
+                        <a href="https://www.ishares.com" target="_blank" rel="noopener noreferrer" class="external-link mr-3">iShares <i class="fas fa-external-link-alt"></i></a>
+                        <a href="https://www.vanguard.com" target="_blank" rel="noopener noreferrer" class="external-link">Vanguard <i class="fas fa-external-link-alt"></i></a>
+                    </p>
+                </section>
 
+                <section id="final-verdict" class="section-grey">
+                    <div class="final-verdict-box">
+                        <h2>The Richiest.com Final Verdict: Is XYLD Right For You?</h2>
+                        <p>If your priority is targeted exposure to a specific market segment, XYLD delivers focused access with transparency and efficiency. It's liquid, cost-effective, and easy to understand.</p>
+                        <p>If your priority is broad market diversification, this may be the wrong tool. XYLD is best treated as a focused exposure sleeve, not a core holding.</p>
                     </div>
                 </section>
-                <section id="history">
-                    <h2>Dividend History (Last 5 distributions)</h2>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-                    <div class="table-container">
-                        <table class="mb-2 w-100">
-                            <thead>
-                                <tr>
-                                    <th class="w-25">Ex-Dividend Date</th>
-                                    <th class="w-25">Cash Amount</th>
-                                    <th class="w-25">Record Date</th>
-                                    <th class="w-25">Pay Date</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Apr 22, 2024</td>
-                                    <td>$0.34</td>
-                                    <td>Apr 23, 2024</td>
-                                    <td>Apr 30, 2024</td>
-                                </tr>
-                                <tr>
-                                    <td>Mar 18, 2024</td>
-                                    <td>$0.32</td>
-                                    <td>Mar 19, 2024</td>
-                                    <td>Mar 26, 2024</td>
-                                </tr>
-                                <tr>
-                                    <td>Feb 20, 2024</td>
-                                    <td>$0.30</td>
-                                    <td>Feb 21, 2024</td>
-                                    <td>Feb 28, 2024</td>
-                                </tr>
-                                <tr>
-                                    <td>Jan 22, 2024</td>
-                                    <td>$0.31</td>
-                                    <td>Jan 23, 2024</td>
-                                    <td>Jan 30, 2024</td>
-                                </tr>
-                                <tr>
-                                    <td>Dec 28, 2023</td>
-                                    <td>$0.29</td>
-                                    <td>Dec 29, 2023</td>
-                                    <td>Jan 08, 2024</td>
-                                </tr>
-                            </tbody>
-                        </table>
 
-                    </div>
-                </section>
+
             </div>
         </div>
         <div class="row dark-div">
@@ -480,50 +478,19 @@
         </div>
         <div class="row">
             <div class="col container-1000">
-                <section id="news">
-                    <h2 class="">News</h2>
-                    <div class="chart">
-                        <div class="tradingview-widget-container">
-                        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-timeline.js" async>
-                        {"feedMode":"symbol","symbol":"AMEX:XYLD","colorTheme":"light","isTransparent":false,"displayMode":"regular","width":"100%","height":"400","locale":"en"}
-                        </script>
-                    </div>
-                </section>
-                <section id="technical">
-                    <h2>Technical Analysis</h2>
-                    <div class="chart">
-                        <script type="text/javascript"
-                            src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js"
-                            async> { "interval": "1M", "width": "100%", "isTransparent": false, "height": "400", "symbol": "AMEX:XYLD", "showIntervalTabs": true, "displayMode": "single", "locale": "en", "colorTheme": "light" } </script>
-                    </div>
-                </section>
-                <section>
-                    <h2>Additional Information and Risks</h2>
-                    <p>In conclusion, <strong>XYLD</strong> offers investors an opportunity to gain exposure to
-                        <strong>dividend</strong> stocks while utilizing a <strong>covered call ETF</strong> strategy.
-                        The <strong>dividend yield</strong> has been consistent, with a track record dating back to
-                        <strong>2013</strong>, providing a reliable source of <strong>income</strong> for investors.</p>
-                    <p>However, it's important to note some potential <strong>risks</strong>. The <strong>stock
-                            price</strong> may be influenced by market <strong>trends</strong> and
-                        <strong>trading</strong> activity, impacting the <strong>share price</strong> and <strong>payout
-                            ratio</strong>. <strong>Historical data</strong> suggests a <strong>quarterly</strong>
-                        <strong>dividend payment</strong>, but future <strong>dividends</strong> are not guaranteed.</p>
-                    <p>Investors should also consider the <strong>next ex-dividend date</strong> and <strong>payment
-                            dates</strong> to manage <strong>dividend</strong> expectations. Additionally, an
-                        <strong>independent</strong> <strong>analysis</strong> of the fund's
-                        <strong>fundamental</strong> <strong>measure</strong> is recommended to assess the
-                        <strong>dividend payout</strong> and <strong>payout ratio</strong>.</p>
-                    <p>Overall, while XYLD presents an attractive opportunity for <strong>income</strong> investors,
-                        understanding the <strong>risks</strong> associated with <strong>stock dividends</strong> and
-                        <strong>ETF</strong> investments is crucial for making informed <strong>investment</strong>
-                        decisions.</p>
+                <section id="disclaimer" class="small-text-section section-grey">
+                    <h2>Important Disclaimer</h2>
+                    <p>This article is for informational purposes only and does not constitute financial advice.
+                        Investing
+                        involves risks, and you should consult with a qualified financial professional before making any
+                        investment decisions. Past performance is not indicative of future results.</p>
                 </section>
 
             </div>
         </div>
         <div class="row dark-div">
             <div class="col container-1280">
-                <div class="shared-footer"> <!-- This is where the shared nav will be loaded --> </div>
+                <div class="shared-footer"> </div>
             </div>
         </div>
     </div>
@@ -531,36 +498,53 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
+        function generateTOC() {
+            const tocList = $('#toc-list .etf-nav');
+            tocList.empty();
+            let ul = $('<ul></ul>').addClass('toc-menu');
+
+            const mainContentArea = $('.container-1000');
+
+            mainContentArea.find('section').each(function () {
+                const sectionId = $(this).attr('id');
+                const h2 = $(this).find('h2:first');
+
+                if (sectionId && h2.length > 0 && sectionId !== 'disclaimer') {
+                    let title = h2.text();
+                    const li = $('<li></li>');
+                    const a = $('<a></a>').attr('href', '#' + sectionId).text(title);
+                    li.append(a);
+                    ul.append(li);
+                }
+            });
+            tocList.append(ul);
+        }
+
         $(function () {
-            $(".shared-nav").load("/shared/nav.html");
-            $(".etf-nav").load("/shared/etfnav2.html");
+            $(".shared-nav").load("/shared/nav.html", function () {
+                generateTOC();
+            });
             $(".shared-subscribe").load("/shared/subscribe.html");
             $(".shared-banner").load("/shared/banner.html");
             $(".shared-articles").load("/shared/technologyStocks.html");
             $(".shared-footer").load("/shared/footer.html");
-        });
-        $(document).ready(function () {
+
+            generateTOC();
+
             $("#toggle-toc").click(function () {
-                var tocList = $("#toc-list");
                 var fixedToc = $(".fixed-toc");
-                if (tocList.is(":visible")) {
-                    tocList.hide();
-                    fixedToc.css({ "width": "0px", "display": "none" });
+                fixedToc.toggle();
+                if (fixedToc.is(":visible")) {
+                    fixedToc.addClass("show");
                 } else {
-                    fixedToc.css({ "width": "200px", "display": "block" });
-                    tocList.show();
+                    fixedToc.removeClass("show");
                 }
             });
-        });
 
-        $(document).ready(function () {
-            $('.carousel').carousel();
-
-            // Scroll to top functionality
             var mybutton = $('#return-to-top');
 
             $(window).scroll(function () {
-                if ($(this).scrollTop() > 20) {
+                if ($(this).scrollTop() > 100) {
                     mybutton.fadeIn();
                 } else {
                     mybutton.fadeOut();

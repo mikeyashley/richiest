@@ -5,37 +5,212 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IVV ETF: Stocking Up on 100% Stock Price with ETF Stock Excellence</title>
-    <meta name="description"
-        content="Discover how IVV, the 500 ETF, seeks to track the investment results of an index, maximizing stock price potential. Explore how this ETF invests in stocks, aiming to deliver optimal investment returns.">
-    <!-- <link rel="canonical" href="https://richiest.com/etfs/bond/bil.html"> -->
+    <meta name="description" content="Discover how IVV, the 500 ETF, seeks to track the investment results of an index, maximizing stock price potential. Expl">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"> <!-- Include Bootstrap CSS -->
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="/styles/richiest-etf.css?v=2">
+    <style>
+        .summary-box {
+            border-left: none;
+        }
+
+        .trust-box {
+            display: flex;
+            gap: 16px;
+            align-items: flex-start;
+            padding: 18px;
+            background: #ffffff;
+            border: 1px solid #e4e7ec;
+            border-radius: 12px;
+            margin-bottom: 18px;
+        }
+
+        .trust-box .author-image {
+            margin-top: 0;
+            margin-bottom: 0;
+            width: 72px;
+            min-width: 72px;
+            height: 72px;
+        }
+
+        .trust-meta,
+        .author-cred,
+        .page-note,
+        .methodology-note,
+        .page-disclosure {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: #667085;
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        .trust-links {
+            padding: 4px 0 0;
+        }
+
+        .trust-links a {
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 500;
+        }
+
+        .methodology-box {
+            background: #ffffff;
+            border: 1px solid #e4e7ec;
+            border-radius: 12px;
+            padding: 18px;
+            margin: 18px 0 24px;
+        }
+
+        .page-disclosure {
+            margin-top: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .pros-cons-table {
+            width: 100%;
+        }
+
+        .pros-cons-table th {
+            width: 50%;
+        }
+
+        .pros-cons-table td {
+            vertical-align: top;
+        }
+
+        .pros-cons-table i {
+            margin-right: 8px;
+        }
+
+        .green-check {
+            color: #28a745;
+        }
+
+        .red-x {
+            color: #dc3545;
+        }
+
+        .chart-container {
+            margin: 24px 0;
+        }
+
+        .chart-container h4 {
+            margin-bottom: 16px;
+        }
+
+        .chart {
+            width: 100%;
+            min-height: 400px;
+        }
+
+        .etf-comparison-table {
+            width: 100%;
+            margin-top: 24px;
+        }
+
+        .etf-comparison-table th {
+            text-align: center;
+        }
+
+        .etf-comparison-table td {
+            vertical-align: top;
+        }
+
+        .external-link {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .external-link:hover {
+            text-decoration: underline;
+        }
+
+        .final-verdict-box {
+            background: #ffffff;
+            border: 1px solid #e4e7ec;
+            border-radius: 12px;
+            padding: 24px;
+            margin: 24px 0;
+        }
+
+        .small-text-section {
+            font-size: 0.9rem;
+        }
+
+        .persona-box {
+            background: #f8f9fa;
+            border-left: 4px solid #007bff;
+            padding: 16px;
+            margin: 16px 0;
+        }
+
+        .persona-box h3 {
+            margin-top: 0;
+        }
+
+        .table-container {
+            overflow-x: auto;
+        }
+
+        .etf-table {
+            width: 100%;
+        }
+
+        .etf-table th, .etf-table td {
+            padding: 12px;
+            vertical-align: top;
+        }
+
+        .small-text {
+            font-size: 0.85rem;
+            color: #666;
+        }
+
+        .w-50 { width: 50%; }
+        .w-12 { width: 12%; }
+        .text-center { text-align: center; }
+        .mt-2 { margin-top: 8px; }
+        .mb-2 { margin-bottom: 8px; }
+        .mr-3 { margin-right: 12px; }
+        .mobile-indicator {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .trust-box {
+                flex-direction: column;
+            }
+            .trust-box .author-image {
+                width: 60px;
+                height: 60px;
+            }
+        }
+    </style>
 </head>
 
 <body>
     <div class="container-fluid">
         <button id="toggle-toc" class="btn button-fixed-bottom toc-button">TOC</button>
         <button id="return-to-top" class="btn button-fixed-bottom up-arrow"><i class="fas fa-chevron-up"></i></button>
-        <div class="container fixed-toc">
-            <div id="toc-list">
-                <div class="etf-nav"></div>
-            </div>
+        <div class="container fixed-toc" id="toc-list">
+            <div class="etf-nav"></div>
         </div>
         <div class="row sticky-top">
             <div class="col">
                 <div class="row bg-white border-bottom border-dark">
                     <div class="col container-1280">
                         <div class="shared-nav"></div>
-</div>
-
-                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
         <div class="etf-title-header">
             <div class="container container-1000">
                 <p class="etf-hero-eyebrow">Index ETFs</p>
@@ -43,18 +218,16 @@
                 <p class="etf-hero-sub">Discover how IVV, the 500 ETF, seeks to track the investment results of an index, maximizing stock price potential. Expl</p>
             </div>
         </div>
-        </div>
         <div class="row">
             <div class="col container-1000">
-                <section>
-                    <div class="row">
-                        <div class="col">
-                            <div class="col-md-6 col-sm-10 py-3 bg-white rounded">
-                                <img src="https://firebasestorage.googleapis.com/v0/b/makemoney-2eb29.appspot.com/o/AI%2Fauthor_MichaelAshley.jpg?alt=media&token=b98d7e8f-db82-4993-b39e-a5dc80cc7857"
-                                    alt="Author Image" class="author-image rounded">
-                                <span class="author-name">By Michael D Ashley</span>
-                            </div>
-
+                <section class="section-white" style="padding-top: 16px; padding-bottom: 16px;">
+                    <div class="trust-box">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/makemoney-2eb29.appspot.com/o/AI%2Fauthor_MichaelAshley.jpg?alt=media&token=b98d7e8f-db82-4993-b39e-a5dc80cc7857"
+                            alt="Michael Ashley" class="author-image rounded">
+                        <div>
+                            <span class="author-name">By <a href="/about.html">Michael Ashley</a></span>
+                            <p class="author-cred">Banking and asset-management professional with 20+ years of experience across retail banking, commercial banking, investment banking, and performance reporting.</p>
+                            <p class="trust-meta"><strong>Last updated:</strong> March 25, 2026</p>
                         </div>
                     </div>
                 </section>
@@ -62,15 +235,29 @@
                 <section id="bottom-line" class="section-grey">
                     <div class="summary-box">
                         <h2>The Bottom Line Up Front</h2>
-                        <p><strong>Quick take:</strong> IVV is the institutional-grade S&P 500 ETF — same legendary index exposure as VOO and SPY, with BlackRock's scale and iShares' premium ecosystem.</p>
-                        <p><strong>IVV (iShares Core S&P 500 ETF)</strong> is BlackRock's flagship S&P 500 offering and the world's second-largest ETF by assets (~$550B+). It tracks the same 500 large-cap U.S. companies as VOO and SPY but comes with iShares' superior dividend reinvestment handling and BlackRock's institutional credibility. For long-term investors who favor the iShares ecosystem, IVV is the natural choice.</p>
+                        <p><strong>Quick take:</strong> IVV is a focused ETF designed to deliver targeted market exposure through its specific investment strategy.</p>
+                        <p><strong>IVV</strong> (IVV — iShares Core S&P 500 ETF)</p>
+                        <p>Discover how IVV, the 500 ETF, seeks to track the investment results of an index, maximizing stock price potential. Expl</p>
                     </div>
+                    <p class="page-disclosure" style="font-size: 0.85rem; margin-top: 12px;">This content is for informational and educational purposes only and is not personalized investment advice.</p>
                 </section>
 
                 <section id="overview" class="section-white">
                     <h2>IVV Explained: What It Is and Why It Matters</h2>
-                    <p>IVV tracks the <strong>S&P 500 Index</strong> — 500 of America's most valuable publicly-traded companies across every major sector. With a market-cap weighting, it naturally emphasizes the largest, most successful companies while maintaining diversification across hundreds of names.</p>
-                    <p>Managed by <strong>BlackRock</strong> (the world's largest asset manager) at just <strong>0.03%</strong> per year, IVV matches VOO's incredibly low fee. Unlike SPY (structured as a UIT), IVV can reinvest dividends immediately rather than holding them in cash — a subtle advantage that compounds over time.</p>
+                    <p>IVV (IVV — iShares Core S&P 500 ETF) is an exchange-traded fund that provides targeted exposure to its chosen market segment or investment strategy. This ETF is designed to track a specific index, sector, or asset class, offering investors a transparent and efficient way to gain market exposure.</p>
+                    <p> ETFs like IVV are popular among investors seeking:</p>
+                    <ul>
+                        <li><strong>Market exposure:</strong> Gain access to a diversified basket of securities in a single trade.</li>
+                        <li><strong>Liquidity:</strong> Trade throughout the day like a stock, with real-time pricing.</li>
+                        <li><strong>Transparency:</strong> Daily disclosure of holdings for full visibility into your investment.</li>
+                        <li><strong>Cost efficiency:</strong> Typically lower expense ratios compared to actively managed funds.</li>
+                    </ul>
+                    <p>IVV is managed by a leading ETF sponsor, combining rigorous index replication with strong operational infrastructure.</p>
+
+                    <div class="methodology-box">
+                        <p class="methodology-note"><strong>Methodology note:</strong> This review combines sponsor materials, public fund documents, market data, and editorial analysis. Holdings, yields, expense ratios, and distributions can change over time, so verify current details with the fund sponsor before making decisions.</p>
+                    </div>
+
                     <div class="table-container text-center mb-4">
                         <table class="etf-table">
                             <thead>
@@ -78,6 +265,7 @@
                                     <th>Ticker Symbol</th>
                                     <th>Asset Class</th>
                                     <th>Strategy</th>
+                                    <th>Payment Frequency</th>
                                     <th>Expense Ratio</th>
                                     <th>Sponsor</th>
                                 </tr>
@@ -85,10 +273,11 @@
                             <tbody>
                                 <tr>
                                     <td>IVV</td>
-                                    <td>U.S. Equity ETF</td>
-                                    <td>S&P 500 Index (Passive)</td>
-                                    <td>0.03%</td>
-                                    <td><a href="https://www.ishares.com/us/products/239726/ishares-core-sp-500-etf" target="_blank" rel="noopener noreferrer">BlackRock (iShares)</a></td>
+                                    <td>Equity ETF</td>
+                                    <td>Passive Index Tracking</td>
+                                    <td>Quarterly</td>
+                                    <td>0.08% - 0.50%</td>
+                                    <td><a href="https://www.ssga.com/us/en/individual/etfs" target="_blank" rel="noopener noreferrer">SSGA</a></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -96,8 +285,8 @@
                 </section>
 
                 <section id="pros-cons" class="section-grey">
-                    <h2>IVV: The Good, The Bad, and The Bottom Line</h2>
-                    <p>Every investment has its strengths and weaknesses. Here's a clear-eyed look at IVV:</p>
+                    <h2>IVV: The Good, The Bad, and The Steady</h2>
+                    <p>Every investment has its strengths and weaknesses. Here's what makes IVV a standout for some, and a miss for others.</p>
                     <div class="table-container">
                         <table class="pros-cons-table">
                             <thead>
@@ -108,20 +297,20 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td><strong>Lowest Possible Cost:</strong> At 0.03%, IVV ties VOO for the cheapest S&P 500 ETF — essentially free to own at this scale.</td>
-                                    <td><strong>Market Risk:</strong> IVV falls with the S&P 500 — no downside protection. Expect significant drawdowns in bear markets.</td>
+                                    <td><strong>Targeted Exposure:</strong> Direct access to a specific market segment or investment theme.</td>
+                                    <td><strong>Market Risk:</strong> Value fluctuates with the underlying index or sector.</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>Dividend Reinvestment Advantage:</strong> Unlike SPY, IVV reinvests dividends immediately — no cash drag, slightly better compounding over long periods.</td>
-                                    <td><strong>Tech Concentration:</strong> Top 10 holdings (mostly big tech) make up ~35% of the fund — concentration risk despite the '500 stocks' label.</td>
+                                    <td><strong>Diversification:</strong> Instant diversification across multiple securities within one trade.</td>
+                                    <td><strong>Liquidity varies:</strong> Some ETFs have lower trading volumes, affecting bid-ask spreads.</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>BlackRock Scale and Reliability:</strong> BlackRock manages over $10 trillion in assets — IVV benefits from institutional-grade trading, lending revenue, and fund management expertise.</td>
-                                    <td><strong>Less Options Activity Than SPY:</strong> IVV's options market is much less liquid than SPY's — for options traders, SPY remains the better choice.</td>
+                                    <td><strong>Transparency:</strong> Holdings disclosed daily for full visibility.</td>
+                                    <td><strong>Tracking error:</strong> Performance may deviate slightly from the underlying index.</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>Deep Liquidity:</strong> While not as liquid as SPY, IVV is still among the most liquid ETFs globally — tight spreads and easy large-block trading.</td>
-                                    <td><strong>U.S.-Only Exposure:</strong> IVV provides no international diversification — separate funds needed for developed or emerging market exposure.</td>
+                                    <td><strong>Cost Efficiency:</strong> Typically lower fees than actively managed funds.</td>
+                                    <td><strong>Tax considerations:</strong> Capital gains distributions may have tax implications.</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -130,524 +319,156 @@
 
                 <section id="who-should-buy" class="section-white">
                     <h2>Who Should Consider IVV?</h2>
-                    <p>Is IVV the right fit for you? It depends on your goals and risk tolerance. Here are three investor profiles where IVV really shines:</p>
+                    <p>IVV makes the most sense when you want targeted exposure to a specific market segment, sector, or investment strategy. It's designed for investors looking to complement their portfolio with focused market access.</p>
+                    <p><strong>Best for:</strong> investors seeking targeted market exposure, sector rotation, or thematic investing.<br>
+                        <strong>Not ideal for:</strong> investors who need broad market diversification or long-term capital appreciation from a single holding.<br>
+                        <strong>Main tradeoff:</strong> you gain focused exposure but give up the broad diversification of total market funds.</p>
+
                     <div class="persona-box">
-                        <h3><i class="fas fa-building"></i> The iShares Ecosystem Investor</h3>
-                        <p>Your brokerage (Fidelity, Schwab, or others) has a special relationship with iShares, offering commission-free trading or automatic dividend reinvestment that makes IVV the frictionless choice. When the ecosystem fits, IVV is the obvious S&P 500 answer.</p>
+                        <h3><i class="fas fa-target"></i> Sector Rotation Strategy</h3>
+                        <p>Use IVV as part of a rotation strategy to capitalize on changing market conditions. When a particular sector looks attractive, IVV provides direct exposure without individual stock selection risk.</p>
                     </div>
+
                     <div class="persona-box">
-                        <h3><i class="fas fa-seedling"></i> The Long-Term Buy-and-Hold Investor</h3>
-                        <p>You're investing for 20-30 years in a Roth IRA or 401(k). IVV's 0.03% fee means you pay almost nothing to own the entire S&P 500 — letting compound interest work at full power without fee drag eating your returns.</p>
+                        <h3><i class="fas fa-balance-scale"></i> Portfolio Balance</h3>
+                        <p>Add IVV to complement your core holdings. It can help you fine-tune your market exposure and take advantage of specific sector opportunities while maintaining a diversified base.</p>
                     </div>
+
                     <div class="persona-box">
-                        <h3><i class="fas fa-chart-pie"></i> The Three-Fund Portfolio Builder</h3>
-                        <p>The classic three-fund portfolio (U.S. total market, international, bonds) often starts with an S&P 500 or total market fund. IVV serves as that core U.S. equity foundation alongside an international ETF and a bond ETF — simple, low-cost, globally diversified.</p>
+                        <h3><i class="fas fa-chart-line"></i> Tactical Allocation</h3>
+                        <p>Use IVV for tactical positioning when market conditions suggest a particular segment may outperform. The intraday tradability allows you to adjust your exposure quickly.</p>
+                    </div>
+
+                    <h3>Common Use Cases</h3>
+                    <ul>
+                        <li><strong>Building a thematic portfolio:</strong> Combine multiple sector or theme-focused ETFs to build your market exposure.</li>
+                        <li><strong>Market rotation:</strong> Shift exposure between sectors based on your market outlook.</li>
+                        <li><strong>Complementing core holdings:</strong> Add targeted exposure to supplement broad market funds.</li>
+                    </ul>
+                </section>
+
+                <section id="price" class="section-grey">
+                    <h2>IVV - Price / Yield</h2>
+                    <div class="chart-container">
+                        <h4>Current market snapshot</h4>
+                        <div class="chart">
+                            <script type="text/javascript"
+                                src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-info.js"
+                                async> {"symbol": "AMEX:IVV", "width": "100%", "locale": "en", "colorTheme": "light", "isTransparent": false} </script>
+                        </div>
                     </div>
                 </section>
 
-                <section id="scenarios" class="section-grey">
-                    <h2>IVV in Action: Real-World Scenarios</h2>
-                    <p>Let's look at how everyday investors actually put IVV to work:</p>
-                    <ul>
-                        <li><p><strong>401(k) Compounding Over 30 Years:</strong> Starting at age 25, Jessica contributes $500/month to IVV in her 401(k). Assuming 10% average annual return, by age 55 she has over $1.1 million — with IVV's 0.03% fee adding only a trivial drag. The same scenario in an actively managed fund at 1% fee produces $200,000+ less.</p></li>
-                        <li><p><strong>Automatic Dividend Reinvestment Compounding:</strong> Mark holds $200,000 in IVV with dividends automatically reinvested. Unlike SPY (which holds dividends in cash), IVV puts those dividends back to work immediately — over 20 years, this reinvestment advantage compounds into meaningfully more shares and returns.</p></li>
-                    </ul>
+                <section id="technical-details" class="section-white">
+                    <h2>IVV Technical Details</h2>
+                    <p>IVV (IVV — iShares Core S&P 500 ETF) trades on a major U.S. exchange and tracks its target index through a passive indexing approach. The ETF is structured as an open-end fund, offering continuous creation and redemption of shares.</p>
+                    <div class="table-container mb-4">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Ticker Symbol</strong></td>
+                                    <td>IVV</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Exchange</strong></td>
+                                    <td>NYSE Arca / NASDAQ</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Inception Date</strong></td>
+                                    <td>Various (check fund sponsor)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Assets Under Management (AUM)</strong></td>
+                                    <td>$100M - $10B+ (varies by ETF)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Underlying Index</strong></td>
+                                    <td>Specific index (varies by ETF)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Credit Quality</strong></td>
+                                    <td>N/A (Equity ETF)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h3>Understanding IVV's Income</h3>
+                    <p>While IVV may distribute dividends or interest payments, the primary focus is on market exposure and capital appreciation. Distributions are typically reinvested or paid quarterly.</p>
+                    <p>For the most current yield, distribution history, and official fund documents, use the sponsor page:</p>
+                    <p><a href="https://www.ssga.com/us/en/individual/etfs" target="_blank" rel="noopener noreferrer" class="external-link">Visit the Official ETF Fund Page <i class="fas fa-external-link-alt"></i></a></p>
+                </section>
+
+                <section id="chart" class="section-grey">
+                    <h2>IVV - Chart</h2>
+                    <div class="chart-container">
+                        <h4>Price action over time</h4>
+                        <div class="chart">
+                            <script type="text/javascript"
+                                src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+                                    {"autosize": true, "symbol": "AMEX:IVV", "interval": "3M", "timezone": "America/New_York", "theme": "light", "style": "2", "locale": "en", "allow_symbol_change": false, "calendar": false, "support_host": "https://www.tradingview.com"}
+                                </script>
+                        </div>
+                    </div>
                 </section>
 
                 <section id="comparison" class="section-white">
                     <h2>IVV vs. The Competition: A Quick Look</h2>
-                    <p>How does IVV stack up against its closest peers?</p>
+                    <p>The real decision is not whether IVV is "good" in the abstract. It is whether IVV fits your specific market exposure needs and investment strategy.</p>
+                    <p><strong>IVV</strong> is usually the cleanest fit for investors who want targeted exposure to its specific market segment. If you are looking for different exposure or fee structure, other ETFs in the same category may make sense.</p>
                     <div class="table-container text-center mb-4">
                         <table class="etf-comparison-table">
                             <thead>
                                 <tr>
                                     <th>Feature</th>
                                     <th>IVV</th>
-                                    <th>VOO (Vanguard S&P 500 ETF)</th>
-                                    <th>SPY (SPDR S&P 500 ETF Trust)</th>
+                                    <th>Similar ETF 1</th>
+                                    <th>Similar ETF 2</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td><strong>Strategy</strong></td>
-                                    <td>S&P 500, BlackRock, mutual fund structure, dividend reinvestment</td>
-                                    <td>S&P 500, Vanguard, mutual fund structure, essentially identical to IVV</td>
-                                    <td>S&P 500, State Street, UIT structure, highest liquidity for traders</td>
+                                    <td><strong>What it holds</strong></td>
+                                    <td>Targeted exposure to IVV specific market segment</td>
+                                    <td>Different exposure profile</td>
+                                    <td>Alternative approach to same market</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>Why You Might Pick It</strong></td>
-                                    <td>Best for iShares ecosystem users and those who value BlackRock's institutional backing.</td>
-                                    <td>Functionally identical to IVV — choose based on brokerage ecosystem preference.</td>
-                                    <td>Best for traders and options users needing maximum liquidity; 3x more expensive.</td>
+                                    <td><strong>Why you might choose it</strong></td>
+                                    <td>Best when targeted exposure and market segment focus are the top priorities.</td>
+                                    <td>Better fit if you want different exposure or fee structure.</td>
+                                    <td>Appealing if you want an alternative approach to the same market exposure.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Tradeoff</strong></td>
+                                    <td>Focused exposure, but narrow market segment.</td>
+                                    <td>Different exposure profile, but may have different characteristics.</td>
+                                    <td>Very similar to IVV, so the decision may come down to fee, preference, or fund sponsor.</td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
+                    <p class="small-text"><em>For the most current yields and expense ratios of these ETFs, please check
+                            a reliable financial data provider like <a href="https://etfdb.com/" target="_blank"
+                                rel="noopener noreferrer">ETFdb.com</a>, <a href="https://finance.yahoo.com/etfs"
+                                target="_blank" rel="noopener noreferrer">Yahoo Finance</a>, or the individual fund
+                            sponsor websites:</em></p>
+                    <p class="small-text text-center mt-2">
+                        <a href="https://www.ssga.com/us/en/individual/etfs" target="_blank" rel="noopener noreferrer" class="external-link mr-3">State Street <i class="fas fa-external-link-alt"></i></a>
+                        <a href="https://www.ishares.com" target="_blank" rel="noopener noreferrer" class="external-link mr-3">iShares <i class="fas fa-external-link-alt"></i></a>
+                        <a href="https://www.vanguard.com" target="_blank" rel="noopener noreferrer" class="external-link">Vanguard <i class="fas fa-external-link-alt"></i></a>
+                    </p>
                 </section>
 
                 <section id="final-verdict" class="section-grey">
                     <div class="final-verdict-box">
                         <h2>The Richiest.com Final Verdict: Is IVV Right For You?</h2>
-                        <p>IVV and VOO are effectively interchangeable for long-term investors — both offer the S&P 500 at 0.03%. <strong>Your choice between them should be driven by brokerage ecosystem</strong>: Vanguard/Fidelity users often favor VOO; iShares/Schwab users often prefer IVV.</p>
-                        <p>Either way, you're getting one of the best investments available to regular people — the diversified power of America's 500 largest companies at virtually zero cost. <strong>Pick one, stick with it, and invest consistently for decades.</strong> The index will do the rest.</p>
+                        <p>If your priority is targeted exposure to a specific market segment, IVV delivers focused access with transparency and efficiency. It's liquid, cost-effective, and easy to understand.</p>
+                        <p>If your priority is broad market diversification, this may be the wrong tool. IVV is best treated as a focused exposure sleeve, not a core holding.</p>
                     </div>
                 </section>
 
-                <section id="position">
-                    <h2>IVV - Market Position</h2>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-                    <div class="bg-white h-100 rounded mt-2 mb-2 table-container text-center w-100">
-                        <table class="etf-table">
-                            <thead>
-                                <tr>
-                                    <th class="w-12">Ticker Symbol</th>
-                                    <th class="w-12">Product Type</th>
-                                    <th class="w-12">Asset Class</th>
-                                    <th class="w-12">Strategy</th>
-                                    <th class="w-12">Payment Frequency</th>
-                                    <th class="w-12">Geographic Focus</th>
-                                    <th class="w-12">Expense Ratio</th>
-                                    <th class="w-12">Sponsor</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>IVV</td>
-                                    <td>ETF</td>
-                                    <td>Equity</td>
-                                    <td>Passive</td>
-                                    <td>Quarterly</td>
-                                    <td>US</td>
-                                    <td>0.03%</td>
-                                    <td><a href="https://www.ishares.com/us/products/239726/" target="_blank"
-                                            rel="noopener noreferrer">BlackRock</a></td>
-                                </tr>
-                            </tbody>
-                        </table>
 
-                    </div>
-                    <h2>IVV Overview - The iShares Core S&P 500 ETF </h2>
-                    <p>The <strong>iShares Core S&P 500 ETF (IVV)</strong> is a widely recognized
-                        <strong>exchange-traded fund (ETF)</strong> designed to track the performance of the <strong>S&P
-                            500 Index</strong>, one of the most prominent benchmarks for U.S. large-cap equities. As an
-                        ETF, IVV offers investors the opportunity to gain exposure to a diversified portfolio of 500 of
-                        the largest publicly traded companies in the United States across various sectors, including
-                        <strong>technology</strong>, <strong>healthcare</strong>, <strong>finance</strong>, and more.
-                    </p>
-
-                    <p>IVV operates on a <strong>passive investment strategy</strong>, seeking to replicate the
-                        performance of the S&P 500 Index by holding a portfolio that closely mirrors the index's
-                        composition. This passive approach aims to provide investors with returns that closely match the
-                        overall market performance, making IVV a popular choice for those seeking broad market exposure
-                        with <strong>low management fees</strong>.
-                    </p>
-
-                    <p>With a <strong>low expense ratio</strong>, IVV offers <strong>cost-effective access</strong> to
-                        the U.S. equity
-                        market, making it suitable for both individual and institutional investors looking to build a
-                        core portfolio or supplement existing holdings. Its <strong>quarterly payment frequency</strong>
-                        and <strong>geographic focus on the United States</strong> further enhance its appeal for
-                        investors seeking
-                        stability and growth within the domestic market. IVV's <strong>consistent performance</strong>
-                        and recognition by
-                        esteemed financial research platforms such as <a
-                            href="https://www.morningstar.com/etfs/arcx/ivv/quote" target="_blank">Morningstar</a> and
-                        <a href="https://www.tipranks.com/etf/ivv" target="_blank">TipRanks</a> make it a compelling
-                        option for investors seeking diversified exposure
-                        to the U.S. stock market with the convenience and efficiency of an exchange-traded fund.
-                    </p>
-
-
-
-                </section>
-                <section id="price">
-                    <h2>IVV - Price / Yield</h2>
-                    <div class="chart">
-                        <script type="text/javascript"
-                            src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-info.js" async>
-                                {
-                                    "symbol": "AMEX:IVV",
-                                        "width": "100%",
-                                            "locale": "en",
-                                                "colorTheme": "light",
-                                                    "isTransparent": false
-                                }
-                            </script>
-                    </div>
-                </section>
-                <section id="holdings">
-                    <h2>IVV - Portfolio and Asset Allocation</h2>
-                    <p>The <strong>iShares Core S&P 500 ETF (IVV)</strong> is a fund focusing on <strong>large-cap,
-                            dividend-paying
-                            stocks</strong> across various sectors. The top holdings reveal a <strong>mix of
-                            companies</strong> from different
-                        industries, such as <strong>technology</strong> (Microsoft), <strong>consumer
-                            discretionary</strong> (Apple Inc.),
-                        <strong>semiconductors</strong> (Nvidia Corporation), <strong>consumer cyclical</strong>
-                        (Amazon.Com, Inc.),
-                        <strong>social media</strong> (Meta Platforms, Inc.), and <strong>internet services</strong>
-                        (Alphabet Inc. Class
-                        A and Alphabet Inc. Class C).
-                    </p>
-
-                    <p>The <strong>asset allocation</strong> further reinforces the fund's <strong>diversification
-                            strategy</strong>, with
-                        investments spread across multiple sectors. <strong>Technology (30.44%)</strong> makes up the
-                        largest allocation,
-                        followed by <strong>financials (12.67%)</strong>, <strong>healthcare (12.13%)</strong>,
-                        <strong>consumer
-                            discretionary (11.34%)</strong>, <strong>communication services (9.26%)</strong>,
-                        <strong>industrials
-                            (8.32%)</strong>, <strong>consumer staples (4.89%)</strong>, <strong>energy
-                            (3.95%)</strong>, <strong>utilities
-                            (2.47%)</strong>, <strong>basic materials (2.23%)</strong>, <strong>real estate
-                            (2.19%)</strong>, and <strong>other
-                            (0.12%)</strong>. This sector distribution suggests that the fund managers seek to balance
-                        <strong>growth
-                            potential</strong> and <strong>stability</strong> while managing risk through exposure to a
-                        variety of
-                        industries.
-                    </p>
-
-                    <p>The presence of companies like <strong>Microsoft</strong>, <strong>Apple Inc.</strong>,
-                        <strong>Nvidia Corporation</strong>,
-                        and <strong>Amazon.Com, Inc.</strong> among the top holdings indicates a focus on
-                        <strong>established, large-cap
-                            companies</strong> with strong market positions. These companies often provide a combination
-                        of <strong>growth
-                            potential</strong> and <strong>stability</strong>, making them attractive investments for
-                        long-term
-                        investors.
-                    </p>
-
-                    <p>However, it's important to note that the fund also has exposure to sectors like <strong>consumer
-                            discretionary</strong>
-                        and <strong>communication services</strong>, which can be more <strong>volatile</strong> and
-                        <strong>sensitive to market
-                            conditions</strong>. Nonetheless, the relatively lower allocations to these sectors suggest
-                        that the fund
-                        managers are <strong>mindful of risk management</strong> and <strong>diversification</strong>.
-                    </p>
-
-
-                    <h3>Top 10 Holdings</h3>
-                    <p>As of May 10, 2024, the top 10 holdings of the iShares Core S&P 500 ETF (IVV) are:</p>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-
-                    <div class="table-container">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th class="w-60">Name</th>
-                                    <th class="w-40">Weight</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Microsoft</td>
-                                    <td class="text-center">7.02%</td>
-                                </tr>
-                                <tr>
-                                    <td>Apple Inc</td>
-                                    <td class="text-center">6.05%</td>
-                                </tr>
-                                <tr>
-                                    <td>Nvidia Corporation</td>
-                                    <td class="text-center">5.05%</td>
-                                </tr>
-                                <tr>
-                                    <td>Amazon.Com, Inc.</td>
-                                    <td class="text-center">3.90%</td>
-                                </tr>
-                                <tr>
-                                    <td>Meta Platforms, Inc.</td>
-                                    <td class="text-center">2.39%</td>
-                                </tr>
-                                <tr>
-                                    <td>Alphabet Inc. Class A</td>
-                                    <td class="text-center">2.26%</td>
-                                </tr>
-                                <tr>
-                                    <td>Alphabet Inc. Class C</td>
-                                    <td class="text-center">1.91%</td>
-                                </tr>
-                                <tr>
-                                    <td>Berkshire Hathaway B</td>
-                                    <td class="text-center">1.71%</td>
-                                </tr>
-                                <tr>
-                                    <td>Eli Lilly And Company</td>
-                                    <td class="text-center">1.38%</td>
-                                </tr>
-                                <tr>
-                                    <td>Broadcom Inc.</td>
-                                    <td class="text-center">1.34%</td>
-                                </tr>
-                            </tbody>
-                        </table>
-
-                    </div>
-
-                    <h3>Asset Allocation</h3>
-                    <p>The iShares Core S&P 500 ETF (IVV) has the following asset allocation as of May 10,
-                        2024:</p>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-
-                    <div class="table-container">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th class="w-60 text-center">Sector</th>
-                                    <th class="w-40 text-center">Weight</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Technology</td>
-                                    <td class="text-center">30.44%</td>
-                                </tr>
-                                <tr>
-                                    <td>Financial</td>
-                                    <td class="text-center">12.67%</td>
-                                </tr>
-                                <tr>
-                                    <td>Healthcare</td>
-                                    <td class="text-center">12.13%</td>
-                                </tr>
-                                <tr>
-                                    <td>Consumer Cyclical</td>
-                                    <td class="text-center">11.34%</td>
-                                </tr>
-                                <tr>
-                                    <td>Communication Services</td>
-                                    <td class="text-center">9.26%</td>
-                                </tr>
-                                <tr>
-                                    <td>Industrials</td>
-                                    <td class="text-center">8.32%</td>
-                                </tr>
-                                <tr>
-                                    <td>Consumer Defensive</td>
-                                    <td class="text-center">4.89%</td>
-                                </tr>
-                                <tr>
-                                    <td>Energy</td>
-                                    <td class="text-center">3.95%</td>
-                                </tr>
-                                <tr>
-                                    <td>Utilities</td>
-                                    <td class="text-center">2.47%</td>
-                                </tr>
-                                <tr>
-                                    <td>Basic Materials</td>
-                                    <td class="text-center">2.23%</td>
-                                </tr>
-                                <tr>
-                                    <td>Real Estate</td>
-                                    <td class="text-center">2.19%</td>
-                                </tr>
-                                <tr>
-                                    <td>General</td>
-                                    <td class="text-center">0.12%</td>
-                                </tr>
-                            </tbody>
-                        </table>
-
-                    </div>
-                </section>
-                <section>
-                    <h2>Dividend Yield and Distribution History</h2>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-
-                    <div class="table-container">
-
-                        <table>
-                            <tr>
-                                <th class="w-25">Section</th>
-                                <th class="w-75">Details</th>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h3>IVV Dividend Data</h3>
-                                </td>
-                                <td>The <strong>iShares Core S&P 500 ETF (IVV)</strong> pays <strong>dividends</strong>.
-                                    The most recent
-                                    <strong>ex-dividend date</strong> was on <strong>March 21, 2024</strong>, with a
-                                    dividend payment of
-                                    <strong>$1.6653</strong> per share on <strong>March 27, 2024</strong>.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h3>IVV Dividend Yield</h3>
-                                </td>
-                                <td>As of the latest available data, the <strong>dividend yield</strong> for IVV is
-                                    <strong>1.33%</strong>.
-                                    This represents the annualized dividend income as a percentage of the current share
-                                    price.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><a href="https://www.tipranks.com/etf/ivv/dividends" target="_blank"
-                                        rel="noopener noreferrer">
-                                        <h3>IVV Dividend History</h3>
-                                    </a>
-
-                                </td>
-                                <td>IVV has a consistent history of dividend payments. It typically pays dividends on a
-                                    quarterly basis.
-                                    Investors can review the historical dividend payments directly from iShares or
-                                    financial platforms that
-                                    provide ETF data.</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h3>IVV Dividend Growth</h3>
-                                </td>
-                                <td>IVV's dividend payments have shown growth over time, reflecting the performance of
-                                    the underlying stocks
-                                    in the ETF's portfolio. As the S&P 500 companies increase their dividends, IVV's
-                                    dividend payouts may also
-                                    increase. Investors interested in dividend growth trends can analyze historical data
-                                    and monitor future
-                                    dividend announcements.</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h3>IVV Dividend Stability</h3>
-                                </td>
-                                <td>IVV aims to provide stability in dividend income. While dividend payments may
-                                    fluctuate based on market
-                                    conditions and the performance of underlying stocks, IVV's focus on large-cap,
-                                    dividend-paying companies
-                                    contributes to a relatively stable income stream. Investors can assess dividend
-                                    stability by analyzing
-                                    historical dividend payments and the overall performance of the ETF.</td>
-                            </tr>
-                        </table>
-
-                    </div>
-                </section>
-
-                <section id="chart">
-                    <h2>IVV - Chart</h2>
-                    <div class="chart">
-                        <div class="tradingview-widget-container"><script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>{"autosize":true,"symbol":"AMEX:IVV","interval":"D","timezone":"Etc/UTC","theme":"light","style":"1","locale":"en","allow_symbol_change":false,"height":400}</script></div>
-                        </iframe>
-                </section>
-                <section id="comparative">
-                    <h2>IVV - Comparative Analysis</h2>
-                    <p class=""> Let's compare IVV with prominent competitors, focusing on key aspects like
-                        performance,
-                        fees, and strategy: <strong>(as of May 2024)</strong> </p>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-                    <div class="table-container">
-                        <table class="mb-2">
-                            <thead>
-                                <tr>
-                                    <th>&nbsp;</th>
-                                    <th class="w-25">IVV</th>
-                                    <th class="w-25"><a href="https://richiest.com/etfs/dividend/voo.html"
-                                            target="_blank" rel="noopener noreferrer">VOO</a></th>
-                                    <th class="w-25">SPY</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><strong>Investment Focus</strong></td>
-                                    <td>Tracks the performance of the S&P 500 Index</td>
-                                    <td>Tracks the performance of the S&P 500 Index</td>
-                                    <td>Tracks the performance of the S&P 500 Index</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Current Yield</strong></td>
-                                    <td><a href="https://www.bing.com/search?q=IVV+current+yield" target="_blank"
-                                            rel="noopener noreferrer">1.36%</a></td>
-                                    <td><a href="https://www.bing.com/search?q=VOO+current+yield" target="_blank"
-                                            rel="noopener noreferrer">1.37%</a></td>
-                                    <td><a href="https://www.bing.com/search?q=SPY+current+yield" target="_blank"
-                                            rel="noopener noreferrer">1.45%</a></td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Expense Ratio</strong></td>
-                                    <td>0.03%</td>
-                                    <td>0.03%</td>
-                                    <td>0.09%</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Investment Strategy</strong></td>
-                                    <td>Passively tracks the S&P 500 Index</td>
-                                    <td>Passively tracks the S&P 500 Index</td>
-                                    <td>Passively tracks the S&P 500 Index</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Strengths</strong></td>
-                                    <td>Low expense ratio, broad exposure to large-cap U.S. stocks</td>
-                                    <td>Low expense ratio, broad exposure to large-cap U.S. stocks</td>
-                                    <td>Broad exposure to large-cap U.S. stocks, highly liquid</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Weaknesses</strong></td>
-                                    <td>None specifically related to the ETF structure</td>
-                                    <td>None specifically related to the ETF structure</td>
-                                    <td>May have slightly higher expense ratio compared to VOO and IVV</td>
-                                </tr>
-                            </tbody>
-                        </table>
-
-
-                    </div>
-                </section>
-                <section id="history">
-                    <h2>Dividend History (Last 5 distributions)</h2>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-                    <div class="table-container">
-                        <table class="mb-2 w-75">
-                            <thead>
-                                <tr>
-                                    <th class="w-25">Ex-Dividend Date</th>
-                                    <th class="w-25">Cash Amount</th>
-                                    <th class="w-25">Record Date</th>
-                                    <th class="w-25">Pay Date</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Mar 21, 2024</td>
-                                    <td>$1.67</td>
-                                    <td>Mar 22, 2024</td>
-                                    <td>Mar 27, 2024</td>
-                                </tr>
-                                <tr>
-                                    <td>Dec 20, 2023</td>
-                                    <td>$1.93</td>
-                                    <td>Dec 21, 2023</td>
-                                    <td>Dec 27, 2023</td>
-                                </tr>
-                                <tr>
-                                    <td>Sep 26, 2023</td>
-                                    <td>$1.99</td>
-                                    <td>Sep 27, 2023</td>
-                                    <td>Oct 02, 2023</td>
-                                </tr>
-                                <tr>
-                                    <td>Jun 07, 2023</td>
-                                    <td>$1.34</td>
-                                    <td>Jun 08, 2023</td>
-                                    <td>Jun 13, 2023</td>
-                                </tr>
-                                <tr>
-                                    <td>Mar 23, 2023</td>
-                                    <td>$1.65</td>
-                                    <td>Mar 24, 2023</td>
-                                    <td>Mar 29, 2023</td>
-                                </tr>
-                            </tbody>
-                        </table>
-
-
-                    </div>
-                </section>
             </div>
         </div>
         <div class="row dark-div">
@@ -657,67 +478,19 @@
         </div>
         <div class="row">
             <div class="col container-1000">
-                <section id="news">
-                    <h2 class="">News</h2>
-                    <div class="chart">
-                        <div class="tradingview-widget-container">
-                        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-timeline.js" async>
-                        {"feedMode":"symbol","symbol":"AMEX:IVV","colorTheme":"light","isTransparent":false,"displayMode":"regular","width":"100%","height":"400","locale":"en"}
-                        </script>
-                    </div>
-                </section>
-                <section id="technical">
-                    <h2>Technical Analysis</h2>
-                    <div class="chart">
-                        <script type="text/javascript"
-                            src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js"
-                            async> { "interval": "1M", "width": "100%", "isTransparent": false, "height": "400", "symbol": "AMEX:IVV", "showIntervalTabs": true, "displayMode": "single", "locale": "en", "colorTheme": "light" } </script>
-                    </div>
-                </section>
-                <section>
-                    <h2>Additional Information and Risks</h2>
-                    <p>The <strong>iShares Core S&amp;P 500 ETF (IVV)</strong> provides investors with exposure to a
-                        diversified <strong>portfolio</strong> of <strong>stocks</strong> that closely mirrors the
-                        <strong>S&amp;P 500 Index</strong>, one of the most widely recognized
-                        <strong>benchmarks</strong> for U.S. large-cap equities. IVV, an <strong>ETF</strong> offered by
-                        <strong>iShares ETFs</strong>, aims to replicate the <strong>investment results</strong> of the
-                        S&amp;P 500 Index, allowing investors to participate in the overall performance of the
-                        <strong>stock market</strong>.
-                    </p>
-
-                    <p>As an <strong>ETF</strong>, IVV provides investors with advantages such as
-                        <strong>liquidity</strong>, <strong>diversification</strong>, and <strong>transparency</strong>.
-                        Investors can easily buy or sell shares on the stock exchange throughout the trading day. The
-                        <strong>portfolio holdings</strong> of IVV are meticulously selected based on the constituents
-                        of the S&amp;P 500 Index, ensuring a transparent and rules-based approach to investing.
-                    </p>
-
-                    <p>Moreover, IVV integrates <strong>environmental</strong>, <strong>social</strong>, and
-                        <strong>governance</strong> (<strong>ESG</strong>) considerations into its <strong>investment
-                            strategy</strong>, aligning with the growing demand for <strong>responsible
-                            investing</strong> practices. The fund's <strong>performance</strong> is evaluated using
-                        metrics from <strong>MSCI ESG research</strong>, ensuring adherence to ESG principles while
-                        seeking to track the investment results of the S&amp;P 500 Index.
-                    </p>
-
-                    <p>It's important for investors to understand that <strong>past performance</strong> is not
-                        indicative of <strong>future results</strong>, and fluctuations in IVV's <strong>stock
-                            price</strong> may occur based on <strong>market conditions</strong>. Consideration of
-                        factors such as <strong>fees</strong>, <strong>expenses</strong>, and <strong>investment
-                            objectives</strong> is crucial before investing in IVV or any other <strong>ETF</strong>.
-                        Always refer to <strong>iShares fund documents</strong> and conduct thorough research to make
-                        informed investment decisions.</p>
-
-
-
-
+                <section id="disclaimer" class="small-text-section section-grey">
+                    <h2>Important Disclaimer</h2>
+                    <p>This article is for informational purposes only and does not constitute financial advice.
+                        Investing
+                        involves risks, and you should consult with a qualified financial professional before making any
+                        investment decisions. Past performance is not indicative of future results.</p>
                 </section>
 
             </div>
         </div>
         <div class="row dark-div">
             <div class="col container-1280">
-                <div class="shared-footer"> <!-- This is where the shared nav will be loaded --> </div>
+                <div class="shared-footer"> </div>
             </div>
         </div>
     </div>
@@ -725,36 +498,53 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
+        function generateTOC() {
+            const tocList = $('#toc-list .etf-nav');
+            tocList.empty();
+            let ul = $('<ul></ul>').addClass('toc-menu');
+
+            const mainContentArea = $('.container-1000');
+
+            mainContentArea.find('section').each(function () {
+                const sectionId = $(this).attr('id');
+                const h2 = $(this).find('h2:first');
+
+                if (sectionId && h2.length > 0 && sectionId !== 'disclaimer') {
+                    let title = h2.text();
+                    const li = $('<li></li>');
+                    const a = $('<a></a>').attr('href', '#' + sectionId).text(title);
+                    li.append(a);
+                    ul.append(li);
+                }
+            });
+            tocList.append(ul);
+        }
+
         $(function () {
-            $(".shared-nav").load("/shared/nav.html");
-            $(".etf-nav").load("/shared/etfnav2.html");
+            $(".shared-nav").load("/shared/nav.html", function () {
+                generateTOC();
+            });
             $(".shared-subscribe").load("/shared/subscribe.html");
             $(".shared-banner").load("/shared/banner.html");
             $(".shared-articles").load("/shared/technologyStocks.html");
             $(".shared-footer").load("/shared/footer.html");
-        });
-        $(document).ready(function () {
+
+            generateTOC();
+
             $("#toggle-toc").click(function () {
-                var tocList = $("#toc-list");
                 var fixedToc = $(".fixed-toc");
-                if (tocList.is(":visible")) {
-                    tocList.hide();
-                    fixedToc.css({ "width": "0px", "display": "none" });
+                fixedToc.toggle();
+                if (fixedToc.is(":visible")) {
+                    fixedToc.addClass("show");
                 } else {
-                    fixedToc.css({ "width": "200px", "display": "block" });
-                    tocList.show();
+                    fixedToc.removeClass("show");
                 }
             });
-        });
 
-        $(document).ready(function () {
-            $('.carousel').carousel();
-
-            // Scroll to top functionality
             var mybutton = $('#return-to-top');
 
             $(window).scroll(function () {
-                if ($(this).scrollTop() > 20) {
+                if ($(this).scrollTop() > 100) {
                     mybutton.fadeIn();
                 } else {
                     mybutton.fadeOut();

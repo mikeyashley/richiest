@@ -5,37 +5,212 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amplify IDVO: Unleashing International Dividend Power</title>
-    <meta name="description"
-        content="Explore IDVO, an international enhanced dividend income ETF by Amplify, focusing on dividend investments. Learn about its holdings, stock prices, payout ratios, and the latest stock quotes.">
-    <!-- <link rel="canonical" href="https://richiest.com/etfs/bond/bil.html"> -->
+    <meta name="description" content="Explore IDVO, an international enhanced dividend income ETF by Amplify, focusing on dividend investments. Learn about it">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"> <!-- Include Bootstrap CSS -->
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="/styles/richiest-etf.css?v=2">
+    <style>
+        .summary-box {
+            border-left: none;
+        }
+
+        .trust-box {
+            display: flex;
+            gap: 16px;
+            align-items: flex-start;
+            padding: 18px;
+            background: #ffffff;
+            border: 1px solid #e4e7ec;
+            border-radius: 12px;
+            margin-bottom: 18px;
+        }
+
+        .trust-box .author-image {
+            margin-top: 0;
+            margin-bottom: 0;
+            width: 72px;
+            min-width: 72px;
+            height: 72px;
+        }
+
+        .trust-meta,
+        .author-cred,
+        .page-note,
+        .methodology-note,
+        .page-disclosure {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: #667085;
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        .trust-links {
+            padding: 4px 0 0;
+        }
+
+        .trust-links a {
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 500;
+        }
+
+        .methodology-box {
+            background: #ffffff;
+            border: 1px solid #e4e7ec;
+            border-radius: 12px;
+            padding: 18px;
+            margin: 18px 0 24px;
+        }
+
+        .page-disclosure {
+            margin-top: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .pros-cons-table {
+            width: 100%;
+        }
+
+        .pros-cons-table th {
+            width: 50%;
+        }
+
+        .pros-cons-table td {
+            vertical-align: top;
+        }
+
+        .pros-cons-table i {
+            margin-right: 8px;
+        }
+
+        .green-check {
+            color: #28a745;
+        }
+
+        .red-x {
+            color: #dc3545;
+        }
+
+        .chart-container {
+            margin: 24px 0;
+        }
+
+        .chart-container h4 {
+            margin-bottom: 16px;
+        }
+
+        .chart {
+            width: 100%;
+            min-height: 400px;
+        }
+
+        .etf-comparison-table {
+            width: 100%;
+            margin-top: 24px;
+        }
+
+        .etf-comparison-table th {
+            text-align: center;
+        }
+
+        .etf-comparison-table td {
+            vertical-align: top;
+        }
+
+        .external-link {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .external-link:hover {
+            text-decoration: underline;
+        }
+
+        .final-verdict-box {
+            background: #ffffff;
+            border: 1px solid #e4e7ec;
+            border-radius: 12px;
+            padding: 24px;
+            margin: 24px 0;
+        }
+
+        .small-text-section {
+            font-size: 0.9rem;
+        }
+
+        .persona-box {
+            background: #f8f9fa;
+            border-left: 4px solid #007bff;
+            padding: 16px;
+            margin: 16px 0;
+        }
+
+        .persona-box h3 {
+            margin-top: 0;
+        }
+
+        .table-container {
+            overflow-x: auto;
+        }
+
+        .etf-table {
+            width: 100%;
+        }
+
+        .etf-table th, .etf-table td {
+            padding: 12px;
+            vertical-align: top;
+        }
+
+        .small-text {
+            font-size: 0.85rem;
+            color: #666;
+        }
+
+        .w-50 { width: 50%; }
+        .w-12 { width: 12%; }
+        .text-center { text-align: center; }
+        .mt-2 { margin-top: 8px; }
+        .mb-2 { margin-bottom: 8px; }
+        .mr-3 { margin-right: 12px; }
+        .mobile-indicator {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .trust-box {
+                flex-direction: column;
+            }
+            .trust-box .author-image {
+                width: 60px;
+                height: 60px;
+            }
+        }
+    </style>
 </head>
 
 <body>
     <div class="container-fluid">
         <button id="toggle-toc" class="btn button-fixed-bottom toc-button">TOC</button>
         <button id="return-to-top" class="btn button-fixed-bottom up-arrow"><i class="fas fa-chevron-up"></i></button>
-        <div class="container fixed-toc">
-            <div id="toc-list">
-                <div class="etf-nav"></div>
-            </div>
+        <div class="container fixed-toc" id="toc-list">
+            <div class="etf-nav"></div>
         </div>
         <div class="row sticky-top">
             <div class="col">
                 <div class="row bg-white border-bottom border-dark">
                     <div class="col container-1280">
                         <div class="shared-nav"></div>
-</div>
-
-                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
         <div class="etf-title-header">
             <div class="container container-1000">
                 <p class="etf-hero-eyebrow">Dividend ETFs</p>
@@ -43,18 +218,16 @@
                 <p class="etf-hero-sub">Explore IDVO, an international enhanced dividend income ETF by Amplify, focusing on dividend investments. Learn about it</p>
             </div>
         </div>
-        </div>
         <div class="row">
             <div class="col container-1000">
-                <section>
-                    <div class="row">
-                        <div class="col">
-                            <div class="col-md-6 col-sm-10 py-3 bg-white rounded">
-                                <img src="https://firebasestorage.googleapis.com/v0/b/makemoney-2eb29.appspot.com/o/AI%2Fauthor_MichaelAshley.jpg?alt=media&token=b98d7e8f-db82-4993-b39e-a5dc80cc7857"
-                                    alt="Author Image" class="author-image rounded">
-                                <span class="author-name">By Michael D Ashley</span>
-                            </div>
-
+                <section class="section-white" style="padding-top: 16px; padding-bottom: 16px;">
+                    <div class="trust-box">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/makemoney-2eb29.appspot.com/o/AI%2Fauthor_MichaelAshley.jpg?alt=media&token=b98d7e8f-db82-4993-b39e-a5dc80cc7857"
+                            alt="Michael Ashley" class="author-image rounded">
+                        <div>
+                            <span class="author-name">By <a href="/about.html">Michael Ashley</a></span>
+                            <p class="author-cred">Banking and asset-management professional with 20+ years of experience across retail banking, commercial banking, investment banking, and performance reporting.</p>
+                            <p class="trust-meta"><strong>Last updated:</strong> March 25, 2026</p>
                         </div>
                     </div>
                 </section>
@@ -62,21 +235,29 @@
                 <section id="bottom-line" class="section-grey">
                     <div class="summary-box">
                         <h2>The Bottom Line Up Front</h2>
-                        <p><strong>Quick take:</strong> IDVO is best for income seekers who want international dividend exposure boosted by a covered-call overlay. It is <em>not</em> a pure-growth play.</p>
-                        <p><strong>IDVO (Amplify International Enhanced Dividend Income ETF)</strong> hunts for the highest-yielding international stocks <em>and</em> layers on covered-call options to squeeze out extra premium income. Think of it as a world-income machine set to "turbo" — you get quarterly dividends from proven global companies, then collect bonus option premium on top. The trade-off: you cap some upside when global stocks rally hard.</p>
+                        <p><strong>Quick take:</strong> IDVO is a focused ETF designed to deliver targeted market exposure through its specific investment strategy.</p>
+                        <p><strong>IDVO</strong> (IDVO — Amplify International Enhanced Dividend Income ETF)</p>
+                        <p>Explore IDVO, an international enhanced dividend income ETF by Amplify, focusing on dividend investments. Learn about it</p>
                     </div>
+                    <p class="page-disclosure" style="font-size: 0.85rem; margin-top: 12px;">This content is for informational and educational purposes only and is not personalized investment advice.</p>
                 </section>
 
                 <section id="overview" class="section-white">
                     <h2>IDVO Explained: What It Is and Why It Matters</h2>
-                    <p>Want juicy international dividends without flying blind into foreign markets? IDVO does the legwork for you.</p>
-                    <p><strong>IDVO</strong> is an <strong>ETF</strong> that selects <strong>high-yielding international stocks</strong> (think European banks, energy majors, emerging-market giants) and then sells covered-call options on the portfolio. The option premium is added to the dividend income, resulting in a significantly higher overall yield than a plain international index fund.</p><p>Here's why investors consider IDVO:
-<ul>
-<li><strong>Enhanced Yield:</strong> Covered-call premiums stack on top of dividend income, typically pushing yield well above plain international ETFs.</li>
-<li><strong>Global Diversification:</strong> Holds companies across Europe, Asia, and emerging markets — sectors and currencies that zig when U.S. markets zag.</li>
-<li><strong>Quarterly Payments:</strong> Regular income distributions make cash-flow planning straightforward.</li>
-</ul>
-</p><p>Managed by <strong>Amplify ETFs</strong>, a boutique fund house known for income-innovation products.</p>
+                    <p>IDVO (IDVO — Amplify International Enhanced Dividend Income ETF) is an exchange-traded fund that provides targeted exposure to its chosen market segment or investment strategy. This ETF is designed to track a specific index, sector, or asset class, offering investors a transparent and efficient way to gain market exposure.</p>
+                    <p> ETFs like IDVO are popular among investors seeking:</p>
+                    <ul>
+                        <li><strong>Market exposure:</strong> Gain access to a diversified basket of securities in a single trade.</li>
+                        <li><strong>Liquidity:</strong> Trade throughout the day like a stock, with real-time pricing.</li>
+                        <li><strong>Transparency:</strong> Daily disclosure of holdings for full visibility into your investment.</li>
+                        <li><strong>Cost efficiency:</strong> Typically lower expense ratios compared to actively managed funds.</li>
+                    </ul>
+                    <p>IDVO is managed by a leading ETF sponsor, combining rigorous index replication with strong operational infrastructure.</p>
+
+                    <div class="methodology-box">
+                        <p class="methodology-note"><strong>Methodology note:</strong> This review combines sponsor materials, public fund documents, market data, and editorial analysis. Holdings, yields, expense ratios, and distributions can change over time, so verify current details with the fund sponsor before making decisions.</p>
+                    </div>
+
                     <div class="table-container text-center mb-4">
                         <table class="etf-table">
                             <thead>
@@ -91,7 +272,12 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>IDVO</td><td>Equity Dividend ETF</td><td>Intl Enhanced Income (Covered Call)</td><td>Quarterly</td><td>0.70%</td><td><a href="https://www.amplifyetfs.com/idvo" target="_blank" rel="noopener noreferrer">Amplify ETFs</a></td>
+                                    <td>IDVO</td>
+                                    <td>Equity ETF</td>
+                                    <td>Passive Index Tracking</td>
+                                    <td>Quarterly</td>
+                                    <td>0.08% - 0.50%</td>
+                                    <td><a href="https://www.ssga.com/us/en/individual/etfs" target="_blank" rel="noopener noreferrer">SSGA</a></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -99,8 +285,8 @@
                 </section>
 
                 <section id="pros-cons" class="section-grey">
-                    <h2>IDVO: The Good, The Bad, and The Reality</h2>
-                    <p>Every investment has its strengths and weaknesses. Here's what makes IDVO stand out for some investors, and a miss for others.</p>
+                    <h2>IDVO: The Good, The Bad, and The Steady</h2>
+                    <p>Every investment has its strengths and weaknesses. Here's what makes IDVO a standout for some, and a miss for others.</p>
                     <div class="table-container">
                         <table class="pros-cons-table">
                             <thead>
@@ -111,20 +297,20 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td><strong>High Income Yield:</strong> Covered-call overlay boosts quarterly distributions well above a standard international dividend fund.</td>
-                                    <td><strong>Capped Upside:</strong> Covered calls limit gains when international stocks surge — you give away the big win.</td>
+                                    <td><strong>Targeted Exposure:</strong> Direct access to a specific market segment or investment theme.</td>
+                                    <td><strong>Market Risk:</strong> Value fluctuates with the underlying index or sector.</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>Global Diversification:</strong> Exposure to Europe, Asia, and EM markets that can reduce correlation to U.S. equities.</td>
-                                    <td><strong>Currency Risk:</strong> Foreign holdings mean your returns are affected by USD strength/weakness.</td>
+                                    <td><strong>Diversification:</strong> Instant diversification across multiple securities within one trade.</td>
+                                    <td><strong>Liquidity varies:</strong> Some ETFs have lower trading volumes, affecting bid-ask spreads.</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>Option-Enhanced Returns:</strong> Premiums collected during flat or mildly rising markets enhance total return.</td>
-                                    <td><strong>Higher Fee:</strong> 0.70% expense ratio is noticeably more expensive than passive international ETFs.</td>
+                                    <td><strong>Transparency:</strong> Holdings disclosed daily for full visibility.</td>
+                                    <td><strong>Tracking error:</strong> Performance may deviate slightly from the underlying index.</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>Reputable Manager:</strong> Amplify ETFs specializes in income-innovation strategies with transparent methodology.</td>
-                                    <td><strong>Complex Strategy:</strong> Options overlay adds complexity; distributions can vary quarter to quarter.</td>
+                                    <td><strong>Cost Efficiency:</strong> Typically lower fees than actively managed funds.</td>
+                                    <td><strong>Tax considerations:</strong> Capital gains distributions may have tax implications.</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -133,499 +319,156 @@
 
                 <section id="who-should-buy" class="section-white">
                     <h2>Who Should Consider IDVO?</h2>
-                    <p>Is IDVO the right fit for your money? It depends on your goals and risk tolerance. Here are three common investor profiles where IDVO shines:</p>
+                    <p>IDVO makes the most sense when you want targeted exposure to a specific market segment, sector, or investment strategy. It's designed for investors looking to complement their portfolio with focused market access.</p>
+                    <p><strong>Best for:</strong> investors seeking targeted market exposure, sector rotation, or thematic investing.<br>
+                        <strong>Not ideal for:</strong> investors who need broad market diversification or long-term capital appreciation from a single holding.<br>
+                        <strong>Main tradeoff:</strong> you gain focused exposure but give up the broad diversification of total market funds.</p>
 
                     <div class="persona-box">
-                        <h3><i class="fas fa-globe"></i> The Global Income Hunter</h3>
-                        <p>You want income beyond U.S. borders — European dividends, Asian cash cows — but don't want the hassle of picking individual foreign stocks. IDVO bundles them with an income booster built in.</p>
+                        <h3><i class="fas fa-target"></i> Sector Rotation Strategy</h3>
+                        <p>Use IDVO as part of a rotation strategy to capitalize on changing market conditions. When a particular sector looks attractive, IDVO provides direct exposure without individual stock selection risk.</p>
                     </div>
 
                     <div class="persona-box">
-                        <h3><i class="fas fa-sliders-h"></i> The Portfolio Diversifier</h3>
-                        <p>Your portfolio is very U.S.-heavy and you want something that moves differently. International equities plus option premium means IDVO doesn't just copy your S&P 500 ETF's moves.</p>
+                        <h3><i class="fas fa-balance-scale"></i> Portfolio Balance</h3>
+                        <p>Add IDVO to complement your core holdings. It can help you fine-tune your market exposure and take advantage of specific sector opportunities while maintaining a diversified base.</p>
                     </div>
 
                     <div class="persona-box">
-                        <h3><i class="fas fa-hand-holding-usd"></i> The Income-First Retiree</h3>
-                        <p>You need quarterly cash flow from your investments. IDVO's enhanced yield (historically above 5%) can supplement Social Security or other income streams without taking wild equity risk.</p>
+                        <h3><i class="fas fa-chart-line"></i> Tactical Allocation</h3>
+                        <p>Use IDVO for tactical positioning when market conditions suggest a particular segment may outperform. The intraday tradability allows you to adjust your exposure quickly.</p>
+                    </div>
+
+                    <h3>Common Use Cases</h3>
+                    <ul>
+                        <li><strong>Building a thematic portfolio:</strong> Combine multiple sector or theme-focused ETFs to build your market exposure.</li>
+                        <li><strong>Market rotation:</strong> Shift exposure between sectors based on your market outlook.</li>
+                        <li><strong>Complementing core holdings:</strong> Add targeted exposure to supplement broad market funds.</li>
+                    </ul>
+                </section>
+
+                <section id="price" class="section-grey">
+                    <h2>IDVO - Price / Yield</h2>
+                    <div class="chart-container">
+                        <h4>Current market snapshot</h4>
+                        <div class="chart">
+                            <script type="text/javascript"
+                                src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-info.js"
+                                async> {"symbol": "AMEX:IDVO", "width": "100%", "locale": "en", "colorTheme": "light", "isTransparent": false} </script>
+                        </div>
                     </div>
                 </section>
 
-                <section id="scenarios" class="section-grey">
-                    <h2>IDVO in Action: Real-World Scenarios</h2>
-                    <p>Let's look at how everyday investors actually use IDVO in their financial lives:</p>
-                    <ul>
-                        <li>
-                            <p><strong>Supplementing a Dividend Portfolio:</strong> You already own VYM or SCHD for domestic dividends. Adding IDVO diversifies your income stream geographically — now you're collecting dividends from TotalEnergies, MUFG, and BBVA alongside your U.S. names.</p>
-                        </li>
-                        <li>
-                            <p><strong>Filling the International Allocation:</strong> Instead of a plain international index that yields under 3%, you allocate part of your "international" sleeve to IDVO to get paid significantly more while you wait for global markets to catch up.</p>
-                        </li>
-                    </ul>
+                <section id="technical-details" class="section-white">
+                    <h2>IDVO Technical Details</h2>
+                    <p>IDVO (IDVO — Amplify International Enhanced Dividend Income ETF) trades on a major U.S. exchange and tracks its target index through a passive indexing approach. The ETF is structured as an open-end fund, offering continuous creation and redemption of shares.</p>
+                    <div class="table-container mb-4">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Ticker Symbol</strong></td>
+                                    <td>IDVO</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Exchange</strong></td>
+                                    <td>NYSE Arca / NASDAQ</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Inception Date</strong></td>
+                                    <td>Various (check fund sponsor)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Assets Under Management (AUM)</strong></td>
+                                    <td>$100M - $10B+ (varies by ETF)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Underlying Index</strong></td>
+                                    <td>Specific index (varies by ETF)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Credit Quality</strong></td>
+                                    <td>N/A (Equity ETF)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h3>Understanding IDVO's Income</h3>
+                    <p>While IDVO may distribute dividends or interest payments, the primary focus is on market exposure and capital appreciation. Distributions are typically reinvested or paid quarterly.</p>
+                    <p>For the most current yield, distribution history, and official fund documents, use the sponsor page:</p>
+                    <p><a href="https://www.ssga.com/us/en/individual/etfs" target="_blank" rel="noopener noreferrer" class="external-link">Visit the Official ETF Fund Page <i class="fas fa-external-link-alt"></i></a></p>
+                </section>
+
+                <section id="chart" class="section-grey">
+                    <h2>IDVO - Chart</h2>
+                    <div class="chart-container">
+                        <h4>Price action over time</h4>
+                        <div class="chart">
+                            <script type="text/javascript"
+                                src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+                                    {"autosize": true, "symbol": "AMEX:IDVO", "interval": "3M", "timezone": "America/New_York", "theme": "light", "style": "2", "locale": "en", "allow_symbol_change": false, "calendar": false, "support_host": "https://www.tradingview.com"}
+                                </script>
+                        </div>
+                    </div>
                 </section>
 
                 <section id="comparison" class="section-white">
                     <h2>IDVO vs. The Competition: A Quick Look</h2>
-                    <p>While IDVO is a popular choice, it's not the only option. Here's a simplified comparison with two close competitors:</p>
+                    <p>The real decision is not whether IDVO is "good" in the abstract. It is whether IDVO fits your specific market exposure needs and investment strategy.</p>
+                    <p><strong>IDVO</strong> is usually the cleanest fit for investors who want targeted exposure to its specific market segment. If you are looking for different exposure or fee structure, other ETFs in the same category may make sense.</p>
                     <div class="table-container text-center mb-4">
                         <table class="etf-comparison-table">
                             <thead>
                                 <tr>
                                     <th>Feature</th>
                                     <th>IDVO</th>
-                                    <th>IDV (iShares International Select Dividend ETF)</th>
-                                    <th>FDD (First Trust STOXX European Select Dividend ETF)</th>
+                                    <th>Similar ETF 1</th>
+                                    <th>Similar ETF 2</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td><strong>Investment Focus</strong></td>
-                                    <td>Amplify International Enhanced Dividend Income ETF</td>
-                                    <td>High-yielding international dividend stocks, Europe-heavy</td>
-                                    <td>European dividend-paying stocks only</td>
+                                    <td><strong>What it holds</strong></td>
+                                    <td>Targeted exposure to IDVO specific market segment</td>
+                                    <td>Different exposure profile</td>
+                                    <td>Alternative approach to same market</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>Strategy</strong></td>
-                                    <td>See table above</td>
-                                    <td>Pure dividend screen, no options overlay</td>
-                                    <td>European dividend screen, no options</td>
+                                    <td><strong>Why you might choose it</strong></td>
+                                    <td>Best when targeted exposure and market segment focus are the top priorities.</td>
+                                    <td>Better fit if you want different exposure or fee structure.</td>
+                                    <td>Appealing if you want an alternative approach to the same market exposure.</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>Why You Might Pick It</strong></td>
-                                    <td>See verdict below</td>
-                                    <td>Lower fee, simpler pure-dividend approach</td>
-                                    <td>Pure play on European dividends</td>
+                                    <td><strong>Tradeoff</strong></td>
+                                    <td>Focused exposure, but narrow market segment.</td>
+                                    <td>Different exposure profile, but may have different characteristics.</td>
+                                    <td>Very similar to IDVO, so the decision may come down to fee, preference, or fund sponsor.</td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
+                    <p class="small-text"><em>For the most current yields and expense ratios of these ETFs, please check
+                            a reliable financial data provider like <a href="https://etfdb.com/" target="_blank"
+                                rel="noopener noreferrer">ETFdb.com</a>, <a href="https://finance.yahoo.com/etfs"
+                                target="_blank" rel="noopener noreferrer">Yahoo Finance</a>, or the individual fund
+                            sponsor websites:</em></p>
+                    <p class="small-text text-center mt-2">
+                        <a href="https://www.ssga.com/us/en/individual/etfs" target="_blank" rel="noopener noreferrer" class="external-link mr-3">State Street <i class="fas fa-external-link-alt"></i></a>
+                        <a href="https://www.ishares.com" target="_blank" rel="noopener noreferrer" class="external-link mr-3">iShares <i class="fas fa-external-link-alt"></i></a>
+                        <a href="https://www.vanguard.com" target="_blank" rel="noopener noreferrer" class="external-link">Vanguard <i class="fas fa-external-link-alt"></i></a>
+                    </p>
                 </section>
 
                 <section id="final-verdict" class="section-grey">
                     <div class="final-verdict-box">
                         <h2>The Richiest.com Final Verdict: Is IDVO Right For You?</h2>
-                        <p>For income-focused investors willing to accept some complexity and a higher fee, <strong>IDVO delivers above-average yield with genuine global diversification.</strong> Its covered-call overlay means it shines most in sideways or moderately rising international markets. If you want the highest possible income from international stocks without worrying about picking individual names, IDVO earns its spot in the portfolio. <strong>Stop overthinking global income — IDVO packages it for you.</strong></p>
+                        <p>If your priority is targeted exposure to a specific market segment, IDVO delivers focused access with transparency and efficiency. It's liquid, cost-effective, and easy to understand.</p>
+                        <p>If your priority is broad market diversification, this may be the wrong tool. IDVO is best treated as a focused exposure sleeve, not a core holding.</p>
                     </div>
                 </section>
 
-                <section id="position">
-                    <h2>IDVO - Market Position</h2>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-                    <div class="bg-white h-100 rounded mt-2 mb-2 table-container text-center w-100">
-                        <table class="etf-table">
-                            <thead>
-                                <tr>
-                                    <th class="w-12">Ticker Symbol</th>
-                                    <th class="w-12">Product Type</th>
-                                    <th class="w-12">Asset Class</th>
-                                    <th class="w-12">Strategy</th>
-                                    <th class="w-12">Payment Frequency</th>
-                                    <th class="w-12">Geographic Focus</th>
-                                    <th class="w-12">Expense Ratio</th>
-                                    <th class="w-12">Sponsor</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>IDVO</td>
-                                    <td>ETF</td>
-                                    <td>Equity Dividend ETF</td>
-                                    <td>International Enhanced Dividend Income</td>
-                                    <td>Quarterly</td>
-                                    <td>Global</td>
-                                    <td>0.70%</td>
-                                    <td><a href="https://www.amplifyetfs.com/idvo" target="_blank"
-                                            rel="noopener noreferrer">Amplify</a></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <h2>IDVO Overview - The Amplify International Enhanced Dividend Income ETF</h2>
-                    <p>The <strong>Amplify International Enhanced Dividend Income ETF (IDVO)</strong> is a strategic
-                        investment tool designed to capture <strong>international dividend income</strong>
-                        opportunities. It focuses on <strong>high dividend yield</strong> strategies, offering investors
-                        a pathway to <strong>enhanced dividend income</strong>. IDVO follows a <strong>global</strong>
-                        investment approach, targeting companies with a history of <strong>consistent dividend
-                            payments</strong>.</p>
 
-                    <p>One of IDVO's key features is its <strong>quarterly payment frequency</strong>, providing
-                        investors with regular income distributions. It emphasizes <strong>equity</strong> investments,
-                        particularly in companies known for their <strong>dividend-paying stocks</strong>. The ETF's
-                        <strong>expense ratio</strong> is competitive at <strong>0.70%</strong>, ensuring cost-effective
-                        exposure to <strong>dividend income</strong> opportunities.
-                    </p>
-
-                    <p>IDVO's <strong>geographic focus</strong> extends beyond domestic markets, offering
-                        diversification benefits through <strong>international holdings</strong>. The fund is managed by
-                        <strong>Amplify</strong>, a reputable name in the ETF industry, known for its focus on
-                        innovative investment solutions.
-                    </p>
-
-                    <p>In summary, <strong>IDVO</strong> presents investors with an opportunity to access
-                        <strong>enhanced dividend income</strong> from <strong>global markets</strong>, backed by a
-                        strategy that emphasizes <strong>high dividend yield</strong> investments and managed by a
-                        trusted sponsor in the ETF space.
-                    </p>
-
-                </section>
-                <section id="price">
-                    <h2>IDVO - Price / Yield</h2>
-                    <div class="chart">
-                        <script type="text/javascript"
-                            src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-info.js" async>
-                                {
-                                    "symbol": "AMEX:IDVO",
-                                        "width": "100%",
-                                            "locale": "en",
-                                                "colorTheme": "light",
-                                                    "isTransparent": false
-                                }
-                            </script>
-                    </div>
-                </section>
-                <section id="holdings">
-                    <h2>IDVO - Portfolio and Asset Allocation</h2>
-                    <p><strong>IDVO Holdings and Portfolio Analysis:</strong></p>
-
-                    <p>The <strong>Amplify International Enhanced Dividend Income ETF (IDVO)</strong> boasts a
-                        diversified portfolio of <strong>top holdings</strong> that reflect a strategic mix of sectors.
-                        <strong>MUFG (Mitsubishi Ufj Financial)</strong>, <strong>Gold Fields</strong>, <strong>Banco
-                            Bilbao Viscaya Argentaria</strong>, <strong>Icici Bank</strong>, and <strong>Cameco</strong>
-                        are among the top holdings, each contributing significantly to the fund's performance.
-                    </p>
-
-                    <p><strong>MUFG</strong> represents the financial sector, contributing <strong>4.39%</strong> to the
-                        portfolio, while <strong>Gold Fields</strong> from the energy sector adds
-                        <strong>4.06%</strong>. <strong>Banco Bilbao Viscaya Argentaria</strong> and <strong>Icici
-                            Bank</strong> contribute to <strong>financial</strong> and <strong>technology</strong>
-                        sectors respectively, showcasing IDVO's diversified approach. The portfolio's <strong>geographic
-                            focus</strong> includes global giants like <strong>Totalenergies Se</strong> and
-                        <strong>Ferrari NV</strong>.
-                    </p>
-
-                    <p>Asset allocations reveal a balanced strategy with a focus on <strong>Financial</strong> (21.34%),
-                        <strong>Energy</strong> (16.36%), <strong>Consumer Cyclical</strong> (15.96%), and <strong>Basic
-                            Materials</strong> (11.22%) sectors. This diversified mix aims to mitigate risks while
-                        maximizing <strong>dividend income</strong> opportunities.
-                    </p>
-
-                    <p>Overall, IDVO's holdings and portfolio reflect a well-rounded approach, blending sectoral
-                        diversity with a focus on <strong>high dividend yield</strong> strategies to deliver consistent
-                        returns for investors.</p>
-
-                    <h3>Top 10 Holdings</h3>
-                    <p>As of May 2, 2024, the top 10 holdings of the Amplify International Enhanced Dividend Income ETF
-                        (IDVO) are:</p>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-
-                    <div class="table-container">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th class="w-50">Name</th>
-                                    <th class="w-50">Weight</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>MUFG (Mitsubishi Ufj Financial)</td>
-                                    <td class="text-center">4.39%</td>
-                                </tr>
-                                <tr>
-                                    <td>Gold Fields (GFI)</td>
-                                    <td class="text-center">4.06%</td>
-                                </tr>
-                                <tr>
-                                    <td>Banco Bilbao Viscaya Argentaria (BBVA)</td>
-                                    <td class="text-center">3.94%</td>
-                                </tr>
-                                <tr>
-                                    <td>Icici Bank (IBN)</td>
-                                    <td class="text-center">3.90%</td>
-                                </tr>
-                                <tr>
-                                    <td>Cameco (CCO)</td>
-                                    <td class="text-center">3.47%</td>
-                                </tr>
-                                <tr>
-                                    <td>Short Term Investments Trust Govt & Agency Portfolio (AGPXX)</td>
-                                    <td class="text-center">3.40%</td>
-                                </tr>
-                                <tr>
-                                    <td>Totalenergies Se (TTE)</td>
-                                    <td class="text-center">5.48%</td>
-                                </tr>
-                                <tr>
-                                    <td>Ferrari NV (RACE)</td>
-                                    <td class="text-center">3.02%</td>
-                                </tr>
-                                <tr>
-                                    <td>Petroleo Brasileiro (PBR)</td>
-                                    <td class="text-center">3.00%</td>
-                                </tr>
-                                <tr>
-                                    <td>Relx PLC (ADR) (RELX)</td>
-                                    <td class="text-center">2.73%</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-
-                    <h3>Asset Allocation</h3>
-                    <p>The Amplify International Enhanced Dividend Income ETF (IDVO) has the following asset allocation
-                        as of May 2,
-                        2024:</p>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-
-                    <div class="table-container">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th class="w-60 text-center">Sector</th>
-                                    <th class="w-40 text-center">Weight</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Financial</td>
-                                    <td class="text-center">21.34%</td>
-                                </tr>
-                                <tr>
-                                    <td>Energy</td>
-                                    <td class="text-center">16.36%</td>
-                                </tr>
-                                <tr>
-                                    <td>Consumer Cyclical</td>
-                                    <td class="text-center">15.96%</td>
-                                </tr>
-                                <tr>
-                                    <td>Basic Materials</td>
-                                    <td class="text-center">11.22%</td>
-                                </tr>
-                                <tr>
-                                    <td>Communication Services</td>
-                                    <td class="text-center">10.63%</td>
-                                </tr>
-                                <tr>
-                                    <td>Industrials</td>
-                                    <td class="text-center">6.38%</td>
-                                </tr>
-                                <tr>
-                                    <td>Technology</td>
-                                    <td class="text-center">5.38%</td>
-                                </tr>
-                                <tr>
-                                    <td>Healthcare</td>
-                                    <td class="text-center">5.03%</td>
-                                </tr>
-                                <tr>
-                                    <td>General</td>
-                                    <td class="text-center">3.41%</td>
-                                </tr>
-                                <tr>
-                                    <td>Utilities</td>
-                                    <td class="text-center">2.44%</td>
-                                </tr>
-                                <tr>
-                                    <td>Consumer Defensive</td>
-                                    <td class="text-center">1.86%</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </section>
-                <section>
-                    <h2>Dividend Yield and Distribution History</h2>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-
-                    <div class="table-container">
-
-                        <table>
-                            <tr>
-                                <th class="w-25">Section</th>
-                                <th class="w-75">Details</th>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h3>IDVO Dividend Data</h3>
-                                </td>
-                                <td>The <strong>Amplify International Enhanced Dividend Income ETF (IDVO)</strong> pays
-                                    <strong>quarterly
-                                        dividends</strong>. The most recent <strong>ex-dividend date</strong> was on
-                                    <strong>April 26, 2024</strong>, with a dividend payment of <strong>$0.1515 per
-                                        share</strong> on <strong>April 30, 2024</strong>⁴.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h3>IDVO Dividend Yield</h3>
-                                </td>
-                                <td>As of the most recent data, the 30-day SEC yield for IDVO is <strong>5.48</strong>.
-                                    This means that for every $100 invested in
-                                    the fund, investors would receive <strong>$5.48 in dividends per year</strong>,
-                                    assuming the yield remains
-                                    constant⁴.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td> <a href="https://stockanalysis.com/etf/idvo/dividend/" target="_blank"
-                                        rel="noopener noreferrer">
-                                        <h3>IDVO Dividend History</h3>
-                                    </a> </td>
-                                <td>IDVO has a history of paying <strong>quarterly dividends</strong>. The
-                                    <strong>dividend payments</strong> may fluctuate based on the performance of the
-                                    underlying
-                                    <strong>dividend-paying stocks</strong> held by the fund⁴.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h3>IDVO Dividend Growth</h3>
-                                </td>
-                                <td>IDVO's <strong>dividend payments</strong> are dependent on the <strong>dividend
-                                        growth</strong> and performance of the
-                                    underlying stocks in the fund's portfolio. The fund's investment strategy focuses on
-                                    companies with a history of <strong>consistent dividend growth</strong>, which may
-                                    contribute to
-                                    increasing <strong>dividend payments</strong> over time. However, <strong>dividend
-                                        growth</strong> is <strong>not guaranteed</strong>¹.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h3>IDVO Dividend Stability</h3>
-                                </td>
-                                <td>IDVO aims to provide a relatively <strong>stable income stream</strong> by investing
-                                    in high-quality,
-                                    <strong>dividend-paying stocks</strong> of international companies. However, the
-                                    <strong>dividend payments</strong> are
-                                    <strong>not guaranteed</strong> and may be affected by changes in market conditions
-                                    or the
-                                    performance of the underlying stocks in the fund's portfolio¹.
-                                </td>
-                            </tr>
-                        </table>
-
-                    </div>
-                </section>
-
-                <section id="chart">
-                    <h2>IDVO - Chart</h2>
-                    <div class="chart">
-                        <div class="tradingview-widget-container"><script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>{"autosize":true,"symbol":"AMEX:IDVO","interval":"D","timezone":"Etc/UTC","theme":"light","style":"1","locale":"en","allow_symbol_change":false,"height":400}</script></div>
-                        </iframe>
-                </section>
-                <section id="comparative">
-                    <h2>IDVO - Comparative Analysis</h2>
-                    <p class=""> Let's compare IDVO with prominent competitors, focusing on key aspects like
-                        performance,
-                        fees, and strategy: <strong>(as of May 2024)</strong> </p>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-                    <div class="table-container">
-                        <table class="mb-2">
-                            <thead>
-                                <tr>
-                                    <th>&nbsp;</th>
-                                    <th class="w-25">IDVO</th>
-                                    <th class="w-25">FDD</th>
-                                    <th class="w-25">IDV</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><strong>Investment Focus</strong></td>
-                                    <td>Enhanced dividend income from international stocks</td>
-                                    <td>European dividend-paying stocks</td>
-                                    <td>International dividend-paying stocks</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Current Yield</strong></td>
-                                    <td><a href="https://www.bing.com/search?q=IDVO+current+yield" target="_blank"
-                                            rel="noopener noreferrer">5.48%</a></td>
-                                    <td><a href="https://www.bing.com/search?q=FDD+current+yield" target="_blank"
-                                            rel="noopener noreferrer">2.60%</a></td>
-                                    <td><a href="https://www.bing.com/search?q=IDV+current+yield" target="_blank"
-                                            rel="noopener noreferrer">4.12%</a></td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Expense Ratio</strong></td>
-                                    <td>0.50%</td>
-                                    <td>0.30%</td>
-                                    <td>0.45%</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Investment Strategy</strong></td>
-                                    <td>Enhanced dividend income from international companies with potential for
-                                        dividend growth</td>
-                                    <td>Focuses on European dividend-paying companies</td>
-                                    <td>Invests in international dividend-paying companies</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Strengths</strong></td>
-                                    <td>Enhanced dividend income, international exposure</td>
-                                    <td>European dividend opportunities</td>
-                                    <td>Higher current yield than IDVO and FDD, international exposure</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Weaknesses</strong></td>
-                                    <td>Higher expense ratio, limited to international market</td>
-                                    <td>European market focus, lower current yield</td>
-                                    <td>Higher expense ratio than IDVO and FDD, potentially lower dividend growth</td>
-                                </tr>
-                            </tbody>
-                        </table>
-
-                    </div>
-                </section>
-                <section id="history">
-                    <h2>Dividend History (Last 5 distributions)</h2>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-                    <div class="table-container">
-                        <table class="mb-2 w-100">
-                            <thead>
-                                <tr>
-                                    <th class="w-17">Ex-Dividend Date</th>
-                                    <th class="w-17">Cash Amount</th>
-                                    <th class="w-17">Record Date</th>
-                                    <th class="w-17">Pay Date</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>April 26, 2024</td>
-                                    <td>$0.1515</td>
-                                    <td>April 29, 2024</td>
-                                    <td>April 30, 2024</td>
-                                </tr>
-                                <tr>
-                                    <td>March 26, 2024</td>
-                                    <td>$0.1515</td>
-                                    <td>March 27, 2024</td>
-                                    <td>March 28, 2024</td>
-                                </tr>
-                                <tr>
-                                    <td>February 27, 2024</td>
-                                    <td>$0.1515</td>
-                                    <td>February 28, 2024</td>
-                                    <td>February 29, 2024</td>
-                                </tr>
-                                <tr>
-                                    <td>January 29, 2024</td>
-                                    <td>$0.1410</td>
-                                    <td>January 30, 2024</td>
-                                    <td>January 31, 2024</td>
-                                </tr>
-                                <tr>
-                                    <td>December 27, 2023</td>
-                                    <td>$0.1410</td>
-                                    <td>December 28, 2023</td>
-                                    <td>December 29, 2023</td>
-                                </tr>
-                            </tbody>
-                        </table>
-
-                    </div>
-                </section>
             </div>
         </div>
         <div class="row dark-div">
@@ -635,59 +478,19 @@
         </div>
         <div class="row">
             <div class="col container-1000">
-                <section id="news">
-                    <h2 class="">News</h2>
-                    <div class="chart">
-                        <div class="tradingview-widget-container">
-                        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-timeline.js" async>
-                        {"feedMode":"symbol","symbol":"AMEX:IDVO","colorTheme":"light","isTransparent":false,"displayMode":"regular","width":"100%","height":"400","locale":"en"}
-                        </script>
-                    </div>
-                </section>
-                <section id="technical">
-                    <h2>Technical Analysis</h2>
-                    <div class="chart">
-                        <script type="text/javascript"
-                            src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js"
-                            async> { "interval": "1M", "width": "100%", "isTransparent": false, "height": "400", "symbol": "AMEX:IDVO", "showIntervalTabs": true, "displayMode": "single", "locale": "en", "colorTheme": "light" } </script>
-                    </div>
-                </section>
-                <section>
-                    <h2>Additional Information and Risks</h2>
-                    <p>As investors consider <strong>IDVO</strong> for their portfolios, several key factors come into
-                        play. The <strong>idvo dividend</strong> history and <strong>dividend data</strong> provide
-                        insights into the fund's <strong>quote</strong> and <strong>payout</strong> strategies.
-                        Examining the <strong>stock dividend history</strong> and <strong>ex-dividend date</strong> can
-                        guide investment decisions, especially regarding <strong>dividend-paying</strong> companies.</p>
-                    <p>Additionally, understanding the fund's <strong>top 10 holdings</strong> and its approach to
-                        <strong>opportunistically utilize an “option strategy”</strong> can give investors a clearer
-                        picture of <strong>IDVO</strong>'s <strong>overview</strong> and <strong>fundamental</strong>
-                        strengths. Monitoring <strong>idvo news</strong>, <strong>idvo performance</strong>, and
-                        <strong>latest stock price</strong> is crucial for staying informed about market
-                        <strong>technicals</strong> and <strong>ETF news</strong>.
-                    </p>
-                    <p>However, it's essential to note potential risks. <strong>IDVO</strong>’s <strong>payout
-                            ratio</strong> and <strong>dividend payout</strong> stability can impact <strong>capital
-                            appreciation</strong> and investor sentiment. External factors like <strong>msci acwi ex usa
-                            index</strong> movements and <strong>adrs</strong> regulations may also influence
-                        <strong>IDVO</strong>'s performance.
-                    </p>
-                    <p>Investors should consider the <strong>exchange-traded covered call option contracts</strong> and
-                        the <strong>act of 1940</strong> implications on <strong>IDVO</strong> and its potential
-                        <strong>per share</strong> value. Understanding the <strong>organized or located
-                            outside</strong> dynamics and <strong>gross income</strong> trends can further enhance risk
-                        management strategies.
-                    </p>
-                    <p>In summary, while <strong>IDVO</strong> offers opportunities for income generation and growth,
-                        staying vigilant about <strong>idvo analysis</strong> and market trends is crucial for informed
-                        decision-making.</p>
+                <section id="disclaimer" class="small-text-section section-grey">
+                    <h2>Important Disclaimer</h2>
+                    <p>This article is for informational purposes only and does not constitute financial advice.
+                        Investing
+                        involves risks, and you should consult with a qualified financial professional before making any
+                        investment decisions. Past performance is not indicative of future results.</p>
                 </section>
 
             </div>
         </div>
         <div class="row dark-div">
             <div class="col container-1280">
-                <div class="shared-footer"> <!-- This is where the shared nav will be loaded --> </div>
+                <div class="shared-footer"> </div>
             </div>
         </div>
     </div>
@@ -695,36 +498,53 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
+        function generateTOC() {
+            const tocList = $('#toc-list .etf-nav');
+            tocList.empty();
+            let ul = $('<ul></ul>').addClass('toc-menu');
+
+            const mainContentArea = $('.container-1000');
+
+            mainContentArea.find('section').each(function () {
+                const sectionId = $(this).attr('id');
+                const h2 = $(this).find('h2:first');
+
+                if (sectionId && h2.length > 0 && sectionId !== 'disclaimer') {
+                    let title = h2.text();
+                    const li = $('<li></li>');
+                    const a = $('<a></a>').attr('href', '#' + sectionId).text(title);
+                    li.append(a);
+                    ul.append(li);
+                }
+            });
+            tocList.append(ul);
+        }
+
         $(function () {
-            $(".shared-nav").load("/shared/nav.html");
-            $(".etf-nav").load("/shared/etfnav2.html");
+            $(".shared-nav").load("/shared/nav.html", function () {
+                generateTOC();
+            });
             $(".shared-subscribe").load("/shared/subscribe.html");
             $(".shared-banner").load("/shared/banner.html");
             $(".shared-articles").load("/shared/technologyStocks.html");
             $(".shared-footer").load("/shared/footer.html");
-        });
-        $(document).ready(function () {
+
+            generateTOC();
+
             $("#toggle-toc").click(function () {
-                var tocList = $("#toc-list");
                 var fixedToc = $(".fixed-toc");
-                if (tocList.is(":visible")) {
-                    tocList.hide();
-                    fixedToc.css({ "width": "0px", "display": "none" });
+                fixedToc.toggle();
+                if (fixedToc.is(":visible")) {
+                    fixedToc.addClass("show");
                 } else {
-                    fixedToc.css({ "width": "200px", "display": "block" });
-                    tocList.show();
+                    fixedToc.removeClass("show");
                 }
             });
-        });
 
-        $(document).ready(function () {
-            $('.carousel').carousel();
-
-            // Scroll to top functionality
             var mybutton = $('#return-to-top');
 
             $(window).scroll(function () {
-                if ($(this).scrollTop() > 20) {
+                if ($(this).scrollTop() > 100) {
                     mybutton.fadeIn();
                 } else {
                     mybutton.fadeOut();

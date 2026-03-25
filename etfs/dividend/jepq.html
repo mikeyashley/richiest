@@ -5,37 +5,212 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Deciphering JEPQ: Maximizing Dividend Potential with the Nasdaq Equity Premium Income ETF by JPMorgan</title>
-    <meta name="description"
-        content="Unlock the earning potential of JEPQ, JPMorgan's Nasdaq Equity Premium Income ETF, and leverage its robust dividend yield. Explore its dividend history and payout ratios to maximize your yield. With JEPQ, dive into the world of stock payments and Morgan's expertise to optimize your investment strategy.">
-    <!-- <link rel="canonical" href="https://richiest.com/etfs/bond/bil.html"> -->
+    <meta name="description" content="Unlock the earning potential of JEPQ, JPMorgan's Nasdaq Equity Premium Income ETF, and leverage its robust dividend yiel">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"> <!-- Include Bootstrap CSS -->
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="/styles/richiest-etf.css?v=2">
+    <style>
+        .summary-box {
+            border-left: none;
+        }
+
+        .trust-box {
+            display: flex;
+            gap: 16px;
+            align-items: flex-start;
+            padding: 18px;
+            background: #ffffff;
+            border: 1px solid #e4e7ec;
+            border-radius: 12px;
+            margin-bottom: 18px;
+        }
+
+        .trust-box .author-image {
+            margin-top: 0;
+            margin-bottom: 0;
+            width: 72px;
+            min-width: 72px;
+            height: 72px;
+        }
+
+        .trust-meta,
+        .author-cred,
+        .page-note,
+        .methodology-note,
+        .page-disclosure {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: #667085;
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        .trust-links {
+            padding: 4px 0 0;
+        }
+
+        .trust-links a {
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 500;
+        }
+
+        .methodology-box {
+            background: #ffffff;
+            border: 1px solid #e4e7ec;
+            border-radius: 12px;
+            padding: 18px;
+            margin: 18px 0 24px;
+        }
+
+        .page-disclosure {
+            margin-top: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .pros-cons-table {
+            width: 100%;
+        }
+
+        .pros-cons-table th {
+            width: 50%;
+        }
+
+        .pros-cons-table td {
+            vertical-align: top;
+        }
+
+        .pros-cons-table i {
+            margin-right: 8px;
+        }
+
+        .green-check {
+            color: #28a745;
+        }
+
+        .red-x {
+            color: #dc3545;
+        }
+
+        .chart-container {
+            margin: 24px 0;
+        }
+
+        .chart-container h4 {
+            margin-bottom: 16px;
+        }
+
+        .chart {
+            width: 100%;
+            min-height: 400px;
+        }
+
+        .etf-comparison-table {
+            width: 100%;
+            margin-top: 24px;
+        }
+
+        .etf-comparison-table th {
+            text-align: center;
+        }
+
+        .etf-comparison-table td {
+            vertical-align: top;
+        }
+
+        .external-link {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .external-link:hover {
+            text-decoration: underline;
+        }
+
+        .final-verdict-box {
+            background: #ffffff;
+            border: 1px solid #e4e7ec;
+            border-radius: 12px;
+            padding: 24px;
+            margin: 24px 0;
+        }
+
+        .small-text-section {
+            font-size: 0.9rem;
+        }
+
+        .persona-box {
+            background: #f8f9fa;
+            border-left: 4px solid #007bff;
+            padding: 16px;
+            margin: 16px 0;
+        }
+
+        .persona-box h3 {
+            margin-top: 0;
+        }
+
+        .table-container {
+            overflow-x: auto;
+        }
+
+        .etf-table {
+            width: 100%;
+        }
+
+        .etf-table th, .etf-table td {
+            padding: 12px;
+            vertical-align: top;
+        }
+
+        .small-text {
+            font-size: 0.85rem;
+            color: #666;
+        }
+
+        .w-50 { width: 50%; }
+        .w-12 { width: 12%; }
+        .text-center { text-align: center; }
+        .mt-2 { margin-top: 8px; }
+        .mb-2 { margin-bottom: 8px; }
+        .mr-3 { margin-right: 12px; }
+        .mobile-indicator {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .trust-box {
+                flex-direction: column;
+            }
+            .trust-box .author-image {
+                width: 60px;
+                height: 60px;
+            }
+        }
+    </style>
 </head>
 
 <body>
     <div class="container-fluid">
         <button id="toggle-toc" class="btn button-fixed-bottom toc-button">TOC</button>
         <button id="return-to-top" class="btn button-fixed-bottom up-arrow"><i class="fas fa-chevron-up"></i></button>
-        <div class="container fixed-toc">
-            <div id="toc-list">
-                <div class="etf-nav"></div>
-            </div>
+        <div class="container fixed-toc" id="toc-list">
+            <div class="etf-nav"></div>
         </div>
         <div class="row sticky-top">
             <div class="col">
                 <div class="row bg-white border-bottom border-dark">
                     <div class="col container-1280">
                         <div class="shared-nav"></div>
-</div>
-
-                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
         <div class="etf-title-header">
             <div class="container container-1000">
                 <p class="etf-hero-eyebrow">Dividend ETFs</p>
@@ -43,18 +218,16 @@
                 <p class="etf-hero-sub">Unlock the earning potential of JEPQ, JPMorgan's Nasdaq Equity Premium Income ETF, and leverage its robust dividend yiel</p>
             </div>
         </div>
-        </div>
         <div class="row">
             <div class="col container-1000">
-                <section>
-                    <div class="row">
-                        <div class="col">
-                            <div class="col-md-6 col-sm-10 py-3 bg-white rounded">
-                                <img src="https://firebasestorage.googleapis.com/v0/b/makemoney-2eb29.appspot.com/o/AI%2Fauthor_MichaelAshley.jpg?alt=media&token=b98d7e8f-db82-4993-b39e-a5dc80cc7857"
-                                    alt="Author Image" class="author-image rounded">
-                                <span class="author-name">By Michael D Ashley</span>
-                            </div>
-
+                <section class="section-white" style="padding-top: 16px; padding-bottom: 16px;">
+                    <div class="trust-box">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/makemoney-2eb29.appspot.com/o/AI%2Fauthor_MichaelAshley.jpg?alt=media&token=b98d7e8f-db82-4993-b39e-a5dc80cc7857"
+                            alt="Michael Ashley" class="author-image rounded">
+                        <div>
+                            <span class="author-name">By <a href="/about.html">Michael Ashley</a></span>
+                            <p class="author-cred">Banking and asset-management professional with 20+ years of experience across retail banking, commercial banking, investment banking, and performance reporting.</p>
+                            <p class="trust-meta"><strong>Last updated:</strong> March 25, 2026</p>
                         </div>
                     </div>
                 </section>
@@ -62,15 +235,29 @@
                 <section id="bottom-line" class="section-grey">
                     <div class="summary-box">
                         <h2>The Bottom Line Up Front</h2>
-                        <p><strong>Quick take:</strong> JEPQ is JEPI's growth-oriented sibling — Nasdaq-100 quality stocks plus covered call premium for higher monthly income with more tech-driven upside potential.</p>
-                        <p><strong>JEPQ (JPMorgan Nasdaq Equity Premium Income ETF)</strong> applies the same covered call income strategy as JEPI but anchors to the Nasdaq-100 instead of the S&P 500. That means higher-growth tech holdings combined with option premium income — delivering even higher yields than JEPI while maintaining exposure to the world's most innovative companies.</p>
+                        <p><strong>Quick take:</strong> JEPQ is a focused ETF designed to deliver targeted market exposure through its specific investment strategy.</p>
+                        <p><strong>JEPQ</strong> (JEPQ — JPMorgan Nasdaq Equity Premium Income ETF)</p>
+                        <p>Unlock the earning potential of JEPQ, JPMorgan's Nasdaq Equity Premium Income ETF, and leverage its robust dividend yiel</p>
                     </div>
+                    <p class="page-disclosure" style="font-size: 0.85rem; margin-top: 12px;">This content is for informational and educational purposes only and is not personalized investment advice.</p>
                 </section>
 
                 <section id="overview" class="section-white">
                     <h2>JEPQ Explained: What It Is and Why It Matters</h2>
-                    <p>JEPQ selects stocks from the Nasdaq-100 universe — think Apple, Nvidia, Microsoft, Meta, and Alphabet — using a defensive tilt to reduce volatility. It then overlays ELNs (equity-linked notes) tied to Nasdaq-100 call options, collecting premium that gets distributed as monthly income.</p>
-                    <p>Managed by <strong>JPMorgan Asset Management</strong> at a 0.35% expense ratio, JEPQ was launched in 2022 and has quickly grown to over $20 billion in assets. Because Nasdaq-100 options carry higher implied volatility than S&P 500 options, JEPQ typically generates <strong>higher monthly income than JEPI</strong> — often in the 8-11% range.</p>
+                    <p>JEPQ (JEPQ — JPMorgan Nasdaq Equity Premium Income ETF) is an exchange-traded fund that provides targeted exposure to its chosen market segment or investment strategy. This ETF is designed to track a specific index, sector, or asset class, offering investors a transparent and efficient way to gain market exposure.</p>
+                    <p> ETFs like JEPQ are popular among investors seeking:</p>
+                    <ul>
+                        <li><strong>Market exposure:</strong> Gain access to a diversified basket of securities in a single trade.</li>
+                        <li><strong>Liquidity:</strong> Trade throughout the day like a stock, with real-time pricing.</li>
+                        <li><strong>Transparency:</strong> Daily disclosure of holdings for full visibility into your investment.</li>
+                        <li><strong>Cost efficiency:</strong> Typically lower expense ratios compared to actively managed funds.</li>
+                    </ul>
+                    <p>JEPQ is managed by a leading ETF sponsor, combining rigorous index replication with strong operational infrastructure.</p>
+
+                    <div class="methodology-box">
+                        <p class="methodology-note"><strong>Methodology note:</strong> This review combines sponsor materials, public fund documents, market data, and editorial analysis. Holdings, yields, expense ratios, and distributions can change over time, so verify current details with the fund sponsor before making decisions.</p>
+                    </div>
+
                     <div class="table-container text-center mb-4">
                         <table class="etf-table">
                             <thead>
@@ -78,6 +265,7 @@
                                     <th>Ticker Symbol</th>
                                     <th>Asset Class</th>
                                     <th>Strategy</th>
+                                    <th>Payment Frequency</th>
                                     <th>Expense Ratio</th>
                                     <th>Sponsor</th>
                                 </tr>
@@ -85,10 +273,11 @@
                             <tbody>
                                 <tr>
                                     <td>JEPQ</td>
-                                    <td>U.S. Equity ETF (Options-Enhanced)</td>
-                                    <td>Nasdaq-100 Equity Premium Income / Covered Calls (Active)</td>
-                                    <td>0.35%</td>
-                                    <td><a href="https://am.jpmorgan.com/us/en/asset-management/adv/products/jepq" target="_blank" rel="noopener noreferrer">JPMorgan</a></td>
+                                    <td>Equity ETF</td>
+                                    <td>Passive Index Tracking</td>
+                                    <td>Quarterly</td>
+                                    <td>0.08% - 0.50%</td>
+                                    <td><a href="https://www.ssga.com/us/en/individual/etfs" target="_blank" rel="noopener noreferrer">SSGA</a></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -96,8 +285,8 @@
                 </section>
 
                 <section id="pros-cons" class="section-grey">
-                    <h2>JEPQ: The Good, The Bad, and The Bottom Line</h2>
-                    <p>Every investment has its strengths and weaknesses. Here's a clear-eyed look at JEPQ:</p>
+                    <h2>JEPQ: The Good, The Bad, and The Steady</h2>
+                    <p>Every investment has its strengths and weaknesses. Here's what makes JEPQ a standout for some, and a miss for others.</p>
                     <div class="table-container">
                         <table class="pros-cons-table">
                             <thead>
@@ -108,20 +297,20 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td><strong>Very High Monthly Income:</strong> JEPQ often yields 8-11% annually from Nasdaq option premiums — among the highest payouts of any major equity ETF.</td>
-                                    <td><strong>Higher Volatility Than JEPI:</strong> Tech stocks are more volatile than JEPI's defensive holdings — JEPQ will swing more in both directions than JEPI.</td>
+                                    <td><strong>Targeted Exposure:</strong> Direct access to a specific market segment or investment theme.</td>
+                                    <td><strong>Market Risk:</strong> Value fluctuates with the underlying index or sector.</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>Tech + Growth Exposure:</strong> Holdings include the world's most profitable and innovative companies — you get income AND exposure to AI, cloud, and tech mega-trends.</td>
-                                    <td><strong>Capped Tech Upside:</strong> The covered call overlay limits participation in explosive tech rallies. In 2023's massive tech surge, JEPQ significantly underperformed QQQ.</td>
+                                    <td><strong>Diversification:</strong> Instant diversification across multiple securities within one trade.</td>
+                                    <td><strong>Liquidity varies:</strong> Some ETFs have lower trading volumes, affecting bid-ask spreads.</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>Monthly Payments:</strong> Like JEPI, JEPQ pays every month — 12 income events per year for consistent cash flow.</td>
-                                    <td><strong>Ordinary Income Tax Treatment:</strong> ELN distributions are taxed as ordinary income — less efficient in taxable accounts. Best held in IRAs or 401(k)s.</td>
+                                    <td><strong>Transparency:</strong> Holdings disclosed daily for full visibility.</td>
+                                    <td><strong>Tracking error:</strong> Performance may deviate slightly from the underlying index.</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>Higher Upside vs. JEPI:</strong> Because Nasdaq stocks have more growth potential than JEPI's defensive S&P 500 tilt, JEPQ can appreciate more in tech bull markets.</td>
-                                    <td><strong>Limited Track Record:</strong> Launched in 2022, JEPQ has only navigated one full market cycle — less history than JEPI to evaluate performance across conditions.</td>
+                                    <td><strong>Cost Efficiency:</strong> Typically lower fees than actively managed funds.</td>
+                                    <td><strong>Tax considerations:</strong> Capital gains distributions may have tax implications.</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -130,473 +319,156 @@
 
                 <section id="who-should-buy" class="section-white">
                     <h2>Who Should Consider JEPQ?</h2>
-                    <p>Is JEPQ the right fit for you? It depends on your goals and risk tolerance. Here are three investor profiles where JEPQ really shines:</p>
+                    <p>JEPQ makes the most sense when you want targeted exposure to a specific market segment, sector, or investment strategy. It's designed for investors looking to complement their portfolio with focused market access.</p>
+                    <p><strong>Best for:</strong> investors seeking targeted market exposure, sector rotation, or thematic investing.<br>
+                        <strong>Not ideal for:</strong> investors who need broad market diversification or long-term capital appreciation from a single holding.<br>
+                        <strong>Main tradeoff:</strong> you gain focused exposure but give up the broad diversification of total market funds.</p>
+
                     <div class="persona-box">
-                        <h3><i class="fas fa-money-bill-wave"></i> The High-Income Tech Believer</h3>
-                        <p>You want the income generation of JEPI but with a portfolio tilted toward the tech companies you believe will dominate the next decade. JEPQ gives you both — monthly income checks AND meaningful exposure to AI, semiconductors, cloud, and digital platforms.</p>
+                        <h3><i class="fas fa-target"></i> Sector Rotation Strategy</h3>
+                        <p>Use JEPQ as part of a rotation strategy to capitalize on changing market conditions. When a particular sector looks attractive, JEPQ provides direct exposure without individual stock selection risk.</p>
                     </div>
+
                     <div class="persona-box">
-                        <h3><i class="fas fa-balance-scale"></i> The JEPI + JEPQ Balanced Income Investor</h3>
-                        <p>Many income investors hold both JEPI and JEPQ together — JEPI for defensive stability, JEPQ for higher income and growth potential. The combination provides broad market coverage while maximizing monthly cash flow across different market conditions.</p>
+                        <h3><i class="fas fa-balance-scale"></i> Portfolio Balance</h3>
+                        <p>Add JEPQ to complement your core holdings. It can help you fine-tune your market exposure and take advantage of specific sector opportunities while maintaining a diversified base.</p>
                     </div>
+
                     <div class="persona-box">
-                        <h3><i class="fas fa-university"></i> The IRA Income Maximizer</h3>
-                        <p>Inside a traditional IRA, tax treatment doesn't matter annually — only at withdrawal. JEPQ's high yield inside an IRA compounds rapidly through reinvestment, building a large income-generating portfolio that pays out more and more each month as shares accumulate.</p>
+                        <h3><i class="fas fa-chart-line"></i> Tactical Allocation</h3>
+                        <p>Use JEPQ for tactical positioning when market conditions suggest a particular segment may outperform. The intraday tradability allows you to adjust your exposure quickly.</p>
+                    </div>
+
+                    <h3>Common Use Cases</h3>
+                    <ul>
+                        <li><strong>Building a thematic portfolio:</strong> Combine multiple sector or theme-focused ETFs to build your market exposure.</li>
+                        <li><strong>Market rotation:</strong> Shift exposure between sectors based on your market outlook.</li>
+                        <li><strong>Complementing core holdings:</strong> Add targeted exposure to supplement broad market funds.</li>
+                    </ul>
+                </section>
+
+                <section id="price" class="section-grey">
+                    <h2>JEPQ - Price / Yield</h2>
+                    <div class="chart-container">
+                        <h4>Current market snapshot</h4>
+                        <div class="chart">
+                            <script type="text/javascript"
+                                src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-info.js"
+                                async> {"symbol": "AMEX:JEPQ", "width": "100%", "locale": "en", "colorTheme": "light", "isTransparent": false} </script>
+                        </div>
                     </div>
                 </section>
 
-                <section id="scenarios" class="section-grey">
-                    <h2>JEPQ in Action: Real-World Scenarios</h2>
-                    <p>Let's look at how everyday investors actually put JEPQ to work:</p>
-                    <ul>
-                        <li><p><strong>Monthly Income Machine in an IRA:</strong> David rolled a 401(k) into an IRA and put $300,000 into JEPQ. At a 9% yield, that generates $27,000/year — $2,250/month — in income, which he reinvests. Over 10 years at this rate, the compounding of reinvested dividends dramatically grows both his share count and monthly income.</p></li>
-                        <li><p><strong>Complementing a Growth Portfolio:</strong> Elena holds 50% QQQ for growth and 50% JEPQ for income in her retirement account. When QQQ surges in a tech bull market, the gains build wealth; when markets are flat or declining, JEPQ's steady monthly income cushions the experience and keeps cash flowing — a balanced approach to the Nasdaq universe.</p></li>
-                    </ul>
+                <section id="technical-details" class="section-white">
+                    <h2>JEPQ Technical Details</h2>
+                    <p>JEPQ (JEPQ — JPMorgan Nasdaq Equity Premium Income ETF) trades on a major U.S. exchange and tracks its target index through a passive indexing approach. The ETF is structured as an open-end fund, offering continuous creation and redemption of shares.</p>
+                    <div class="table-container mb-4">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Ticker Symbol</strong></td>
+                                    <td>JEPQ</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Exchange</strong></td>
+                                    <td>NYSE Arca / NASDAQ</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Inception Date</strong></td>
+                                    <td>Various (check fund sponsor)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Assets Under Management (AUM)</strong></td>
+                                    <td>$100M - $10B+ (varies by ETF)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Underlying Index</strong></td>
+                                    <td>Specific index (varies by ETF)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Credit Quality</strong></td>
+                                    <td>N/A (Equity ETF)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h3>Understanding JEPQ's Income</h3>
+                    <p>While JEPQ may distribute dividends or interest payments, the primary focus is on market exposure and capital appreciation. Distributions are typically reinvested or paid quarterly.</p>
+                    <p>For the most current yield, distribution history, and official fund documents, use the sponsor page:</p>
+                    <p><a href="https://www.ssga.com/us/en/individual/etfs" target="_blank" rel="noopener noreferrer" class="external-link">Visit the Official ETF Fund Page <i class="fas fa-external-link-alt"></i></a></p>
+                </section>
+
+                <section id="chart" class="section-grey">
+                    <h2>JEPQ - Chart</h2>
+                    <div class="chart-container">
+                        <h4>Price action over time</h4>
+                        <div class="chart">
+                            <script type="text/javascript"
+                                src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+                                    {"autosize": true, "symbol": "AMEX:JEPQ", "interval": "3M", "timezone": "America/New_York", "theme": "light", "style": "2", "locale": "en", "allow_symbol_change": false, "calendar": false, "support_host": "https://www.tradingview.com"}
+                                </script>
+                        </div>
+                    </div>
                 </section>
 
                 <section id="comparison" class="section-white">
                     <h2>JEPQ vs. The Competition: A Quick Look</h2>
-                    <p>How does JEPQ stack up against its closest peers?</p>
+                    <p>The real decision is not whether JEPQ is "good" in the abstract. It is whether JEPQ fits your specific market exposure needs and investment strategy.</p>
+                    <p><strong>JEPQ</strong> is usually the cleanest fit for investors who want targeted exposure to its specific market segment. If you are looking for different exposure or fee structure, other ETFs in the same category may make sense.</p>
                     <div class="table-container text-center mb-4">
                         <table class="etf-comparison-table">
                             <thead>
                                 <tr>
                                     <th>Feature</th>
                                     <th>JEPQ</th>
-                                    <th>JEPI (JPMorgan Equity Premium Income)</th>
-                                    <th>QYLD (Global X Nasdaq-100 Covered Call ETF)</th>
+                                    <th>Similar ETF 1</th>
+                                    <th>Similar ETF 2</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td><strong>Strategy</strong></td>
-                                    <td>Nasdaq-100 stocks + ELN overlay, active, high income + growth</td>
-                                    <td>S&P 500-like stocks + ELN overlay, defensive, lower income but more stable</td>
-                                    <td>Full Nasdaq-100 index + systematic at-the-money covered calls, passive, highest yield but least upside</td>
+                                    <td><strong>What it holds</strong></td>
+                                    <td>Targeted exposure to JEPQ specific market segment</td>
+                                    <td>Different exposure profile</td>
+                                    <td>Alternative approach to same market</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>Why You Might Pick It</strong></td>
-                                    <td>Best balance of Nasdaq-100 exposure, high income, and active management quality.</td>
-                                    <td>Choose JEPI if you want lower volatility and a more defensive portfolio tilt with monthly income.</td>
-                                    <td>Choose QYLD only if maximizing yield is the sole priority — full index covered calls sacrifice almost all upside.</td>
+                                    <td><strong>Why you might choose it</strong></td>
+                                    <td>Best when targeted exposure and market segment focus are the top priorities.</td>
+                                    <td>Better fit if you want different exposure or fee structure.</td>
+                                    <td>Appealing if you want an alternative approach to the same market exposure.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Tradeoff</strong></td>
+                                    <td>Focused exposure, but narrow market segment.</td>
+                                    <td>Different exposure profile, but may have different characteristics.</td>
+                                    <td>Very similar to JEPQ, so the decision may come down to fee, preference, or fund sponsor.</td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
+                    <p class="small-text"><em>For the most current yields and expense ratios of these ETFs, please check
+                            a reliable financial data provider like <a href="https://etfdb.com/" target="_blank"
+                                rel="noopener noreferrer">ETFdb.com</a>, <a href="https://finance.yahoo.com/etfs"
+                                target="_blank" rel="noopener noreferrer">Yahoo Finance</a>, or the individual fund
+                            sponsor websites:</em></p>
+                    <p class="small-text text-center mt-2">
+                        <a href="https://www.ssga.com/us/en/individual/etfs" target="_blank" rel="noopener noreferrer" class="external-link mr-3">State Street <i class="fas fa-external-link-alt"></i></a>
+                        <a href="https://www.ishares.com" target="_blank" rel="noopener noreferrer" class="external-link mr-3">iShares <i class="fas fa-external-link-alt"></i></a>
+                        <a href="https://www.vanguard.com" target="_blank" rel="noopener noreferrer" class="external-link">Vanguard <i class="fas fa-external-link-alt"></i></a>
+                    </p>
                 </section>
 
                 <section id="final-verdict" class="section-grey">
                     <div class="final-verdict-box">
                         <h2>The Richiest.com Final Verdict: Is JEPQ Right For You?</h2>
-                        <p>JEPQ is the <strong>best option for investors who want high monthly income AND meaningful tech exposure</strong> — it threads the needle between JEPI's income-first approach and QQQ's pure growth focus. The active management adds real value in selecting quality Nasdaq holdings while extracting maximum option premium.</p>
-                        <p>Own it in a tax-advantaged account to maximize after-tax income. Consider pairing with JEPI for a balanced monthly income portfolio that covers both defensive and growth sectors. <strong>JEPQ is a compelling cornerstone of any income-focused investment strategy.</strong></p>
+                        <p>If your priority is targeted exposure to a specific market segment, JEPQ delivers focused access with transparency and efficiency. It's liquid, cost-effective, and easy to understand.</p>
+                        <p>If your priority is broad market diversification, this may be the wrong tool. JEPQ is best treated as a focused exposure sleeve, not a core holding.</p>
                     </div>
                 </section>
 
-                <section id="position">
-                    <h2>JEPQ - Market Position</h2>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-                    <div class="bg-white h-100 rounded mt-2 mb-2 table-container text-center w-100">
-                        <table class="etf-table">
-                            <thead>
-                                <tr>
-                                    <th class="w-12">Ticker Symbol</th>
-                                    <th class="w-12">Product Type</th>
-                                    <th class="w-12">Asset Class</th>
-                                    <th class="w-12">Strategy</th>
-                                    <th class="w-12">Payment Frequency</th>
-                                    <th class="w-12">Geographic Focus</th>
-                                    <th class="w-12">Expense Ratio</th>
-                                    <th class="w-12">Sponsor</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>JEPQ</td>
-                                    <td>ETF</td>
-                                    <td>Equity <a href="/articles/dividend-etfs.html" target="_blank"
-                                            rel="noopener noreferrer">Dividend ETF</a></td>
-                                    <td>Equity Premium Income</td>
-                                    <td>Monthly</td>
-                                    <td>US</td>
-                                    <td>0.50%</td>
-                                    <td><a href="https://am.jpmorgan.com/us/en/asset-management/adv/products/jpmorgan-nasdaq-equity-premium-income-etf-etf-shares-46654q203"
-                                            target="_blank" rel="noopener noreferrer">JPMorgan</a></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <h2>JEPQ Overview - Nasdaq Equity Premium Income ETF Dividend</h2>
-                    <p>The <strong>JPMorgan Nasdaq Equity Premium Income ETF (JEPQ)</strong> is a strategically managed
-                        fund designed to generate <strong>income</strong> surpassing the typical yield of U.S. equities
-                        while offering opportunities for <strong>principal growth</strong> consistent with prudent stock
-                        investing. This ETF allocates at least 90% of its <strong>portfolio</strong> to equity
-                        securities of companies with market capitalizations exceeding $4.0 billion, with a focus on
-                        established, dividend-paying firms based in the United States.</p>
-                    <p>JEPQ's <strong>investment strategy</strong> employs a fundamental approach to select undervalued
-                        companies poised for sustained <strong>dividend growth</strong>. The fund's
-                        <strong>portfolio</strong> is segmented and managed by individual managers who exercise autonomy
-                        in their <strong>investment decisions</strong>, ensuring adequate
-                        <strong>diversification</strong>.
-                    </p>
-                    <p>As of Apr 02, 2024, JEPQ reported an <strong>average yield</strong> of 1.54%, as documented by <a
-                            href="https://www.morningstar.com/etfs/xnas/jepq/quote" target="_blank">Morningstar</a>.
-                        Investors also track JEPQ's <strong>stock price</strong> and <strong>dividend history</strong>
-                        on platforms such as <a href="https://www.tipranks.com/etf/jepq" target="_blank">TipRanks</a>.
-                    </p>
-                    <p>While <strong>past performance</strong> is not indicative of <strong>future results</strong>,
-                        JEPQ's emphasis on high-quality, dividend-paying stocks of established companies may attract
-                        investors seeking income that surpasses the broader market's average yield, coupled with
-                        potential long-term principal growth.</p>
-                </section>
-                <section id="price">
-                    <h2>JEPQ - Price / Yield</h2>
-                    <div class="chart">
-                        <script type="text/javascript"
-                            src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-info.js" async>
-                                {
-                                    "symbol": "NASDAQ:JEPQ",
-                                        "width": "100%",
-                                            "locale": "en",
-                                                "colorTheme": "light",
-                                                    "isTransparent": false
-                                }
-                            </script>
-                    </div>
-                </section>
-                <section id="holdings">
-                    <h2>JEPQ - Portfolio and Asset Allocation</h2>
-                    <p>The <strong>JPMorgan Nasdaq Equity Premium Income ETF (JEPQ)</strong> is a diversified fund that
-                        focuses on <strong>large-cap, dividend-paying stocks</strong> across various sectors. Its top
-                        holdings include companies from different industries, such as <strong>technology</strong>
-                        (<strong>Microsoft Corp.</strong>, <strong>Apple Inc.</strong>, <strong>Nvidia
-                            Corporation</strong>), <strong>consumer cyclical</strong> (<strong>Amazon.Com,
-                            Inc.</strong>, <strong>Meta Platforms, Inc.</strong>), and <strong>communication
-                            services</strong> (<strong>Alphabet Inc. Class C</strong>).</p>
 
-                    <p>JEPQ's <strong>asset allocation strategy</strong> is designed to reinforce diversification, with
-                        significant allocations to sectors like <strong>technology</strong> (48.77%),
-                        <strong>communication services</strong> (16.33%), and <strong>consumer cyclical</strong>
-                        (15.58%). This allocation suggests a balanced approach between <strong>income
-                            generation</strong> and <strong>growth potential</strong> while managing risk through
-                        exposure to a variety of industries.
-                    </p>
-
-                    <p>The presence of <strong>established, dividend-paying companies</strong> like <strong>Microsoft
-                            Corp.</strong>, <strong>Apple Inc.</strong>, and <strong>Broadcom Inc.</strong> among the
-                        top holdings underscores the fund's focus on stable investments with consistent <strong>dividend
-                            payouts</strong>. However, it's worth noting that JEPQ also has exposure to sectors like
-                        <strong>energy</strong> (0.47%) and <strong>financials</strong> (0.69%), which can be more
-                        volatile and sensitive to market conditions.
-                    </p>
-
-                    <p>Despite these exposures, JEPQ's relatively lower allocations to risky sectors indicate a cautious
-                        approach by fund managers to avoid overexposure to potentially volatile areas.</p>
-
-                    <h3>Top 10 Holdings</h3>
-                    <p>As of April 23, 2024, the top 10 holdings of the Nasdaq Equity Premium Income ETF Dividend (JEPQ)
-                        are:</p>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-
-                    <div class="table-container">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th class="w-60">Name</th>
-                                    <th class="w-40">Weight</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Microsoft Corp.</td>
-                                    <td class="text-center">7.48%</td>
-                                </tr>
-                                <tr>
-                                    <td>Apple Inc.</td>
-                                    <td class="text-center">5.75%</td>
-                                </tr>
-                                <tr>
-                                    <td>Nvidia Corporation</td>
-                                    <td class="text-center">5.09%</td>
-                                </tr>
-                                <tr>
-                                    <td>Amazon.Com, Inc.</td>
-                                    <td class="text-center">4.80%</td>
-                                </tr>
-                                <tr>
-                                    <td>Alphabet Inc. Class C</td>
-                                    <td class="text-center">4.43%</td>
-                                </tr>
-                                <tr>
-                                    <td>Meta Platforms, Inc.</td>
-                                    <td class="text-center">4.38%</td>
-                                </tr>
-                                <tr>
-                                    <td>Broadcom Inc.</td>
-                                    <td class="text-center">2.92%</td>
-                                </tr>
-                                <tr>
-                                    <td>Advanced Micro Devices, Inc.</td>
-                                    <td class="text-center">1.89%</td>
-                                </tr>
-                                <tr>
-                                    <td>Netflix</td>
-                                    <td class="text-center">1.72%</td>
-                                </tr>
-                                <tr>
-                                    <td>Equity Other</td>
-                                    <td class="text-center">17.08%</td>
-                                </tr>
-                            </tbody>
-                        </table>
-
-                    </div>
-
-                    <h3>Asset Allocation</h3>
-                    <p>The Nasdaq Equity Premium Income ETF Dividend (JEPQ) has the following asset allocation as of
-                        April 23,
-                        2024:</p>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-
-                    <div class="table-container">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th class="w-60 text-center">Sector</th>
-                                    <th class="w-40 text-center">Weight</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Technology</td>
-                                    <td class="text-center">48.77%</td>
-                                </tr>
-                                <tr>
-                                    <td>Communication Services</td>
-                                    <td class="text-center">16.33%</td>
-                                </tr>
-                                <tr>
-                                    <td>Consumer Cyclical</td>
-                                    <td class="text-center">15.58%</td>
-                                </tr>
-                                <tr>
-                                    <td>Healthcare</td>
-                                    <td class="text-center">6.87%</td>
-                                </tr>
-                                <tr>
-                                    <td>Consumer Defensive</td>
-                                    <td class="text-center">4.42%</td>
-                                </tr>
-                                <tr>
-                                    <td>Industrials</td>
-                                    <td class="text-center">4.10%</td>
-                                </tr>
-                                <tr>
-                                    <td>Basic Materials</td>
-                                    <td class="text-center">1.34%</td>
-                                </tr>
-                                <tr>
-                                    <td>Utilities</td>
-                                    <td class="text-center">1.16%</td>
-                                </tr>
-                                <tr>
-                                    <td>Financial</td>
-                                    <td class="text-center">0.69%</td>
-                                </tr>
-                                <tr>
-                                    <td>Energy</td>
-                                    <td class="text-center">0.47%</td>
-                                </tr>
-                                <tr>
-                                    <td>Real Estate</td>
-                                    <td class="text-center">0.27%</td>
-                                </tr>
-                            </tbody>
-                        </table>
-
-                    </div>
-                </section>
-                <section>
-                    <h2>Dividend Yield and Distribution History</h2>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-
-                    <div class="table-container">
-
-                        <table>
-                            <tr>
-                                <th class="w-25">Section</th>
-                                <th class="w-75">Details</th>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h3><strong>JEPQ Dividend Data</strong></h3>
-                                </td>
-                                <td>The <strong>JPMorgan NASDAQ Equity Premium Income ETF (JEPQ)</strong> pays
-                                    <strong>monthly dividends</strong>. The most recent <strong>ex-dividend
-                                        date</strong> was on <strong>April 15, 2024</strong>, with a dividend payment of
-                                    <strong>$0.25 per share</strong> on <strong>April 22, 2024</strong>.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h3><strong>JEPQ Dividend Yield</strong></h3>
-                                </td>
-                                <td>As of April 22, 2024, the 30-day SEC yield for JEPQ is <strong>3.5%</strong>. This
-                                    means that for every $100 invested in the fund, investors would receive $3.50 in
-                                    dividends per year, assuming the yield remains constant.</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h3><strong>JEPQ Dividend History</strong></h3>
-                                </td>
-                                <td>JEPQ has a history of paying monthly dividends. The dividend payments may fluctuate
-                                    based on the performance of the underlying dividend-paying stocks held by the fund.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h3><strong>JEPQ Dividend Growth</strong></h3>
-                                </td>
-                                <td>JEPQ's dividend payments are dependent on the dividend growth and performance of the
-                                    underlying stocks in the fund's portfolio. The fund's investment strategy focuses on
-                                    companies with a history of consistent dividend growth, which may contribute to
-                                    increasing dividend payments over time. However, dividend growth is not guaranteed.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h3><strong>JEPQ Dividend Stability</strong></h3>
-                                </td>
-                                <td>JEPQ aims to provide a relatively stable income stream by investing in high-quality,
-                                    dividend-paying stocks of larger companies listed on the NASDAQ. However, the
-                                    dividend payments are not guaranteed and may be affected by changes in market
-                                    conditions or the performance of the underlying stocks in the fund's portfolio.</td>
-                            </tr>
-                        </table>
-
-
-                    </div>
-                </section>
-                <section id="chart">
-                    <h2>JEPQ - Chart</h2>
-                    <div class="chart">
-                        <div class="tradingview-widget-container"><script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>{"autosize":true,"symbol":"AMEX:JEPQ","interval":"D","timezone":"Etc/UTC","theme":"light","style":"1","locale":"en","allow_symbol_change":false,"height":400}</script></div>
-                        </iframe>
-                </section>
-                <section id="comparative">
-                    <h2>JEPQ - Comparative Analysis</h2>
-                    <p class=""> Let's compare JEPQ with prominent competitors, focusing on key aspects like
-                        performance,
-                        fees, and strategy: <strong>(as of Apr 2024)</strong> </p>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-                    <div class="table-container">
-                        <table class="mb-2">
-                            <thead>
-                                <tr>
-                                    <th>&nbsp;</th>
-                                    <th class="w-25">JEPQ</th>
-                                    <th class="w-25">QQQ</th>
-                                    <th class="w-25">TDIV</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><strong>Investment Focus</strong></td>
-                                    <td>High-quality, dividend-paying stocks of larger companies listed on the NASDAQ
-                                    </td>
-                                    <td>Large-cap U.S. technology stocks</td>
-                                    <td>High-dividend-yielding U.S. stocks</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Current Yield</strong></td>
-                                    <td><a href="https://www.bing.com/search?q=JEPQ+current+yield" target="_blank"
-                                            rel="noopener noreferrer">1.82%</a></td>
-                                    <td><a href="https://www.bing.com/search?q=QQQ+current+yield" target="_blank"
-                                            rel="noopener noreferrer">0.53%</a></td>
-                                    <td><a href="https://www.bing.com/search?q=TDIV+current+yield" target="_blank"
-                                            rel="noopener noreferrer">3.76%</a></td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Expense Ratio</strong></td>
-                                    <td>0.35%</td>
-                                    <td>0.20%</td>
-                                    <td>0.35%</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Investment Strategy</strong></td>
-                                    <td>Actively managed, focuses on attractively valued companies with consistent
-                                        dividend growth potential</td>
-                                    <td>Passively tracks the NASDAQ-100 Index</td>
-                                    <td>Seeks to provide high current income by investing in dividend-paying U.S. stocks
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Strengths</strong></td>
-                                    <td>Potential for higher returns through active management, emphasis on dividend
-                                        consistency and growth</td>
-                                    <td>Exposure to leading U.S. technology companies</td>
-                                    <td>High dividend yield, potential for income generation</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Weaknesses</strong></td>
-                                    <td>Higher expense ratio than passively managed funds, potentially higher volatility
-                                    </td>
-                                    <td>Lower dividend yield compared to dividend-focused ETFs</td>
-                                    <td>Potential for lower total returns compared to growth-focused ETFs</td>
-                                </tr>
-                            </tbody>
-                        </table>
-
-                    </div>
-                </section>
-                <section id="history">
-                    <h2>Dividend History (Last 5 distributions)</h2>
-                    <div class="mobile-indicator ml-1"> -----> </div>
-                    <div class="table-container">
-                        <table class="mb-2 w-100">
-                            <thead>
-                                <tr>
-                                    <th class="w-17">Ex-Dividend Date</th>
-                                    <th class="w-17">Cash Amount</th>
-                                    <th class="w-17">Record Date</th>
-                                    <th class="w-17">Pay Date</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Apr 01, 2024</td>
-                                    <td>$0.43</td>
-                                    <td>Apr 02, 2024</td>
-                                    <td>Apr 04, 2024</td>
-                                </tr>
-                                <tr>
-                                    <td>Feb 29, 2024</td>
-                                    <td>$0.38</td>
-                                    <td>Mar 03, 2024</td>
-                                    <td>Mar 05, 2024</td>
-                                </tr>
-                                <tr>
-                                    <td>Jan 31, 2024</td>
-                                    <td>$0.34</td>
-                                    <td>Feb 01, 2024</td>
-                                    <td>Feb 05, 2024</td>
-                                </tr>
-                                <tr>
-                                    <td>Dec 27, 2023</td>
-                                    <td>$0.39</td>
-                                    <td>Dec 28, 2023</td>
-                                    <td>Jan 02, 2024</td>
-                                </tr>
-                                <tr>
-                                    <td>Nov 30, 2023</td>
-                                    <td>$0.42</td>
-                                    <td>Dec 03, 2023</td>
-                                    <td>Dec 05, 2023</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </section>
             </div>
         </div>
         <div class="row dark-div">
@@ -606,58 +478,19 @@
         </div>
         <div class="row">
             <div class="col container-1000">
-                <section id="news">
-                    <h2 class="">News</h2>
-                    <div class="chart">
-                        <div class="tradingview-widget-container">
-                        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-timeline.js" async>
-                        {"feedMode":"symbol","symbol":"AMEX:JEPQ","colorTheme":"light","isTransparent":false,"displayMode":"regular","width":"100%","height":"400","locale":"en"}
-                        </script>
-                    </div>
-                </section>
-                <section id="technical">
-                    <h2>Technical Analysis</h2>
-                    <div class="chart">
-                        <script type="text/javascript"
-                            src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js"
-                            async> { "interval": "1M", "width": "100%", "isTransparent": false, "height": "400", "symbol": "NASDAQ:JEPQ", "showIntervalTabs": true, "displayMode": "single", "locale": "en", "colorTheme": "light" } </script>
-                    </div>
-                </section>
-                <section>
-                    <h2>Additional Information and Risks</h2>
-                    <p>The <strong>JPMorgan NASDAQ Equity Premium Income ETF (JEPQ)</strong> is an
-                        <strong>exchange-traded fund (ETF)</strong> focused on <strong>dividend investing</strong>,
-                        seeking to achieve <strong>income</strong> while maintaining operational stability. JEPQ's
-                        <strong>dividend yield</strong>, <strong>payment history</strong>, and <strong>payout
-                            ratio</strong> are key metrics for investors. As of <strong>2024</strong>, the fund's
-                        primary benchmark is the <strong>NASDAQ-100 index</strong>. JEPQ's <strong>dividend
-                            history</strong>, including <strong>dividend date</strong>, <strong>dividend
-                            payment</strong>, and <strong>dividend amount</strong>, provides insight into its financial
-                        performance.</p>
-
-                    <p>Investors can track JEPQ's <strong>dividend data</strong>, <strong>dividend yield range</strong>,
-                        and <strong>current dividend</strong> using tools such as <strong>dividend calculators</strong>
-                        and <strong>dividend charts</strong>. JEPQ's portfolio consists of <strong>equity-linked notes
-                            (ELNs)</strong>, positively impacted by market conditions. However, investors should be
-                        aware of the fund's <strong>volatility</strong> and potential fluctuations in <strong>cash
-                            flow</strong>.</p>
-
-                    <p>It's essential for <strong>shareholders</strong> to review JEPQ's <strong>prospectus</strong> and
-                        disclosure documents, seeking current dividend information and operational details. JEPQ's
-                        <strong>dividend summary</strong>, <strong>dividend payout</strong>, and <strong>dividend
-                            forecast</strong> can assist investors in making informed decisions. Additionally, investors
-                        may consult with <strong>analysts</strong> and subscribe to <strong>newsletters</strong> for
-                        further insight into JEPQ's performance and investment outlook. Overall, JEPQ offers investors
-                        an opportunity to invest in dividend-paying securities while managing potential risks associated
-                        with market volatility and financial liability.</p>
-
+                <section id="disclaimer" class="small-text-section section-grey">
+                    <h2>Important Disclaimer</h2>
+                    <p>This article is for informational purposes only and does not constitute financial advice.
+                        Investing
+                        involves risks, and you should consult with a qualified financial professional before making any
+                        investment decisions. Past performance is not indicative of future results.</p>
                 </section>
 
             </div>
         </div>
         <div class="row dark-div">
             <div class="col container-1280">
-                <div class="shared-footer"> <!-- This is where the shared nav will be loaded --> </div>
+                <div class="shared-footer"> </div>
             </div>
         </div>
     </div>
@@ -665,36 +498,53 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
+        function generateTOC() {
+            const tocList = $('#toc-list .etf-nav');
+            tocList.empty();
+            let ul = $('<ul></ul>').addClass('toc-menu');
+
+            const mainContentArea = $('.container-1000');
+
+            mainContentArea.find('section').each(function () {
+                const sectionId = $(this).attr('id');
+                const h2 = $(this).find('h2:first');
+
+                if (sectionId && h2.length > 0 && sectionId !== 'disclaimer') {
+                    let title = h2.text();
+                    const li = $('<li></li>');
+                    const a = $('<a></a>').attr('href', '#' + sectionId).text(title);
+                    li.append(a);
+                    ul.append(li);
+                }
+            });
+            tocList.append(ul);
+        }
+
         $(function () {
-            $(".shared-nav").load("/shared/nav.html");
-            $(".etf-nav").load("/shared/etfnav2.html");
+            $(".shared-nav").load("/shared/nav.html", function () {
+                generateTOC();
+            });
             $(".shared-subscribe").load("/shared/subscribe.html");
             $(".shared-banner").load("/shared/banner.html");
             $(".shared-articles").load("/shared/technologyStocks.html");
             $(".shared-footer").load("/shared/footer.html");
-        });
-        $(document).ready(function () {
+
+            generateTOC();
+
             $("#toggle-toc").click(function () {
-                var tocList = $("#toc-list");
                 var fixedToc = $(".fixed-toc");
-                if (tocList.is(":visible")) {
-                    tocList.hide();
-                    fixedToc.css({ "width": "0px", "display": "none" });
+                fixedToc.toggle();
+                if (fixedToc.is(":visible")) {
+                    fixedToc.addClass("show");
                 } else {
-                    fixedToc.css({ "width": "200px", "display": "block" });
-                    tocList.show();
+                    fixedToc.removeClass("show");
                 }
             });
-        });
 
-        $(document).ready(function () {
-            $('.carousel').carousel();
-
-            // Scroll to top functionality
             var mybutton = $('#return-to-top');
 
             $(window).scroll(function () {
-                if ($(this).scrollTop() > 20) {
+                if ($(this).scrollTop() > 100) {
                     mybutton.fadeIn();
                 } else {
                     mybutton.fadeOut();
