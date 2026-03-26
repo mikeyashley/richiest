@@ -22,9 +22,215 @@
     <!-- <link rel="canonical" href="https://richiest.com/stocks/dividend/O.html"> -->
     <!-- Include Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="/styles/stockStyles.css">
+    <style>
+        /* Page-scoped design enhancements */
+        .hero-banner {
+            background: linear-gradient(135deg, #393B44 0%, #5a5d6e 100%);
+            color: #fff;
+            border-radius: 12px;
+            padding: 2.5rem 2rem 2rem;
+            margin: 1.5rem 0 0.5rem;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero-banner::after {
+            content: '';
+            position: absolute;
+            top: -40px;
+            right: -40px;
+            width: 200px;
+            height: 200px;
+            background: rgba(255,255,255,0.04);
+            border-radius: 50%;
+        }
+        .hero-banner h1 {
+            font-size: 1.9em;
+            padding: 0;
+            margin: 0 0 0.5rem;
+            color: #fff;
+            line-height: 1.25;
+        }
+        .hero-banner .hero-sub {
+            font-size: 1.05em;
+            color: rgba(255,255,255,0.75);
+            margin: 0;
+            padding: 0;
+            line-height: 1.5;
+        }
+        .ticker-badge {
+            display: inline-block;
+            background: rgba(255,255,255,0.15);
+            color: #fff;
+            font-weight: 700;
+            font-size: 0.85em;
+            letter-spacing: 1px;
+            padding: 4px 14px;
+            border-radius: 6px;
+            margin-bottom: 0.75rem;
+        }
+        .quick-facts {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 1.25rem;
+        }
+        .quick-facts .fact {
+            background: rgba(255,255,255,0.1);
+            border-radius: 8px;
+            padding: 10px 18px;
+            text-align: center;
+            min-width: 120px;
+            flex: 1;
+        }
+        .quick-facts .fact-label {
+            font-size: 0.7em;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            color: rgba(255,255,255,0.6);
+            margin-bottom: 2px;
+        }
+        .quick-facts .fact-value {
+            font-size: 1.1em;
+            font-weight: 700;
+        }
+
+        /* Section header refinements */
+        .o-section-title {
+            font-size: 1.4em;
+            font-weight: 700;
+            padding-top: 2rem;
+            padding-bottom: 0.25rem;
+            margin-bottom: 0.5rem;
+            border-bottom: 3px solid #8D93AB;
+            display: inline-block;
+        }
+
+        /* Card-style overview items */
+        .overview-cards {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+            padding: 1rem 0 1.5rem;
+        }
+        .overview-card {
+            background: #fff;
+            border: 1px solid #e2e5ea;
+            border-radius: 10px;
+            padding: 1.5rem;
+            transition: box-shadow 0.2s;
+        }
+        .overview-card:hover {
+            box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+        }
+        .overview-card h3 {
+            font-size: 1.1em;
+            font-weight: 700;
+            color: #393B44;
+            margin: 0 0 0.6rem;
+            padding-bottom: 0.4rem;
+            border-bottom: 2px solid #D6E0F0;
+        }
+        .overview-card p,
+        .overview-card ul {
+            padding: 0;
+            margin: 0;
+            font-size: 0.95em;
+            line-height: 1.6;
+            color: #444;
+        }
+        .overview-card ul {
+            padding-left: 1.2rem;
+        }
+        .overview-card ul li {
+            padding-top: 6px;
+        }
+
+        /* Dividend data as horizontal cards */
+        .dividend-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1rem;
+            padding: 1rem 0 1.5rem;
+        }
+        .dividend-item {
+            background: #fff;
+            border: 1px solid #e2e5ea;
+            border-left: 4px solid #8D93AB;
+            border-radius: 8px;
+            padding: 1.25rem 1.5rem;
+        }
+        .dividend-item h3 {
+            font-size: 1em;
+            font-weight: 700;
+            color: #393B44;
+            margin: 0 0 0.5rem;
+        }
+        .dividend-item h3 a {
+            color: #393B44;
+            text-decoration: underline;
+        }
+        .dividend-item p {
+            padding: 0;
+            margin: 0;
+            font-size: 0.9em;
+            line-height: 1.55;
+            color: #555;
+        }
+
+        /* Chart wrapper */
+        .chart-wrapper {
+            background: #fafafa;
+            border: 1px solid #e8e8e8;
+            border-radius: 10px;
+            padding: 1rem;
+            margin: 1rem 0 1.5rem;
+            overflow: hidden;
+        }
+
+        /* Comparison table polish */
+        .compare-section table {
+            border-spacing: 6px;
+        }
+
+        /* Scroll indicator modernized */
+        .scroll-hint {
+            display: none;
+            font-size: 0.75em;
+            color: #8D93AB;
+            padding: 8px 0 0;
+            letter-spacing: 0.5px;
+        }
+        .scroll-hint i {
+            margin-left: 4px;
+            animation: nudge 1.5s ease-in-out infinite;
+        }
+        @keyframes nudge {
+            0%, 100% { transform: translateX(0); }
+            50% { transform: translateX(5px); }
+        }
+        @media (max-width: 768px) {
+            .scroll-hint { display: block; }
+            .hero-banner { padding: 1.5rem 1.25rem; }
+            .hero-banner h1 { font-size: 1.5em; }
+            .quick-facts .fact { min-width: 90px; padding: 8px 12px; }
+        }
+
+        /* Additional considerations styling */
+        .considerations-section {
+            background: #f9fafb;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+        }
+        .considerations-section p {
+            font-size: 0.95em;
+            line-height: 1.65;
+            color: #444;
+        }
+    </style>
 </head>
 
 <body>
@@ -46,29 +252,59 @@
         </div>
         <div class="row">
             <div class="col container-1280">
-                <section>
-                    <h1>Realty Income Corporation (O) Dividend Date & Dividend History - Stock Analysis & Payment Information</h1>
+
+                <!-- Hero Banner -->
+                <section style="border-bottom:none; background:transparent;">
+                    <div class="hero-banner">
+                        <span class="ticker-badge">NYSE: O</span>
+                        <h1>Realty Income Corporation (O) &mdash; Dividend Analysis</h1>
+                        <p class="hero-sub">Stock analysis, dividend history, and payment information for the &ldquo;Monthly Dividend Company.&rdquo;</p>
+                        <div class="quick-facts">
+                            <div class="fact">
+                                <div class="fact-label">Sector</div>
+                                <div class="fact-value">Real Estate</div>
+                            </div>
+                            <div class="fact">
+                                <div class="fact-label">Industry</div>
+                                <div class="fact-value">REIT &ndash; Retail</div>
+                            </div>
+                            <div class="fact">
+                                <div class="fact-label">Dividend Freq.</div>
+                                <div class="fact-value">Monthly</div>
+                            </div>
+                            <div class="fact">
+                                <div class="fact-label">Strategy</div>
+                                <div class="fact-value">Income</div>
+                            </div>
+                            <div class="fact">
+                                <div class="fact-label">Focus</div>
+                                <div class="fact-value">U.S.</div>
+                            </div>
+                        </div>
+                    </div>
                 </section>
+
+                <!-- Market Position -->
                 <section id="position">
-                    <h2>Realty Income Corporation - O - Market Position</h2>
-                    <div class="mobile-indicator ml-1">
-                        --- scroll --->
+                    <h2 class="o-section-title">Market Position</h2>
+                    <div class="scroll-hint">
+                        Scroll for more <i class="fas fa-arrow-right"></i>
                     </div>
                     <div class="table-container text-center">
                         <table class="w-100">
                             <tr>
-                                <th class="w-12">Stock Ticker</th>
-                                <th class="w-12">Home Page</th>
+                                <th class="w-12">Ticker</th>
+                                <th class="w-12">Company</th>
                                 <th class="w-12">Asset Class</th>
                                 <th class="w-12">Sector</th>
                                 <th class="w-12">Industry</th>
-                                <th class="w-12">Investment Strategy</th>
-                                <th class="w-12">Dividend Frequency</th>
-                                <th class="w-12">Geographic Focus</th>
+                                <th class="w-12">Strategy</th>
+                                <th class="w-12">Div. Frequency</th>
+                                <th class="w-12">Geo Focus</th>
                             </tr>
                             <tr>
                                 <td>O</td>
-                                <td><a href="https://www.realtyincome.com">Realty Income Corporation</a></td>
+                                <td><a href="https://www.realtyincome.com">Realty Income Corp.</a></td>
                                 <td>Stock / Equity</td>
                                 <td><a href="https://richiest.com/sectors/investing-realestate.html">Real Estate</a></td>
                                 <td>REIT - Retail</td>
@@ -77,18 +313,18 @@
                                 <td>U.S.</td>
                             </tr>
                         </table>
-
                     </div>
-                    <p>O, or Realty Income Corporation, is a well-established real estate investment trust (REIT)
+                    <p>Realty Income Corporation is a well-established real estate investment trust (REIT)
                         renowned for its consistent dividends and stable returns. With a focus on owning and leasing
                         freestanding commercial properties to tenants across various industries, Realty Income has
-                        earned a reputation as a reliable income-generating investment. In this article, we delve into
-                        the fundamentals of O dividend stock, examining its investment appeal, dividend history, and the
-                        factors influencing its performance in the market.</p>
+                        earned a reputation as a reliable income-generating investment. Below, we examine its
+                        investment appeal, dividend history, and the factors influencing its performance.</p>
                 </section>
+
+                <!-- Current Market Data -->
                 <section id="overview">
-                    <h2>Realty Income Corporation - O - Current Market Data</h2>
-                    <div class="chart">
+                    <h2 class="o-section-title">Current Market Data</h2>
+                    <div class="chart-wrapper">
                         <script type="text/javascript"
                             src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-info.js" async>
                                 {
@@ -96,265 +332,155 @@
                                         "width": "100%",
                                             "locale": "en",
                                                 "colorTheme": "light",
-                                                    "isTransparent": false
+                                                    "isTransparent": true
                                 }
                             </script>
                     </div>
                 </section>
-                <section id="overview">
-                    <h2>Realty Income Corporation - O - Business Overview</h2>
-                    <div class="mobile-indicator ml-1">
-                        --- scroll --->
-                    </div>
-                    <div class="table-container">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th class="text-center lead">Section</th>
-                                    <th class="text-center lead">Information</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <h3> Overview:</h3>
-                                    </td>
-                                    <td>
-                                        <p>Realty Income (O) is a leading net-lease REIT specializing in
-                                            single-tenant commercial properties. They primarily own and operate
-                                            essential businesses like grocery stores, drugstores, dollar stores,
-                                            and convenience stores. O boasts a diverse portfolio across the US
-                                            and Europe, catering to a broad target market with a market share of
-                                            approximately 5% within the net-lease REIT industry. Their mission
-                                            statement is "to provide dependable monthly dividends that increase
-                                            over time," reflecting their commitment to shareholder value
-                                            creation through consistent income streams.</p>
-                                    </td>
-                                </tr>
 
+                <!-- Business Overview -->
+                <section id="business">
+                    <h2 class="o-section-title">Business Overview</h2>
+                    <div class="overview-cards">
+                        <div class="overview-card">
+                            <h3><i class="fas fa-building" style="color:#8D93AB; margin-right:6px;"></i> Overview</h3>
+                            <p>Realty Income (O) is a leading net-lease REIT specializing in
+                                single-tenant commercial properties. They primarily own and operate
+                                essential businesses like grocery stores, drugstores, dollar stores,
+                                and convenience stores. O boasts a diverse portfolio across the US
+                                and Europe, with approximately 5% market share within the net-lease REIT industry. Their
+                                mission: &ldquo;to provide dependable monthly dividends that increase
+                                over time.&rdquo;</p>
+                        </div>
 
-                                <tr>
-                                    <td>
-                                        <h3> Business Model:</h3>
-                                    </td>
-                                    <td>
-                                        <p>O generates revenue primarily through rental income from its leased
-                                            properties. They operate with <strong>a tenant-centric
-                                                model</strong>, offering
-                                            long-term net leases with strong creditworthy tenants. This ensures
-                                            predictable revenue streams and minimizes operating expenses. O's
-                                            value chain involves property acquisition, tenant management,
-                                            property maintenance, and rent collection. They partner with real
-                                            estate brokers, property managers, and construction companies to
-                                            effectively manage their portfolio.</p>
-                                    </td>
-                                </tr>
+                        <div class="overview-card">
+                            <h3><i class="fas fa-cogs" style="color:#8D93AB; margin-right:6px;"></i> Business Model</h3>
+                            <p>O generates revenue primarily through rental income from its leased
+                                properties. They operate with <strong>a tenant-centric model</strong>, offering
+                                long-term net leases with strong creditworthy tenants. This ensures
+                                predictable revenue streams and minimizes operating expenses. The value chain involves property acquisition, tenant management,
+                                property maintenance, and rent collection, supported by partnerships with real
+                                estate brokers, property managers, and construction companies.</p>
+                        </div>
 
+                        <div class="overview-card">
+                            <h3><i class="fas fa-chart-bar" style="color:#8D93AB; margin-right:6px;"></i> Industry Competition</h3>
+                            <p>O's main competitors include other net-lease REITs like
+                                <strong>National Retail Properties (NNN), STORE Capital Corporation (STOR), and
+                                W. P. Carey (WPC)</strong>. Recent industry trends include
+                                increased demand for essential businesses, rising interest rates, and consolidation
+                                among smaller players&mdash;trends that favor O's strong tenant
+                                relationships, diversified portfolio, and robust financial position.</p>
+                        </div>
 
-                                <tr>
-                                    <td>
-                                        <h3> Industry Competition:</h3>
-                                    </td>
-                                    <td>
-                                        <p>O's main competitors include other net-lease REITs like
-                                            <strong>National
-                                                Retail Properties (NNN), STORE Capital Corporation (STOR), and
-                                                W. P.
-                                                Carey (WPC)</strong>. Recent trends in the industry include
-                                            increased demand
-                                            for essential businesses, rising interest rates, and consolidation
-                                            among smaller players. These trends favor O's strong tenant
-                                            relationships, diversified portfolio, and robust financial position.
-                                        </p>
-                                    </td>
-                                </tr>
+                        <div class="overview-card">
+                            <h3><i class="fas fa-shield-alt" style="color:#8D93AB; margin-right:6px;"></i> Competitive Advantages</h3>
+                            <p>
+                                <strong>Proven Track Record:</strong> 64-year history of
+                                uninterrupted dividend increases.<br>
+                                <strong>Diversified Portfolio:</strong> Exposure across various
+                                industries and geographies mitigates risk.<br>
+                                <strong>Strong Tenant Relationships:</strong> Long-term
+                                leases with creditworthy tenants minimize vacancy rates.<br>
+                                <strong>Experienced Management:</strong> Leadership with a proven track record in identifying and acquiring
+                                high-quality properties.
+                            </p>
+                        </div>
 
+                        <div class="overview-card">
+                            <h3><i class="fas fa-users" style="color:#8D93AB; margin-right:6px;"></i> Management Team</h3>
+                            <p>O's management team is led by CEO, President, and Chairman,
+                                <strong>Sumit Malhotra</strong>, who has extensive experience in commercial real estate.
+                                Other key executives include CFO <strong>Scott Schafer</strong> and CIO <strong>Kenneth
+                                Woolpert</strong>, both seasoned professionals with strong financial and acquisition expertise.</p>
+                        </div>
 
-                                <tr>
-                                    <td>
-                                        <h3> Competitive Advantages:</h3>
-                                    </td>
-                                    <td>
-                                        <p>
-                                            <strong>Proven Track Record:</strong> O boasts a 64-year history of
-                                            uninterrupted dividend increases, showcasing its commitment to
-                                            shareholder value and financial stability.<br>
-                                            <strong>Diversified Portfolio:</strong> O's exposure across various
-                                            industries and geographies mitigates risk and provides a steady
-                                            income stream.<br>
-                                            <strong>Strong Tenant Relationships:</strong> O focuses on long-term
-                                            leases with creditworthy tenants, minimizing vacancy rates and
-                                            ensuring predictable rent collection.<br>
-                                            <strong>Experienced Management Team:</strong> O's leadership
-                                            possesses a proven track record in identifying and acquiring
-                                            high-quality properties, further strengthening its competitive edge.
-                                        </p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <h3> Management Team:</h3>
-                                    </td>
-                                    <td>
-                                        <p>O's management team is led by CEO, President, and Chairman,
-                                            <strong>Sumit
-                                                Malhotra</strong>, who has extensive experience in the
-                                            commercial real estate
-                                            industry. Other key executives include Chief Financial Officer,
-                                            <strong>Scott Schafer, and Chief Investment Officer, Kenneth
-                                                Woolpert</strong>, both
-                                            seasoned professionals with strong financial and acquisition
-                                            expertise.
-                                        </p>
-                                    </td>
-                                </tr>
+                        <div class="overview-card">
+                            <h3><i class="fas fa-dollar-sign" style="color:#8D93AB; margin-right:6px;"></i> Financial Performance</h3>
+                            <p>O has consistently demonstrated strong financial performance with
+                                stable revenue growth, increasing profitability, and a robust balance sheet.</p>
+                            <ul>
+                                <li><strong>Revenue</strong>: $1.55 billion in Q3 2023 (7% YoY growth)</li>
+                                <li><strong>Net Income</strong>: $343.3 million in Q3 2023 (12% increase vs. Q3 2022)</li>
+                                <li><strong>EPS</strong>: $0.27 in Q3 2023, up from $0.25 in Q3 2022</li>
+                            </ul>
+                        </div>
 
+                        <div class="overview-card">
+                            <h3><i class="fas fa-lightbulb" style="color:#8D93AB; margin-right:6px;"></i> Investment Thesis</h3>
+                            <p>O presents a compelling option for income-focused investors:</p>
+                            <ul>
+                                <li><strong>Stable and Growing Dividends</strong>: 64-year track
+                                    record of dividend increases and strong fundamentals.</li>
+                                <li><strong>Resilient Cash Flow</strong>: Focus on essential
+                                    businesses offers predictable rental income even in downturns.</li>
+                                <li><strong>Diversification Benefits</strong>: Mitigated risk through exposure to various industries and
+                                    geographies.</li>
+                            </ul>
+                            <p style="padding-top:10px;">However, investors should also consider:</p>
+                            <ul>
+                                <li><strong>Limited Growth Potential</strong>: Income focus comes at
+                                    the expense of rapid capital appreciation.</li>
+                                <li><strong>Interest Rate Sensitivity</strong>: Reliance on debt
+                                    financing creates susceptibility to rising rates.</li>
+                            </ul>
+                        </div>
 
-                                <tr>
-                                    <td>
-                                        <h3> Financial Performance:</h3>
-                                    </td>
-                                    <td>
-                                        <p>O has consistently demonstrated strong financial performance with
-                                            stable revenue growth, increasing profitability, and a robust
-                                            balance sheet. Recent financial highlights include:</p>
-                                        <ul>
-                                            <li><strong>Revenue</strong>: $1.55 billion in Q3 2023, representing
-                                                7%
-                                                year-over-year growth.</li>
-                                            <li><strong>Net Income</strong>: $343.3 million in Q3 2023, a 12%
-                                                increase compared
-                                                to Q3 2022.</li>
-                                            <li><strong>EPS</strong>: $0.27 in Q3 2023, up from $0.25 in Q3
-                                                2022.</li>
-                                        </ul>
-                                    </td>
-                                </tr>
-
-
-                                <tr>
-                                    <td>
-                                        <h3> Investment Thesis:</h3>
-                                    </td>
-                                    <td>
-                                        <p>O presents a compelling option for income-focused investors seeking:
-                                        </p>
-                                        <ul>
-                                            <li><strong>Stable and Growing Dividends</strong>: O's 64-year track
-                                                record of
-                                                dividend increases and strong financial fundamentals make it a
-                                                reliable income source.</li>
-                                            <li><strong>Resilient Cash Flow</strong>: O's focus on essential
-                                                businesses offers
-                                                predictable rental income even in economic downturns.</li>
-                                            <li><strong>Diversification Benefits</strong>: O's diversified
-                                                portfolio mitigates
-                                                risk and provides exposure to various industries and
-                                                geographies.</li>
-                                        </ul>
-                                        <p>However, investors should also consider:</p>
-                                        <ul>
-                                            <li><strong>Limited Growth Potential</strong>: O's focus on income
-                                                generation comes
-                                                at the expense of rapid capital appreciation.</li>
-                                            <li><strong>Interest Rate Sensitivity</strong>: O's reliance on debt
-                                                financing makes
-                                                it susceptible to rising interest rates, potentially impacting
-                                                its profitability and dividend payments.</li>
-                                        </ul>
-                                    </td>
-                                </tr>
-
-
-                                <tr>
-                                    <td>
-                                        <h3> Conclusion:</h3>
-                                    </td>
-                                    <td>
-                                        <p>Realty Income (O) remains a strong contender for income investors
-                                            seeking stability, a proven dividend track record, and
-                                            diversification across essential businesses. Its solid financial
-                                            position, experienced management, and resilient cash flow provide a
-                                            solid foundation for continued dividend growth. However, investors
-                                            should consider the limited growth potential and interest rate
-                                            sensitivity before making an investment decision.</p>
-                                    </td>
-                                </tr>
-
-
-                            </tbody>
-                        </table>
+                        <div class="overview-card">
+                            <h3><i class="fas fa-check-circle" style="color:#8D93AB; margin-right:6px;"></i> Conclusion</h3>
+                            <p>Realty Income (O) remains a strong contender for income investors
+                                seeking stability, a proven dividend track record, and
+                                diversification across essential businesses. Its solid financial
+                                position, experienced management, and resilient cash flow provide a
+                                foundation for continued dividend growth. However, investors
+                                should weigh the limited growth potential and interest rate
+                                sensitivity before making an investment decision.</p>
+                        </div>
                     </div>
                 </section>
 
+                <!-- Dividend Analysis -->
                 <section id="dividend">
-                    <h2><a href="https://stockanalysis.com/stocks/O/dividend/" target="_blank">O Dividend
-                            Analysis</a></h2>
-                    <div class="mobile-indicator ml-1">
-                        --- scroll --->
+                    <h2 class="o-section-title"><a href="https://stockanalysis.com/stocks/O/dividend/" target="_blank" style="color:inherit; text-decoration:none; border-bottom:2px dashed #8D93AB;">Dividend Analysis</a></h2>
+                    <div class="dividend-grid">
+                        <div class="dividend-item">
+                            <h3>Dividend Data</h3>
+                            <p>Realty Income (O) has an annual dividend of $3.08 per share, paid every month. The last ex-dividend date was February 29, 2024.</p>
+                        </div>
+                        <div class="dividend-item">
+                            <h3>Dividend Yield</h3>
+                            <p>The forward yield of O is 5.45%. For every $100 invested, investors would receive $5.45 in dividends per year.</p>
+                        </div>
+                        <div class="dividend-item">
+                            <h3><a href="https://www.nasdaq.com/market-activity/stocks/o/dividend-history">Dividend History</a></h3>
+                            <p>Realty Income has a history of consistent dividend payments. On March 13, 2024, the company announced a $0.25 per-share dividend payable April 15, 2024, to shareholders of record March 28, 2024.</p>
+                        </div>
+                        <div class="dividend-item">
+                            <h3>Payout Ratio</h3>
+                            <p>The dividend payout ratio is 242.78%&mdash;this is the percentage of earnings paid out as dividends.</p>
+                        </div>
+                        <div class="dividend-item">
+                            <h3>Stability &amp; Growth</h3>
+                            <p>Dividend payments per share have averaged 2.98% growth over the past 36 months. However, the 243.4% payout ratio may not be sustainable long-term.</p>
+                        </div>
                     </div>
-                    <div class="table-container">
-                        <table>
-                            <tr>
-                                <th class="w-25">Section</th>
-                                <th class="w-75">Details</th>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h3>O Dividend Data</h3>
-                                </td>
-                                <td>Realty Income Corporation (O) has an annual dividend of $3.08 per share. The
-                                    dividend is paid every month. The last ex-dividend date was on February 29, 2024.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h3>O Dividend Yield</h3>
-                                </td>
-                                <td>The forward yield of O is 5.45%. This means that for every $100 invested in the
-                                    company's stock, investors would receive $5.45 in dividends per year.</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <a href="https://www.nasdaq.com/market-activity/stocks/o/dividend-history">
-                                        <h3>O Dividend History</h3>
-                                    </a>
-                                </td>
-                                <td>Realty Income Corporation (O) has a history of consistent dividend payments. For
-                                    instance, the company announced on March 13, 2024, that shareholders of record as of
-                                    March 28, 2024, would receive a dividend of $0.25 per share on April 15, 2024.</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h3>O Dividend Payout & Dividend Payout Ratio</h3>
-                                </td>
-                                <td>The dividend payout ratio for Realty Income Corporation is 242.78%. This is the
-                                    percentage of the company's earnings paid out as dividends.</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h3>O Dividend Stability & Growth</h3>
-                                </td>
-                                <td>Realty Income Corporation (O) dividend payments per share have shown an average
-                                    growth of 2.98% over the past 36 months. However, the payout ratio is 243.4%, which
-                                    may not be sustainable.</td>
-                            </tr>
-                        </table>
-                    </div>
-
                 </section>
+
+                <!-- Price Chart -->
                 <section id="chart">
-                    <h2>O Chart</h2>
-                    <div class="chart w-100">
+                    <h2 class="o-section-title">Price Chart</h2>
+                    <div class="chart-wrapper">
                         <iframe frameBorder='0' scrolling='no' width='100%' height='550'
                             src='https://api.stockdio.com/visualization/financial/charts/v1/PricesChange?app-key=56D3070574784B10A0F80C4ABA40E68C&symbol=O&palette=Financial-Light&width=100%25&height=500px&showLogo=Title&positiveColor=8d93ab&negativeColor=8d93ab&periodsColor=393B44'>
                         </iframe>
                     </div>
                 </section>
-                <section id="compare">
-                    <h2 class="">O Comparative Analysis</h2>
-                    <div class="mobile-indicator ml-1">
-                        --- scroll --->
+
+                <!-- Comparative Analysis -->
+                <section id="compare" class="compare-section">
+                    <h2 class="o-section-title">Comparative Analysis</h2>
+                    <div class="scroll-hint">
+                        Scroll for more <i class="fas fa-arrow-right"></i>
                     </div>
                     <div class="table-container">
                         <table>
@@ -380,14 +506,12 @@
                                         <h3>Current Yield</h3>
                                     </td>
                                     <td><a href="https://www.bing.com/search?q=O+current+yield">5.91%</a></td>
-                                    <td><a href="https://www.bing.com/search?q=SPG+current+yield">5.02%</a>
-                                    </td>
-                                    <td><a href="https://www.bing.com/search?q=KIM+current+yield">5.29%</a>
-                                    </td>
+                                    <td><a href="https://www.bing.com/search?q=SPG+current+yield">5.02%</a></td>
+                                    <td><a href="https://www.bing.com/search?q=KIM+current+yield">5.29%</a></td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <h3>Price-to-Earnings Ratio (P/E)</h3>
+                                        <h3>P/E Ratio</h3>
                                     </td>
                                     <td><a href="https://www.bing.com/search?q=O+P/E+ratio">41.46</a></td>
                                     <td><a href="https://www.bing.com/search?q=SPG+P/E+ratio">22.26</a></td>
@@ -403,7 +527,6 @@
                                 </tr>
                             </tbody>
                         </table>
-
                     </div>
                 </section>
             </div>
@@ -416,7 +539,7 @@
         </div>
         <div class="row">
             <div class="col container-1280">
-                <h2>Real Estate Stocks</h2>
+                <h2 class="o-section-title">Real Estate Stocks</h2>
                 <div class="shared-articles">
                 </div>
             </div>
@@ -424,9 +547,8 @@
         <div class="row">
             <div class="col container-1280">
                 <section id="news">
-                    <h2>News</h2>
-
-                    <div class="chart w-100">
+                    <h2 class="o-section-title">News</h2>
+                    <div class="chart-wrapper">
                         <script>
                             if (typeof (stockdio_events) == "undefined") {
                                 stockdio_events = true;
@@ -446,9 +568,8 @@
                     </div>
                 </section>
                 <section id="financials">
-                    <h2>Financials</h2>
-                    <div class="chart w-100">
-
+                    <h2 class="o-section-title">Financials</h2>
+                    <div class="chart-wrapper">
                         <script type="text/javascript"
                             src="https://s3.tradingview.com/external-embedding/embed-widget-financials.js" async>
                                 {
@@ -465,15 +586,15 @@
                     </div>
                 </section>
                 <section id="technicals">
-                    <h2>Technical Analysis</h2>
-                    <div class="chart w-100">
+                    <h2 class="o-section-title">Technical Analysis</h2>
+                    <div class="chart-wrapper">
                         <script type="text/javascript"
                             src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js"
                             async>
                                 {
                                     "interval": "1M",
                                         "width": "100%",
-                                            "isTransparent": false,
+                                            "isTransparent": true,
                                                 "height": "400",
                                                     "symbol": "NYSE:O",
                                                         "showIntervalTabs": true,
@@ -485,31 +606,28 @@
                     </div>
                 </section>
                 <section>
-                    <h2>Additional Considerations</h2>
-                    <p>
-                        Investing in Realty Income Corp (O), a U.S. based REIT, comes with its own set of
-                        considerations. The company's monthly dividends, a result of its performance and management's
-                        strategy, have been a significant attraction for investors. However, it's essential to
-                        understand the risks associated with such an investment. Realty Income's dividend payout is tied
-                        to its earnings and cash flow, primarily from its commercial property leases. Any uncertainty in
-                        these areas could impact the dividend payout. For instance, the company's debt and liability
-                        could affect its net lease cash flow, potentially leading to a decrease in the dividend payout.
-                        Furthermore, changes in the capital markets could influence the stock price, affecting the yield
-                        that shareholders receive.
-                    </p>
-                    <p>
-                        The company has a history of increasing its dividend payout, but this trend is not guaranteed to
-                        continue. Investors should pay close attention to the next ex-dividend date, the declared
-                        dividend, and the payout ratio. These metrics, along with an analysis of the company's earnings,
-                        provide an overview of the company's financial health. Websites like TipRanks offer valuable
-                        insights and allow users to create a free account for more detailed information. Remember, past
-                        performance, including consecutive years of dividend increase and historical dividend data, does
-                        not guarantee future results. Each investment decision should be made with respect to the
-                        individual's retirement goals and risk tolerance.
-                    </p>
+                    <h2 class="o-section-title">Additional Considerations</h2>
+                    <div class="considerations-section">
+                        <p>
+                            Investing in Realty Income Corp (O) comes with its own set of
+                            considerations. The company's monthly dividends have been a significant attraction for investors, but it's essential to
+                            understand the associated risks. Realty Income's dividend payout is tied
+                            to its earnings and cash flow from commercial property leases. Uncertainty in
+                            these areas could impact the dividend. The company's debt and liability
+                            could affect net lease cash flow, potentially leading to a decrease in payout.
+                            Changes in capital markets could also influence the stock price, affecting shareholder yield.
+                        </p>
+                        <p>
+                            The company has a history of increasing its dividend, but this trend is not guaranteed to
+                            continue. Investors should monitor the next ex-dividend date, declared
+                            dividend, and payout ratio. These metrics, along with earnings analysis,
+                            provide an overview of financial health. Remember, past
+                            performance&mdash;including consecutive years of dividend increases&mdash;does
+                            not guarantee future results. Each investment decision should be made with respect to
+                            individual retirement goals and risk tolerance.
+                        </p>
+                    </div>
                 </section>
-
-
             </div>
         </div>
         <div class="row dark-div py-5">
@@ -526,7 +644,6 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-
     <script>
         $(function () {
             $(".shared-nav").load("/shared/nav.html");
@@ -540,7 +657,6 @@
         $(document).ready(function () {
             $('.carousel').carousel();
 
-            // Scroll to top functionality
             var mybutton = $('#return-to-top');
 
             $(window).scroll(function () {
