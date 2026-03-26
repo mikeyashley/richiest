@@ -32,7 +32,7 @@
             color: #fff;
             border-radius: 12px;
             padding: 2.5rem 2rem 2rem;
-            margin: 1.5rem 0 0.5rem;
+            margin: 1.5rem 0 0;
             position: relative;
             overflow: hidden;
         }
@@ -47,9 +47,9 @@
             border-radius: 50%;
         }
         .hero-banner h1 {
-            font-size: 1.9em;
+            font-size: 1.85em;
             padding: 0;
-            margin: 0 0 0.5rem;
+            margin: 0 0 0.45rem;
             color: #fff;
             line-height: 1.25;
         }
@@ -59,58 +59,115 @@
             color: #fff;
         }
         .hero-banner .hero-sub {
-            font-size: 1.05em;
-            color: rgba(255,255,255,0.75);
+            font-size: 1.02em;
+            color: rgba(255,255,255,0.72);
             margin: 0;
             padding: 0;
             line-height: 1.5;
         }
         .ticker-badge {
             display: inline-block;
-            background: rgba(255,255,255,0.15);
+            background: rgba(255,255,255,0.13);
             color: #fff;
             font-weight: 700;
-            font-size: 0.85em;
-            letter-spacing: 1px;
+            font-size: 0.8em;
+            letter-spacing: 1.2px;
             padding: 4px 14px;
             border-radius: 6px;
-            margin-bottom: 0.75rem;
+            margin-bottom: 0.7rem;
         }
         .quick-facts {
             display: flex;
             flex-wrap: wrap;
-            gap: 12px;
+            gap: 10px;
             margin-top: 1.25rem;
         }
         .quick-facts .fact {
-            background: rgba(255,255,255,0.1);
+            background: rgba(255,255,255,0.09);
             border-radius: 8px;
-            padding: 10px 18px;
+            padding: 9px 16px;
             text-align: center;
-            min-width: 120px;
+            min-width: 110px;
             flex: 1;
         }
         .quick-facts .fact-label {
-            font-size: 0.7em;
+            font-size: 0.68em;
             text-transform: uppercase;
             letter-spacing: 0.8px;
-            color: rgba(255,255,255,0.6);
+            color: rgba(255,255,255,0.55);
             margin-bottom: 2px;
         }
         .quick-facts .fact-value {
-            font-size: 1.1em;
+            font-size: 1.05em;
             font-weight: 700;
         }
 
+        /* TOC toggle (BIL-style) */
+        .toc-btn {
+            position: fixed;
+            bottom: 70px;
+            right: 20px;
+            z-index: 1050;
+            background: #393B44;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            width: 44px;
+            height: 44px;
+            font-size: 0.75em;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.18);
+            cursor: pointer;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            transition: opacity 0.2s;
+        }
+        .toc-btn:hover { opacity: 0.85; }
+        .toc-panel {
+            display: none;
+            position: fixed;
+            bottom: 120px;
+            right: 20px;
+            z-index: 1049;
+            background: #fff;
+            border: 1px solid #e4e7ec;
+            border-radius: 12px;
+            box-shadow: 0 6px 24px rgba(0,0,0,0.12);
+            padding: 16px 20px;
+            min-width: 220px;
+            max-width: 280px;
+        }
+        .toc-panel a {
+            display: block;
+            padding: 5px 0;
+            font-size: 0.88em;
+            color: #393B44;
+            text-decoration: none;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .toc-panel a:last-child { border-bottom: none; }
+        .toc-panel a:hover { color: #8D93AB; }
+
         /* Section header refinements */
         .o-section-title {
-            font-size: 1.4em;
+            font-size: 1.35em;
             font-weight: 700;
-            padding-top: 2rem;
-            padding-bottom: 0.25rem;
-            margin-bottom: 0.5rem;
-            border-bottom: 3px solid #8D93AB;
+            padding-top: 2.25rem;
+            padding-bottom: 0.3rem;
+            margin-bottom: 0.4rem;
+            border-bottom: 2px solid #D6E0F0;
             display: inline-block;
+            color: #2c2e36;
+        }
+
+        /* Alternating section backgrounds */
+        section.sec-grey {
+            background: #f9fafb;
+            border-radius: 12px;
+            padding: 0.5rem 1.25rem 1.25rem;
+            margin: 0.75rem -0.5rem;
         }
 
         /* Card-style overview items */
@@ -118,24 +175,24 @@
             display: grid;
             grid-template-columns: 1fr;
             gap: 1rem;
-            padding: 1rem 0 1.5rem;
+            padding: 0.75rem 0 1.25rem;
         }
         .overview-card {
             background: #fff;
-            border: 1px solid #e2e5ea;
-            border-radius: 10px;
-            padding: 1.5rem;
+            border: 1px solid #e4e7ec;
+            border-radius: 12px;
+            padding: 1.4rem 1.5rem;
             transition: box-shadow 0.2s;
         }
         .overview-card:hover {
-            box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+            box-shadow: 0 4px 16px rgba(0,0,0,0.06);
         }
         .overview-card h3 {
-            font-size: 1.1em;
+            font-size: 1.05em;
             font-weight: 700;
             color: #393B44;
-            margin: 0 0 0.6rem;
-            padding-bottom: 0.4rem;
+            margin: 0 0 0.55rem;
+            padding-bottom: 0.35rem;
             border-bottom: 2px solid #D6E0F0;
         }
         .overview-card h3 a,
@@ -155,15 +212,20 @@
         .overview-card ul {
             padding: 0;
             margin: 0;
-            font-size: 0.95em;
-            line-height: 1.6;
+            font-size: 0.93em;
+            line-height: 1.65;
             color: #444;
         }
         .overview-card ul {
             padding-left: 1.2rem;
         }
         .overview-card ul li {
-            padding-top: 6px;
+            padding-top: 5px;
+        }
+
+        /* Standalone card used outside .overview-cards (bottom-line, verdict) */
+        section > .overview-card:only-child {
+            margin-top: 0.75rem;
         }
 
         /* Dividend data as horizontal cards */
@@ -171,20 +233,20 @@
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 1rem;
-            padding: 1rem 0 1.5rem;
+            padding: 0.75rem 0 1.25rem;
         }
         .dividend-item {
             background: #fff;
-            border: 1px solid #e2e5ea;
+            border: 1px solid #e4e7ec;
             border-left: 4px solid #8D93AB;
-            border-radius: 8px;
-            padding: 1.25rem 1.5rem;
+            border-radius: 12px;
+            padding: 1.2rem 1.4rem;
         }
         .dividend-item h3 {
-            font-size: 1em;
+            font-size: 0.98em;
             font-weight: 700;
             color: #393B44;
-            margin: 0 0 0.5rem;
+            margin: 0 0 0.45rem;
         }
         .dividend-item h3 a {
             color: #393B44;
@@ -194,17 +256,17 @@
             padding: 0;
             margin: 0;
             font-size: 0.9em;
-            line-height: 1.55;
+            line-height: 1.6;
             color: #555;
         }
 
         /* Chart wrapper */
         .chart-wrapper {
             background: #fafafa;
-            border: 1px solid #e8e8e8;
-            border-radius: 10px;
+            border: 1px solid #e4e7ec;
+            border-radius: 12px;
             padding: 1rem;
-            margin: 1rem 0 1.5rem;
+            margin: 0.75rem 0 1.25rem;
             overflow: hidden;
         }
 
@@ -232,21 +294,21 @@
         @media (max-width: 768px) {
             .scroll-hint { display: block; }
             .hero-banner { padding: 1.5rem 1.25rem; }
-            .hero-banner h1 { font-size: 1.5em; }
-            .quick-facts .fact { min-width: 90px; padding: 8px 12px; }
+            .hero-banner h1 { font-size: 1.45em; }
+            .quick-facts .fact { min-width: 85px; padding: 8px 10px; }
+            .toc-btn { display: flex; }
+            section.sec-grey { margin: 0.5rem -0.25rem; padding: 0.5rem 1rem 1rem; }
+        }
+        @media (min-width: 769px) {
+            .toc-btn { display: flex; }
         }
 
-        /* Additional considerations styling */
-        .considerations-section {
-            background: #f9fafb;
-            border-radius: 10px;
-            padding: 1.5rem;
-            margin: 1rem 0;
-        }
-        .considerations-section p {
-            font-size: 0.95em;
-            line-height: 1.65;
-            color: #444;
+        /* Page disclosure / methodology */
+        .page-disclosure {
+            font-size: 0.85em;
+            color: #667085;
+            line-height: 1.55;
+            margin-top: 10px;
         }
     </style>
 </head>
@@ -254,6 +316,20 @@
 <body>
     <div class="container-fluid">
         <a href="#" id="return-to-top"><i class="fas fa-chevron-up"></i></a>
+        <button class="toc-btn" id="toggle-toc" title="Table of Contents">TOC</button>
+        <div class="toc-panel" id="toc-panel">
+            <a href="#bottom-line">Bottom Line</a>
+            <a href="#position">Market Position</a>
+            <a href="#price">Price / Yield</a>
+            <a href="#business">Business Overview</a>
+            <a href="#dividend">Dividend Analysis</a>
+            <a href="#chart">Price Chart</a>
+            <a href="#compare">Comparative Analysis</a>
+            <a href="#news">News</a>
+            <a href="#verdict">Final Verdict</a>
+            <a href="#financials">Financials</a>
+            <a href="#technicals">Technicals</a>
+        </div>
         <div class="row sticky-top">
             <div class="col">
                 <div class="row bg-white">
@@ -272,7 +348,7 @@
             <div class="col container-1280">
 
                 <!-- Hero Banner -->
-                <section style="border-bottom:none; background:transparent;">
+                <section style="border:none; background:transparent; padding:0; margin:0;">
                     <div class="hero-banner">
                         <span class="ticker-badge">NYSE: O</span>
                         <h1>Realty Income Corporation (O) &mdash; Dividend Analysis</h1>
@@ -303,14 +379,15 @@
                 </section>
 
                 <!-- Bottom Line -->
-                <section id="bottom-line">
+                <section id="bottom-line" class="sec-grey">
                     <h2 class="o-section-title">The Bottom Line Up Front</h2>
                     <div class="overview-card">
                         <p><strong>Quick take:</strong> Realty Income is a monthly-paying net-lease REIT built for investors who value dependable income, slower-and-steady business economics, and real estate exposure without owning property directly. It is much more about income durability and portfolio stability than explosive upside.</p>
-                        <p><strong>Best for:</strong> income-focused investors, dividend-oriented retirees, and people who want listed real-estate exposure with a long operating history.<br>
+                        <p style="margin-top:0.6rem;"><strong>Best for:</strong> income-focused investors, dividend-oriented retirees, and people who want listed real-estate exposure with a long operating history.<br>
                             <strong>Not ideal for:</strong> investors chasing rapid capital appreciation or those who want businesses insulated from interest-rate pressure.<br>
                             <strong>Main tradeoff:</strong> you get consistency and a strong dividend identity, but you accept rate sensitivity and more limited upside than fast-growing equities.</p>
                     </div>
+                    <p class="page-disclosure">This content is for informational and educational purposes only and is not personalized investment advice.</p>
                 </section>
 
                 <!-- Market Position -->
@@ -351,7 +428,7 @@
                 </section>
 
                 <!-- Business Overview -->
-                <section id="business">
+                <section id="business" class="sec-grey">
                     <h2 class="o-section-title">What Realty Income Is — and Why It Matters</h2>
                     <div class="overview-cards">
                         <div class="overview-card">
@@ -427,7 +504,7 @@
                 </section>
 
                 <!-- Comparative Analysis -->
-                <section id="compare" class="compare-section">
+                <section id="compare" class="compare-section sec-grey">
                     <h2 class="o-section-title">Comparative Analysis</h2>
                     <div class="overview-cards">
                         <div class="overview-card">
@@ -479,7 +556,7 @@
                             </script>
                     </div>
                 </section>
-                <section id="verdict">
+                <section id="verdict" class="sec-grey">
                     <h2 class="o-section-title">Final Verdict</h2>
                     <div class="overview-card">
                         <p>Realty Income is most attractive for investors who want dependable income, listed real-estate exposure, and a business model that is relatively easy to understand. It is not the stock to buy if your main goal is aggressive upside or rapid compounding, but it remains a credible choice for an income-focused portfolio sleeve.</p>
@@ -567,6 +644,16 @@
             mybutton.click(function () {
                 $('html, body').animate({ scrollTop: 0 }, 'slow');
                 return false;
+            });
+
+            // TOC toggle
+            var tocBtn = $('#toggle-toc');
+            var tocPanel = $('#toc-panel');
+            tocBtn.click(function () {
+                tocPanel.toggle();
+            });
+            tocPanel.find('a').click(function () {
+                tocPanel.hide();
             });
         });
     </script>
