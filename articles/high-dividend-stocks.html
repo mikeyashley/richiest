@@ -26,60 +26,84 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="/styles/articleStyles.css">
     <style>
-        /* Hero section */
-        .article-hero {
-            padding: 2.5rem 0 1.5rem;
+        /* Hero section — BIL-aligned flat header */
+        .article-title-header {
+            padding: 2rem 0 1.25rem;
         }
 
-        .article-hero h1 {
+        .article-title-header h1 {
             font-size: 2.2rem;
             font-weight: 700;
             line-height: 1.25;
             color: #2c2e35;
-            margin-bottom: 1.25rem;
+            margin-bottom: 0.5rem;
             letter-spacing: -0.02em;
         }
 
+        .article-title-header .hero-sub {
+            font-size: 1.05rem;
+            color: #667085;
+            line-height: 1.5;
+            margin-bottom: 0;
+        }
+
         @media (max-width: 768px) {
-            .article-hero h1 {
+            .article-title-header h1 {
                 font-size: 1.6rem;
             }
         }
 
-        /* Author byline */
-        .author-byline {
+        /* Trust box — BIL-style author card */
+        .trust-box {
             display: flex;
-            align-items: center;
-            gap: 0.75rem;
-            padding: 0.75rem 0;
-            border-top: 1px solid #e8e8e8;
-            border-bottom: 1px solid #e8e8e8;
+            gap: 16px;
+            align-items: flex-start;
+            padding: 18px;
+            background: #ffffff;
+            border: 1px solid #e4e7ec;
+            border-radius: 12px;
+            margin-bottom: 18px;
         }
 
-        .author-byline .author-image {
-            width: 48px;
-            height: 48px;
+        .trust-box .author-image {
+            margin-top: 0;
+            margin-bottom: 0;
+            width: 72px;
+            min-width: 72px;
+            height: 72px;
             border-radius: 50%;
             object-fit: cover;
-            margin: 0;
-            border: 2px solid #D6E0F0;
         }
 
-        .author-byline .author-info {
-            display: flex;
-            flex-direction: column;
-            line-height: 1.3;
-        }
-
-        .author-byline .author-name {
+        .trust-box .author-name {
             font-weight: 700;
             color: #2c2e35;
             font-size: 0.95rem;
         }
 
-        .author-byline .author-role {
-            font-size: 0.82rem;
-            color: #6c757d;
+        .trust-box .author-name a {
+            color: #2c2e35;
+            text-decoration: none;
+        }
+
+        .trust-box .author-name a:hover {
+            text-decoration: underline;
+        }
+
+        .author-cred,
+        .trust-meta {
+            font-family: 'Roboto', sans-serif;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: #667085;
+        }
+
+        .author-cred {
+            margin-bottom: 0.25rem;
+        }
+
+        .trust-meta {
+            margin-bottom: 0;
         }
 
         /* Section styling overrides — BIL-aligned */
@@ -145,7 +169,88 @@
             margin-right: 0.5rem;
         }
 
-        /* TOC nav — matches BIL default nav styling */
+        /* Floating TOC — BIL-style button + panel */
+        .button-fixed-bottom {
+            position: fixed;
+            bottom: 20px;
+            background: #343a40;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            border-radius: 10px;
+            z-index: 1000;
+            border: 2px solid white;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            cursor: pointer;
+        }
+
+        .button-fixed-bottom:visited,
+        .button-fixed-bottom:hover {
+            color: white;
+            background-color: #4A4D57;
+        }
+
+        .toc-button {
+            left: 10px;
+        }
+
+        #return-to-top {
+            right: 10px;
+            left: auto;
+            position: fixed;
+            bottom: 20px;
+        }
+
+        .fixed-toc {
+            position: fixed;
+            bottom: 70px;
+            left: 10px;
+            background-color: #343a40;
+            color: white;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            display: none;
+            width: 260px;
+            max-height: 70vh;
+            overflow-y: auto;
+            z-index: 999;
+            transition: width 0.3s ease, opacity 0.3s ease;
+            opacity: 0;
+        }
+
+        .fixed-toc.show {
+            opacity: 1;
+        }
+
+        .toc-menu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .toc-menu li {
+            padding: 5px 0;
+        }
+
+        .toc-menu a {
+            color: #d0d5dd;
+            text-decoration: none;
+            font-size: 0.95em;
+            display: block;
+            padding: 5px;
+            border-radius: 5px;
+            transition: background-color 0.2s ease, color 0.2s ease;
+        }
+
+        .toc-menu a:hover {
+            background-color: #4A4D57;
+            color: white;
+            text-decoration: none;
+        }
 
         /* Lists polish */
         section ul, section ol {
@@ -161,69 +266,45 @@
 
 <body>
     <div class="container-fluid">
-        <a href="#" id="return-to-top"><i class="fas fa-chevron-up"></i></a>
+        <button id="toggle-toc" class="btn button-fixed-bottom toc-button">TOC</button>
+        <button id="return-to-top" class="btn button-fixed-bottom"><i class="fas fa-chevron-up"></i></button>
+        <div class="container fixed-toc" id="toc-list">
+            <div class="article-nav"></div>
+        </div>
         <div class="row sticky-top">
             <div class="col">
-                <div class="row bg-white">
+                <div class="row bg-white border-bottom border-dark">
                     <div class="col container-1280">
                         <div class="shared-nav">
                             <!-- This is where the shared nav will be loaded -->
                         </div>
                     </div>
                 </div>
-                <div class="row bg-dark">
-                    <div class="col container-1280">
-                        <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
-                            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
-                                data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
-                                aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                                <ul class="navbar-nav ml-auto d-flex">
-                                    <li class="nav-item w-100 pl-0"><a class="nav-link pl-0"
-                                            href="#introduction">Introduction</a>
-                                    </li>
-                                    <li class="nav-item w-100"><a class="nav-link" href="#what">Dividend Stocks &amp; Why They Matter</a></li>
-                                    <li class="nav-item w-100"><a class="nav-link" href="#how">Identifying the Best Dividend Stocks</a></li>
-                                    <li class="nav-item w-100"><a class="nav-link" href="#which">High Yield Sectors</a></li>
-                                    <li class="nav-item w-100"><a class="nav-link" href="#should">Dividend Kings</a></li>
-                                    <li class="nav-item w-100"><a class="nav-link" href="#how-to-build">Building a Diversified Portfolio</a></li>
-                                    <li class="nav-item w-100"><a class="nav-link" href="#what-changes">2024 Dividend Outlook</a></li>
-                                    <li class="nav-item w-100"><a class="nav-link" href="#exploring">Additional Strategies</a></li>
-                                    <li class="nav-item w-100"><a class="nav-link" href="#conclusion">Conclusion</a></li>
-                                    <li class="nav-item w-100"><a class="nav-link" href="#faqs">FAQs</a></li>
-                                </ul>
-                        </nav>
-                    </div>
-                </div>
             </div>
         </div>
 
-        <!-- Hero Section -->
-        <div class="row">
-            <div class="col container-1280 bg-light">
-                <div class="article-hero">
-                    <div class="row">
-                        <div class="col-lg-9">
-                            <h1>2024 Top High Dividend Stocks List: The Best Dividend Stocks with High Yields</h1>
-                            <div class="author-byline">
-                                <img src="https://firebasestorage.googleapis.com/v0/b/makemoney-2eb29.appspot.com/o/AI%2Fauthor_MichaelAshley.jpg?alt=media&token=b98d7e8f-db82-4993-b39e-a5dc80cc7857"
-                                    alt="Michael D Ashley" class="author-image">
-                                <div class="author-info">
-                                    <span class="author-name">Michael D Ashley</span>
-                                    <span class="author-role">Richiest.com</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <!-- Hero Section — BIL-style flat header -->
+        <div class="article-title-header">
+            <div class="container container-1280">
+                <h1>2024 Top High Dividend Stocks List: The Best Dividend Stocks with High Yields</h1>
+                <p class="hero-sub">A guide to finding reliable dividend income — what to look for, which sectors pay the most, and how to build a portfolio around high-yield stocks.</p>
             </div>
         </div>
 
         <!-- Article Content -->
         <div class="row">
             <div class="col container-1280">
+                <section style="padding-top: 16px; padding-bottom: 16px; border-top: none;">
+                    <div class="trust-box">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/makemoney-2eb29.appspot.com/o/AI%2Fauthor_MichaelAshley.jpg?alt=media&token=b98d7e8f-db82-4993-b39e-a5dc80cc7857"
+                            alt="Michael D Ashley" class="author-image rounded">
+                        <div>
+                            <span class="author-name">By <a href="/about.html">Michael D Ashley</a></span>
+                            <p class="author-cred">Banking and asset-management professional with 20+ years of experience across retail banking, commercial banking, investment banking, and performance reporting.</p>
+                            <p class="trust-meta"><strong>Last updated:</strong> March 26, 2026</p>
+                        </div>
+                    </div>
+                </section>
 
                 <section id="introduction">
                     <h2>Introduction to High Dividend Stocks</h2>
@@ -622,19 +703,57 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
+        // TOC generation — BIL-style
+        function generateTOC() {
+            var tocList = $('#toc-list .article-nav');
+            tocList.empty();
+            var ul = $('<ul></ul>').addClass('toc-menu');
+            var mainContent = $('.container-1280');
+
+            mainContent.find('section').each(function () {
+                var sectionId = $(this).attr('id');
+                var h2 = $(this).find('h2:first');
+                if (sectionId && h2.length > 0) {
+                    var li = $('<li></li>');
+                    var a = $('<a></a>').attr('href', '#' + sectionId).text(h2.text());
+                    li.append(a);
+                    ul.append(li);
+                }
+            });
+            tocList.append(ul);
+        }
+
         $(function () {
-            $(".shared-nav").load("/shared/nav.html");
+            $(".shared-nav").load("/shared/nav.html", function () {
+                generateTOC();
+            });
             $(".shared-subscribe").load("/shared/subscribe.html");
             $(".shared-articles").load("/shared/articleGroup1.html");
             $(".shared-footer").load("/shared/footer.html");
-        }); $(document).ready(function () {
-            var mybutton = $('#return-to-top'); $(window).scroll(function () {
-                if ($(this).scrollTop() > 20) {
+
+            generateTOC();
+
+            // Toggle TOC — BIL-style
+            $("#toggle-toc").click(function () {
+                var fixedToc = $(".fixed-toc");
+                fixedToc.toggle();
+                if (fixedToc.is(":visible")) {
+                    fixedToc.addClass("show");
+                } else {
+                    fixedToc.removeClass("show");
+                }
+            });
+
+            // Scroll to top
+            var mybutton = $('#return-to-top');
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 100) {
                     mybutton.fadeIn();
                 } else {
                     mybutton.fadeOut();
                 }
-            }); mybutton.click(function () {
+            });
+            mybutton.click(function () {
                 $('html, body').animate({ scrollTop: 0 }, 'slow');
                 return false;
             });
