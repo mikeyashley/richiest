@@ -73,25 +73,23 @@
 
         .author-byline .author-name {
             font-weight: 700;
-            color: #fff;
+            color: #2c2e35;
             font-size: 0.95rem;
         }
 
         .author-byline .author-role {
             font-size: 0.82rem;
-            color: #D6E0F0;
+            color: #6c757d;
         }
 
-        /* Section styling overrides */
+        /* Section styling overrides — BIL-aligned */
         section {
-            border-top: none;
-            border-bottom: 1px solid #e8e8e8;
+            border-top: 1px solid #8D93AB;
             padding: 2rem 0.5rem;
-            background-color: transparent !important;
         }
 
-        section:last-of-type {
-            border-bottom: none;
+        section:nth-child(even) {
+            background-color: #f5f5f5;
         }
 
         section h2 {
@@ -99,9 +97,6 @@
             font-weight: 700;
             color: #2c2e35;
             margin-bottom: 1.2rem;
-            padding-bottom: 0.5rem;
-            border-bottom: 3px solid #D6E0F0;
-            display: inline-block;
         }
 
         section h3 {
@@ -117,11 +112,10 @@
             line-height: 1.75;
         }
 
-        /* Section images */
+        /* Section images — clean, BIL-aligned */
         section .section-img {
-            border-radius: 10px;
-            margin: 1rem 0 1.5rem;
-            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+            border-radius: 4px;
+            margin: 0.75rem 0 1.25rem;
             max-height: 400px;
             object-fit: cover;
             width: 100%;
@@ -138,7 +132,7 @@
             counter-increment: stock-counter;
             padding: 0.65rem 0.75rem;
             margin-bottom: 0.35rem;
-            border-radius: 6px;
+            border-radius: 3px;
             background: #f8f9fb;
             border-left: 3px solid #8D93AB;
             font-size: 0.95rem;
@@ -151,35 +145,7 @@
             margin-right: 0.5rem;
         }
 
-        /* TOC nav */
-        .toc-nav .navbar-nav {
-            flex-wrap: wrap;
-            gap: 0.15rem 0;
-        }
-
-        .toc-nav .nav-link {
-            font-size: 0.82rem;
-            padding: 0.35rem 0.75rem;
-            opacity: 0.85;
-            transition: opacity 0.15s;
-        }
-
-        .toc-nav .nav-link:hover {
-            opacity: 1;
-            text-decoration: underline;
-        }
-
-        /* FAQs */
-        #faqs h3 {
-            margin-top: 1.75rem;
-            padding-top: 1rem;
-            border-top: 1px solid #eee;
-        }
-
-        #faqs h3:first-of-type {
-            border-top: none;
-            padding-top: 0;
-        }
+        /* TOC nav — matches BIL default nav styling */
 
         /* Lists polish */
         section ul, section ol {
@@ -189,19 +155,6 @@
         section ul li, section ol li {
             line-height: 1.65;
             color: #444;
-        }
-
-        /* Links */
-        section a {
-            color: #3a6ea5;
-            text-decoration: underline;
-            text-decoration-color: #D6E0F0;
-            text-underline-offset: 2px;
-            transition: text-decoration-color 0.15s;
-        }
-
-        section a:hover {
-            text-decoration-color: #3a6ea5;
         }
     </style>
 </head>
@@ -220,7 +173,7 @@
                 </div>
                 <div class="row bg-dark">
                     <div class="col container-1280">
-                        <nav class="navbar navbar-expand-lg navbar-dark bg-dark toc-nav">
+                        <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
                             <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
                                 data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
                                 aria-expanded="false" aria-label="Toggle navigation">
@@ -591,7 +544,7 @@
                 </section>
 
                 <section id="faqs">
-                    <h2>Frequently Asked Questions</h2>
+                    <h2>FAQs</h2>
 
                     <h3>What are High Dividend Stocks?</h3>
                     <p><strong>High dividend stocks</strong> are shares in companies that distribute a significant
