@@ -477,6 +477,12 @@ section {
   padding: 0.75rem 0 1.25rem;
 }
 
+@media (min-width: 768px) {
+  .soft-card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 .soft-card {
   background: #fff;
   border: 1px solid var(--etf-line);
@@ -556,5 +562,33 @@ section {
 
 .compare-section table {
   border-spacing: 6px;
+}
+
+/* ---------- Section heading rhythm ---------- */
+/* Used on stock/dividend pages that share richiest-etf.css */
+.o-section-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(1.2rem, 2.5vw, 1.55rem);
+  font-weight: 700;
+  color: var(--etf-ink);
+  margin: 0 0 0.75rem;
+  padding: 0;
+  line-height: 1.25;
+}
+
+/* Compact hero-table section directly below the title header */
+.trust-section-tight {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+/* Disclosure line used below bottom-line boxes */
+.page-disclosure {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.82rem;
+  line-height: 1.5;
+  color: var(--etf-muted);
+  padding: 0;
+  margin-top: 8px;
 }
 
