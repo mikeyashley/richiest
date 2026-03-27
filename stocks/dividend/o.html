@@ -25,306 +25,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="/styles/stockStyles.css">
-    <style>
-        /* Page-scoped design enhancements */
-        .hero-banner {
-            background: linear-gradient(135deg, #393B44 0%, #5a5d6e 100%);
-            color: #fff;
-            border-radius: 12px;
-            padding: 2.5rem 2rem 2rem;
-            margin: 1.5rem 0 0;
-            position: relative;
-            overflow: hidden;
-        }
-        .hero-banner::after {
-            content: '';
-            position: absolute;
-            top: -40px;
-            right: -40px;
-            width: 200px;
-            height: 200px;
-            background: rgba(255,255,255,0.04);
-            border-radius: 50%;
-        }
-        .hero-banner h1 {
-            font-size: 1.85em;
-            padding: 0;
-            margin: 0 0 0.45rem;
-            color: #fff;
-            line-height: 1.25;
-        }
-        .hero-banner a,
-        .hero-banner a:hover,
-        .hero-banner a:focus {
-            color: #fff;
-        }
-        .hero-banner .hero-sub {
-            font-size: 1.02em;
-            color: rgba(255,255,255,0.72);
-            margin: 0;
-            padding: 0;
-            line-height: 1.5;
-        }
-        .ticker-badge {
-            display: inline-block;
-            background: rgba(255,255,255,0.13);
-            color: #fff;
-            font-weight: 700;
-            font-size: 0.8em;
-            letter-spacing: 1.2px;
-            padding: 4px 14px;
-            border-radius: 6px;
-            margin-bottom: 0.7rem;
-        }
-        .quick-facts {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-top: 1.25rem;
-        }
-        .quick-facts .fact {
-            background: rgba(255,255,255,0.09);
-            border-radius: 8px;
-            padding: 9px 16px;
-            text-align: center;
-            min-width: 110px;
-            flex: 1;
-        }
-        .quick-facts .fact-label {
-            font-size: 0.68em;
-            text-transform: uppercase;
-            letter-spacing: 0.8px;
-            color: rgba(255,255,255,0.55);
-            margin-bottom: 2px;
-        }
-        .quick-facts .fact-value {
-            font-size: 1.05em;
-            font-weight: 700;
-        }
-
-        /* TOC toggle (BIL-style) */
-        .toc-btn {
-            position: fixed;
-            bottom: 70px;
-            right: 20px;
-            z-index: 1050;
-            background: #393B44;
-            color: #fff;
-            border: none;
-            border-radius: 50%;
-            width: 44px;
-            height: 44px;
-            font-size: 0.75em;
-            font-weight: 700;
-            letter-spacing: 0.5px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.18);
-            cursor: pointer;
-            display: none;
-            align-items: center;
-            justify-content: center;
-            transition: opacity 0.2s;
-        }
-        .toc-btn:hover { opacity: 0.85; }
-        .toc-panel {
-            display: none;
-            position: fixed;
-            bottom: 120px;
-            right: 20px;
-            z-index: 1049;
-            background: #fff;
-            border: 1px solid #e4e7ec;
-            border-radius: 12px;
-            box-shadow: 0 6px 24px rgba(0,0,0,0.12);
-            padding: 16px 20px;
-            min-width: 220px;
-            max-width: 280px;
-        }
-        .toc-panel a {
-            display: block;
-            padding: 5px 0;
-            font-size: 0.88em;
-            color: #393B44;
-            text-decoration: none;
-            border-bottom: 1px solid #f0f0f0;
-        }
-        .toc-panel a:last-child { border-bottom: none; }
-        .toc-panel a:hover { color: #8D93AB; }
-
-        /* Section header refinements */
-        .o-section-title {
-            font-size: 1.35em;
-            font-weight: 700;
-            padding-top: 2.25rem;
-            padding-bottom: 0.3rem;
-            margin-bottom: 0.4rem;
-            border-bottom: 2px solid #D6E0F0;
-            display: inline-block;
-            color: #2c2e36;
-        }
-        .summary-box {
-            border-left: none;
-            background: #fff;
-            border: 1px solid #e2e5ea;
-            border-radius: 12px;
-            padding: 1.5rem;
-        }
-
-        /* Alternating section backgrounds */
-        section.sec-grey {
-            background: #f9fafb;
-            border-radius: 12px;
-            padding: 0.5rem 1.25rem 1.25rem;
-            margin: 0.75rem -0.5rem;
-        }
-
-        /* Card-style overview items */
-        .overview-cards {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 1rem;
-            padding: 0.75rem 0 1.25rem;
-        }
-        .overview-card {
-            background: #fff;
-            border: 1px solid #e4e7ec;
-            border-radius: 12px;
-            padding: 1.4rem 1.5rem;
-            transition: box-shadow 0.2s;
-        }
-        .overview-card:hover {
-            box-shadow: 0 4px 16px rgba(0,0,0,0.06);
-        }
-        .overview-card h3 {
-            font-size: 1.05em;
-            font-weight: 700;
-            color: #393B44;
-            margin: 0 0 0.55rem;
-            padding-bottom: 0.35rem;
-            border-bottom: 2px solid #D6E0F0;
-        }
-        .overview-card h3 a,
-        .dividend-item h3 a,
-        .table-container a {
-            color: #393B44;
-            text-decoration: underline;
-            text-decoration-color: #8D93AB;
-            text-underline-offset: 2px;
-        }
-        .overview-card h3 a:hover,
-        .dividend-item h3 a:hover,
-        .table-container a:hover {
-            color: #1f2430;
-        }
-        .overview-card p,
-        .overview-card ul {
-            padding: 0;
-            margin: 0;
-            font-size: 0.93em;
-            line-height: 1.65;
-            color: #444;
-        }
-        .overview-card ul {
-            padding-left: 1.2rem;
-        }
-        .overview-card ul li {
-            padding-top: 5px;
-        }
-
-        /* Standalone card used outside .overview-cards (bottom-line, verdict) */
-        section > .overview-card:only-child {
-            margin-top: 0.75rem;
-        }
-
-        /* Dividend data as horizontal cards */
-        .dividend-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 1rem;
-            padding: 0.75rem 0 1.25rem;
-        }
-        .dividend-item {
-            background: #fff;
-            border: 1px solid #e4e7ec;
-            border-left: 4px solid #8D93AB;
-            border-radius: 12px;
-            padding: 1.2rem 1.4rem;
-        }
-        .dividend-item h3 {
-            font-size: 0.98em;
-            font-weight: 700;
-            color: #393B44;
-            margin: 0 0 0.45rem;
-        }
-        .dividend-item h3 a {
-            color: #393B44;
-            text-decoration: underline;
-        }
-        .dividend-item p {
-            padding: 0;
-            margin: 0;
-            font-size: 0.9em;
-            line-height: 1.6;
-            color: #555;
-        }
-
-        /* Chart wrapper */
-        .chart-wrapper {
-            background: #fafafa;
-            border: 1px solid #e4e7ec;
-            border-radius: 12px;
-            padding: 1rem;
-            margin: 0.75rem 0 1.25rem;
-            overflow: hidden;
-        }
-
-        /* Comparison table polish */
-        .compare-section table {
-            border-spacing: 6px;
-        }
-
-        /* Scroll indicator modernized */
-        .scroll-hint {
-            display: none;
-            font-size: 0.75em;
-            color: #8D93AB;
-            padding: 8px 0 0;
-            letter-spacing: 0.5px;
-        }
-        .scroll-hint i {
-            margin-left: 4px;
-            animation: nudge 1.5s ease-in-out infinite;
-        }
-        @keyframes nudge {
-            0%, 100% { transform: translateX(0); }
-            50% { transform: translateX(5px); }
-        }
-        @media (max-width: 768px) {
-            .scroll-hint { display: block; }
-            .hero-banner { padding: 1.5rem 1.25rem; }
-            .hero-banner h1 { font-size: 1.45em; }
-            .quick-facts .fact { min-width: 85px; padding: 8px 10px; }
-            .toc-btn { display: flex; }
-            section.sec-grey { margin: 0.5rem -0.25rem; padding: 0.5rem 1rem 1rem; }
-        }
-        @media (min-width: 769px) {
-            .toc-btn { display: flex; }
-        }
-
-        /* Page disclosure / methodology */
-        .page-disclosure {
-            font-size: 0.85em;
-            color: #667085;
-            line-height: 1.55;
-            margin-top: 10px;
-        }
-    </style>
+    <link rel="stylesheet" href="/styles/richiest-etf.css">
 </head>
 
 <body>
     <div class="container-fluid">
-        <a href="#" id="return-to-top"><i class="fas fa-chevron-up"></i></a>
-        <button class="toc-btn" id="toggle-toc" title="Table of Contents">TOC</button>
-        <div class="toc-panel" id="toc-panel">
+        <button id="toggle-toc" class="btn button-fixed-bottom toc-button">TOC</button>
+        <button id="return-to-top" class="btn button-fixed-bottom up-arrow"><i class="fas fa-chevron-up"></i></button>
+        <div class="container fixed-toc" id="toc-panel">
             <a href="#bottom-line">Bottom Line</a>
             <a href="#position">Market Position</a>
             <a href="#price">Price / Yield</a>
@@ -353,39 +61,41 @@
         <div class="row">
             <div class="col container-1280">
 
-                <!-- Hero Banner -->
-                <section style="border:none; background:transparent; padding:0; margin:0;">
-                    <div class="hero-banner">
-                        <span class="ticker-badge">NYSE: O</span>
-                        <h1>Realty Income (O): A Monthly Dividend REIT Built for Income, Not Excitement</h1>
-                        <p class="hero-sub">A clearer look at what Realty Income actually offers, where it fits in a portfolio, and why the tradeoff is stability over upside.</p>
-                        <div class="quick-facts">
-                            <div class="fact">
-                                <div class="fact-label">Sector</div>
-                                <div class="fact-value">Real Estate</div>
-                            </div>
-                            <div class="fact">
-                                <div class="fact-label">Industry</div>
-                                <div class="fact-value">REIT &ndash; Retail</div>
-                            </div>
-                            <div class="fact">
-                                <div class="fact-label">Dividend Freq.</div>
-                                <div class="fact-value">Monthly</div>
-                            </div>
-                            <div class="fact">
-                                <div class="fact-label">Strategy</div>
-                                <div class="fact-value">Income</div>
-                            </div>
-                            <div class="fact">
-                                <div class="fact-label">Focus</div>
-                                <div class="fact-value">U.S.</div>
-                            </div>
-                        </div>
+                <div class="etf-title-header">
+                    <div class="container container-1000">
+                        <p class="etf-hero-eyebrow">Dividend Stocks</p>
+                        <h1 class="etf-hero-h1">Realty Income (O): A Monthly Dividend REIT Built for Income, Not Excitement</h1>
+                        <p class="etf-hero-sub">A clearer look at what Realty Income actually offers, where it fits in a portfolio, and why the tradeoff is stability over upside.</p>
+                    </div>
+                </div>
+
+                <section class="section-white trust-section-tight">
+                    <div class="table-container">
+                        <table class="etf-table">
+                            <thead>
+                                <tr>
+                                    <th>Exchange</th>
+                                    <th>Sector</th>
+                                    <th>Industry</th>
+                                    <th>Dividend Frequency</th>
+                                    <th>Portfolio Role</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>NYSE: O</td>
+                                    <td>Real Estate</td>
+                                    <td>REIT - Retail</td>
+                                    <td>Monthly</td>
+                                    <td>Income</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </section>
 
                 <!-- Bottom Line -->
-                <section id="bottom-line" class="sec-grey">
+                <section id="bottom-line" class="section-grey">
                     <div class="summary-box">
                         <h2>The Bottom Line Up Front</h2>
                         <p><strong>Quick take:</strong> Realty Income is the kind of stock investors buy when they want dependable income, a calmer business model, and real-estate exposure that behaves more like an income asset than a growth story.</p>
@@ -422,26 +132,26 @@
                 </section>
 
                 <!-- Business Overview -->
-                <section id="business" class="sec-grey">
+                <section id="business" class="section-grey">
                     <h2 class="o-section-title">What Realty Income Is — and Why It Matters</h2>
                     <div class="overview-cards">
                         <div class="overview-card">
-                            <h3><i class="fas fa-building" style="color:#8D93AB; margin-right:6px;"></i> What It Actually Is</h3>
+                            <h3><i class="fas fa-building"></i> What It Actually Is</h3>
                             <p>Realty Income is a net-lease REIT, which means the business is built around owning properties and collecting rent under long-term lease structures that are designed to keep cash flow relatively steady. That is important because the stock should be judged less like a fast-growing operating company and more like a publicly traded income engine tied to real estate.</p>
                         </div>
 
                         <div class="overview-card">
-                            <h3><i class="fas fa-cogs" style="color:#8D93AB; margin-right:6px;"></i> Why That Matters</h3>
+                            <h3><i class="fas fa-cogs"></i> Why That Matters</h3>
                             <p>People buy O because they want reliability more than excitement. The stock has a cleaner narrative than many other yield names: recurring rent, monthly dividends, and a business model that feels tangible. That combination makes it attractive to investors who want a stock that can play an income role without becoming a constant source of drama.</p>
                         </div>
 
                         <div class="overview-card">
-                            <h3><i class="fas fa-shield-alt" style="color:#8D93AB; margin-right:6px;"></i> The Real Tradeoff</h3>
+                            <h3><i class="fas fa-shield-alt"></i> The Real Tradeoff</h3>
                             <p>The same qualities that make Realty Income appealing can also make it frustrating. It often looks strongest when investors want safety and income, but it can feel stagnant when markets reward growth or when rates move against REIT valuations. O is easier to respect than to get excited about—which is exactly why some investors love it and others get bored.</p>
                         </div>
 
                         <div class="overview-card">
-                            <h3><i class="fas fa-lightbulb" style="color:#8D93AB; margin-right:6px;"></i> How To Think About It</h3>
+                            <h3><i class="fas fa-lightbulb"></i> How To Think About It</h3>
                             <p>The best way to frame Realty Income is as a portfolio role, not a story stock. If you need a high-quality income-oriented REIT with a well-understood purpose, it fits. If you are hoping one stock will give you yield, growth, and re-rating upside all at once, this usually will not be that stock.</p>
                         </div>
                     </div>
@@ -493,7 +203,7 @@
                 </section>
 
                 <!-- Comparative Analysis -->
-                <section id="compare" class="compare-section sec-grey">
+                <section id="compare" class="compare-section section-grey">
                     <h2 class="o-section-title">O vs. Other Net-Lease REITs</h2>
                     <div class="overview-cards">
                         <div class="overview-card">
@@ -527,7 +237,7 @@
         </div>
         <div class="row">
             <div class="col container-1280">
-                <section id="verdict" class="sec-grey">
+                <section id="verdict" class="section-grey">
                     <h2 class="o-section-title">Final Verdict</h2>
                     <div class="overview-card">
                         <p>Realty Income is most attractive for investors who want dependable income, listed real-estate exposure, and a business model that is relatively easy to understand. It is not the stock to buy if your main goal is aggressive upside or rapid compounding, but it remains a credible choice for an income-focused portfolio sleeve.</p>
