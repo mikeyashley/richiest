@@ -27,7 +27,7 @@
     }
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+      grid-template-columns: 1fr;
       gap: 18px;
     }
     .card {
@@ -55,7 +55,6 @@
     }
     @media (max-width: 768px) {
       body { padding: 14px; }
-      .grid { grid-template-columns: 1fr; }
       .chart { height: 360px; }
     }
   </style>
