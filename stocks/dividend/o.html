@@ -32,17 +32,8 @@
     <div class="container-fluid">
         <button id="toggle-toc" class="btn button-fixed-bottom toc-button">TOC</button>
         <button id="return-to-top" class="btn button-fixed-bottom up-arrow"><i class="fas fa-chevron-up"></i></button>
-        <div class="container fixed-toc" id="toc-panel">
-            <a href="#bottom-line">Bottom Line</a>
-            <a href="#position">Market Position</a>
-            <a href="#price">Price / Yield</a>
-            <a href="#business">Business Overview</a>
-            <a href="#dividend">Dividend Analysis</a>
-            <a href="#chart">Price Chart</a>
-            <a href="#compare">O vs. Other REITs</a>
-            <a href="#verdict">Final Verdict</a>
-            <a href="#financials">Financials</a>
-            <a href="#technicals">Technicals</a>
+        <div class="container fixed-toc" id="toc-list">
+            <div class="etf-nav"></div>
         </div>
         <div class="row sticky-top">
             <div class="col">
@@ -305,8 +296,32 @@
             $(".shared-footer").load("/shared/footer.html");
         });
 
+        function generateTOC() {
+            const tocList = $('#toc-list .etf-nav');
+            tocList.empty();
+            let ul = $('<ul></ul>').addClass('toc-menu');
+
+            const mainContentArea = $('.container-1280');
+
+            mainContentArea.find('section').each(function () {
+                const sectionId = $(this).attr('id');
+                const h2 = $(this).find('h2:first');
+
+                if (sectionId && h2.length > 0) {
+                    let title = h2.text();
+                    const li = $('<li></li>');
+                    const a = $('<a></a>').attr('href', '#' + sectionId).text(title);
+                    li.append(a);
+                    ul.append(li);
+                }
+            });
+            tocList.append(ul);
+        }
+
         $(document).ready(function () {
             $('.carousel').carousel();
+
+            generateTOC();
 
             var mybutton = $('#return-to-top');
 
@@ -323,14 +338,18 @@
                 return false;
             });
 
-            // TOC toggle
-            var tocBtn = $('#toggle-toc');
-            var tocPanel = $('#toc-panel');
-            tocBtn.click(function () {
-                tocPanel.toggle();
+            $('#toggle-toc').click(function () {
+                var fixedToc = $('.fixed-toc');
+                fixedToc.toggle();
+                if (fixedToc.is(':visible')) {
+                    fixedToc.addClass('show');
+                } else {
+                    fixedToc.removeClass('show');
+                }
             });
-            tocPanel.find('a').click(function () {
-                tocPanel.hide();
+
+            $('#toc-list').on('click', 'a', function () {
+                $('.fixed-toc').hide().removeClass('show');
             });
         });
     </script>
