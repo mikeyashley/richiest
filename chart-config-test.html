@@ -143,8 +143,11 @@
   <script src="https://s3.tradingview.com/tv.js"></script>
   <script>
     function makeChart(containerId, interval, style, transparent, hideToolbar, studies, overrides) {
+      const mobile = window.innerWidth <= 768;
       new TradingView.widget({
-        autosize: true,
+        autosize: false,
+        width: '100%',
+        height: mobile ? 360 : 420,
         symbol: 'AMEX:SPY',
         interval: interval,
         timezone: 'America/New_York',
