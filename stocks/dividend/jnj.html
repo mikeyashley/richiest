@@ -26,11 +26,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="/styles/stockStyles.css">
+    <link rel="stylesheet" href="/styles/richiest-etf.css">
 </head>
 
 <body>
     <div class="container-fluid">
-        <a href="#" id="return-to-top"><i class="fas fa-chevron-up"></i></a>
+        <button id="toggle-toc" class="btn button-fixed-bottom toc-button">TOC</button>
+        <button id="return-to-top" class="btn button-fixed-bottom up-arrow"><i class="fas fa-chevron-up"></i></button>
+        <div class="container fixed-toc" id="toc-list">
+            <div class="etf-nav"></div>
+        </div>
         <div class="row sticky-top">
             <div class="col">
                 <div class="row bg-white">
@@ -38,11 +43,7 @@
                         <div class="shared-nav"></div>
                     </div>
                 </div>
-                <div class="row dark-div">
-                    <div class="col container-1280">
-                        <div class="stock-nav"></div>
-                    </div>
-                </div>
+
             </div>
         </div>
         <div class="row">
