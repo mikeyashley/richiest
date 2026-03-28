@@ -22,14 +22,19 @@
     <!-- <link rel="canonical" href="https://richiest.com/stocks/dividend/aapl.html"> -->
     <!-- Include Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="/styles/stockStyles.css">
+    <link rel="stylesheet" href="/styles/richiest-etf.css">
 </head>
 
 <body>
     <div class="container-fluid">
-        <a href="#" id="return-to-top"><i class="fas fa-chevron-up"></i></a>
+        <button id="toggle-toc" class="btn button-fixed-bottom toc-button">TOC</button>
+        <button id="return-to-top" class="btn button-fixed-bottom up-arrow"><i class="fas fa-chevron-up"></i></button>
+        <div class="container fixed-toc" id="toc-list">
+            <div class="etf-nav"></div>
+        </div>
         <div class="row sticky-top">
             <div class="col">
                 <div class="row bg-white">
@@ -37,20 +42,17 @@
                         <div class="shared-nav"></div>
                     </div>
                 </div>
-                <div class="row dark-div">
-                    <div class="col container-1280">
-                        <div class="stock-nav"></div>
-                    </div>
-                </div>
+
             </div>
         </div>
         <div class="row">
             <div class="col container-1280">
+
                 <div class="etf-title-header">
                     <div class="container container-1000">
                         <p class="etf-hero-eyebrow">Dividend Stocks</p>
-                        <h1 class="etf-hero-h1">Apple (AAPL): A Tech Giant With a Modest Dividend and Massive Growth</h1>
-                        <p class="etf-hero-sub">A clearer look at what Apple actually offers, where it fits in a portfolio, and why the tradeoff is growth potential over high yield.</p>
+                        <h1 class="etf-hero-h1">Apple (AAPL): A Tech Giant With a Modest Dividend and a Quality-First Role</h1>
+                        <p class="etf-hero-sub">A clearer look at what Apple actually offers, where it fits in a portfolio, and why the tradeoff is quality and durability over high yield.</p>
                     </div>
                 </div>
 
@@ -78,37 +80,41 @@
                         </table>
                     </div>
                 </section>
+
                 <!-- Bottom Line -->
                 <section id="bottom-line" class="section-grey">
                     <div class="summary-box">
-                        <h2>Richiest’s Read</h2>
-                        <p><strong>Quick take:</strong> Apple is the kind of stock investors buy when they want exposure to one of the most dominant tech companies in the world, with a modest dividend and massive growth potential.</p>
+                        <h2>Richiest's Read</h2>
+                        <p><strong>Quick take:</strong> Apple is the kind of stock investors buy when they want exposure to one of the strongest businesses in the world, with a modest dividend and a quality-first role in a portfolio.</p>
                         <p><strong>Best for:</strong> growth-focused investors, tech portfolios, and people who want a high-quality tech giant they can understand.</p>
                         <p><strong>Not ideal for:</strong> investors chasing high dividend yield or deep value turnarounds.</p>
-                        <p><strong>Main tradeoff:</strong> you get growth potential and a quality business, but you give up high yield and take on tech sector risk.</p>
+                        <p><strong>Main tradeoff:</strong> you get a premium-quality business and durable cash generation, but you give up meaningful yield and accept valuation risk that can weigh on returns.</p>
                     </div>
                     <p class="page-disclosure">This content is for informational and educational purposes only and is not personalized investment advice.</p>
                 </section>
-                <section id="overview">
-                    <h2>Apple Inc - AAPL - Current Market Data</h2>
-                    <div class="chart">
-                        <script type="text/javascript"
-                            src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-info.js" async>
-                                {
-                                    "symbol": "NASDAQ:AAPL",
-                                        "width": "100%",
-                                            "locale": "en",
-                                                "colorTheme": "light",
-                                                    "isTransparent": false
-                                }
-                            </script>
-                    </div>
-                </section>
+
                 <!-- Why It Matters -->
                 <section id="position" class="section-white">
                     <h2 class="o-section-title">Why Investors Still Care About AAPL</h2>
                     <div class="soft-card">
                         <p>Apple has one of the clearest identities in the tech world: a dominant consumer electronics company with a powerful ecosystem and massive scale. That does not make it a dividend stock, but it does make it a quality tech holding with understandable upside.</p>
+                    </div>
+                </section>
+
+                <!-- Current Market Data -->
+                <section id="price" class="section-white">
+                    <h2 class="o-section-title">Price / Yield Snapshot</h2>
+                    <div class="chart-frame">
+                        <script type="text/javascript"
+                            src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-info.js" async>
+                                {
+                                    "symbol": "NASDAQ:AAPL",
+                                    "width": "100%",
+                                    "locale": "en",
+                                    "colorTheme": "light",
+                                    "isTransparent": true
+                                }
+                            </script>
                     </div>
                 </section>
 
@@ -160,149 +166,69 @@
                         </div>
                     </div>
                 </section>
-                <section id="chart">
-                    <h2>AAPL Chart</h2>
-                    <div class="chart w-100">
-                        <iframe frameBorder='0' scrolling='no' width='100%' height='550'
-                            src='https://api.stockdio.com/visualization/financial/charts/v1/PricesChange?app-key=56D3070574784B10A0F80C4ABA40E68C&symbol=AAPL&palette=Financial-Light&width=100%25&height=500px&showLogo=Title&positiveColor=8d93ab&negativeColor=8d93ab&periodsColor=393B44'>
-                        </iframe>
-                    </div>
 
-                    <!-- <h4 class="mt-3 m-0 p-0"> <strong>Final Recommmendation</strong></h4>
-                        <p> Apple offers a unique blend of dividend income and potential capital appreciation
-                            for
-                            long-term investors. While its low dividend yield may not be ideal for
-                            income-focused
-                            investors, its strong brand, healthy financials, and growth potential make it a
-                            compelling
-                            option for those seeking a balanced portfolio. However, investors should carefully
-                            consider
-                            the potential risks associated with macroeconomic vulnerability, geopolitical
-                            concerns,
-                            and
-                            valuation before making a decision. Diversifying your portfolio across different
-                            sectors
-                            and
-                            asset classes can further mitigate risk and maximize your overall returns.
-
-                        </p>
-
-                        <h2>Chart</h2> <iframe frameBorder='0' scrolling='no' width='100%' height='550'
-                            src='https://api.stockdio.com/visualization/financial/charts/v1/PricesChange?app-key=56D3070574784B10A0F80C4ABA40E68C&symbol=AAPL&palette=Financial-Light&width=100%25&height=500px&showLogo=Title&positiveColor=8d93ab&negativeColor=8d93ab&periodsColor=393B44'>
-                        </iframe> -->
-                </section>
-                <!-- <p class="bg-white px-2 py-4">
-                        <strong>Recommendation:</strong>
-                        Apple remains a solid long-term investment option
-                        for risk-tolerant investors seeking exposure to a growing, innovative tech giant.
-                        However, due to valuation concerns and economic uncertainties, a cautious approach
-                        and regular portfolio monitoring are recommended.
-                    </p> -->
-                <section id="compare">
-                    <h2 class="">AAPL Comparative Analysis</h2>
-                    <div class="mobile-indicator ml-1">
-                        --- scroll --->
-                    </div>
-                    <div class="table-container">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th> </th>
-                                    <th>Apple (AAPL)</th>
-                                    <th><a href="/stocks/dividend/msft.html">Microsoft (MSFT)</a></th>
-                                    <th>Alphabet (GOOG)</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <h3>Industry Focus</h3>
-                                    </td>
-                                    <td>Consumer hardware, software, and services</td>
-                                    <td>Enterprise software and cloud computing</td>
-                                    <td>Search, advertising, and AI</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <h3>Current Yield</h3>
-                                    </td>
-                                    <td><a href="https://www.bing.com/search?q=AAPL+current+yield">0.53%</a></td>
-                                    <td><a href="https://www.bing.com/search?q=MSFT+current+yield">0.74%</a></td>
-                                    <td><a href="https://www.bing.com/search?q=GOOG+current+yield">0.00%</a></td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <h3>Price-to-Earnings Ratio (P/E)</h3>
-                                    </td>
-                                    <td><a href="https://www.bing.com/search?q=AAPL+P/E+ratio">28.22</a></td>
-                                    <td><a href="https://www.bing.com/search?q=MSFT+P/E+ratio">37.09</a></td>
-                                    <td><a href="https://www.bing.com/search?q=GOOG+P/E+ratio">25.05</a></td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <h3>Investment Strategy</h3>
-                                    </td>
-                                    <td>Hardware innovation, brand loyalty, recurring revenue from services</td>
-                                    <td>Cloud-based subscription services, enterprise solutions</td>
-                                    <td>Growing advertising dominance, diversification into AI and autonomous vehicles
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
+                <!-- Price Chart -->
+                <section id="chart" class="section-white">
+                    <h2 class="o-section-title">Price Chart</h2>
+                    <div class="chart-frame">
+                        <script type="text/javascript"
+                            src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+                                {
+                                    "autosize": true,
+                                    "symbol": "NASDAQ:AAPL",
+                                    "interval": "3M",
+                                    "timezone": "America/New_York",
+                                    "theme": "light",
+                                    "style": "2",
+                                    "locale": "en",
+                                    "allow_symbol_change": false,
+                                    "calendar": false,
+                                    "support_host": "https://www.tradingview.com"
+                                }
+                            </script>
                     </div>
                 </section>
-                <!-- <div class="row pt-3 pb-5 m-0 p-0">
-                    <div class="col-md-6 col-sm-12 m-0 p-0">
-                        <div class="bg-white rounded h-100 p-3 m-0">
-                            <p><strong>What Sets Apple Apart:</strong></p>
-                            <ul>
-                                <li><strong>Iconic Brand & Ecosystem:</strong> Apple enjoys premium
-                                    brand
-                                    recognition
-                                    and a loyal user base, fostering recurring revenue through hardware
-                                    upgrades and
-                                    service subscriptions.</li>
-                                <li><strong>Innovation & Design:</strong> Apple is known for its
-                                    innovative
-                                    products
-                                    and
-                                    sleek designs, often creating new markets and setting industry
-                                    trends.
-                                </li>
-                                <li><strong>Strong Financials:</strong> Consistently delivers strong
-                                    revenue
-                                    and
-                                    profit
-                                    growth, boasting a healthy balance sheet with minimal debt.</li>
-                            </ul>
+
+                <!-- Comparative Analysis -->
+                <section id="compare" class="compare-section section-grey">
+                    <h2 class="o-section-title">AAPL vs. Other Tech Giants</h2>
+                    <div class="soft-card-grid">
+                        <div class="soft-card">
+                            <h3>AAPL vs. MSFT</h3>
+                            <p><strong>Microsoft (MSFT)</strong> is probably the closest direct peer. If you like the basic tech giant model but do not feel strongly attached to Apple's brand, MSFT is the most natural comparison. In practice, choosing AAPL often means choosing the more recognizable consumer electronics identity, while choosing MSFT can reflect comfort with a broader enterprise software and cloud approach.</p>
+                        </div>
+                        <div class="soft-card">
+                            <h3>AAPL vs. GOOG</h3>
+                            <p><strong>Alphabet (GOOG)</strong> is the cleaner "growth alternative" comparison. If AAPL is the dependable tech veteran, GOOG is often the name investors look at when they want a higher-growth feel with a bit more search/advertising energy. If you prefer maximum familiarity and the classic consumer electronics story, AAPL still has the cleaner narrative. If you want a newer-feeling growth tech alternative, GOOG is the more interesting comparison.</p>
+                        </div>
+                        <div class="soft-card">
+                            <h3>AAPL vs. AMZN</h3>
+                            <p><strong>Amazon (AMZN)</strong> is useful when the question is not just growth, but portfolio role. AAPL usually works better as the simple, core tech holding choice. AMZN can make sense if you want a broader e-commerce and cloud profile and are comfortable with a different mix of business exposure. If your goal is a straightforward tech holding anchor, AAPL is often the easier stock to justify.</p>
                         </div>
                     </div>
-                    <div class="col-md-6 col-sm-12 m-0 p-0">
-                        <div class="bg-white rounded h-100 p-3 m-0">
-                            <p><strong>Considerations:</strong></p>
-                            <ul>
-                                <li><strong>Limited High-Growth Potential:</strong> Compared to
-                                    Alphabet,
-                                    Apple's
-                                    growth
-                                    might be slower due to its mature product portfolio and reliance on
-                                    hardware
-                                    sales.
-                                </li>
-                                <li><strong>Valuation:</strong> Trades at a higher P/E ratio compared to
-                                    some
-                                    competitors, indicating a premium associated with its brand and
-                                    growth
-                                    potential.
-                                </li>
-                                <li><strong>Limited Dividend Yield:</strong> Offers a low yield,
-                                    focusing on
-                                    capital
-                                    appreciation rather than immediate income generation.</li>
-                            </ul>
-                        </div>
+                </section>
+
+                <!-- Technical Analysis -->
+                <section id="technicals" class="section-grey">
+                    <h2 class="o-section-title">Technical Analysis</h2>
+                    <div class="chart-frame">
+                        <script type="text/javascript"
+                            src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js"
+                            async>
+                                {
+                                    "interval": "1M",
+                                    "width": "100%",
+                                    "isTransparent": true,
+                                    "height": "400",
+                                    "symbol": "NASDAQ:AAPL",
+                                    "showIntervalTabs": true,
+                                    "displayMode": "single",
+                                    "locale": "en",
+                                    "colorTheme": "light"
+                                }
+                            </script>
                     </div>
-                </div> -->
+                </section>
             </div>
         </div>
         <div class="row bg-dark">
@@ -313,101 +239,39 @@
         </div>
         <div class="row">
             <div class="col container-1280">
-                <h2>Technology Stocks</h2>
+                <h2 class="o-section-title">Technology Stocks</h2>
                 <div class="shared-articles">
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col container-1280">
-                <section id="news">
-                    <h2>News</h2>
-
-                    <div class="chart w-100">
-                        <script>
-                            if (typeof (stockdio_events) == "undefined") {
-                                stockdio_events = true;
-                                var stockdio_eventMethod = window.addEventListener ? "addEventListener" : "attachEvent";
-                                var stockdio_eventer = window[stockdio_eventMethod];
-                                var stockdio_messageEvent = stockdio_eventMethod == "attachEvent" ? "onmessage" : "message";
-                                stockdio_eventer(stockdio_messageEvent, function (e) {
-                                    if (typeof (e.data) != "undefined" && typeof (e.data.method) != "undefined") {
-                                        eval(e.data.method);
-                                    }
-                                }, false);
-                            }
-                        </script>
-                        <iframe id='st_e544f39d42214ae5a8dd8b5c84c931c0' frameBorder='0' scrolling='no' width='100%'
-                            height='100%'
-                            src='https://api.stockdio.com/visualization/financial/charts/v1/News?app-key=56D3070574784B10A0F80C4ABA40E68C&symbol=AAPL&includeImage=false&palette=Financial-Light&showLogo=No&borderColor=d6e0f0&onload=st_e544f39d42214ae5a8dd8b5c84c931c0'></iframe>
+                <section id="verdict" class="section-grey">
+                    <h2 class="o-section-title">Final Verdict</h2>
+                    <div class="soft-card">
+                        <p>Apple is most attractive for investors who want exposure to one of the most dominant tech companies in the world, with a modest dividend and massive growth potential. It is not the stock to buy if your main goal is aggressive yield or deep value, but it remains a credible choice for a growth-focused portfolio sleeve.</p>
+                        <p>If you think in portfolio roles, AAPL makes the most sense as a quality growth holding rather than an income engine. That framing helps keep expectations realistic—and makes it easier to judge whether the stock belongs in your portfolio at all.</p>
                     </div>
                 </section>
-                <section id="financials">
-                    <h2>Financials</h2>
-                    <div class="chart w-100">
 
+                <section id="financials" class="section-white">
+                    <h2 class="o-section-title">Financials</h2>
+                    <div class="chart-frame">
                         <script type="text/javascript"
                             src="https://s3.tradingview.com/external-embedding/embed-widget-financials.js" async>
                                 {
                                     "colorTheme": "light",
-                                        "isTransparent": true,
-                                            "largeChartUrl": "",
-                                                "displayMode": "regular",
-                                                    "width": "100%",
-                                                        "height": "820",
-                                                            "symbol": "NASDAQ:AAPL",
-                                                                "locale": "en"
+                                    "isTransparent": true,
+                                    "largeChartUrl": "",
+                                    "displayMode": "regular",
+                                    "width": "100%",
+                                    "height": "820",
+                                    "symbol": "NASDAQ:AAPL",
+                                    "locale": "en"
                                 }
                             </script>
                     </div>
                 </section>
-                <section id="technicals">
-                    <h2>Technical Analysis</h2>
-                    <div class="chart w-100">
-                        <script type="text/javascript"
-                            src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js"
-                            async>
-                                {
-                                    "interval": "1M",
-                                        "width": "100%",
-                                            "isTransparent": false,
-                                                "height": "400",
-                                                    "symbol": "NASDAQ:AAPL",
-                                                        "showIntervalTabs": true,
-                                                            "displayMode": "single",
-                                                                "locale": "en",
-                                                                    "colorTheme": "light"
-                                }
-                            </script>
-                    </div>
-                </section>
-                <section>
-                    <h2>Additional Considerations</h2>
-                    <p>
-                        While Apple Inc. (AAPL) has a history of providing dividends to its shareholders, with a current
-                        dividend of $0.96 per share as of February 2024, investors should be aware of the risks
-                        associated with dividend stocks. The dividend payout ratio, which indicates the proportion of
-                        earnings paid out as dividends, is a critical metric for assessing AAPL's ability to maintain or
-                        increase its dividends. Although AAPL's dividend has shown stability and growth over a number of
-                        years, the treatment of dividends can change based on the company's earnings and growth rate.
-                        For instance, if Apple decides to reinvest more of its earnings to capitalize on growth
-                        opportunities, the next dividend payment might be lower than expected.
-                    </p>
-                    <p>
-                        Investors should also consider the stock dividend date and portfolio dividend date when planning
-                        for dividend income, as these dates determine when dividends are paid out to shareholders. It's
-                        important to note that the information provided here is solely for informational purposes and
-                        should not be construed as financial advice. The historical dividend data for AAPL, available on
-                        Nasdaq, shows a consistent increase in dividends per share, reflecting the company's past
-                        performance. However, past performance is not indicative of future results, and the growth
-                        stocks sector, where AAPL is often categorized, can be volatile. Therefore, it's useful for
-                        investors to frequently consult the FAQ section of their investment platforms and stay informed
-                        about the latest earnings per share (EPS) and dividend announcements from Apple to ensure their
-                        investment decisions align with their financial goals.
-                    </p>
-
-                </section>
-
             </div>
         </div>
         <div class="row dark-div py-5">
@@ -424,7 +288,6 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-
     <script>
         $(function () {
             $(".shared-nav").load("/shared/nav.html");
@@ -435,10 +298,33 @@
             $(".shared-footer").load("/shared/footer.html");
         });
 
+        function generateTOC() {
+            const tocList = $('#toc-list .etf-nav');
+            tocList.empty();
+            let ul = $('<ul></ul>').addClass('toc-menu');
+
+            const mainContentArea = $('.container-1280');
+
+            mainContentArea.find('section').each(function () {
+                const sectionId = $(this).attr('id');
+                const h2 = $(this).find('h2:first');
+
+                if (sectionId && h2.length > 0) {
+                    let title = h2.text();
+                    const li = $('<li></li>');
+                    const a = $('<a></a>').attr('href', '#' + sectionId).text(title);
+                    li.append(a);
+                    ul.append(li);
+                }
+            });
+            tocList.append(ul);
+        }
+
         $(document).ready(function () {
             $('.carousel').carousel();
 
-            // Scroll to top functionality
+            generateTOC();
+
             var mybutton = $('#return-to-top');
 
             $(window).scroll(function () {
@@ -452,6 +338,20 @@
             mybutton.click(function () {
                 $('html, body').animate({ scrollTop: 0 }, 'slow');
                 return false;
+            });
+
+            $('#toggle-toc').click(function () {
+                var fixedToc = $('.fixed-toc');
+                fixedToc.toggle();
+                if (fixedToc.is(':visible')) {
+                    fixedToc.addClass('show');
+                } else {
+                    fixedToc.removeClass('show');
+                }
+            });
+
+            $('#toc-list').on('click', 'a', function () {
+                $('.fixed-toc').hide().removeClass('show');
             });
         });
     </script>
