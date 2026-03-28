@@ -274,12 +274,12 @@
                         </div>
                     </div>
                 </section>
-                <section id="chart">
-                    <h2>KO Chart</h2>
-                    <div class="chart w-100">
-                        <iframe frameBorder='0' scrolling='no' width='100%' height='550'
-                            src='https://api.stockdio.com/visualization/financial/charts/v1/PricesChange?app-key=56D3070574784B10A0F80C4ABA40E68C&symbol=KO&palette=Financial-Light&width=100%25&height=500px&showLogo=Title&positiveColor=8d93ab&negativeColor=8d93ab&periodsColor=393B44'>
-                        </iframe>
+                <section id="chart" class="section-white">
+                    <h2 class="o-section-title">Price Chart</h2>
+                    <div class="chart-frame">
+                        <div class="tradingview-widget-container">
+                            <div id="tv-chart-ko"></div>
+                        </div>
                     </div>
 
                 </section>
@@ -491,6 +491,37 @@
                 $('html, body').animate({ scrollTop: 0 }, 'slow');
                 return false;
             });
+        });
+    </script>
+
+    <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+    <script>
+        new TradingView.MediumWidget({
+            container_id: 'tv-chart-ko',
+            symbols: [['KO', 'NYSE:KO|1D']],
+            chartOnly: true,
+            width: '100%',
+            height: 420,
+            locale: 'en',
+            colorTheme: 'light',
+            gridLineColor: 'rgba(240,243,250,1)',
+            fontColor: '#667085',
+            isTransparent: true,
+            autosize: true,
+            showVolume: false,
+            hideVolume: true,
+            scalePosition: 'right',
+            scaleMode: 'Normal',
+            fontFamily: 'Arial, sans-serif',
+            noTimeScale: false,
+            valuesTracking: '1',
+            chartType: 'area',
+            lineColor: 'rgba(57,59,68,1)',
+            topColor: 'rgba(141,147,171,0.28)',
+            bottomColor: 'rgba(141,147,171,0.04)',
+            underLineColor: 'rgba(141,147,171,0.04)',
+            trendLineColor: 'rgba(57,59,68,1)',
+            timezone: 'America/New_York'
         });
     </script>
 </body>
